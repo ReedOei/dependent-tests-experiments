@@ -1,3 +1,17 @@
+Instructions for using this repository:
+
+You can either clone it with the following command:
+```
+git clone --recurse-submodules https://github.com/ReedOei/dependent-tests-experiments
+```
+
+Or if you already have a copy, you can update it like this:
+```
+git pull
+git submodule update --init --recursive --remote
+```
+
+
 ambari                  - 96aaf1d
 
 ambari-new              - f4a3dbc
