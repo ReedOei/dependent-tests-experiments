@@ -1,0 +1,7 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.ping : $r8 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.ping : $r1 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.eclipse.jetty.websocket.api.Session watcherSession>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.initialize : $r4 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.initialize : $r3 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.scheduler.ZeppelinHeartbeat.newInstance : $r1 = new org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.scheduler.ZeppelinHeartbeat
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.scheduler.ZeppelinHeartbeat.run : $r1 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.scheduler.ZeppelinHeartbeat: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.scheduler.ZeppelinHeartbeat.run : $r2 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.scheduler.ZeppelinHeartbeat: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient client>

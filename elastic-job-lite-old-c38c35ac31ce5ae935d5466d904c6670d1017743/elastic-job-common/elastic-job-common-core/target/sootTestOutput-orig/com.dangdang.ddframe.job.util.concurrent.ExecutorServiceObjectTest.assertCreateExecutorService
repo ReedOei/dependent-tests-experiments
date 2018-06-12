@@ -1,0 +1,9 @@
+com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject.isShutdown : $r1 = r0.<com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject: java.util.concurrent.ThreadPoolExecutor threadPoolExecutor>
+com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject.getActiveThreadCount : $r1 = r0.<com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject: java.util.concurrent.ThreadPoolExecutor threadPoolExecutor>
+com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject.getWorkQueueSize : $r1 = r0.<com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject: java.util.concurrent.BlockingQueue workQueue>
+com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject.createExecutorService : $r1 = r0.<com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject: java.util.concurrent.ThreadPoolExecutor threadPoolExecutor>
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : goto [?= return]
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : $r2 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>()
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : staticinvoke <java.lang.Thread: void sleep(long)>(l0)
+com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObjectTest$FooTask.run : staticinvoke <com.dangdang.ddframe.job.util.concurrent.BlockUtils: void sleep(long)>(1000L)
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.waitingShortTime : staticinvoke <com.dangdang.ddframe.job.util.concurrent.BlockUtils: void sleep(long)>(100L)

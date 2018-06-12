@@ -1,0 +1,4 @@
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.getMaxRetries : $i0 = r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: int maxRetries>
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.getNamespace : $r1 = r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: java.lang.String namespace>
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.setMaxSleepTimeMilliseconds : r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: int maxSleepTimeMilliseconds> = i0
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.getConnectionTimeoutMilliseconds : $i0 = r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: int connectionTimeoutMilliseconds>

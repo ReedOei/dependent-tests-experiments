@@ -1,0 +1,10 @@
+de.htw.sdf.photoplatform.persistence.model.UserRole.setRole : r0.<de.htw.sdf.photoplatform.persistence.model.UserRole: de.htw.sdf.photoplatform.persistence.model.Role role> = r1
+de.htw.sdf.photoplatform.persistence.model.Role.setName : r0.<de.htw.sdf.photoplatform.persistence.model.Role: java.lang.String name> = r1
+de.htw.sdf.photoplatform.persistence.model.UserRole.getRole : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.UserRole: de.htw.sdf.photoplatform.persistence.model.Role role>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.getId : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id>
+de.htw.sdf.photoplatform.persistence.model.Role.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Role: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : if r1 == null goto return 0
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : if r0 != r1 goto (branch)
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : r2 = (de.htw.sdf.photoplatform.persistence.AbstractBaseEntity) r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long getId()>()

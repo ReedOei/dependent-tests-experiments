@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.ServiceInfo.getServiceAdvisorType : $r1 = r0.<org.apache.ambari.server.state.ServiceInfo: org.apache.ambari.server.state.ServiceInfo$ServiceAdvisorType serviceAdvisorType> >>>>>>>> org.apache.ambari.server.state.ServiceInfo.getServiceAdvisorType : return $r1

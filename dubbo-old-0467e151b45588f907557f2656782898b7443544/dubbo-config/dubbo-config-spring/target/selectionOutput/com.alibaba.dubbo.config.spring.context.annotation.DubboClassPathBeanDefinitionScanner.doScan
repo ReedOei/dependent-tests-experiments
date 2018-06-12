@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.context.annotation.DubboClassPathBeanDefinitionScanner.doScan : $r2 = specialinvoke r0.<org.springframework.context.'annotation'.ClassPathBeanDefinitionScanner: java.util.Set doScan(java.lang.String[])>(r1) >>>>>>>> com.alibaba.dubbo.config.spring.context.annotation.DubboClassPathBeanDefinitionScanner.doScan : return $r2

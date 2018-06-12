@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.setClazz : r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: java.lang.Class clazz> = r1
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.createQuery : $r2 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.repository.impl.RoleDAOImpl.findAllNotAdminRoles : r2 = virtualinvoke r0.<de.htw.sdf.photoplatform.repository.impl.RoleDAOImpl: javax.persistence.Query createQuery(java.lang.String)>("SELECT role FROM Role role WHERE role.id != ?1")

@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.TestUtils.getConfiguration : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.TestUtils: org.apache.jackrabbit.oak.plugins.index.solr.configuration.OakSolrConfiguration configuration> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.TestUtils.getConfiguration : return $r1

@@ -1,0 +1,6 @@
+de.htw.sdf.photoplatform.persistence.model.User.setEnabled : r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean enabled> = z0
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.setClazz : r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: java.lang.Class clazz> = r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getUpdatedAt : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.util.Date updatedAt>
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.update : $r2 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.getEntityManager : $r1 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.persistence.model.UserImage.setOwner : r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.User owner> = r1

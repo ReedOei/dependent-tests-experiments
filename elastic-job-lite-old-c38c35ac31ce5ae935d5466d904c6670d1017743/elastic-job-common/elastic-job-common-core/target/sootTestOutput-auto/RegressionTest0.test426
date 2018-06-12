@@ -1,0 +1,3 @@
+com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject.isShutdown : $r1 = r0.<com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject: java.util.concurrent.ThreadPoolExecutor threadPoolExecutor>
+com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject.getActiveThreadCount : $r1 = r0.<com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject: java.util.concurrent.ThreadPoolExecutor threadPoolExecutor>
+com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject.getWorkQueueSize : $r1 = r0.<com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject: java.util.concurrent.BlockingQueue workQueue>

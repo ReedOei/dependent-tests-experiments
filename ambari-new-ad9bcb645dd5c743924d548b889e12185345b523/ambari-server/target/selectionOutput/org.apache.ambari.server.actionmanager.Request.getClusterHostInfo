@@ -1,0 +1,1 @@
+org.apache.ambari.server.actionmanager.Request.getClusterHostInfo : $r1 = r0.<org.apache.ambari.server.actionmanager.Request: java.lang.String clusterHostInfo> >>>>>>>> org.apache.ambari.server.actionmanager.Request.getClusterHostInfo : return $r1

@@ -1,0 +1,2 @@
+org.apache.zeppelin.helium.HeliumRegistrySerializer.serialize : $r5 = new com.google.gson.JsonObject >>>>>>>> org.apache.zeppelin.helium.HeliumRegistrySerializer.serialize : specialinvoke $r5.<com.google.gson.JsonObject: void <init>()>()
+org.apache.zeppelin.helium.HeliumRegistrySerializer.serialize : specialinvoke $r5.<com.google.gson.JsonObject: void <init>()>() >>>>>>>> org.apache.zeppelin.helium.HeliumRegistrySerializer.serialize : $r6 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()

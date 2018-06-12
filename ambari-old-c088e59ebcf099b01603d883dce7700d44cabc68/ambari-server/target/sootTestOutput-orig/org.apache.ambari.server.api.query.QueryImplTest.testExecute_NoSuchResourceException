@@ -1,0 +1,74 @@
+org.apache.ambari.server.controller.spi.Resource$Type.hashCode : return i3
+org.apache.ambari.server.controller.spi.Resource$Type.hashCode : $i1 = 31 * i2
+org.apache.ambari.server.controller.spi.Resource$Type.hashCode : $r1 = r0.<org.apache.ambari.server.controller.spi.Resource$Type: java.lang.String name>
+org.apache.ambari.server.api.query.QueryImpl.getKeyValueMap : $r1 = new java.util.HashMap
+org.apache.ambari.server.api.query.render.BaseRenderer.init : r0.<org.apache.ambari.server.api.query.render.BaseRenderer: org.apache.ambari.server.controller.spi.SchemaFactory m_schemaFactory> = r1
+org.apache.ambari.server.controller.spi.Resource$Type.equals : return 1
+org.apache.ambari.server.controller.spi.Resource$Type.equals : if r0 != r1 goto (branch)
+org.apache.ambari.server.api.query.QueryImpl.queryForResources : $r9 = virtualinvoke r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.api.resources.ResourceDefinition getResourceDefinition()>()
+org.apache.ambari.server.api.query.QueryImpl.queryForResources : $r10 = virtualinvoke r0.<org.apache.ambari.server.api.query.QueryImpl: java.util.Map getKeyValueMap()>()
+org.apache.ambari.server.api.query.QueryImpl.queryForResources : specialinvoke r0.<org.apache.ambari.server.api.query.QueryImpl: void finalizeProperties()>()
+org.apache.ambari.server.api.query.QueryImpl.queryForResources : r3 = specialinvoke r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.controller.spi.Request createRequest()>()
+org.apache.ambari.server.api.query.QueryImpl.buildQueryPropertyTree : $r8 = r1.<org.apache.ambari.server.api.query.QueryImpl: java.util.Map requestedSubResources>
+org.apache.ambari.server.api.query.QueryImpl.setKeyValueMap : $r2 = r0.<org.apache.ambari.server.api.query.QueryImpl: java.util.Map keyValueMap>
+org.apache.ambari.server.api.query.QueryImpl.isCollectionResource : $r1 = virtualinvoke r0.<org.apache.ambari.server.api.query.QueryImpl: java.util.Map getKeyValueMap()>()
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : $r4 = new java.util.HashSet
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : $r9 = r0.<org.apache.ambari.server.api.resources.BaseResourceDefinition: java.util.Map directives>
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : if r2 == null goto $r9 = r0.<org.apache.ambari.server.api.resources.BaseResourceDefinition: java.util.Map directives>
+org.apache.ambari.server.controller.spi.Resource$Type.name : $r1 = r0.<org.apache.ambari.server.controller.spi.Resource$Type: java.lang.String name>
+org.apache.ambari.server.controller.predicate.ComparisonPredicate.hashCode : $i0 = 31 * i1
+org.apache.ambari.server.controller.predicate.ComparisonPredicate.hashCode : i1 = specialinvoke r0.<org.apache.ambari.server.controller.predicate.PropertyPredicate: int hashCode()>()
+org.apache.ambari.server.controller.predicate.ComparisonPredicate.hashCode : $r2 = r0.<org.apache.ambari.server.controller.predicate.ComparisonPredicate: java.lang.Comparable value>
+org.apache.ambari.server.api.query.QueryImpl.createPredicate : if r2 != null goto r6 = new org.apache.ambari.server.controller.predicate.AndPredicate
+org.apache.ambari.server.api.query.QueryImpl.createPredicate : if r3 != null goto (branch)
+org.apache.ambari.server.api.query.QueryImpl.createPredicate : r3 = specialinvoke r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.controller.spi.Predicate createInternalPredicate(java.util.Map)>(r1)
+org.apache.ambari.server.api.util.TreeNodeImpl.getChildren : $r1 = r0.<org.apache.ambari.server.api.util.TreeNodeImpl: java.util.Map m_mapChildren>
+org.apache.ambari.server.api.util.TreeNodeImpl.getObject : $r1 = r0.<org.apache.ambari.server.api.util.TreeNodeImpl: java.lang.Object m_object>
+org.apache.ambari.server.api.query.QueryImpl.processUserPredicate : return null
+org.apache.ambari.server.api.query.QueryImpl.processUserPredicate : if r1 != null goto $r4 = new org.apache.ambari.server.api.query.ProcessingPredicateVisitor
+org.apache.ambari.server.api.query.QueryImpl.setRenderer : $r2 = r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.controller.spi.ClusterController clusterController>
+org.apache.ambari.server.api.query.QueryImpl.setRenderer : r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.api.query.render.Renderer renderer> = r1
+org.apache.ambari.server.api.query.QueryImpl.execute : specialinvoke r0.<org.apache.ambari.server.api.query.QueryImpl: void queryForResources()>()
+org.apache.ambari.server.api.resources.BaseResourceDefinition.getType : $r1 = r0.<org.apache.ambari.server.api.resources.BaseResourceDefinition: org.apache.ambari.server.controller.spi.Resource$Type m_type>
+org.apache.ambari.server.controller.predicate.ComparisonPredicate.stringToDouble : $i0 = virtualinvoke $r5.<java.text.ParsePosition: int getIndex()>()
+org.apache.ambari.server.controller.predicate.ComparisonPredicate.stringToDouble : $r5 = new java.text.ParsePosition
+org.apache.ambari.server.controller.predicate.ComparisonPredicate.stringToDouble : r4 = virtualinvoke r3.<java.text.NumberFormat: java.lang.Number parse(java.lang.String,java.text.ParsePosition)>(r1, $r5)
+org.apache.ambari.server.controller.predicate.ComparisonPredicate.stringToDouble : if r1 == null goto return null
+org.apache.ambari.server.controller.predicate.ComparisonPredicate.stringToDouble : r3 = staticinvoke <java.text.NumberFormat: java.text.NumberFormat getInstance()>()
+org.apache.ambari.server.controller.predicate.ComparisonPredicate.stringToDouble : $z0 = virtualinvoke r1.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $r19 = interfaceinvoke r25.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $r15 = interfaceinvoke $r7.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $r21 = new org.apache.ambari.server.controller.predicate.EqualsPredicate
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : goto [?= $z0 = interfaceinvoke r24.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $r5 = virtualinvoke r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.api.resources.ResourceDefinition getResourceDefinition()>()
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $r6 = r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.controller.spi.ClusterController clusterController>
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $r17 = interfaceinvoke r24.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $i0 = interfaceinvoke $r7.<java.util.Set: int size()>()
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $r13 = virtualinvoke r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.api.resources.ResourceDefinition getResourceDefinition()>()
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $r7 = new java.util.HashSet
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : if r26 == null goto (branch)
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $r18 = interfaceinvoke r25.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $r8 = interfaceinvoke r1.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : return r27
+org.apache.ambari.server.api.query.QueryImpl.createInternalPredicate : $r14 = r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.controller.spi.ClusterController clusterController>
+org.apache.ambari.server.api.query.QueryImpl.getResourceDefinition : $r1 = r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.api.resources.ResourceDefinition resourceDefinition>
+org.apache.ambari.server.api.query.QueryImpl.createRequest : r5 = interfaceinvoke $r14.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.api.query.QueryImpl.createRequest : $z3 = r0.<org.apache.ambari.server.api.query.QueryImpl: boolean allProperties>
+org.apache.ambari.server.api.query.QueryImpl.createRequest : $r8 = new java.util.HashMap
+org.apache.ambari.server.api.query.QueryImpl.createRequest : $r12 = r0.<org.apache.ambari.server.api.query.QueryImpl: java.util.Map temporalInfoMap>
+org.apache.ambari.server.api.query.QueryImpl.createRequest : $r14 = new java.util.HashSet
+org.apache.ambari.server.api.query.QueryImpl.createRequest : $r15 = r0.<org.apache.ambari.server.api.query.QueryImpl: java.util.Set requestedProperties>
+org.apache.ambari.server.api.query.QueryImpl.createRequest : $r10 = r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.controller.spi.PageRequest pageRequest>
+org.apache.ambari.server.api.query.QueryImpl.createRequest : $r11 = new java.util.HashMap
+org.apache.ambari.server.api.query.QueryImpl.mergeFinalizedProperties : $r13 = r2.<org.apache.ambari.server.api.query.QueryImpl: java.util.Set requestedProperties>
+org.apache.ambari.server.api.query.QueryImpl.mergeFinalizedProperties : $r11 = interfaceinvoke r1.<org.apache.ambari.server.api.util.TreeNode: java.lang.Object getObject()>()
+org.apache.ambari.server.api.query.QueryImpl.mergeFinalizedProperties : $r12 = r2.<org.apache.ambari.server.api.query.QueryImpl: java.util.Set requestedProperties>
+org.apache.ambari.server.api.query.QueryImpl.mergeFinalizedProperties : $r14 = interfaceinvoke r1.<org.apache.ambari.server.api.util.TreeNode: java.util.Collection getChildren()>()
+org.apache.ambari.server.controller.predicate.PropertyPredicate.hashCode : $r1 = r0.<org.apache.ambari.server.controller.predicate.PropertyPredicate: java.lang.String propertyId>
+org.apache.ambari.server.api.query.QueryImpl.finalizeProperties : $r5 = new org.apache.ambari.server.api.query.QueryInfo
+org.apache.ambari.server.api.query.QueryImpl.finalizeProperties : $r7 = new org.apache.ambari.server.api.util.TreeNodeImpl
+org.apache.ambari.server.api.query.QueryImpl.finalizeProperties : r1 = r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.api.resources.ResourceDefinition resourceDefinition>
+org.apache.ambari.server.api.query.QueryImpl.finalizeProperties : $r10 = r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.api.query.render.Renderer renderer>
+org.apache.ambari.server.api.query.QueryImpl.finalizeProperties : $r11 = interfaceinvoke $r10.<org.apache.ambari.server.api.query.render.Renderer: org.apache.ambari.server.api.util.TreeNode finalizeProperties(org.apache.ambari.server.api.util.TreeNode,boolean)>(r4, $z0)
+org.apache.ambari.server.api.query.QueryImpl.finalizeProperties : $r8 = interfaceinvoke r1.<org.apache.ambari.server.api.resources.ResourceDefinition: org.apache.ambari.server.controller.spi.Resource$Type getType()>()
+org.apache.ambari.server.api.query.QueryImpl.finalizeProperties : r4 = specialinvoke r0.<org.apache.ambari.server.api.query.QueryImpl: org.apache.ambari.server.api.util.TreeNode buildQueryPropertyTree(org.apache.ambari.server.api.query.QueryImpl,org.apache.ambari.server.api.util.TreeNode)>(r0, $r7)

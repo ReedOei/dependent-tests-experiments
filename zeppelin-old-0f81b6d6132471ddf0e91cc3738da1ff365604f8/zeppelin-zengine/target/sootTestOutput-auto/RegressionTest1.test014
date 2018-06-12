@@ -1,0 +1,9 @@
+org.apache.zeppelin.ticket.TicketContainer.getTicket : $z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("anonymous")
+org.apache.zeppelin.ticket.TicketContainer.getTicket : return r7
+org.apache.zeppelin.ticket.TicketContainer.getTicket : $r5 = staticinvoke <java.util.UUID: java.util.UUID randomUUID()>()
+org.apache.zeppelin.ticket.TicketContainer.getTicket : $r2 = r0.<org.apache.zeppelin.ticket.TicketContainer: java.util.Map sessions>
+org.apache.zeppelin.ticket.TicketContainer.getTicket : if r6 != null goto r7 = r6.<org.apache.zeppelin.ticket.TicketContainer$Entry: java.lang.String ticket>
+org.apache.zeppelin.ticket.TicketContainer.getTicket : $r8 = new org.apache.zeppelin.ticket.TicketContainer$Entry
+org.apache.zeppelin.ticket.TicketContainer.getTicket : $r10 = r0.<org.apache.zeppelin.ticket.TicketContainer: java.util.Map sessions>
+org.apache.zeppelin.ticket.TicketContainer.isValid : $r4 = "anonymous"
+org.apache.zeppelin.ticket.TicketContainer.isValid : $r5 = r0.<org.apache.zeppelin.ticket.TicketContainer: java.util.Map sessions>

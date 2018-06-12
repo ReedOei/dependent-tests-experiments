@@ -1,0 +1,7 @@
+de.htw.sdf.photoplatform.security.TokenUtils.expired : r1 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>(":") >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.expired : $r2 = r1[1]
+de.htw.sdf.photoplatform.security.TokenUtils.expired : $r2 = r1[1] >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.expired : l0 = staticinvoke <java.lang.Long: long parseLong(java.lang.String)>($r2)
+de.htw.sdf.photoplatform.security.TokenUtils.expired : l0 = staticinvoke <java.lang.Long: long parseLong(java.lang.String)>($r2) >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.expired : $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+de.htw.sdf.photoplatform.security.TokenUtils.expired : $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>() >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.expired : $b2 = l0 cmp $l1
+de.htw.sdf.photoplatform.security.TokenUtils.expired : $b2 = l0 cmp $l1 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.expired : if $b2 < 0
+de.htw.sdf.photoplatform.security.TokenUtils.expired : if $b2 < 0 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.expired : return 0
+de.htw.sdf.photoplatform.security.TokenUtils.expired : if $b2 < 0 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.expired : return 0

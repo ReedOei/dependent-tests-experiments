@@ -1,0 +1,24 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterSettingManager : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager>
+org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterDir : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String interpreterDir> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.setErrorReason : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String errorReason> = r1
+org.apache.zeppelin.notebook.repo.S3NotebookRepo.revisionHistory : $r3 = <org.apache.zeppelin.notebook.repo.S3NotebookRepo: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.S3NotebookRepo.revisionHistory : $r6 = staticinvoke <java.util.Collections: java.util.List emptyList()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : $r4 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption getOption()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : $r3 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : r11 = "shared_process"
+org.apache.zeppelin.interpreter.InterpreterSetting.getLifecycleManager : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager>
+org.apache.zeppelin.notebook.repo.S3NotebookRepo.createClientConfiguration : return r2
+org.apache.zeppelin.notebook.repo.S3NotebookRepo.createClientConfiguration : $r5 = r0.<org.apache.zeppelin.notebook.repo.S3NotebookRepo: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.notebook.repo.S3NotebookRepo.createClientConfiguration : $r4 = new com.amazonaws.ClientConfigurationFactory
+org.apache.zeppelin.notebook.repo.S3NotebookRepo.createClientConfiguration : r2 = virtualinvoke $r4.<com.amazonaws.ClientConfigurationFactory: com.amazonaws.ClientConfiguration getConfig()>()
+org.apache.zeppelin.notebook.repo.S3NotebookRepo.createClientConfiguration : $z0 = staticinvoke <org.apache.commons.lang3.StringUtils: boolean isNotBlank(java.lang.CharSequence)>(r3)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.Client.initialize : $r5 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.Client: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.Client instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.Client.initialize : $r4 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.Client: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.Client instance>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOption : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroup : $r6 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock interpreterGroupReadLock>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroup : r3 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String getInterpreterGroupId(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroup : $r7 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.Map interpreterGroups>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroup : $r9 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock interpreterGroupReadLock>
+org.apache.zeppelin.interpreter.InterpreterSetting.getConf : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterRunner : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterRunner interpreterRunner> = r1
+org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication.initialize : $r2 = <org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication: org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication instance>

@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getUserdata : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.UserData userdata> >>>>>>>> de.htw.sdf.photoplatform.webservice.dto.CollectionData.getUserdata : return $r1

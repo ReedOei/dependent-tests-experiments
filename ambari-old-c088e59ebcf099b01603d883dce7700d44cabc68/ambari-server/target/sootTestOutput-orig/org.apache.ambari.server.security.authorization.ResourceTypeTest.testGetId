@@ -1,0 +1,12 @@
+org.apache.ambari.server.security.authorization.UserNameTest.userNames : $r6 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(0)
+org.apache.ambari.server.security.authorization.UserNameTest.userNames : $r14 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(0)
+org.apache.ambari.server.security.authorization.UserNameTest.userNames : $r0 = newarray (java.lang.Object[])[10]
+org.apache.ambari.server.security.authorization.UserNameTest.userNames : $r4 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(0)
+org.apache.ambari.server.security.authorization.UserNameTest.userNames : $r20 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(1)
+org.apache.ambari.server.security.authorization.UserNameTest.userNames : $r8 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(0)
+org.apache.ambari.server.security.authorization.UserNameTest.userNames : $r18 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(1)
+org.apache.ambari.server.security.authorization.UserNameTest.userNames : $r2 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(0)
+org.apache.ambari.server.security.authorization.UserNameTest.userNames : $r16 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(0)
+org.apache.ambari.server.security.authorization.UserNameTest.userNames : $r10 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(0)
+org.apache.ambari.server.security.authorization.UserNameTest.userNames : $r12 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(0)
+org.apache.ambari.server.security.authorization.ResourceType.getId : $i0 = r0.<org.apache.ambari.server.security.authorization.ResourceType: int id>

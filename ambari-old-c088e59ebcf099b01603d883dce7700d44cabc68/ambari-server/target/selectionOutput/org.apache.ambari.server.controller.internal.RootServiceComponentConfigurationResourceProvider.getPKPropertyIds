@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.internal.RootServiceComponentConfigurationResourceProvider.getPKPropertyIds : $r1 = <org.apache.ambari.server.controller.internal.RootServiceComponentConfigurationResourceProvider: java.util.Set PK_PROPERTY_IDS> >>>>>>>> org.apache.ambari.server.controller.internal.RootServiceComponentConfigurationResourceProvider.getPKPropertyIds : return $r1

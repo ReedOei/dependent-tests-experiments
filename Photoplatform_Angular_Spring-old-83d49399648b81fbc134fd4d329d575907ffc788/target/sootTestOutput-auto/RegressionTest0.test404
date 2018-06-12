@@ -1,0 +1,5 @@
+de.htw.sdf.photoplatform.persistence.model.CollectionImage.setImage : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionImage: de.htw.sdf.photoplatform.persistence.model.Image image> = r1
+de.htw.sdf.photoplatform.persistence.model.CollectionImage.setCollection : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionImage: de.htw.sdf.photoplatform.persistence.model.Collection collection> = r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.setId : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id> = r1
+de.htw.sdf.photoplatform.persistence.model.CollectionImage.getCollection : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.CollectionImage: de.htw.sdf.photoplatform.persistence.model.Collection collection>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setCreatedBy : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String createdBy> = r1

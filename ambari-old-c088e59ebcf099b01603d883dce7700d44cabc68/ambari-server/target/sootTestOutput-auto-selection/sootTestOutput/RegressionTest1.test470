@@ -1,0 +1,7 @@
+org.apache.ambari.server.controller.ivory.Cluster$Interface.getType : $r1 = r0.<org.apache.ambari.server.controller.ivory.Cluster$Interface: java.lang.String type> >>>>>>>> org.apache.ambari.server.controller.ivory.Cluster$Interface.getType : return $r1
+org.apache.ambari.server.controller.ivory.Cluster$Interface.getType : return $r1 >>>>>>>> org.apache.ambari.server.controller.ivory.Cluster$Interface.equals : if r0 != r1
+org.apache.ambari.server.controller.ivory.Cluster$Interface.equals : if r0 != r1 >>>>>>>> org.apache.ambari.server.controller.ivory.Cluster$Interface.equals : if r1 == null
+org.apache.ambari.server.controller.ivory.Cluster$Interface.equals : if r1 == null >>>>>>>> org.apache.ambari.server.controller.ivory.Cluster$Interface.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.ambari.server.controller.ivory.Cluster$Interface.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> org.apache.ambari.server.controller.ivory.Cluster$Interface.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.ambari.server.controller.ivory.Cluster$Interface.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> org.apache.ambari.server.controller.ivory.Cluster$Interface.equals : if $r3 == $r4
+org.apache.ambari.server.controller.ivory.Cluster$Interface.equals : if $r3 == $r4 >>>>>>>> org.apache.ambari.server.controller.ivory.Cluster$Interface.equals : return 0

@@ -1,0 +1,13 @@
+org.apache.ambari.server.hooks.users.UserHookParams.param : $r1 = r0.<org.apache.ambari.server.hooks.users.UserHookParams: java.lang.String param>
+org.apache.ambari.server.serveraction.AbstractServerAction.getCommandParameters : $r1 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.getCommandParameters : $r2 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.setExecutionCommand : r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand> = r1
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.validateCommandParams : $r59 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.validateCommandParams : $r2 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.validateCommandParams : $r61 = new java.lang.IllegalArgumentException
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.validateCommandParams : $r3 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams PAYLOAD>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : r23 = virtualinvoke r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: java.util.Map getCommandParameters()>()
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : $r20 = new org.apache.ambari.server.AmbariException
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : $r4 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : specialinvoke r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: void validateCommandParams(java.util.Map)>(r23)
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : $r19 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>

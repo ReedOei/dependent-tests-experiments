@@ -1,0 +1,9 @@
+de.htw.sdf.photoplatform.Application.localeChangeInterceptor : $r2 = new org.springframework.web.servlet.i18n.LocaleChangeInterceptor
+de.htw.sdf.photoplatform.Application.localeChangeInterceptor : virtualinvoke $r2.<org.springframework.web.servlet.i18n.LocaleChangeInterceptor: void setParamName(java.lang.String)>("lang")
+de.htw.sdf.photoplatform.Application.localeChangeInterceptor : return $r2
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getCreatedBy : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String createdBy>
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.setClazz : r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: java.lang.Class clazz> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.model.Image.setDescription : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String description> = r1
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.delete : $r3 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.persistence.model.Image.toString : $r1 = new java.lang.StringBuilder

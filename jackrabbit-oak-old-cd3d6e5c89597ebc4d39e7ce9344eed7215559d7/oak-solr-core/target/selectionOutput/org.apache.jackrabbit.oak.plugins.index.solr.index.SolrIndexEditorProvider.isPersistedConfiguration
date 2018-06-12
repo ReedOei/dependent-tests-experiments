@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorProvider.isPersistedConfiguration : $z0 = interfaceinvoke r1.<org.apache.jackrabbit.oak.spi.state.NodeBuilder: boolean hasChildNode(java.lang.String)>("server") >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorProvider.isPersistedConfiguration : return $z0

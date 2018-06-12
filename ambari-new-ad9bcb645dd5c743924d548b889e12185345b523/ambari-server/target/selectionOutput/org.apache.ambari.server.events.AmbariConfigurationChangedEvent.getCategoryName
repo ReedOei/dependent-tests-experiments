@@ -1,0 +1,1 @@
+org.apache.ambari.server.events.AmbariConfigurationChangedEvent.getCategoryName : $r1 = r0.<org.apache.ambari.server.events.AmbariConfigurationChangedEvent: java.lang.String categoryName> >>>>>>>> org.apache.ambari.server.events.AmbariConfigurationChangedEvent.getCategoryName : return $r1

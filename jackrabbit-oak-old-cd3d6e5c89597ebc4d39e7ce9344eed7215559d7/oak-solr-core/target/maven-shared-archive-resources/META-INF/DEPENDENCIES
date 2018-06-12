@@ -1,0 +1,29 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Oak Solr core
+
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache Commons IO (http://commons.apache.org/proper/commons-io/) commons-io:commons-io:jar:2.5
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Jackrabbit API (http://jackrabbit.apache.org/jackrabbit-api/) org.apache.jackrabbit:jackrabbit-api:bundle:2.16.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackrabbit JCR Commons (http://jackrabbit.apache.org/jackrabbit-jcr-commons/) org.apache.jackrabbit:jackrabbit-jcr-commons:bundle:2.16.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Oak API (http://jackrabbit.apache.org/oak-api/) org.apache.jackrabbit:oak-api:bundle:1.7.13
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Oak Core SPI (http://jackrabbit.apache.org/oak-core-spi/) org.apache.jackrabbit:oak-core-spi:bundle:1.7.13
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Oak Query SPI (http://jackrabbit.apache.org/oak-query-spi/) org.apache.jackrabbit:oak-query-spi:bundle:1.7.13
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Oak NodeStore and Commit SPI (http://jackrabbit.apache.org/oak-store-spi/) org.apache.jackrabbit:oak-store-spi:bundle:1.7.13
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

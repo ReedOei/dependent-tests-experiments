@@ -1,0 +1,15 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r11 = <org.apache.zeppelin.interpreter.InterpreterSetting: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r5 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock interpreterGroupWriteLock>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : r3 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String getInterpreterGroupId(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r6 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.Map interpreterGroups>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : r16 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.ManagedInterpreterGroup createInterpreterGroup(java.lang.String)>(r3)
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreterGroup : $r4 = new org.apache.zeppelin.interpreter.ManagedInterpreterGroup
+org.apache.zeppelin.interpreter.InterpreterSetting.getLifecycleManager : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager>
+org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterDir : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String interpreterDir> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.setErrorReason : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String errorReason> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getDefaultInterpreter : $r3 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List getOrCreateSession(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getOption : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateSession : r3 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.ManagedInterpreterGroup getOrCreateInterpreterGroup(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : $r4 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption getOption()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : $r3 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : r11 = "shared_process"

@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.context.annotation.DubboConfigConfigurationSelector.selectImports : $r3 = class "Lcom/alibaba/dubbo/config/spring/context/annotation/EnableDubboConfig;"

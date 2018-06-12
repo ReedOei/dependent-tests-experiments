@@ -1,0 +1,11 @@
+de.htw.sdf.photoplatform.persistence.model.UserRole.setRole : r0.<de.htw.sdf.photoplatform.persistence.model.UserRole: de.htw.sdf.photoplatform.persistence.model.Role role> = r1
+de.htw.sdf.photoplatform.persistence.model.Role.setName : r0.<de.htw.sdf.photoplatform.persistence.model.Role: java.lang.String name> = r1
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.setClazz : r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: java.lang.Class clazz> = r1
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.findByRole : $r2 = virtualinvoke r1.<de.htw.sdf.photoplatform.persistence.model.Role: java.lang.Long getId()>()
+de.htw.sdf.photoplatform.persistence.model.UserRole.getRole : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.UserRole: de.htw.sdf.photoplatform.persistence.model.Role role>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.getId : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id>
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.createQuery : $r2 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.findByRoleId : virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("LEFT JOIN FETCH user.userRoles userRoles ")
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.findByRoleId : virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("WHERE userRoles.role.id = ?1")
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.findByRoleId : $r4 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.findByRoleId : $r7 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>()

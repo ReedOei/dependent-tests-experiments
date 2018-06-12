@@ -1,0 +1,20 @@
+org.apache.ambari.server.upgrade.UpgradeCatalog251.addBackgroundColumnToHostRoleCommand : $r2 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog251: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog251.addBackgroundColumnToHostRoleCommand : $r1 = new org.apache.ambari.server.orm.DBAccessor$DBColumnInfo
+org.apache.ambari.server.orm.DBAccessor$DBColumnInfo.getDefaultValue : $r1 = r0.<org.apache.ambari.server.orm.DBAccessor$DBColumnInfo: java.lang.Object defaultValue>
+org.apache.ambari.server.orm.DBAccessor$DBColumnInfo.getType : $r1 = r0.<org.apache.ambari.server.orm.DBAccessor$DBColumnInfo: java.lang.Class type>
+org.apache.ambari.server.upgrade.UpgradeCatalog251Test.access$200 : $r1 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog251Test: javax.persistence.EntityManager entityManager>
+org.apache.ambari.server.upgrade.UpgradeCatalog251Test.access$000 : $r1 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog251Test: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog251.moveClusterHostColumnFromStageToRequest : $r4 = new org.apache.ambari.server.orm.DBAccessor$DBColumnInfo
+org.apache.ambari.server.upgrade.UpgradeCatalog251.moveClusterHostColumnFromStageToRequest : $r3 = new org.apache.ambari.server.orm.DBAccessor$DBColumnInfo
+org.apache.ambari.server.upgrade.UpgradeCatalog251.moveClusterHostColumnFromStageToRequest : $r6 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog251: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog251.getTargetVersion : return "2.5.1"
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.registerCatalog : $r2 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: java.util.Map upgradeCatalogMap>
+org.apache.ambari.server.upgrade.UpgradeCatalog251.executeDDLUpdates : specialinvoke r0.<org.apache.ambari.server.upgrade.UpgradeCatalog251: void moveClusterHostColumnFromStageToRequest()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog251.executeDDLUpdates : specialinvoke r0.<org.apache.ambari.server.upgrade.UpgradeCatalog251: void addBackgroundColumnToHostRoleCommand()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog251Test.access$300 : $r1 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog251Test: org.apache.ambari.server.configuration.Configuration configuration>
+org.apache.ambari.server.upgrade.UpgradeCatalog251Test$1.configure : $r2 = interfaceinvoke r1.<com.google.inject.Binder: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/DBAccessor;")
+org.apache.ambari.server.upgrade.UpgradeCatalog251Test$1.configure : $r5 = interfaceinvoke r1.<com.google.inject.Binder: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/stack/OsFamily;")
+org.apache.ambari.server.upgrade.UpgradeCatalog251Test$1.configure : $r8 = interfaceinvoke r1.<com.google.inject.Binder: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Ljavax/persistence/EntityManager;")
+org.apache.ambari.server.upgrade.UpgradeCatalog251Test$1.configure : $r11 = interfaceinvoke r1.<com.google.inject.Binder: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/configuration/Configuration;")
+org.apache.ambari.server.upgrade.UpgradeCatalog251Test.access$100 : $r1 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog251Test: org.apache.ambari.server.state.stack.OsFamily osFamily>
+org.apache.ambari.server.orm.DBAccessor$DBColumnInfo.getName : $r1 = r0.<org.apache.ambari.server.orm.DBAccessor$DBColumnInfo: java.lang.String name>

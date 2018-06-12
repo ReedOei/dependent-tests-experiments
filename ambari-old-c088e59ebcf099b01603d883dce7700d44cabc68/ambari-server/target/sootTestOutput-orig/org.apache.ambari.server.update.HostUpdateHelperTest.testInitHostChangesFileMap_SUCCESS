@@ -1,0 +1,18 @@
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : goto [?= $z0 = interfaceinvoke r37.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r29 = r0.<org.apache.ambari.server.update.HostUpdateHelper: java.util.Map hostChangesFileMap>
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r13 = new java.util.HashMap
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r17 = interfaceinvoke r43.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r9 = new java.util.HashMap
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r14 = interfaceinvoke r43.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : goto [?= (branch)]
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r28 = new com.google.gson.Gson
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r8 = virtualinvoke r1.<com.google.gson.JsonObject: java.util.Set entrySet()>()
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : r0.<org.apache.ambari.server.update.HostUpdateHelper: java.util.Map hostChangesFileMap> = $r9
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r12 = interfaceinvoke r42.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r20 = interfaceinvoke r4.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r6 = r0.<org.apache.ambari.server.update.HostUpdateHelper: org.apache.ambari.server.configuration.Configuration configuration>
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r7 = new java.util.HashMap
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r19 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r27 = interfaceinvoke r37.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.update.HostUpdateHelper.initHostChangesFileMap : $r10 = r0.<org.apache.ambari.server.update.HostUpdateHelper: java.util.Map hostChangesFileMap>
+org.apache.ambari.server.update.HostUpdateHelper.getHostChangesFileMap : $r1 = r0.<org.apache.ambari.server.update.HostUpdateHelper: java.util.Map hostChangesFileMap>

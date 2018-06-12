@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.ServiceBean.getSpringContext : $r0 = <com.alibaba.dubbo.config.spring.ServiceBean: org.springframework.context.ApplicationContext SPRING_CONTEXT> >>>>>>>> com.alibaba.dubbo.config.spring.ServiceBean.getSpringContext : return $r0

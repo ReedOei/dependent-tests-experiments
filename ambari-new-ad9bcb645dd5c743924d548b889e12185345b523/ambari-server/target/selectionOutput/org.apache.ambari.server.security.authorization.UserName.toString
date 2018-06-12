@@ -1,0 +1,1 @@
+org.apache.ambari.server.security.authorization.UserName.toString : $r1 = r0.<org.apache.ambari.server.security.authorization.UserName: java.lang.String userName> >>>>>>>> org.apache.ambari.server.security.authorization.UserName.toString : return $r1

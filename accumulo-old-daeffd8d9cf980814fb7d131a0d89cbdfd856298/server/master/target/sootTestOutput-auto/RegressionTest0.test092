@@ -1,0 +1,2 @@
+org.apache.accumulo.master.tableOps.ExportTable.undo : $r2 = new org.apache.hadoop.fs.Path
+org.apache.accumulo.master.tableOps.MasterRepo.getDescription : $r1 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()

@@ -1,0 +1,13 @@
+org.apache.accumulo.master.Master.hasCycled : $r3 = r0.<org.apache.accumulo.master.Master: java.util.List watchers> >>>>>>>> org.apache.accumulo.master.Master.hasCycled : r1 = interfaceinvoke $r3.<java.util.List: java.util.Iterator iterator()>()
+org.apache.accumulo.master.Master.hasCycled : r1 = interfaceinvoke $r3.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> org.apache.accumulo.master.Master.hasCycled : $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()
+org.apache.accumulo.master.Master.hasCycled : $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.apache.accumulo.master.Master.hasCycled : if $z0 == 0
+org.apache.accumulo.master.Master.hasCycled : if $z0 == 0 >>>>>>>> org.apache.accumulo.master.Master.hasCycled : $r4 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.apache.accumulo.master.Master.hasCycled : if $z0 == 0 >>>>>>>> org.apache.accumulo.master.Master.hasCycled : return 1
+org.apache.accumulo.master.Master.hasCycled : $r4 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.apache.accumulo.master.Master.hasCycled : r2 = (org.apache.accumulo.master.TabletGroupWatcher) $r4
+org.apache.accumulo.master.Master.hasCycled : r2 = (org.apache.accumulo.master.TabletGroupWatcher) $r4 >>>>>>>> org.apache.accumulo.master.Master.hasCycled : $r5 = r2.<org.apache.accumulo.master.TabletGroupWatcher: org.apache.accumulo.master.state.TableStats stats>
+org.apache.accumulo.master.Master.hasCycled : $r5 = r2.<org.apache.accumulo.master.TabletGroupWatcher: org.apache.accumulo.master.state.TableStats stats> >>>>>>>> org.apache.accumulo.master.Master.hasCycled : $l1 = virtualinvoke $r5.<org.apache.accumulo.master.state.TableStats: long lastScanFinished()>()
+org.apache.accumulo.master.Master.hasCycled : $l1 = virtualinvoke $r5.<org.apache.accumulo.master.state.TableStats: long lastScanFinished()>() >>>>>>>> org.apache.accumulo.master.Master.hasCycled : $b2 = $l1 cmp l0
+org.apache.accumulo.master.Master.hasCycled : $b2 = $l1 cmp l0 >>>>>>>> org.apache.accumulo.master.Master.hasCycled : if $b2 >= 0
+org.apache.accumulo.master.Master.hasCycled : if $b2 >= 0 >>>>>>>> org.apache.accumulo.master.Master.hasCycled : return 0
+org.apache.accumulo.master.Master.hasCycled : if $b2 >= 0 >>>>>>>> org.apache.accumulo.master.Master.hasCycled : goto [?= $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()]
+org.apache.accumulo.master.Master.hasCycled : goto [?= $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.apache.accumulo.master.Master.hasCycled : $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()

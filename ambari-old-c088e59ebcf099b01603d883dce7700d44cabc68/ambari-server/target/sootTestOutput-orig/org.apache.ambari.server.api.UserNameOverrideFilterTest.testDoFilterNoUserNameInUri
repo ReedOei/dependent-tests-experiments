@@ -1,0 +1,6 @@
+org.apache.ambari.server.api.UserNameOverrideFilter.doFilter : $z1 = virtualinvoke r4.<java.util.regex.Matcher: boolean find()>()
+org.apache.ambari.server.api.UserNameOverrideFilter.doFilter : $z0 = r14 instanceof javax.servlet.http.HttpServletRequest
+org.apache.ambari.server.api.UserNameOverrideFilter.doFilter : $r8 = interfaceinvoke r3.<javax.servlet.http.HttpServletRequest: java.lang.String getRequestURI()>()
+org.apache.ambari.server.api.UserNameOverrideFilter.doFilter : r3 = (javax.servlet.http.HttpServletRequest) r14
+org.apache.ambari.server.api.UserNameOverrideFilter.doFilter : interfaceinvoke r2.<javax.servlet.FilterChain: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)>(r14, r1)
+org.apache.ambari.server.api.UserNameOverrideFilter.getUserNameMatcher : $r2 = <org.apache.ambari.server.api.UserNameOverrideFilter: java.util.regex.Pattern USER_NAME_IN_URI_REGEXP>

@@ -1,0 +1,10 @@
+org.apache.ambari.server.utils.ManagedThreadPoolExecutor.start : $r4 = r0.<org.apache.ambari.server.utils.ManagedThreadPoolExecutor: java.util.concurrent.locks.ReentrantLock pauseLock>
+org.apache.ambari.server.utils.ManagedThreadPoolExecutor.start : r0.<org.apache.ambari.server.utils.ManagedThreadPoolExecutor: boolean isStopped> = 0
+org.apache.ambari.server.utils.ManagedThreadPoolExecutor.start : $r2 = r0.<org.apache.ambari.server.utils.ManagedThreadPoolExecutor: java.util.concurrent.locks.ReentrantLock pauseLock>
+org.apache.ambari.server.utils.ManagedThreadPoolExecutor.start : $r3 = r0.<org.apache.ambari.server.utils.ManagedThreadPoolExecutor: java.util.concurrent.locks.Condition unpaused>
+org.apache.ambari.server.utils.ManagedThreadPoolExecutor.start : goto [?= return]
+org.apache.ambari.server.utils.ManagedThreadPoolExecutor.isRunning : $z0 = r0.<org.apache.ambari.server.utils.ManagedThreadPoolExecutor: boolean isStopped>
+org.apache.ambari.server.utils.ManagedThreadPoolExecutor.stop : r0.<org.apache.ambari.server.utils.ManagedThreadPoolExecutor: boolean isStopped> = 1
+org.apache.ambari.server.utils.ManagedThreadPoolExecutor.stop : $r2 = r0.<org.apache.ambari.server.utils.ManagedThreadPoolExecutor: java.util.concurrent.locks.ReentrantLock pauseLock>
+org.apache.ambari.server.utils.ManagedThreadPoolExecutor.stop : goto [?= return]
+org.apache.ambari.server.utils.ManagedThreadPoolExecutor.stop : $r3 = r0.<org.apache.ambari.server.utils.ManagedThreadPoolExecutor: java.util.concurrent.locks.ReentrantLock pauseLock>

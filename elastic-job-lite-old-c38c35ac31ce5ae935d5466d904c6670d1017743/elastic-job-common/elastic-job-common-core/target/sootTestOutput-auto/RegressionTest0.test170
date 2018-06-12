@@ -1,0 +1,6 @@
+com.dangdang.ddframe.job.context.TaskContext.getSlaveId : $r1 = r0.<com.dangdang.ddframe.job.context.TaskContext: java.lang.String slaveId>
+com.dangdang.ddframe.job.context.TaskContext.setIdle : r0.<com.dangdang.ddframe.job.context.TaskContext: boolean idle> = z0
+com.dangdang.ddframe.job.context.TaskContext$MetaInfo.getShardingItems : $r1 = r0.<com.dangdang.ddframe.job.context.TaskContext$MetaInfo: java.util.List shardingItems>
+com.dangdang.ddframe.job.context.TaskContext.getTaskName : $r1 = staticinvoke <com.google.common.base.Joiner: com.google.common.base.Joiner on(java.lang.String)>("@-@")
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : $z0 = interfaceinvoke r0.<java.util.List: boolean isEmpty()>()
+com.dangdang.ddframe.job.context.TaskContext$MetaInfo.toString : $r1 = staticinvoke <com.google.common.base.Joiner: com.google.common.base.Joiner on(java.lang.String)>("@-@")

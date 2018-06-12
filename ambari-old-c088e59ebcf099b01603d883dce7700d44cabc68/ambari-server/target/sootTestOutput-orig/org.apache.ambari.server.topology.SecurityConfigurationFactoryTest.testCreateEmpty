@@ -1,0 +1,5 @@
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r2 != null goto $r8 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("type")
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r6 = <org.apache.ambari.server.topology.SecurityConfigurationFactory: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r7 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>("security")
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r36 = <org.apache.ambari.server.topology.SecurityConfigurationFactory: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : return null

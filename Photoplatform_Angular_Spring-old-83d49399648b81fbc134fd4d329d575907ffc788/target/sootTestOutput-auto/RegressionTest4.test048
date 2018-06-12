@@ -1,0 +1,17 @@
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setPhone : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String phone> = r1
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : if r2 != null goto $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : return 0
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : r2 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.model.User.getFirstName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String firstName>
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getCompany : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String company>
+de.htw.sdf.photoplatform.persistence.model.User.setPhotographerData : r0.<de.htw.sdf.photoplatform.persistence.model.User: de.htw.sdf.photoplatform.persistence.model.PhotographerData photographerData> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setCollections : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.util.List collections> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getCollections : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.util.List collections>
+de.htw.sdf.photoplatform.persistence.model.User.setPassword : r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String password> = r1
+de.htw.sdf.photoplatform.persistence.model.UserRole.setUser : r0.<de.htw.sdf.photoplatform.persistence.model.UserRole: de.htw.sdf.photoplatform.persistence.model.User user> = r1
+de.htw.sdf.photoplatform.persistence.model.User.setUsername : r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String email> = r1
+de.htw.sdf.photoplatform.persistence.model.User.isPhotographer : $z0 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean isRoleIncluded(java.lang.String)>("ROLE_PHOTOGRAPHER")
+de.htw.sdf.photoplatform.persistence.model.User.getUserRoles : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List userRoles>
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : r3 = interfaceinvoke r0.<java.util.List: java.util.Iterator iterator()>()
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : $r6 = new java.util.ArrayList
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : $r1 = <java.lang.Boolean: java.lang.Boolean FALSE>

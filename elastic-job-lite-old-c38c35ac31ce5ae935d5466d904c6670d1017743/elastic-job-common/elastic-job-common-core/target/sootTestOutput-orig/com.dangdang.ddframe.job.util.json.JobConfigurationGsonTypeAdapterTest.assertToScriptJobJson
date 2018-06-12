@@ -1,0 +1,64 @@
+com.dangdang.ddframe.job.config.script.ScriptJobConfiguration.getJobClass : $r1 = r0.<com.dangdang.ddframe.job.config.script.ScriptJobConfiguration: java.lang.String jobClass>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobParameter : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String jobParameter>
+com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.setUp : $r0 = new com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest$JobConfigurationGsonTypeAdapter
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobName : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String jobName>
+com.dangdang.ddframe.job.fixture.APIJsonConstants.getScriptJobJson : $r1 = newarray (java.lang.Object)[1]
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getDescription : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String description>
+com.dangdang.ddframe.job.util.json.GsonFactory.getGson : $r0 = <com.dangdang.ddframe.job.util.json.GsonFactory: com.google.gson.Gson gson>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : return r2
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : r1 = staticinvoke <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] values()>()
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : $r3 = virtualinvoke r2.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String getKey()>()
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : r2 = r1[i1]
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobProperties : $r3 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: com.dangdang.ddframe.job.executor.handler.JobProperties jobProperties>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobProperties : return r0
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getDefaultValue : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String defaultValue>
+com.dangdang.ddframe.job.fixture.APIJsonConstants.getJobPropertiesJson : $r2 = <com.dangdang.ddframe.job.fixture.APIJsonConstants: java.lang.String JOB_PROPS_JSON>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.newBuilder : $r2 = new com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder
+com.dangdang.ddframe.job.executor.handler.JobProperties.get : $r2 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties: java.util.EnumMap map>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getKey : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String key>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String jobName>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $z5 = 1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $z4 = 1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $r2 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String cron>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.values : $r0 = <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] $VALUES>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getShardingTotalCount : $i0 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: int shardingTotalCount>
+com.dangdang.ddframe.job.config.script.ScriptJobConfiguration.getScriptCommandLine : $r1 = r0.<com.dangdang.ddframe.job.config.script.ScriptJobConfiguration: java.lang.String scriptCommandLine>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getCron : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String cron>
+com.dangdang.ddframe.job.executor.handler.JobProperties.json : $r4 = new java.util.LinkedHashMap
+com.dangdang.ddframe.job.executor.handler.JobProperties.json : r3 = r2[i2]
+com.dangdang.ddframe.job.executor.handler.JobProperties.json : r2 = staticinvoke <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] values()>()
+com.dangdang.ddframe.job.executor.handler.JobProperties.json : $r8 = virtualinvoke r3.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String getKey()>()
+com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest$JobConfigurationGsonTypeAdapter.writeCustomized : $r3 = (com.dangdang.ddframe.job.fixture.config.TestJobRootConfiguration) r2
+com.dangdang.ddframe.job.fixture.config.TestJobRootConfiguration.getTypeConfig : $r1 = r0.<com.dangdang.ddframe.job.fixture.config.TestJobRootConfiguration: com.dangdang.ddframe.job.config.JobTypeConfiguration typeConfig>
+com.dangdang.ddframe.job.fixture.config.TestScriptJobConfiguration.getTypeConfig : $r1 = new com.dangdang.ddframe.job.config.script.ScriptJobConfiguration
+com.dangdang.ddframe.job.fixture.config.TestScriptJobConfiguration.getTypeConfig : $r3 = <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum JOB_EXCEPTION_HANDLER>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.isFailover : $z0 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: boolean failover>
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : r3 = staticinvoke <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum 'from'(java.lang.String)>(r1)
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : $r4 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties: java.util.EnumMap map>
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : if null != r2 goto $r4 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties: java.util.EnumMap map>
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : if null == r3 goto return
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobProperties : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: com.dangdang.ddframe.job.executor.handler.JobProperties jobProperties>
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r9 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("jobClass")
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r37 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("failover")
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r41 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("misfire")
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r27 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("shardingItemParameters")
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r64 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("scriptCommandLine")
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : virtualinvoke r0.<com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter: void writeCustomized(com.google.gson.stream.JsonWriter,com.dangdang.ddframe.job.config.JobRootConfiguration)>(r1, r2)
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter beginObject()>()
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r18 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("cron")
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r63 = interfaceinvoke r2.<com.dangdang.ddframe.job.config.JobRootConfiguration: com.dangdang.ddframe.job.config.JobTypeConfiguration getTypeConfig()>()
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r50 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("jobProperties")
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r56 = interfaceinvoke r2.<com.dangdang.ddframe.job.config.JobRootConfiguration: com.dangdang.ddframe.job.config.JobTypeConfiguration getTypeConfig()>()
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r32 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("jobParameter")
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r4 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("jobName")
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter endObject()>()
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r23 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("shardingTotalCount")
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r45 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("description")
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r3 = (com.dangdang.ddframe.job.config.JobRootConfiguration) r2
+com.dangdang.ddframe.job.util.json.AbstractJobConfigurationGsonTypeAdapter.write : $r13 = virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter name(java.lang.String)>("jobType")
+com.dangdang.ddframe.job.config.script.ScriptJobConfiguration.getCoreConfig : $r1 = r0.<com.dangdang.ddframe.job.config.script.ScriptJobConfiguration: com.dangdang.ddframe.job.config.JobCoreConfiguration coreConfig>
+com.dangdang.ddframe.job.config.script.ScriptJobConfiguration.getJobType : $r1 = r0.<com.dangdang.ddframe.job.config.script.ScriptJobConfiguration: com.dangdang.ddframe.job.api.JobType jobType>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getShardingItemParameters : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String shardingItemParameters>
+com.dangdang.ddframe.job.util.json.GsonFactory.registerTypeAdapter : $r4 = <com.dangdang.ddframe.job.util.json.GsonFactory: com.google.gson.GsonBuilder GSON_BUILDER>
+com.dangdang.ddframe.job.util.json.GsonFactory.registerTypeAdapter : $r2 = <com.dangdang.ddframe.job.util.json.GsonFactory: com.google.gson.GsonBuilder GSON_BUILDER>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.isMisfire : $z0 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: boolean misfire>

@@ -1,0 +1,1 @@
+org.apache.accumulo.master.tableOps.DeleteNamespace.call : $r2 = virtualinvoke r1.<org.apache.accumulo.master.Master: org.apache.accumulo.master.EventCoordinator getEventCoordinator()>()

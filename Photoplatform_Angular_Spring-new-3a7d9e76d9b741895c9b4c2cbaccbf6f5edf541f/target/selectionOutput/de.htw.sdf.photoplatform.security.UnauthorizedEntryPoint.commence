@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.security.UnauthorizedEntryPoint.commence : interfaceinvoke r2.<javax.servlet.http.HttpServletResponse: void sendError(int,java.lang.String)>(401, "Unauthorized: Authentication token was either missing or invalid.") >>>>>>>> de.htw.sdf.photoplatform.security.UnauthorizedEntryPoint.commence : return

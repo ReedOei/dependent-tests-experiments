@@ -1,0 +1,12 @@
+de.htw.sdf.photoplatform.persistence.model.Image.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.model.Image.getMobileThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mobileThumbPath>
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.persistence.model.Image.setMetaData : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String metaData> = r1
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.createPhotographImage : $r10 = r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.repository.ImageDAO imageDAO>
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.createPhotographImage : $r7 = new java.util.ArrayList
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.createPhotographImage : $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: java.util.List createPhotographImage(de.htw.sdf.photoplatform.persistence.model.User,java.util.List)>(r1, $r4)
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.createPhotographImage : $r4 = new java.util.ArrayList
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.createPhotographImage : $r9 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.createPhotographImage : interfaceinvoke $r4.<java.util.List: boolean add(java.lang.Object)>(r2)
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.createPhotographImage : r4 = interfaceinvoke r2.<java.util.List: java.util.Iterator iterator()>()
+de.htw.sdf.photoplatform.persistence.model.Image.toString : $r1 = new java.lang.StringBuilder

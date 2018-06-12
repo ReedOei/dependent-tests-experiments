@@ -1,0 +1,1 @@
+org.apache.accumulo.master.tableOps.DeleteTable.call : $r2 = staticinvoke <org.apache.accumulo.server.tables.TableManager: org.apache.accumulo.server.tables.TableManager getInstance()>()

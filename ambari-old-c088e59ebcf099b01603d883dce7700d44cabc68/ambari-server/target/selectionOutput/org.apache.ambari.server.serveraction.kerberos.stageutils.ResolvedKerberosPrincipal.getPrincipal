@@ -1,0 +1,1 @@
+org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal.getPrincipal : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal: java.lang.String principal> >>>>>>>> org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal.getPrincipal : return $r1

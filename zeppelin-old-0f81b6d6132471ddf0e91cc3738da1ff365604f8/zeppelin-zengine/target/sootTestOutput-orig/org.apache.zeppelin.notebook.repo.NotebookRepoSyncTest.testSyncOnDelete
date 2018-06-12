@@ -1,0 +1,282 @@
+org.apache.zeppelin.notebook.Note.generateId : $r1 = staticinvoke <org.apache.zeppelin.notebook.utility.IdHashes: java.lang.String generateId()>()
+org.apache.zeppelin.interpreter.InterpreterSettingManager.getInterpreterSettings : $r10 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterBindings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.getInterpreterSettings : return $r8
+org.apache.zeppelin.interpreter.InterpreterSettingManager.getInterpreterSettings : r5 = interfaceinvoke r4.<java.util.List: java.util.Iterator iterator()>()
+org.apache.zeppelin.interpreter.InterpreterSettingManager.getInterpreterSettings : $r8 = new java.util.ArrayList
+org.apache.zeppelin.interpreter.InterpreterSettingManager.getInterpreterSettings : $r9 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterSettings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.getInterpreterSettings : if r4 == null goto exitmonitor $r9
+org.apache.zeppelin.notebook.utility.IdHashes.generateId : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.save : $i0 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: int getRepoCount()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.save : $r4 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: org.apache.zeppelin.notebook.repo.NotebookRepo getRepo(int)>(0)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.save : goto [?= return]
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.save : $r5 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: org.apache.zeppelin.notebook.repo.NotebookRepo getRepo(int)>(1)
+org.apache.zeppelin.notebook.Note.getParagraphs : $r3 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.Note.getParagraphs : $r4 = new java.util.LinkedList
+org.apache.zeppelin.notebook.repo.mock.VFSNotebookRepoMock.modifyNotebookDir : return r2
+org.apache.zeppelin.notebook.repo.mock.VFSNotebookRepoMock.modifyNotebookDir : r2 = staticinvoke <org.apache.zeppelin.conf.ZeppelinConfiguration: org.apache.zeppelin.conf.ZeppelinConfiguration create()>()
+org.apache.zeppelin.notebook.repo.mock.VFSNotebookRepoMock.modifyNotebookDir : $r7 = <org.apache.zeppelin.conf.ZeppelinConfiguration$ConfVars: org.apache.zeppelin.conf.ZeppelinConfiguration$ConfVars ZEPPELIN_NOTEBOOK_DIR>
+org.apache.zeppelin.notebook.repo.mock.VFSNotebookRepoMock.modifyNotebookDir : $r3 = new java.lang.StringBuilder
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepoCount : $r1 = r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: java.util.List repos>
+org.apache.zeppelin.notebook.Notebook.bindInterpretersToNote : if r4 == null goto return
+org.apache.zeppelin.notebook.Notebook.bindInterpretersToNote : r6 = interfaceinvoke r5.<java.util.List: java.util.Iterator iterator()>()
+org.apache.zeppelin.notebook.Notebook.bindInterpretersToNote : $r8 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager>
+org.apache.zeppelin.notebook.Notebook.bindInterpretersToNote : $r9 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager>
+org.apache.zeppelin.notebook.Notebook.bindInterpretersToNote : r4 = virtualinvoke r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.notebook.Note getNote(java.lang.String)>(r2)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getPath : $r12 = new java.lang.StringBuilder
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getPath : $r4 = virtualinvoke r1.<java.lang.String: java.lang.String trim()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getPath : $z0 = virtualinvoke r1.<java.lang.String: boolean startsWith(java.lang.String)>("/")
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getPath : if r1 == null goto $r2 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: java.net.URI filesystemRoot>
+org.apache.zeppelin.notebook.Note.setNoteNameListener : r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.notebook.NoteNameListener noteNameListener> = r1
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.toJson : $r1 = <org.apache.zeppelin.interpreter.InterpreterInfoSaving: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.Note.getConfig : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.notebook.Note.getConfig : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.get : $r5 = new java.util.ArrayList
+org.apache.zeppelin.interpreter.InterpreterSettingManager.get : exitmonitor $r4
+org.apache.zeppelin.interpreter.InterpreterSettingManager.get : $r4 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterSettings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.get : $r8 = new org.apache.zeppelin.interpreter.InterpreterSettingManager$7
+org.apache.zeppelin.notebook.Note.convertOldInput : $r3 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.setInterpreterBinding : $r10 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterSettings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.setInterpreterBinding : $r13 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterBindings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.setInterpreterBinding : exitmonitor $r10
+org.apache.zeppelin.interpreter.InterpreterSettingManager.setInterpreterBinding : $r9 = new java.util.LinkedList
+org.apache.zeppelin.interpreter.InterpreterSettingManager.setInterpreterBinding : if r6 == null goto $r13 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterBindings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.setInterpreterBinding : virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: void saveToFile()>()
+org.apache.zeppelin.interpreter.InterpreterSettingManager.setInterpreterBinding : $r11 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterBindings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.setInterpreterBinding : r22 = interfaceinvoke r6.<java.util.List: java.util.Iterator iterator()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getRootDir : $r2 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.commons.vfs2.FileSystemManager fsManager>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getRootDir : $z1 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: boolean isDirectory(org.apache.commons.vfs2.FileObject)>(r1)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getRootDir : $z0 = interfaceinvoke r1.<org.apache.commons.vfs2.FileObject: boolean exists()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getRootDir : return r1
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : r4 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.commons.vfs2.FileObject getRootDir()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : $r19 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : $r22 = <org.apache.commons.vfs2.NameScope: org.apache.commons.vfs2.NameScope CHILD>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : $r16 = <org.apache.commons.vfs2.NameScope: org.apache.commons.vfs2.NameScope CHILD>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : $z1 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: boolean isDirectory(org.apache.commons.vfs2.FileObject)>(r5)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : $r14 = virtualinvoke r1.<org.apache.zeppelin.notebook.Note: java.lang.String getId()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : interfaceinvoke r5.<org.apache.commons.vfs2.FileObject: void createFolder()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : virtualinvoke r7.<java.io.OutputStream: void close()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : r3 = virtualinvoke r1.<org.apache.zeppelin.notebook.Note: java.lang.String toJson()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : $z0 = interfaceinvoke r5.<org.apache.commons.vfs2.FileObject: boolean exists()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : $r9 = <org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.save : $r17 = interfaceinvoke r6.<org.apache.commons.vfs2.FileObject: org.apache.commons.vfs2.FileContent getContent()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.setNewNotePermissions : $z0 = staticinvoke <org.apache.zeppelin.user.AuthenticationInfo: boolean isAnonymous(org.apache.zeppelin.user.AuthenticationInfo)>(r2)
+org.apache.zeppelin.interpreter.InterpreterSettingManager.getAllInterpreterGroup : $r5 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterSettings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.getAllInterpreterGroup : $r4 = new java.util.ArrayList
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getNote : virtualinvoke r4.<java.io.InputStream: void close()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getNote : r6 = staticinvoke <org.apache.zeppelin.notebook.Note: org.apache.zeppelin.notebook.Note fromJson(java.lang.String)>(r5)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getNote : $z1 = interfaceinvoke r2.<org.apache.commons.vfs2.FileObject: boolean exists()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getNote : $r14 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getNote : $z0 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: boolean isDirectory(org.apache.commons.vfs2.FileObject)>(r1)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getNote : r4 = interfaceinvoke r3.<org.apache.commons.vfs2.FileContent: java.io.InputStream getInputStream()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getNote : $r12 = <org.apache.commons.vfs2.NameScope: org.apache.commons.vfs2.NameScope CHILD>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getNote : r3 = interfaceinvoke r2.<org.apache.commons.vfs2.FileObject: org.apache.commons.vfs2.FileContent getContent()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getNote : $r16 = virtualinvoke r6.<org.apache.zeppelin.notebook.Note: java.util.List getParagraphs()>()
+org.apache.zeppelin.notebook.Note.resetRuntimeInfos : $r3 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.Note.snapshotAngularObjectRegistry : $i0 = interfaceinvoke r2.<java.util.List: int size()>()
+org.apache.zeppelin.notebook.Note.snapshotAngularObjectRegistry : $r7 = new java.util.HashMap
+org.apache.zeppelin.notebook.Note.snapshotAngularObjectRegistry : $r8 = r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager>
+org.apache.zeppelin.notebook.Note.snapshotAngularObjectRegistry : if r2 == null goto return
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r16 = <java.math.BigInteger: java.math.BigInteger ZERO>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $i4 = interfaceinvoke $r5.<java.util.List: int size()>()
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r5 = new java.util.ArrayList
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r6 = new java.math.BigInteger
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r17 = new java.lang.StringBuffer
+org.apache.zeppelin.notebook.utility.IdHashes.encode : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("r22 = virtualinvoke $r6.<java.math.BigInteger: java.math.BigInteger pow(int)>(i5)", "org.apache.zeppelin.notebook.utility.IdHashes.encode")]
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r22 = virtualinvoke $r6.<java.math.BigInteger: java.math.BigInteger pow(int)>(i5)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r4 = virtualinvoke r23.<java.math.BigInteger: java.math.BigInteger divide(java.math.BigInteger)>(r3)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r23 = virtualinvoke r21.<java.math.BigInteger: java.math.BigInteger mod(java.math.BigInteger)>(r22)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r21 = virtualinvoke r21.<java.math.BigInteger: java.math.BigInteger subtract(java.math.BigInteger)>(r23)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r19 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(i6)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r12 = new java.math.BigInteger
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $i1 = i5 - 1
+org.apache.zeppelin.notebook.utility.IdHashes.encode : i5 = i5 + 1
+org.apache.zeppelin.notebook.utility.IdHashes.encode : goto [?= $r17 = new java.lang.StringBuffer]
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r14 = <org.apache.zeppelin.notebook.utility.IdHashes: char[] DICTIONARY>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r18 = virtualinvoke $r17.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.zeppelin.notebook.utility.IdHashes.encode : i5 = 1
+org.apache.zeppelin.notebook.FolderView.removeNote : $r5 = r0.<org.apache.zeppelin.notebook.FolderView: java.util.Map index>
+org.apache.zeppelin.notebook.Note.isNameEmpty : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.removeNoteInterpreterSettingBinding : $r4 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterBindings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.removeNoteInterpreterSettingBinding : $r3 = new java.util.ArrayList
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $z1 = interfaceinvoke r24.<org.apache.commons.vfs2.FileObject: boolean exists()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r2 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r8 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.commons.vfs2.FileSystemManager fsManager>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r4 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: java.net.URI filesystemRoot>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r17 = virtualinvoke $r12.<java.io.File: java.net.URI toURI()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : goto [?= $r4 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: java.net.URI filesystemRoot>]
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r3 = new java.net.URI
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r6 = staticinvoke <org.apache.commons.vfs2.VFS: org.apache.commons.vfs2.FileSystemManager getManager()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r12 = new java.io.File
+org.apache.zeppelin.notebook.Notebook.fireNoteCreateEvent : $r4 = r0.<org.apache.zeppelin.notebook.Notebook: java.util.List notebookEventListeners>
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepo : if i0 < 0 goto $r1 = new java.io.IOException
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepo : $i2 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: int getRepoCount()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepo : $r8 = r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: java.util.List repos>
+org.apache.zeppelin.notebook.Note.stopDelayedPersistTimer : entermonitor r0
+org.apache.zeppelin.notebook.Note.stopDelayedPersistTimer : exitmonitor r0
+org.apache.zeppelin.notebook.Note.stopDelayedPersistTimer : $r4 = r0.<org.apache.zeppelin.notebook.Note: java.util.concurrent.ScheduledFuture delayedPersist>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getNoteInfo : $r3 = new org.apache.zeppelin.notebook.NoteInfo
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getNoteInfo : r2 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.zeppelin.notebook.Note getNote(org.apache.commons.vfs2.FileObject)>(r1)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : goto [?= i1 = i1 + 1]
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : $z2 = virtualinvoke r7.<java.lang.String: boolean startsWith(java.lang.String)>("#")
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : i0 = lengthof r3
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : $r9 = new java.util.LinkedList
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : r19 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.zeppelin.notebook.NoteInfo getNoteInfo(org.apache.commons.vfs2.FileObject)>(r6)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : $z1 = virtualinvoke r7.<java.lang.String: boolean startsWith(java.lang.String)>(".")
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : $z3 = virtualinvoke r7.<java.lang.String: boolean startsWith(java.lang.String)>("~")
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : $z4 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: boolean isDirectory(org.apache.commons.vfs2.FileObject)>(r6)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : interfaceinvoke $r9.<java.util.List: boolean add(java.lang.Object)>(r19)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : r6 = r3[i1]
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : $z0 = interfaceinvoke r6.<org.apache.commons.vfs2.FileObject: boolean isHidden()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : if r19 == null goto (branch)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : $r10 = interfaceinvoke r6.<org.apache.commons.vfs2.FileObject: org.apache.commons.vfs2.FileName getName()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : r2 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.commons.vfs2.FileObject getRootDir()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.list : r3 = interfaceinvoke r2.<org.apache.commons.vfs2.FileObject: org.apache.commons.vfs2.FileObject[] getChildren()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.filterByUser : $r7 = virtualinvoke $r6.<com.google.common.collect.FluentIterable: com.google.common.collect.ImmutableList toList()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.filterByUser : $r8 = virtualinvoke r2.<org.apache.zeppelin.user.AuthenticationInfo: java.lang.String getUser()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.filterByUser : $r4 = staticinvoke <com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable 'from'(java.lang.Iterable)>(r1)
+org.apache.zeppelin.notebook.NotebookAuthorization.filterByUser : r3 = staticinvoke <com.google.common.collect.Sets: java.util.HashSet newHashSet()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.filterByUser : if r2 == null goto $r4 = staticinvoke <com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable 'from'(java.lang.Iterable)>(r1)
+org.apache.zeppelin.notebook.NoteInfo.getId : $r1 = r0.<org.apache.zeppelin.notebook.NoteInfo: java.lang.String id>
+org.apache.zeppelin.notebook.Notebook.removeNote : $r8 = r0.<org.apache.zeppelin.notebook.Notebook: java.util.Map notes>
+org.apache.zeppelin.notebook.Notebook.removeNote : $r7 = r0.<org.apache.zeppelin.notebook.Notebook: java.util.Map notes>
+org.apache.zeppelin.notebook.Notebook.removeNote : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r2, "AuthenticationInfo should not be null")
+org.apache.zeppelin.notebook.Notebook.removeNote : $r17 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager>
+org.apache.zeppelin.notebook.Notebook.removeNote : $r14 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.notebook.NotebookAuthorization notebookAuthorization>
+org.apache.zeppelin.notebook.Notebook.removeNote : goto [?= return]
+org.apache.zeppelin.notebook.Notebook.removeNote : specialinvoke r0.<org.apache.zeppelin.notebook.Notebook: void fireNoteRemoveEvent(org.apache.zeppelin.notebook.Note)>(r3)
+org.apache.zeppelin.notebook.Notebook.removeNote : $r13 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.search.SearchService noteSearchService>
+org.apache.zeppelin.notebook.Notebook.removeNote : exitmonitor $r7
+org.apache.zeppelin.notebook.Notebook.removeNote : goto [?= $r13 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.search.SearchService noteSearchService>]
+org.apache.zeppelin.notebook.Notebook.removeNote : virtualinvoke r3.<org.apache.zeppelin.notebook.Note: void unpersist(org.apache.zeppelin.user.AuthenticationInfo)>(r2)
+org.apache.zeppelin.notebook.Notebook.removeNote : $r11 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager>
+org.apache.zeppelin.notebook.Notebook.removeNote : $r10 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.notebook.FolderView folders>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.getInterpreterSettingIds : $r5 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.List get()>()
+org.apache.zeppelin.interpreter.InterpreterSettingManager.getInterpreterSettingIds : $r4 = new java.util.ArrayList
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.isDirectory : if r1 != null goto $r2 = interfaceinvoke r1.<org.apache.commons.vfs2.FileObject: org.apache.commons.vfs2.FileType getType()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.isDirectory : $r2 = interfaceinvoke r1.<org.apache.commons.vfs2.FileObject: org.apache.commons.vfs2.FileType getType()>()
+org.apache.zeppelin.notebook.Note.hashCode : $r8 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map angularObjects>
+org.apache.zeppelin.notebook.Note.hashCode : $r7 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.notebook.Note.hashCode : $r9 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String id>
+org.apache.zeppelin.notebook.Note.hashCode : $r10 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.Note.hashCode : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.Note.hashCode : $i0 = 31 * $i4
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getMaxRepoNum : return 2
+org.apache.zeppelin.notebook.Notebook.loadAllNotes : r3 = interfaceinvoke r2.<java.util.List: java.util.Iterator iterator()>()
+org.apache.zeppelin.notebook.Notebook.loadAllNotes : $r5 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.notebook.repo.NotebookRepo notebookRepo>
+org.apache.zeppelin.notebook.Note.fromJson : staticinvoke <org.apache.zeppelin.notebook.Note: void convertOldInput(org.apache.zeppelin.notebook.Note)>(r1)
+org.apache.zeppelin.notebook.Note.fromJson : virtualinvoke r1.<org.apache.zeppelin.notebook.Note: void resetRuntimeInfos()>()
+org.apache.zeppelin.notebook.Note.fromJson : return r1
+org.apache.zeppelin.notebook.Note.fromJson : $r2 = <org.apache.zeppelin.notebook.Note: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.Notebook.fireNoteRemoveEvent : $r4 = r0.<org.apache.zeppelin.notebook.Notebook: java.util.List notebookEventListeners>
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.list : $r2 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: org.apache.zeppelin.notebook.repo.NotebookRepo getRepo(int)>(i0)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.list : $r2 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: org.apache.zeppelin.notebook.repo.NotebookRepo getRepo(int)>(0)
+org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.delete : $i1 = lengthof r1
+org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.delete : $z0 = virtualinvoke r0.<java.io.File: boolean isFile()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.delete : r1 = virtualinvoke r0.<java.io.File: java.io.File[] listFiles()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.delete : staticinvoke <org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest: void delete(java.io.File)>(r3)
+org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.delete : if r1 == null goto virtualinvoke r0.<java.io.File: boolean delete()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.delete : $z1 = virtualinvoke r0.<java.io.File: boolean isDirectory()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.delete : virtualinvoke r0.<java.io.File: boolean delete()>()
+org.apache.zeppelin.interpreter.InterpreterSettingManager.init : $r6 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.init : $r7 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>()
+org.apache.zeppelin.interpreter.InterpreterSettingManager.init : $r9 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.nio.file.Path interpreterDirPath>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.init : $r11 = <org.apache.zeppelin.interpreter.InterpreterSettingManager: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.init : virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: void saveToFile()>()
+org.apache.zeppelin.interpreter.InterpreterSettingManager.init : specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: void loadFromFile()>()
+org.apache.zeppelin.notebook.Note.getId : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String id>
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r2 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : exitmonitor $r2
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r5 = <org.apache.zeppelin.notebook.NotebookAuthorization: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r3 = new org.apache.zeppelin.notebook.NotebookAuthorizationInfoSaving
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $z0 = virtualinvoke $r6.<java.io.File: boolean exists()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r6 = new java.io.File
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r4 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : virtualinvoke $r6.<java.io.File: boolean createNewFile()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r13 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.Note.toJson : $r1 = <org.apache.zeppelin.notebook.Note: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.Note.unpersist : $r2 = r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.notebook.repo.NotebookRepo repo>
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : virtualinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: void sync(int,int,org.apache.zeppelin.user.AuthenticationInfo)>(0, 1, r1)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : $r13 = interfaceinvoke r8.<java.util.Map: java.lang.Object get(java.lang.Object)>("pushNoteIds")
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : r8 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: java.util.Map notesCheckDiff(java.util.List,org.apache.zeppelin.notebook.repo.NotebookRepo,java.util.List,org.apache.zeppelin.notebook.repo.NotebookRepo,org.apache.zeppelin.user.AuthenticationInfo)>(r6, r3, r7, r4, r1)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : r4 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: org.apache.zeppelin.notebook.repo.NotebookRepo getRepo(int)>(i1)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : r7 = interfaceinvoke r4.<org.apache.zeppelin.notebook.repo.NotebookRepo: java.util.List list(org.apache.zeppelin.user.AuthenticationInfo)>(r1)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : r2 = staticinvoke <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization getInstance()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : r3 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: org.apache.zeppelin.notebook.repo.NotebookRepo getRepo(int)>(i0)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : r5 = interfaceinvoke r3.<org.apache.zeppelin.notebook.repo.NotebookRepo: java.util.List list(org.apache.zeppelin.user.AuthenticationInfo)>(r1)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : r6 = virtualinvoke r2.<org.apache.zeppelin.notebook.NotebookAuthorization: java.util.List filterByUser(java.util.List,org.apache.zeppelin.user.AuthenticationInfo)>(r5, r1)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : $z0 = interfaceinvoke r9.<java.util.List: boolean isEmpty()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : $r12 = <org.apache.zeppelin.notebook.repo.NotebookRepoSync: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : $r19 = <org.apache.zeppelin.notebook.repo.NotebookRepoSync: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : $r14 = interfaceinvoke r8.<java.util.Map: java.lang.Object get(java.lang.Object)>("pullNoteIds")
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : $r18 = <org.apache.zeppelin.notebook.repo.NotebookRepoSync: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : $r15 = interfaceinvoke r8.<java.util.Map: java.lang.Object get(java.lang.Object)>("delDstNoteIds")
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : $r16 = <org.apache.zeppelin.notebook.repo.NotebookRepoSync: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.sync : $r17 = <org.apache.zeppelin.notebook.repo.NotebookRepoSync: org.slf4j.Logger LOG>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.removeResourcesBelongsToParagraph : $r6 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.List getAllInterpreterGroup()>()
+org.apache.zeppelin.notebook.Note.persist : $r3 = virtualinvoke r1.<org.apache.zeppelin.user.AuthenticationInfo: java.lang.String getUser()>()
+org.apache.zeppelin.notebook.Note.persist : $r5 = r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.notebook.repo.NotebookRepo repo>
+org.apache.zeppelin.notebook.Note.persist : specialinvoke r0.<org.apache.zeppelin.notebook.Note: void stopDelayedPersistTimer()>()
+org.apache.zeppelin.notebook.Note.persist : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r1, "AuthenticationInfo should not be null")
+org.apache.zeppelin.notebook.Note.persist : $r4 = r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.search.SearchService index>
+org.apache.zeppelin.notebook.Note.getName : $r2 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: java.lang.String getId()>()
+org.apache.zeppelin.notebook.Note.getName : $z0 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: boolean isNameEmpty()>()
+org.apache.zeppelin.notebook.Note.getName : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.removeResourcesBelongsToNote : virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: void removeResourcesBelongsToParagraph(java.lang.String,java.lang.String)>(r1, null)
+org.apache.zeppelin.interpreter.InterpreterSettingManager.saveToFile : $r6 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterBindings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.saveToFile : exitmonitor $r4
+org.apache.zeppelin.interpreter.InterpreterSettingManager.saveToFile : $r5 = new org.apache.zeppelin.interpreter.InterpreterInfoSaving
+org.apache.zeppelin.interpreter.InterpreterSettingManager.saveToFile : $r4 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterSettings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.saveToFile : $r7 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.Map interpreterSettings>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.saveToFile : $r8 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.List interpreterRepositories>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.saveToFile : $r9 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.nio.file.Path interpreterSettingPath>
+org.apache.zeppelin.notebook.NotebookAuthorization.getInstance : $r1 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>
+org.apache.zeppelin.notebook.NotebookAuthorization.getInstance : $r0 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>
+org.apache.zeppelin.notebook.NotebookAuthorization.removeNote : $r2 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.removeNote : specialinvoke r0.<org.apache.zeppelin.notebook.NotebookAuthorization: void saveToFile()>()
+org.apache.zeppelin.interpreter.InterpreterSettingManager.loadFromFile : $r67 = <org.apache.zeppelin.interpreter.InterpreterSettingManager: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.InterpreterSettingManager.loadFromFile : $r5 = r0.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.nio.file.Path interpreterSettingPath>
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.remove : $r6 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.remove : interfaceinvoke r4.<org.apache.zeppelin.notebook.repo.NotebookRepo: void remove(java.lang.String,org.apache.zeppelin.user.AuthenticationInfo)>(r1, r2)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.remove : $r5 = r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: java.util.List repos>
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.remove : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.apache.zeppelin.notebook.Notebook.createNote : $r21 = virtualinvoke r2.<org.apache.zeppelin.user.AuthenticationInfo: java.lang.String getUser()>()
+org.apache.zeppelin.notebook.Notebook.createNote : $r13 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.notebook.FolderView folders>
+org.apache.zeppelin.notebook.Notebook.createNote : if r1 == null goto $r18 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.notebook.NotebookAuthorization notebookAuthorization>
+org.apache.zeppelin.notebook.Notebook.createNote : $r6 = new org.apache.zeppelin.notebook.Note
+org.apache.zeppelin.notebook.Notebook.createNote : virtualinvoke $r6.<org.apache.zeppelin.notebook.Note: void persist(org.apache.zeppelin.user.AuthenticationInfo)>(r2)
+org.apache.zeppelin.notebook.Notebook.createNote : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r1, "AuthenticationInfo should not be null")
+org.apache.zeppelin.notebook.Notebook.createNote : $r18 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.notebook.NotebookAuthorization notebookAuthorization>
+org.apache.zeppelin.notebook.Notebook.createNote : $r6 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager>
+org.apache.zeppelin.notebook.Notebook.createNote : $r15 = r0.<org.apache.zeppelin.notebook.Notebook: java.util.Map notes>
+org.apache.zeppelin.notebook.Notebook.createNote : $r20 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.search.SearchService noteSearchService>
+org.apache.zeppelin.notebook.Notebook.createNote : $r4 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.notebook.Notebook.createNote : specialinvoke r0.<org.apache.zeppelin.notebook.Notebook: void fireNoteCreateEvent(org.apache.zeppelin.notebook.Note)>($r6)
+org.apache.zeppelin.notebook.Notebook.createNote : $r5 = r0.<org.apache.zeppelin.notebook.Notebook: org.apache.zeppelin.search.SearchService noteSearchService>
+org.apache.zeppelin.notebook.Notebook.createNote : return r8
+org.apache.zeppelin.notebook.Notebook.createNote : $r14 = r0.<org.apache.zeppelin.notebook.Notebook: java.util.Map notes>
+org.apache.zeppelin.notebook.Notebook.createNote : exitmonitor $r14
+org.apache.zeppelin.notebook.Notebook.getNote : $r4 = r0.<org.apache.zeppelin.notebook.Notebook: java.util.Map notes>
+org.apache.zeppelin.notebook.Notebook.getNote : $r5 = r0.<org.apache.zeppelin.notebook.Notebook: java.util.Map notes>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.remove : $r7 = <org.apache.commons.vfs2.NameScope: org.apache.commons.vfs2.NameScope CHILD>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.remove : $z1 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: boolean isDirectory(org.apache.commons.vfs2.FileObject)>(r4)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.remove : $z0 = interfaceinvoke r4.<org.apache.commons.vfs2.FileObject: boolean exists()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.remove : $r5 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.commons.vfs2.FileSystemManager fsManager>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.remove : $r8 = <org.apache.commons.vfs2.Selectors: org.apache.commons.vfs2.FileSelector SELECT_SELF_AND_CHILDREN>
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.notesCheckDiff : interfaceinvoke $r15.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("pushNoteIds", $r12)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.notesCheckDiff : r57 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.notesCheckDiff : $r12 = new java.util.ArrayList
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.notesCheckDiff : r60 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.notesCheckDiff : $r15 = new java.util.HashMap
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.notesCheckDiff : $r13 = new java.util.ArrayList
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.notesCheckDiff : $r14 = new java.util.ArrayList
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.notesCheckDiff : interfaceinvoke $r15.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("pullNoteIds", $r13)
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.notesCheckDiff : interfaceinvoke $r15.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("delDstNoteIds", $r14)
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.saveToFile : $r17 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterInfoSaving: java.lang.String toJson()>()
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.saveToFile : $r2 = newarray (java.nio.file.LinkOption)[0]
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.saveToFile : $r3 = newarray (java.nio.file.attribute.FileAttribute)[0]
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.saveToFile : $r12 = <org.apache.zeppelin.interpreter.InterpreterInfoSaving: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.saveToFile : staticinvoke <java.nio.file.Files: java.nio.file.Path setPosixFilePermissions(java.nio.file.Path,java.util.Set)>(r1, r10)
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.saveToFile : goto [?= $r12 = <org.apache.zeppelin.interpreter.InterpreterInfoSaving: org.slf4j.Logger LOGGER>]
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.saveToFile : $r6 = <java.nio.file.attribute.PosixFilePermission: java.nio.file.attribute.PosixFilePermission OWNER_READ>
+org.apache.zeppelin.notebook.NotebookAuthorization.init : $r3 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>
+org.apache.zeppelin.notebook.NotebookAuthorization.init : $r12 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>

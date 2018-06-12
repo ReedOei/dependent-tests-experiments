@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.repository.ClusterVersionSummary.getAvailableServiceNames : $r1 = r0.<org.apache.ambari.server.state.repository.ClusterVersionSummary: java.util.Set m_available> >>>>>>>> org.apache.ambari.server.state.repository.ClusterVersionSummary.getAvailableServiceNames : return $r1

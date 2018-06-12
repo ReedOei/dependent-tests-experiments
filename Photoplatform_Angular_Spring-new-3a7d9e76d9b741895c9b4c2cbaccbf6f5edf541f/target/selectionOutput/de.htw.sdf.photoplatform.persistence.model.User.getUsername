@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.persistence.model.User.getUsername : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String email> >>>>>>>> de.htw.sdf.photoplatform.persistence.model.User.getUsername : return $r1

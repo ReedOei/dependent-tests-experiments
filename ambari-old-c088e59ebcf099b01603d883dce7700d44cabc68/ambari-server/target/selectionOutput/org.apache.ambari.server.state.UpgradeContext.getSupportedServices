@@ -1,0 +1,2 @@
+org.apache.ambari.server.state.UpgradeContext.getSupportedServices : $r1 = r0.<org.apache.ambari.server.state.UpgradeContext: java.util.Set m_services> >>>>>>>> org.apache.ambari.server.state.UpgradeContext.getSupportedServices : $r2 = staticinvoke <java.util.Collections: java.util.Set unmodifiableSet(java.util.Set)>($r1)
+org.apache.ambari.server.state.UpgradeContext.getSupportedServices : $r2 = staticinvoke <java.util.Collections: java.util.Set unmodifiableSet(java.util.Set)>($r1) >>>>>>>> org.apache.ambari.server.state.UpgradeContext.getSupportedServices : return $r2

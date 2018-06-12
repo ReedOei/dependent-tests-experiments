@@ -1,0 +1,41 @@
+org.apache.ambari.server.topology.ClusterTopologyImpl.isNameNodeHAEnabled : $z0 = interfaceinvoke r0.<java.util.Map: boolean containsKey(java.lang.Object)>("hdfs-site")
+org.apache.ambari.server.topology.Configuration.getParentConfiguration : $r1 = r0.<org.apache.ambari.server.topology.Configuration: org.apache.ambari.server.topology.Configuration parentConfiguration>
+org.apache.ambari.server.topology.BlueprintImpl.getStack : $r1 = r0.<org.apache.ambari.server.topology.BlueprintImpl: org.apache.ambari.server.controller.internal.Stack stack>
+org.apache.ambari.server.topology.BlueprintImpl.getConfiguration : $r1 = r0.<org.apache.ambari.server.topology.BlueprintImpl: org.apache.ambari.server.topology.Configuration configuration>
+org.apache.ambari.server.topology.BlueprintImpl.getHostGroups : $r1 = r0.<org.apache.ambari.server.topology.BlueprintImpl: java.util.Map hostGroups>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : if r1 == null goto $r7 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.topology.Blueprint blueprint>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r85 = interfaceinvoke r101.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r82 = interfaceinvoke r99.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : if r104 == null goto (branch)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : z28 = 0
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r13 = new java.util.HashMap
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r5 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.topology.Blueprint blueprint>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r81 = interfaceinvoke r99.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : if z27 != 0 goto $z29 = staticinvoke <org.apache.ambari.server.utils.SecretReference: boolean isSecret(java.lang.String)>(r104)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r73 = interfaceinvoke r1.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r10 = interfaceinvoke r105.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r87 = interfaceinvoke r102.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : if z28 == 0 goto $r7 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.topology.Blueprint blueprint>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r79 = interfaceinvoke r98.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r80 = interfaceinvoke r99.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $z1 = virtualinvoke r111.<java.lang.String: boolean equals(java.lang.Object)>("MYSQL_SERVER")
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $z29 = staticinvoke <org.apache.ambari.server.utils.SecretReference: boolean isSecret(java.lang.String)>(r104)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r70 = <org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.configuration.Configuration configuration>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r7 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.topology.Blueprint blueprint>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r11 = new java.util.HashSet
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r12 = new java.util.HashMap
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r14 = interfaceinvoke r106.<org.apache.ambari.server.topology.HostGroup: org.apache.ambari.server.topology.Configuration getConfiguration()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r17 = interfaceinvoke r110.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r72 = new java.lang.StringBuilder
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r16 = interfaceinvoke r106.<org.apache.ambari.server.topology.HostGroup: java.util.Collection getComponentNames()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateRequiredProperties : $r86 = interfaceinvoke r102.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.topology.BlueprintImpl.validateRequiredProperties : $r1 = r0.<org.apache.ambari.server.topology.BlueprintImpl: org.apache.ambari.server.topology.BlueprintValidator validator>
+org.apache.ambari.server.topology.BlueprintImplTest.setupConfigurationWithGPLLicense : $r3 = virtualinvoke r0.<org.apache.ambari.server.configuration.Configuration: java.lang.Boolean getGplLicenseAccepted()>()
+org.apache.ambari.server.topology.BlueprintImplTest.setupConfigurationWithGPLLicense : virtualinvoke r1.<java.lang.reflect.Field: void set(java.lang.Object,java.lang.Object)>(null, r0)
+org.apache.ambari.server.topology.BlueprintImplTest.setupConfigurationWithGPLLicense : $r2 = staticinvoke <org.easymock.EasyMock: java.lang.Object mock(java.lang.Class)>(class "Lorg/apache/ambari/server/configuration/Configuration;")
+org.apache.ambari.server.topology.BlueprintImplTest.setupConfigurationWithGPLLicense : virtualinvoke r1.<java.lang.reflect.Field: void setAccessible(boolean)>(1)
+org.apache.ambari.server.topology.BlueprintImplTest.setupConfigurationWithGPLLicense : return r0
+org.apache.ambari.server.topology.BlueprintImplTest.setupConfigurationWithGPLLicense : $r8 = class "Lorg/apache/ambari/server/topology/BlueprintValidatorImpl;"
+org.apache.ambari.server.topology.Configuration.getProperties : $r1 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map properties>
+org.apache.ambari.server.utils.SecretReference.isSecret : r1 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>(":")
+org.apache.ambari.server.utils.SecretReference.isSecret : $i0 = lengthof r1

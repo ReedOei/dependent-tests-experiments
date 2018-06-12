@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer.setIban : r0.<de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer: java.lang.String iban> = r1
+de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer.setCompany : r0.<de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer: java.lang.String company> = r1
+de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer.getPhone : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer: java.lang.String phone>

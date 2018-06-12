@@ -1,0 +1,82 @@
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.closeConnection : $r2 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.closeConnection : $r1 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.closeConnection : goto [?= return]
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setConnection : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection> = r0
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setCheckResult : $i0 = virtualinvoke r0.<org.apache.ambari.server.checks.DatabaseConsistencyCheckResult: int ordinal()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setCheckResult : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.apache.ambari.server.checks.DatabaseConsistencyCheckResult checkResult> = r0
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.apache.ambari.server.api.services.AmbariMetaInfo ambariMetaInfo> = null
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection> = null
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: com.google.inject.Injector injector> = r0
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: void closeConnection()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.apache.ambari.server.orm.DBAccessor dbAccessor> = null
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.apache.ambari.server.orm.dao.MetainfoDAO metainfoDAO> = null
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.getResultSetColumn : $r4 = interfaceinvoke r0.<java.sql.ResultSet: java.lang.Object getObject(java.lang.String)>(r1)
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.getResultSetColumn : $r3 = new java.util.ArrayList
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.getResultSetColumn : return $r3
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.getResultSetColumn : if null == r0 goto return $r3
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.getResultSetColumn : $z0 = interfaceinvoke r0.<java.sql.ResultSet: boolean next()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : interfaceinvoke r57.<java.sql.ResultSet: void close()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r11 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: com.google.inject.Injector injector>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r20 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: void ensureConnection()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : r4 = staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.util.ArrayList getResultSetColumn(java.sql.ResultSet,java.lang.String)>(r57, "table_schema")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r15 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.slf4j.Logger LOG>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $z0 = interfaceinvoke r1.<java.util.List: boolean isEmpty()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r16 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r33 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r22 = staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.util.ArrayList getResultSetColumn(java.sql.ResultSet,java.lang.String)>(r53, "TABLE_SCHEM")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : r1 = staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.util.ArrayList getResultSetColumn(java.sql.ResultSet,java.lang.String)>(r55, "search_path")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r32 = virtualinvoke r0.<org.apache.ambari.server.configuration.Configuration: java.lang.String getDatabaseSchema()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r13 = virtualinvoke r0.<org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$DatabaseType getDatabaseType()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r34 = virtualinvoke r0.<org.apache.ambari.server.configuration.Configuration: java.lang.String getDatabaseSchema()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $z1 = interfaceinvoke $r59.<java.util.List: boolean isEmpty()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r18 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $i0 = virtualinvoke r4.<java.util.ArrayList: int size()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r24 = staticinvoke <com.google.common.base.Splitter: com.google.common.base.Splitter on(java.lang.String)>(",")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : interfaceinvoke r53.<java.sql.ResultSet: void close()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : if z4 != 0 goto r1 = staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.util.ArrayList getResultSetColumn(java.sql.ResultSet,java.lang.String)>(r55, "search_path")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.resetCheckResult : $r0 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckResult: org.apache.ambari.server.checks.DatabaseConsistencyCheckResult DB_CHECK_SUCCESS>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.warning : $r2 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.slf4j.Logger LOG>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.warning : $r3 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckResult: org.apache.ambari.server.checks.DatabaseConsistencyCheckResult DB_CHECK_WARNING>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : $r1 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckResult: org.apache.ambari.server.checks.DatabaseConsistencyCheckResult DB_CHECK_ERROR>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.resultSet : $z1 = interfaceinvoke r3.<java.sql.ResultSet: boolean next()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.resultSet : r5 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.resultSet : goto [?= $z3 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.resultSet : $z0 = interfaceinvoke r2.<java.util.List: boolean isEmpty()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.resultSet : $r6 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Ljava/sql/ResultSet;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.resultSet : $z2 = interfaceinvoke r3.<java.sql.ResultSet: boolean next()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.resultSet : if null != r2 goto $r6 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Ljava/sql/ResultSet;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.resultSet : $r11 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.resultSet : $r12 = interfaceinvoke r3.<java.sql.ResultSet: java.lang.Object getObject(java.lang.String)>(r1)
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.resultSet : r4 = interfaceinvoke r2.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.ensureConnection : $r4 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: com.google.inject.Injector injector>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.ensureConnection : $r0 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.ensureConnection : $r2 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.ensureConnection : $r1 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r36 = interfaceinvoke r7.<java.sql.Connection: java.sql.Statement createStatement()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r58 = newarray (java.lang.Object)[7]
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: void resetCheckResult()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r33 = interfaceinvoke r7.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r17 = staticinvoke <org.easymock.EasyMock: java.lang.Object createStrictMock(java.lang.Class)>(class "Ljava/sql/Statement;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: void setInjector(com.google.inject.Injector)>(r12)
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r53 = staticinvoke <org.easymock.EasyMock: java.lang.String anyString()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r56 = specialinvoke r0.<org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest: java.sql.ResultSet resultSet(java.lang.String,java.util.List)>("table_schema", r4)
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r19 = staticinvoke <org.easymock.EasyMock: java.lang.Object createStrictMock(java.lang.Class)>(class "Ljava/sql/DatabaseMetaData;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r14 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Lorg/apache/ambari/server/state/stack/OsFamily;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r13 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Lorg/apache/ambari/server/configuration/Configuration;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r39 = interfaceinvoke r7.<java.sql.Connection: java.sql.Statement createStatement()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r15 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Ljava/sql/Connection;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r22 = virtualinvoke r5.<org.apache.ambari.server.configuration.Configuration: java.lang.String getDatabaseSchema()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r46 = staticinvoke <org.easymock.EasyMock: java.lang.String anyString()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r50 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayList(java.lang.Object[])>($r49)
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r20 = newarray (com.google.inject.Module)[1]
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r30 = interfaceinvoke r8.<org.apache.ambari.server.orm.DBAccessor: java.sql.Connection getConnection()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: void setConnection(java.sql.Connection)>(null)
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r26 = virtualinvoke r5.<org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$DatabaseType getDatabaseType()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r16 = staticinvoke <org.easymock.EasyMock: java.lang.Object createStrictMock(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/DBAccessor;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r18 = staticinvoke <org.easymock.EasyMock: java.lang.Object createStrictMock(java.lang.Class)>(class "Ljava/sql/Statement;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest.setupMocksForTestSchemaName : $r42 = interfaceinvoke r11.<java.sql.DatabaseMetaData: java.sql.ResultSet getSchemas()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$5.configure : $r5 = virtualinvoke r0.<org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$5: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/configuration/Configuration;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$5.configure : $r1 = virtualinvoke r0.<org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$5: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/DBAccessor;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$5.configure : $r3 = virtualinvoke r0.<org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$5: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/stack/OsFamily;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.getLastCheckResult : $r0 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.apache.ambari.server.checks.DatabaseConsistencyCheckResult checkResult>

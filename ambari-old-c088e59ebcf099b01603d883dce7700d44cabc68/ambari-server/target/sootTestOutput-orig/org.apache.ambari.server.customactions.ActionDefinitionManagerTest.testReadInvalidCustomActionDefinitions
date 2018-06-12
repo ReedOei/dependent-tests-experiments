@@ -1,0 +1,6 @@
+org.apache.ambari.server.customactions.ActionDefinitionManager.readCustomActionDefinitions : $r13 = virtualinvoke r1.<java.io.File: java.lang.String getAbsolutePath()>()
+org.apache.ambari.server.customactions.ActionDefinitionManager.readCustomActionDefinitions : $r64 = <org.apache.ambari.server.stack.StackDirectory: java.io.FilenameFilter FILENAME_FILTER>
+org.apache.ambari.server.customactions.ActionDefinitionManager.readCustomActionDefinitions : $r10 = <org.apache.ambari.server.customactions.ActionDefinitionManager: org.slf4j.Logger LOG>
+org.apache.ambari.server.customactions.ActionDefinitionManager.readCustomActionDefinitions : if r1 == null goto $r10 = <org.apache.ambari.server.customactions.ActionDefinitionManager: org.slf4j.Logger LOG>
+org.apache.ambari.server.customactions.ActionDefinitionManager.readCustomActionDefinitions : $z2 = virtualinvoke r1.<java.io.File: boolean exists()>()
+org.apache.ambari.server.customactions.ActionDefinitionManager.readCustomActionDefinitions : if r2 == null goto return

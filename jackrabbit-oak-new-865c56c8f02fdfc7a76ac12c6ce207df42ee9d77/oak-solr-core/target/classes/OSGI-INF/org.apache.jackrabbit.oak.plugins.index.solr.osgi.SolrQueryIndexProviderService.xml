@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.2.0" immediate="true" name="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService" activate="activate" deactivate="deactivate">
+    <property name="query.aggregation" type="Boolean" value="false"/>
+    <reference name="solrServerProvider" interface="org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerProvider" cardinality="1..1" policy="static" bind="bindSolrServerProvider" unbind="unbindSolrServerProvider"/>
+    <reference name="oakSolrConfigurationProvider" interface="org.apache.jackrabbit.oak.plugins.index.solr.configuration.OakSolrConfigurationProvider" cardinality="1..1" policy="static" bind="bindOakSolrConfigurationProvider" unbind="unbindOakSolrConfigurationProvider"/>
+    <reference name="nodeAggregator" interface="org.apache.jackrabbit.oak.spi.query.QueryIndex$NodeAggregator" cardinality="1..1" policy="dynamic" bind="bindNodeAggregator" unbind="unbindNodeAggregator" policy-option="greedy"/>
+    <implementation class="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService"/>
+</scr:component>

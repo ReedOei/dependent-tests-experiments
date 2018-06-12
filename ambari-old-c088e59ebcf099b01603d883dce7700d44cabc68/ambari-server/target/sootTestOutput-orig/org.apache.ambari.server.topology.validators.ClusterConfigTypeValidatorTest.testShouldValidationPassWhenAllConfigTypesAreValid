@@ -1,0 +1,10 @@
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $r9 = interfaceinvoke r1.<org.apache.ambari.server.topology.ClusterTopology: org.apache.ambari.server.topology.Blueprint getBlueprint()>()
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $r8 = new java.util.HashSet
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $z2 = interfaceinvoke $r11.<java.util.Set: boolean retainAll(java.util.Collection)>($r8)
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $r7 = <org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : goto [?= $z1 = interfaceinvoke r24.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $r11 = new java.util.HashSet
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $r4 = new java.util.HashSet
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $z0 = interfaceinvoke $r4.<java.util.Set: boolean isEmpty()>()
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $r19 = interfaceinvoke r24.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $r20 = interfaceinvoke r1.<org.apache.ambari.server.topology.ClusterTopology: org.apache.ambari.server.topology.Blueprint getBlueprint()>()

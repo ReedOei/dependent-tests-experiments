@@ -1,0 +1,37 @@
+org.apache.ambari.server.security.authorization.UserName.toString : $r1 = r0.<org.apache.ambari.server.security.authorization.UserName: java.lang.String userName>
+org.apache.ambari.server.orm.entities.UserEntity.setMemberEntities : virtualinvoke r0.<org.apache.ambari.server.orm.entities.UserEntity: void _persistence_set_memberEntities(java.util.Set)>(r1)
+org.apache.ambari.server.security.authorization.UsersTest.createInjector : $r3 = newarray (com.google.inject.Module)[1]
+org.apache.ambari.server.orm.entities.UserEntity.setPrincipal : virtualinvoke r0.<org.apache.ambari.server.orm.entities.UserEntity: void _persistence_set_principal(org.apache.ambari.server.orm.entities.PrincipalEntity)>(r1)
+org.apache.ambari.server.orm.entities.PrincipalEntity.setPrivileges : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrincipalEntity: void _persistence_set_privileges(java.util.Set)>(r1)
+org.apache.ambari.server.orm.entities.UserEntity.setUserName : $r2 = virtualinvoke r1.<org.apache.ambari.server.security.authorization.UserName: java.lang.String toString()>()
+org.apache.ambari.server.security.authorization.UsersTest$1.configure : $r1 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Ljavax/persistence/EntityManager;")
+org.apache.ambari.server.security.authorization.UsersTest$1.configure : $r17 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/springframework/security/crypto/password/PasswordEncoder;")
+org.apache.ambari.server.security.authorization.UsersTest$1.configure : $r9 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/UserDAO;")
+org.apache.ambari.server.security.authorization.UsersTest$1.configure : $r11 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/MemberDAO;")
+org.apache.ambari.server.security.authorization.UsersTest$1.configure : $r6 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/stack/OsFamily;")
+org.apache.ambari.server.security.authorization.UsersTest$1.configure : $r14 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/PrivilegeDAO;")
+org.apache.ambari.server.security.authorization.UsersTest$1.configure : $r23 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/hooks/HookContextFactory;")
+org.apache.ambari.server.security.authorization.UsersTest$1.configure : $r20 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/hooks/HookService;")
+org.apache.ambari.server.security.authorization.UsersTest$1.configure : $r26 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/PrincipalDAO;")
+org.apache.ambari.server.security.authorization.UsersTest$1.configure : $r3 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/DBAccessor;")
+org.apache.ambari.server.orm.entities.UserEntity.setUserId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.UserEntity: void _persistence_set_userId(java.lang.Integer)>(r1)
+org.apache.ambari.server.security.authorization.UserName.rejectIfContainsAnyOf : $r3 = staticinvoke <java.lang.Character: java.lang.String toString(char)>(c1)
+org.apache.ambari.server.security.authorization.UserName.rejectIfContainsAnyOf : i0 = lengthof r1
+org.apache.ambari.server.security.authorization.UserName.rejectIfContainsAnyOf : c1 = r1[i2]
+org.apache.ambari.server.security.authorization.UserName.fromString : $r1 = new org.apache.ambari.server.security.authorization.UserName
+org.apache.ambari.server.orm.entities.UserEntity.setUserType : virtualinvoke r0.<org.apache.ambari.server.orm.entities.UserEntity: void _persistence_set_userType(org.apache.ambari.server.security.authorization.UserType)>(r1)
+org.apache.ambari.server.security.authorization.UsersTest.initForCreateUser : $r5 = staticinvoke <org.easymock.EasyMock: java.lang.String anyString()>()
+org.apache.ambari.server.security.authorization.UsersTest.initForCreateUser : $r13 = staticinvoke <org.easymock.EasyMock: java.lang.Object eq(java.lang.Object)>(class "Lorg/apache/ambari/server/orm/entities/PrincipalEntity;")
+org.apache.ambari.server.security.authorization.UsersTest.initForCreateUser : $r4 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest: java.lang.Object createStrictMock(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/UserDAO;")
+org.apache.ambari.server.security.authorization.UsersTest.initForCreateUser : specialinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest: void createInjector(org.apache.ambari.server.orm.dao.UserDAO,javax.persistence.EntityManager)>(r2, r3)
+org.apache.ambari.server.security.authorization.UsersTest.initForCreateUser : $r9 = staticinvoke <org.easymock.EasyMock: java.lang.Object anyObject(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/entities/UserEntity;")
+org.apache.ambari.server.security.authorization.UsersTest.initForCreateUser : virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest: void replayAll()>()
+org.apache.ambari.server.security.authorization.UsersTest.initForCreateUser : staticinvoke <org.easymock.EasyMock: org.easymock.IExpectationSetters expectLastCall()>()
+org.apache.ambari.server.security.authorization.UsersTest.initForCreateUser : $r12 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.UsersTest: java.lang.Object createNiceMock(java.lang.Class)>(class "Ljavax/persistence/EntityManager;")
+org.apache.ambari.server.configuration.Configuration.readConfigFile : if r1 != null goto virtualinvoke $r2.<java.util.Properties: void load(java.io.InputStream)>(r1)
+org.apache.ambari.server.configuration.Configuration.readConfigFile : $r3 = class "Lorg/apache/ambari/server/configuration/Configuration;"
+org.apache.ambari.server.configuration.Configuration.readConfigFile : $r5 = new java.lang.RuntimeException
+org.apache.ambari.server.configuration.Configuration.readConfigFile : $r2 = new java.util.Properties
+org.apache.ambari.server.security.authorization.UserName.validated : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r0)
+org.apache.ambari.server.security.authorization.UserName.validated : $r1 = <org.apache.ambari.server.security.authorization.UserName: char[] FORBIDDEN_CHARS>
+org.apache.ambari.server.security.authorization.UserName.validated : return r0

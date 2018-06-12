@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.persistence.model.Category.toString : $r1 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.manager.impl.CategoryManagerImpl.delete : $r2 = r0.<de.htw.sdf.photoplatform.manager.impl.CategoryManagerImpl: de.htw.sdf.photoplatform.repository.CategoryDAO categoryDAO>

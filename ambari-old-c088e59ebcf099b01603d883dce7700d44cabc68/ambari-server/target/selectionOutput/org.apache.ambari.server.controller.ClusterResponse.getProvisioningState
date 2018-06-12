@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ClusterResponse.getProvisioningState : $r1 = r0.<org.apache.ambari.server.controller.ClusterResponse: org.apache.ambari.server.state.State provisioningState> >>>>>>>> org.apache.ambari.server.controller.ClusterResponse.getProvisioningState : return $r1

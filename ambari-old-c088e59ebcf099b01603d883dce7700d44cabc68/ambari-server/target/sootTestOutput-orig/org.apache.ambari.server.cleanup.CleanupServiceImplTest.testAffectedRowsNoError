@@ -1,0 +1,10 @@
+org.apache.ambari.server.cleanup.CleanupServiceImpl$Result.getErrorCount : $i0 = r0.<org.apache.ambari.server.cleanup.CleanupServiceImpl$Result: int errorCount>
+org.apache.ambari.server.cleanup.CleanupServiceImpl$Result.getAffectedRows : $l0 = r0.<org.apache.ambari.server.cleanup.CleanupServiceImpl$Result: long affectedRows>
+org.apache.ambari.server.cleanup.CleanupServiceImpl.cleanup : $r8 = <org.apache.ambari.server.cleanup.CleanupServiceImpl: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.cleanup.CleanupServiceImpl.cleanup : l1 = 0L
+org.apache.ambari.server.cleanup.CleanupServiceImpl.cleanup : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.cleanup.CleanupServiceImpl.cleanup : $r5 = r0.<org.apache.ambari.server.cleanup.CleanupServiceImpl: java.util.Set cleanables>
+org.apache.ambari.server.cleanup.CleanupServiceImpl.cleanup : $r7 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.cleanup.CleanupServiceImpl.cleanup : $l0 = interfaceinvoke r3.<org.apache.ambari.server.orm.dao.Cleanable: long cleanup(org.apache.ambari.server.cleanup.TimeBasedCleanupPolicy)>(r1)
+org.apache.ambari.server.cleanup.CleanupServiceImpl.cleanup : goto [?= (branch)]
+org.apache.ambari.server.cleanup.CleanupServiceImpl.cleanup : i2 = 0

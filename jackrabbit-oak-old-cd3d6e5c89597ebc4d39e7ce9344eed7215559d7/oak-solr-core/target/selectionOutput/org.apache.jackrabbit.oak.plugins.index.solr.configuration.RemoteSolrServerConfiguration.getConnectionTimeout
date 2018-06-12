@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getConnectionTimeout : $i0 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: int connectionTimeout> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getConnectionTimeout : return $i0

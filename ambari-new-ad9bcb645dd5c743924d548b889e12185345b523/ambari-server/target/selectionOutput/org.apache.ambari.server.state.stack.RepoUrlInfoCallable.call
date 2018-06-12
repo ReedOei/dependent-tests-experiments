@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.stack.RepoUrlInfoCallable.call : $r1 = virtualinvoke r0.<org.apache.ambari.server.state.stack.RepoUrlInfoCallable: java.util.Map call()>() >>>>>>>> org.apache.ambari.server.state.stack.RepoUrlInfoCallable.call : return $r1

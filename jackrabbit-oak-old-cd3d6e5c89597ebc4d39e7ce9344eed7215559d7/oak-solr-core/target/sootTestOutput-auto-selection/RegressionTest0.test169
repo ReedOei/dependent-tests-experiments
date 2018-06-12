@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getCollapsedPathField : return "path_collapsed" >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getFieldForPropertyRestriction : return null

@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject.createExecutorService : $r1 = r0.<com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject: java.util.concurrent.ThreadPoolExecutor threadPoolExecutor>
+com.dangdang.ddframe.job.event.JobEventBus.register : $r3 = r0.<com.dangdang.ddframe.job.event.JobEventBus: com.google.common.eventbus.EventBus eventBus>

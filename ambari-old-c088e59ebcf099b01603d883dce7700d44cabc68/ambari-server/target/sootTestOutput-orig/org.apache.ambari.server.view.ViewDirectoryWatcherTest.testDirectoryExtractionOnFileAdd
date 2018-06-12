@@ -1,0 +1,79 @@
+org.apache.ambari.server.view.ViewDirectoryWatcher.addHook : $r2 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.util.List hooks>
+org.apache.ambari.server.view.ViewDirectoryWatcherTest.createZipFile : $r5 = new java.io.File
+org.apache.ambari.server.view.ViewDirectoryWatcherTest.createZipFile : virtualinvoke $r13.<java.io.FileInputStream: void close()>()
+org.apache.ambari.server.view.ViewDirectoryWatcherTest.createZipFile : $r13 = new java.io.FileInputStream
+org.apache.ambari.server.view.ViewDirectoryWatcherTest.createZipFile : $r14 = new java.util.zip.ZipOutputStream
+org.apache.ambari.server.view.ViewDirectoryWatcherTest.createZipFile : $i1 = virtualinvoke $r13.<java.io.FileInputStream: int read(byte[])>(r4)
+org.apache.ambari.server.view.ViewDirectoryWatcherTest.createZipFile : virtualinvoke $r5.<java.io.File: boolean createNewFile()>()
+org.apache.ambari.server.view.ViewDirectoryWatcherTest.createZipFile : $r18 = new java.util.zip.ZipEntry
+org.apache.ambari.server.view.ViewDirectoryWatcherTest.createZipFile : r4 = newarray (byte)[1024]
+org.apache.ambari.server.view.ViewDirectoryWatcherTest.createZipFile : virtualinvoke $r14.<java.util.zip.ZipOutputStream: void close()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.buildWatchService : $r3 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: org.apache.ambari.server.configuration.Configuration configuration>
+org.apache.ambari.server.view.ViewDirectoryWatcher.buildWatchService : return r2
+org.apache.ambari.server.view.ViewDirectoryWatcher.buildWatchService : $r4 = virtualinvoke r1.<java.io.File: java.lang.String getAbsolutePath()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.buildWatchService : $r10 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.nio.file.WatchService watchService>
+org.apache.ambari.server.view.ViewDirectoryWatcher.buildWatchService : $r6 = interfaceinvoke r2.<java.nio.file.Path: java.nio.file.FileSystem getFileSystem()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.access$500 : $r1 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.util.List hooks>
+org.apache.ambari.server.view.ViewDirectoryWatcher.startWatching : $r2 = new org.apache.ambari.server.view.ViewDirectoryWatcher$2
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : l8 = virtualinvoke r2.<java.io.File: long length()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : $r3 = interfaceinvoke r1.<java.nio.file.Path: java.nio.file.Path toAbsolutePath()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : $b4 = l8 cmp l0
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : $b9 = l0 cmp l8
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : i7 = i7 + 1
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : $r5 = <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger LOG>
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : l0 = virtualinvoke r2.<java.io.File: long length()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : l6 = 0L
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : staticinvoke <java.lang.Thread: void sleep(long)>(200L)
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : return 1
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : i7 = 0
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : $r10 = <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger LOG>
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : $l1 = virtualinvoke r2.<java.io.File: long length()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : $b3 = l6 cmp 5L
+org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable : if i7 <= 30 goto staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$r10 = <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger LOG>", "org.apache.ambari.server.view.ViewDirectoryWatcher.canBlockTillFileAvailable")
+org.apache.ambari.server.view.ViewDirectoryWatcher.access$100 : $r1 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.nio.file.WatchService watchService>
+org.apache.ambari.server.view.ViewDirectoryWatcher.loggingHook : $r1 = new org.apache.ambari.server.view.ViewDirectoryWatcher$1
+org.apache.ambari.server.view.ViewDirectoryWatcher.cast : return r0
+org.apache.ambari.server.utils.Closeables.closeSilently : staticinvoke <org.apache.ambari.server.utils.Closeables: void close(java.io.Closeable,org.slf4j.Logger)>(r0, null)
+org.apache.ambari.server.view.ViewDirectoryWatcher.start : r1 = specialinvoke r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.lang.Runnable startWatching(java.nio.file.Path)>(r6)
+org.apache.ambari.server.view.ViewDirectoryWatcher.start : goto [?= return]
+org.apache.ambari.server.view.ViewDirectoryWatcher.start : $r2 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.util.concurrent.ExecutorService executorService>
+org.apache.ambari.server.view.ViewDirectoryWatcher.start : r6 = specialinvoke r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.nio.file.Path buildWatchService()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.access$200 : $r1 = staticinvoke <org.apache.ambari.server.view.ViewDirectoryWatcher: java.nio.file.WatchEvent cast(java.nio.file.WatchEvent)>(r0)
+org.apache.ambari.server.view.ViewDirectoryWatcher$1.apply : $r2 = (java.nio.file.Path) r1
+org.apache.ambari.server.view.ViewDirectoryWatcher$1.apply : $r2 = staticinvoke <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger access$000()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$1.apply : $r7 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(1)
+org.apache.ambari.server.utils.Closeables.close : if r0 == null goto return
+org.apache.ambari.server.utils.Closeables.close : interfaceinvoke r0.<java.io.Closeable: void close()>()
+org.apache.ambari.server.utils.Closeables.close : goto [?= return]
+org.apache.ambari.server.view.ViewDirectoryWatcherTest$2.apply : $r2 = (java.nio.file.Path) r1
+org.apache.ambari.server.view.ViewDirectoryWatcherTest$2.apply : $r2 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcherTest$2: java.util.concurrent.CountDownLatch val$countDownLatch>
+org.apache.ambari.server.view.ViewDirectoryWatcher.access$300 : $z0 = specialinvoke r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: boolean canBlockTillFileAvailable(java.nio.file.Path)>(r1)
+org.apache.ambari.server.view.ViewDirectoryWatcher.verify : $l0 = virtualinvoke r8.<java.io.File: long length()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.verify : $z0 = virtualinvoke r8.<java.io.File: boolean isDirectory()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.verify : $r3 = interfaceinvoke r1.<java.nio.file.Path: java.nio.file.Path toAbsolutePath()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.verify : $z2 = 1
+org.apache.ambari.server.view.ViewDirectoryWatcher.verify : $r4 = new java.util.zip.ZipFile
+org.apache.ambari.server.view.ViewDirectoryWatcher.verify : $z1 = 1
+org.apache.ambari.server.view.ViewDirectoryWatcher.verify : staticinvoke <org.apache.ambari.server.utils.Closeables: void closeSilently(java.io.Closeable)>($r4)
+org.apache.ambari.server.view.ViewDirectoryWatcher.access$400 : $z0 = specialinvoke r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: boolean verify(java.nio.file.Path)>(r1)
+org.apache.ambari.server.view.ViewDirectoryWatcher.access$000 : $r0 = <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger LOG>
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r16 = staticinvoke <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger access$000()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r8 = staticinvoke <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger access$000()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r11 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : goto [?= (branch)]
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : goto [?= return]
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r12 = staticinvoke <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger access$000()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : r3 = staticinvoke <org.apache.ambari.server.view.ViewDirectoryWatcher: java.nio.file.WatchEvent access$200(java.nio.file.WatchEvent)>(r2)
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r20 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher$2: org.apache.ambari.server.view.ViewDirectoryWatcher this$0>
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : goto [?= $z3 = interfaceinvoke r40.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r25 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher$2: org.apache.ambari.server.view.ViewDirectoryWatcher this$0>
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r13 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher$2: java.nio.file.Path val$path>
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r6 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher$2: org.apache.ambari.server.view.ViewDirectoryWatcher this$0>
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r10 = staticinvoke <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger access$000()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $z0 = interfaceinvoke r39.<java.nio.file.WatchKey: boolean reset()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r22 = staticinvoke <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger access$000()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r21 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher$2: org.apache.ambari.server.view.ViewDirectoryWatcher this$0>
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r23 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher$2: org.apache.ambari.server.view.ViewDirectoryWatcher this$0>
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r27 = interfaceinvoke r40.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r9 = interfaceinvoke r39.<java.nio.file.WatchKey: java.util.List pollEvents()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : interfaceinvoke r5.<com.google.common.base.Function: java.lang.Object apply(java.lang.Object)>(r4)

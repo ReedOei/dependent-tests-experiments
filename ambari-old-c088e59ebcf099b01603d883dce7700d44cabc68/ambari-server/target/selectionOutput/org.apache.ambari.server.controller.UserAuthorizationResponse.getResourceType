@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.UserAuthorizationResponse.getResourceType : $r1 = r0.<org.apache.ambari.server.controller.UserAuthorizationResponse: java.lang.String resourceType> >>>>>>>> org.apache.ambari.server.controller.UserAuthorizationResponse.getResourceType : return $r1

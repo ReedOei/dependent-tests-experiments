@@ -1,0 +1,4 @@
+org.apache.ambari.server.orm.entities.ServiceConfigEntity.equals : if r0 != r1 goto (branch)
+org.apache.ambari.server.orm.entities.ServiceConfigEntity.equals : return 0
+org.apache.ambari.server.orm.entities.ServiceConfigEntity.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.ambari.server.orm.entities.ServiceConfigEntity.equals : if r1 != null goto $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()

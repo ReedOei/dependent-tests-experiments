@@ -1,0 +1,1 @@
+org.apache.ambari.server.cleanup.CleanupServiceImpl$Result.getAffectedRows : $l0 = r0.<org.apache.ambari.server.cleanup.CleanupServiceImpl$Result: long affectedRows> >>>>>>>> org.apache.ambari.server.cleanup.CleanupServiceImpl$Result.getAffectedRows : return $l0

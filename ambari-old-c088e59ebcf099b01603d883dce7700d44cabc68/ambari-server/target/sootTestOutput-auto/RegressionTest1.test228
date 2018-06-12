@@ -1,0 +1,4 @@
+org.apache.ambari.server.orm.PersistenceType.values : $r0 = <org.apache.ambari.server.orm.PersistenceType: org.apache.ambari.server.orm.PersistenceType[] $VALUES>
+org.apache.ambari.server.orm.PersistenceType.fromString : r1 = staticinvoke <org.apache.ambari.server.orm.PersistenceType: org.apache.ambari.server.orm.PersistenceType[] values()>()
+org.apache.ambari.server.orm.PersistenceType.fromString : $r8 = r2.<org.apache.ambari.server.orm.PersistenceType: java.lang.String value>
+org.apache.ambari.server.orm.PersistenceType.fromString : r2 = r1[i1]

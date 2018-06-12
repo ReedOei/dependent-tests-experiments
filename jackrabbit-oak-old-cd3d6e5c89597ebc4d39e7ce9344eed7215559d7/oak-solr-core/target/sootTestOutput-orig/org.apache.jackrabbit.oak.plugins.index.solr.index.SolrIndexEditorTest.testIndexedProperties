@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.index.solr.TestUtils.createSolrServer : $r11 = new java.lang.RuntimeException
+org.apache.jackrabbit.oak.plugins.index.solr.TestUtils.createSolrServer : $r2 = new java.io.File

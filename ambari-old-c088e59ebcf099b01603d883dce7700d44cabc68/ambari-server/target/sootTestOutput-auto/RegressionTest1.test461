@@ -1,0 +1,16 @@
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r16 = newarray (javax.persistence.metamodel.SingularAttribute)[2]
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r1 = new java.util.HashMap
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : interfaceinvoke $r1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("AlertNotice/uuid", $r9)
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r5 = <org.apache.ambari.server.orm.entities.AlertNoticeEntity_: javax.persistence.metamodel.SingularAttribute notifyState>
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r29 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>($r26)
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : return $r1
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r14 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>($r11)
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r21 = newarray (javax.persistence.metamodel.SingularAttribute)[2]
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r11 = newarray (javax.persistence.metamodel.SingularAttribute)[2]
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r2 = <org.apache.ambari.server.orm.entities.AlertNoticeEntity_: javax.persistence.metamodel.SingularAttribute notificationId>
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : interfaceinvoke $r1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("AlertNotice/id", $r3)
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r8 = <org.apache.ambari.server.orm.entities.AlertNoticeEntity_: javax.persistence.metamodel.SingularAttribute uuid>
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r24 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>($r21)
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r19 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>($r16)
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : $r26 = newarray (javax.persistence.metamodel.SingularAttribute)[2]
+org.apache.ambari.server.orm.entities.AlertNoticeEntity_.getPredicateMapping : interfaceinvoke $r1.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("AlertNotice/notification_state", $r6)

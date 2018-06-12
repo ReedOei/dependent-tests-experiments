@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.filter.MockFilter.invoke : $r3 = interfaceinvoke r1.<com.alibaba.dubbo.rpc.Invoker: com.alibaba.dubbo.rpc.Result invoke(com.alibaba.dubbo.rpc.Invocation)>(r2) >>>>>>>> com.alibaba.dubbo.config.spring.filter.MockFilter.invoke : return $r3

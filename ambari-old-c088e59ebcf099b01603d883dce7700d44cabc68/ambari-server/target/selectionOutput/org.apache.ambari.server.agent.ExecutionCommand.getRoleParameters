@@ -1,0 +1,1 @@
+org.apache.ambari.server.agent.ExecutionCommand.getRoleParameters : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: java.util.Map roleParameters> >>>>>>>> org.apache.ambari.server.agent.ExecutionCommand.getRoleParameters : return $r1

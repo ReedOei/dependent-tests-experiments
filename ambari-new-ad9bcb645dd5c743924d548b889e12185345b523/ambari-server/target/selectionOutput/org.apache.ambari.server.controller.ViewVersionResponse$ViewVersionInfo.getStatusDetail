@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.getStatusDetail : $r1 = r0.<org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo: java.lang.String statusDetail> >>>>>>>> org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.getStatusDetail : return $r1

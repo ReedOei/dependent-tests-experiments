@@ -1,0 +1,4 @@
+org.apache.ambari.server.orm.entities.PrincipalEntity.hashCode : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrincipalEntity: java.lang.Long _persistence_get_id()>()
+org.apache.ambari.server.orm.entities.PrincipalEntity.equals : return 1
+org.apache.ambari.server.orm.entities.PrincipalEntity.equals : if r0 != r1 goto (branch)
+org.apache.ambari.server.orm.entities.RequestResourceFilterEntity.getFilterId : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.RequestResourceFilterEntity: java.lang.Long _persistence_get_filterId()>()

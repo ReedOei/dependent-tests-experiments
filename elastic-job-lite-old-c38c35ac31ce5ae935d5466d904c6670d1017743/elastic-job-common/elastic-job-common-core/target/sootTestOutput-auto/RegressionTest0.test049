@@ -1,0 +1,13 @@
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.description : if null == r1 goto return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.description : r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String description> = r1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.description : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.shardingItemParameters : r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String shardingItemParameters> = r1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.shardingItemParameters : if null == r1 goto return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.shardingItemParameters : return r0
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.values : $r0 = <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] $VALUES>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobParameter : if null == r1 goto return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobParameter : r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String jobParameter> = r1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobParameter : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.misfire : r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: boolean misfire> = z0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.misfire : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration.newBuilder : $r2 = new com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder

@@ -1,0 +1,33 @@
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : r2 = (org.apache.ambari.server.controller.ServiceConfigVersionResponse) r1
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r29 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String stackId>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r5 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String clusterName>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r41 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.util.List hosts>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r8 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String serviceName>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r32 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.Boolean isCurrent>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r35 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.Boolean isCompatibleWithCurrentStack>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r14 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.Long createTime>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r11 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.Long version>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r26 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String note>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r38 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.util.List configurations>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : return 1
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : if r0 != r1 goto $z0 = r1 instanceof org.apache.ambari.server.controller.ServiceConfigVersionResponse
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r23 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String userName>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r20 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String groupName>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $z1 = virtualinvoke $r42.<org.apache.commons.lang.builder.EqualsBuilder: boolean isEquals()>()
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $z0 = r1 instanceof org.apache.ambari.server.controller.ServiceConfigVersionResponse
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.equals : $r17 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.Long groupId>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r4 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String serviceName>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r6 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.Long version>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r20 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.Boolean isCurrent>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r24 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.util.List configurations>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r22 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.Boolean isCompatibleWithCurrentStack>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r10 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.Long groupId>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r1 = new org.apache.commons.lang.builder.HashCodeBuilder
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r8 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.Long createTime>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r26 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.util.List hosts>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $i0 = virtualinvoke $r27.<org.apache.commons.lang.builder.HashCodeBuilder: int toHashCode()>()
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r16 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String note>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r14 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String userName>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r12 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String groupName>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r18 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String stackId>
+org.apache.ambari.server.controller.ServiceConfigVersionResponse.hashCode : $r2 = r0.<org.apache.ambari.server.controller.ServiceConfigVersionResponse: java.lang.String clusterName>

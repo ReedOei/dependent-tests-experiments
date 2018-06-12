@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperElectionServiceTest.init : staticinvoke <com.dangdang.ddframe.job.fixture.EmbedTestingServer: void start()>() >>>>>>>> com.dangdang.ddframe.job.reg.zookeeper.ZookeeperElectionServiceTest.init : return

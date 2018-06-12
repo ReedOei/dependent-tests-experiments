@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.persistence.model.Category.setName : r0.<de.htw.sdf.photoplatform.persistence.model.Category: java.lang.String name> = r1
+de.htw.sdf.photoplatform.manager.impl.CategoryManagerImpl.update : $r2 = r0.<de.htw.sdf.photoplatform.manager.impl.CategoryManagerImpl: de.htw.sdf.photoplatform.repository.CategoryDAO categoryDAO>

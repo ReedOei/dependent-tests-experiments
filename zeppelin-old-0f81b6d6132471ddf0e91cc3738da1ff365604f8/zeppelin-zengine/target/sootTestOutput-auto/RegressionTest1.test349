@@ -1,0 +1,16 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.createInstace : $r0 = new org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketText : r2 = staticinvoke <org.apache.zeppelin.notebook.socket.WatcherMessage: org.apache.zeppelin.notebook.socket.WatcherMessage fromJson(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketText : $r3 = r2.<org.apache.zeppelin.notebook.socket.WatcherMessage: java.lang.String noteId>
+org.apache.zeppelin.ticket.TicketContainer.getTicket : r7 = r6.<org.apache.zeppelin.ticket.TicketContainer$Entry: java.lang.String ticket>
+org.apache.zeppelin.ticket.TicketContainer.getTicket : return r7
+org.apache.zeppelin.ticket.TicketContainer.getTicket : $r2 = r0.<org.apache.zeppelin.ticket.TicketContainer: java.util.Map sessions>
+org.apache.zeppelin.ticket.TicketContainer.getTicket : if r6 != null goto r7 = r6.<org.apache.zeppelin.ticket.TicketContainer$Entry: java.lang.String ticket>
+org.apache.zeppelin.ticket.TicketContainer.getTicket : $r8 = new org.apache.zeppelin.ticket.TicketContainer$Entry
+org.apache.zeppelin.ticket.TicketContainer.getTicket : $r10 = r0.<org.apache.zeppelin.ticket.TicketContainer: java.util.Map sessions>
+org.apache.zeppelin.notebook.socket.WatcherMessage.fromJson : $r1 = <org.apache.zeppelin.notebook.socket.WatcherMessage: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketConnect : $r8 = interfaceinvoke r1.<org.eclipse.jetty.websocket.api.Session: org.eclipse.jetty.websocket.api.RemoteEndpoint getRemote()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketConnect : $r4.<org.apache.zeppelin.notebook.socket.Message: java.lang.String principal> = "watcher"
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketConnect : r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket: org.eclipse.jetty.websocket.api.Session connection> = r1
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketConnect : $r6 = <org.apache.zeppelin.ticket.TicketContainer: org.apache.zeppelin.ticket.TicketContainer instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketConnect : $r3 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketConnect : $r4 = new org.apache.zeppelin.notebook.socket.Message

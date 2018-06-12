@@ -1,0 +1,44 @@
+<div class="container" ng-controller="PurchaseCtrl" ng-init="getShoppingCartData()">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Kauf bestätigen</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <tr>
+                    <th>#</th>
+                    <th>Vorschau</th>
+                    <th>Preis</th>
+                </tr>
+                <tr ng-repeat="item in shoppingCart.purchaseItems">
+                    <td>{{$index + 1}}</td>
+                    <td>
+                        <div class="media">
+                            <a class="media-left" href="#">
+                                <img ng-src="{{item.image.mobilePath}}" alt="{{item.image.name}}"
+                                     class="img-responsive">
+                            </a>
+
+                            <div class="media-body">
+                                <h4 class="media-heading">{{item.image.name}}</h4>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span>{{item.image.priceAsString}}</span></td>
+                </tr>
+            </table>
+            <div class="well">Summe ({{shoppingCart.totalItems}} Bilder): <h2><span class="label label-success">{{shoppingCart.totalPrice}}</span></h2></div>
+            <a href="/purchase/buy" class="btn btn-success" role="button">Kauf abschließen</a>
+            </div>
+        </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="alert alert-info" role="alert">
+        <span class="glyphicon glyphicon-info-sign"></span> PayPal-Account: phot-buyer@test.de Passwort: 12345678
+    </div>
+    </div>
+

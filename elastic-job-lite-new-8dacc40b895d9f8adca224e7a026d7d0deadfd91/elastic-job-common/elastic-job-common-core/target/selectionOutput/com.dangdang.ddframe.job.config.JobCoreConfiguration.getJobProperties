@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobProperties : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: com.dangdang.ddframe.job.executor.handler.JobProperties jobProperties> >>>>>>>> com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobProperties : return $r1

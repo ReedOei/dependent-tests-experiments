@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImage : if r2 != null goto $r6 = r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.repository.UserImageDAO userImageDAO>
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImage : $r6 = r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.repository.UserImageDAO userImageDAO>

@@ -1,0 +1,7 @@
+de.htw.sdf.photoplatform.persistence.model.Collection.isPublic : $z0 = r0.<de.htw.sdf.photoplatform.persistence.model.Collection: boolean isPublic>
+de.htw.sdf.photoplatform.persistence.model.Image.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.setId : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id> = r1
+de.htw.sdf.photoplatform.persistence.model.Collection.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Collection: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.model.Collection.getUser : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Collection: de.htw.sdf.photoplatform.persistence.model.User user>
+de.htw.sdf.photoplatform.persistence.model.Collection.setThumbnail : r0.<de.htw.sdf.photoplatform.persistence.model.Collection: de.htw.sdf.photoplatform.persistence.model.Image thumbnail> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.toString : $r1 = new java.lang.StringBuilder

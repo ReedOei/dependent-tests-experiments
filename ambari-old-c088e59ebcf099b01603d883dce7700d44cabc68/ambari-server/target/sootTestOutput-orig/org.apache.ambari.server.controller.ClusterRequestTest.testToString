@@ -1,0 +1,10 @@
+org.apache.ambari.server.controller.ClusterRequest.toString : $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", clusterId=")
+org.apache.ambari.server.controller.ClusterRequest.toString : $r20 = virtualinvoke $r19.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", desired_scv=")
+org.apache.ambari.server.controller.ClusterRequest.toString : virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] }")
+org.apache.ambari.server.controller.ClusterRequest.toString : $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("{ clusterName=")
+org.apache.ambari.server.controller.ClusterRequest.toString : $r14 = virtualinvoke $r13.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", securityType=")
+org.apache.ambari.server.controller.ClusterRequest.toString : $r17 = virtualinvoke $r16.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", stackVersion=")
+org.apache.ambari.server.controller.ClusterRequest.toString : $r4 = new java.lang.StringBuilder
+org.apache.ambari.server.controller.ClusterRequest.toString : $r11 = virtualinvoke $r10.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", provisioningState=")
+org.apache.ambari.server.controller.ClusterRequest.toString : virtualinvoke $r22.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", hosts=[")
+org.apache.ambari.server.controller.ClusterRequest.toString : $r24 = r0.<org.apache.ambari.server.controller.ClusterRequest: java.util.Set hostNames>

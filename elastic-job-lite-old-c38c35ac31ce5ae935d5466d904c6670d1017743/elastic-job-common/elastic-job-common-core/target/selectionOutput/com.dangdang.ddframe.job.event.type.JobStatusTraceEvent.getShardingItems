@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getShardingItems : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String shardingItems> >>>>>>>> com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getShardingItems : return $r1

@@ -1,0 +1,2 @@
+org.apache.ambari.server.controller.utilities.PredicateHelper.getProperties : if r0 != null >>>>>>>> org.apache.ambari.server.controller.utilities.PredicateHelper.getProperties : $r4 = staticinvoke <java.util.Collections: java.util.Map emptyMap()>()
+org.apache.ambari.server.controller.utilities.PredicateHelper.getProperties : $r4 = staticinvoke <java.util.Collections: java.util.Map emptyMap()>() >>>>>>>> org.apache.ambari.server.controller.utilities.PredicateHelper.getProperties : return $r4

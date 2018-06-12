@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.registry.MockRegistry.getRegistered : $r1 = r0.<com.alibaba.dubbo.config.spring.registry.MockRegistry: java.util.List registered> >>>>>>>> com.alibaba.dubbo.config.spring.registry.MockRegistry.getRegistered : return $r1

@@ -1,0 +1,4 @@
+org.apache.ambari.server.orm.dao.CrudDAO.remove : r2 = interfaceinvoke r1.<java.util.Collection: java.util.Iterator iterator()>() >>>>>>>> org.apache.ambari.server.orm.dao.CrudDAO.remove : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.apache.ambari.server.orm.dao.CrudDAO.remove : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.apache.ambari.server.orm.dao.CrudDAO.remove : if $z0 == 0
+org.apache.ambari.server.orm.dao.CrudDAO.remove : if $z0 == 0 >>>>>>>> org.apache.ambari.server.orm.dao.CrudDAO.remove : $r4 = r0.<org.apache.ambari.server.orm.dao.CrudDAO: com.google.inject.Provider entityManagerProvider>
+org.apache.ambari.server.orm.dao.CrudDAO.remove : $r4 = r0.<org.apache.ambari.server.orm.dao.CrudDAO: com.google.inject.Provider entityManagerProvider> >>>>>>>> org.apache.ambari.server.orm.dao.CrudDAO.remove : $r5 = interfaceinvoke $r4.<com.google.inject.Provider: java.lang.Object get()>()

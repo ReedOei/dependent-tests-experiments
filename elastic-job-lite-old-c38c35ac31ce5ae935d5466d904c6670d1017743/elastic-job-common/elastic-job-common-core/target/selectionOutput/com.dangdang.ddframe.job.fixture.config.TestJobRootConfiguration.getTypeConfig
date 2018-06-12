@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.fixture.config.TestJobRootConfiguration.getTypeConfig : $r1 = r0.<com.dangdang.ddframe.job.fixture.config.TestJobRootConfiguration: com.dangdang.ddframe.job.config.JobTypeConfiguration typeConfig> >>>>>>>> com.dangdang.ddframe.job.fixture.config.TestJobRootConfiguration.getTypeConfig : return $r1

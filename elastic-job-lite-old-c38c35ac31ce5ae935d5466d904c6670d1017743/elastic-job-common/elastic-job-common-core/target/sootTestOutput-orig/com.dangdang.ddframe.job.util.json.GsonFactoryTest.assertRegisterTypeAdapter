@@ -1,0 +1,4 @@
+com.dangdang.ddframe.job.util.json.GsonFactory.getGson : $r0 = <com.dangdang.ddframe.job.util.json.GsonFactory: com.google.gson.Gson gson>
+com.dangdang.ddframe.job.util.json.GsonFactoryTest$1.write : virtualinvoke r1.<com.google.gson.stream.JsonWriter: com.google.gson.stream.JsonWriter jsonValue(java.lang.String)>("test")
+com.dangdang.ddframe.job.util.json.GsonFactory.registerTypeAdapter : $r4 = <com.dangdang.ddframe.job.util.json.GsonFactory: com.google.gson.GsonBuilder GSON_BUILDER>
+com.dangdang.ddframe.job.util.json.GsonFactory.registerTypeAdapter : $r2 = <com.dangdang.ddframe.job.util.json.GsonFactory: com.google.gson.GsonBuilder GSON_BUILDER>

@@ -1,0 +1,4 @@
+org.apache.ambari.server.configuration.Configuration.readConfigFile : if r1 != null goto virtualinvoke $r2.<java.util.Properties: void load(java.io.InputStream)>(r1)
+org.apache.ambari.server.configuration.Configuration.readConfigFile : $r3 = class "Lorg/apache/ambari/server/configuration/Configuration;"
+org.apache.ambari.server.configuration.Configuration.readConfigFile : $r5 = new java.lang.RuntimeException
+org.apache.ambari.server.configuration.Configuration.readConfigFile : $r2 = new java.util.Properties

@@ -1,0 +1,8 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getHost : return "localhost"
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.getClient : $r2 = new org.apache.commons.pool2.impl.GenericObjectPool
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.getClient : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess: org.apache.commons.pool2.impl.GenericObjectPool clientPool>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getPort : $i0 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: int port>
+org.apache.zeppelin.interpreter.remote.ClientFactory.create : $r14 = new org.apache.zeppelin.interpreter.InterpreterException
+org.apache.zeppelin.interpreter.remote.ClientFactory.create : $r5 = new org.apache.thrift.transport.TSocket
+org.apache.zeppelin.interpreter.remote.ClientFactory.create : virtualinvoke $r5.<org.apache.thrift.transport.TSocket: void open()>()
+org.apache.zeppelin.interpreter.remote.ClientFactory.create : $r1 = virtualinvoke r0.<org.apache.zeppelin.interpreter.remote.ClientFactory: org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Client create()>()

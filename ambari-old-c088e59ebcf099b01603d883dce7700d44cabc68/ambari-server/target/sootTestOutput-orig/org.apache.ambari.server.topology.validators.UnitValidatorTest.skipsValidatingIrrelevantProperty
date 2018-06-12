@@ -1,0 +1,61 @@
+org.apache.ambari.server.controller.StackConfigurationResponse.setType : r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.lang.String type> = r1
+org.apache.ambari.server.controller.StackConfigurationResponse.setPropertyName : r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.lang.String propertyName> = r1
+org.apache.ambari.server.controller.StackConfigurationResponse.getPropertyAttributes : $r1 = r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.util.Map propertyAttributes>
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r3 = r0.<org.apache.ambari.server.topology.Configuration: org.apache.ambari.server.topology.Configuration parentConfiguration>
+org.apache.ambari.server.topology.Configuration.getFullProperties : interfaceinvoke r29.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r10)
+org.apache.ambari.server.topology.Configuration.getFullProperties : if i0 != 0 goto $r3 = r0.<org.apache.ambari.server.topology.Configuration: org.apache.ambari.server.topology.Configuration parentConfiguration>
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r9 = interfaceinvoke r31.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r1 = virtualinvoke r0.<org.apache.ambari.server.topology.Configuration: java.util.Map getFullProperties(int)>(2147483647)
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r8 = interfaceinvoke r30.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.Configuration.getFullProperties : $z0 = interfaceinvoke r29.<java.util.Map: boolean containsKey(java.lang.Object)>(r1)
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r28 = new java.util.HashMap
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r6 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map properties>
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r10 = new java.util.HashMap
+org.apache.ambari.server.topology.validators.UnitValidatorTest.validate : $r2 = new org.apache.ambari.server.topology.validators.UnitValidator
+org.apache.ambari.server.topology.validators.UnitValidatorTest.validate : $r7 = r0.<org.apache.ambari.server.topology.validators.UnitValidatorTest: org.apache.ambari.server.topology.validators.UnitValidator validator>
+org.apache.ambari.server.controller.StackConfigurationResponse.setPropertyDescription : r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.lang.String propertyDescription> = r1
+org.apache.ambari.server.topology.validators.UnitValidatedProperty.getConfigType : $r1 = r0.<org.apache.ambari.server.topology.validators.UnitValidatedProperty: java.lang.String configType>
+org.apache.ambari.server.controller.StackConfigurationResponse.setRequired : r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.lang.Boolean isRequired> = r1
+org.apache.ambari.server.topology.validators.UnitValidator.validate : $r5 = interfaceinvoke r1.<org.apache.ambari.server.topology.ClusterTopology: org.apache.ambari.server.topology.Blueprint getBlueprint()>()
+org.apache.ambari.server.topology.validators.UnitValidator.validate : $r6 = interfaceinvoke r1.<org.apache.ambari.server.topology.ClusterTopology: org.apache.ambari.server.topology.Configuration getConfiguration()>()
+org.apache.ambari.server.topology.validators.UnitValidator.lambda$validateProperty$0 : $z0 = virtualinvoke r2.<org.apache.ambari.server.topology.validators.UnitValidatedProperty: boolean hasTypeAndName(java.lang.String,java.lang.String)>(r0, r1)
+org.apache.ambari.server.controller.StackConfigurationResponse.setPropertyAttributes : r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.util.Map propertyAttributes> = r1
+org.apache.ambari.server.topology.validators.UnitValidatedProperty.hasTypeAndName : $r3 = virtualinvoke r0.<org.apache.ambari.server.topology.validators.UnitValidatedProperty: java.lang.String getConfigType()>()
+org.apache.ambari.server.controller.internal.Stack$ConfigProperty.normalizeType : $z0 = virtualinvoke r1.<java.lang.String: boolean endsWith(java.lang.String)>(".xml")
+org.apache.ambari.server.controller.internal.Stack$ConfigProperty.normalizeType : return r1
+org.apache.ambari.server.controller.StackConfigurationResponse.setPropertyValue : r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.lang.String propertyValue> = r1
+org.apache.ambari.server.topology.validators.UnitValidatorTest.propertyToBeValidatedIs : $r5 = r0.<org.apache.ambari.server.topology.validators.UnitValidatorTest: org.apache.ambari.server.topology.ClusterTopology clusterTopology>
+org.apache.ambari.server.topology.validators.UnitValidatorTest.propertyToBeValidatedIs : $r4 = new org.apache.ambari.server.topology.validators.UnitValidatorTest$1
+org.apache.ambari.server.topology.validators.UnitValidatorTest.propertyToBeValidatedIs : virtualinvoke r0.<org.apache.ambari.server.topology.validators.UnitValidatorTest: void replayAll()>()
+org.apache.ambari.server.topology.validators.UnitValidator.validateConfig : $r6 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.validators.UnitValidator.validateConfig : $r7 = interfaceinvoke r4.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.topology.validators.UnitValidator.validateConfig : $r5 = interfaceinvoke r1.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.topology.validators.UnitValidatedProperty.hashCode : $i0 = virtualinvoke $r7.<org.apache.commons.lang.builder.HashCodeBuilder: int toHashCode()>()
+org.apache.ambari.server.topology.validators.UnitValidatedProperty.hashCode : $r2 = r0.<org.apache.ambari.server.topology.validators.UnitValidatedProperty: java.lang.String configType>
+org.apache.ambari.server.topology.validators.UnitValidatedProperty.hashCode : $r6 = r0.<org.apache.ambari.server.topology.validators.UnitValidatedProperty: java.lang.String propertyName>
+org.apache.ambari.server.topology.validators.UnitValidatedProperty.hashCode : $r1 = new org.apache.commons.lang.builder.HashCodeBuilder
+org.apache.ambari.server.topology.validators.UnitValidatedProperty.hashCode : $r4 = r0.<org.apache.ambari.server.topology.validators.UnitValidatedProperty: java.lang.String serviceName>
+org.apache.ambari.server.topology.validators.UnitValidator.validateConfigType : $r7 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.validators.UnitValidator.validateConfigType : specialinvoke r0.<org.apache.ambari.server.topology.validators.UnitValidator: void validateProperty(java.lang.String,java.util.Map,java.lang.String,org.apache.ambari.server.controller.internal.Stack)>(r1, r2, r5, r3)
+org.apache.ambari.server.topology.validators.UnitValidator.validateConfigType : $r6 = interfaceinvoke r2.<java.util.Map: java.util.Set keySet()>()
+org.apache.ambari.server.controller.StackConfigurationResponse.getDependsOnProperties : $r1 = r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.util.Set dependsOnProperties>
+org.apache.ambari.server.controller.StackConfigurationResponse.getPropertyValue : $r1 = r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.lang.String propertyValue>
+org.apache.ambari.server.topology.validators.UnitValidatorTest.stackUnitIs : $r7 = r0.<org.apache.ambari.server.topology.validators.UnitValidatorTest: java.util.Map stackConfigWithMetadata>
+org.apache.ambari.server.topology.validators.UnitValidatorTest.stackUnitIs : $r4 = new org.apache.ambari.server.state.ValueAttributesInfo
+org.apache.ambari.server.topology.validators.UnitValidatorTest.stackUnitIs : $r10 = staticinvoke <java.util.Collections: java.util.Map emptyMap()>()
+org.apache.ambari.server.topology.validators.UnitValidatorTest.stackUnitIs : $r11 = staticinvoke <java.util.Collections: java.util.Set emptySet()>()
+org.apache.ambari.server.topology.validators.UnitValidatorTest.stackUnitIs : virtualinvoke $r4.<org.apache.ambari.server.state.ValueAttributesInfo: void setUnit(java.lang.String)>(r2)
+org.apache.ambari.server.topology.validators.UnitValidatorTest.stackUnitIs : $r9 = staticinvoke <java.util.Collections: java.util.Set emptySet()>()
+org.apache.ambari.server.topology.validators.UnitValidatorTest.stackUnitIs : $r5 = new org.apache.ambari.server.controller.internal.Stack$ConfigProperty
+org.apache.ambari.server.topology.validators.UnitValidator.validateProperty : $r8 = interfaceinvoke $r6.<java.util.stream.Stream: java.util.stream.Stream filter(java.util.function.Predicate)>($r7)
+org.apache.ambari.server.topology.validators.UnitValidator.validateProperty : $r5 = r0.<org.apache.ambari.server.topology.validators.UnitValidator: java.util.Set relevantProps>
+org.apache.ambari.server.topology.validators.UnitValidator.validateProperty : $r9 = interfaceinvoke $r8.<java.util.stream.Stream: java.util.Optional findFirst()>()
+org.apache.ambari.server.controller.StackConfigurationResponse.setPropertyType : r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.util.Set propertyTypes> = r1
+org.apache.ambari.server.controller.StackConfigurationResponse.setDependsOnProperties : r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.util.Set dependsOnProperties> = r1
+org.apache.ambari.server.controller.StackConfigurationResponse.getPropertyValueAttributes : $r1 = r0.<org.apache.ambari.server.controller.StackConfigurationResponse: org.apache.ambari.server.state.ValueAttributesInfo propertyValueAttributes>
+org.apache.ambari.server.controller.StackConfigurationResponse.setPropertyDisplayName : r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.lang.String propertyDisplayName> = r1
+org.apache.ambari.server.controller.StackConfigurationResponse.setPropertyValueAttributes : r0.<org.apache.ambari.server.controller.StackConfigurationResponse: org.apache.ambari.server.state.ValueAttributesInfo propertyValueAttributes> = r1
+org.apache.ambari.server.controller.StackConfigurationResponse.getType : $r1 = r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.lang.String type>
+org.apache.ambari.server.controller.StackConfigurationResponse.getPropertyName : $r1 = r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.lang.String propertyName>
+org.apache.ambari.server.controller.StackConfigurationResponse.getPropertyType : $r1 = r0.<org.apache.ambari.server.controller.StackConfigurationResponse: java.util.Set propertyTypes>
+org.apache.ambari.server.state.ValueAttributesInfo.setUnit : r0.<org.apache.ambari.server.state.ValueAttributesInfo: java.lang.String unit> = r1

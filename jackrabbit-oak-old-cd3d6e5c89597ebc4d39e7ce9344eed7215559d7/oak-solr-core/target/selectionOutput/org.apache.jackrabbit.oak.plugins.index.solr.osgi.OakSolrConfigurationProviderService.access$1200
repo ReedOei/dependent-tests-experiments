@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.access$1200 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService: java.lang.String[] ignoredProperties> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.access$1200 : return $r1

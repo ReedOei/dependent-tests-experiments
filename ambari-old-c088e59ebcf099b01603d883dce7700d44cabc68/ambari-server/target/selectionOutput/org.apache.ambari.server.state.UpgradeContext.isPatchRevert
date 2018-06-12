@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.UpgradeContext.isPatchRevert : $z0 = r0.<org.apache.ambari.server.state.UpgradeContext: boolean m_isRevert> >>>>>>>> org.apache.ambari.server.state.UpgradeContext.isPatchRevert : return $z0

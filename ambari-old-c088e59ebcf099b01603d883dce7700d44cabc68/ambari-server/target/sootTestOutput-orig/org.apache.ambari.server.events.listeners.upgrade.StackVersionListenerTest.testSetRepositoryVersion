@@ -1,0 +1,50 @@
+org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent.getVersion : $r1 = r0.<org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent: java.lang.String version>
+org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent.getCluster : $r1 = r0.<org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent: org.apache.ambari.server.state.Cluster cluster>
+org.apache.ambari.server.events.publishers.VersionEventPublisher.register : $r2 = r0.<org.apache.ambari.server.events.publishers.VersionEventPublisher: com.google.common.eventbus.EventBus m_eventBus>
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : $r10 = <org.apache.ambari.server.events.listeners.upgrade.StackVersionListener: java.lang.String UNKNOWN_VERSION>
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : interfaceinvoke r3.<org.apache.ambari.server.state.ServiceComponentHost: org.apache.ambari.server.orm.entities.HostVersionEntity recalculateHostVersionState()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : r5 = interfaceinvoke r3.<org.apache.ambari.server.state.ServiceComponentHost: java.lang.String getVersion()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : interfaceinvoke r2.<org.apache.ambari.server.state.ServiceComponent: void updateRepositoryState(java.lang.String)>(r4)
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean equals(java.lang.String,java.lang.String)>(r6, r4)
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : $r8 = <org.apache.ambari.server.state.UpgradeState: org.apache.ambari.server.state.UpgradeState NONE>
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : r6 = interfaceinvoke r2.<org.apache.ambari.server.state.ServiceComponent: java.lang.String getDesiredVersion()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : $z2 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r4)
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : $z3 = staticinvoke <org.apache.commons.lang.StringUtils: boolean equals(java.lang.String,java.lang.String)>(r5, r4)
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : r7 = interfaceinvoke r3.<org.apache.ambari.server.state.ServiceComponentHost: org.apache.ambari.server.state.UpgradeState getUpgradeState()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : interfaceinvoke r3.<org.apache.ambari.server.state.ServiceComponentHost: void setVersion(java.lang.String)>(r4)
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.processComponentAdvertisedVersion : if r5 == null goto $r8 = <org.apache.ambari.server.state.UpgradeState: org.apache.ambari.server.state.UpgradeState NONE>
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $r20 = r0.<org.apache.ambari.server.events.listeners.upgrade.StackVersionListener: org.apache.ambari.server.orm.dao.RepositoryVersionDAO repositoryVersionDAO>
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : r4 = virtualinvoke r1.<org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent: java.lang.String getVersion()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $z3 = staticinvoke <org.apache.commons.lang.StringUtils: boolean equals(java.lang.String,java.lang.String)>(r34, r4)
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $r7 = <org.apache.ambari.server.events.listeners.upgrade.StackVersionListener: org.slf4j.Logger LOG>
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : specialinvoke r0.<org.apache.ambari.server.events.listeners.upgrade.StackVersionListener: void processComponentAdvertisedVersion(org.apache.ambari.server.state.Cluster,org.apache.ambari.server.state.ServiceComponent,org.apache.ambari.server.state.ServiceComponentHost,java.lang.String)>(r2, r6, r3, r4)
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : virtualinvoke r33.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: void setResolved(boolean)>(1)
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : goto [?= return]
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $r11 = interfaceinvoke r3.<org.apache.ambari.server.state.ServiceComponentHost: java.lang.String getServiceComponentName()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $r39 = virtualinvoke r35.<org.apache.ambari.server.state.StackId: java.lang.String getStackName()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : if null == r33 goto r35 = interfaceinvoke r3.<org.apache.ambari.server.state.ServiceComponentHost: org.apache.ambari.server.state.StackId getDesiredStackId()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : r34 = virtualinvoke r33.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: java.lang.String getVersion()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : r3 = virtualinvoke r1.<org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent: org.apache.ambari.server.state.ServiceComponentHost getServiceComponentHost()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $r25 = r0.<org.apache.ambari.server.events.listeners.upgrade.StackVersionListener: org.apache.ambari.server.orm.dao.RepositoryVersionDAO repositoryVersionDAO>
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : r2 = virtualinvoke r1.<org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent: org.apache.ambari.server.state.Cluster getCluster()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $r36 = r0.<org.apache.ambari.server.events.listeners.upgrade.StackVersionListener: com.google.inject.Provider ambariMetaInfoProvider>
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $r40 = virtualinvoke r35.<org.apache.ambari.server.state.StackId: java.lang.String getStackVersion()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : virtualinvoke r33.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: void setVersion(java.lang.String)>(r4)
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isEmpty(java.lang.String)>(r4)
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $r8 = virtualinvoke r1.<org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent: java.lang.Long getRepositoryVersionId()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $r19 = interfaceinvoke r2.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.orm.entities.UpgradeEntity getUpgradeInProgress()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $z5 = virtualinvoke r5.<org.apache.ambari.server.state.ComponentInfo: boolean isVersionAdvertised()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $r12 = <org.apache.ambari.server.events.listeners.upgrade.StackVersionListener: java.lang.String UNKNOWN_VERSION>
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : r35 = interfaceinvoke r3.<org.apache.ambari.server.state.ServiceComponentHost: org.apache.ambari.server.state.StackId getDesiredStackId()>()
+org.apache.ambari.server.events.listeners.upgrade.StackVersionListener.onAmbariEvent : $r9 = interfaceinvoke r3.<org.apache.ambari.server.state.ServiceComponentHost: java.lang.String getServiceName()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if r2 == null goto r1.<org.apache.ambari.server.state.StackId: java.lang.String stackName> = ""
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $r8 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(0, i0)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i1 = virtualinvoke r2.<java.lang.String: int length()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : i0 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(45)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if i0 == -1 goto $r3 = new java.lang.RuntimeException
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $z0 = virtualinvoke r2.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i3 = i0 + 1
+org.apache.ambari.server.state.StackId.getStackName : $r1 = r0.<org.apache.ambari.server.state.StackId: java.lang.String stackName>
+org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent.getServiceComponentHost : $r1 = r0.<org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent: org.apache.ambari.server.state.ServiceComponentHost sch>
+org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent.getRepositoryVersionId : $r1 = r0.<org.apache.ambari.server.events.HostComponentVersionAdvertisedEvent: java.lang.Long repoVersionId>
+org.apache.ambari.server.state.StackId.getStackVersion : $r1 = r0.<org.apache.ambari.server.state.StackId: java.lang.String stackVersion>

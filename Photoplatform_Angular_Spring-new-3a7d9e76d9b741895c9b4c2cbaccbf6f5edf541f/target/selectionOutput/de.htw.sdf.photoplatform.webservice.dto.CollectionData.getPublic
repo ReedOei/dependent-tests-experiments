@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getPublic : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.Boolean isPublic> >>>>>>>> de.htw.sdf.photoplatform.webservice.dto.CollectionData.getPublic : return $r1

@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.fixture.job.TestWrongJob.execute : $r2 = new java.lang.RuntimeException >>>>>>>> com.dangdang.ddframe.job.fixture.job.TestWrongJob.execute : specialinvoke $r2.<java.lang.RuntimeException: void <init>(java.lang.String)>("WrongJobException")
+com.dangdang.ddframe.job.fixture.job.TestWrongJob.execute : specialinvoke $r2.<java.lang.RuntimeException: void <init>(java.lang.String)>("WrongJobException") >>>>>>>> com.dangdang.ddframe.job.fixture.job.TestWrongJob.execute : throw $r2

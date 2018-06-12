@@ -1,0 +1,1 @@
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector$GroupMemberAttr.weight : $r1 = r0.<org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector$GroupMemberAttr: java.lang.Integer weight> >>>>>>>> org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector$GroupMemberAttr.weight : return $r1

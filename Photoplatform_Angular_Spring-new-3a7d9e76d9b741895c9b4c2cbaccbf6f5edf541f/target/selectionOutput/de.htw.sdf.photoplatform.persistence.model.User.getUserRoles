@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.persistence.model.User.getUserRoles : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List userRoles> >>>>>>>> de.htw.sdf.photoplatform.persistence.model.User.getUserRoles : return $r1

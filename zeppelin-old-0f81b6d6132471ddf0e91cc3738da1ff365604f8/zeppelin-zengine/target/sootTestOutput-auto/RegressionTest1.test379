@@ -1,0 +1,38 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getHost : return "localhost"
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.add : $r5 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.add : exitmonitor $r5
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.add : $r6 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.add : $r11 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.add : $r7 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getInterpreterGroupName : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.lang.String interpreterGroupName>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.getClient : $r2 = new org.apache.commons.pool2.impl.GenericObjectPool
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.getClient : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess: org.apache.commons.pool2.impl.GenericObjectPool clientPool>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.onProcessFailed : $r3 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.util.concurrent.atomic.AtomicBoolean running>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.onProcessFailed : $r2 = <org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: org.slf4j.Logger logger>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$1202 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcessListener remoteInterpreterProcessListener> = r1
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.getInterpreterContextRunnerPool : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess: org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool interpreterContextRunnerPool>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setId : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setId : return r0
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getPort : $i0 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: int port>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.addAll : $r5 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.addAll : exitmonitor $r5
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.addAll : $r6 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.addAll : $r11 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.addAll : $r7 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.ClientFactory.create : $r14 = new org.apache.zeppelin.interpreter.InterpreterException
+org.apache.zeppelin.interpreter.remote.ClientFactory.create : $r5 = new org.apache.thrift.transport.TSocket
+org.apache.zeppelin.interpreter.remote.ClientFactory.create : virtualinvoke $r5.<org.apache.thrift.transport.TSocket: void open()>()
+org.apache.zeppelin.interpreter.remote.ClientFactory.create : $r1 = virtualinvoke r0.<org.apache.zeppelin.interpreter.remote.ClientFactory: org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Client create()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.access$002 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String id> = r1
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.updateRemoteAngularObject : z0 = 0
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.updateRemoteAngularObject : r17 = null
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.updateRemoteAngularObject : $r12 = <org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess: org.slf4j.Logger logger>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.updateRemoteAngularObject : $r7 = virtualinvoke $r6.<com.google.gson.Gson: java.lang.String toJson(java.lang.Object)>(r4)
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.updateRemoteAngularObject : r17 = virtualinvoke r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess: org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Client getClient()>()
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.updateRemoteAngularObject : $r9 = <org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess: org.slf4j.Logger logger>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.updateRemoteAngularObject : $r6 = new com.google.gson.Gson
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getInterpreterDir : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.lang.String interpreterDir>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.onProcessComplete : $r3 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.util.concurrent.atomic.AtomicBoolean running>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.onProcessComplete : $r1 = <org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: org.slf4j.Logger logger>

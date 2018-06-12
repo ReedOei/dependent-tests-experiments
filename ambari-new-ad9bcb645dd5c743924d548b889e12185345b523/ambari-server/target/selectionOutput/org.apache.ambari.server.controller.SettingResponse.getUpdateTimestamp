@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.SettingResponse.getUpdateTimestamp : $l0 = r0.<org.apache.ambari.server.controller.SettingResponse: long updateTimestamp> >>>>>>>> org.apache.ambari.server.controller.SettingResponse.getUpdateTimestamp : return $l0

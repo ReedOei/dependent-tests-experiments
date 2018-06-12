@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.EmbeddedSolrServerConfiguration.getSolrHomePath : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.EmbeddedSolrServerConfiguration: java.lang.String solrHomePath> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.EmbeddedSolrServerConfiguration.getSolrHomePath : return $r1

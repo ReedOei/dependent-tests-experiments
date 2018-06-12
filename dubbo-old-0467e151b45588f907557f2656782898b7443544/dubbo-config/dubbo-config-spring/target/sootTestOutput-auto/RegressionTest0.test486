@@ -1,0 +1,10 @@
+com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler.init : $r4 = new com.alibaba.dubbo.config.spring.schema.DubboBeanDefinitionParser
+com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler.init : $r1 = new com.alibaba.dubbo.config.spring.schema.DubboBeanDefinitionParser
+com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler.init : $r10 = new com.alibaba.dubbo.config.spring.schema.DubboBeanDefinitionParser
+com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler.init : $r7 = new com.alibaba.dubbo.config.spring.schema.DubboBeanDefinitionParser
+com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler.init : $r9 = new com.alibaba.dubbo.config.spring.schema.DubboBeanDefinitionParser
+com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler.init : $r6 = new com.alibaba.dubbo.config.spring.schema.DubboBeanDefinitionParser
+com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler.init : $r2 = new com.alibaba.dubbo.config.spring.schema.DubboBeanDefinitionParser
+com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler.init : $r5 = new com.alibaba.dubbo.config.spring.schema.DubboBeanDefinitionParser
+com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler.init : $r3 = new com.alibaba.dubbo.config.spring.schema.DubboBeanDefinitionParser
+com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler.init : $r8 = new com.alibaba.dubbo.config.spring.schema.DubboBeanDefinitionParser

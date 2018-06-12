@@ -1,0 +1,12 @@
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : r4 = "" >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : $r2 = "JOB_EXECUTION_LOG"
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : $r2 = "JOB_EXECUTION_LOG" >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : $z0 = virtualinvoke $r2.<java.lang.String: boolean equals(java.lang.Object)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : $z0 = virtualinvoke $r2.<java.lang.String: boolean equals(java.lang.Object)>(r1) >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : if $z0 == 0
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : if $z0 == 0 >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : r4 = "start_time"
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : if $z0 == 0 >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : $r3 = "JOB_STATUS_TRACE_LOG"
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : $r3 = "JOB_STATUS_TRACE_LOG" >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : $z1 = virtualinvoke $r3.<java.lang.String: boolean equals(java.lang.Object)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : $z1 = virtualinvoke $r3.<java.lang.String: boolean equals(java.lang.Object)>(r1) >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : if $z1 == 0
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : if $z1 == 0 >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : r4 = "creation_time"
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : if $z1 == 0 >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : return r4
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : r4 = "creation_time" >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : return r4
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : r4 = "start_time" >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : goto [?= return r4]
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : goto [?= return r4] >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : return r4

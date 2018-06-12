@@ -1,0 +1,5 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.createInstace : $r0 = new org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketText : r2 = staticinvoke <org.apache.zeppelin.notebook.socket.WatcherMessage: org.apache.zeppelin.notebook.socket.WatcherMessage fromJson(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketText : $r3 = r2.<org.apache.zeppelin.notebook.socket.WatcherMessage: java.lang.String noteId>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketClose : $r2 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.socket.WatcherMessage.fromJson : $r1 = <org.apache.zeppelin.notebook.socket.WatcherMessage: com.google.gson.Gson gson>

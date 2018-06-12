@@ -1,0 +1,1 @@
+org.apache.zeppelin.helium.HeliumRegistrySerializer.deserialize : r4 = virtualinvoke r1.<com.google.gson.JsonElement: com.google.gson.JsonObject getAsJsonObject()>()

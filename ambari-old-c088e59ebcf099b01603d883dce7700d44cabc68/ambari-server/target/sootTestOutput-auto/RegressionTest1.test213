@@ -1,0 +1,2 @@
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.getTimestamp : $l0 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ClusterConfigEntity: long _persistence_get_timestamp()>()
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.getServiceConfigEntities : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ClusterConfigEntity: java.util.Collection _persistence_get_serviceConfigEntities()>()

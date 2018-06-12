@@ -1,0 +1,5 @@
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : $r2 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>() >>>>>>>> com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : virtualinvoke $r2.<java.lang.Thread: void interrupt()>()
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : virtualinvoke $r2.<java.lang.Thread: void interrupt()>() >>>>>>>> com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : return
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : staticinvoke <java.lang.Thread: void sleep(long)>(l0) >>>>>>>> com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : goto [?= return]
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : staticinvoke <java.lang.Thread: void sleep(long)>(l0) >>>>>>>> com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : $r1 := @caughtexception
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : goto [?= return] >>>>>>>> com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : return

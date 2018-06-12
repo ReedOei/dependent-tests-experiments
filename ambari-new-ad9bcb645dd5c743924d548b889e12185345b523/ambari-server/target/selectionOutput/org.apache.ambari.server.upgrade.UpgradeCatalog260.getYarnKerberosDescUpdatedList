@@ -1,0 +1,1 @@
+org.apache.ambari.server.upgrade.UpgradeCatalog260.getYarnKerberosDescUpdatedList : $r1 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog260: java.util.List yarnKerberosDescUpdatedList> >>>>>>>> org.apache.ambari.server.upgrade.UpgradeCatalog260.getYarnKerberosDescUpdatedList : return $r1

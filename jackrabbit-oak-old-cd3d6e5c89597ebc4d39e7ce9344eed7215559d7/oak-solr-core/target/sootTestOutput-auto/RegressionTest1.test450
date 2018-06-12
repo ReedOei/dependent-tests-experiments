@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getPathField : return "path_exact"
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getCollapsedPathField : return "path_collapsed"

@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.index.solr.util.SolrUtils.getSortingField : lookupswitch(i0) {     case 2: goto $r9 = new java.lang.StringBuilder;     case 4: goto $r5 = new java.lang.StringBuilder;     case 12: goto $r1 = new java.lang.StringBuilder;     default: goto $r13 = new java.lang.StringBuilder; }
+org.apache.jackrabbit.oak.plugins.index.solr.util.SolrUtils.getSortingField : $r13 = new java.lang.StringBuilder

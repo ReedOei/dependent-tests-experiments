@@ -1,0 +1,18 @@
+de.htw.sdf.photoplatform.persistence.model.CollectionImage.setImage : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionImage: de.htw.sdf.photoplatform.persistence.model.Image image> = r1
+de.htw.sdf.photoplatform.persistence.model.CollectionCategory.setCollection : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionCategory: de.htw.sdf.photoplatform.persistence.model.Collection collection> = r1
+de.htw.sdf.photoplatform.persistence.model.Category.getDescription : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Category: java.lang.String description>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getUpdatedAt : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.util.Date updatedAt>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.getId : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id>
+de.htw.sdf.photoplatform.persistence.model.CollectionImage.getCollection : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.CollectionImage: de.htw.sdf.photoplatform.persistence.model.Collection collection>
+de.htw.sdf.photoplatform.persistence.model.Category.setName : r0.<de.htw.sdf.photoplatform.persistence.model.Category: java.lang.String name> = r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setCreatedBy : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String createdBy> = r1
+de.htw.sdf.photoplatform.persistence.model.CollectionImage.getImage : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.CollectionImage: de.htw.sdf.photoplatform.persistence.model.Image image>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : if r1 == null goto return 0
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : if r0 != r1 goto (branch)
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : r2 = (de.htw.sdf.photoplatform.persistence.AbstractBaseEntity) r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long getId()>()
+de.htw.sdf.photoplatform.persistence.model.Image.setMetaData : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String metaData> = r1
+de.htw.sdf.photoplatform.persistence.model.CollectionCategory.setCategory : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionCategory: de.htw.sdf.photoplatform.persistence.model.Category category> = r1
+de.htw.sdf.photoplatform.persistence.model.Collection.getUser : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Collection: de.htw.sdf.photoplatform.persistence.model.User user>
+de.htw.sdf.photoplatform.persistence.model.CollectionCategory.getCategory : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.CollectionCategory: de.htw.sdf.photoplatform.persistence.model.Category category>

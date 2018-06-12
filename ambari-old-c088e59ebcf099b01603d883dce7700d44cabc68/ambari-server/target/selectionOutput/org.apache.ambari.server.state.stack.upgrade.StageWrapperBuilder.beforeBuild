@@ -1,0 +1,2 @@
+org.apache.ambari.server.state.stack.upgrade.StageWrapperBuilder.beforeBuild : $r3 = new java.util.ArrayList >>>>>>>> org.apache.ambari.server.state.stack.upgrade.StageWrapperBuilder.beforeBuild : specialinvoke $r3.<java.util.ArrayList: void <init>(int)>(100)
+org.apache.ambari.server.state.stack.upgrade.StageWrapperBuilder.beforeBuild : specialinvoke $r3.<java.util.ArrayList: void <init>(int)>(100) >>>>>>>> org.apache.ambari.server.state.stack.upgrade.StageWrapperBuilder.beforeBuild : return $r3

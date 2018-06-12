@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ActiveWidgetLayoutResponse.setWidgets : r0.<org.apache.ambari.server.controller.ActiveWidgetLayoutResponse: java.util.List widgets> = r1 >>>>>>>> org.apache.ambari.server.controller.ActiveWidgetLayoutResponse.setWidgets : return

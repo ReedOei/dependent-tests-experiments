@@ -1,0 +1,21 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.getLifecycleManager : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterSettingManager : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterRunner : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterRunner interpreterRunner>
+org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterDir : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String interpreterDir> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.setErrorReason : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String errorReason> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getOption : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r2, "noteId should be not null")
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : r4 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String getInterpreterClassFromInterpreterSetting(java.lang.String)>(r3)
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r3, "replName should be not null")
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroup : $r6 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock interpreterGroupReadLock>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroup : r3 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String getInterpreterGroupId(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroup : $r7 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.Map interpreterGroups>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroup : $r9 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock interpreterGroupReadLock>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : $r4 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption getOption()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : $r3 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : r11 = "shared_process"
+org.apache.zeppelin.interpreter.InterpreterSetting.getConf : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterClassFromInterpreterSetting : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r1, "replName should be not null")
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterClassFromInterpreterSetting : $r6 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List interpreterInfos>
+org.apache.zeppelin.interpreter.InterpreterSetting.setDependencyResolver : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.dep.DependencyResolver dependencyResolver> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterRunner : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterRunner interpreterRunner> = r1

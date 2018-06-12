@@ -1,0 +1,4 @@
+com.dangdang.ddframe.job.executor.JobExecutorFactory.getJobExecutor : if null != r0 goto $z0 = r0 instanceof com.dangdang.ddframe.job.api.simple.SimpleJob
+com.dangdang.ddframe.job.executor.JobExecutorFactory.getJobExecutor : $r2 = new com.dangdang.ddframe.job.exception.JobConfigurationException
+com.dangdang.ddframe.job.executor.JobExecutorFactory.getJobExecutor : $z0 = r0 instanceof com.dangdang.ddframe.job.api.simple.SimpleJob
+com.dangdang.ddframe.job.executor.JobExecutorFactory.getJobExecutor : $z1 = r0 instanceof com.dangdang.ddframe.job.api.dataflow.DataflowJob

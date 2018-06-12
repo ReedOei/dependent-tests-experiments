@@ -1,0 +1,6 @@
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : $i0 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ClusterConfigEntity: int _persistence_get_selected()>() >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : if $i0 != 1
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : if $i0 != 1 >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : $z0 = 1
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : if $i0 != 1 >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : $z0 = 0
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : $z0 = 0 >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : return $z0
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : $z0 = 1 >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : goto [?= return $z0]
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : goto [?= return $z0] >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.isSelected : return $z0

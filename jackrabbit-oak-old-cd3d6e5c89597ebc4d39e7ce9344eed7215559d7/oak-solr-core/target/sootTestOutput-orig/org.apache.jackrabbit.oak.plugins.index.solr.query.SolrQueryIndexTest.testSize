@@ -1,0 +1,19 @@
+org.apache.jackrabbit.oak.plugins.index.solr.util.SolrIndexInitializer.isSolrIndexNode : $r1 = "solr"
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : goto [?= $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : r14 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup: org.apache.jackrabbit.oak.spi.state.NodeState root>
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : r3 = interfaceinvoke r0.<org.apache.jackrabbit.oak.spi.state.NodeState: org.apache.jackrabbit.oak.spi.state.NodeState getChildNode(java.lang.String)>("oak:index")
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : if z0 == 0 goto return r2
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : $r6 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup: org.apache.jackrabbit.oak.spi.state.NodeState root>
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : $r7 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : $r8 = interfaceinvoke r1.<org.apache.jackrabbit.oak.spi.query.Filter: java.lang.String getPath()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : $r7 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : $r2 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup: java.util.Collection collectIndexNodePaths(org.apache.jackrabbit.oak.spi.query.Filter,boolean)>(r1, 1)
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : $r8 = interfaceinvoke r5.<org.apache.jackrabbit.oak.spi.state.ChildNodeEntry: org.apache.jackrabbit.oak.spi.state.NodeState getNodeState()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : r2 = staticinvoke <com.google.common.collect.Sets: java.util.HashSet newHashSet()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup.collectIndexNodePaths : $r6 = interfaceinvoke r3.<org.apache.jackrabbit.oak.spi.state.NodeState: java.lang.Iterable getChildNodeEntries()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.getPlans : $r12 = new org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookup
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.getPlans : r6 = interfaceinvoke r4.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.getPlans : $i0 = interfaceinvoke r4.<java.util.Collection: int size()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.newSelector : $r5 = new org.apache.jackrabbit.oak.query.ast.SelectorImpl
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.newSelector : r3 = interfaceinvoke $r4.<org.apache.jackrabbit.oak.query.ast.NodeTypeInfoProvider: org.apache.jackrabbit.oak.query.ast.NodeTypeInfo getNodeTypeInfo(java.lang.String)>("nt:base")
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.newSelector : $r4 = new org.apache.jackrabbit.oak.query.NodeStateNodeTypeInfoProvider

@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.webservice.controller.PhotographerController.updateCollection : $z0 = interfaceinvoke r2.<org.springframework.validation.BindingResult: boolean hasErrors()>()
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setImageIds : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.util.List imageIds> = r1
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String name>

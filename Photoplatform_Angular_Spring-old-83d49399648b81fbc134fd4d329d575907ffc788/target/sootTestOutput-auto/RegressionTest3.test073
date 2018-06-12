@@ -1,0 +1,5 @@
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setDescription : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String description> = r1
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setPublic : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.Boolean isPublic> = r1
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getDescription : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String description>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setImageIds : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.util.List imageIds> = r1
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getImages : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.util.List images>

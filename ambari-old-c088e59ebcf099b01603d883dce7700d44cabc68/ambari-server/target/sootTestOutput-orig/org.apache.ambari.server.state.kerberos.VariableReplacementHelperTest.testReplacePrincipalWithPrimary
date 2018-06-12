@@ -1,0 +1,43 @@
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper$PrincipalPrimary.perform : return r2
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper$PrincipalPrimary.perform : $r4 = virtualinvoke r2.<java.lang.String: java.lang.String[] split(java.lang.String)>("@")
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper$PrincipalPrimary.perform : if r2 != null goto $z0 = virtualinvoke r2.<java.lang.String: boolean contains(java.lang.CharSequence)>("/")
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper$PrincipalPrimary.perform : $z0 = virtualinvoke r2.<java.lang.String: boolean contains(java.lang.CharSequence)>("/")
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper$PrincipalPrimary.perform : $z1 = virtualinvoke r2.<java.lang.String: boolean contains(java.lang.CharSequence)>("@")
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper$PrincipalPrimary.perform : $r6 = virtualinvoke r2.<java.lang.String: java.lang.String[] split(java.lang.String)>("/")
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : r4 = virtualinvoke r2.<java.util.regex.Matcher: java.lang.String group(int)>(1)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : r5 = virtualinvoke r2.<java.util.regex.Matcher: java.lang.String group(int)>(2)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : r19 = virtualinvoke $r8.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : if r5 == null goto (branch)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : $r7 = <org.apache.ambari.server.state.kerberos.VariableReplacementHelper: java.util.regex.Pattern PATTERN_VARIABLE>
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : r6 = virtualinvoke r2.<java.util.regex.Matcher: java.lang.String group(int)>(3)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : $r12 = virtualinvoke r21.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\\", "\\\\")
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : if r20 == null goto (branch)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : $z1 = virtualinvoke r2.<java.util.regex.Matcher: boolean find()>()
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : if r6 == null goto $r12 = virtualinvoke r21.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("\\", "\\\\")
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : if r21 == null goto (branch)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : if r1 == null goto return r19
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : z3 = 1
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : $r8 = new java.lang.StringBuffer
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : z3 = 0
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : if z3 != 0 goto staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("i0 = i0 + 1", "org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables")
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : i0 = i0 + 1
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : i0 = 0
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : $r10 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>(r4)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : r21 = specialinvoke r0.<org.apache.ambari.server.state.kerberos.VariableReplacementHelper: java.lang.String applyReplacementFunction(java.lang.String,java.lang.String,java.util.Map)>(r6, r21, r1)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = virtualinvoke r2.<java.util.regex.Matcher: boolean find()>()", "org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables")]
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : virtualinvoke r2.<java.util.regex.Matcher: java.lang.StringBuffer appendTail(java.lang.StringBuffer)>($r8)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : if r19 == null goto return r19
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : if r4 != null goto $r10 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>(r4)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.replaceVariables : $r11 = interfaceinvoke r20.<java.util.Map: java.lang.Object get(java.lang.Object)>(r5)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : $z0 = virtualinvoke r4.<java.util.regex.Matcher: boolean matches()>()
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : r7 = virtualinvoke r4.<java.util.regex.Matcher: java.lang.String group(int)>(2)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : if r1 == null goto return r2
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : $r9 = <org.apache.ambari.server.state.kerberos.VariableReplacementHelper: java.util.regex.Pattern PATTERN_FUNCTION>
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : $r10 = <org.apache.ambari.server.state.kerberos.VariableReplacementHelper: java.util.Map FUNCTIONS>
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : $r13 = r8[i1]
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : if r5 == null goto return r2
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : $r12 = interfaceinvoke r6.<org.apache.ambari.server.state.kerberos.VariableReplacementHelper$Function: java.lang.String perform(java.lang.String[],java.lang.String,java.util.Map)>(r8, r2, r3)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : r5 = virtualinvoke r4.<java.util.regex.Matcher: java.lang.String group(int)>(1)
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : if r6 == null goto return r2
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : r8 = virtualinvoke r7.<java.lang.String: java.lang.String[] split(java.lang.String)>("(?<!\\\\),")
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.applyReplacementFunction : i1 = 0

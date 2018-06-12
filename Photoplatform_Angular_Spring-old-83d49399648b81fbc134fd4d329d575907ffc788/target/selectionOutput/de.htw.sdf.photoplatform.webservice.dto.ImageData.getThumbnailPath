@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.dto.ImageData.getThumbnailPath : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String thumbnailPath> >>>>>>>> de.htw.sdf.photoplatform.webservice.dto.ImageData.getThumbnailPath : return $r1

@@ -1,0 +1,3 @@
+org.apache.ambari.server.state.QuickLinksConfigurationInfo.setIsDefault : r0.<org.apache.ambari.server.state.QuickLinksConfigurationInfo: java.lang.Boolean isDefault> = r1
+org.apache.ambari.server.stack.QuickLinksConfigurationModule.getModuleInfo : $r1 = r0.<org.apache.ambari.server.stack.QuickLinksConfigurationModule: org.apache.ambari.server.state.QuickLinksConfigurationInfo moduleInfo>
+org.apache.ambari.server.state.QuickLinksConfigurationInfo.isDeleted : $r1 = r0.<org.apache.ambari.server.state.QuickLinksConfigurationInfo: java.lang.Boolean deleted>

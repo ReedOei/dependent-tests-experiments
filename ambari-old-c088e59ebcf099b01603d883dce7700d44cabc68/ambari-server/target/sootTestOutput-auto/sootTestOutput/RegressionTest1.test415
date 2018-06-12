@@ -1,0 +1,4 @@
+org.apache.ambari.server.security.encryption.FileBasedCredentialStore.getKeyStorePath : $r1 = r0.<org.apache.ambari.server.security.encryption.FileBasedCredentialStore: java.io.File keyStoreFile>
+org.apache.ambari.server.state.alert.AlertDefinitionFactory.getAlertDefinitions : $r8 = new org.apache.ambari.server.AmbariException
+org.apache.ambari.server.state.alert.AlertDefinitionFactory.getAlertDefinitions : $r4 = new java.io.FileReader
+org.apache.ambari.server.state.alert.AlertDefinitionFactory.getAlertDefinitions : $r7 = <org.apache.ambari.server.state.alert.AlertDefinitionFactory: org.slf4j.Logger LOG>

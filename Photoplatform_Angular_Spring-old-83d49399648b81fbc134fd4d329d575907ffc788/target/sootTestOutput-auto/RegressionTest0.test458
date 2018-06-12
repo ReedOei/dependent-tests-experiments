@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer.setPhone : r0.<de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer: java.lang.String phone> = r1
+de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer.setSwift : r0.<de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer: java.lang.String swift> = r1

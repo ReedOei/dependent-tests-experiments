@@ -1,0 +1,18 @@
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r7 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/collections/photographers")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r16 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/users/becomephotographers")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r6 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/photographer/images/{imageId}")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r9 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/collections/{collectionId}/images")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : return $r1
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r4 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/users/admin/{start}/{count}")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r14 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/collections/update")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r8 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/collections/photographers/{start}/{count}")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r12 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/collections/{collectionId}/images/{imageId}")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r13 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/collections/{collectionId}")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r3 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/photographer/upload")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r10 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/collections/create")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r11 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/collections/addimage")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r15 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/collections/showcase")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r1 = newarray (java.lang.String)[15]
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r2 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/users/update")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedPhotographEndpoints : $r5 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/photographer/images")
+de.htw.sdf.photoplatform.webservice.Endpoints.restBuilder : $r1 = new java.lang.StringBuilder

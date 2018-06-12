@@ -1,0 +1,7 @@
+de.htw.sdf.photoplatform.persistence.model.Image.getPrice : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.Double price>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.setId : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.setName : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getSmallThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath>
+de.htw.sdf.photoplatform.persistence.model.Image.setSmallThumbPath : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.setMime : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.toString : $r1 = new java.lang.StringBuilder

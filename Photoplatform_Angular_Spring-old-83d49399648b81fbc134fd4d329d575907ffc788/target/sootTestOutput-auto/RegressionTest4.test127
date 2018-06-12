@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.Application.localeChangeInterceptor : $r2 = new org.springframework.web.servlet.i18n.LocaleChangeInterceptor
+de.htw.sdf.photoplatform.Application.localeChangeInterceptor : virtualinvoke $r2.<org.springframework.web.servlet.i18n.LocaleChangeInterceptor: void setParamName(java.lang.String)>("lang")
+de.htw.sdf.photoplatform.Application.localeChangeInterceptor : return $r2
+de.htw.sdf.photoplatform.exception.common.AbstractBaseException.getErrors : $r1 = r0.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: org.springframework.validation.Errors errors>

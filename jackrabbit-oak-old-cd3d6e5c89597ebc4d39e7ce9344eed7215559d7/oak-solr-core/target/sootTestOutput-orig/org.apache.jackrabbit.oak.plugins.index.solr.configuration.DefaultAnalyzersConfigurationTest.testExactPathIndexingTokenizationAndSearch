@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$1.createComponents : $r3 = new org.apache.lucene.analysis.core.KeywordTokenizer
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$1.createComponents : $r4 = new org.apache.lucene.analysis.Analyzer$TokenStreamComponents

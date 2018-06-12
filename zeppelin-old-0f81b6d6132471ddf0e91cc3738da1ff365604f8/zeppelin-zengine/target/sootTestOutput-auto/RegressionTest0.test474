@@ -1,0 +1,7 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.close : $z0 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreter: boolean isOpened>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.close : $r3 = <org.apache.zeppelin.interpreter.remote.RemoteInterpreter: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : $r7 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : exitmonitor $r6
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : return null
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : $r6 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>

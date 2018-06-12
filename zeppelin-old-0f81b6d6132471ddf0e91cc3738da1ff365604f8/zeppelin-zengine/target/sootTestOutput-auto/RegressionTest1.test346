@@ -1,0 +1,2 @@
+org.apache.zeppelin.interpreter.remote.RemoteAngularObjectRegistry.createNewAngularObject : $r6 = r0.<org.apache.zeppelin.interpreter.remote.RemoteAngularObjectRegistry: org.apache.zeppelin.interpreter.ManagedInterpreterGroup interpreterGroup>
+org.apache.zeppelin.interpreter.remote.RemoteAngularObjectRegistry.createNewAngularObject : $r5 = new org.apache.zeppelin.interpreter.remote.RemoteAngularObject

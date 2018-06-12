@@ -1,0 +1,2 @@
+org.apache.zeppelin.notebook.socket.Message.toJson : $r1 = <org.apache.zeppelin.notebook.socket.Message: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.socket.Message$OP.values : $r0 = <org.apache.zeppelin.notebook.socket.Message$OP: org.apache.zeppelin.notebook.socket.Message$OP[] $VALUES>

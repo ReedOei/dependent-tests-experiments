@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ExtensionLinkResponse$ExtensionLinkResponseInfo.getExtensionName : $r1 = r0.<org.apache.ambari.server.controller.ExtensionLinkResponse$ExtensionLinkResponseInfo: java.lang.String extensionName> >>>>>>>> org.apache.ambari.server.controller.ExtensionLinkResponse$ExtensionLinkResponseInfo.getExtensionName : return $r1

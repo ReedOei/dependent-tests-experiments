@@ -1,0 +1,4 @@
+org.apache.accumulo.master.tableOps.Utils.getLock : $r8 = new org.apache.accumulo.server.zookeeper.ZooQueueLock
+org.apache.accumulo.master.tableOps.Utils.getLock : $r4 = newarray (java.lang.Object)[1]
+org.apache.accumulo.master.tableOps.Utils.reserveNamespace : $r4 = staticinvoke <org.apache.accumulo.master.tableOps.Utils: java.util.concurrent.locks.Lock getLock(org.apache.accumulo.core.client.impl.AbstractId,long,boolean)>(r0, l0, z0)
+org.apache.accumulo.master.tableOps.RenameNamespace.isReady : $r3 = r0.<org.apache.accumulo.master.tableOps.RenameNamespace: org.apache.accumulo.core.client.impl.Namespace$ID namespaceId>

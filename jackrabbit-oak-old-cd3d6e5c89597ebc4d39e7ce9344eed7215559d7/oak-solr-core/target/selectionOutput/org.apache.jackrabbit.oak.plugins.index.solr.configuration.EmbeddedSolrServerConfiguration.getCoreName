@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.EmbeddedSolrServerConfiguration.getCoreName : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.EmbeddedSolrServerConfiguration: java.lang.String coreName> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.EmbeddedSolrServerConfiguration.getCoreName : return $r1

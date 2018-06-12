@@ -1,0 +1,6 @@
+org.apache.accumulo.master.replication.SequentialWorkAssigner.getName : return "Sequential Work Assigner"
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.configure : r0.<org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner: org.apache.accumulo.core.conf.AccumuloConfiguration conf> = r1
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.configure : r0.<org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner: org.apache.accumulo.core.client.Connector conn> = r2
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.assignWork : $r1 = r0.<org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner: org.apache.accumulo.server.zookeeper.DistributedWorkQueue workQueue>
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.assignWork : $r6 = r0.<org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner: org.apache.accumulo.core.conf.AccumuloConfiguration conf>
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.initializeWorkQueue : $r2 = new org.apache.accumulo.server.zookeeper.DistributedWorkQueue

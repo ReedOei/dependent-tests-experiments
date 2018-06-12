@@ -1,0 +1,8 @@
+edu.washington.cs.dt.impact.ExampleDT.Calculator.getSum : i7 = 0
+edu.washington.cs.dt.impact.ExampleDT.Calculator.getSum : goto [?= i7 = i7 + 1]
+edu.washington.cs.dt.impact.ExampleDT.Calculator.getSum : $i4 = i7 % 2
+edu.washington.cs.dt.impact.ExampleDT.Calculator.getSum : $i4 = i7 % 21
+edu.washington.cs.dt.impact.ExampleDT.Calculator.getSum : $i4 = i7 % 22
+edu.washington.cs.dt.impact.ExampleDT.Calculator.getSum : $i4 = i7 % 23
+edu.washington.cs.dt.impact.ExampleDT.Calculator.getSum : $i4 = i7 % 24
+edu.washington.cs.dt.impact.ExampleDT.Calculator.getSum : $i4 = i7 % 25

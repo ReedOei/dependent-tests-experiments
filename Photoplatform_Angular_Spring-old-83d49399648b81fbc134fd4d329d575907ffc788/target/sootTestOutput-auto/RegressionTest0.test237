@@ -1,0 +1,6 @@
+de.htw.sdf.photoplatform.Application.servletContainer : $r2 = new org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory
+de.htw.sdf.photoplatform.Application.servletContainer : $r3 = newarray (org.apache.catalina.connector.Connector)[1]
+de.htw.sdf.photoplatform.Application.createSslConnector : $r5 = new org.springframework.core.io.ClassPathResource
+de.htw.sdf.photoplatform.Application.createSslConnector : $r3 = new org.apache.catalina.connector.Connector
+de.htw.sdf.photoplatform.Application.createSslConnector : $r4 = virtualinvoke $r3.<org.apache.catalina.connector.Connector: org.apache.coyote.ProtocolHandler getProtocolHandler()>()
+de.htw.sdf.photoplatform.Application.createSslConnector : $r9 = new java.lang.IllegalStateException

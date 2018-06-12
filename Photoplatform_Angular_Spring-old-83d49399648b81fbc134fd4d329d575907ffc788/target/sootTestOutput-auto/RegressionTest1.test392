@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.persistence.model.CollectionCategory.setCollection : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionCategory: de.htw.sdf.photoplatform.persistence.model.Collection collection> = r1
+de.htw.sdf.photoplatform.manager.impl.CategoryManagerImpl.update : $r2 = r0.<de.htw.sdf.photoplatform.manager.impl.CategoryManagerImpl: de.htw.sdf.photoplatform.repository.CategoryDAO categoryDAO>
+de.htw.sdf.photoplatform.persistence.model.CollectionCategory.setCategory : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionCategory: de.htw.sdf.photoplatform.persistence.model.Category category> = r1

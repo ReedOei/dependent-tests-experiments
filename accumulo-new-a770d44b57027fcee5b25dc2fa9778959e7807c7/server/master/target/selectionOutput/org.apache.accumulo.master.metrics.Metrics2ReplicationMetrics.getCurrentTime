@@ -1,0 +1,1 @@
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.getCurrentTime : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>() >>>>>>>> org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.getCurrentTime : return $l0

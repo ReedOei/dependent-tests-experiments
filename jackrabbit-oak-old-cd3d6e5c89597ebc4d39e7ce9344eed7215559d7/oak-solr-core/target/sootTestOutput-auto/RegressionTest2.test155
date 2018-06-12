@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.getPlan : $r3 = new java.lang.UnsupportedOperationException

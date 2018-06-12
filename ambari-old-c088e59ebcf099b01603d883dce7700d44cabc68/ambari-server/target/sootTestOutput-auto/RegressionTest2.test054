@@ -1,0 +1,4 @@
+org.apache.ambari.server.Role.valueOf : $r3 = new org.apache.ambari.server.Role
+org.apache.ambari.server.Role.valueOf : $r4 = <org.apache.ambari.server.Role: java.util.Map roles>
+org.apache.ambari.server.Role.valueOf : $r2 = <org.apache.ambari.server.Role: java.util.Map roles>
+org.apache.ambari.server.Role.valueOf : return $r3

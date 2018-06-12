@@ -1,0 +1,16 @@
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.hashCode : $r1 = r0.<org.apache.ambari.server.security.authorization.AmbariGrantedAuthority: org.apache.ambari.server.orm.entities.PrivilegeEntity privilegeEntity>
+org.apache.ambari.server.orm.entities.PrivilegeEntity.equals : $z3 = staticinvoke <java.util.Objects: boolean equals(java.lang.Object,java.lang.Object)>($r11, $r12)
+org.apache.ambari.server.orm.entities.PrivilegeEntity.equals : if r1 == null goto return 0
+org.apache.ambari.server.orm.entities.PrivilegeEntity.equals : if r0 != r1 goto (branch)
+org.apache.ambari.server.orm.entities.PrivilegeEntity.equals : $z1 = staticinvoke <java.util.Objects: boolean equals(java.lang.Object,java.lang.Object)>($r7, $r8)
+org.apache.ambari.server.orm.entities.PrivilegeEntity.equals : $z2 = staticinvoke <java.util.Objects: boolean equals(java.lang.Object,java.lang.Object)>($r9, $r10)
+org.apache.ambari.server.orm.entities.PrivilegeEntity.equals : r2 = (org.apache.ambari.server.orm.entities.PrivilegeEntity) r1
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.equals : if r1 == null goto return 0
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.equals : if r0 != r1 goto (branch)
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.equals : r2 = (org.apache.ambari.server.security.authorization.AmbariGrantedAuthority) r1
+org.apache.ambari.server.security.authorization.AuthorizationHelper.convertPrivilegesToAuthorities : $r6 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.security.authorization.AuthorizationHelper.convertPrivilegesToAuthorities : r3 = interfaceinvoke r1.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.security.authorization.AuthorizationHelper.convertPrivilegesToAuthorities : $r7 = new org.apache.ambari.server.security.authorization.AmbariGrantedAuthority
+org.apache.ambari.server.security.authorization.AuthorizationHelper.convertPrivilegesToAuthorities : $r5 = new java.util.HashSet
+org.apache.ambari.server.security.authorization.AuthorizationHelper.convertPrivilegesToAuthorities : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.orm.entities.PrivilegeEntity.hashCode : $r1 = newarray (java.lang.Object)[4]

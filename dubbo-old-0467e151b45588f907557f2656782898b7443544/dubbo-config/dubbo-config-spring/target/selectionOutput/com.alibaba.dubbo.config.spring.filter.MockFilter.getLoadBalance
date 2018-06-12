@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.filter.MockFilter.getLoadBalance : $r1 = r0.<com.alibaba.dubbo.config.spring.filter.MockFilter: com.alibaba.dubbo.rpc.cluster.LoadBalance loadBalance> >>>>>>>> com.alibaba.dubbo.config.spring.filter.MockFilter.getLoadBalance : return $r1

@@ -1,0 +1,15 @@
+de/htw/sdf/photoplatform/repository/CategoryDAOTest.class
+de/htw/sdf/photoplatform/repository/CollectionDAOTest.class
+de/htw/sdf/photoplatform/repository/UserImageDAOTest.class
+de/htw/sdf/photoplatform/repository/ImageDAOTest.class
+de/htw/sdf/photoplatform/repository/RoleDAOTest.class
+de/htw/sdf/photoplatform/repository/CollectionCategoryDAOTest.class
+de/htw/sdf/photoplatform/common/BaseImageTester.class
+de/htw/sdf/photoplatform/common/BaseTester.class
+de/htw/sdf/photoplatform/common/BaseAPITester.class
+de/htw/sdf/photoplatform/common/ImportSQLTester.class
+de/htw/sdf/photoplatform/DBUtil.class
+de/htw/sdf/photoplatform/webservice/PhotographerControllerTest.class
+de/htw/sdf/photoplatform/webservice/AuthenticationControllerTest.class
+de/htw/sdf/photoplatform/webservice/UserControllerTest.class
+de/htw/sdf/photoplatform/webservice/util/UserUtilityTest.class

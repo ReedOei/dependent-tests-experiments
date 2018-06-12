@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.Application.localeResolver : $r3 = <java.util.Locale: java.util.Locale GERMAN>
+de.htw.sdf.photoplatform.Application.localeResolver : $r2 = new org.springframework.web.servlet.i18n.SessionLocaleResolver
+de.htw.sdf.photoplatform.Application.localeResolver : return $r2

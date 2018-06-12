@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.ComponentInfo.getComponentType : $r1 = r0.<org.apache.ambari.server.state.ComponentInfo: java.lang.String componentType> >>>>>>>> org.apache.ambari.server.state.ComponentInfo.getComponentType : return $r1

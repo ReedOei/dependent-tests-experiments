@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.controller.AuthenticationController.userByName : $r2 = r0.<de.htw.sdf.photoplatform.webservice.controller.AuthenticationController: de.htw.sdf.photoplatform.manager.UserManager userManager>

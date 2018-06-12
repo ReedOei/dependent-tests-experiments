@@ -1,0 +1,1 @@
+org.apache.ambari.server.orm.entities.TopologyLogicalTaskEntity.setHostTaskId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.TopologyLogicalTaskEntity: void _persistence_set_hostTaskId(java.lang.Long)>(r1) >>>>>>>> org.apache.ambari.server.orm.entities.TopologyLogicalTaskEntity.setHostTaskId : return

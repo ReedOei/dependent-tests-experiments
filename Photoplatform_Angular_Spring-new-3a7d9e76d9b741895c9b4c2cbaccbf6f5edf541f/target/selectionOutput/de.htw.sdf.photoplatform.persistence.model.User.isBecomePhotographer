@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.persistence.model.User.isBecomePhotographer : $z0 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean isRoleIncluded(java.lang.String)>("ROLE_BECOME_PHOTOGRAPHER") >>>>>>>> de.htw.sdf.photoplatform.persistence.model.User.isBecomePhotographer : return $z0

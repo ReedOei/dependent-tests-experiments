@@ -1,0 +1,22 @@
+de.htw.sdf.photoplatform.persistence.model.Collection.setDescription : r0.<de.htw.sdf.photoplatform.persistence.model.Collection: java.lang.String description> = r1
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setUserdata : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.UserData userdata> = r1
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getDescription : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String description>
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollection : $r3 = new de.htw.sdf.photoplatform.persistence.model.Collection
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollection : $l0 = virtualinvoke r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: long getId()>()
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollection : virtualinvoke $r3.<de.htw.sdf.photoplatform.persistence.model.Collection: void setUser(de.htw.sdf.photoplatform.persistence.model.User)>(r1)
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollection : $r7 = virtualinvoke r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.Boolean getPublic()>()
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollection : $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String getName()>()
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollection : $r6 = virtualinvoke r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String getDescription()>()
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.setId : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id> = r1
+de.htw.sdf.photoplatform.persistence.model.Collection.setName : r0.<de.htw.sdf.photoplatform.persistence.model.Collection: java.lang.String name> = r1
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getPublic : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.Boolean isPublic>
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : if r2 != null goto $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : return 0
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : r2 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.model.Collection.setUser : r0.<de.htw.sdf.photoplatform.persistence.model.Collection: de.htw.sdf.photoplatform.persistence.model.User user> = r1
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getId : $l0 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: long id>
+de.htw.sdf.photoplatform.persistence.model.UserRole.setUser : r0.<de.htw.sdf.photoplatform.persistence.model.UserRole: de.htw.sdf.photoplatform.persistence.model.User user> = r1
+de.htw.sdf.photoplatform.persistence.model.User.isPhotographer : $z0 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean isRoleIncluded(java.lang.String)>("ROLE_PHOTOGRAPHER")
+de.htw.sdf.photoplatform.persistence.model.User.getUserRoles : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List userRoles>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getImages : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.util.List images>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String name>

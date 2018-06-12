@@ -1,0 +1,2 @@
+org.apache.accumulo.master.replication.SequentialWorkAssigner.getQueueSize : $r1 = r0.<org.apache.accumulo.master.replication.SequentialWorkAssigner: java.util.Map queuedWorkByPeerName> >>>>>>>> org.apache.accumulo.master.replication.SequentialWorkAssigner.getQueueSize : $i0 = interfaceinvoke $r1.<java.util.Map: int size()>()
+org.apache.accumulo.master.replication.SequentialWorkAssigner.getQueueSize : $i0 = interfaceinvoke $r1.<java.util.Map: int size()>() >>>>>>>> org.apache.accumulo.master.replication.SequentialWorkAssigner.getQueueSize : return $i0

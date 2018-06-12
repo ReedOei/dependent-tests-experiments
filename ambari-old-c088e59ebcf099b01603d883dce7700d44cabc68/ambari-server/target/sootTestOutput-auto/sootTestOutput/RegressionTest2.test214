@@ -1,0 +1,4 @@
+org.apache.ambari.server.agent.rest.AgentResource.components : $r11 = <org.apache.ambari.server.agent.rest.AgentResource: org.slf4j.Logger LOG>
+org.apache.ambari.server.agent.rest.AgentResource.components : $r4 = <org.apache.ambari.server.agent.rest.AgentResource: org.slf4j.Logger LOG>
+org.apache.ambari.server.agent.rest.AgentResource.components : $r5 = <org.apache.ambari.server.agent.rest.AgentResource: org.apache.ambari.server.agent.HeartBeatHandler hh>
+org.apache.ambari.server.agent.rest.AgentResource.components : $r12 = new javax.ws.rs.WebApplicationException

@@ -1,0 +1,1 @@
+org.apache.accumulo.master.Master.access$300 : $i0 = specialinvoke r0.<org.apache.accumulo.master.Master: int nonMetaDataTabletsAssignedOrHosted()>() >>>>>>>> org.apache.accumulo.master.Master.access$300 : return $i0

@@ -1,0 +1,11 @@
+de.htw.sdf.photoplatform.persistence.model.User.setEnabled : r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean enabled> = z0
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.setClazz : r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: java.lang.Class clazz> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getUpdatedAt : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.util.Date updatedAt>
+de.htw.sdf.photoplatform.persistence.model.UserImage.setImage : r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.Image image> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getMobileThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mobileThumbPath>
+de.htw.sdf.photoplatform.persistence.model.UserImage.setOwner : r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.User owner> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.persistence.model.Image.setMetaData : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String metaData> = r1
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.create : $r2 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.persistence.model.Image.toString : $r1 = new java.lang.StringBuilder

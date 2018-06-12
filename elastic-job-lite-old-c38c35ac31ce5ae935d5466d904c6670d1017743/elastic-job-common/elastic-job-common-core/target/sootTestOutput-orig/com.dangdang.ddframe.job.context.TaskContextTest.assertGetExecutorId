@@ -1,0 +1,12 @@
+com.dangdang.ddframe.job.context.TaskContext.getExecutorId : $r2 = staticinvoke <com.google.common.base.Joiner: com.google.common.base.Joiner on(java.lang.String)>("@-@")
+com.dangdang.ddframe.job.fixture.context.TaskNode.builder : $r0 = new com.dangdang.ddframe.job.fixture.context.TaskNode$TaskNodeBuilder
+com.dangdang.ddframe.job.fixture.context.TaskNode$TaskNodeBuilder.build : $r1 = new com.dangdang.ddframe.job.fixture.context.TaskNode
+com.dangdang.ddframe.job.context.TaskContext$MetaInfo.from : $i0 = lengthof r1
+com.dangdang.ddframe.job.context.TaskContext$MetaInfo.from : r1 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>("@-@")
+com.dangdang.ddframe.job.context.TaskContext$MetaInfo.from : $i2 = lengthof r1
+com.dangdang.ddframe.job.fixture.context.TaskNode.getTaskNodePath : $r1 = staticinvoke <com.google.common.base.Joiner: com.google.common.base.Joiner on(java.lang.String)>("@-@")
+com.dangdang.ddframe.job.context.ExecutionType.valueOf : $r1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class "Lcom/dangdang/ddframe/job/context/ExecutionType;", r0)
+com.dangdang.ddframe.job.fixture.context.TaskNode.getTaskNodeValue : $r3 = staticinvoke <com.google.common.base.Joiner: com.google.common.base.Joiner on(java.lang.String)>("@-@")
+com.dangdang.ddframe.job.context.TaskContext.from : $i0 = lengthof r1
+com.dangdang.ddframe.job.context.TaskContext.from : r1 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>("@-@")
+com.dangdang.ddframe.job.context.TaskContext.from : $z0 = 1

@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.statistics.type.job.JobRunningStatistics.getRunningCount : $i0 = r0.<com.dangdang.ddframe.job.statistics.type.job.JobRunningStatistics: int runningCount>
+com.dangdang.ddframe.job.statistics.type.job.JobRunningStatistics.getCreationTime : $r1 = r0.<com.dangdang.ddframe.job.statistics.type.job.JobRunningStatistics: java.util.Date creationTime>

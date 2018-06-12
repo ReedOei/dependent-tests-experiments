@@ -1,0 +1,104 @@
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setKeyEncryptionTypes : $r2 = new java.util.HashSet
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.open : virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: void setDefaultRealm(java.lang.String)>(r2)
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.open : $r4 = interfaceinvoke r3.<java.util.Map: java.lang.Object get(java.lang.Object)>("encryption_types")
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.open : $r7 = interfaceinvoke r3.<java.util.Map: java.lang.Object get(java.lang.Object)>("executable_search_paths")
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.open : if r3 == null goto return
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.open : virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: void setAdministratorCredential(org.apache.ambari.server.security.credential.PrincipalKeyCredential)>(r1)
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.close : virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: void setOpen(boolean)>(0)
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest.createMockedHandler : $r4 = interfaceinvoke $r3.<org.easymock.IMockBuilder: org.easymock.IMockBuilder addMockedMethods(java.lang.reflect.Method[])>(r1)
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest.createMockedHandler : return r2
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest.createMockedHandler : $r5 = interfaceinvoke $r4.<org.easymock.IMockBuilder: java.lang.Object createMock()>()
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest.createMockedHandler : $r6 = r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest: com.google.inject.Injector injector>
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest.createMockedHandler : $r3 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest: org.easymock.IMockBuilder createMockBuilder(java.lang.Class)>(class "Lorg/apache/ambari/server/serveraction/kerberos/MITKerberosOperationHandler;")
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.open : $r4 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler: java.lang.String getExecutable(java.lang.String)>("kadmin")
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.open : $r5 = interfaceinvoke r3.<java.util.Map: java.lang.Object get(java.lang.Object)>("kdc_create_attributes")
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.open : if r3 == null goto $r4 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler: java.lang.String getExecutable(java.lang.String)>("kadmin")
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.open : specialinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: void open(org.apache.ambari.server.security.credential.PrincipalKeyCredential,java.lang.String,java.util.Map)>(r1, r2, r3)
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandlerTest.getAdminCredentials : $r1 = <org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandlerTest: org.apache.ambari.server.security.credential.PrincipalKeyCredential DEFAULT_ADMIN_CREDENTIALS>
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.getAdminServerHost : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.lang.String adminServerHost>
+org.apache.ambari.server.security.credential.PrincipalKeyCredential.getKey : $r1 = r0.<org.apache.ambari.server.security.credential.PrincipalKeyCredential: char[] key>
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.createPrincipal : if r4 == null goto (branch)
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.createPrincipal : $r6 = newarray (java.lang.Object)[2]
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.createPrincipal : $r21 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.createPrincipal : r5 = virtualinvoke r3.<org.apache.ambari.server.utils.ShellCommandUtil$Result: java.lang.String getStderr()>()
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.createPrincipal : $z2 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isEmpty(java.lang.String)>(r1)
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.createPrincipal : $z1 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler: boolean isOpen()>()
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.createPrincipal : r4 = virtualinvoke r3.<org.apache.ambari.server.utils.ShellCommandUtil$Result: java.lang.String getStdout()>()
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.open : $z0 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: boolean init()>()
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.open : $r4 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.lang.String getExecutable(java.lang.String)>("kinit")
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.open : if r3 == null goto $r4 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.lang.String getExecutable(java.lang.String)>("kinit")
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.open : specialinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: void open(org.apache.ambari.server.security.credential.PrincipalKeyCredential,java.lang.String,java.util.Map)>(r1, r2, r3)
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.open : $r5 = interfaceinvoke r3.<java.util.Map: java.lang.Object get(java.lang.Object)>("admin_server_host")
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setAdministratorCredential : r3 = virtualinvoke r1.<org.apache.ambari.server.security.credential.PrincipalKeyCredential: char[] getKey()>()
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setAdministratorCredential : r2 = virtualinvoke r1.<org.apache.ambari.server.security.credential.PrincipalKeyCredential: java.lang.String getPrincipal()>()
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setAdministratorCredential : $z1 = staticinvoke <org.apache.commons.lang.ArrayUtils: boolean isEmpty(char[])>(r3)
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setAdministratorCredential : if r1 != null goto r2 = virtualinvoke r1.<org.apache.ambari.server.security.credential.PrincipalKeyCredential: java.lang.String getPrincipal()>()
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setAdministratorCredential : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isEmpty(java.lang.String)>(r2)
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setAdministratorCredential : r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: org.apache.ambari.server.security.credential.PrincipalKeyCredential administratorCredential> = r1
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.isOpen : $z0 = r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: boolean open>
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.getAdministratorCredential : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: org.apache.ambari.server.security.credential.PrincipalKeyCredential administratorCredential>
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.getKinitCommand : $r8 = virtualinvoke r2.<org.apache.ambari.server.security.credential.PrincipalKeyCredential: java.lang.String getPrincipal()>()
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.getKinitCommand : $r4 = newarray (java.lang.String)[6]
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.getKinitCommand : $r6 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler: java.lang.String getAdminServerHost()>()
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.close : r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler: java.lang.String createAttributes> = null
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.close : r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler: java.lang.String executableKadmin> = null
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandler.close : specialinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: void close()>()
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest$2.configure : $r16 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest$2: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/configuration/Configuration;")
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest$2.configure : $r13 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest$2: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/Clusters;")
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest$2.configure : $r17 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest$2: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/stack/OsFamily;")
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest$2.configure : $r2 = r0.<org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest$2: org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest this$0>
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest$2.configure : $r4 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration: java.lang.String getServerOsFamily()>()
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest$2.configure : $i0 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration: int getKerberosOperationRetryTimeout()>()
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.close : r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.util.HashMap cachedKeytabs> = null
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.close : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.io.File credentialsCacheFile>
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.close : r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.lang.String adminServerHost> = null
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.close : $r2 = r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.io.File credentialsCacheFile>
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.close : $r4 = <org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: org.slf4j.Logger LOG>
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.close : specialinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: void close()>()
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.close : r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.util.Map environmentMap> = null
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.close : r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.io.File credentialsCacheFile> = null
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.close : r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.lang.String executableKinit> = null
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setOpen : r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: boolean open> = z0
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setDefaultRealm : r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: java.lang.String defaultRealm> = r1
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.ensureAmbariOnlyAccess : $z5 = virtualinvoke r1.<java.io.File: boolean isDirectory()>()
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.ensureAmbariOnlyAccess : $z0 = virtualinvoke r1.<java.io.File: boolean exists()>()
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.ensureAmbariOnlyAccess : $z1 = virtualinvoke r1.<java.io.File: boolean setReadable(boolean,boolean)>(0, 0)
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.ensureAmbariOnlyAccess : $z4 = virtualinvoke r1.<java.io.File: boolean setWritable(boolean,boolean)>(1, 1)
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.ensureAmbariOnlyAccess : $z3 = virtualinvoke r1.<java.io.File: boolean setWritable(boolean,boolean)>(0, 0)
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.ensureAmbariOnlyAccess : $z6 = virtualinvoke r1.<java.io.File: boolean setExecutable(boolean,boolean)>(0, 0)
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.ensureAmbariOnlyAccess : $z2 = virtualinvoke r1.<java.io.File: boolean setReadable(boolean,boolean)>(1, 1)
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest.beforeClassMITKerberosOperationHandlerTestC : $r1 = class "Lorg/apache/ambari/server/serveraction/kerberos/KerberosOperationHandler;"
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest.beforeClassMITKerberosOperationHandlerTestC : $r8 = class "Lorg/apache/ambari/server/serveraction/kerberos/MITKerberosOperationHandler;"
+org.apache.ambari.server.serveraction.kerberos.MITKerberosOperationHandlerTest.beforeClassMITKerberosOperationHandlerTestC : $r5 = class "Lorg/apache/ambari/server/serveraction/kerberos/MITKerberosOperationHandler;"
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.getExecutable : r2 = r6
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.getExecutable : $r5 = new java.io.File
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.getExecutable : $z0 = virtualinvoke $r5.<java.io.File: boolean canExecute()>()
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.getExecutable : if r6 != null goto r2 = r6
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.getExecutable : r3 = r2[i1]
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.getExecutable : r7 = null
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.getExecutable : r6 = <org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: java.lang.String[] DEFAULT_EXECUTABLE_SEARCH_PATHS>
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.getExecutable : r6 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: java.lang.String[] getExecutableSearchPaths()>()
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : $r9 = r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.util.Map environmentMap>
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : $r11 = r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.lang.String executableKinit>
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : $r4 = r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.io.File credentialsCacheFile>
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : $r17 = new java.util.HashMap
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : $r8 = new java.util.HashMap
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : $r5 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : $r34 = staticinvoke <java.io.File: java.io.File createTempFile(java.lang.String,java.lang.String)>("ambari_krb_", "cc")
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : $r14 = r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.util.Map environmentMap>
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : return 1
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : $r35 = r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.io.File credentialsCacheFile>
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : $z0 = virtualinvoke r2.<org.apache.ambari.server.utils.ShellCommandUtil$Result: boolean isSuccessful()>()
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : $r36 = r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: java.io.File credentialsCacheFile>
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : r1 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler: org.apache.ambari.server.security.credential.PrincipalKeyCredential getAdministratorCredential()>()
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandler.init : goto [?= $r5 = newarray (java.lang.Object)[1]]
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.translateEncryptionTypes : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isEmpty(java.lang.String)>(r1)
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.translateEncryptionTypes : $r6 = new java.util.HashSet
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandlerTest.beforeKDCKerberosOperationHandlerTest : $r1 = class "Lorg/apache/ambari/server/serveraction/kerberos/KDCKerberosOperationHandler;"
+org.apache.ambari.server.serveraction.kerberos.KDCKerberosOperationHandlerTest.beforeKDCKerberosOperationHandlerTest : $r4 = class "Lorg/apache/ambari/server/serveraction/kerberos/KerberosOperationHandler;"
+org.apache.ambari.server.security.credential.PrincipalKeyCredential.getPrincipal : $r1 = r0.<org.apache.ambari.server.security.credential.PrincipalKeyCredential: java.lang.String principal>
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.getExecutableSearchPaths : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: java.lang.String[] executableSearchPaths>
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setExecutableSearchPaths : if r1 == null goto (branch)
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setExecutableSearchPaths : r0.<org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler: java.lang.String[] executableSearchPaths> = r1
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setExecutableSearchPaths : $r10 = null
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setExecutableSearchPaths : r7 = null

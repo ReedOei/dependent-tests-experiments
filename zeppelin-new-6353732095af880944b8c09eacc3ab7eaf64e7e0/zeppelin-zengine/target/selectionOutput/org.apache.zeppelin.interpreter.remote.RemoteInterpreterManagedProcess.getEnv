@@ -1,0 +1,1 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getEnv : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.util.Map env> >>>>>>>> org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getEnv : return $r1

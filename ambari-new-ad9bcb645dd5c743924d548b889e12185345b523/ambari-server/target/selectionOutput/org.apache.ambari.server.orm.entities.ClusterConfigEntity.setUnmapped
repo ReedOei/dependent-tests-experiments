@@ -1,0 +1,7 @@
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : if z0 == 0 >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : $z1 = 1
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : if z0 == 0 >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : $z1 = 0
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : $z1 = 0 >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : $s0 = (short) $z1
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : $s0 = (short) $z1 >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ClusterConfigEntity: void _persistence_set_unmapped(short)>($s0)
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ClusterConfigEntity: void _persistence_set_unmapped(short)>($s0) >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : return
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : $z1 = 1 >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : goto [?= $s0 = (short) $z1]
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : goto [?= $s0 = (short) $z1] >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.setUnmapped : $s0 = (short) $z1

@@ -1,0 +1,2 @@
+org.apache.zeppelin.notebook.Note.getGson : $r0 = <org.apache.zeppelin.notebook.Note: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.Paragraph.fromJson : $r1 = staticinvoke <org.apache.zeppelin.notebook.Note: com.google.gson.Gson getGson()>()

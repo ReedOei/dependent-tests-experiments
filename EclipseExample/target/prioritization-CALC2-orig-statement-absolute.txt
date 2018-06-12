@@ -1,0 +1,5 @@
+Test: edu.washington.cs.dt.impact.ExampleDT.CalculatorTestCase2.getSumTest
+Intended behavior: FAILURE
+when executed after: [edu.washington.cs.dt.impact.ExampleDT.CalculatorTestCase2.getExpTest]
+The revealed different behavior: PASS
+when executed after: []

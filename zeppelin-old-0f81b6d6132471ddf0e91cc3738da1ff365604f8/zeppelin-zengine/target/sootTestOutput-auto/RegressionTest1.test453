@@ -1,0 +1,14 @@
+org.apache.zeppelin.scheduler.RemoteScheduler.stop : exitmonitor $r3
+org.apache.zeppelin.scheduler.RemoteScheduler.stop : $r3 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.stop : $r4 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.stop : r0.<org.apache.zeppelin.scheduler.RemoteScheduler: boolean terminate> = 1
+org.apache.zeppelin.scheduler.RemoteScheduler.getName : $r1 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.lang.String name>
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : $r7 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : exitmonitor $r6
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : return null
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : $r6 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsWaiting : $r7 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsWaiting : exitmonitor $r7
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsWaiting : $r8 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsWaiting : $r6 = new java.util.LinkedList

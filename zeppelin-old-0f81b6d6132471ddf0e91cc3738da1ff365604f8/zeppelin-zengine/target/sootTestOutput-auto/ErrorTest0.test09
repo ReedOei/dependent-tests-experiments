@@ -1,0 +1,3 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getInstance : $r0 = <org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.utils.ZeppelinhubUtils.userLoginRoutine : $r3 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.utils.ZeppelinhubUtils: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.utils.ZeppelinhubUtils.userLoginRoutine : $r4 = staticinvoke <org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer getInstance()>()

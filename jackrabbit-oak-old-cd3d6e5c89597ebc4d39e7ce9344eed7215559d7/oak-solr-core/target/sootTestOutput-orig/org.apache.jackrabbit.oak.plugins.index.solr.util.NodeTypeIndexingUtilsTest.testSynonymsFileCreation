@@ -1,0 +1,20 @@
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : i4 = 0
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : r5 = interfaceinvoke r23.<javax.jcr.nodetype.NodeType: javax.jcr.nodetype.NodeType[] getSupertypes()>()
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $r8 = interfaceinvoke r1.<javax.jcr.Session: javax.jcr.Workspace getWorkspace()>()
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : virtualinvoke $r10.<java.io.FileOutputStream: void close()>()
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : if r5 == null goto (branch)
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : r23 = interfaceinvoke r4.<javax.jcr.nodetype.NodeTypeIterator: javax.jcr.nodetype.NodeType nextNodeType()>()
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r4.<javax.jcr.nodetype.NodeTypeIterator: boolean hasNext()>()", "org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile")]
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : virtualinvoke $r10.<java.io.FileOutputStream: void flush()>()
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $r10 = new java.io.FileOutputStream
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $r18 = r5[i4]
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $i2 = lengthof r5
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $r11 = virtualinvoke $r7.<java.io.StringWriter: java.lang.String toString()>()
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $r14 = interfaceinvoke r23.<javax.jcr.nodetype.NodeType: java.lang.String getName()>()
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : virtualinvoke $r7.<java.io.StringWriter: java.io.StringWriter append(char)>(44)
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : virtualinvoke $r7.<java.io.StringWriter: java.io.StringWriter append(char)>(32)
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : virtualinvoke $r7.<java.io.StringWriter: java.io.StringWriter append(char)>(10)
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $z1 = virtualinvoke $r6.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $r7 = new java.io.StringWriter
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $z0 = interfaceinvoke r4.<javax.jcr.nodetype.NodeTypeIterator: boolean hasNext()>()

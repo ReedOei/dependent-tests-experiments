@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewInstanceResponse$ViewInstanceResponseInfo.getPropertyValidationResults : $r1 = r0.<org.apache.ambari.server.controller.ViewInstanceResponse$ViewInstanceResponseInfo: java.util.Map propertyValidationResults> >>>>>>>> org.apache.ambari.server.controller.ViewInstanceResponse$ViewInstanceResponseInfo.getPropertyValidationResults : return $r1

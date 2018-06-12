@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getMessage : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String message> >>>>>>>> com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getMessage : return $r1

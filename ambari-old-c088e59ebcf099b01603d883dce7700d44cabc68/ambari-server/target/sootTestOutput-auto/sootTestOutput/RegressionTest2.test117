@@ -1,0 +1,2 @@
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.toString : $r1 = staticinvoke <com.google.common.base.Objects: com.google.common.base.Objects$ToStringHelper toStringHelper(java.lang.Object)>(r0)
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.toString : $r9 = virtualinvoke $r7.<com.google.common.base.Objects$ToStringHelper: com.google.common.base.Objects$ToStringHelper add(java.lang.String,java.lang.Object)>("type", $r8)

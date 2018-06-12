@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.manager.impl.UserManagerImpl.isRoleIncluded : $r5 = virtualinvoke r1.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()

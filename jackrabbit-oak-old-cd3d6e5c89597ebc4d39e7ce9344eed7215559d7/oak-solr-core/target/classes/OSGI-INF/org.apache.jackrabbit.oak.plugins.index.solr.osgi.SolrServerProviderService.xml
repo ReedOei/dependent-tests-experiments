@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.2.0" immediate="true" name="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService" activate="activate" deactivate="deactivate">
+    <property name="server.type" value="none"/>
+    <service servicefactory="false">
+        <provide interface="org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerProvider"/>
+    </service>
+    <reference name="solrServerConfigurationProvider" interface="org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfigurationProvider" cardinality="1..n" policy="dynamic" bind="bindSolrServerConfigurationProvider" unbind="unbindSolrServerConfigurationProvider" updated="updatedSolrServerConfigurationProvider"/>
+    <implementation class="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService"/>
+</scr:component>

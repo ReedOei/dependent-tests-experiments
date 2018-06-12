@@ -1,0 +1,1 @@
+org.apache.ambari.server.serveraction.upgrades.AbstractUpgradeServerAction.getClusters : $r1 = r0.<org.apache.ambari.server.serveraction.upgrades.AbstractUpgradeServerAction: org.apache.ambari.server.state.Clusters m_clusters> >>>>>>>> org.apache.ambari.server.serveraction.upgrades.AbstractUpgradeServerAction.getClusters : return $r1

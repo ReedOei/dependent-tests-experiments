@@ -1,0 +1,3 @@
+org.apache.accumulo.master.Master$TabletGoalState.values : $r0 = <org.apache.accumulo.master.Master$TabletGoalState: org.apache.accumulo.master.Master$TabletGoalState[] $VALUES> >>>>>>>> org.apache.accumulo.master.Master$TabletGoalState.values : $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Object clone()>()
+org.apache.accumulo.master.Master$TabletGoalState.values : $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.apache.accumulo.master.Master$TabletGoalState.values : $r2 = (org.apache.accumulo.master.Master$TabletGoalState[]) $r1
+org.apache.accumulo.master.Master$TabletGoalState.values : $r2 = (org.apache.accumulo.master.Master$TabletGoalState[]) $r1 >>>>>>>> org.apache.accumulo.master.Master$TabletGoalState.values : return $r2

@@ -1,0 +1,1 @@
+org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal.getCacheFile : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal: java.lang.String cacheFile> >>>>>>>> org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal.getCacheFile : return $r1

@@ -1,0 +1,2 @@
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.loadFromFile : $r12 = <java.nio.charset.StandardCharsets: java.nio.charset.Charset UTF_8>
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.loadFromFile : $r8 = <org.apache.zeppelin.interpreter.InterpreterInfoSaving: org.slf4j.Logger LOGGER>

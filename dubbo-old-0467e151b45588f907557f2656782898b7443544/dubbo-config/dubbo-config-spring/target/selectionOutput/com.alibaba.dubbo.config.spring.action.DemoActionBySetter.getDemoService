@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.action.DemoActionBySetter.getDemoService : $r1 = r0.<com.alibaba.dubbo.config.spring.action.DemoActionBySetter: com.alibaba.dubbo.config.spring.api.DemoService demoService> >>>>>>>> com.alibaba.dubbo.config.spring.action.DemoActionBySetter.getDemoService : return $r1

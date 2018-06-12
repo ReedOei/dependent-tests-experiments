@@ -1,0 +1,3 @@
+com.dangdang.ddframe.job.context.TaskContext$MetaInfo.getShardingItems : $r1 = r0.<com.dangdang.ddframe.job.context.TaskContext$MetaInfo: java.util.List shardingItems>
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : $z0 = interfaceinvoke r0.<java.util.List: boolean isEmpty()>()
+com.dangdang.ddframe.job.executor.ShardingContexts.getShardingTotalCount : $i0 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: int shardingTotalCount>

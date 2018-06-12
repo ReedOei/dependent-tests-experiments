@@ -1,0 +1,6 @@
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.of : $r4 = new org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.of : $r7 = virtualinvoke $r5.<java.util.Optional: java.util.Optional map(java.util.function.Function)>($r6)
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.of : $r8 = virtualinvoke $r7.<java.util.Optional: java.lang.Object orElse(java.lang.Object)>("m")
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.of : $r5 = staticinvoke <org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit: java.util.Optional stackUnit(org.apache.ambari.server.controller.internal.Stack,java.lang.String,java.lang.String,java.lang.String)>(r0, r1, r2, r3)
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.stackUnit : $r5 = virtualinvoke r0.<org.apache.ambari.server.controller.internal.Stack: java.util.Map getConfigurationPropertiesWithMetadata(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.stackUnit : $r12 = staticinvoke <java.util.Optional: java.util.Optional empty()>()

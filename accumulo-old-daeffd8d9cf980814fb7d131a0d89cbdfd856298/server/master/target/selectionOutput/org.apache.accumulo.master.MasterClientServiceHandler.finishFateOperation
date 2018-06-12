@@ -1,0 +1,1 @@
+org.apache.accumulo.master.MasterClientServiceHandler.finishFateOperation : specialinvoke r0.<org.apache.accumulo.master.FateServiceHandler: void finishFateOperation(org.apache.accumulo.core.trace.thrift.TInfo,org.apache.accumulo.core.security.thrift.TCredentials,long)>(r1, r2, l0) >>>>>>>> org.apache.accumulo.master.MasterClientServiceHandler.finishFateOperation : return

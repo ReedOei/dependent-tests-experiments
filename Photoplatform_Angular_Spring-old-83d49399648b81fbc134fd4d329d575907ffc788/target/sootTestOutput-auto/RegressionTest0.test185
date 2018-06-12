@@ -1,0 +1,11 @@
+de.htw.sdf.photoplatform.persistence.model.Image.getThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String thumbPath>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getUpdatedBy : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String updatedBy>
+de.htw.sdf.photoplatform.persistence.model.Image.setName : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name> = r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : if r1 == null goto return 0
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : if r0 != r1 goto (branch)
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+de.htw.sdf.photoplatform.persistence.model.Image.getSmallThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath>
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : r3 = interfaceinvoke r0.<java.util.List: java.util.Iterator iterator()>()
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : $r6 = new java.util.ArrayList
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : $r1 = <java.lang.Boolean: java.lang.Boolean FALSE>

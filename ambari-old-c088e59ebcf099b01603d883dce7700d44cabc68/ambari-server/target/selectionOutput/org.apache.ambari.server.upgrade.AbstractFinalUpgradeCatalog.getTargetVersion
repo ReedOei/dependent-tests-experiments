@@ -1,0 +1,1 @@
+org.apache.ambari.server.upgrade.AbstractFinalUpgradeCatalog.getTargetVersion : $r1 = specialinvoke r0.<org.apache.ambari.server.upgrade.AbstractFinalUpgradeCatalog: java.lang.String getFinalVersion()>() >>>>>>>> org.apache.ambari.server.upgrade.AbstractFinalUpgradeCatalog.getTargetVersion : return $r1

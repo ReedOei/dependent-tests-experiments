@@ -1,0 +1,3 @@
+org.apache.accumulo.master.Master.remaining : $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>() >>>>>>>> org.apache.accumulo.master.Master.remaining : $l2 = l0 - $l1
+org.apache.accumulo.master.Master.remaining : $l2 = l0 - $l1 >>>>>>>> org.apache.accumulo.master.Master.remaining : $l3 = staticinvoke <java.lang.Math: long max(long,long)>(1L, $l2)
+org.apache.accumulo.master.Master.remaining : $l3 = staticinvoke <java.lang.Math: long max(long,long)>(1L, $l2) >>>>>>>> org.apache.accumulo.master.Master.remaining : return $l3

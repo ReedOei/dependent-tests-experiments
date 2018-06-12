@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.security.XAuthTokenConfigurer.configure : $r2 = new de.htw.sdf.photoplatform.security.XAuthTokenFilter

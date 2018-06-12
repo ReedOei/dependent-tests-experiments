@@ -1,0 +1,2 @@
+org.apache.accumulo.master.FateServiceHandler$1.test : $r2 = (java.lang.String) r1 >>>>>>>> org.apache.accumulo.master.FateServiceHandler$1.test : $z0 = virtualinvoke r0.<org.apache.accumulo.master.FateServiceHandler$1: boolean test(java.lang.String)>($r2)
+org.apache.accumulo.master.FateServiceHandler$1.test : $z0 = virtualinvoke r0.<org.apache.accumulo.master.FateServiceHandler$1: boolean test(java.lang.String)>($r2) >>>>>>>> org.apache.accumulo.master.FateServiceHandler$1.test : return $z0

@@ -1,0 +1,12 @@
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.getFullDn : $r2 = staticinvoke <org.springframework.ldap.support.LdapUtils: javax.naming.ldap.LdapName newLdapName(javax.naming.Name)>(r0)
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.getFullDn : $z0 = interfaceinvoke r0.<javax.naming.Name: boolean startsWith(javax.naming.Name)>(r6)
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.getFullDn : return r0
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.isLdapObjectOutOfScopeFromBaseDn : if r7 == null goto $z2 = 0
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.isLdapObjectOutOfScopeFromBaseDn : z1 = 1
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.isLdapObjectOutOfScopeFromBaseDn : $z2 = 1
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.isLdapObjectOutOfScopeFromBaseDn : r2 = staticinvoke <org.apache.ambari.server.security.authorization.AmbariLdapUtils: javax.naming.Name getFullDn(javax.naming.Name,javax.naming.Context)>(r7, r0)
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.isLdapObjectOutOfScopeFromBaseDn : z1 = 0
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.isLdapObjectOutOfScopeFromBaseDn : return z1
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.isLdapObjectOutOfScopeFromBaseDn : r3 = staticinvoke <org.springframework.ldap.support.LdapUtils: javax.naming.ldap.LdapName newLdapName(java.lang.String)>(r1)
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.isLdapObjectOutOfScopeFromBaseDn : r7 = virtualinvoke r0.<org.springframework.ldap.core.DirContextAdapter: javax.naming.Name getDn()>()
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.isLdapObjectOutOfScopeFromBaseDn : $z0 = interfaceinvoke r2.<javax.naming.Name: boolean startsWith(javax.naming.Name)>(r3)

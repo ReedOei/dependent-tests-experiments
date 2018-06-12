@@ -1,0 +1,44 @@
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector$GroupMemberAttr.weight : $r1 = r0.<org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector$GroupMemberAttr: java.lang.Integer weight>
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector.detectedProperty : $r1 = <org.apache.ambari.server.ldap.domain.AmbariLdapConfigurationKeys: org.apache.ambari.server.ldap.domain.AmbariLdapConfigurationKeys GROUP_MEMBER_ATTRIBUTE>
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector$GroupMemberAttr.values : $r0 = <org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector$GroupMemberAttr: org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector$GroupMemberAttr[] $VALUES>
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.occurrenceMap : $r1 = r0.<org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: java.util.Map occurrenceMap>
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : $r4 = virtualinvoke r0.<org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: java.util.Map occurrenceMap()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : $r13 = interfaceinvoke r21.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : $r12 = interfaceinvoke r20.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : $r9 = <org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : $r3 = <org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : r1 = staticinvoke <com.google.common.collect.Maps: java.util.HashMap newHashMap()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : goto [?= $z0 = interfaceinvoke r21.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : $r10 = virtualinvoke r0.<org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: java.lang.String detectedProperty()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : $r18 = <org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : r20 = r2
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : $r19 = <org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : r20 = null
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : $r6 = interfaceinvoke r20.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : $r14 = interfaceinvoke r20.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : r22 = "N/A"
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.detect : if r20 != null goto $r14 = interfaceinvoke r20.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetectorTest.getSampleEntryList : interfaceinvoke r2.<java.util.List: boolean add(java.lang.Object)>($r5)
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetectorTest.getSampleEntryList : goto [?= i1 = i1 + 1]
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetectorTest.getSampleEntryList : $r13 = newarray (org.apache.directory.api.ldap.model.entry.Attribute)[1]
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetectorTest.getSampleEntryList : return r2
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetectorTest.getSampleEntryList : r2 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayList()>()
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetectorTest.getSampleEntryList : $r5 = new org.apache.directory.api.ldap.model.entry.DefaultEntry
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetectorTest.getSampleEntryList : $r6 = new java.lang.StringBuilder
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetectorTest.getSampleEntryList : i1 = 0
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector$GroupMemberAttr.attrName : $r1 = r0.<org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector$GroupMemberAttr: java.lang.String attrName>
+org.apache.ambari.server.ldap.service.ads.detectors.GroupMemberAttrDetector.applies : $r3 = newarray (java.lang.String)[1]
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : $r13 = virtualinvoke r0.<org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: java.util.Map weightsMap()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : $i3 = virtualinvoke r20.<java.lang.Integer: int intValue()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : $r6 = virtualinvoke r0.<org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: java.util.Map occurrenceMap()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : $r9 = <org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : $r4 = <org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : $z1 = virtualinvoke r0.<org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: boolean applies(org.apache.directory.api.ldap.model.entry.Entry,java.lang.String)>(r1, r3)
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : $r8 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : goto [?= (branch)]
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : $r16 = <org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : $r10 = virtualinvoke r0.<org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: java.util.Map occurrenceMap()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.collect : $r14 = virtualinvoke r0.<org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: java.util.Map occurrenceMap()>()
+org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector.weightsMap : $r1 = r0.<org.apache.ambari.server.ldap.service.ads.detectors.OccurrenceAndWeightBasedDetector: java.util.Map weightsMap>
+org.apache.ambari.server.ldap.domain.AmbariLdapConfigurationKeys.key : $r1 = r0.<org.apache.ambari.server.ldap.domain.AmbariLdapConfigurationKeys: java.lang.String propertyName>

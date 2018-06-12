@@ -1,0 +1,31 @@
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobParameter : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String jobParameter>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.shardingItemParameters : if null == r1 goto return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.shardingItemParameters : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.description : if null == r1 goto return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.description : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobName : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String jobName>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getDescription : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String description>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getDefaultValue : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String defaultValue>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.newBuilder : $r2 = new com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder
+com.dangdang.ddframe.job.executor.handler.JobProperties.get : $r2 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties: java.util.EnumMap map>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String jobName>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $z5 = 1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $z4 = 1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $r2 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String cron>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getShardingTotalCount : $i0 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: int shardingTotalCount>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobParameter : if null == r1 goto return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobParameter : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getCron : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String cron>
+com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertDefaultValues : $z1 = virtualinvoke r1.<com.dangdang.ddframe.job.config.JobCoreConfiguration: boolean isMisfire()>()
+com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertDefaultValues : $z0 = virtualinvoke r1.<com.dangdang.ddframe.job.config.JobCoreConfiguration: boolean isFailover()>()
+com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertDefaultValues : $r6 = virtualinvoke r1.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String getDescription()>()
+com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertDefaultValues : $r8 = virtualinvoke r1.<com.dangdang.ddframe.job.config.JobCoreConfiguration: com.dangdang.ddframe.job.executor.handler.JobProperties getJobProperties()>()
+com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertDefaultValues : $r4 = virtualinvoke r1.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String getJobParameter()>()
+com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertDefaultValues : $r2 = virtualinvoke r1.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String getShardingItemParameters()>()
+com.dangdang.ddframe.job.config.JobCoreConfiguration.isFailover : $z0 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: boolean failover>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobProperties : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: com.dangdang.ddframe.job.executor.handler.JobProperties jobProperties>
+com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertRequiredProperties : $r2 = virtualinvoke r1.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String getJobName()>()
+com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertRequiredProperties : $r4 = virtualinvoke r1.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String getCron()>()
+com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertRequiredProperties : $i0 = virtualinvoke r1.<com.dangdang.ddframe.job.config.JobCoreConfiguration: int getShardingTotalCount()>()
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getShardingItemParameters : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String shardingItemParameters>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.isMisfire : $z0 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: boolean misfire>

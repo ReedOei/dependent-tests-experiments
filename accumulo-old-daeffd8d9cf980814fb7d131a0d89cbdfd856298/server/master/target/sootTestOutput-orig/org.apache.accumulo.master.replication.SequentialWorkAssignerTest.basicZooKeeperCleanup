@@ -1,0 +1,22 @@
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.setZooCache : r0.<org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner: org.apache.accumulo.server.zookeeper.ZooCache zooCache> = r1
+org.apache.accumulo.master.replication.SequentialWorkAssigner.setQueuedWork : r0.<org.apache.accumulo.master.replication.SequentialWorkAssigner: java.util.Map queuedWorkByPeerName> = r1
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : $r11 = <org.apache.accumulo.master.replication.SequentialWorkAssigner: org.slf4j.Logger log>
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : $r28 = <org.apache.accumulo.master.replication.SequentialWorkAssigner: org.slf4j.Logger log>
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r5.<java.util.Iterator: boolean hasNext()>()", "org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork")]
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : $r7 = r0.<org.apache.accumulo.master.replication.SequentialWorkAssigner: java.util.Map queuedWorkByPeerName>
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : $r13 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : i0 = i0 + 1
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : i0 = 0
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : $r16 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>()
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : $r18 = r0.<org.apache.accumulo.master.replication.SequentialWorkAssigner: org.apache.accumulo.server.zookeeper.ZooCache zooCache>
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : $r15 = interfaceinvoke r4.<java.util.Map: java.util.Set entrySet()>()
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()", "org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork")]
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : $z1 = interfaceinvoke r5.<java.util.Iterator: boolean hasNext()>()
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : $r9 = r0.<org.apache.accumulo.master.replication.SequentialWorkAssigner: org.apache.accumulo.core.client.Connector conn>
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : $r14 = interfaceinvoke r3.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.accumulo.master.replication.SequentialWorkAssigner.cleanupFinishedWork : interfaceinvoke r5.<java.util.Iterator: void remove()>()
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.setConnector : r0.<org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner: org.apache.accumulo.core.client.Connector conn> = r1
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.setWorkQueue : r0.<org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner: org.apache.accumulo.server.zookeeper.DistributedWorkQueue workQueue> = r1
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.configure : r0.<org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner: org.apache.accumulo.core.conf.AccumuloConfiguration conf> = r1
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.configure : r0.<org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner: org.apache.accumulo.core.client.Connector conn> = r2

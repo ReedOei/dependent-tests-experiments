@@ -1,0 +1,7 @@
+de.htw.sdf.photoplatform.Application.localeChangeInterceptor : $r2 = new org.springframework.web.servlet.i18n.LocaleChangeInterceptor
+de.htw.sdf.photoplatform.Application.localeChangeInterceptor : virtualinvoke $r2.<org.springframework.web.servlet.i18n.LocaleChangeInterceptor: void setParamName(java.lang.String)>("lang")
+de.htw.sdf.photoplatform.Application.localeChangeInterceptor : return $r2
+de.htw.sdf.photoplatform.Application.addInterceptors : $r2 = virtualinvoke r0.<de.htw.sdf.photoplatform.Application: org.springframework.web.servlet.i18n.LocaleChangeInterceptor localeChangeInterceptor()>()
+de.htw.sdf.photoplatform.Application.localeResolver : $r3 = <java.util.Locale: java.util.Locale GERMAN>
+de.htw.sdf.photoplatform.Application.localeResolver : $r2 = new org.springframework.web.servlet.i18n.SessionLocaleResolver
+de.htw.sdf.photoplatform.Application.localeResolver : return $r2

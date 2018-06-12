@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.persistence.model.User.setLastName : r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String lastName> = r1
+de.htw.sdf.photoplatform.persistence.model.User.setAccountNonLocked : r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean accountNonLocked> = z0

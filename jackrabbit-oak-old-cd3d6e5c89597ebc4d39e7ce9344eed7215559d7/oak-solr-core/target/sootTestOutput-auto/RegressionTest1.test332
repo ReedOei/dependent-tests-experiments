@@ -1,0 +1,5 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getPathDepthField : return "path_depth"
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getPathField : return "path_exact"
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.collapseJcrContentNodes : return 0
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getIgnoredProperties : $r1 = <org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration: java.util.Collection ignoredProperties>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getCollapsedPathField : return "path_collapsed"

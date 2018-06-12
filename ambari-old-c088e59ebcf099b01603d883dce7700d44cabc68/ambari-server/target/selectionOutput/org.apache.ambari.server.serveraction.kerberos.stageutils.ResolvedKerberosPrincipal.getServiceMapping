@@ -1,0 +1,1 @@
+org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal.getServiceMapping : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal: com.google.common.collect.Multimap serviceMapping> >>>>>>>> org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal.getServiceMapping : return $r1

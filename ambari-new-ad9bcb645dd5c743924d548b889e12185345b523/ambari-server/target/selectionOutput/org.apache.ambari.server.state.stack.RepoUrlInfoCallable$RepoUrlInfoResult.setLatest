@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.stack.RepoUrlInfoCallable$RepoUrlInfoResult.setLatest : r0.<org.apache.ambari.server.state.stack.RepoUrlInfoCallable$RepoUrlInfoResult: java.util.Map latestVdf> = r1 >>>>>>>> org.apache.ambari.server.state.stack.RepoUrlInfoCallable$RepoUrlInfoResult.setLatest : return

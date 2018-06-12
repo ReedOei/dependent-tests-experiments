@@ -1,0 +1,2 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.createInstace : $r0 = new org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketError : $r2 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket: org.slf4j.Logger LOG>

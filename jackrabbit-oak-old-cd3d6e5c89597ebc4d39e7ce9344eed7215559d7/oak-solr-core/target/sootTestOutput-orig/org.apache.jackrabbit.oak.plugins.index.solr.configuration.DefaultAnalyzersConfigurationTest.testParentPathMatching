@@ -1,0 +1,7 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$2.createComponents : $r3 = new org.apache.lucene.analysis.core.KeywordTokenizer
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$2.createComponents : $r4 = new org.apache.lucene.analysis.Analyzer$TokenStreamComponents
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$3.createComponents : $r7 = new org.apache.lucene.analysis.reverse.ReverseStringFilter
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$3.createComponents : $r4 = new org.apache.lucene.analysis.reverse.ReverseStringFilter
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$3.createComponents : $r5 = new org.apache.lucene.analysis.pattern.PatternReplaceFilter
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$3.createComponents : $r8 = new org.apache.lucene.analysis.Analyzer$TokenStreamComponents
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$3.createComponents : $r3 = new org.apache.lucene.analysis.core.KeywordTokenizer

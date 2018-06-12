@@ -1,0 +1,9 @@
+org.apache.ambari.server.state.RefreshCommand.getCommand : $r1 = r0.<org.apache.ambari.server.state.RefreshCommand: java.lang.String command>
+org.apache.ambari.server.state.PropertyInfo.afterUnmarshal : $r3 = r0.<org.apache.ambari.server.state.PropertyInfo: java.util.Set propertyTypes>
+org.apache.ambari.server.state.PropertyInfo.getSupportedRefreshCommands : $r1 = r0.<org.apache.ambari.server.state.PropertyInfo: java.util.Set supportedRefreshCommands>
+org.apache.ambari.server.state.RefreshCommand.getComponentName : $r1 = r0.<org.apache.ambari.server.state.RefreshCommand: java.lang.String componentName>
+org.apache.ambari.server.state.PropertyInfoTest.propertyInfoFrom : $r6 = virtualinvoke r0.<java.lang.String: byte[] getBytes()>()
+org.apache.ambari.server.state.PropertyInfoTest.propertyInfoFrom : $r4 = new javax.xml.transform.stream.StreamSource
+org.apache.ambari.server.state.PropertyInfoTest.propertyInfoFrom : r2 = virtualinvoke r1.<javax.xml.bind.JAXBContext: javax.xml.bind.Unmarshaller createUnmarshaller()>()
+org.apache.ambari.server.state.PropertyInfoTest.propertyInfoFrom : $r8 = virtualinvoke $r7.<javax.xml.bind.JAXBElement: java.lang.Object getValue()>()
+org.apache.ambari.server.state.PropertyInfoTest.propertyInfoFrom : $r3 = newarray (java.lang.Class)[2]

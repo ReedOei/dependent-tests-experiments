@@ -1,0 +1,3 @@
+com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.setApplicationContext : r0.<com.alibaba.dubbo.config.spring.beans.factory.'annotation'.ReferenceAnnotationBeanPostProcessor: org.springframework.context.ApplicationContext applicationContext> = r1
+com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.setBeanClassLoader : r0.<com.alibaba.dubbo.config.spring.beans.factory.'annotation'.ReferenceAnnotationBeanPostProcessor: java.lang.ClassLoader classLoader> = r1
+com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.getOrder : return 2147483647

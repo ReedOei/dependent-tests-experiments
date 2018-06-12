@@ -1,0 +1,3 @@
+org.apache.ambari.server.topology.Configuration.setAttribute : r5 = virtualinvoke r0.<org.apache.ambari.server.topology.Configuration: java.lang.String getAttributeValue(java.lang.String,java.lang.String,java.lang.String)>(r1, r2, r3)
+org.apache.ambari.server.topology.Configuration.getAttributeValue : r20 = null
+org.apache.ambari.server.topology.Configuration.getAttributeValue : $r4 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map attributes>

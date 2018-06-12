@@ -1,0 +1,115 @@
+org.apache.ambari.server.upgrade.UpgradeCatalog300.getTargetVersion : return "3.0.0"
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r7 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: java.util.Map getConfigsByType(java.lang.String)>(r2)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r72 = null
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r29 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.StackId getDesiredStackVersion()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if r7 == null goto r8 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>(r2)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if r11 == null goto (branch)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r58 = r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: org.apache.ambari.server.configuration.Configuration configuration>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r26 = newarray (java.lang.Object)[3]
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if null != r72 goto $r29 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.StackId getDesiredStackVersion()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r72 = staticinvoke <java.util.Collections: java.util.Map emptyMap()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r15 = r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: com.google.inject.Injector injector>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r68 = interfaceinvoke r8.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r69 = specialinvoke r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: java.util.Map removeProperties(java.util.Map,java.util.Set,com.google.common.collect.Multimap)>(r69, r4, r9)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r8 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>(r2)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r11 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getConfig(java.lang.String,java.lang.String)>(r2, r6)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r27 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: org.slf4j.Logger LOG>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r17 = new java.lang.StringBuilder
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if r3 == null goto return
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r67 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: org.slf4j.Logger LOG>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r71 = staticinvoke <com.google.common.collect.Maps: com.google.common.collect.MapDifference difference(java.util.Map,java.util.Map)>(r68, r69)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if r8 == null goto (branch)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r9 = staticinvoke <com.google.common.collect.ArrayListMultimap: com.google.common.collect.ArrayListMultimap create()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $i1 = interfaceinvoke r9.<com.google.common.collect.Multimap: int size()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r69 = specialinvoke r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: java.util.Map mergeProperties(java.util.Map,java.util.Map,boolean,com.google.common.collect.Multimap)>(r68, r3, z0, r9)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if r8 != null goto r68 = interfaceinvoke r8.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : virtualinvoke r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: void updateConfigurationPropertiesForCluster(org.apache.ambari.server.state.Cluster,java.lang.String,java.util.Map,java.util.Set,boolean,boolean)>(r1, r2, r3, null, z0, z1)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r10 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: java.lang.String getServiceByConfigType(java.lang.String)>(r2)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r72 = interfaceinvoke r8.<org.apache.ambari.server.state.Config: java.util.Map getPropertiesAttributes()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r56 = null
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r28 = interfaceinvoke r61.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r51 = interfaceinvoke r7.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r37 = interfaceinvoke r8.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r12 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: com.google.inject.Injector injector>
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r55 = null
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r19 = interfaceinvoke r70.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : if r73 == null goto (branch)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : goto [?= $z2 = interfaceinvoke r51.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : if r56 == null goto $z7 = interfaceinvoke $r40.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $z3 = virtualinvoke r71.<java.lang.String: boolean contains(java.lang.CharSequence)>("class=\"solr.admin.AdminHandlers\"")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r3 = interfaceinvoke r2.<org.apache.ambari.server.state.Clusters: java.util.Map getClusters()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r75 = virtualinvoke r74.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("      \"collection\":\"{{logsearch_solr_collection_service_logs}}\",\n      \"number_of_shards\": \"{{logsearch_collection_service_logs_numshards}}\",\n      \"splits_interval_mins\": \"{{logsearch_service_logs_split_interval_mins}}\",\n", "      \"type\": \"service\",\n")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r70 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logsearch-audit_logs-solrconfig")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $z7 = interfaceinvoke $r40.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $z0 = interfaceinvoke r3.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r67 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logsearch-service_logs-solrconfig")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r72 = virtualinvoke r71.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>("(?s)<requestHandler name=\"/admin/\".*?class=\"solr.admin.AdminHandlers\" />", "")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : if r61 == null goto r64 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logsearch-log4j")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : if r3 == null goto return
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r53 = interfaceinvoke r52.<org.apache.ambari.server.state.Config: java.lang.String getType()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r30 = staticinvoke <java.util.Collections: java.util.Map singletonMap(java.lang.Object,java.lang.Object)>("content", r63)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : virtualinvoke r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: void removeConfigurationPropertiesFromCluster(org.apache.ambari.server.state.Cluster,java.lang.String,java.util.Set)>(r6, "logsearch-properties", r58)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r54 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logsearch-env")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r63 = virtualinvoke r62.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("<!DOCTYPE log4j:configuration SYSTEM \"log4j.dtd\">", "<!DOCTYPE log4j:configuration SYSTEM \"http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd\">")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : if r55 == null goto (branch)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r41 = new java.util.HashMap
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : goto [?= $z1 = interfaceinvoke r5.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r24 = staticinvoke <java.util.Collections: java.util.Map singletonMap(java.lang.Object,java.lang.Object)>("content", r69)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : if r9 == null goto r61 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logfeeder-log4j")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : interfaceinvoke $r41.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("logfeeder.include.default.level", r57)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : if r70 == null goto r73 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logfeeder-output-config")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : virtualinvoke r4.<org.apache.ambari.server.state.ConfigHelper: void removeConfigsByType(org.apache.ambari.server.state.Cluster,java.lang.String)>(r6, r53)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r39 = newarray (java.lang.String)[1]
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r21 = staticinvoke <java.util.Collections: java.util.Map singletonMap(java.lang.Object,java.lang.Object)>("content", r72)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r27 = staticinvoke <java.util.Collections: java.util.Map singletonMap(java.lang.Object,java.lang.Object)>("content", r66)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r73 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logfeeder-output-config")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r34 = virtualinvoke r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: java.lang.String getSourceVersion()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r64 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logsearch-log4j")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r10 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: com.google.inject.Injector injector>
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r61 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logfeeder-log4j")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r66 = virtualinvoke r65.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("<!DOCTYPE log4j:configuration SYSTEM \"log4j.dtd\">", "<!DOCTYPE log4j:configuration SYSTEM \"http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd\">")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r76 = virtualinvoke r75.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("      \"collection\":\"{{logsearch_solr_collection_audit_logs}}\",\n      \"number_of_shards\": \"{{logsearch_collection_audit_logs_numshards}}\",\n      \"splits_interval_mins\": \"{{logsearch_audit_logs_split_interval_mins}}\",\n", "      \"type\": \"audit\",\n")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : if r2 == null goto return
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r2 = interfaceinvoke r1.<org.apache.ambari.server.controller.AmbariManagementController: org.apache.ambari.server.state.Clusters getClusters()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : if r54 == null goto r8 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logsearch-properties")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r32 = staticinvoke <java.util.Collections: java.util.Map emptyMap()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r50 = interfaceinvoke r51.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r14 = interfaceinvoke r3.<java.util.Map: java.util.Collection values()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $z4 = virtualinvoke r68.<java.lang.String: boolean contains(java.lang.CharSequence)>("class=\"solr.admin.AdminHandlers\"")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r8 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logsearch-properties")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r40 = new java.util.HashMap
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r9 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logfeeder-properties")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r36 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>("Updated logsearch-common-properties during Ambari Upgrade from %s to %s", $r33)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r69 = virtualinvoke r68.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>("(?s)<requestHandler name=\"/admin/\".*?class=\"solr.admin.AdminHandlers\" />", "")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r18 = staticinvoke <java.util.Collections: java.util.Map singletonMap(java.lang.Object,java.lang.Object)>("content", r76)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $z8 = virtualinvoke r53.<java.lang.String: boolean endsWith(java.lang.String)>("-logsearch-conf")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r25 = interfaceinvoke r64.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $z5 = virtualinvoke r65.<java.lang.String: boolean contains(java.lang.CharSequence)>("<!DOCTYPE log4j:configuration SYSTEM \"log4j.dtd\">")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : virtualinvoke r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: void updateConfigurationPropertiesForCluster(org.apache.ambari.server.state.Cluster,java.lang.String,java.util.Map,boolean,boolean)>(r6, "logfeeder-properties", $r41, 1, 1)
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r22 = interfaceinvoke r67.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : r7 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: java.util.Collection getAllConfigs()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r31 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.StackId getDesiredStackVersion()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $r16 = interfaceinvoke r73.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : $z6 = virtualinvoke r62.<java.lang.String: boolean contains(java.lang.CharSequence)>("<!DOCTYPE log4j:configuration SYSTEM \"log4j.dtd\">")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateLogSearchConfigs : if r67 == null goto r70 = interfaceinvoke r6.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("logsearch-audit_logs-solrconfig")
+org.apache.ambari.server.upgrade.UpgradeCatalog300.getSourceVersion : return "2.6.0"
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.registerCatalog : $r2 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: java.util.Map upgradeCatalogMap>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeConfigurationPropertiesFromCluster : $r4 = new java.util.HashMap
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r11 = interfaceinvoke r6.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r18 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog$ConfigUpdateType: org.apache.ambari.server.upgrade.AbstractUpgradeCatalog$ConfigUpdateType ADDED>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r9 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r15 = interfaceinvoke r6.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : if z0 == 0 goto (branch)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r10 = interfaceinvoke r6.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : goto [?= $z1 = interfaceinvoke r5.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r14 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog$ConfigUpdateType: org.apache.ambari.server.upgrade.AbstractUpgradeCatalog$ConfigUpdateType UPDATED>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r7 = new java.util.HashMap
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r8 = interfaceinvoke r2.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : goto [?= $z0 = interfaceinvoke r5.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : r5 = interfaceinvoke r2.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : $r8 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : interfaceinvoke $r7.<java.util.Map: java.lang.Object remove(java.lang.Object)>(r6)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : interfaceinvoke $r7.<java.util.Map: void putAll(java.util.Map)>(r1)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : $z1 = interfaceinvoke r1.<java.util.Map: boolean containsKey(java.lang.Object)>(r6)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : $r7 = new java.util.HashMap
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : $r11 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog$ConfigUpdateType: org.apache.ambari.server.upgrade.AbstractUpgradeCatalog$ConfigUpdateType REMOVED>

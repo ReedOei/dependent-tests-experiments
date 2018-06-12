@@ -1,0 +1,19 @@
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r19 = new org.apache.ambari.server.topology.SecurityConfiguration
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r2 != null goto $r8 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("type")
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r6 = <org.apache.ambari.server.topology.SecurityConfigurationFactory: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r7 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>("security")
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r5 == null goto (branch)
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r8 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("type")
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r12 = <org.apache.ambari.server.state.SecurityType: org.apache.ambari.server.state.SecurityType KERBEROS>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r18 = <org.apache.ambari.server.topology.SecurityConfigurationFactory: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r17 = (java.lang.String) $r16
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r10 = staticinvoke <com.google.common.base.Enums: com.google.common.base.Optional getIfPresent(java.lang.Class,java.lang.String)>(class "Lorg/apache/ambari/server/state/SecurityType;", r3)
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r4 != null goto $r12 = <org.apache.ambari.server.state.SecurityType: org.apache.ambari.server.state.SecurityType KERBEROS>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : return r39
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r37 == null goto $r18 = <org.apache.ambari.server.topology.SecurityConfigurationFactory: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r37 == null goto (branch)
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r3 != null goto $r10 = staticinvoke <com.google.common.base.Enums: com.google.common.base.Optional getIfPresent(java.lang.Class,java.lang.String)>(class "Lorg/apache/ambari/server/state/SecurityType;", r3)
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : r5 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("kerberos_descriptor")
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : goto [?= return r39]
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r16 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("kerberos_descriptor_reference")
+org.apache.ambari.server.topology.SecurityConfiguration.getType : $r1 = r0.<org.apache.ambari.server.topology.SecurityConfiguration: org.apache.ambari.server.state.SecurityType type>

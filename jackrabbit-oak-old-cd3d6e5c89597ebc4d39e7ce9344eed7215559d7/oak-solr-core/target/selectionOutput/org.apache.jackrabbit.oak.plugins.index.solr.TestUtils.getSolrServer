@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.TestUtils.getSolrServer : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.TestUtils: org.apache.solr.client.solrj.SolrClient solrServer> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.TestUtils.getSolrServer : return $r1

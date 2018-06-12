@@ -1,0 +1,1 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterEventPoller$14.call : $r2 = virtualinvoke r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterEventPoller$14: java.nio.ByteBuffer call(org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Client)>(r1) >>>>>>>> org.apache.zeppelin.interpreter.remote.RemoteInterpreterEventPoller$14.call : return $r2

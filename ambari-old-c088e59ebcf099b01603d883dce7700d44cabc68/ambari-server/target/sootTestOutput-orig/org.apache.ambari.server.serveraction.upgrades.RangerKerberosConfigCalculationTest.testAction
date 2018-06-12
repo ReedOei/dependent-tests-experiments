@@ -1,0 +1,128 @@
+org.apache.ambari.server.utils.StageUtils.getActionId : $r0 = new java.lang.StringBuilder
+org.apache.ambari.server.agent.CommandReport.setClusterName : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String clusterName> = r1
+org.apache.ambari.server.agent.CommandReport.setRoleCommand : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String roleCommand> = r1
+org.apache.ambari.server.agent.CommandReport.setStructuredOut : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String structuredOut> = r1
+org.apache.ambari.server.serveraction.upgrades.AbstractUpgradeServerAction.getClusters : $r1 = r0.<org.apache.ambari.server.serveraction.upgrades.AbstractUpgradeServerAction: org.apache.ambari.server.state.Clusters m_clusters>
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r122 = interfaceinvoke r204.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r203 goto $r126 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : goto [?= $r216 = newarray (java.lang.Object)[2]]
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : interfaceinvoke r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("ranger.plugins.kafka.serviceuser", r211)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r64 = interfaceinvoke r214.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r214 goto $r59 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r199 goto $r152 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r77 = interfaceinvoke r212.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r52 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus COMPLETED>
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r196 goto $r15 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r213 goto $r79 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r195 goto $r178 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r184 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : interfaceinvoke r4.<org.apache.ambari.server.state.Config: void setProperties(java.util.Map)>(r5)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r105 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.SecurityType getSecurityType()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r196 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("hive-env")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r216 = newarray (java.lang.Object)[2]
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r200 goto $r25 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : interfaceinvoke r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("ranger.plugins.yarn.serviceuser", r199)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r118 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r212 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("kms-env")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r50 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.SecurityType getSecurityType()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r202 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("knox-env")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : interfaceinvoke r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("ranger.plugins.knox.serviceuser", r203)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r207 goto (branch)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r202 goto $r30 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r137 = interfaceinvoke r200.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : goto [?= r210 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("kafka-env")]
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : goto [?= r200 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("hbase-env")]
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r150 = interfaceinvoke r198.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r9 = virtualinvoke r0.<org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation: org.apache.ambari.server.state.Clusters getClusters()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r208 goto (branch)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r6 goto $r10 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r204 goto $r35 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $i0 = lengthof r208
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r215 goto $r66 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r214 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("hdfs-site")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r90 = interfaceinvoke r210.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r103 = interfaceinvoke r204.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r205)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r210 goto $r40 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : interfaceinvoke r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("ranger.plugins.hbase.serviceuser", r201)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r212 goto $r45 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r6 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("hadoop-env")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r163 = interfaceinvoke r196.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r201 goto $r139 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r211 goto $r92 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r198 goto $r20 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r124 = interfaceinvoke r202.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : interfaceinvoke r4.<org.apache.ambari.server.state.Config: void save()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r208 = virtualinvoke r207.<java.lang.String: java.lang.String[] split(java.lang.String)>("@")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r5 = interfaceinvoke r4.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r4 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("ranger-admin-site")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null != r4 goto r5 = interfaceinvoke r4.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : if null == r197 goto $r165 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : interfaceinvoke r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("ranger.spnego.kerberos.keytab", r215)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : interfaceinvoke r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("ranger.plugins.hdfs.serviceuser", r195)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : goto [?= r196 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("hive-env")]
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r200 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("hbase-env")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r193 = ""
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r98 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : interfaceinvoke r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("ranger.plugins.kms.serviceuser", r213)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : interfaceinvoke r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("ranger.plugins.storm.serviceuser", r209)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r8 = virtualinvoke r0.<org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation: org.apache.ambari.server.agent.ExecutionCommand getExecutionCommand()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : goto [?= r204 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("storm-env")]
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r158 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : goto [?= r212 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("kms-env")]
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r198 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("yarn-env")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r210 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("kafka-env")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r171 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r205 = r7
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : goto [?= $r50 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.SecurityType getSecurityType()>()]
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : interfaceinvoke r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("ranger.plugins.hive.serviceuser", r197)
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $z1 = virtualinvoke r193.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r85 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r113 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r132 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r194 = ""
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r145 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : goto [?= r202 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("knox-env")]
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r7 = r208[0]
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r176 = interfaceinvoke r6.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : goto [?= r198 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("yarn-env")]
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r204 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("storm-env")
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : r205 = null
+org.apache.ambari.server.serveraction.upgrades.RangerKerberosConfigCalculation.execute : $r72 = new java.lang.StringBuilder
+org.apache.ambari.server.agent.ExecutionCommand.getServiceName : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String serviceName>
+org.apache.ambari.server.agent.CommandReport.setStdErr : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String stderr> = r1
+org.apache.ambari.server.serveraction.AbstractServerAction.setExecutionCommand : r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand> = r1
+org.apache.ambari.server.agent.ExecutionCommand.getConfigurationTags : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: java.util.Map configurationTags>
+org.apache.ambari.server.agent.ExecutionCommand.setCommandParams : r0.<org.apache.ambari.server.agent.ExecutionCommand: java.util.Map commandParams> = r1
+org.apache.ambari.server.agent.CommandReport.setTaskId : r0.<org.apache.ambari.server.agent.CommandReport: long taskId> = l0
+org.apache.ambari.server.agent.CommandReport.setStdOut : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String stdout> = r1
+org.apache.ambari.server.agent.ExecutionCommand.getRole : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String role>
+org.apache.ambari.server.agent.CommandReport.setActionId : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String actionId> = r1
+org.apache.ambari.server.serveraction.AbstractServerAction.setHostRoleCommand : r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand> = r1
+org.apache.ambari.server.agent.ExecutionCommand.getTaskId : $l0 = r0.<org.apache.ambari.server.agent.ExecutionCommand: long taskId>
+org.apache.ambari.server.agent.ExecutionCommand.getRoleCommand : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: org.apache.ambari.server.RoleCommand roleCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.getExecutionCommand : $r1 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.agent.ExecutionCommand.setClusterName : r0.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String clusterName> = r1
+org.apache.ambari.server.agent.CommandReport.setServiceName : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String serviceName> = r1
+org.apache.ambari.server.agent.CommandReport.setExitCode : r0.<org.apache.ambari.server.agent.CommandReport: int exitCode> = i0
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r5 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r14 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r8 = new org.apache.ambari.server.agent.CommandReport
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r12 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : if r30 != null goto $r31 = virtualinvoke r30.<org.apache.ambari.server.RoleCommand: java.lang.String toString()>()
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r20 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r6 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r9 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r29 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r31 = null
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r18 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : if r4 != null goto $r32 = r4
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r16 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : r27 = null
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r7 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : virtualinvoke $r8.<org.apache.ambari.server.agent.CommandReport: void setExitCode(int)>(i0)
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : virtualinvoke $r8.<org.apache.ambari.server.agent.CommandReport: void setStructuredOut(java.lang.String)>(r2)
+org.apache.ambari.server.agent.ExecutionCommand.getClusterName : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String clusterName>
+org.apache.ambari.server.agent.CommandReport.setStatus : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String status> = r1
+org.apache.ambari.server.agent.CommandReport.setConfigurationTags : r0.<org.apache.ambari.server.agent.CommandReport: java.util.Map configurationTags> = r1
+org.apache.ambari.server.agent.CommandReport.setRole : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String role> = r1

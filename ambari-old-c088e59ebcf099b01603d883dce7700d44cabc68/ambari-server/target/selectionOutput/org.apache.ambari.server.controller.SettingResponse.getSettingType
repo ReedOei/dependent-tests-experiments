@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.SettingResponse.getSettingType : $r1 = r0.<org.apache.ambari.server.controller.SettingResponse: java.lang.String settingType> >>>>>>>> org.apache.ambari.server.controller.SettingResponse.getSettingType : return $r1

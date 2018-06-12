@@ -1,0 +1,8 @@
+org.apache.zeppelin.helium.Helium.clear : $r1 = r0.<org.apache.zeppelin.helium.Helium: java.util.List registry> >>>>>>>> org.apache.zeppelin.helium.Helium.clear : interfaceinvoke $r1.<java.util.List: void clear()>()
+org.apache.zeppelin.helium.Helium.clear : interfaceinvoke $r1.<java.util.List: void clear()>() >>>>>>>> org.apache.zeppelin.helium.Helium.clear : $r2 = new org.apache.zeppelin.helium.HeliumConf
+org.apache.zeppelin.helium.Helium.clear : $r2 = new org.apache.zeppelin.helium.HeliumConf >>>>>>>> org.apache.zeppelin.helium.Helium.clear : specialinvoke $r2.<org.apache.zeppelin.helium.HeliumConf: void <init>()>()
+org.apache.zeppelin.helium.Helium.clear : specialinvoke $r2.<org.apache.zeppelin.helium.HeliumConf: void <init>()>() >>>>>>>> org.apache.zeppelin.helium.Helium.clear : r0.<org.apache.zeppelin.helium.Helium: org.apache.zeppelin.helium.HeliumConf heliumConf> = $r2
+org.apache.zeppelin.helium.Helium.clear : r0.<org.apache.zeppelin.helium.Helium: org.apache.zeppelin.helium.HeliumConf heliumConf> = $r2 >>>>>>>> org.apache.zeppelin.helium.Helium.clear : $r3 = new java.util.HashMap
+org.apache.zeppelin.helium.Helium.clear : $r3 = new java.util.HashMap >>>>>>>> org.apache.zeppelin.helium.Helium.clear : specialinvoke $r3.<java.util.HashMap: void <init>()>()
+org.apache.zeppelin.helium.Helium.clear : specialinvoke $r3.<java.util.HashMap: void <init>()>() >>>>>>>> org.apache.zeppelin.helium.Helium.clear : r0.<org.apache.zeppelin.helium.Helium: java.util.Map allPackages> = $r3
+org.apache.zeppelin.helium.Helium.clear : r0.<org.apache.zeppelin.helium.Helium: java.util.Map allPackages> = $r3 >>>>>>>> org.apache.zeppelin.helium.Helium.clear : return

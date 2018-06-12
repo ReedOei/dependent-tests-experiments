@@ -1,0 +1,7 @@
+org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : $z0 = interfaceinvoke r1.<java.util.Map: boolean containsKey(java.lang.Object)>("name") >>>>>>>> org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : if $z0 == 0
+org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : if $z0 == 0 >>>>>>>> org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : $r2 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>("name")
+org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : if $z0 == 0 >>>>>>>> org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : $r3 = null
+org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : $r3 = null >>>>>>>> org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : return $r3
+org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : $r2 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>("name") >>>>>>>> org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : $r3 = (java.lang.String) $r2
+org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : $r3 = (java.lang.String) $r2 >>>>>>>> org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : goto [?= return $r3]
+org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : goto [?= return $r3] >>>>>>>> org.apache.ambari.server.controller.jmx.JMXMetricHolder$JmxPattern.name : return $r3

@@ -1,0 +1,5 @@
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.nullToEmpty : if r0 != null >>>>>>>> org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.nullToEmpty : $r1 = staticinvoke <java.util.Collections: java.util.Map emptyMap()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.nullToEmpty : if r0 != null >>>>>>>> org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.nullToEmpty : $r1 = r0
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.nullToEmpty : $r1 = r0 >>>>>>>> org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.nullToEmpty : return $r1
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.nullToEmpty : $r1 = staticinvoke <java.util.Collections: java.util.Map emptyMap()>() >>>>>>>> org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.nullToEmpty : goto [?= return $r1]
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.nullToEmpty : goto [?= return $r1] >>>>>>>> org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.nullToEmpty : return $r1

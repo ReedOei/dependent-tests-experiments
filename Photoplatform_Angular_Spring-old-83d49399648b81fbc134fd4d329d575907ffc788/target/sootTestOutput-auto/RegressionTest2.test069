@@ -1,0 +1,16 @@
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getImageIds : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.util.List imageIds>
+de.htw.sdf.photoplatform.webservice.dto.ResponseMessageData.getMessageFailed : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.ResponseMessageData: java.lang.String messageFailed>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setThumbnail : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.ImageData thumbnail> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getDescription : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String description>
+de.htw.sdf.photoplatform.persistence.model.Image.getThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String thumbPath>
+de.htw.sdf.photoplatform.webservice.dto.ResponseMessageData.setMessageSuccess : r0.<de.htw.sdf.photoplatform.webservice.dto.ResponseMessageData: java.lang.String messageSuccess> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.model.Image.getPrice : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.Double price>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.getId : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getUserdata : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.UserData userdata>
+de.htw.sdf.photoplatform.persistence.model.Image.getMobileThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mobileThumbPath>
+de.htw.sdf.photoplatform.persistence.model.Image.getSmallThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath>
+de.htw.sdf.photoplatform.webservice.dto.ImageData.setMetadata : r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String metadata> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.webservice.dto.ResponseMessageData.getCode : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.ResponseMessageData: java.lang.Long code>
+de.htw.sdf.photoplatform.persistence.model.Image.getMetaData : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String metaData>

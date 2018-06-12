@@ -1,0 +1,2 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClient.initialize : $r2 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClient instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClient.initialize : $r3 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClient instance>

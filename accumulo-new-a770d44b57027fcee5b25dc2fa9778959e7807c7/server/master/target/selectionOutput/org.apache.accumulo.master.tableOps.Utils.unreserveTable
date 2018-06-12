@@ -1,0 +1,14 @@
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r1 = staticinvoke <org.apache.accumulo.master.tableOps.Utils: java.util.concurrent.locks.Lock getLock(org.apache.accumulo.core.client.impl.AbstractId,long,boolean)>(r0, l0, z0) >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : interfaceinvoke $r1.<java.util.concurrent.locks.Lock: void unlock()>()
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : interfaceinvoke $r1.<java.util.concurrent.locks.Lock: void unlock()>() >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r3 = <org.apache.accumulo.master.tableOps.Utils: org.slf4j.Logger log>
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r3 = <org.apache.accumulo.master.tableOps.Utils: org.slf4j.Logger log> >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r2 = newarray (java.lang.Object)[3]
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r2 = newarray (java.lang.Object)[3] >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r2[0] = r0
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r2[0] = r0 >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r5 = staticinvoke <java.lang.Long: java.lang.String toHexString(long)>(l0)
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r5 = staticinvoke <java.lang.Long: java.lang.String toHexString(long)>(l0) >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r2[1] = $r5
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r2[1] = $r5 >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : if z0 == 0
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : if z0 == 0 >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r6 = "write"
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : if z0 == 0 >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r6 = "read"
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r6 = "read" >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r2[2] = $r6
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r2[2] = $r6 >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : interfaceinvoke $r3.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object[])>("table {} ({}) unlocked for ", $r2)
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : interfaceinvoke $r3.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object[])>("table {} ({}) unlocked for ", $r2) >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : return
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r6 = "write" >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : goto [?= $r2[2] = $r6]
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : goto [?= $r2[2] = $r6] >>>>>>>> org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r2[2] = $r6

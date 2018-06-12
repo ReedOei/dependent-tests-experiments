@@ -1,0 +1,7 @@
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.waitForCacheClose : goto [?= return]
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.waitForCacheClose : staticinvoke <java.lang.Thread: void sleep(long)>(500L)
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.setDigest : r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: java.lang.String digest> = r1
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.close : $r3 = r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter: java.util.Map caches>
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.close : specialinvoke r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter: void waitForCacheClose()>()
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.close : $r5 = r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter: org.apache.curator.framework.CuratorFramework client>
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter.getClient : $r1 = r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter: org.apache.curator.framework.CuratorFramework client>

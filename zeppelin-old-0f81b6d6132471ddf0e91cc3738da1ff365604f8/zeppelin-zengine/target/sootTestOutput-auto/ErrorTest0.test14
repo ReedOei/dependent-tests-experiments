@@ -1,0 +1,2 @@
+org.apache.zeppelin.notebook.Note.fromJson : $r2 = <org.apache.zeppelin.notebook.Note: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.ApplicationState$Status.values : $r0 = <org.apache.zeppelin.notebook.ApplicationState$Status: org.apache.zeppelin.notebook.ApplicationState$Status[] $VALUES>

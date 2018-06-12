@@ -1,0 +1,2 @@
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setAdministratorCredential : if r1 != null goto r2 = virtualinvoke r1.<org.apache.ambari.server.security.credential.PrincipalKeyCredential: java.lang.String getPrincipal()>()
+org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandler.setAdministratorCredential : $r6 = new org.apache.ambari.server.serveraction.kerberos.KerberosAdminAuthenticationException

@@ -1,0 +1,7 @@
+org.apache.zeppelin.notebook.Note.getConfig : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config> >>>>>>>> org.apache.zeppelin.notebook.Note.getConfig : if $r1 != null
+org.apache.zeppelin.notebook.Note.getConfig : if $r1 != null >>>>>>>> org.apache.zeppelin.notebook.Note.getConfig : $r3 = new java.util.HashMap
+org.apache.zeppelin.notebook.Note.getConfig : if $r1 != null >>>>>>>> org.apache.zeppelin.notebook.Note.getConfig : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.notebook.Note.getConfig : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config> >>>>>>>> org.apache.zeppelin.notebook.Note.getConfig : return $r2
+org.apache.zeppelin.notebook.Note.getConfig : $r3 = new java.util.HashMap >>>>>>>> org.apache.zeppelin.notebook.Note.getConfig : specialinvoke $r3.<java.util.HashMap: void <init>()>()
+org.apache.zeppelin.notebook.Note.getConfig : specialinvoke $r3.<java.util.HashMap: void <init>()>() >>>>>>>> org.apache.zeppelin.notebook.Note.getConfig : r0.<org.apache.zeppelin.notebook.Note: java.util.Map config> = $r3
+org.apache.zeppelin.notebook.Note.getConfig : r0.<org.apache.zeppelin.notebook.Note: java.util.Map config> = $r3 >>>>>>>> org.apache.zeppelin.notebook.Note.getConfig : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>

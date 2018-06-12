@@ -1,0 +1,2 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.getRemoteInterpreterProcessListener : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcessListener remoteInterpreterProcessListener>
+org.apache.zeppelin.interpreter.InterpreterSetting.getDependencies : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List dependencies>

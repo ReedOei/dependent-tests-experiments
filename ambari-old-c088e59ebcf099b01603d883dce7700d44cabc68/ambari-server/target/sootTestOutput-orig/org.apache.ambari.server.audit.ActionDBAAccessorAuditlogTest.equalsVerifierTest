@@ -1,0 +1,16 @@
+org.apache.ambari.server.Role.hashCode : $r1 = r0.<org.apache.ambari.server.Role: java.lang.String name>
+org.apache.ambari.server.Role.toString : $r1 = r0.<org.apache.ambari.server.Role: java.lang.String name>
+org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component.equals : return 0
+org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component.equals : r2 = (org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component) r1
+org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component.equals : $r4 = r2.<org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component: org.apache.ambari.server.Role role>
+org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component.equals : $z0 = r1 instanceof org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component
+org.apache.ambari.server.Role.equals : if r0 == r1 goto $z2 = 1
+org.apache.ambari.server.Role.equals : $r2 = class "Lorg/apache/ambari/server/Role;"
+org.apache.ambari.server.Role.equals : if null == r1 goto return 0
+org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component.hashCode : i2 = 7
+org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component.hashCode : $r7 = "null"
+org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component.hashCode : $r4 = r0.<org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component: org.apache.ambari.server.Role role>
+org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component.hashCode : $i0 = i2 * 31
+org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component.hashCode : r3 = virtualinvoke r1.<java.lang.String: java.lang.String concat(java.lang.String)>($r8)
+org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component.hashCode : $r6 = r0.<org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component: java.lang.String hostName>
+org.apache.ambari.server.actionmanager.ActionDBAccessorImpl$RequestDetails$Component.hashCode : return i2

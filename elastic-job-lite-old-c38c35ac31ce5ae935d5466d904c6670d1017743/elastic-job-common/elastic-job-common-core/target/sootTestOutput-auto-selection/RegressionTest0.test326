@@ -1,0 +1,4 @@
+com.dangdang.ddframe.job.context.TaskContext.from : r1 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>("@-@") >>>>>>>> com.dangdang.ddframe.job.context.TaskContext.from : $i0 = lengthof r1
+com.dangdang.ddframe.job.context.TaskContext.from : $i0 = lengthof r1 >>>>>>>> com.dangdang.ddframe.job.context.TaskContext.from : if 5 != $i0
+com.dangdang.ddframe.job.context.TaskContext.from : if 5 != $i0 >>>>>>>> com.dangdang.ddframe.job.context.TaskContext.from : $z0 = 0
+com.dangdang.ddframe.job.context.TaskContext.from : $z0 = 0 >>>>>>>> com.dangdang.ddframe.job.context.TaskContext.from : staticinvoke <com.google.common.base.Preconditions: void checkState(boolean)>($z0)

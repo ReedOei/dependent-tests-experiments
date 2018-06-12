@@ -1,0 +1,35 @@
+org.apache.zeppelin.notebook.Note.generateId : $r1 = staticinvoke <org.apache.zeppelin.notebook.utility.IdHashes: java.lang.String generateId()>()
+org.apache.zeppelin.notebook.Note.onOutputAppend : $r4 = r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.notebook.JobListenerFactory jobListenerFactory>
+org.apache.zeppelin.notebook.utility.IdHashes.generateId : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.zeppelin.notebook.Note.getConfig : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.notebook.Note.getConfig : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r16 = <java.math.BigInteger: java.math.BigInteger ZERO>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $i4 = interfaceinvoke $r5.<java.util.List: int size()>()
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r5 = new java.util.ArrayList
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r6 = new java.math.BigInteger
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r17 = new java.lang.StringBuffer
+org.apache.zeppelin.notebook.utility.IdHashes.encode : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("r22 = virtualinvoke $r6.<java.math.BigInteger: java.math.BigInteger pow(int)>(i5)", "org.apache.zeppelin.notebook.utility.IdHashes.encode")]
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r22 = virtualinvoke $r6.<java.math.BigInteger: java.math.BigInteger pow(int)>(i5)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r4 = virtualinvoke r23.<java.math.BigInteger: java.math.BigInteger divide(java.math.BigInteger)>(r3)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r23 = virtualinvoke r21.<java.math.BigInteger: java.math.BigInteger mod(java.math.BigInteger)>(r22)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r21 = virtualinvoke r21.<java.math.BigInteger: java.math.BigInteger subtract(java.math.BigInteger)>(r23)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r19 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(i6)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r12 = new java.math.BigInteger
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $i1 = i5 - 1
+org.apache.zeppelin.notebook.utility.IdHashes.encode : i5 = i5 + 1
+org.apache.zeppelin.notebook.utility.IdHashes.encode : goto [?= $r17 = new java.lang.StringBuffer]
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r14 = <org.apache.zeppelin.notebook.utility.IdHashes: char[] DICTIONARY>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r18 = virtualinvoke $r17.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.zeppelin.notebook.utility.IdHashes.encode : i5 = 1
+org.apache.zeppelin.notebook.Note.isNameEmpty : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.notebook.Note.setIndex : r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.search.SearchService index> = r1
+org.apache.zeppelin.notebook.Note.getId : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String id>
+org.apache.zeppelin.notebook.Note.setName : r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.notebook.Note.setName : r0.<org.apache.zeppelin.notebook.Note: java.lang.String name> = r3
+org.apache.zeppelin.notebook.Note.setName : $r4 = r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.notebook.NoteNameListener noteNameListener>
+org.apache.zeppelin.notebook.Note.setName : $i0 = virtualinvoke r3.<java.lang.String: int indexOf(int)>(47)
+org.apache.zeppelin.notebook.Note.setName : $i1 = virtualinvoke r3.<java.lang.String: int indexOf(int)>(92)
+org.apache.zeppelin.notebook.Note.getName : $r2 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: java.lang.String getId()>()
+org.apache.zeppelin.notebook.Note.getName : $z0 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: boolean isNameEmpty()>()
+org.apache.zeppelin.notebook.Note.getName : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.notebook.Note.initializeJobListenerForParagraph : r2 = virtualinvoke r1.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.notebook.Note getNote()>()

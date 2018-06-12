@@ -1,0 +1,67 @@
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : $i0 = interfaceinvoke r2.<java.util.Collection: int size()>()
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : r3 = interfaceinvoke r2.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : r4 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : r5 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : $r22 = new org.apache.ambari.server.collections.functors.ContainsPredicate
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : if $r27 != null goto $z0 = $r27 instanceof java.util.Collection
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : r2 = (java.util.Collection) $r27
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : $z1 = r4 instanceof java.lang.String
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : $z2 = r5 instanceof java.lang.String
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : if r0 != null goto $r27 = interfaceinvoke r0.<java.util.Map: java.lang.Object get(java.lang.Object)>("contains")
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : $z0 = $r27 instanceof java.util.Collection
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setPrincipalDescriptor : $r2 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor principal>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setPrincipalDescriptor : $r3 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor principal>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setPrincipalDescriptor : r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor principal> = r1
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setReference : r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String reference> = r1
+org.apache.ambari.server.state.kerberos.KerberosPrincipalType.valueOf : $r1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class "Lorg/apache/ambari/server/state/kerberos/KerberosPrincipalType;", r0)
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : r3 = (java.util.Map) r2
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : r10 = null
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : $z0 = r2 instanceof java.util.Map
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : $r2 = r0.<org.apache.ambari.server.collections.functors.ContextTransformer: java.lang.String key>
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : $z1 = interfaceinvoke r3.<java.util.Map: boolean containsKey(java.lang.Object)>(r1)
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : r10 = interfaceinvoke r3.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : return r10
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : if r1 == null goto return r10
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.setParent : r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor parent> = r1
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setConfiguration : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String configuration> = r1
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setGroupName : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String groupName> = r1
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setGroupAccess : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String groupAccess> = r1
+org.apache.ambari.server.collections.functors.OperationPredicate.evaluate : $r3 = r0.<org.apache.ambari.server.collections.functors.OperationPredicate: org.apache.ambari.server.collections.functors.ContextTransformer transformer>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getStringValue : if r2 != null goto $r3 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getStringValue : r2 = staticinvoke <org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.Object getValue(java.util.Map,java.lang.String)>(r0, r1)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptorTest.createFromJSON : $r3 = virtualinvoke $r2.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptorTest$1: java.lang.reflect.Type getType()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptorTest.createFromJSON : $r5 = new org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptorTest.createFromJSON : $r1 = new com.google.gson.Gson
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.shouldInclude : $r2 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.collections.Predicate when>
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $z0 = interfaceinvoke r0.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.collections.PredicateUtils.fromMap : goto [?= (branch)]
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $i0 = interfaceinvoke r0.<java.util.Map: int size()>()
+org.apache.ambari.server.collections.PredicateUtils.fromMap : if r0 == null goto return r30
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $r12 = newarray (java.lang.Class)[1]
+org.apache.ambari.server.collections.PredicateUtils.fromMap : if r31 != null goto $r13 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $r11 = interfaceinvoke r1.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.collections.PredicateUtils.fromMap : goto [?= return r30]
+org.apache.ambari.server.collections.PredicateUtils.fromMap : if r3 != null goto $r12 = newarray (java.lang.Class)[1]
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $r8 = interfaceinvoke r0.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.collections.PredicateUtils.fromMap : r3 = staticinvoke <org.apache.ambari.server.collections.functors.PredicateClassFactory: java.lang.Class getPredicateClass(java.lang.String)>(r2)
+org.apache.ambari.server.collections.PredicateUtils.fromMap : r30 = null
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $r13 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setCachable : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: boolean cachable> = z0
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.setLocalUsername : r0.<org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor: java.lang.String localUsername> = r1
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setWhen : r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.collections.Predicate when> = r1
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.setName : r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String name> = r1
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setOwnerAccess : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String ownerAccess> = r1
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.setConfiguration : r0.<org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor: java.lang.String configuration> = r1
+org.apache.ambari.server.collections.functors.PredicateClassFactory.getPredicateClass : if r0 != null goto $r1 = <org.apache.ambari.server.collections.functors.PredicateClassFactory: java.util.Map NAME_TO_CLASS>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setKeytabDescriptor : r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor keytab> = r1
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setKeytabDescriptor : $r3 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor keytab>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setKeytabDescriptor : $r2 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor keytab>
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.getKerberosPrincipalTypeValue : $r3 = virtualinvoke r2.<java.lang.String: java.lang.String toUpperCase()>()
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.getKerberosPrincipalTypeValue : if r2 == null goto return null
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.getKerberosPrincipalTypeValue : $z0 = virtualinvoke r2.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.getKerberosPrincipalTypeValue : r2 = staticinvoke <org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor: java.lang.String getStringValue(java.util.Map,java.lang.String)>(r0, r1)
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.setType : r0.<org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor: org.apache.ambari.server.state.kerberos.KerberosPrincipalType type> = r1
+org.apache.ambari.server.collections.functors.ContainsPredicate.evaluateTransformedData : $r2 = r0.<org.apache.ambari.server.collections.functors.ContainsPredicate: java.lang.String value>
+org.apache.ambari.server.collections.functors.ContainsPredicate.evaluate : $z0 = specialinvoke r0.<org.apache.ambari.server.collections.functors.OperationPredicate: boolean evaluate(java.lang.Object)>(r1)
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getValue : if r0 == null goto $r2 = null
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setOwnerName : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String ownerName> = r1

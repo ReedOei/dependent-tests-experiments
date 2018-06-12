@@ -1,0 +1,43 @@
+org.apache.ambari.server.orm.entities.KerberosDescriptorEntity.setKerberosDescriptorText : virtualinvoke r0.<org.apache.ambari.server.orm.entities.KerberosDescriptorEntity: void _persistence_set_kerberosDescriptorText(java.lang.String)>(r1)
+org.apache.ambari.server.topology.KerberosDescriptorImpl.getName : $r1 = r0.<org.apache.ambari.server.topology.KerberosDescriptorImpl: java.lang.String name>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r2 != null goto $r8 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("type")
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r6 = <org.apache.ambari.server.topology.SecurityConfigurationFactory: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r7 = interfaceinvoke r1.<java.util.Map: java.lang.Object get(java.lang.Object)>("security")
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r5 == null goto (branch)
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r8 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("type")
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r12 = <org.apache.ambari.server.state.SecurityType: org.apache.ambari.server.state.SecurityType KERBEROS>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r17 = (java.lang.String) $r16
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r10 = staticinvoke <com.google.common.base.Enums: com.google.common.base.Optional getIfPresent(java.lang.Class,java.lang.String)>(class "Lorg/apache/ambari/server/state/SecurityType;", r3)
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r23 = r0.<org.apache.ambari.server.topology.SecurityConfigurationFactory: com.google.gson.Gson jsonSerializer>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r4 != null goto $r12 = <org.apache.ambari.server.state.SecurityType: org.apache.ambari.server.state.SecurityType KERBEROS>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : r37 = specialinvoke r0.<org.apache.ambari.server.topology.SecurityConfigurationFactory: java.lang.String persistKerberosDescriptor(java.lang.String)>(r38)
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r22 = <org.apache.ambari.server.topology.SecurityConfigurationFactory: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : return r39
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r37 == null goto (branch)
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if r3 != null goto $r10 = staticinvoke <com.google.common.base.Enums: com.google.common.base.Optional getIfPresent(java.lang.Class,java.lang.String)>(class "Lorg/apache/ambari/server/state/SecurityType;", r3)
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : r5 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("kerberos_descriptor")
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : goto [?= return r39]
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : $r16 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("kerberos_descriptor_reference")
+org.apache.ambari.server.topology.SecurityConfigurationFactory.createSecurityConfigurationFromRequest : if z0 == 0 goto $r24 = new org.apache.ambari.server.topology.SecurityConfiguration
+org.apache.ambari.server.orm.entities.KerberosDescriptorEntity.getKerberosDescriptorText : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.KerberosDescriptorEntity: java.lang.String _persistence_get_kerberosDescriptorText()>()
+org.apache.ambari.server.orm.entities.KerberosDescriptorEntity.setName : virtualinvoke r0.<org.apache.ambari.server.orm.entities.KerberosDescriptorEntity: void _persistence_set_name(java.lang.String)>(r1)
+org.apache.ambari.server.orm.entities.KerberosDescriptorEntity.getName : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.KerberosDescriptorEntity: java.lang.String _persistence_get_name()>()
+org.apache.ambari.server.topology.SecurityConfigurationFactoryTest.testKDReqPropertyMap : $r2 = new java.util.HashMap
+org.apache.ambari.server.topology.SecurityConfigurationFactoryTest.testKDReqPropertyMap : interfaceinvoke $r2.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("test", "{\"test\":\"test json\"}")
+org.apache.ambari.server.topology.SecurityConfigurationFactoryTest.testKDReqPropertyMap : return $r2
+org.apache.ambari.server.topology.KerberosDescriptorFactory.createKerberosDescriptor : $r4 = new org.apache.ambari.server.topology.KerberosDescriptorImpl
+org.apache.ambari.server.topology.KerberosDescriptorFactory.createKerberosDescriptor : return $r4
+org.apache.ambari.server.topology.SecurityConfigurationFactory.persistKerberosDescriptor : $r4 = <org.apache.ambari.server.topology.SecurityConfigurationFactory: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.persistKerberosDescriptor : $r5 = r0.<org.apache.ambari.server.topology.SecurityConfigurationFactory: org.apache.ambari.server.topology.KerberosDescriptorFactory kerberosDescriptorFactory>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.persistKerberosDescriptor : return r2
+org.apache.ambari.server.topology.SecurityConfigurationFactory.persistKerberosDescriptor : $r6 = <org.apache.ambari.server.topology.SecurityConfigurationFactory: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.persistKerberosDescriptor : r2 = specialinvoke r0.<org.apache.ambari.server.topology.SecurityConfigurationFactory: java.lang.String generateKerberosDescriptorReference()>()
+org.apache.ambari.server.topology.SecurityConfigurationFactory.persistKerberosDescriptor : $r7 = r0.<org.apache.ambari.server.topology.SecurityConfigurationFactory: org.apache.ambari.server.orm.dao.KerberosDescriptorDAO kerberosDescriptorDAO>
+org.apache.ambari.server.topology.SecurityConfigurationFactory.generateKerberosDescriptorReference : $r2 = staticinvoke <java.util.UUID: java.util.UUID randomUUID()>()
+org.apache.ambari.server.topology.SecurityConfigurationFactory.generateKerberosDescriptorReference : return r1
+org.apache.ambari.server.topology.SecurityConfigurationFactory.generateKerberosDescriptorReference : $r3 = <org.apache.ambari.server.topology.SecurityConfigurationFactory: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.KerberosDescriptorImpl.getDescriptor : $r1 = r0.<org.apache.ambari.server.topology.KerberosDescriptorImpl: java.lang.String descriptor>
+org.apache.ambari.server.topology.KerberosDescriptorImpl.toEntity : $r2 = new org.apache.ambari.server.orm.entities.KerberosDescriptorEntity
+org.apache.ambari.server.topology.KerberosDescriptorImpl.toEntity : $r4 = virtualinvoke r0.<org.apache.ambari.server.topology.KerberosDescriptorImpl: java.lang.String getDescriptor()>()
+org.apache.ambari.server.topology.KerberosDescriptorImpl.toEntity : $r3 = virtualinvoke r0.<org.apache.ambari.server.topology.KerberosDescriptorImpl: java.lang.String getName()>()
+org.apache.ambari.server.topology.KerberosDescriptorImpl.toEntity : return $r2

@@ -1,0 +1,5 @@
+com.alibaba.dubbo.config.spring.AnnotationBean.getPackage : $r1 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage>
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeanFactory : $r8 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage>
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : $i0 = virtualinvoke r1.<java.lang.String: int length()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : if r1 == null goto $r4 = null
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage> = r1

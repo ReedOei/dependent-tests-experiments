@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : $r4 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: javax.sql.DataSource dataSource>

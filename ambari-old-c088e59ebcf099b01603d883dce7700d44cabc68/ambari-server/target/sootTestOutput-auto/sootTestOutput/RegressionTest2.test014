@@ -1,0 +1,7 @@
+org.apache.ambari.server.state.State.isValidStateTransition : $r2 = <org.apache.ambari.server.state.State$1: int[] $SwitchMap$org$apache$ambari$server$state$State>
+org.apache.ambari.server.state.State.isValidStateTransition : return 0
+org.apache.ambari.server.controller.utilities.state.DefaultServiceCalculatedState.getCluster : $r3 = <org.apache.ambari.server.controller.utilities.state.DefaultServiceCalculatedState: com.google.inject.Provider clustersProvider>
+org.apache.ambari.server.controller.utilities.state.HDFSServiceCalculatedState.getState : goto [?= $r11 = <org.apache.ambari.server.state.State: org.apache.ambari.server.state.State UNKNOWN>]
+org.apache.ambari.server.controller.utilities.state.HDFSServiceCalculatedState.getState : r31 = virtualinvoke r0.<org.apache.ambari.server.controller.utilities.state.HDFSServiceCalculatedState: org.apache.ambari.server.state.Cluster getCluster(java.lang.String)>(r1)
+org.apache.ambari.server.controller.utilities.state.HDFSServiceCalculatedState.getState : if r31 == null goto (branch)
+org.apache.ambari.server.state.State.values : $r0 = <org.apache.ambari.server.state.State: org.apache.ambari.server.state.State[] $VALUES>

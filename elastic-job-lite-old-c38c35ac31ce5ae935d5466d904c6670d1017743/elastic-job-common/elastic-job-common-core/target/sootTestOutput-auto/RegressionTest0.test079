@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration.isStreamingProcess : $z0 = r0.<com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration: boolean streamingProcess>
+com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration.getCoreConfig : $r1 = r0.<com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration: com.dangdang.ddframe.job.config.JobCoreConfiguration coreConfig>

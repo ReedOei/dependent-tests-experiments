@@ -1,0 +1,3 @@
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.getTimestamp : $l0 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ClusterConfigEntity: long _persistence_get_timestamp()>()
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setTag : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ClusterConfigEntity: void _persistence_set_tag(java.lang.String)>(r1)
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.getClusterEntity : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ClusterConfigEntity: org.apache.ambari.server.orm.entities.ClusterEntity _persistence_get_clusterEntity()>()

@@ -1,0 +1,13 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.access$1002 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.dep.DependencyResolver dependencyResolver> = r1
+org.apache.zeppelin.interpreter.InterpreterInfo.getClassName : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterInfo: java.lang.String className>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterInfos : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterInfos : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterRunner : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterRunner : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$702 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterRunner interpreterRunner> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.access$302 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List interpreterInfos> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setDependencyResolver : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setDependencyResolver : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$1202 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcessListener remoteInterpreterProcessListener> = r1

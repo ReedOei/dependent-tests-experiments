@@ -1,0 +1,32 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.access$1002 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.dep.DependencyResolver dependencyResolver> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getErrorReason : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String errorReason>
+org.apache.zeppelin.interpreter.InterpreterSetting.setStatus : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterSetting$Status status> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.setProperties : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.Object properties> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setId : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setId : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $z1 = virtualinvoke $r4.<java.util.Properties: boolean containsKey(java.lang.Object)>("zeppelin.interpreter.output.limit")
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r22 = new java.lang.StringBuilder
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r24 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r17 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r5 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.Object properties>
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r4 = new java.util.Properties
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r6 = interfaceinvoke r2.<java.util.Map: java.util.Set entrySet()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r7 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : return $r4
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r15 = new java.lang.StringBuilder
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r8 = new java.lang.StringBuilder
+org.apache.zeppelin.interpreter.InterpreterSetting.getStatus : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterSetting$Status status>
+org.apache.zeppelin.interpreter.InterpreterSetting.setConf : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.conf.ZeppelinConfiguration conf> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.access$002 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String id> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setOption : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setOption : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.setRemoteInterpreterProcessListener : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcessListener remoteInterpreterProcessListener> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.access$502 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setDependencyResolver : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setDependencyResolver : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.create : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.create : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterRunner : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterRunner interpreterRunner> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r1 = <org.apache.zeppelin.interpreter.InterpreterSetting$Status: org.apache.zeppelin.interpreter.InterpreterSetting$Status READY>
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager>
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r3 = new org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager

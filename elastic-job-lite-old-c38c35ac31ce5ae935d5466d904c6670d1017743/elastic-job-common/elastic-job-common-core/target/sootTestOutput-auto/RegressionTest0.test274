@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.statistics.type.job.JobExecutionTypeStatistics.getTransientJobCount : $i0 = r0.<com.dangdang.ddframe.job.statistics.type.job.JobExecutionTypeStatistics: int transientJobCount>
+com.dangdang.ddframe.job.statistics.type.job.JobExecutionTypeStatistics.getDaemonJobCount : $i0 = r0.<com.dangdang.ddframe.job.statistics.type.job.JobExecutionTypeStatistics: int daemonJobCount>

@@ -1,0 +1,9 @@
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : $z0 = staticinvoke <com.google.common.base.Strings: boolean isNullOrEmpty(java.lang.String)>(r1) >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : if $z0 != 0
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : if $z0 != 0 >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : $i0 = virtualinvoke r1.<java.lang.String: int length()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : if $z0 != 0 >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : $r2 = r1
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : $r2 = r1 >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : return $r2
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : $i0 = virtualinvoke r1.<java.lang.String: int length()>() >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : if $i0 <= 4000
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : if $i0 <= 4000 >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, 4000)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : if $i0 <= 4000 >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : $r2 = r1
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String substring(int,int)>(0, 4000) >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : goto [?= return $r2]
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : goto [?= return $r2] >>>>>>>> com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : return $r2

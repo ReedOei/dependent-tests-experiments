@@ -1,0 +1,117 @@
+Executing fixed runner now.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/jackrabbit-oak-old-cd3d6e5c89597ebc4d39e7ce9344eed7215559d7/oak-solr-core/target/dependency/logback-classic-1.1.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookupTest.collectPathOnRootNode
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookupTest.collectPathOnSubNode
+Test being executed: org.apache.jackrabbit.oak.jcr.query.FacetTest.testFacetRetrievalMV
+Test being executed: org.apache.jackrabbit.oak.jcr.query.FacetTest.testMultipleFacetsRetrieval
+Test being executed: org.apache.jackrabbit.oak.jcr.query.FacetTest.testFacetRetrieval
+Test being executed: org.apache.jackrabbit.oak.jcr.query.FacetTest.testFacetRetrieval2
+Test being executed: org.apache.jackrabbit.oak.jcr.query.FacetTest.testFacetRetrievalWithAnonymousUser
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.OakSolrNodeStateConfigurationTest.testExistingPath
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.OakSolrNodeStateConfigurationTest.testNonExistingPath
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.OakSolrNodeStateConfigurationTest.testWrongNodeState
+Test being executed: org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest.testFileContains
+Test being executed: org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest.testNtFile
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.server.RemoteSolrServerProviderIT.testCloudRemoteServerCreation
+Test being executed: org.apache.jackrabbit.oak.jcr.query.SuggestTest.testSuggestSql
+Test being executed: org.apache.jackrabbit.oak.jcr.query.SuggestTest.testSuggestXPath
+Test being executed: org.apache.jackrabbit.oak.jcr.query.SuggestTest.testNoSuggestions
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testExactPathIndexingTokenizationAndSearch
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testParentPathSearchingTokenization
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testParentPathIndexingTokenization
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenPathMatching
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenPathMatchingOnRootNode
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testDirectChildrenPathMatching
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testParentPathMatching
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testDirectChildrenPathSearchingTokenization
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenIndexingTokenization
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenSearchingTokenization
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testDirectChildrenPathIndexingTokenization
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.sql2
+May 19, 2018 3:12:42 PM org.apache.tika.config.InitializableProblemHandler$3 handleInitializableProblem
+WARNING: JBIG2ImageReader not loaded. jbig2 files will be ignored
+See https://pdfbox.apache.org/2.0/dependencies.html#jai-image-io
+for optional dependencies.
+TIFFImageWriter not loaded. tiff files will not be processed
+See https://pdfbox.apache.org/2.0/dependencies.html#jai-image-io
+for optional dependencies.
+J2KImageReader not loaded. JPEG2000 files will not be processed.
+See https://pdfbox.apache.org/2.0/dependencies.html#jai-image-io
+for optional dependencies.
+
+May 19, 2018 3:12:42 PM org.apache.tika.config.InitializableProblemHandler$3 handleInitializableProblem
+WARNING: org.xerial's sqlite-jdbc is not loaded.
+Please provide the jar on your classpath to parse sqlite files.
+See tika-parsers/pom.xml for the correct version.
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.containsPath
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.sql2FullText
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNativeSolrQuery
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.descendantTest
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.descendantTest2
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.ischildnodeTest
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.ischildnodeTest2
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNativeSolrFunctionQuery
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNativeSolrLocalParams
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNativeMLTQuery
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNativeMLTQueryWithStream
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testRepSimilarXPathQuery
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.nativeSolr
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testTokenizeCN
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testCompositeRepExcerpt
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.multiPhraseQuery
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.containsPathNum
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testOAK1208
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testSortingOnPath
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testSortingOnProperty
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testOrderByJcrScore
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testOrderByMVProperty
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testCollapsedJcrContentNodeDescandants
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNotNullAndNative
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.sql1
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.contains
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimatorTest.testMultipleUpdates
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimatorTest.testEstimate
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimatorTest.testUpdate
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIndexedProperties
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIgnoredPropertiesNotIndexed
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization
+Test being executed: org.apache.jackrabbit.oak.jcr.query.SpellcheckTest.testSpellcheckMultipleWords
+Test being executed: org.apache.jackrabbit.oak.jcr.query.SpellcheckTest.testSpellcheckSql
+Test being executed: org.apache.jackrabbit.oak.jcr.query.SpellcheckTest.testSpellcheckXPath
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtilsTest.testSynonymsFileCreation
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfigurationTest.testCreateRemoteServerFromConfig
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfigurationTest.testCreteEmbeddedServerFromConfig
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testSize
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoNegativeCost
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoMoreThanThreeSolrRequests
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoIndexPlanWithNoRestrictions
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPathRestrictions
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithOnlyPathRestrictionsEnabled
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyAndPathRestrictionsEnabled
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyRestrictions
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyRestrictionsEnabled
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPrimaryTypeRestrictions
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithOnlyPrimaryTypeRestrictionsEnabled
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyAndPrimaryTypeRestrictionsEnabled
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyRestrictionsEnabledButPropertyIgnored
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyRestrictionsEnabledButNotUsedProperty
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyRestrictionsEnabledAndUsedProperty
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyNotListedInUsedProperties
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testUnion
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.FilterQueryParserTest.testMatchAllConversionWithNoConstraints
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.FilterQueryParserTest.testAllChildrenQueryParsing
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.FilterQueryParserTest.testCollapseJcrContentNodes
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.query.SubtreeSolrIndexIT.test
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorIT.testAddSomeNodes
+Test being executed: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorIT.testRemoveNode
+Total execution time: 10872486237
+
+Pass: 44, Fail: 0, Error: 45, Skipped: 0
+{org.apache.jackrabbit.oak.jcr.query.SpellcheckTest.testSpellcheckXPath=8223379, org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorIT.testAddSomeNodes=144906625, org.apache.jackrabbit.oak.plugins.index.solr.server.RemoteSolrServerProviderIT.testCloudRemoteServerCreation=1453317865, org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfigurationTest.testCreteEmbeddedServerFromConfig=85846, org.apache.jackrabbit.oak.jcr.query.SuggestTest.testSuggestSql=45070698, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.ischildnodeTest2=36752375, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenSearchingTokenization=963741, org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest.testNtFile=13062726, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNativeSolrQuery=84860320, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.descendantTest2=53135342, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testParentPathSearchingTokenization=1544419, org.apache.jackrabbit.oak.jcr.query.FacetTest.testFacetRetrievalMV=351838877, org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimatorTest.testMultipleUpdates=138300425, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testCompositeRepExcerpt=40215746, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.contains=28715968, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookupTest.collectPathOnSubNode=381990, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyRestrictionsEnabledButNotUsedProperty=227826, org.apache.jackrabbit.oak.jcr.query.FacetTest.testFacetRetrieval2=14692012, org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorIT.testRemoveNode=130468936, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testParentPathIndexingTokenization=301749, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNativeSolrLocalParams=37399543, org.apache.jackrabbit.oak.jcr.query.SpellcheckTest.testSpellcheckMultipleWords=10295572, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithOnlyPathRestrictionsEnabled=271645, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testParentPathMatching=601548, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyRestrictionsEnabledButPropertyIgnored=337225, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoMoreThanThreeSolrRequests=794152, org.apache.jackrabbit.oak.jcr.query.TextExtractionQueryTest.testFileContains=12989642, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testSortingOnProperty=34414679, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testCollapsedJcrContentNodeDescandants=33677476, org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIgnoredPropertiesNotIndexed=235638788, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyRestrictionsEnabledAndUsedProperty=241971, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNativeMLTQueryWithStream=41495945, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithOnlyPrimaryTypeRestrictionsEnabled=154551, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyRestrictionsEnabled=175839, org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimatorTest.testEstimate=637554, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPathRestrictions=198628, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenPathMatchingOnRootNode=2482187, org.apache.jackrabbit.oak.jcr.query.FacetTest.testFacetRetrieval=14783639, org.apache.jackrabbit.oak.jcr.query.SuggestTest.testSuggestXPath=31560041, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testOrderByMVProperty=33446263, org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.OakSolrNodeStateConfigurationTest.testNonExistingPath=4867447, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.sql2=1388628782, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoNegativeCost=22847402, org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIndexedProperties=2323423231, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testSize=11499066, org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfigurationTest.testCreateRemoteServerFromConfig=2493294, org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtilsTest.testSynonymsFileCreation=621569220, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testOAK1208=35581732, org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimatorTest.testUpdate=16089269, org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization=157278500, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testDirectChildrenPathIndexingTokenization=864164, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNativeSolrFunctionQuery=41967661, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNativeMLTQuery=40345242, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.sql1=21482432, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testOrderByJcrScore=33812753, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.nativeSolr=39881415, org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.OakSolrNodeStateConfigurationTest.testExistingPath=37690416, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.descendantTest=61509347, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.containsPathNum=35620605, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testDirectChildrenPathSearchingTokenization=1105274, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenIndexingTokenization=1484864, org.apache.jackrabbit.oak.jcr.query.FacetTest.testFacetRetrievalWithAnonymousUser=59157004, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testDirectChildrenPathMatching=2420151, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyNotListedInUsedProperties=537341, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.sql2FullText=76669688, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testRepSimilarXPathQuery=40871635, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyRestrictions=183101, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testUnion=418876, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testExactPathIndexingTokenizationAndSearch=181890298, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyAndPrimaryTypeRestrictionsEnabled=255023, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoIndexPlanWithNoRestrictions=10495830, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenPathMatching=28858498, org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.OakSolrNodeStateConfigurationTest.testWrongNodeState=4814717, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testNotNullAndNative=34740590, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookupTest.collectPathOnRootNode=19567423, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testTokenizeCN=38122482, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyAndPathRestrictionsEnabled=374066, org.apache.jackrabbit.oak.plugins.index.solr.query.FilterQueryParserTest.testAllChildrenQueryParsing=3151833, org.apache.jackrabbit.oak.jcr.query.FacetTest.testMultipleFacetsRetrieval=16866549, org.apache.jackrabbit.oak.jcr.query.SuggestTest.testNoSuggestions=14844997, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.multiPhraseQuery=39156582, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.ischildnodeTest=79551674, org.apache.jackrabbit.oak.jcr.query.SpellcheckTest.testSpellcheckSql=8233736, org.apache.jackrabbit.oak.plugins.index.solr.query.SubtreeSolrIndexIT.test=44783778, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPrimaryTypeRestrictions=136449, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.testSortingOnPath=39259038, org.apache.jackrabbit.oak.plugins.index.solr.query.FilterQueryParserTest.testMatchAllConversionWithNoConstraints=15924841, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexIT.containsPath=125918211, org.apache.jackrabbit.oak.plugins.index.solr.query.FilterQueryParserTest.testCollapseJcrContentNodes=1803789}
+

@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.context.annotation.DubboConfigConfigurationSelector.getOrder : return -2147483648

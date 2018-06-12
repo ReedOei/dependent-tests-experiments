@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest$1.getIgnoredProperties : $r1 = staticinvoke <java.util.Collections: java.util.List singletonList(java.lang.Object)>("foo2") >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest$1.getIgnoredProperties : return $r1

@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.filter.MockFilter.getProtocol : $r1 = r0.<com.alibaba.dubbo.config.spring.filter.MockFilter: com.alibaba.dubbo.rpc.Protocol protocol> >>>>>>>> com.alibaba.dubbo.config.spring.filter.MockFilter.getProtocol : return $r1

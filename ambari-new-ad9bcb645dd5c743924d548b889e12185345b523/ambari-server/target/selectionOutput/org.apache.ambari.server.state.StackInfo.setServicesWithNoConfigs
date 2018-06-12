@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.StackInfo.setServicesWithNoConfigs : r0.<org.apache.ambari.server.state.StackInfo: java.util.List servicesWithNoConfigs> = r1 >>>>>>>> org.apache.ambari.server.state.StackInfo.setServicesWithNoConfigs : return

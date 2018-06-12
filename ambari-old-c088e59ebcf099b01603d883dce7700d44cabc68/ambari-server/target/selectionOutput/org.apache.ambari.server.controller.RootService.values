@@ -1,0 +1,3 @@
+org.apache.ambari.server.controller.RootService.values : $r0 = <org.apache.ambari.server.controller.RootService: org.apache.ambari.server.controller.RootService[] $VALUES> >>>>>>>> org.apache.ambari.server.controller.RootService.values : $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Object clone()>()
+org.apache.ambari.server.controller.RootService.values : $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.apache.ambari.server.controller.RootService.values : $r2 = (org.apache.ambari.server.controller.RootService[]) $r1
+org.apache.ambari.server.controller.RootService.values : $r2 = (org.apache.ambari.server.controller.RootService[]) $r1 >>>>>>>> org.apache.ambari.server.controller.RootService.values : return $r2

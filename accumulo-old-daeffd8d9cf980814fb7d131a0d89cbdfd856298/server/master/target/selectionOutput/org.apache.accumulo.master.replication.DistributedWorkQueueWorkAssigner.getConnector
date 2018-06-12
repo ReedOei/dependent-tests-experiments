@@ -1,0 +1,1 @@
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.getConnector : $r1 = r0.<org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner: org.apache.accumulo.core.client.Connector conn> >>>>>>>> org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.getConnector : return $r1

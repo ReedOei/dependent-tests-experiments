@@ -1,0 +1,4 @@
+org.apache.ambari.server.configuration.ComponentSSLConfiguration.getTruststoreType : $r1 = r0.<org.apache.ambari.server.configuration.ComponentSSLConfiguration: java.lang.String truststoreType>
+org.apache.ambari.server.configuration.ComponentSSLConfiguration.getTruststorePassword : $r1 = r0.<org.apache.ambari.server.configuration.ComponentSSLConfiguration: java.lang.String truststorePassword>
+org.apache.ambari.server.configuration.ComponentSSLConfiguration.getTruststorePath : $r1 = r0.<org.apache.ambari.server.configuration.ComponentSSLConfiguration: java.lang.String truststorePath>
+org.apache.ambari.server.configuration.ComponentSSLConfiguration.instance : $r0 = <org.apache.ambari.server.configuration.ComponentSSLConfiguration: org.apache.ambari.server.configuration.ComponentSSLConfiguration singleton>

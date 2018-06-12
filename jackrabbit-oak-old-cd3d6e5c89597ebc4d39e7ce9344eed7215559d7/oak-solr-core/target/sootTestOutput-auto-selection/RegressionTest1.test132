@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getCatchAllField : return "catch_all" >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.useForPrimaryTypes : return 0

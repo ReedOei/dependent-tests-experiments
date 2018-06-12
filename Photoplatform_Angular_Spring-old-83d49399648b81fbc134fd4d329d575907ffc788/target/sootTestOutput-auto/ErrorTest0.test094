@@ -1,0 +1,17 @@
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.setClazz : r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: java.lang.Class clazz> = r1
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : if r2 != null goto $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : return 0
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : r2 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.getEntityManager : $r1 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.createQuery : $r2 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initPhotographImageQuery : $r5 = virtualinvoke r2.<java.lang.StringBuilder: java.lang.String toString()>()
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initPhotographImageQuery : r2 = specialinvoke r0.<de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl: java.lang.StringBuilder initSelectQuery()>()
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initPhotographImageQuery : virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("WHERE owner.id = :ownerId AND user.id = :userId")
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initSelectQuery : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("LEFT JOIN FETCH userImage.user user ")
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initSelectQuery : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("LEFT JOIN FETCH userImage.image image ")
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initSelectQuery : $r2 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initSelectQuery : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("LEFT JOIN FETCH userImage.owner owner ")
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initSelectQuery : return $r2
+de.htw.sdf.photoplatform.persistence.model.User.isPhotographer : $z0 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean isRoleIncluded(java.lang.String)>("ROLE_PHOTOGRAPHER")
+de.htw.sdf.photoplatform.persistence.model.User.getUserRoles : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List userRoles>
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.getPhotographImages : r2 = specialinvoke r0.<de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl: javax.persistence.Query initPhotographImageQuery(de.htw.sdf.photoplatform.persistence.model.User)>(r1)

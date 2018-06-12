@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $z0 = virtualinvoke r6.<java.io.File: boolean exists()>()

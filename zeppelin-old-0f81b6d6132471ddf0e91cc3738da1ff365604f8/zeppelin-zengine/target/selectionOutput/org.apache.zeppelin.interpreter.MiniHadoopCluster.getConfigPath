@@ -1,0 +1,1 @@
+org.apache.zeppelin.interpreter.MiniHadoopCluster.getConfigPath : $r1 = r0.<org.apache.zeppelin.interpreter.MiniHadoopCluster: java.lang.String configPath> >>>>>>>> org.apache.zeppelin.interpreter.MiniHadoopCluster.getConfigPath : return $r1

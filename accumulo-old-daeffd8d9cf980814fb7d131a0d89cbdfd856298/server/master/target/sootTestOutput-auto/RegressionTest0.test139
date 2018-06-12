@@ -1,0 +1,2 @@
+org.apache.accumulo.master.tableOps.MasterRepo.getReturn : return null
+org.apache.accumulo.master.tableOps.RenameTable.call : r2 = virtualinvoke r1.<org.apache.accumulo.master.Master: org.apache.accumulo.core.client.Instance getInstance()>()

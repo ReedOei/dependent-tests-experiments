@@ -1,0 +1,1 @@
+org.apache.ambari.server.ldap.service.ads.detectors.UserGroupMemberAttrDetector$UserGroupMemberAttr.access$000 : $r1 = r0.<org.apache.ambari.server.ldap.service.ads.detectors.UserGroupMemberAttrDetector$UserGroupMemberAttr: java.lang.Integer weight> >>>>>>>> org.apache.ambari.server.ldap.service.ads.detectors.UserGroupMemberAttrDetector$UserGroupMemberAttr.access$000 : return $r1

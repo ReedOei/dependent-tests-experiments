@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.manager.impl.ImageManagerImpl.deleteAll : $r1 = r0.<de.htw.sdf.photoplatform.manager.impl.ImageManagerImpl: de.htw.sdf.photoplatform.repository.ImageDAO imageDAO>

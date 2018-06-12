@@ -1,0 +1,1 @@
+org.apache.accumulo.master.tableOps.LoadFiles$1.call : $r1 = virtualinvoke r0.<org.apache.accumulo.master.tableOps.LoadFiles$1: java.util.List call()>() >>>>>>>> org.apache.accumulo.master.tableOps.LoadFiles$1.call : return $r1

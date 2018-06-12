@@ -1,0 +1,2 @@
+org.apache.zeppelin.helium.WebpackResult.toJson : $r1 = <org.apache.zeppelin.helium.WebpackResult: com.google.gson.Gson gson>
+org.apache.zeppelin.helium.WebpackResult.fromJson : $r1 = <org.apache.zeppelin.helium.WebpackResult: com.google.gson.Gson gson>

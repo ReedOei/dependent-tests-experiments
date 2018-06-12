@@ -1,0 +1,5 @@
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getUpdatedBy : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String updatedBy>
+de.htw.sdf.photoplatform.persistence.model.Image.setName : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getSmallThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath>
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.persistence.model.Image.toString : $r1 = new java.lang.StringBuilder

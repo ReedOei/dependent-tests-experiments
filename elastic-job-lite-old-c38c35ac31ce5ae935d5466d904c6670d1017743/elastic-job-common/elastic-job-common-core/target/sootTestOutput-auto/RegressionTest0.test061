@@ -1,0 +1,3 @@
+com.dangdang.ddframe.job.context.TaskContext.from : $i0 = lengthof r1
+com.dangdang.ddframe.job.context.TaskContext.from : r1 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>("@-@")
+com.dangdang.ddframe.job.context.TaskContext.getIdForUnassignedSlave : $r1 = staticinvoke <com.dangdang.ddframe.job.context.TaskContext: com.dangdang.ddframe.job.context.TaskContext 'from'(java.lang.String)>(r0)

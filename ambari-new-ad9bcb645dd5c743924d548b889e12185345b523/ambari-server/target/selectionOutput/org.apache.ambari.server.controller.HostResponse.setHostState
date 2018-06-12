@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.HostResponse.setHostState : r0.<org.apache.ambari.server.controller.HostResponse: org.apache.ambari.server.state.HostState hostState> = r1 >>>>>>>> org.apache.ambari.server.controller.HostResponse.setHostState : return

@@ -1,0 +1,9 @@
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRunner : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRunner : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$702 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterRunner interpreterRunner> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$1202 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcessListener remoteInterpreterProcessListener> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setLifecycleManager : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setLifecycleManager : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$1502 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager> = r1

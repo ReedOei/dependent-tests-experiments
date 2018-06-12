@@ -1,0 +1,8 @@
+de.htw.sdf.photoplatform.persistence.model.Image.isPublic : $z0 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: boolean isPublic>
+de.htw.sdf.photoplatform.persistence.model.Image.getDescription : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String description>
+de.htw.sdf.photoplatform.persistence.model.Image.setMobileThumbPath : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mobileThumbPath> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.setPrice : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.Double price> = r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setCreatedBy : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String createdBy> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.setSmallThumbPath : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.persistence.model.Image.setEnabled : r0.<de.htw.sdf.photoplatform.persistence.model.Image: boolean enabled> = z0

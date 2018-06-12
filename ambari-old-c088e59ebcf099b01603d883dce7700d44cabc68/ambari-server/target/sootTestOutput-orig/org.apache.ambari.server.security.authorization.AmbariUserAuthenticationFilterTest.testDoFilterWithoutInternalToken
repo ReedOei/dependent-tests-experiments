@@ -1,0 +1,5 @@
+org.apache.ambari.server.security.authorization.AmbariUserAuthorizationFilter.doFilter : r5 = (javax.servlet.http.HttpServletResponse) r2
+org.apache.ambari.server.security.authorization.AmbariUserAuthorizationFilter.doFilter : interfaceinvoke r3.<javax.servlet.FilterChain: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)>(r1, r2)
+org.apache.ambari.server.security.authorization.AmbariUserAuthorizationFilter.doFilter : r4 = (javax.servlet.http.HttpServletRequest) r1
+org.apache.ambari.server.security.authorization.AmbariUserAuthorizationFilter.doFilter : r6 = interfaceinvoke r4.<javax.servlet.http.HttpServletRequest: java.lang.String getHeader(java.lang.String)>("X-Internal-Token")
+org.apache.ambari.server.security.authorization.AmbariUserAuthorizationFilter.doFilter : if r6 == null goto interfaceinvoke r3.<javax.servlet.FilterChain: void doFilter(javax.servlet.ServletRequest,javax.servlet.ServletResponse)>(r1, r2)

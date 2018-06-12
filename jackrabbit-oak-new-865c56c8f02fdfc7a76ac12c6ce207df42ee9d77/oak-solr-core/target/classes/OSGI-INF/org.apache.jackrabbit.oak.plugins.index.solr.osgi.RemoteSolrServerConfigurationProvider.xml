@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="org.apache.jackrabbit.oak.plugins.index.solr.osgi.RemoteSolrServerConfigurationProvider" activate="activate" deactivate="deactivate">
+    <property name="name" value="remote"/>
+    <property name="solr.http.url" value="http://127.0.0.1:8983/solr/oak"/>
+    <property name="solr.zk.host" value="127.0.0.1:9983"/>
+    <property name="solr.collection" value="oak"/>
+    <property name="solr.socket.timeout" type="Integer" value="3000"/>
+    <property name="solr.connection.timeout" type="Integer" value="3000"/>
+    <property name="solr.shards.no" type="Integer" value="2"/>
+    <property name="solr.replication.factor" type="Integer" value="2"/>
+    <property name="solr.conf.dir" value=""/>
+    <service servicefactory="false">
+        <provide interface="org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfigurationProvider"/>
+    </service>
+    <implementation class="org.apache.jackrabbit.oak.plugins.index.solr.osgi.RemoteSolrServerConfigurationProvider"/>
+</scr:component>

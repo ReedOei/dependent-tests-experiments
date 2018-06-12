@@ -1,0 +1,5 @@
+de.htw.sdf.photoplatform.webservice.dto.UserData.setIban : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String iban> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getPaypalID : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String paypalID>
+de.htw.sdf.photoplatform.webservice.dto.UserData.getCompany : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String company>
+de.htw.sdf.photoplatform.webservice.dto.UserData.getRoles : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.util.List roles>
+de.htw.sdf.photoplatform.webservice.dto.UserData.getLastName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String lastName>

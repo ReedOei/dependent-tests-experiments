@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.api.ShardingContext.getShardingParameter : $r1 = r0.<com.dangdang.ddframe.job.api.ShardingContext: java.lang.String shardingParameter> >>>>>>>> com.dangdang.ddframe.job.api.ShardingContext.getShardingParameter : return $r1

@@ -1,0 +1,7 @@
+edu.washington.cs.dt.impact.ExampleDT.Calculator.isEven : $i1 = i0 % 2
+edu.washington.cs.dt.impact.ExampleDT.Calculator.isEven : return 1
+edu.washington.cs.dt.impact.ExampleDT.Calculator.isEven : return 12
+edu.washington.cs.dt.impact.ExampleDT.Calculator.isEven : return 13
+edu.washington.cs.dt.impact.ExampleDT.Calculator.isEven : return 14
+edu.washington.cs.dt.impact.ExampleDT.Calculator.isEven : return 15
+edu.washington.cs.dt.impact.ExampleDT.Calculator.isEven : return 16

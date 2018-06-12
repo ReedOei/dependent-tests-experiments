@@ -1,0 +1,12 @@
+org.apache.ambari.server.api.services.ResultImpl.getStatus : $r1 = r0.<org.apache.ambari.server.api.services.ResultImpl: org.apache.ambari.server.api.services.ResultStatus m_status>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r2 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController controller>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r1 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController controller>
+org.apache.ambari.server.api.services.ResultStatus.getStatus : $r1 = r0.<org.apache.ambari.server.api.services.ResultStatus: org.apache.ambari.server.api.services.ResultStatus$STATUS m_status>
+org.apache.ambari.server.api.handlers.DeleteHandler.persist : $r3 = virtualinvoke r0.<org.apache.ambari.server.api.handlers.DeleteHandler: org.apache.ambari.server.api.services.persistence.PersistenceManager getPersistenceManager()>()
+org.apache.ambari.server.api.handlers.DeleteHandler.persist : $r25 = new org.apache.ambari.server.api.services.ResultImpl
+org.apache.ambari.server.api.handlers.DeleteHandler.persist : $r21 = virtualinvoke $r20.<org.apache.ambari.server.controller.spi.NoSuchResourceException: java.lang.Throwable getCause()>()
+org.apache.ambari.server.api.handlers.DeleteHandler.persist : return r37
+org.apache.ambari.server.api.handlers.DeleteHandler.persist : $z1 = interfaceinvoke r1.<org.apache.ambari.server.api.resources.ResourceInstance: boolean isCollectionResource()>()
+org.apache.ambari.server.api.handlers.DeleteHandlerTest$TestDeleteHandler.getPersistenceManager : $r1 = r0.<org.apache.ambari.server.api.handlers.DeleteHandlerTest$TestDeleteHandler: org.apache.ambari.server.api.services.persistence.PersistenceManager m_testPm>
+org.apache.ambari.server.view.ViewRegistry.initInstance : <org.apache.ambari.server.view.ViewRegistry: org.apache.ambari.server.view.ViewRegistry singleton> = r0
+org.apache.ambari.server.api.handlers.BaseManagementHandler.getClusterController : $r1 = staticinvoke <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController getClusterController()>()

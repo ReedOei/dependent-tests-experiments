@@ -1,0 +1,13 @@
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.estimate : $d0 = (double) l2
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.estimate : l2 = 0L
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.estimate : i3 = 0
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.estimate : $l0 = staticinvoke <java.lang.Math: long max(long,long)>(0L, l2)
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.getInput : if i0 != 2 goto (branch)
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.getInput : $z0 = <org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator: boolean $assertionsDisabled>
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.getInput : $z1 = interfaceinvoke r1.<org.apache.jackrabbit.oak.spi.query.Filter: boolean containsNativeConstraint()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.getInput : if i0 != 4 goto return 0L
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.getInput : $r4 = interfaceinvoke r1.<org.apache.jackrabbit.oak.spi.query.Filter: org.apache.jackrabbit.oak.spi.query.Filter$PathRestriction getPathRestriction()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.getInput : $r8 = interfaceinvoke r1.<org.apache.jackrabbit.oak.spi.query.Filter: org.apache.jackrabbit.oak.spi.query.Filter$PathRestriction getPathRestriction()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.getInput : $r2 = interfaceinvoke r1.<org.apache.jackrabbit.oak.spi.query.Filter: org.apache.jackrabbit.oak.spi.query.fulltext.FullTextExpression getFullTextConstraint()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.getInput : if i0 != 1 goto (branch)
+org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimator.getInput : if i0 != 3 goto (branch)

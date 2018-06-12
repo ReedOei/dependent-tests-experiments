@@ -1,0 +1,109 @@
+org.apache.ambari.server.state.action.ActionImpl.setLastUpdateTime : $r3 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.action.ActionImpl.setLastUpdateTime : goto [?= return]
+org.apache.ambari.server.state.action.ActionImpl.setLastUpdateTime : $r2 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.action.ActionImpl.setLastUpdateTime : r0.<org.apache.ambari.server.state.action.ActionImpl: long lastUpdateTime> = l0
+org.apache.ambari.server.state.fsm.event.AbstractEvent.getType : $r1 = r0.<org.apache.ambari.server.state.fsm.event.AbstractEvent: java.lang.Enum type>
+org.apache.ambari.server.state.action.ActionImpl.setId : $r3 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.action.ActionImpl.setId : $r4 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.action.ActionImpl.setId : r0.<org.apache.ambari.server.state.action.ActionImpl: org.apache.ambari.server.state.action.ActionId id> = r1
+org.apache.ambari.server.state.action.ActionImpl.setId : goto [?= return]
+org.apache.ambari.server.state.action.ActionImpl.setCompletionTime : r0.<org.apache.ambari.server.state.action.ActionImpl: long completionTime> = l0
+org.apache.ambari.server.state.action.ActionImpl.setCompletionTime : $r3 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.action.ActionImpl.setCompletionTime : goto [?= return]
+org.apache.ambari.server.state.action.ActionImpl.setCompletionTime : $r2 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.action.JobTest.createNewJob : $r4 = new org.apache.ambari.server.state.action.ActionId
+org.apache.ambari.server.state.action.JobTest.createNewJob : return $r6
+org.apache.ambari.server.state.action.JobTest.createNewJob : $r6 = new org.apache.ambari.server.state.action.ActionImpl
+org.apache.ambari.server.state.action.JobTest.verifyProgressUpdate : $l1 = interfaceinvoke r1.<org.apache.ambari.server.state.action.Action: long getLastUpdateTime()>()
+org.apache.ambari.server.state.action.JobTest.verifyProgressUpdate : interfaceinvoke r1.<org.apache.ambari.server.state.action.Action: void handleEvent(org.apache.ambari.server.state.action.ActionEvent)>($r3)
+org.apache.ambari.server.state.action.JobTest.verifyProgressUpdate : $r3 = new org.apache.ambari.server.state.action.ActionProgressUpdateEvent
+org.apache.ambari.server.state.action.JobTest.verifyProgressUpdate : $r5 = <org.apache.ambari.server.state.action.ActionState: org.apache.ambari.server.state.action.ActionState IN_PROGRESS>
+org.apache.ambari.server.state.action.ActionImpl.handleEvent : $r6 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.action.ActionImpl.handleEvent : $r12 = <org.apache.ambari.server.state.action.ActionImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.state.action.ActionImpl.handleEvent : $r10 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.action.ActionImpl.handleEvent : $r5 = <org.apache.ambari.server.state.action.ActionImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.state.action.ActionImpl.handleEvent : $r11 = virtualinvoke r0.<org.apache.ambari.server.state.action.ActionImpl: org.apache.ambari.server.state.action.ActionState getState()>()
+org.apache.ambari.server.state.action.ActionImpl.handleEvent : $r7 = r0.<org.apache.ambari.server.state.action.ActionImpl: org.apache.ambari.server.state.fsm.StateMachine stateMachine>
+org.apache.ambari.server.state.action.ActionImpl.handleEvent : goto [?= $r11 = virtualinvoke r0.<org.apache.ambari.server.state.action.ActionImpl: org.apache.ambari.server.state.action.ActionState getState()>()]
+org.apache.ambari.server.state.action.ActionImpl.handleEvent : r2 = virtualinvoke r0.<org.apache.ambari.server.state.action.ActionImpl: org.apache.ambari.server.state.action.ActionState getState()>()
+org.apache.ambari.server.state.action.ActionImpl.handleEvent : goto [?= $r10 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>]
+org.apache.ambari.server.state.action.ActionImpl.access$200 : $r0 = <org.apache.ambari.server.state.action.ActionImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.state.action.ActionId.toString : $r1 = new java.lang.StringBuilder
+org.apache.ambari.server.state.action.ActionImpl.getCompletionTime : $r2 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock readLock>
+org.apache.ambari.server.state.action.ActionImpl.getCompletionTime : l0 = r0.<org.apache.ambari.server.state.action.ActionImpl: long completionTime>
+org.apache.ambari.server.state.action.ActionImpl.getCompletionTime : $r3 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock readLock>
+org.apache.ambari.server.state.action.ActionImpl.setStartTime : $r3 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.action.ActionImpl.setStartTime : goto [?= return]
+org.apache.ambari.server.state.action.ActionImpl.setStartTime : $r2 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.action.ActionImpl.setStartTime : r0.<org.apache.ambari.server.state.action.ActionImpl: long startTime> = l0
+org.apache.ambari.server.state.action.JobTest.completeJob : r8 = <org.apache.ambari.server.state.action.ActionState: org.apache.ambari.server.state.action.ActionState COMPLETED>
+org.apache.ambari.server.state.action.JobTest.completeJob : $l1 = interfaceinvoke r1.<org.apache.ambari.server.state.action.Action: long getLastUpdateTime()>()
+org.apache.ambari.server.state.action.JobTest.completeJob : $l2 = interfaceinvoke r1.<org.apache.ambari.server.state.action.Action: long getCompletionTime()>()
+org.apache.ambari.server.state.action.JobTest.completeJob : if z0 == 0 goto $r2 = new org.apache.ambari.server.state.action.ActionCompletedEvent
+org.apache.ambari.server.state.action.JobTest.completeJob : $r2 = new org.apache.ambari.server.state.action.ActionCompletedEvent
+org.apache.ambari.server.state.action.JobTest.completeJob : interfaceinvoke r1.<org.apache.ambari.server.state.action.Action: void handleEvent(org.apache.ambari.server.state.action.ActionEvent)>(r7)
+org.apache.ambari.server.state.action.JobTest.completeJob : $r4 = interfaceinvoke r1.<org.apache.ambari.server.state.action.Action: org.apache.ambari.server.state.action.ActionState getState()>()
+org.apache.ambari.server.state.action.ActionImpl$NewActionTransition.transition : $l0 = virtualinvoke r3.<org.apache.ambari.server.state.action.ActionInitEvent: long getStartTime()>()
+org.apache.ambari.server.state.action.ActionImpl$NewActionTransition.transition : $r4 = (org.apache.ambari.server.state.action.ActionImpl) r1
+org.apache.ambari.server.state.action.ActionImpl$NewActionTransition.transition : $r5 = staticinvoke <org.apache.ambari.server.state.action.ActionImpl: org.slf4j.Logger access$200()>()
+org.apache.ambari.server.state.action.ActionImpl$NewActionTransition.transition : $l1 = virtualinvoke r1.<org.apache.ambari.server.state.action.ActionImpl: long getStartTime()>()
+org.apache.ambari.server.state.action.ActionImpl$NewActionTransition.transition : staticinvoke <org.apache.ambari.server.state.action.ActionImpl: void access$000(org.apache.ambari.server.state.action.ActionImpl)>(r1)
+org.apache.ambari.server.state.action.ActionImpl$NewActionTransition.transition : $r8 = virtualinvoke r1.<org.apache.ambari.server.state.action.ActionImpl: org.apache.ambari.server.state.action.ActionId getId()>()
+org.apache.ambari.server.state.action.ActionImpl$NewActionTransition.transition : r3 = (org.apache.ambari.server.state.action.ActionInitEvent) r2
+org.apache.ambari.server.state.action.ActionImpl$NewActionTransition.transition : $r4 = virtualinvoke r3.<org.apache.ambari.server.state.action.ActionInitEvent: org.apache.ambari.server.state.action.ActionId getActionId()>()
+org.apache.ambari.server.state.action.ActionImpl.getLastUpdateTime : l0 = r0.<org.apache.ambari.server.state.action.ActionImpl: long lastUpdateTime>
+org.apache.ambari.server.state.action.ActionImpl.getLastUpdateTime : $r2 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock readLock>
+org.apache.ambari.server.state.action.ActionImpl.getLastUpdateTime : $r3 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock readLock>
+org.apache.ambari.server.state.action.ActionEvent.getActionId : $r1 = r0.<org.apache.ambari.server.state.action.ActionEvent: org.apache.ambari.server.state.action.ActionId actionId>
+org.apache.ambari.server.state.action.ActionImpl$ActionCompletedTransition.transition : $r4 = (org.apache.ambari.server.state.action.ActionImpl) r1
+org.apache.ambari.server.state.action.ActionImpl$ActionCompletedTransition.transition : $l0 = virtualinvoke r3.<org.apache.ambari.server.state.action.ActionCompletedEvent: long getCompletionTime()>()
+org.apache.ambari.server.state.action.ActionImpl$ActionCompletedTransition.transition : $r4 = staticinvoke <org.apache.ambari.server.state.action.ActionImpl: org.slf4j.Logger access$200()>()
+org.apache.ambari.server.state.action.ActionImpl$ActionCompletedTransition.transition : $l1 = virtualinvoke r3.<org.apache.ambari.server.state.action.ActionCompletedEvent: long getCompletionTime()>()
+org.apache.ambari.server.state.action.ActionImpl$ActionCompletedTransition.transition : $r7 = virtualinvoke r1.<org.apache.ambari.server.state.action.ActionImpl: org.apache.ambari.server.state.action.ActionId getId()>()
+org.apache.ambari.server.state.action.ActionImpl$ActionCompletedTransition.transition : $l2 = virtualinvoke r1.<org.apache.ambari.server.state.action.ActionImpl: long getStartTime()>()
+org.apache.ambari.server.state.action.ActionImpl$ActionCompletedTransition.transition : r3 = (org.apache.ambari.server.state.action.ActionCompletedEvent) r2
+org.apache.ambari.server.state.action.ActionImpl$ActionCompletedTransition.transition : $l3 = virtualinvoke r1.<org.apache.ambari.server.state.action.ActionImpl: long getCompletionTime()>()
+org.apache.ambari.server.state.action.JobTest.getCompletedJob : $l1 = l2 + 1L
+org.apache.ambari.server.state.action.JobTest.getCompletedJob : r2 = specialinvoke r0.<org.apache.ambari.server.state.action.JobTest: org.apache.ambari.server.state.action.Action getRunningJob(long,java.lang.String,long)>(1L, "JobNameFoo", l2)
+org.apache.ambari.server.state.action.JobTest.getCompletedJob : return r2
+org.apache.ambari.server.state.fsm.StateMachineFactory.access$100 : $z0 = r0.<org.apache.ambari.server.state.fsm.StateMachineFactory: boolean optimized>
+org.apache.ambari.server.state.action.ActionImpl.getId : r1 = r0.<org.apache.ambari.server.state.action.ActionImpl: org.apache.ambari.server.state.action.ActionId id>
+org.apache.ambari.server.state.action.ActionImpl.getId : $r4 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock readLock>
+org.apache.ambari.server.state.action.ActionImpl.getId : $r3 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock readLock>
+org.apache.ambari.server.state.action.ActionCompletedEvent.getCompletionTime : $l0 = r0.<org.apache.ambari.server.state.action.ActionCompletedEvent: long completionTime>
+org.apache.ambari.server.state.action.ActionInitEvent.getStartTime : $l0 = r0.<org.apache.ambari.server.state.action.ActionInitEvent: long startTime>
+org.apache.ambari.server.state.fsm.StateMachineFactory.doTransition : $r7 = r0.<org.apache.ambari.server.state.fsm.StateMachineFactory: java.util.Map stateMachineTable>
+org.apache.ambari.server.state.fsm.StateMachineFactory.doTransition : if r5 == null goto $r9 = new org.apache.ambari.server.state.fsm.InvalidStateTransitionException
+org.apache.ambari.server.state.fsm.StateMachineFactory.doTransition : $r11 = interfaceinvoke r6.<org.apache.ambari.server.state.fsm.StateMachineFactory$Transition: java.lang.Enum doTransition(java.lang.Object,java.lang.Enum,java.lang.Object,java.lang.Enum)>(r1, r2, r4, r3)
+org.apache.ambari.server.state.fsm.StateMachineFactory.doTransition : $r10 = interfaceinvoke r5.<java.util.Map: java.lang.Object get(java.lang.Object)>(r3)
+org.apache.ambari.server.state.fsm.StateMachineFactory.doTransition : if r6 == null goto $r9 = new org.apache.ambari.server.state.fsm.InvalidStateTransitionException
+org.apache.ambari.server.state.action.ActionImpl.access$000 : specialinvoke r0.<org.apache.ambari.server.state.action.ActionImpl: void reset()>()
+org.apache.ambari.server.state.action.ActionImpl.getState : $r6 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock readLock>
+org.apache.ambari.server.state.action.ActionImpl.getState : $r4 = r0.<org.apache.ambari.server.state.action.ActionImpl: org.apache.ambari.server.state.fsm.StateMachine stateMachine>
+org.apache.ambari.server.state.action.ActionImpl.getState : $r3 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock readLock>
+org.apache.ambari.server.state.fsm.StateMachineFactory$InternalStateMachine.doTransition : $r5 = r0.<org.apache.ambari.server.state.fsm.StateMachineFactory$InternalStateMachine: org.apache.ambari.server.state.fsm.StateMachineFactory this$0>
+org.apache.ambari.server.state.fsm.StateMachineFactory$InternalStateMachine.doTransition : $r7 = r0.<org.apache.ambari.server.state.fsm.StateMachineFactory$InternalStateMachine: java.lang.Enum currentState>
+org.apache.ambari.server.state.fsm.StateMachineFactory$InternalStateMachine.getCurrentState : $r1 = r0.<org.apache.ambari.server.state.fsm.StateMachineFactory$InternalStateMachine: java.lang.Enum currentState>
+org.apache.ambari.server.state.action.ActionImpl$ActionProgressUpdateTransition.transition : $l0 = virtualinvoke r3.<org.apache.ambari.server.state.action.ActionProgressUpdateEvent: long getProgressUpdateTime()>()
+org.apache.ambari.server.state.action.ActionImpl$ActionProgressUpdateTransition.transition : $r4 = (org.apache.ambari.server.state.action.ActionImpl) r1
+org.apache.ambari.server.state.action.ActionImpl$ActionProgressUpdateTransition.transition : r3 = (org.apache.ambari.server.state.action.ActionProgressUpdateEvent) r2
+org.apache.ambari.server.state.action.ActionImpl$ActionProgressUpdateTransition.transition : $r4 = staticinvoke <org.apache.ambari.server.state.action.ActionImpl: org.slf4j.Logger access$200()>()
+org.apache.ambari.server.state.action.JobTest.getRunningJob : $l1 = l2 + 1L
+org.apache.ambari.server.state.action.JobTest.getRunningJob : return r2
+org.apache.ambari.server.state.action.JobTest.getRunningJob : r2 = specialinvoke r0.<org.apache.ambari.server.state.action.JobTest: org.apache.ambari.server.state.action.Action createNewJob(long,java.lang.String,long)>(l0, r1, l2)
+org.apache.ambari.server.state.action.ActionImpl.getStartTime : $r2 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock readLock>
+org.apache.ambari.server.state.action.ActionImpl.getStartTime : $r3 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock readLock>
+org.apache.ambari.server.state.action.ActionImpl.getStartTime : l0 = r0.<org.apache.ambari.server.state.action.ActionImpl: long startTime>
+org.apache.ambari.server.state.action.ActionImpl.reset : r0.<org.apache.ambari.server.state.action.ActionImpl: long startTime> = -1L
+org.apache.ambari.server.state.action.ActionImpl.reset : r0.<org.apache.ambari.server.state.action.ActionImpl: long lastUpdateTime> = -1L
+org.apache.ambari.server.state.action.ActionImpl.reset : $r3 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.action.ActionImpl.reset : goto [?= return]
+org.apache.ambari.server.state.action.ActionImpl.reset : r0.<org.apache.ambari.server.state.action.ActionImpl: long completionTime> = -1L
+org.apache.ambari.server.state.action.ActionImpl.reset : $r2 = r0.<org.apache.ambari.server.state.action.ActionImpl: java.util.concurrent.locks.Lock writeLock>
+org.apache.ambari.server.state.fsm.StateMachineFactory.access$300 : $r5 = specialinvoke r0.<org.apache.ambari.server.state.fsm.StateMachineFactory: java.lang.Enum doTransition(java.lang.Object,java.lang.Enum,java.lang.Enum,java.lang.Object)>(r1, r2, r3, r4)
+org.apache.ambari.server.state.action.ActionImpl.access$100 : specialinvoke r0.<org.apache.ambari.server.state.action.ActionImpl: void setId(org.apache.ambari.server.state.action.ActionId)>(r1)
+org.apache.ambari.server.state.fsm.StateMachineFactory$SingleInternalArc.doTransition : $r5 = r0.<org.apache.ambari.server.state.fsm.StateMachineFactory$SingleInternalArc: org.apache.ambari.server.state.fsm.SingleArcTransition hook>
+org.apache.ambari.server.state.fsm.StateMachineFactory$SingleInternalArc.doTransition : $r6 = r0.<org.apache.ambari.server.state.fsm.StateMachineFactory$SingleInternalArc: java.lang.Enum postState>
+org.apache.ambari.server.state.fsm.StateMachineFactory$SingleInternalArc.doTransition : $r7 = r0.<org.apache.ambari.server.state.fsm.StateMachineFactory$SingleInternalArc: org.apache.ambari.server.state.fsm.SingleArcTransition hook>
+org.apache.ambari.server.state.fsm.StateMachineFactory.make : $r2 = new org.apache.ambari.server.state.fsm.StateMachineFactory$InternalStateMachine
+org.apache.ambari.server.state.action.ActionProgressUpdateEvent.getProgressUpdateTime : $l0 = r0.<org.apache.ambari.server.state.action.ActionProgressUpdateEvent: long progressUpdateTime>

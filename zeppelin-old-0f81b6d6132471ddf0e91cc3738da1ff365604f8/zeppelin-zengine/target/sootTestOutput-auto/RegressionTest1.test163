@@ -1,0 +1,16 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.access$1002 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.dep.DependencyResolver dependencyResolver> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterInfos : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List interpreterInfos>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setId : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setId : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$002 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String id> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setOption : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setOption : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$502 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setDependencyResolver : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setDependencyResolver : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.create : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.create : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterRunner : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterRunner interpreterRunner> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r1 = <org.apache.zeppelin.interpreter.InterpreterSetting$Status: org.apache.zeppelin.interpreter.InterpreterSetting$Status READY>
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager>
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r3 = new org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager

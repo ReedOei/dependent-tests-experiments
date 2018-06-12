@@ -1,0 +1,2 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getInterpreterGroupName : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.lang.String interpreterGroupName>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getEnv : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.util.Map env>

@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.query.FilterQueryParser.isSupportedHttpRequest : $z0 = virtualinvoke r0.<java.lang.String: boolean matches(java.lang.String)>("(suggest|spellcheck|mlt|query|select|get)\\\\?.*") >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.query.FilterQueryParser.isSupportedHttpRequest : return $z0

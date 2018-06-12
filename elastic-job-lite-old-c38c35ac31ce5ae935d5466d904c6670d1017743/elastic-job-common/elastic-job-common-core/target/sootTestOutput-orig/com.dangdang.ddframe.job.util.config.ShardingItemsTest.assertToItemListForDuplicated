@@ -1,0 +1,8 @@
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemList : i1 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r4)
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemList : $r5 = new java.util.ArrayList
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemList : $r6 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i1)
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemList : $z0 = staticinvoke <com.google.common.base.Strings: boolean isNullOrEmpty(java.lang.String)>(r0)
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemList : r1 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>(",")
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemList : $r7 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i1)
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemList : i0 = lengthof r1
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemList : r4 = r1[i3]

@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.persistence.model.Category.setName : r0.<de.htw.sdf.photoplatform.persistence.model.Category: java.lang.String name> = r1
+de.htw.sdf.photoplatform.persistence.model.Category.toString : $r1 = new java.lang.StringBuilder

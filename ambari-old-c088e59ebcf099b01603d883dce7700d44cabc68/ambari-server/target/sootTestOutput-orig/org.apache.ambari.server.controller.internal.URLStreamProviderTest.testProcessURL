@@ -1,0 +1,29 @@
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $z1 = virtualinvoke r1.<java.lang.String: boolean startsWith(java.lang.String)>("https")
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $i4 = r0.<org.apache.ambari.server.controller.internal.URLStreamProvider: int connTimeout>
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $r38 = interfaceinvoke $r37.<java.util.Map: java.lang.Object get(java.lang.Object)>("Cookie")
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $r29 = interfaceinvoke r51.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : r4 = virtualinvoke r0.<org.apache.ambari.server.controller.internal.URLStreamProvider: org.apache.ambari.server.controller.internal.AppCookieManager getAppCookieManager()>()
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $r37 = new java.util.HashMap
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : if i6 != 401 goto (branch)
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : i6 = virtualinvoke r46.<java.net.HttpURLConnection: int getResponseCode()>()
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $r32 = interfaceinvoke r52.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : if r47 == null goto $i4 = r0.<org.apache.ambari.server.controller.internal.URLStreamProvider: int connTimeout>
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : if r44 == null goto $r36 = staticinvoke <java.util.Collections: java.util.List singletonList(java.lang.Object)>(r47)
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $r35 = <org.apache.ambari.server.controller.internal.URLStreamProvider: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $z6 = interfaceinvoke r44.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : goto [?= $z5 = interfaceinvoke r51.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $i5 = r0.<org.apache.ambari.server.controller.internal.URLStreamProvider: int readTimeout>
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $r6 = <org.apache.ambari.server.controller.internal.URLStreamProvider: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $r39 = staticinvoke <org.apache.ambari.server.controller.internal.URLStreamProvider: java.lang.String appendCookie(java.lang.String,java.lang.String)>($r49, r47)
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $r28 = interfaceinvoke r44.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : if i6 != 403 goto return r46
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : virtualinvoke r46.<java.net.HttpURLConnection: void setDoOutput(boolean)>(1)
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : virtualinvoke r46.<java.net.HttpURLConnection: void setRequestMethod(java.lang.String)>(r2)
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : if i6 == 404 goto $r8 = <org.apache.ambari.server.controller.internal.URLStreamProvider: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : if r3 != null goto $r9 = virtualinvoke r3.<java.lang.String: byte[] getBytes()>()
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : if r48 == null goto $r49 = null
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $r30 = interfaceinvoke r52.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : r47 = virtualinvoke r4.<org.apache.ambari.server.controller.internal.AppCookieManager: java.lang.String getCachedAppCookie(java.lang.String)>(r1)
+org.apache.ambari.server.controller.internal.URLStreamProvider.appendCookie : $i0 = virtualinvoke r0.<java.lang.String: int length()>()
+org.apache.ambari.server.controller.internal.URLStreamProvider.appendCookie : $r2 = new java.lang.StringBuilder
+org.apache.ambari.server.controller.internal.URLStreamProvider.appendCookie : if r0 == null goto return r1

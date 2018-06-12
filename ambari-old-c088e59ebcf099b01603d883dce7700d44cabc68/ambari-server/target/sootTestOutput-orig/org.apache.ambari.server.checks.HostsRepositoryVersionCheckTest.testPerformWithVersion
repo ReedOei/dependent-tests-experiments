@@ -1,0 +1,36 @@
+org.apache.ambari.server.state.stack.PrerequisiteCheck.getFailedOn : $r1 = r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: java.util.LinkedHashSet m_failedOn>
+org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest$4.get : $r1 = virtualinvoke r0.<org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest$4: org.apache.ambari.server.state.Clusters get()>()
+org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest$4.get : $r1 = r0.<org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest$4: org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest this$0>
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if r2 == null goto r1.<org.apache.ambari.server.state.StackId: java.lang.String stackName> = ""
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $r8 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(0, i0)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i1 = virtualinvoke r2.<java.lang.String: int length()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : i0 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(45)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if i0 == -1 goto $r3 = new java.lang.RuntimeException
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $z0 = virtualinvoke r2.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i3 = i0 + 1
+org.apache.ambari.server.orm.entities.HostVersionEntity.setRepositoryVersion : virtualinvoke r0.<org.apache.ambari.server.orm.entities.HostVersionEntity: void _persistence_set_repositoryVersion(org.apache.ambari.server.orm.entities.RepositoryVersionEntity)>(r1)
+org.apache.ambari.server.orm.entities.HostVersionEntity.getState : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.HostVersionEntity: org.apache.ambari.server.state.RepositoryVersionState _persistence_get_state()>()
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : if r11 == null goto $r32 = virtualinvoke r1.<org.apache.ambari.server.state.stack.PrerequisiteCheck: java.util.LinkedHashSet getFailedOn()>()
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : r3 = virtualinvoke r2.<org.apache.ambari.server.controller.PrereqCheckRequest: java.lang.String getClusterName()>()
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : r10 = virtualinvoke r9.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: org.apache.ambari.server.state.StackId getStackId()>()
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : $r27 = (org.apache.ambari.server.orm.dao.HostVersionDAO) $r26
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : $r31 = <org.apache.ambari.server.state.RepositoryVersionState: org.apache.ambari.server.state.RepositoryVersionState INSTALLED>
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : $r16 = r0.<org.apache.ambari.server.checks.HostsRepositoryVersionCheck: com.google.inject.Provider clustersProvider>
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : $r19 = interfaceinvoke r5.<java.util.Map: java.util.Collection values()>()
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : $r23 = interfaceinvoke r6.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : $r24 = <org.apache.ambari.server.state.MaintenanceState: org.apache.ambari.server.state.MaintenanceState OFF>
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : $r13 = r0.<org.apache.ambari.server.checks.HostsRepositoryVersionCheck: com.google.inject.Provider clustersProvider>
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : $r20 = virtualinvoke r1.<org.apache.ambari.server.state.stack.PrerequisiteCheck: java.util.LinkedHashSet getFailedOn()>()
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : $r34 = virtualinvoke r11.<org.apache.ambari.server.orm.entities.HostVersionEntity: org.apache.ambari.server.state.RepositoryVersionState getState()>()
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : $l0 = interfaceinvoke r4.<org.apache.ambari.server.state.Cluster: long getClusterId()>()
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : r9 = virtualinvoke r2.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity getTargetRepositoryVersion()>()
+org.apache.ambari.server.checks.HostsRepositoryVersionCheck.perform : $r25 = r0.<org.apache.ambari.server.checks.HostsRepositoryVersionCheck: com.google.inject.Provider hostVersionDaoProvider>
+org.apache.ambari.server.state.stack.PrerequisiteCheck.getStatus : $r1 = r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: org.apache.ambari.server.state.stack.PrereqCheckStatus m_status>
+org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest$6.get : $r1 = r0.<org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest$6: org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest this$0>
+org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest$6.get : $r1 = virtualinvoke r0.<org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest$6: org.apache.ambari.server.orm.dao.HostVersionDAO get()>()
+org.apache.ambari.server.orm.entities.HostVersionEntity.setState : virtualinvoke r0.<org.apache.ambari.server.orm.entities.HostVersionEntity: void _persistence_set_state(org.apache.ambari.server.state.RepositoryVersionState)>(r1)
+org.apache.ambari.server.controller.PrereqCheckRequest.getTargetRepositoryVersion : $r1 = r0.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity m_targetRepositoryVersion>
+org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest.access$000 : $r1 = r0.<org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest: org.apache.ambari.server.state.Clusters clusters>
+org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest.access$200 : $r1 = r0.<org.apache.ambari.server.checks.HostsRepositoryVersionCheckTest: org.apache.ambari.server.orm.dao.HostVersionDAO hostVersionDAO>
+org.apache.ambari.server.controller.PrereqCheckRequest.setTargetRepositoryVersion : r0.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity m_targetRepositoryVersion> = r1
+org.apache.ambari.server.controller.PrereqCheckRequest.getClusterName : $r1 = r0.<org.apache.ambari.server.controller.PrereqCheckRequest: java.lang.String m_clusterName>

@@ -1,0 +1,6 @@
+org.apache.ambari.server.state.ServicePropertyInfo.getName : $r1 = r0.<org.apache.ambari.server.state.ServicePropertyInfo: java.lang.String name>
+org.apache.ambari.server.state.ServicePropertyInfoTest.getServiceProperty : $r6 = virtualinvoke r0.<java.lang.String: byte[] getBytes()>()
+org.apache.ambari.server.state.ServicePropertyInfoTest.getServiceProperty : $r4 = new javax.xml.transform.stream.StreamSource
+org.apache.ambari.server.state.ServicePropertyInfoTest.getServiceProperty : r2 = virtualinvoke r1.<javax.xml.bind.JAXBContext: javax.xml.bind.Unmarshaller createUnmarshaller()>()
+org.apache.ambari.server.state.ServicePropertyInfoTest.getServiceProperty : $r8 = virtualinvoke $r7.<javax.xml.bind.JAXBElement: java.lang.Object getValue()>()
+org.apache.ambari.server.state.ServicePropertyInfoTest.getServiceProperty : $r3 = newarray (java.lang.Class)[1]

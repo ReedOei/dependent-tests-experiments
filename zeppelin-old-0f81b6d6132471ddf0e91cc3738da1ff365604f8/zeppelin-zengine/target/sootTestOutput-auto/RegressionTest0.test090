@@ -1,0 +1,15 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserInstances : $r2 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler restApiClient>
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserInstances : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getDefaultZeppelinInstanceToken : r2 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: java.util.List getUserInstances(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.init : $r3 = <org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.init : $r2 = <org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler.getInstances : $r14 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler: org.eclipse.jetty.client.HttpClient client>
+org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler.getInstances : i0 = interfaceinvoke r3.<org.eclipse.jetty.client.api.Response: int getStatus()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler.getInstances : if i0 != 200 goto $r17 = <org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler.getInstances : interfaceinvoke r6.<org.eclipse.jetty.client.api.Request: void send(org.eclipse.jetty.client.api.Response$CompleteListener)>($r9)
+org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler.getInstances : goto [?= i0 = interfaceinvoke r3.<org.eclipse.jetty.client.api.Response: int getStatus()>()]
+org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler.getInstances : $r19 = new java.io.IOException
+org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler.getInstances : $r16 = <java.util.concurrent.TimeUnit: java.util.concurrent.TimeUnit SECONDS>
+org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler.getInstances : $r9 = new org.eclipse.jetty.client.util.InputStreamResponseListener
+org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler.getInstances : $r17 = <org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.rest.ZeppelinhubRestApiHandler.getInstances : $r10 = new java.lang.StringBuilder

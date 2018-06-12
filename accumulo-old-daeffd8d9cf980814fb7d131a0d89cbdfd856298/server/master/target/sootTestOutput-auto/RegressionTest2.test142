@@ -1,0 +1,2 @@
+org.apache.accumulo.master.tableOps.CancelCompactions.call : $r8 = new java.lang.StringBuilder
+org.apache.accumulo.master.tableOps.MasterRepo.getDescription : $r1 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()

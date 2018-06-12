@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.PrivilegeResponse.getPrincipalName : $r1 = r0.<org.apache.ambari.server.controller.PrivilegeResponse: java.lang.String principalName> >>>>>>>> org.apache.ambari.server.controller.PrivilegeResponse.getPrincipalName : return $r1

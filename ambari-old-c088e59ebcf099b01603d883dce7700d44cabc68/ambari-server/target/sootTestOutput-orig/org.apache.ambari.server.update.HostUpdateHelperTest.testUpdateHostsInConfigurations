@@ -1,0 +1,32 @@
+org.apache.ambari.server.update.HostUpdateHelper.setHostChangesFileMap : r0.<org.apache.ambari.server.update.HostUpdateHelper: java.util.Map hostChangesFileMap> = r1
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r28 = new java.util.ArrayList
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : if r7 == null goto (branch)
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : r13 = interfaceinvoke r44.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r23 = r0.<org.apache.ambari.server.update.HostUpdateHelper: java.util.Map hostChangesFileMap>
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : if r3 == null goto return
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r29 = interfaceinvoke r9.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r30 = r0.<org.apache.ambari.server.update.HostUpdateHelper: com.google.inject.Injector injector>
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r32 = interfaceinvoke r13.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r40 = interfaceinvoke r42.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r26 = interfaceinvoke r5.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r21 = r0.<org.apache.ambari.server.update.HostUpdateHelper: com.google.inject.Injector injector>
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : r15 = interfaceinvoke r12.<org.apache.ambari.server.state.ConfigFactory: org.apache.ambari.server.state.Config createExisting(org.apache.ambari.server.state.Cluster,org.apache.ambari.server.orm.entities.ClusterConfigEntity)>(r8, r14)
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r25 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : r7 = virtualinvoke r1.<org.apache.ambari.server.orm.dao.ClusterDAO: org.apache.ambari.server.orm.entities.ClusterEntity findByName(java.lang.String)>(r6)
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r19 = r0.<org.apache.ambari.server.update.HostUpdateHelper: com.google.inject.Injector injector>
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : r8 = interfaceinvoke r3.<org.apache.ambari.server.state.Clusters: org.apache.ambari.server.state.Cluster getCluster(java.lang.String)>(r6)
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r27 = interfaceinvoke r5.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : goto [?= $z1 = interfaceinvoke r42.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : $r41 = interfaceinvoke r43.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : r44 = virtualinvoke r7.<org.apache.ambari.server.orm.entities.ClusterEntity: java.util.Collection getClusterConfigEntities()>()
+org.apache.ambari.server.update.HostUpdateHelper.updateHostsInConfigurations : r3 = interfaceinvoke r2.<org.apache.ambari.server.controller.AmbariManagementController: org.apache.ambari.server.state.Clusters getClusters()>()
+org.apache.ambari.server.update.HostUpdateHelperTest$4.configure : $r1 = virtualinvoke r0.<org.apache.ambari.server.update.HostUpdateHelperTest$4: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/controller/AmbariManagementController;")
+org.apache.ambari.server.update.HostUpdateHelperTest$4.configure : $r3 = virtualinvoke r0.<org.apache.ambari.server.update.HostUpdateHelperTest$4: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/DBAccessor;")
+org.apache.ambari.server.update.HostUpdateHelperTest$4.configure : $r5 = virtualinvoke r0.<org.apache.ambari.server.update.HostUpdateHelperTest$4: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Ljavax/persistence/EntityManager;")
+org.apache.ambari.server.update.HostUpdateHelperTest$4.configure : $r9 = virtualinvoke r0.<org.apache.ambari.server.update.HostUpdateHelperTest$4: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/ClusterDAO;")
+org.apache.ambari.server.update.HostUpdateHelperTest$4.configure : $r11 = new com.google.inject.assistedinject.FactoryModuleBuilder
+org.apache.ambari.server.update.HostUpdateHelperTest$4.configure : $r7 = virtualinvoke r0.<org.apache.ambari.server.update.HostUpdateHelperTest$4: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/stack/OsFamily;")
+org.apache.ambari.server.configuration.Configuration.readConfigFile : if r1 != null goto virtualinvoke $r2.<java.util.Properties: void load(java.io.InputStream)>(r1)
+org.apache.ambari.server.configuration.Configuration.readConfigFile : $r3 = class "Lorg/apache/ambari/server/configuration/Configuration;"
+org.apache.ambari.server.configuration.Configuration.readConfigFile : $r5 = new java.lang.RuntimeException
+org.apache.ambari.server.configuration.Configuration.readConfigFile : $r2 = new java.util.Properties

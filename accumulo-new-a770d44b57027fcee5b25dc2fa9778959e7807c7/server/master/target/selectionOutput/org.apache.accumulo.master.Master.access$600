@@ -1,0 +1,1 @@
+org.apache.accumulo.master.Master.access$600 : $i0 = specialinvoke r0.<org.apache.accumulo.master.Master: int notHosted()>() >>>>>>>> org.apache.accumulo.master.Master.access$600 : return $i0

@@ -1,0 +1,1 @@
+org.apache.ambari.server.orm.entities.UpgradeHistoryEntity.getServiceName : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.UpgradeHistoryEntity: java.lang.String _persistence_get_serviceName()>() >>>>>>>> org.apache.ambari.server.orm.entities.UpgradeHistoryEntity.getServiceName : return $r1

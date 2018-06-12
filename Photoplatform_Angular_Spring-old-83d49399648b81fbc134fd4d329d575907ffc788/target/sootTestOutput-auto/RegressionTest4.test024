@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.persistence.model.Role.setName : r0.<de.htw.sdf.photoplatform.persistence.model.Role: java.lang.String name> = r1
+de.htw.sdf.photoplatform.persistence.model.Role.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Role: java.lang.String name>

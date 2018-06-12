@@ -1,0 +1,13 @@
+org.apache.ambari.server.controller.internal.AlertResourceProviderUtils.verifyToggleAuthorization : $r3 = <org.apache.ambari.server.controller.internal.AlertResourceProviderUtils: java.util.Set AUTHORIZATIONS_TOGGLE_CLUSTER_ALERTS>
+org.apache.ambari.server.controller.internal.AlertResourceProviderUtils.verifyAuthorization : $r9 = <org.apache.ambari.server.security.authorization.ResourceType: org.apache.ambari.server.security.authorization.ResourceType CLUSTER>
+org.apache.ambari.server.controller.internal.AlertResourceProviderUtils.verifyAuthorization : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isEmpty(java.lang.String)>(r0)
+org.apache.ambari.server.controller.internal.AlertResourceProviderUtils.verifyAuthorization : $r10 = new org.apache.ambari.server.security.authorization.AuthorizationException
+org.apache.ambari.server.controller.internal.AlertResourceProviderUtils.verifyAuthorization : if null != r13 goto $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isEmpty(java.lang.String)>(r0)
+org.apache.ambari.server.controller.internal.AlertResourceProviderUtils.verifyAuthorization : $r8 = "AMBARI"
+org.apache.ambari.server.security.authorization.AuthorizationHelper.getAuthentication : if r0 != null goto $r1 = interfaceinvoke r0.<org.springframework.security.core.context.SecurityContext: org.springframework.security.core.Authentication getAuthentication()>()
+org.apache.ambari.server.security.authorization.AuthorizationHelper.getAuthentication : r0 = staticinvoke <org.springframework.security.core.context.SecurityContextHolder: org.springframework.security.core.context.SecurityContext getContext()>()
+org.apache.ambari.server.security.authorization.AuthorizationHelper.isAuthorized : if r3 == null goto return 1
+org.apache.ambari.server.security.authorization.AuthorizationHelper.isAuthorized : return 0
+org.apache.ambari.server.security.authorization.AuthorizationHelper.isAuthorized : if r0 != null goto $r15 = interfaceinvoke r0.<org.springframework.security.core.Authentication: java.util.Collection getAuthorities()>()
+org.apache.ambari.server.security.authorization.AuthorizationHelper.isAuthorized : $r3 = staticinvoke <org.apache.ambari.server.security.authorization.AuthorizationHelper: org.springframework.security.core.Authentication getAuthentication()>()
+org.apache.ambari.server.security.authorization.AuthorizationHelper.isAuthorized : $z0 = interfaceinvoke r3.<java.util.Set: boolean isEmpty()>()

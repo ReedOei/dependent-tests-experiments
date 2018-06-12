@@ -1,0 +1,2 @@
+com.alibaba.dubbo.config.spring.ServiceBean.setBeanName : r0.<com.alibaba.dubbo.config.spring.ServiceBean: java.lang.String beanName> = r1
+com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.getOrder : return 2147483647

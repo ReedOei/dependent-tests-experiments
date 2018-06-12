@@ -1,0 +1,9 @@
+com.alibaba.dubbo.config.spring.ServiceBean.destroy : virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: void unexport()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.isMatchPackage : $r5 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String[] annotationPackages>
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessAfterInitialization : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessAfterInitialization : $z0 = specialinvoke r0.<com.alibaba.dubbo.config.spring.AnnotationBean: boolean isMatchPackage(java.lang.Object)>(r1)
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessAfterInitialization : if r3 == null goto return r1
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : $i0 = virtualinvoke r1.<java.lang.String: int length()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : $r4 = null
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : if r1 == null goto $r4 = null
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage> = r1

@@ -1,0 +1,43 @@
+org.apache.ambari.server.controller.spi.Resource$Type.hashCode : return i3
+org.apache.ambari.server.controller.spi.Resource$Type.hashCode : $i1 = 31 * i2
+org.apache.ambari.server.controller.spi.Resource$Type.hashCode : $r1 = r0.<org.apache.ambari.server.controller.spi.Resource$Type: java.lang.String name>
+org.apache.ambari.server.controller.spi.Resource$Type.getInternalType : $z0 = virtualinvoke r0.<org.apache.ambari.server.controller.spi.Resource$Type: boolean isInternalType()>()
+org.apache.ambari.server.controller.spi.Resource$Type.getInternalType : $r7 = staticinvoke <org.apache.ambari.server.controller.spi.Resource$InternalType: org.apache.ambari.server.controller.spi.Resource$InternalType[] values()>()
+org.apache.ambari.server.api.services.BaseService.getRequestFactory : $r1 = new org.apache.ambari.server.api.services.RequestFactory
+org.apache.ambari.server.api.services.RequestFactory.applyDirectives : r5 = specialinvoke r0.<org.apache.ambari.server.api.services.RequestFactory: java.util.Map getQueryParameters(javax.ws.rs.core.UriInfo,org.apache.ambari.server.api.services.RequestBody)>(r3, r2)
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.createResource : $r3 = <org.apache.ambari.server.controller.spi.Resource$Type: org.apache.ambari.server.controller.spi.Resource$Type Host>
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.createResource : goto [?= r19 = staticinvoke <org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl: org.apache.ambari.server.api.resources.ResourceDefinition getResourceDefinition(org.apache.ambari.server.controller.spi.Resource$Type,java.util.Map)>(r1, r2)]
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.createResource : r19 = staticinvoke <org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl: org.apache.ambari.server.api.resources.ResourceDefinition getResourceDefinition(org.apache.ambari.server.controller.spi.Resource$Type,java.util.Map)>(r1, r2)
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.createResource : $r4 = new org.apache.ambari.server.api.query.QueryImpl
+org.apache.ambari.server.api.services.BaseService.createResource : $r3 = r0.<org.apache.ambari.server.api.services.BaseService: org.apache.ambari.server.api.resources.ResourceInstanceFactory m_resourceFactory>
+org.apache.ambari.server.api.services.RequestBody.setBody : $r2 = r0.<org.apache.ambari.server.api.services.RequestBody: java.util.Map m_requestInfoProps>
+org.apache.ambari.server.api.services.RequestBody.setBody : if r1 == null goto return
+org.apache.ambari.server.api.services.RequestBody.setBody : r0.<org.apache.ambari.server.api.services.RequestBody: java.lang.String m_body> = r1
+org.apache.ambari.server.api.services.RequestBody.setBody : $z0 = virtualinvoke r1.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.api.query.QueryImpl.setKeyValueMap : $r2 = r0.<org.apache.ambari.server.api.query.QueryImpl: java.util.Map keyValueMap>
+org.apache.ambari.server.api.services.BaseService.handleRequest : virtualinvoke $r9.<org.apache.ambari.server.api.services.RequestBody: void setBody(java.lang.String)>(r2)
+org.apache.ambari.server.api.services.BaseService.handleRequest : $r9 = new org.apache.ambari.server.api.services.RequestBody
+org.apache.ambari.server.api.services.BaseService.handleRequest : $r10 = virtualinvoke r0.<org.apache.ambari.server.api.services.BaseService: org.apache.ambari.server.api.services.RequestFactory getRequestFactory()>()
+org.apache.ambari.server.api.services.BaseService.handleRequest : $r6 = virtualinvoke r0.<org.apache.ambari.server.api.services.BaseService: javax.ws.rs.core.Response handleRequest(javax.ws.rs.core.HttpHeaders,java.lang.String,javax.ws.rs.core.UriInfo,org.apache.ambari.server.api.services.Request$Type,javax.ws.rs.core.MediaType,org.apache.ambari.server.api.resources.ResourceInstance)>(r1, r2, r3, r4, null, r5)
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : $r4 = new java.util.HashSet
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : $r9 = r0.<org.apache.ambari.server.api.resources.BaseResourceDefinition: java.util.Map directives>
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : if r2 == null goto $r9 = r0.<org.apache.ambari.server.api.resources.BaseResourceDefinition: java.util.Map directives>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r2 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController controller>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r1 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController controller>
+org.apache.ambari.server.api.services.WorkflowService.getWorkflows : $r7 = virtualinvoke r0.<org.apache.ambari.server.api.services.WorkflowService: javax.ws.rs.core.Response handleRequest(javax.ws.rs.core.HttpHeaders,java.lang.String,javax.ws.rs.core.UriInfo,org.apache.ambari.server.api.services.Request$Type,org.apache.ambari.server.api.resources.ResourceInstance)>(r2, r1, r3, $r5, $r6)
+org.apache.ambari.server.api.services.WorkflowService.getWorkflows : $r5 = <org.apache.ambari.server.api.services.Request$Type: org.apache.ambari.server.api.services.Request$Type GET>
+org.apache.ambari.server.api.services.RequestFactory.getQueryParameters : $r8 = interfaceinvoke r1.<javax.ws.rs.core.UriInfo: javax.ws.rs.core.MultivaluedMap getQueryParameters()>()
+org.apache.ambari.server.api.services.RequestFactory.getQueryParameters : $r7 = new java.util.HashMap
+org.apache.ambari.server.api.services.RequestFactory.createRequest : $r6 = <org.apache.ambari.server.api.services.RequestFactory$1: int[] $SwitchMap$org$apache$ambari$server$api$services$Request$Type>
+org.apache.ambari.server.api.services.RequestFactory.createRequest : $r7 = specialinvoke r0.<org.apache.ambari.server.api.services.RequestFactory: org.apache.ambari.server.api.services.Request createGetRequest(javax.ws.rs.core.HttpHeaders,org.apache.ambari.server.api.services.RequestBody,javax.ws.rs.core.UriInfo,org.apache.ambari.server.api.resources.ResourceInstance)>(r1, r2, r3, r5)
+org.apache.ambari.server.controller.spi.Resource$Type.isInternalType : $i0 = r0.<org.apache.ambari.server.controller.spi.Resource$Type: int ordinal>
+org.apache.ambari.server.api.services.RequestFactory.createGetRequest : $r5 = <org.apache.ambari.server.api.services.Request$Type: org.apache.ambari.server.api.services.Request$Type GET>
+org.apache.ambari.server.controller.spi.Resource$InternalType.values : $r0 = <org.apache.ambari.server.controller.spi.Resource$InternalType: org.apache.ambari.server.controller.spi.Resource$InternalType[] $VALUES>
+org.apache.ambari.server.api.services.WorkflowService.createWorkflowResource : $r5 = <org.apache.ambari.server.controller.spi.Resource$Type: org.apache.ambari.server.controller.spi.Resource$Type Cluster>
+org.apache.ambari.server.api.services.WorkflowService.createWorkflowResource : $r9 = <org.apache.ambari.server.controller.spi.Resource$Type: org.apache.ambari.server.controller.spi.Resource$Type Workflow>
+org.apache.ambari.server.api.services.WorkflowService.createWorkflowResource : $r7 = <org.apache.ambari.server.controller.spi.Resource$Type: org.apache.ambari.server.controller.spi.Resource$Type Workflow>
+org.apache.ambari.server.api.services.WorkflowService.createWorkflowResource : $r4 = new java.util.HashMap
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.getResourceDefinition : goto [?= return r155]
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.getResourceDefinition : r188 = new org.apache.ambari.server.api.resources.WorkflowResourceDefinition
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.getResourceDefinition : $r5 = <org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl: java.util.Map resourceDefinitions>
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.getResourceDefinition : $r6 = <org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl$1: int[] $SwitchMap$org$apache$ambari$server$controller$spi$Resource$InternalType>

@@ -1,0 +1,1 @@
+org.apache.accumulo.master.tableOps.BulkImport.access$000 : $r0 = <org.apache.accumulo.master.tableOps.BulkImport: org.slf4j.Logger log> >>>>>>>> org.apache.accumulo.master.tableOps.BulkImport.access$000 : return $r0

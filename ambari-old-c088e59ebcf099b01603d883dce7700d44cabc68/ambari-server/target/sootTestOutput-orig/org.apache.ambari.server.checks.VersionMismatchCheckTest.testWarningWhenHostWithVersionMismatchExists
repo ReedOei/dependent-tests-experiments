@@ -1,0 +1,45 @@
+org.apache.ambari.server.state.stack.PrerequisiteCheck.getFailedOn : $r1 = r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: java.util.LinkedHashSet m_failedOn>
+org.apache.ambari.server.checks.CheckDescription.getFail : $r2 = r0.<org.apache.ambari.server.checks.CheckDescription: java.util.Map m_fails>
+org.apache.ambari.server.state.stack.PrerequisiteCheck.setFailReason : r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: java.lang.String m_failReason> = r1
+org.apache.ambari.server.state.stack.PrerequisiteCheck.getStatus : $r1 = r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: org.apache.ambari.server.state.stack.PrereqCheckStatus m_status>
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : r3 = virtualinvoke r2.<org.apache.ambari.server.controller.PrereqCheckRequest: java.lang.String getClusterName()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : $r11 = new java.util.ArrayList
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : $r14 = <org.apache.ambari.server.state.stack.PrereqCheckStatus: org.apache.ambari.server.state.stack.PrereqCheckStatus WARNING>
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : $r12 = interfaceinvoke r5.<java.util.Map: java.util.Collection values()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : $r13 = virtualinvoke r1.<org.apache.ambari.server.state.stack.PrerequisiteCheck: java.util.LinkedHashSet getFailedOn()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : $r8 = r0.<org.apache.ambari.server.checks.VersionMismatchCheck: com.google.inject.Provider clustersProvider>
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : r5 = interfaceinvoke r4.<org.apache.ambari.server.state.Cluster: java.util.Map getServices()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : r21 = virtualinvoke r0.<org.apache.ambari.server.checks.VersionMismatchCheck: java.lang.String getFailReason(org.apache.ambari.server.state.stack.PrerequisiteCheck,org.apache.ambari.server.controller.PrereqCheckRequest)>(r1, r2)
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : $r15 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : $r18 = staticinvoke <org.apache.commons.lang.StringUtils: java.lang.String join(java.util.Collection,java.lang.String)>($r11, "\n")
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : $r19 = interfaceinvoke r20.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : specialinvoke r0.<org.apache.ambari.server.checks.VersionMismatchCheck: void validateService(org.apache.ambari.server.state.Service,org.apache.ambari.server.state.stack.PrerequisiteCheck,java.util.List)>(r7, r1, $r11)
+org.apache.ambari.server.checks.VersionMismatchCheck.perform : goto [?= $z0 = interfaceinvoke r20.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponent : goto [?= $z0 = interfaceinvoke r5.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponent : $r8 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponent : $r7 = interfaceinvoke r4.<java.util.Map: java.util.Collection values()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponent : specialinvoke r0.<org.apache.ambari.server.checks.VersionMismatchCheck: void validateServiceComponentHost(org.apache.ambari.server.state.ServiceComponent,org.apache.ambari.server.state.ServiceComponentHost,org.apache.ambari.server.state.stack.PrerequisiteCheck,java.util.List)>(r1, r6, r2, r3)
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponent : r4 = interfaceinvoke r1.<org.apache.ambari.server.state.ServiceComponent: java.util.Map getServiceComponentHosts()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.validateService : goto [?= $z0 = interfaceinvoke r5.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.checks.VersionMismatchCheck.validateService : r4 = interfaceinvoke r1.<org.apache.ambari.server.state.Service: java.util.Map getServiceComponents()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.validateService : $r8 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.validateService : specialinvoke r0.<org.apache.ambari.server.checks.VersionMismatchCheck: void validateServiceComponent(org.apache.ambari.server.state.ServiceComponent,org.apache.ambari.server.state.stack.PrerequisiteCheck,java.util.List)>(r6, r2, r3)
+org.apache.ambari.server.checks.VersionMismatchCheck.validateService : $r7 = interfaceinvoke r4.<java.util.Map: java.util.Collection values()>()
+org.apache.ambari.server.checks.VersionMismatchCheckTest$1.get : $r1 = virtualinvoke r0.<org.apache.ambari.server.checks.VersionMismatchCheckTest$1: org.apache.ambari.server.state.Clusters get()>()
+org.apache.ambari.server.checks.VersionMismatchCheckTest$1.get : $r1 = r0.<org.apache.ambari.server.checks.VersionMismatchCheckTest$1: org.apache.ambari.server.state.Clusters val$clusters>
+org.apache.ambari.server.controller.PrereqCheckRequest.getTargetRepositoryVersion : $r1 = r0.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity m_targetRepositoryVersion>
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getFailReason : $r3 = virtualinvoke r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor: java.lang.String getFailReason(java.lang.String,org.apache.ambari.server.state.stack.PrerequisiteCheck,org.apache.ambari.server.controller.PrereqCheckRequest)>("default", r1, r2)
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getFailReason : r4 = virtualinvoke r3.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity getTargetRepositoryVersion()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getFailReason : $z5 = virtualinvoke r32.<java.lang.String: boolean contains(java.lang.CharSequence)>("{{fails}}")
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getFailReason : $z0 = virtualinvoke r32.<java.lang.String: boolean contains(java.lang.CharSequence)>("{{version}}")
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getFailReason : $r12 = r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor: org.apache.ambari.server.checks.CheckDescription m_description>
+org.apache.ambari.server.state.stack.PrerequisiteCheck.setStatus : r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: org.apache.ambari.server.state.stack.PrereqCheckStatus m_status> = r1
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponentHost : r7 = interfaceinvoke r1.<org.apache.ambari.server.state.ServiceComponent: java.lang.String getDesiredVersion()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponentHost : $r12 = new java.lang.StringBuilder
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponentHost : r5 = interfaceinvoke r2.<org.apache.ambari.server.state.ServiceComponentHost: java.lang.String getHostName()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponentHost : r8 = interfaceinvoke r2.<org.apache.ambari.server.state.ServiceComponentHost: java.lang.String getVersion()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponentHost : r6 = interfaceinvoke r2.<org.apache.ambari.server.state.ServiceComponentHost: java.lang.String getServiceComponentName()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponentHost : $r10 = interfaceinvoke r2.<org.apache.ambari.server.state.ServiceComponentHost: org.apache.ambari.server.state.UpgradeState getUpgradeState()>()
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponentHost : interfaceinvoke r4.<java.util.List: boolean add(java.lang.Object)>(r9)
+org.apache.ambari.server.checks.VersionMismatchCheck.validateServiceComponentHost : $r20 = virtualinvoke r3.<org.apache.ambari.server.state.stack.PrerequisiteCheck: java.util.LinkedHashSet getFailedOn()>()
+org.apache.ambari.server.controller.PrereqCheckRequest.getClusterName : $r1 = r0.<org.apache.ambari.server.controller.PrereqCheckRequest: java.lang.String m_clusterName>

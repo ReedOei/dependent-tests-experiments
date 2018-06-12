@@ -1,0 +1,2 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getInterpreterGroup : $r1 = specialinvoke r0.<org.apache.zeppelin.interpreter.Interpreter: org.apache.zeppelin.interpreter.InterpreterGroup getInterpreterGroup()>()
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.toString : $r1 = new java.lang.StringBuilder

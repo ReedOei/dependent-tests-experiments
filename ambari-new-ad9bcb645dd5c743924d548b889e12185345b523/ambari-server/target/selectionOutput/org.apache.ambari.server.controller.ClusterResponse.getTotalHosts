@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ClusterResponse.getTotalHosts : $i0 = r0.<org.apache.ambari.server.controller.ClusterResponse: int totalHosts> >>>>>>>> org.apache.ambari.server.controller.ClusterResponse.getTotalHosts : return $i0

@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.exception.common.AbstractBaseException.getErrors : $r1 = r0.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: org.springframework.validation.Errors errors>
+de.htw.sdf.photoplatform.exception.common.AbstractBaseException.getCode : $i0 = r0.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: int code>

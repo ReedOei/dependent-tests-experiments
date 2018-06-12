@@ -1,0 +1,13 @@
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : $i0 = lengthof r4
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : r10 = null
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : $r7 = r4[1]
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : $r5 = r4[0]
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : r3 = (java.util.Map) r2
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : $z0 = r2 instanceof java.util.Map
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : r4 = virtualinvoke r1.<java.lang.String: java.lang.String[] split(java.lang.String,int)>("\\/", 2)
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : $r2 = r0.<org.apache.ambari.server.collections.functors.ContextTransformer: java.lang.String key>
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : $z1 = interfaceinvoke r3.<java.util.Map: boolean containsKey(java.lang.Object)>(r1)
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : r10 = interfaceinvoke r3.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : $r9 = r4[1]
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : return r10
+org.apache.ambari.server.collections.functors.ContextTransformer.transform : if r1 == null goto return r10

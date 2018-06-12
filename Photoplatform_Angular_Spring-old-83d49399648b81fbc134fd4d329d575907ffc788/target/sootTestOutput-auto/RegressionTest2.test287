@@ -1,0 +1,5 @@
+de.htw.sdf.photoplatform.persistence.model.CollectionImage.setImage : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionImage: de.htw.sdf.photoplatform.persistence.model.Image image> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String thumbPath>
+de.htw.sdf.photoplatform.persistence.model.Image.getPrice : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.Double price>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setCreatedBy : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String createdBy> = r1
+de.htw.sdf.photoplatform.persistence.model.CollectionImage.getImage : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.CollectionImage: de.htw.sdf.photoplatform.persistence.model.Image image>

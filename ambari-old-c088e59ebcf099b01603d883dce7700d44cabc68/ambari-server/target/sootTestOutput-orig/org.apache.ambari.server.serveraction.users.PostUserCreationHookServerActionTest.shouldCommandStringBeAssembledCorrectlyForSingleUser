@@ -1,0 +1,91 @@
+org.apache.ambari.server.utils.StageUtils.getActionId : $r0 = new java.lang.StringBuilder
+org.apache.ambari.server.agent.CommandReport.setClusterName : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String clusterName> = r1
+org.apache.ambari.server.agent.CommandReport.setRoleCommand : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String roleCommand> = r1
+org.apache.ambari.server.hooks.users.UserHookParams.param : $r1 = r0.<org.apache.ambari.server.hooks.users.UserHookParams: java.lang.String param>
+org.apache.ambari.server.utils.ShellCommandUtil$Result.isSuccessful : $i0 = r0.<org.apache.ambari.server.utils.ShellCommandUtil$Result: int exitCode>
+org.apache.ambari.server.agent.CommandReport.setStructuredOut : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String structuredOut> = r1
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.getPayload : return r2
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.getPayload : $r4 = r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.codehaus.jackson.map.ObjectMapper objectMapper>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.assembleCommand : $r16 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CMD_HDFS_PRINCIPAL>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.assembleCommand : $r28 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.assembleCommand : $r20 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CMD_HDFS_KEYTAB>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.assembleCommand : $r24 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CMD_HDFS_USER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.assembleCommand : $r3 = newarray (java.lang.String)[6]
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.assembleCommand : $r4 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams SCRIPT>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.assembleCommand : $r8 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CMD_INPUT_FILE>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.assembleCommand : $r12 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CLUSTER_SECURITY_TYPE>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.assembleCommand : return $r3
+org.apache.ambari.server.serveraction.AbstractServerAction.getCommandParameters : $r1 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.getCommandParameters : $r2 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.agent.CommandReport.setStdErr : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String stderr> = r1
+org.apache.ambari.server.serveraction.AbstractServerAction.setExecutionCommand : r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand> = r1
+org.apache.ambari.server.agent.CommandReport.setTaskId : r0.<org.apache.ambari.server.agent.CommandReport: long taskId> = l0
+org.apache.ambari.server.agent.CommandReport.setStdOut : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String stdout> = r1
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.validateCommandParams : $r9 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CLUSTER_SECURITY_TYPE>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.validateCommandParams : $r13 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.validateCommandParams : $r5 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams SCRIPT>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.validateCommandParams : $r7 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CMD_INPUT_FILE>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.validateCommandParams : $r2 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.validateCommandParams : $r3 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams PAYLOAD>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.validateCommandParams : $r11 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CMD_HDFS_USER>
+org.apache.ambari.server.agent.CommandReport.setActionId : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String actionId> = r1
+org.apache.ambari.server.Role.toString : $r1 = r0.<org.apache.ambari.server.Role: java.lang.String name>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest.mockPayload : $r2 = new java.util.HashMap
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest.mockPayload : i1 = 0
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest.mockPayload : $r3 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest.mockPayload : return $r2
+org.apache.ambari.server.utils.ShellCommandUtil$Result.getExitCode : $i0 = r0.<org.apache.ambari.server.utils.ShellCommandUtil$Result: int exitCode>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest.mockExecutionCommand : $r25 = r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest.mockExecutionCommand : $r18 = r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest.mockExecutionCommand : $r30 = r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest.mockExecutionCommand : $r1 = r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest.mockExecutionCommand : $r12 = r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest.mockExecutionCommand : $r7 = r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerActionTest: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.agent.CommandReport.setServiceName : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String serviceName> = r1
+org.apache.ambari.server.utils.ShellCommandUtil$Result.getStdout : $r1 = r0.<org.apache.ambari.server.utils.ShellCommandUtil$Result: java.lang.String stdout>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : $r16 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : $r4 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : specialinvoke r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: void validateCommandParams(java.util.Map)>(r23)
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : r23 = virtualinvoke r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: java.util.Map getCommandParameters()>()
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : $i0 = virtualinvoke r24.<org.apache.ambari.server.utils.ShellCommandUtil$Result: int getExitCode()>()
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : $r6 = r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.apache.ambari.server.serveraction.users.CollectionPersisterServiceFactory collectionPersisterServiceFactory>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : goto [?= return r26]
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : $r10 = specialinvoke r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: java.util.Map getPayload(java.util.Map)>(r23)
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : $r12 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>(r3)
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : $r11 = r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.apache.ambari.server.serveraction.users.ShellCommandUtilityWrapper shellCommandUtilityWrapper>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : goto [?= $r14 = virtualinvoke r24.<org.apache.ambari.server.utils.ShellCommandUtil$Result: java.lang.String getStdout()>()]
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : r3 = specialinvoke r0.<org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: java.lang.String[] assembleCommand(java.util.Map)>(r23)
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.execute : $r25 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus COMPLETED>
+org.apache.ambari.server.agent.CommandReport.setExitCode : r0.<org.apache.ambari.server.agent.CommandReport: int exitCode> = i0
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r5 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r14 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r32 = ""
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r8 = new org.apache.ambari.server.agent.CommandReport
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r12 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : if r30 != null goto $r31 = virtualinvoke r30.<org.apache.ambari.server.RoleCommand: java.lang.String toString()>()
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r20 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r6 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r9 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r29 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r18 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : if r4 != null goto $r32 = r4
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r16 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : r27 = null
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r7 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : virtualinvoke $r8.<org.apache.ambari.server.agent.CommandReport: void setExitCode(int)>(i0)
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r33 = ""
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : virtualinvoke $r8.<org.apache.ambari.server.agent.CommandReport: void setStructuredOut(java.lang.String)>(r2)
+org.apache.ambari.server.agent.CommandReport.setStatus : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String status> = r1
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.logCommandResult : $z1 = virtualinvoke r2.<org.apache.ambari.server.utils.ShellCommandUtil$Result: boolean isSuccessful()>()
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.logCommandResult : $r19 = "stdout"
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.logCommandResult : $r6 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.logCommandResult : $r11 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.logCommandResult : $r8 = staticinvoke <com.google.common.base.Splitter: com.google.common.base.Splitter fixedLength(int)>(7900)
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.logCommandResult : $r14 = <org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.logCommandResult : $r13 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.logCommandResult : $r16 = "succeeded"
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.logCommandResult : $r17 = virtualinvoke r2.<org.apache.ambari.server.utils.ShellCommandUtil$Result: java.lang.String getStdout()>()
+org.apache.ambari.server.serveraction.users.PostUserCreationHookServerAction.logCommandResult : r18 = ""
+org.apache.ambari.server.agent.CommandReport.setConfigurationTags : r0.<org.apache.ambari.server.agent.CommandReport: java.util.Map configurationTags> = r1
+org.apache.ambari.server.utils.ShellCommandUtil$Result.getStderr : $r1 = r0.<org.apache.ambari.server.utils.ShellCommandUtil$Result: java.lang.String stderr>
+org.apache.ambari.server.agent.CommandReport.setRole : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String role> = r1

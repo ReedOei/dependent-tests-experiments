@@ -1,0 +1,1 @@
+org.apache.ambari.server.orm.entities.UpgradeHistoryEntity.setUpgrade : virtualinvoke r0.<org.apache.ambari.server.orm.entities.UpgradeHistoryEntity: void _persistence_set_upgrade(org.apache.ambari.server.orm.entities.UpgradeEntity)>(r1) >>>>>>>> org.apache.ambari.server.orm.entities.UpgradeHistoryEntity.setUpgrade : return

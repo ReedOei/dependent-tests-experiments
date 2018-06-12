@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.StackInfo.getRefreshCommandConfiguration : $r1 = r0.<org.apache.ambari.server.state.StackInfo: org.apache.ambari.server.state.RefreshCommandConfiguration refreshCommandConfiguration> >>>>>>>> org.apache.ambari.server.state.StackInfo.getRefreshCommandConfiguration : return $r1

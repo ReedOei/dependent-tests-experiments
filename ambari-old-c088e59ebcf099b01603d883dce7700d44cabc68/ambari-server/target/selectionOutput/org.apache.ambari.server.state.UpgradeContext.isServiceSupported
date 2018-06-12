@@ -1,0 +1,2 @@
+org.apache.ambari.server.state.UpgradeContext.isServiceSupported : $r2 = r0.<org.apache.ambari.server.state.UpgradeContext: java.util.Set m_services> >>>>>>>> org.apache.ambari.server.state.UpgradeContext.isServiceSupported : $z0 = interfaceinvoke $r2.<java.util.Set: boolean contains(java.lang.Object)>(r1)
+org.apache.ambari.server.state.UpgradeContext.isServiceSupported : $z0 = interfaceinvoke $r2.<java.util.Set: boolean contains(java.lang.Object)>(r1) >>>>>>>> org.apache.ambari.server.state.UpgradeContext.isServiceSupported : return $z0

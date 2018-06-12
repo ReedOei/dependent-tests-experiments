@@ -1,0 +1,1 @@
+org.apache.accumulo.master.replication.WorkMaker.run : $r11 = r0.<org.apache.accumulo.master.replication.WorkMaker: org.apache.accumulo.core.client.Connector conn> >>>>>>>> org.apache.accumulo.master.replication.WorkMaker.run : $z0 = staticinvoke <org.apache.accumulo.core.replication.ReplicationTable: boolean isOnline(org.apache.accumulo.core.client.Connector)>($r11)

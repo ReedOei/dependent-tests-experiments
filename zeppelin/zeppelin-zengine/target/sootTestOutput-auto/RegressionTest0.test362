@@ -1,0 +1,7 @@
+org.apache.zeppelin.helium.HeliumRegistry.name : $r1 = r0.<org.apache.zeppelin.helium.HeliumRegistry: java.lang.String name>
+org.apache.zeppelin.helium.HeliumLocalRegistry.getAll : return r2
+org.apache.zeppelin.helium.HeliumLocalRegistry.getAll : $r8 = new java.io.File
+org.apache.zeppelin.helium.HeliumLocalRegistry.getAll : if r4 != null goto r5 = r4
+org.apache.zeppelin.helium.HeliumLocalRegistry.getAll : $r1 = new java.util.LinkedList
+org.apache.zeppelin.helium.HeliumLocalRegistry.getAll : r4 = virtualinvoke r3.<java.io.File: java.io.File[] listFiles()>()
+org.apache.zeppelin.helium.HeliumRegistry.uri : $r1 = r0.<org.apache.zeppelin.helium.HeliumRegistry: java.lang.String uri>

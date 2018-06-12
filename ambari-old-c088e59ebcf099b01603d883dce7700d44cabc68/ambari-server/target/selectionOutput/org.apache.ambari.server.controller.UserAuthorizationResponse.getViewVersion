@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.UserAuthorizationResponse.getViewVersion : $r1 = r0.<org.apache.ambari.server.controller.UserAuthorizationResponse: java.lang.String viewVersion> >>>>>>>> org.apache.ambari.server.controller.UserAuthorizationResponse.getViewVersion : return $r1

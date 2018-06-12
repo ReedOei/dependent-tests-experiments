@@ -1,0 +1,4 @@
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : $z0 = interfaceinvoke r0.<java.util.List: boolean isEmpty()>() >>>>>>>> com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : if $z0 == 0
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : if $z0 == 0 >>>>>>>> com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : $r2 = ""
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : $r2 = "" >>>>>>>> com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : goto [?= return $r2]
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : goto [?= return $r2] >>>>>>>> com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : return $r2

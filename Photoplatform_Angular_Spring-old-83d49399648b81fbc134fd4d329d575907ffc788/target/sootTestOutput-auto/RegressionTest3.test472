@@ -1,0 +1,6 @@
+de.htw.sdf.photoplatform.webservice.dto.UserData.setPaypalID : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String paypalID> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getRoles : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.util.List roles>
+de.htw.sdf.photoplatform.webservice.dto.UserData.isAdmin : $z0 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: boolean admin>
+de.htw.sdf.photoplatform.webservice.dto.UserData.getLastName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String lastName>
+de.htw.sdf.photoplatform.webservice.dto.UserData.setBanned : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: boolean banned> = z0
+de.htw.sdf.photoplatform.webservice.dto.UserData.getEmail : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String email>

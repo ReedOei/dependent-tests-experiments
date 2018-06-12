@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.getArchive : $r1 = r0.<org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo: java.lang.String archive> >>>>>>>> org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.getArchive : return $r1

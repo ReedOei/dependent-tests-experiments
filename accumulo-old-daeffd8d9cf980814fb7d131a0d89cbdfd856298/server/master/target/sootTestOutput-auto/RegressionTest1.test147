@@ -1,0 +1,1 @@
+org.apache.accumulo.master.tableOps.TraceRepo.undo : $r4 = new org.apache.accumulo.core.trace.thrift.TInfo

@@ -1,0 +1,21 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getInterpreterGroupName : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.lang.String interpreterGroupName>
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.buildEnvFromProperties : $r10 = (java.lang.String) r3
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.buildEnvFromProperties : $r5 = r0.<org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher: java.util.Properties properties>
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.buildEnvFromProperties : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.buildEnvFromProperties : r3 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.buildEnvFromProperties : $r4 = new java.util.HashMap
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.buildEnvFromProperties : $r7 = (java.lang.String) r3
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : $r22 = new org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : $r27 = r0.<org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher: org.apache.zeppelin.conf.ZeppelinConfiguration zConf>
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : $r14 = r0.<org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher: org.apache.zeppelin.conf.ZeppelinConfiguration zConf>
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : r4 = virtualinvoke r1.<org.apache.zeppelin.interpreter.launcher.InterpreterLaunchContext: java.lang.String getInterpreterGroupName()>()
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : r3 = virtualinvoke r1.<org.apache.zeppelin.interpreter.launcher.InterpreterLaunchContext: org.apache.zeppelin.interpreter.InterpreterRunner getRunner()>()
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : $r12 = virtualinvoke r1.<org.apache.zeppelin.interpreter.launcher.InterpreterLaunchContext: java.util.Properties getProperties()>()
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : $z0 = virtualinvoke r2.<org.apache.zeppelin.interpreter.InterpreterOption: boolean isExistingProcess()>()
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : r2 = virtualinvoke r1.<org.apache.zeppelin.interpreter.launcher.InterpreterLaunchContext: org.apache.zeppelin.interpreter.InterpreterOption getOption()>()
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : $r33 = virtualinvoke r0.<org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher: java.util.Map buildEnvFromProperties()>()
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : $r7 = <org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : $r20 = virtualinvoke r1.<org.apache.zeppelin.interpreter.launcher.InterpreterLaunchContext: java.lang.String getInterpreterGroupId()>()
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : $r24 = r0.<org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher: org.apache.zeppelin.conf.ZeppelinConfiguration zConf>
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : $r15 = new java.lang.StringBuilder
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getInterpreterDir : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.lang.String interpreterDir>

@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.SettingResponse.getContent : $r1 = r0.<org.apache.ambari.server.controller.SettingResponse: java.lang.String content> >>>>>>>> org.apache.ambari.server.controller.SettingResponse.getContent : return $r1

@@ -1,0 +1,12 @@
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : r0 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>("java.security.auth.login.config")
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : $r45 = <org.apache.ambari.server.controller.utilities.KerberosChecker: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : $r57 = <org.apache.ambari.server.controller.utilities.KerberosChecker: org.apache.ambari.server.controller.utilities.LoginContextHelper loginContextHelper>
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : $r11 = <org.apache.ambari.server.controller.utilities.KerberosChecker: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : virtualinvoke r58.<javax.security.auth.login.LoginContext: void login()>()
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : $r8 = <org.apache.ambari.server.controller.utilities.KerberosChecker: org.apache.ambari.server.configuration.Configuration config>
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : r1 = staticinvoke <javax.security.auth.login.Configuration: javax.security.auth.login.Configuration getConfiguration()>()
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : r2 = virtualinvoke r1.<javax.security.auth.login.Configuration: javax.security.auth.login.AppConfigurationEntry[] getAppConfigurationEntry(java.lang.String)>("com.sun.security.jgss.krb5.initiate")
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : virtualinvoke r58.<javax.security.auth.login.LoginContext: void logout()>()
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : goto [?= return]
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : if r2 != null goto z6 = 0
+org.apache.ambari.server.controller.utilities.KerberosChecker.checkJaasConfiguration : $r10 = <org.apache.ambari.server.controller.utilities.KerberosChecker: org.slf4j.Logger LOG>

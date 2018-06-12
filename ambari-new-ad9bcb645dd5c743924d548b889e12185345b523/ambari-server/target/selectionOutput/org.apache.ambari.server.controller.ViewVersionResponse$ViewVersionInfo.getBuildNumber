@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.getBuildNumber : $r1 = r0.<org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo: java.lang.String buildNumber> >>>>>>>> org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.getBuildNumber : return $r1

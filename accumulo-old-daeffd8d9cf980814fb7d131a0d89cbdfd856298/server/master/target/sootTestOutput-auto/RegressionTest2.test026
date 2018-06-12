@@ -1,0 +1,4 @@
+org.apache.accumulo.master.tableOps.CreateNamespace.call : $r4 = <org.apache.accumulo.master.tableOps.Utils: java.util.concurrent.locks.Lock idLock>
+org.apache.accumulo.master.tableOps.CreateNamespace.call : $r6 = r0.<org.apache.accumulo.master.tableOps.CreateNamespace: org.apache.accumulo.master.tableOps.NamespaceInfo namespaceInfo>
+org.apache.accumulo.master.tableOps.CreateNamespace.call : throw $r15
+org.apache.accumulo.master.tableOps.CreateNamespace.isReady : return 0L

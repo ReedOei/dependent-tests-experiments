@@ -1,0 +1,25 @@
+org.apache.ambari.server.orm.entities.StackEntity.setStackVersion : virtualinvoke r0.<org.apache.ambari.server.orm.entities.StackEntity: void _persistence_set_stackVersion(java.lang.String)>(r1)
+org.apache.ambari.server.orm.entities.ClusterEntity.setClusterName : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ClusterEntity: void _persistence_set_clusterName(java.lang.String)>(r1)
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : virtualinvoke $r27.<org.apache.ambari.server.orm.entities.ClusterEntity: void setDesiredStack(org.apache.ambari.server.orm.entities.StackEntity)>($r33)
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r23 = staticinvoke <org.mockito.Mockito: java.lang.Object mock(java.lang.Class)>(class "Lorg/apache/ambari/server/stack/StackManager;")
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r28 = <org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest: java.lang.String CLUSTER_NAME>
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : virtualinvoke $r34.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: void setStack(org.apache.ambari.server.orm.entities.StackEntity)>($r33)
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r20 = class "Lorg/apache/ambari/server/state/stack/upgrade/RepositoryVersionHelper;"
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r19 = new org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r29 = virtualinvoke r1.<org.apache.ambari.server.orm.dao.ClusterDAO: java.util.List findAll()>()
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r16 = staticinvoke <org.mockito.Mockito: java.lang.Object mock(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/ClusterDAO;")
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r27 = new org.apache.ambari.server.orm.entities.ClusterEntity
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r34 = new org.apache.ambari.server.orm.entities.RepositoryVersionEntity
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : virtualinvoke $r33.<org.apache.ambari.server.orm.entities.StackEntity: void setStackVersion(java.lang.String)>("2.3")
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : virtualinvoke r3.<java.lang.reflect.Field: void setAccessible(boolean)>(1)
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r33 = new org.apache.ambari.server.orm.entities.StackEntity
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r17 = staticinvoke <org.mockito.Mockito: java.lang.Object mock(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/RepositoryVersionDAO;")
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r35 = staticinvoke <org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest: java.lang.String resourceAsString(java.lang.String)>("org/apache/ambari/server/stack/UpdateActiveRepoVersionOnStartupTest_initialRepos.json")
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : virtualinvoke $r33.<org.apache.ambari.server.orm.entities.StackEntity: void setStackName(java.lang.String)>("HDP")
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r21 = new com.google.gson.Gson
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r24 = virtualinvoke r4.<org.apache.ambari.server.api.services.AmbariMetaInfo: org.apache.ambari.server.stack.StackManager getStackManager()>()
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.init : $r22 = staticinvoke <org.mockito.Mockito: java.lang.Object mock(java.lang.Class)>(class "Lorg/apache/ambari/server/api/services/AmbariMetaInfo;")
+org.apache.ambari.server.stack.UpdateActiveRepoVersionOnStartupTest.resourceAsString : $r1 = staticinvoke <com.google.common.io.Resources: java.net.URL getResource(java.lang.String)>(r0)
+org.apache.ambari.server.orm.entities.ClusterEntity.setDesiredStack : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ClusterEntity: void _persistence_set_desiredStack(org.apache.ambari.server.orm.entities.StackEntity)>(r1)
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setStack : virtualinvoke r0.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: void _persistence_set_stack(org.apache.ambari.server.orm.entities.StackEntity)>(r1)
+org.apache.ambari.server.orm.entities.StackEntity.setStackName : virtualinvoke r0.<org.apache.ambari.server.orm.entities.StackEntity: void _persistence_set_stackName(java.lang.String)>(r1)

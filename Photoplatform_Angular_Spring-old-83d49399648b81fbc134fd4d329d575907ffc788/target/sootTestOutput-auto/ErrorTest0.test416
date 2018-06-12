@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.update : $r2 = r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.repository.CollectionDAO collectionDAO>
+de.htw.sdf.photoplatform.persistence.model.Collection.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Collection: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.model.Collection.getUser : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Collection: de.htw.sdf.photoplatform.persistence.model.User user>

@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.getMaxAmbariVersion : $r1 = r0.<org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo: java.lang.String maxAmbariVersion> >>>>>>>> org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.getMaxAmbariVersion : return $r1

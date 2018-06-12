@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrReplicationFactor : $i0 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: int solrReplicationFactor> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrReplicationFactor : return $i0

@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.DeleteIdentityHandler$PrepareDeleteIdentityServerAction.lambda$serviceNames$0 : $r1 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.Component: java.lang.String getServiceName()>() >>>>>>>> org.apache.ambari.server.controller.DeleteIdentityHandler$PrepareDeleteIdentityServerAction.lambda$serviceNames$0 : return $r1

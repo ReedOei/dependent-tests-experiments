@@ -1,0 +1,4 @@
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : $r4 = new java.util.HashSet
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : $r9 = r0.<org.apache.ambari.server.api.resources.BaseResourceDefinition: java.util.Map directives>
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : if r2 == null goto $r9 = r0.<org.apache.ambari.server.api.resources.BaseResourceDefinition: java.util.Map directives>
+org.apache.ambari.server.api.resources.ServiceResourceDefinition.getPluralName : return "services"

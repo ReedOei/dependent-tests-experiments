@@ -1,0 +1,1 @@
+org.apache.ambari.server.ldap.service.ads.detectors.UserObjectClassDetector$ObjectClassValue.weight : $r1 = r0.<org.apache.ambari.server.ldap.service.ads.detectors.UserObjectClassDetector$ObjectClassValue: java.lang.Integer weight> >>>>>>>> org.apache.ambari.server.ldap.service.ads.detectors.UserObjectClassDetector$ObjectClassValue.weight : return $r1

@@ -1,0 +1,2 @@
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.getDefaultValue : $r1 = r0.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object m_defaultValue>
+org.apache.ambari.server.security.AbstractSecurityHeaderFilter.destroy : $r1 = <org.apache.ambari.server.security.AbstractSecurityHeaderFilter: org.slf4j.Logger LOG>

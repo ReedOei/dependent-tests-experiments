@@ -1,0 +1,19 @@
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepoCount : $r1 = r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: java.util.List repos>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $z1 = interfaceinvoke r24.<org.apache.commons.vfs2.FileObject: boolean exists()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : interfaceinvoke r24.<org.apache.commons.vfs2.FileObject: void createFolder()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r2 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r8 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.commons.vfs2.FileSystemManager fsManager>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r10 = <org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r4 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: java.net.URI filesystemRoot>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r17 = virtualinvoke $r12.<java.io.File: java.net.URI toURI()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : goto [?= $r4 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: java.net.URI filesystemRoot>]
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r3 = new java.net.URI
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r6 = staticinvoke <org.apache.commons.vfs2.VFS: org.apache.commons.vfs2.FileSystemManager getManager()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r12 = new java.io.File
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepo : if i0 < 0 goto $r1 = new java.io.IOException
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepo : $i2 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: int getRepoCount()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepo : $r8 = r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: java.util.List repos>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.mock.MockEchoWebsocketServer.run : goto [?= return]
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getMaxRepoNum : return 2
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.mock.MockEchoWebsocketServer.stop : $r1 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.mock.MockEchoWebsocketServer: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.mock.MockEchoWebsocketServer.stop : $r2 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.mock.MockEchoWebsocketServer: org.eclipse.jetty.server.Server server>

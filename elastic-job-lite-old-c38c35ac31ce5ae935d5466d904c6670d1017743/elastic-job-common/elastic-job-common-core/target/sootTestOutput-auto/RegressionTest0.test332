@@ -1,0 +1,10 @@
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition.getFields : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: java.util.Map fields>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String id>
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.getStartTime : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.util.Date startTime>
+com.dangdang.ddframe.job.statistics.type.job.JobRunningStatistics.getCreationTime : $r1 = r0.<com.dangdang.ddframe.job.statistics.type.job.JobRunningStatistics: java.util.Date creationTime>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getShardingItems : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String shardingItems>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getCreationTime : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.util.Date creationTime>
+com.dangdang.ddframe.job.util.env.IpUtils.getHostName : $r1 = staticinvoke <java.net.InetAddress: java.net.InetAddress getLocalHost()>()
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r5 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r8 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.setFailureCause : r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: com.dangdang.ddframe.job.event.type.JobExecutionEventThrowable failureCause> = r1

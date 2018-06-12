@@ -1,0 +1,2 @@
+org.apache.accumulo.master.replication.FinishedWorkUpdater.run : $r12 = <org.apache.accumulo.master.replication.FinishedWorkUpdater: org.slf4j.Logger log>
+org.apache.accumulo.master.replication.FinishedWorkUpdater.run : $r13 = r0.<org.apache.accumulo.master.replication.FinishedWorkUpdater: org.apache.accumulo.core.client.Connector conn>

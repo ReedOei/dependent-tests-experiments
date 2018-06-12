@@ -1,0 +1,37 @@
+org.apache.zeppelin.notebook.Note.isRunningOrPending : $r6 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs> >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : entermonitor $r6
+org.apache.zeppelin.notebook.Note.isRunningOrPending : entermonitor $r6 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r7 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.Note.isRunningOrPending : entermonitor $r6 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : exitmonitor $r6 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : throw $r9
+org.apache.zeppelin.notebook.Note.isRunningOrPending : exitmonitor $r6 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : $r7 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs> >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : r2 = interfaceinvoke $r7.<java.util.List: java.util.Iterator iterator()>()
+org.apache.zeppelin.notebook.Note.isRunningOrPending : $r7 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs> >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : r2 = interfaceinvoke $r7.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.apache.zeppelin.notebook.Note.isRunningOrPending : r2 = interfaceinvoke $r7.<java.util.List: java.util.Iterator iterator()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z0 == 0
+org.apache.zeppelin.notebook.Note.isRunningOrPending : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z0 == 0 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r8 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z0 == 0 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : exitmonitor $r6
+org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z0 == 0 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : exitmonitor $r6 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : goto [?= return 0]
+org.apache.zeppelin.notebook.Note.isRunningOrPending : exitmonitor $r6 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : goto [?= return 0] >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : return 0
+org.apache.zeppelin.notebook.Note.isRunningOrPending : $r8 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : r3 = (org.apache.zeppelin.notebook.Paragraph) $r8
+org.apache.zeppelin.notebook.Note.isRunningOrPending : $r8 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : r3 = (org.apache.zeppelin.notebook.Paragraph) $r8 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : r4 = virtualinvoke r3.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.scheduler.Job$Status getStatus()>()
+org.apache.zeppelin.notebook.Note.isRunningOrPending : r3 = (org.apache.zeppelin.notebook.Paragraph) $r8 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : r4 = virtualinvoke r3.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.scheduler.Job$Status getStatus()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $z1 = virtualinvoke r4.<org.apache.zeppelin.scheduler.Job$Status: boolean isRunning()>()
+org.apache.zeppelin.notebook.Note.isRunningOrPending : r4 = virtualinvoke r3.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.scheduler.Job$Status getStatus()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : $z1 = virtualinvoke r4.<org.apache.zeppelin.scheduler.Job$Status: boolean isRunning()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z1 != 0
+org.apache.zeppelin.notebook.Note.isRunningOrPending : $z1 = virtualinvoke r4.<org.apache.zeppelin.scheduler.Job$Status: boolean isRunning()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z1 != 0 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $z2 = virtualinvoke r4.<org.apache.zeppelin.scheduler.Job$Status: boolean isPending()>()
+org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z1 != 0 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : exitmonitor $r6
+org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z1 != 0 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : exitmonitor $r6 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : return 1
+org.apache.zeppelin.notebook.Note.isRunningOrPending : exitmonitor $r6 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : $z2 = virtualinvoke r4.<org.apache.zeppelin.scheduler.Job$Status: boolean isPending()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z2 == 0
+org.apache.zeppelin.notebook.Note.isRunningOrPending : $z2 = virtualinvoke r4.<org.apache.zeppelin.scheduler.Job$Status: boolean isPending()>() >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z2 == 0 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : exitmonitor $r6
+org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z2 == 0 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.apache.zeppelin.notebook.Note.isRunningOrPending : if $z2 == 0 >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception
+org.apache.zeppelin.notebook.Note.isRunningOrPending : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.apache.zeppelin.notebook.Note.isRunningOrPending : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()] >>>>>>>> org.apache.zeppelin.notebook.Note.isRunningOrPending : $r9 := @caughtexception

@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.WebSecurityConfig.authenticationManagerBean : $r1 = specialinvoke r0.<org.springframework.security.config.'annotation'.web.configuration.WebSecurityConfigurerAdapter: org.springframework.security.authentication.AuthenticationManager authenticationManagerBean()>() >>>>>>>> de.htw.sdf.photoplatform.WebSecurityConfig.authenticationManagerBean : return $r1

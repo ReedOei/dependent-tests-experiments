@@ -1,0 +1,6 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.toString : $r1 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.toString : $r11 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String[] solrHttpUrls>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrShardsNo : $i0 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: int solrShardsNo>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrHttpUrls : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String[] solrHttpUrls>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getConnectionTimeout : $i0 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: int connectionTimeout>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrZkHost : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String solrZkHost>

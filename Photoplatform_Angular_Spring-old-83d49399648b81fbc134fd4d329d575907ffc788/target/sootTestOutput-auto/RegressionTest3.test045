@@ -1,0 +1,23 @@
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getUpdatedBy : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String updatedBy>
+de.htw.sdf.photoplatform.persistence.model.UserImage.setImage : r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.Image image> = r1
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : if r2 != null goto $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : return 0
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : r2 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.model.User.setPhotographerData : r0.<de.htw.sdf.photoplatform.persistence.model.User: de.htw.sdf.photoplatform.persistence.model.PhotographerData photographerData> = r1
+de.htw.sdf.photoplatform.persistence.model.UserImage.setOwner : r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.User owner> = r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setCreatedBy : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String createdBy> = r1
+de.htw.sdf.photoplatform.persistence.model.User.setAccountNonLocked : r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean accountNonLocked> = z0
+de.htw.sdf.photoplatform.persistence.model.User.getSecToken : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String secToken>
+de.htw.sdf.photoplatform.persistence.model.UserImage.setUser : r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.User user> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getSmallThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath>
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.manager.impl.ImageManagerImpl.addOwnerToImage : $r6 = r0.<de.htw.sdf.photoplatform.manager.impl.ImageManagerImpl: de.htw.sdf.photoplatform.repository.UserImageDAO userImageDAO>
+de.htw.sdf.photoplatform.manager.impl.ImageManagerImpl.addOwnerToImage : virtualinvoke $r4.<de.htw.sdf.photoplatform.persistence.model.UserImage: void setUser(de.htw.sdf.photoplatform.persistence.model.User)>(r2)
+de.htw.sdf.photoplatform.manager.impl.ImageManagerImpl.addOwnerToImage : virtualinvoke $r4.<de.htw.sdf.photoplatform.persistence.model.UserImage: void setOwner(de.htw.sdf.photoplatform.persistence.model.User)>(r2)
+de.htw.sdf.photoplatform.manager.impl.ImageManagerImpl.addOwnerToImage : $r4 = new de.htw.sdf.photoplatform.persistence.model.UserImage
+de.htw.sdf.photoplatform.manager.impl.ImageManagerImpl.addOwnerToImage : $r5 = virtualinvoke r2.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String getUsername()>()
+de.htw.sdf.photoplatform.manager.impl.ImageManagerImpl.addOwnerToImage : virtualinvoke $r4.<de.htw.sdf.photoplatform.persistence.model.UserImage: void setImage(de.htw.sdf.photoplatform.persistence.model.Image)>(r1)
+de.htw.sdf.photoplatform.persistence.model.User.isAdmin : $z0 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean isRoleIncluded(java.lang.String)>("ROLE_ADMIN")
+de.htw.sdf.photoplatform.persistence.model.User.getUserRoles : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List userRoles>
+de.htw.sdf.photoplatform.persistence.model.Image.toString : $r1 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.persistence.model.User.getUsername : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String email>

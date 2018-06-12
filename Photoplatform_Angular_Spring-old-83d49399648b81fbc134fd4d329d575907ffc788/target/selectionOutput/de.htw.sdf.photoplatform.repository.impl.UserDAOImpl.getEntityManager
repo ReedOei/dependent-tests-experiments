@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.getEntityManager : $r1 = specialinvoke r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager getEntityManager()>() >>>>>>>> de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.getEntityManager : return $r1

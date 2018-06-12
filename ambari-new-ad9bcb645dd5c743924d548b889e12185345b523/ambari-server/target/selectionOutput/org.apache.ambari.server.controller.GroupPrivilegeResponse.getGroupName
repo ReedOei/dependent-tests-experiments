@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.GroupPrivilegeResponse.getGroupName : $r1 = r0.<org.apache.ambari.server.controller.GroupPrivilegeResponse: java.lang.String groupName> >>>>>>>> org.apache.ambari.server.controller.GroupPrivilegeResponse.getGroupName : return $r1

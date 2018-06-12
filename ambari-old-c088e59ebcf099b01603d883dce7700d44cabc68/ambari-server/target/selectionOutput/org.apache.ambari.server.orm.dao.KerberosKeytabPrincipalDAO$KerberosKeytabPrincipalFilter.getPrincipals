@@ -1,0 +1,1 @@
+org.apache.ambari.server.orm.dao.KerberosKeytabPrincipalDAO$KerberosKeytabPrincipalFilter.getPrincipals : $r1 = r0.<org.apache.ambari.server.orm.dao.KerberosKeytabPrincipalDAO$KerberosKeytabPrincipalFilter: java.util.Collection principals> >>>>>>>> org.apache.ambari.server.orm.dao.KerberosKeytabPrincipalDAO$KerberosKeytabPrincipalFilter.getPrincipals : return $r1

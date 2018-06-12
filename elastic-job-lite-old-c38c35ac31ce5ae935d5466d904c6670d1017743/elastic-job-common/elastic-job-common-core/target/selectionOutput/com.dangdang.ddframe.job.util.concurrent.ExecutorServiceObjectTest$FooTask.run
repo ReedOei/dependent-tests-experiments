@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObjectTest$FooTask.run : staticinvoke <com.dangdang.ddframe.job.util.concurrent.BlockUtils: void sleep(long)>(1000L) >>>>>>>> com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObjectTest$FooTask.run : return

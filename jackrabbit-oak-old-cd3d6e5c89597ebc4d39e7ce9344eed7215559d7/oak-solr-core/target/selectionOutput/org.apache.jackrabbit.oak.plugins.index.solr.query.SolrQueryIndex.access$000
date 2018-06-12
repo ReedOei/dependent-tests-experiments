@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.access$000 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex: org.slf4j.Logger log> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.access$000 : return $r1

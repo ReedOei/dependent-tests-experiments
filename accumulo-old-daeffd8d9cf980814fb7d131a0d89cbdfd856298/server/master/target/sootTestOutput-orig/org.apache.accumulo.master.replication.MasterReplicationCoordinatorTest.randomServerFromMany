@@ -1,0 +1,6 @@
+org.apache.accumulo.master.replication.MasterReplicationCoordinator.getRandomTServer : $i0 = interfaceinvoke r1.<java.util.Set: int size()>()
+org.apache.accumulo.master.replication.MasterReplicationCoordinator.getRandomTServer : i1 = i1 + -1
+org.apache.accumulo.master.replication.MasterReplicationCoordinator.getRandomTServer : $r3 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.accumulo.master.replication.MasterReplicationCoordinator.getRandomTServer : interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.accumulo.master.replication.MasterReplicationCoordinator.getRandomTServer : r2 = interfaceinvoke r1.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.accumulo.master.replication.MasterReplicationCoordinator.getRandomTServer : $z0 = 1

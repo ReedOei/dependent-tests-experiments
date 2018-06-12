@@ -1,0 +1,1 @@
+org.apache.ambari.server.ldap.service.AmbariLdapConfigurationProvider.get : $r1 = virtualinvoke r0.<org.apache.ambari.server.ldap.service.AmbariLdapConfigurationProvider: org.apache.ambari.server.ldap.domain.AmbariLdapConfiguration get()>() >>>>>>>> org.apache.ambari.server.ldap.service.AmbariLdapConfigurationProvider.get : return $r1

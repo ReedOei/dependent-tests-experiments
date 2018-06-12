@@ -1,0 +1,1 @@
+org.apache.ambari.server.checks.MapReduce2JobHistoryStatePreservingCheckTest.access$100 : $r1 = r0.<org.apache.ambari.server.checks.MapReduce2JobHistoryStatePreservingCheckTest: org.apache.ambari.server.orm.dao.RepositoryVersionDAO m_repositoryVersionDao> >>>>>>>> org.apache.ambari.server.checks.MapReduce2JobHistoryStatePreservingCheckTest.access$100 : return $r1

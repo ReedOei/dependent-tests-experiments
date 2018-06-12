@@ -1,0 +1,2 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.getConnectTimeout : $i0 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess: int connectTimeout>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getInterpreterGroupName : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.lang.String interpreterGroupName>

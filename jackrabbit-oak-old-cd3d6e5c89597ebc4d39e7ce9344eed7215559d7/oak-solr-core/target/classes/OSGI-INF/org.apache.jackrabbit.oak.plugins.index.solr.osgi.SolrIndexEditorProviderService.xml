@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrIndexEditorProviderService">
+    <service servicefactory="false">
+        <provide interface="org.apache.jackrabbit.oak.plugins.index.IndexEditorProvider"/>
+    </service>
+    <reference name="solrServerProvider" interface="org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerProvider" cardinality="1..1" policy="static" bind="bindSolrServerProvider" unbind="unbindSolrServerProvider"/>
+    <reference name="oakSolrConfigurationProvider" interface="org.apache.jackrabbit.oak.plugins.index.solr.configuration.OakSolrConfigurationProvider" cardinality="1..1" policy="static" bind="bindOakSolrConfigurationProvider" unbind="unbindOakSolrConfigurationProvider"/>
+    <implementation class="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrIndexEditorProviderService"/>
+</scr:component>

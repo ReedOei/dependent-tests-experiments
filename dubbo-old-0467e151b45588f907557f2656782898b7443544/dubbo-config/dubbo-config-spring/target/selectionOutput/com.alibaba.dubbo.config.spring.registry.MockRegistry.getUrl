@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.registry.MockRegistry.getUrl : $r1 = r0.<com.alibaba.dubbo.config.spring.registry.MockRegistry: com.alibaba.dubbo.common.URL url> >>>>>>>> com.alibaba.dubbo.config.spring.registry.MockRegistry.getUrl : return $r1

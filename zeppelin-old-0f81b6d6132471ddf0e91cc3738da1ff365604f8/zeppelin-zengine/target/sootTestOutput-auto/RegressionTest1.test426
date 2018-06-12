@@ -1,0 +1,3 @@
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.toJson : $r1 = <org.apache.zeppelin.interpreter.InterpreterInfoSaving: com.google.gson.Gson gson>
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.fromJson : $r1 = <org.apache.zeppelin.interpreter.InterpreterInfoSaving: com.google.gson.Gson gson>
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.saveToFile : $r2 = newarray (java.nio.file.LinkOption)[0]

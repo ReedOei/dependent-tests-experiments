@@ -1,0 +1,2 @@
+org.apache.ambari.server.state.repository.VersionDefinitionXml.load : r4 = null
+org.apache.ambari.server.state.repository.VersionDefinitionXml.load : r4 = virtualinvoke r0.<java.net.URL: java.io.InputStream openStream()>()

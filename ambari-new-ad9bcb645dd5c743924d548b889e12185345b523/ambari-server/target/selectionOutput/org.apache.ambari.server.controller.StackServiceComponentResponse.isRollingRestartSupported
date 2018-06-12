@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.StackServiceComponentResponse.isRollingRestartSupported : $z0 = r0.<org.apache.ambari.server.controller.StackServiceComponentResponse: boolean rollingRestartSupported> >>>>>>>> org.apache.ambari.server.controller.StackServiceComponentResponse.isRollingRestartSupported : return $z0

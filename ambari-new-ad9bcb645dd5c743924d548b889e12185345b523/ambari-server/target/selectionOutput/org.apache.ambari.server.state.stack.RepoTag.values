@@ -1,0 +1,3 @@
+org.apache.ambari.server.state.stack.RepoTag.values : $r0 = <org.apache.ambari.server.state.stack.RepoTag: org.apache.ambari.server.state.stack.RepoTag[] $VALUES> >>>>>>>> org.apache.ambari.server.state.stack.RepoTag.values : $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Object clone()>()
+org.apache.ambari.server.state.stack.RepoTag.values : $r1 = virtualinvoke $r0.<java.lang.Object: java.lang.Object clone()>() >>>>>>>> org.apache.ambari.server.state.stack.RepoTag.values : $r2 = (org.apache.ambari.server.state.stack.RepoTag[]) $r1
+org.apache.ambari.server.state.stack.RepoTag.values : $r2 = (org.apache.ambari.server.state.stack.RepoTag[]) $r1 >>>>>>>> org.apache.ambari.server.state.stack.RepoTag.values : return $r2

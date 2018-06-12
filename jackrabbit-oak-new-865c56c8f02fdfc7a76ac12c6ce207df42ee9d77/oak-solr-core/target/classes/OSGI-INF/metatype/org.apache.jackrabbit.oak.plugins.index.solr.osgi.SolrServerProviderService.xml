@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/l10n/org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService">
+    <OCD id="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService" name="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.name" description="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.description">
+        <AD id="server.type" type="String" default="none" name="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.server.type.name" description="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.server.type.description">
+            <Option value="none" label="None"/>
+            <Option value="embedded" label="Embedded Solr"/>
+            <Option value="remote" label="Remote Solr"/>
+        </AD>
+    </OCD>
+    <Designate pid="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService">
+        <Object ocdref="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService"/>
+    </Designate>
+</metatype:MetaData>

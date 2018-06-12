@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ExtensionLinkResponse.getExtensionLinkResponseInfo : $r1 = r0.<org.apache.ambari.server.controller.ExtensionLinkResponse: org.apache.ambari.server.controller.ExtensionLinkResponse$ExtensionLinkResponseInfo extensionLinkResponseInfo> >>>>>>>> org.apache.ambari.server.controller.ExtensionLinkResponse.getExtensionLinkResponseInfo : return $r1

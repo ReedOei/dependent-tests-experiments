@@ -1,0 +1,2 @@
+org.apache.accumulo.master.state.TableStats.getLast : $r1 = r0.<org.apache.accumulo.master.state.TableStats: java.util.Map last>
+org.apache.accumulo.master.state.TableStats.lastScanFinished : $l0 = r0.<org.apache.accumulo.master.state.TableStats: long endScan>

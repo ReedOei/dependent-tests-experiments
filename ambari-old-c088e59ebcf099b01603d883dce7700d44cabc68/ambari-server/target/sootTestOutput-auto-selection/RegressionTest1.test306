@@ -1,0 +1,1 @@
+org.apache.ambari.server.api.handlers.ReadHandler.handleRequest : $r4 = interfaceinvoke r1.<org.apache.ambari.server.api.services.Request: org.apache.ambari.server.api.resources.ResourceInstance getResource()>()

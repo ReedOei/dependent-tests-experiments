@@ -1,0 +1,4 @@
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeralSequential
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithTime
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithTime
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperElectionServiceTest.assertContend

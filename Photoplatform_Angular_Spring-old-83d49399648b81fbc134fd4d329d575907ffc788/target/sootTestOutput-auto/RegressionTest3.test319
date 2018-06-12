@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange.setNewPassword : r0.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String newPassword> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange.setPasswordConfirm : r0.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String passwordConfirm> = r1

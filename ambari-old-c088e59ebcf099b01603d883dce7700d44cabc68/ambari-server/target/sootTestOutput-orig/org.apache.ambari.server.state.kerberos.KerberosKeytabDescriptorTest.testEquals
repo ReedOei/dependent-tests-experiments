@@ -1,0 +1,41 @@
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptorTest.createFromJSON : $r3 = virtualinvoke $r2.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptorTest$1: java.lang.reflect.Type getType()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptorTest.createFromJSON : $r5 = new org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptorTest.createFromJSON : $r1 = new com.google.gson.Gson
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.equals : if r1 != null goto (branch)
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.equals : if r1 != r0 goto $z0 = r1 instanceof org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.equals : $r4 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String getName()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.equals : $z0 = r1 instanceof org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.equals : r2 = (org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor) r1
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.equals : $r3 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String getName()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.getGroupName : $r1 = r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String groupName>
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setConfiguration : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String configuration> = r1
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.getGroupAccess : $r1 = r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String groupAccess>
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setGroupName : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String groupName> = r1
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setGroupAccess : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String groupAccess> = r1
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getStringValue : if r2 != null goto $r3 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getStringValue : r2 = staticinvoke <org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.Object getValue(java.util.Map,java.lang.String)>(r0, r1)
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setCachable : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: boolean cachable> = z0
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.getOwnerAccess : $r1 = r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String ownerAccess>
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.getConfiguration : $r1 = r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String configuration>
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptorTest.createFromMap : $r0 = new org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.getOwnerName : $r1 = r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String ownerName>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.setName : r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String name> = r1
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setOwnerAccess : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String ownerAccess> = r1
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $r4 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String getConfiguration()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $r14 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String getGroupName()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : if r1 != null goto (branch)
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $r10 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String getOwnerAccess()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $r5 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String getConfiguration()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $r3 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : r2 = (org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor) r1
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $r7 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String getOwnerName()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $r17 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String getGroupAccess()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : if r1 != r0 goto $r3 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $z0 = specialinvoke r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: boolean equals(java.lang.Object)>(r1)
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $r11 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String getOwnerAccess()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $r16 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String getGroupAccess()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $r13 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String getGroupName()>()
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.equals : $r8 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String getOwnerName()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getName : $r1 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String name>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getValue : if r0 == null goto $r2 = null
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setOwnerName : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String ownerName> = r1

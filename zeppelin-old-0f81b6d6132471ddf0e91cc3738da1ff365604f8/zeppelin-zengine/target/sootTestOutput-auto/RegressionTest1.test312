@@ -1,0 +1,3 @@
+org.apache.zeppelin.notebook.Folder.notifyRenamed : $r4 = r0.<org.apache.zeppelin.notebook.Folder: java.util.List listeners>
+org.apache.zeppelin.notebook.Folder.getChildren : $r1 = r0.<org.apache.zeppelin.notebook.Folder: java.util.Map children>
+org.apache.zeppelin.notebook.Folder.hasChild : $r1 = r0.<org.apache.zeppelin.notebook.Folder: java.util.Map children>

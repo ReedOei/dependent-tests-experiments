@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.context.annotation.consumer.ConsumerConfiguration.setDemoService : r0.<com.alibaba.dubbo.config.spring.context.'annotation'.consumer.ConsumerConfiguration: com.alibaba.dubbo.config.spring.api.DemoService demoService> = r1 >>>>>>>> com.alibaba.dubbo.config.spring.context.annotation.consumer.ConsumerConfiguration.setDemoService : return

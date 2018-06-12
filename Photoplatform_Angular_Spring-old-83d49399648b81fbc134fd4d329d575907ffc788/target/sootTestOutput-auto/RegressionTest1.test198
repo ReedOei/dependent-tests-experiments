@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setSwift : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String swift> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getCollections : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.util.List collections>
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setCompany : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String company> = r1

@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.getPlanDescription : $r3 = virtualinvoke r1.<java.lang.Object: java.lang.String toString()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.getNodeAggregator : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex: org.apache.jackrabbit.oak.spi.query.QueryIndex$NodeAggregator aggregator>

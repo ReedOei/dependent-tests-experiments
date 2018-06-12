@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $r5 = r2[1]
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : r2 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>(":")
+de.htw.sdf.photoplatform.persistence.model.User.setPhotographerData : r0.<de.htw.sdf.photoplatform.persistence.model.User: de.htw.sdf.photoplatform.persistence.model.PhotographerData photographerData> = r1

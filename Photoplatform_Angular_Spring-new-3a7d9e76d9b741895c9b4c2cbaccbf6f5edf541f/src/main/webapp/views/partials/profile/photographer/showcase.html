@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-2" ng-include src="'/views/partials/profile/sidebar.html'"></div>
+    <div class="col-md-9" ng-controller="PhotographerCtrl" ng-init="getShowcase()">
+        <div class="page-header">
+            <h2>Dein Showcase</h2>
+
+            <p>Hier sind alle deine Sammlungen, die öffnetlich sind. Andere Nutzer, die deinen Showcase betrachten, können aus diesen Sammlungen Bilder kaufen. Achte daher bitte darauf, dass du zu jedem Bild den richtigen Preis angegeben hast.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-2" ng-repeat="collection in showcase">
+                        <div class="thumbnail" id="collection-{{collection.id}}" ng-init="status = {editing : false }">
+                            <a href="/profile/photograph/collection/{{collection.id}}/{{collection.name}}">
+                                <img class="img-responsive img-rounded" src="{{collection.thumbnail.smallThumbPath == null &&  '/img/template.jpg' || collection.thumbnail.smallThumbPath}}" class="img-responsive">
+                            </a>
+
+                            <div class="caption">
+                                <h3><a href="/profile/photograph/collection/{{collection.id}}/{{collection.name}}">{{collection.name}}</a>
+                                </h3>
+
+                                <p>{{collection.description}}</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

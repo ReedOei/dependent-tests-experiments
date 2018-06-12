@@ -1,0 +1,239 @@
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTable : r3 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("CREATE TABLE `JOB_EXECUTION_LOG` (`id` VARCHAR(40) NOT NULL, `job_name` VARCHAR(100) NOT NULL, `task_id` VARCHAR(255) NOT NULL, `hostname` VARCHAR(255) NOT NULL, `ip` VARCHAR(50) NOT NULL, `sharding_item` INT NOT NULL, `execution_source` VARCHAR(20) NOT NULL, `failure_cause` VARCHAR(4000) NULL, `is_success` INT NOT NULL, `start_time` TIMESTAMP NULL, `complete_time` TIMESTAMP NULL, PRIMARY KEY (`id`));")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTable : interfaceinvoke r3.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTable : interfaceinvoke r3.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTable : if r3 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : interfaceinvoke r41.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r10 = staticinvoke <java.util.UUID: java.util.UUID randomUUID()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : r38 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String getOriginalTaskId()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r13 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String getTaskId()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : interfaceinvoke r41.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r22 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String getMessage()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r17 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: com.dangdang.ddframe.job.context.ExecutionType getExecutionType()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r9 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r19 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String getShardingItems()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r12 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String getJobName()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r14 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String getSlaveId()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r20 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: com.dangdang.ddframe.job.event.type.JobStatusTraceEvent$State getState()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r26 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String getTaskId()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : z1 = 1
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : z1 = 0
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : r40 = null
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : if r41 == null goto (branch)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r24 = new java.sql.Timestamp
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : r41 = interfaceinvoke r39.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("INSERT INTO `JOB_STATUS_TRACE_LOG` (`id`, `job_name`, `original_task_id`, `task_id`, `slave_id`, `source`, `execution_type`, `sharding_item`,  `state`, `message`, `creation_time`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r7 = <com.dangdang.ddframe.job.event.type.JobStatusTraceEvent$State: com.dangdang.ddframe.job.event.type.JobStatusTraceEvent$State TASK_STAGING>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : interfaceinvoke r41.<java.sql.PreparedStatement: void setString(int,java.lang.String)>(3, r38)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobStatusTraceEvent : $r15 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: com.dangdang.ddframe.job.event.type.JobStatusTraceEvent$Source getSource()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildCountSql : r6 = specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: java.lang.String buildWhere(java.lang.String,java.util.Collection,com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition)>(r1, r2, r3)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildCountSql : $r7 = new java.lang.StringBuilder
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildCountSql : $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r5)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildCountSql : r5 = specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: java.lang.String buildSelectCount(java.lang.String)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildCountSql : $r10 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.String toString()>()
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getExecutionType : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: com.dangdang.ddframe.job.context.ExecutionType executionType>
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.getId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.lang.String id>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : r4 = ""
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : return r4
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : $r2 = "JOB_EXECUTION_LOG"
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getTableTimeField : r4 = "start_time"
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.getCompleteTime : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.util.Date completeTime>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getShardingItems : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String shardingItems>
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.getIp : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.lang.String ip>
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.getShardingItem : $i0 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: int shardingItem>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildLimit : $r5 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" LIMIT ")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildLimit : if i1 <= 0 goto $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" LIMIT ")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildLimit : $r2 = new java.lang.StringBuilder
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildLimit : if i0 <= 0 goto $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" LIMIT ")
+com.dangdang.ddframe.job.event.type.JobExecutionEvent$ExecutionSource.valueOf : $r1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class "Lcom/dangdang/ddframe/job/event/type/JobExecutionEvent$ExecutionSource;", r0)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition.getEndTime : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: java.util.Date endTime>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildOrder : return ""
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildOrder : $z0 = staticinvoke <com.google.common.base.Strings: boolean isNullOrEmpty(java.lang.String)>(r2)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdAndStateIndex : interfaceinvoke r4.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdAndStateIndex : if r4 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdAndStateIndex : $r7 = new java.lang.StringBuilder
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdAndStateIndex : r4 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(r3)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdAndStateIndex : interfaceinvoke r4.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.event.rdb.DatabaseType$1.apply : $r2 = (com.dangdang.ddframe.job.event.rdb.DatabaseType) r1
+com.dangdang.ddframe.job.event.rdb.DatabaseType$1.apply : $r2 = staticinvoke <com.dangdang.ddframe.job.event.rdb.DatabaseType: java.lang.String access$000(com.dangdang.ddframe.job.event.rdb.DatabaseType)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.findJobExecutionEvents : $r2 = new com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Result
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Result.getRows : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Result: java.util.List rows>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildDataSql : r6 = specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: java.lang.String buildWhere(java.lang.String,java.util.Collection,com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition)>(r1, r2, r3)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildDataSql : $r9 = new java.lang.StringBuilder
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildDataSql : $r16 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.String toString()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildDataSql : $r10 = virtualinvoke r3.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: java.lang.String getSort()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildDataSql : $r12 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r5)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildDataSql : r5 = specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: java.lang.String buildSelect(java.lang.String,java.util.Collection)>(r1, r2)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildDataSql : $i0 = virtualinvoke r3.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: int getPage()>()
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getMessage : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String message>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition.getFields : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: java.util.Map fields>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getSource : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: com.dangdang.ddframe.job.event.type.JobStatusTraceEvent$Source source>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getEventCount : r26 = null
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getEventCount : i0 = 0
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getEventCount : $r10 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getEventCount : i0 = interfaceinvoke r29.<java.sql.ResultSet: int getInt(int)>(1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getEventCount : if r29 == null goto (branch)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getEventCount : r27 = specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: java.sql.PreparedStatement createCountPreparedStatement(java.sql.Connection,java.lang.String,java.util.Collection,com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition)>(r25, r1, r2, r3)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getEventCount : r29 = interfaceinvoke r27.<java.sql.PreparedStatement: java.sql.ResultSet executeQuery()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getEventCount : interfaceinvoke r29.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getEventCount : interfaceinvoke r29.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.getStartTime : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.util.Date startTime>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getState : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: com.dangdang.ddframe.job.event.type.JobStatusTraceEvent$State state>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.initStorage : $r2 = new com.dangdang.ddframe.job.event.type.JobExecutionEvent
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.initStorage : i1 = 1
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.initStorage : $r8 = <com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage storage>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.initStorage : $r11 = <com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage storage>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.initStorage : r1 = virtualinvoke $r2.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: com.dangdang.ddframe.job.event.type.JobExecutionEvent executionSuccess()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.initStorage : $r18 = <com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage storage>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.initStorage : $i0 = i1 % 2
+com.dangdang.ddframe.job.event.rdb.DatabaseType.access$000 : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.DatabaseType: java.lang.String productName>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.updateJobExecutionEventWhenSuccess : r25 = null
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.updateJobExecutionEventWhenSuccess : $r8 = new java.sql.Timestamp
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.updateJobExecutionEventWhenSuccess : z1 = 1
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.updateJobExecutionEventWhenSuccess : z1 = 0
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.updateJobExecutionEventWhenSuccess : interfaceinvoke r26.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.updateJobExecutionEventWhenSuccess : $z0 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: boolean isSuccess()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.updateJobExecutionEventWhenSuccess : $i1 = interfaceinvoke r26.<java.sql.PreparedStatement: int executeUpdate()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.updateJobExecutionEventWhenSuccess : r26 = interfaceinvoke r24.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("UPDATE `JOB_EXECUTION_LOG` SET `is_success` = ?, `complete_time` = ? WHERE id = ?")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.updateJobExecutionEventWhenSuccess : $r7 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.updateJobExecutionEventWhenSuccess : $r10 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.lang.String getId()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.updateJobExecutionEventWhenSuccess : interfaceinvoke r24.<java.sql.Connection: void close()>()
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getCreationTime : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.util.Date creationTime>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createJobExecutionTable(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : $r6 = newarray (java.lang.String)[1]
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : $z0 = interfaceinvoke r3.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : r2 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : if r3 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : interfaceinvoke r3.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : $r2 = new com.dangdang.ddframe.job.event.type.JobExecutionEvent
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : $r12 = new java.util.Date
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : virtualinvoke $r2.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: void setSuccess(boolean)>(1)
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : return $r2
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition.getPage : $i0 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: int page>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition.getSort : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: java.lang.String sort>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.getOriginalTaskId : $z0 = interfaceinvoke r35.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.getOriginalTaskId : $r10 = newarray (java.lang.Object)[3]
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.getOriginalTaskId : interfaceinvoke r35.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.getOriginalTaskId : r33 = interfaceinvoke r31.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(r2)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.getOriginalTaskId : r35 = interfaceinvoke r33.<java.sql.PreparedStatement: java.sql.ResultSet executeQuery()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.getOriginalTaskId : $r12 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.getOriginalTaskId : r32 = null
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : $r5 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : interfaceinvoke r1.<java.sql.Connection: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : if r1 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createJobStatusTraceTableAndIndexIfNeeded(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : $r4 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createJobExecutionTableAndIndexIfNeeded(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : $r6 = newarray (java.lang.String)[1]
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : $z0 = interfaceinvoke r3.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : r2 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createTaskIdIndexIfNeeded(java.sql.Connection,java.lang.String,java.lang.String)>(r1, "JOB_STATUS_TRACE_LOG", "TASK_ID_STATE_INDEX")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createJobStatusTraceTable(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : interfaceinvoke r3.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : if r3 == null goto specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createTaskIdIndexIfNeeded(java.sql.Connection,java.lang.String,java.lang.String)>(r1, "JOB_STATUS_TRACE_LOG", "TASK_ID_STATE_INDEX")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildSelectCount : $r2 = newarray (java.lang.Object)[1]
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.setCompleteTime : r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.util.Date completeTime> = r1
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : r5 = interfaceinvoke r4.<java.sql.DatabaseMetaData: java.sql.ResultSet getIndexInfo(java.lang.String,java.lang.String,java.lang.String,boolean,boolean)>(null, null, r2, 0, 0)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : interfaceinvoke r5.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : z1 = 0
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : $r8 = interfaceinvoke r5.<java.sql.ResultSet: java.lang.String getString(java.lang.String)>("INDEX_NAME")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createTaskIdAndStateIndex(java.sql.Connection,java.lang.String)>(r1, r2)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : r4 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : $z2 = interfaceinvoke r5.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : if z1 != 0 goto (branch)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : if r5 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition.getStartTime : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: java.util.Date startTime>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.createCountPreparedStatement : r5 = specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: java.lang.String buildCountSql(java.lang.String,java.util.Collection,com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition)>(r2, r3, r4)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.createCountPreparedStatement : return r6
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.createCountPreparedStatement : r6 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(r5)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.createCountPreparedStatement : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: void setBindValue(java.sql.PreparedStatement,java.util.Collection,com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition)>(r6, r3, r4)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildSelect : $r9 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" FROM ")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildSelect : goto [?= $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildSelect : $r13 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r5)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildSelect : virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("SELECT ")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildSelect : r4 = interfaceinvoke r2.<java.util.Collection: java.util.Iterator iterator()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildSelect : $r6 = new java.lang.StringBuilder
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildSelect : $i0 = virtualinvoke $r6.<java.lang.StringBuilder: int length()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildSelect : $r12 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getSlaveId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String slaveId>
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.getTaskId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.lang.String taskId>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.setBindValue : i4 = 1
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.setBindValue : $r7 = virtualinvoke r3.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: java.util.Map getFields()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.setBindValue : $r9 = new java.sql.Timestamp
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.setBindValue : $i1 = i4
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition.getPerPage : $i0 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: int perPage>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : r30 = interfaceinvoke r28.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("INSERT INTO `JOB_EXECUTION_LOG` (`id`, `job_name`, `task_id`, `hostname`, `ip`, `sharding_item`, `execution_source`, `is_success`, `start_time`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : $r11 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.lang.String getHostname()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : $z0 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: boolean isSuccess()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : $i0 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: int getShardingItem()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : $r15 = new java.sql.Timestamp
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : if r30 == null goto (branch)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : z3 = 1
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : z3 = 0
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : $r7 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : $r8 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.lang.String getId()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : interfaceinvoke r30.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : $r9 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.lang.String getJobName()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : $r10 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.lang.String getTaskId()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : $r12 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.lang.String getIp()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : interfaceinvoke r28.<java.sql.Connection: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : $r13 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: com.dangdang.ddframe.job.event.type.JobExecutionEvent$ExecutionSource getSource()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : interfaceinvoke r30.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.insertJobExecutionEvent : r29 = null
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.createDataPreparedStatement : return r6
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.createDataPreparedStatement : r6 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(r5)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.createDataPreparedStatement : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: void setBindValue(java.sql.PreparedStatement,java.util.Collection,com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition)>(r6, r3, r4)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.createDataPreparedStatement : r5 = specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: java.lang.String buildDataSql(java.lang.String,java.util.Collection,com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition)>(r2, r3, r4)
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.getSource : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: com.dangdang.ddframe.job.event.type.JobExecutionEvent$ExecutionSource source>
+com.dangdang.ddframe.job.event.rdb.DatabaseType.values : $r0 = <com.dangdang.ddframe.job.event.rdb.DatabaseType: com.dangdang.ddframe.job.event.rdb.DatabaseType[] $VALUES>
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r5 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r8 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildWhere : $r17 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" AND ")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildWhere : $r13 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" AND ")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildWhere : $r10 = virtualinvoke r3.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: java.util.Map getFields()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildWhere : virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" WHERE 1=1")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildWhere : $r8 = new java.lang.StringBuilder
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.buildWhere : $r12 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.String toString()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Result.getTotal : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Result: java.lang.Integer total>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getJobName : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String jobName>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getTaskId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String taskId>
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.getJobName : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.lang.String jobName>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getOriginalTaskId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String originalTaskId>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : $r23 = interfaceinvoke r46.<java.sql.ResultSet: java.sql.Timestamp getTimestamp(int)>(8)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : $r17 = interfaceinvoke r46.<java.sql.ResultSet: java.lang.String getString(int)>(5)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : $r48 = null
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : $r9 = new java.util.LinkedList
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : interfaceinvoke $r9.<java.util.List: boolean add(java.lang.Object)>($r12)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : if r46 == null goto (branch)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : $r10 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r46.<java.sql.ResultSet: boolean next()>()", "com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents")]
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : interfaceinvoke r46.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : $r11 = <com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: java.util.List FIELDS_JOB_EXECUTION_LOG>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : r43 = null
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : interfaceinvoke r42.<java.sql.Connection: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : r46 = interfaceinvoke r44.<java.sql.PreparedStatement: java.sql.ResultSet executeQuery()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : $z0 = interfaceinvoke r46.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getJobExecutionEvents : $r12 = new com.dangdang.ddframe.job.event.type.JobExecutionEvent
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobExecutionEvent : $z3 = specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: boolean insertJobExecutionEvent(com.dangdang.ddframe.job.event.type.JobExecutionEvent)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobExecutionEvent : $r2 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.util.Date getCompleteTime()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobExecutionEvent : $z2 = specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: boolean updateJobExecutionEventWhenSuccess(com.dangdang.ddframe.job.event.type.JobExecutionEvent)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.addJobExecutionEvent : $z0 = virtualinvoke r1.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: boolean isSuccess()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTable : interfaceinvoke r3.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTable : interfaceinvoke r3.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTable : if r3 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTable : r3 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("CREATE TABLE `JOB_STATUS_TRACE_LOG` (`id` VARCHAR(40) NOT NULL, `job_name` VARCHAR(100) NOT NULL, `original_task_id` VARCHAR(255) NOT NULL, `task_id` VARCHAR(255) NOT NULL, `slave_id` VARCHAR(50) NOT NULL, `source` VARCHAR(50) NOT NULL, `execution_type` VARCHAR(20) NOT NULL, `sharding_item` VARCHAR(100) NOT NULL, `state` VARCHAR(20) NOT NULL, `message` VARCHAR(4000) NULL, `creation_time` TIMESTAMP NULL, PRIMARY KEY (`id`));")
+com.dangdang.ddframe.job.event.rdb.DatabaseType.valueFrom : $r11 = virtualinvoke r1.<com.google.common.base.Optional: java.lang.Object get()>()
+com.dangdang.ddframe.job.event.rdb.DatabaseType.valueFrom : $z0 = virtualinvoke r1.<com.google.common.base.Optional: boolean isPresent()>()
+com.dangdang.ddframe.job.event.rdb.DatabaseType.valueFrom : $r2 = staticinvoke <com.dangdang.ddframe.job.event.rdb.DatabaseType: com.dangdang.ddframe.job.event.rdb.DatabaseType[] values()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.setUpClass : $r2 = class "Lorg/h2/Driver;"
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.setUpClass : virtualinvoke $r1.<org.apache.commons.dbcp.BasicDataSource: void setUrl(java.lang.String)>("jdbc:h2:mem:")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.setUpClass : staticinvoke <com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest: void initStorage()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.setUpClass : $r1 = new org.apache.commons.dbcp.BasicDataSource
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.setUpClass : $r4 = new com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.setUpClass : $r5 = new com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.setUpClass : virtualinvoke $r1.<org.apache.commons.dbcp.BasicDataSource: void setPassword(java.lang.String)>("")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.setUpClass : virtualinvoke $r1.<org.apache.commons.dbcp.BasicDataSource: void setUsername(java.lang.String)>("sa")
+com.dangdang.ddframe.job.util.env.IpUtils.getHostName : $r1 = staticinvoke <java.net.InetAddress: java.net.InetAddress getLocalHost()>()
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.getHostname : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.lang.String hostname>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.truncateString : $z0 = staticinvoke <com.google.common.base.Strings: boolean isNullOrEmpty(java.lang.String)>(r1)
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.setSuccess : r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: boolean success> = z0
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.isSuccess : $z0 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: boolean success>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition.getOrder : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Condition: java.lang.String order>

@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewResponse.getViewInfo : $r1 = r0.<org.apache.ambari.server.controller.ViewResponse: org.apache.ambari.server.controller.ViewResponse$ViewInfo viewInfo> >>>>>>>> org.apache.ambari.server.controller.ViewResponse.getViewInfo : return $r1

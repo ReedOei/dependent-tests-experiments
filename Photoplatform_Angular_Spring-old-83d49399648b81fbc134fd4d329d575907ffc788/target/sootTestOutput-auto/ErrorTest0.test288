@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.webservice.controller.AuthorizationController.getAuthenticatedUser : $r3 = interfaceinvoke r1.<org.springframework.security.core.Authentication: java.lang.Object getPrincipal()>()
+de.htw.sdf.photoplatform.webservice.controller.AuthorizationController.getAuthenticatedUser : $r2 = staticinvoke <org.springframework.security.core.context.SecurityContextHolder: org.springframework.security.core.context.SecurityContext getContext()>()

@@ -1,0 +1,7 @@
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if z0 == 0 >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r19 = r0
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r19 = r0 >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $r6 = new java.lang.ProcessBuilder
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $r6 = new java.lang.ProcessBuilder >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : specialinvoke $r6.<java.lang.ProcessBuilder: void <init>(java.lang.String[])>(r19)
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : specialinvoke $r6.<java.lang.ProcessBuilder: void <init>(java.lang.String[])>(r19) >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if r1 == null
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if r1 == null >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $z1 = <org.apache.ambari.server.utils.ShellCommandUtil: boolean WINDOWS>
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $z1 = <org.apache.ambari.server.utils.ShellCommandUtil: boolean WINDOWS> >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if $z1 == 0
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if $z1 == 0 >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r22 = virtualinvoke $r6.<java.lang.ProcessBuilder: java.lang.Process start()>()

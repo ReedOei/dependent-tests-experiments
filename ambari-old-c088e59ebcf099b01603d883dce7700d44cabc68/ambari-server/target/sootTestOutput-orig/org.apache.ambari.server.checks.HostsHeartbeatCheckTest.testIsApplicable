@@ -1,0 +1,30 @@
+org.apache.ambari.server.controller.PrereqCheckRequest.setSourceStackId : r0.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.state.StackId m_sourceStackId> = r1
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if r2 == null goto r1.<org.apache.ambari.server.state.StackId: java.lang.String stackName> = ""
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $r8 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(0, i0)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i1 = virtualinvoke r2.<java.lang.String: int length()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : i0 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(45)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if i0 == -1 goto $r3 = new java.lang.RuntimeException
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $z0 = virtualinvoke r2.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i3 = i0 + 1
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : r3 = interfaceinvoke r2.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : $r5 = newarray (org.apache.ambari.server.checks.AbstractCheckDescriptor$CheckQualification)[2]
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : $r9 = virtualinvoke r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor: java.util.List getQualifications()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : $r8 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : $r10 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : $z2 = interfaceinvoke r4.<org.apache.ambari.server.checks.AbstractCheckDescriptor$CheckQualification: boolean isApplicable(org.apache.ambari.server.controller.PrereqCheckRequest)>(r1)
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : goto [?= $z1 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : $r6 = r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification: java.lang.Class m_checkClass>
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : $z1 = staticinvoke <org.apache.commons.lang.ArrayUtils: boolean contains(java.lang.Object[],java.lang.Object)>(r5, r3)
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : r3 = virtualinvoke r2.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: org.apache.ambari.server.state.RepositoryType getType()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : $z0 = staticinvoke <org.apache.commons.lang.ArrayUtils: boolean isEmpty(java.lang.Object[])>(r5)
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : return 1
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : if null != r4 goto r5 = interfaceinvoke r4.<org.apache.ambari.server.checks.UpgradeCheck: org.apache.ambari.server.state.RepositoryType[] orchestration()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : r5 = interfaceinvoke r4.<org.apache.ambari.server.checks.UpgradeCheck: org.apache.ambari.server.state.RepositoryType[] orchestration()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : r2 = virtualinvoke r1.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity getTargetRepositoryVersion()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getQualifications : $r1 = staticinvoke <java.util.Collections: java.util.List emptyList()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getApplicableServices : $r1 = staticinvoke <java.util.Collections: java.util.Set emptySet()>()
+org.apache.ambari.server.controller.PrereqCheckRequest.getTargetRepositoryVersion : $r1 = r0.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity m_targetRepositoryVersion>
+org.apache.ambari.server.controller.PrereqCheckRequest.setTargetRepositoryVersion : r0.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity m_targetRepositoryVersion> = r1
+org.apache.ambari.server.checks.AbstractCheckDescriptor$ServiceQualification.isApplicable : $z0 = interfaceinvoke r2.<java.util.Set: boolean isEmpty()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor$ServiceQualification.isApplicable : return 1
+org.apache.ambari.server.checks.AbstractCheckDescriptor$ServiceQualification.isApplicable : $r6 = r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor$ServiceQualification: org.apache.ambari.server.checks.AbstractCheckDescriptor this$0>

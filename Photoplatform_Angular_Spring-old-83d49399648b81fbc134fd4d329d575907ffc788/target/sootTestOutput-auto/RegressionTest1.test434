@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getIban : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String iban>
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setPhone : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String phone> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setHomepage : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String homepage> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getCollections : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.util.List collections>

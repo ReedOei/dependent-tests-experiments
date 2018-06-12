@@ -1,0 +1,8 @@
+org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties.getAuthToLocalRules : $r1 = r0.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: java.lang.String authToLocalRules>
+org.apache.ambari.server.security.authentication.kerberos.AmbariAuthToLocalUserDetailsService.loadUserByUsername : $r3 = r0.<org.apache.ambari.server.security.authentication.kerberos.AmbariAuthToLocalUserDetailsService: java.lang.String authToLocalRules>
+org.apache.ambari.server.security.authentication.kerberos.AmbariAuthToLocalUserDetailsService.loadUserByUsername : exitmonitor class "Lorg/apache/hadoop/security/authentication/util/KerberosName;"
+org.apache.ambari.server.security.authentication.kerberos.AmbariAuthToLocalUserDetailsService.loadUserByUsername : entermonitor class "Lorg/apache/hadoop/security/authentication/util/KerberosName;"
+org.apache.ambari.server.security.authentication.kerberos.AmbariAuthToLocalUserDetailsService.loadUserByUsername : $r11 = newarray (java.lang.Object)[2]
+org.apache.ambari.server.security.authentication.kerberos.AmbariAuthToLocalUserDetailsService.loadUserByUsername : $r4 = new org.apache.hadoop.security.authentication.util.KerberosName
+org.apache.ambari.server.security.authentication.kerberos.AmbariAuthToLocalUserDetailsService.loadUserByUsername : $r13 = <org.apache.ambari.server.security.authentication.kerberos.AmbariAuthToLocalUserDetailsService: org.slf4j.Logger LOG>
+org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties.getOrderedUserTypes : $r1 = r0.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: java.util.List orderedUserTypes>

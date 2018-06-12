@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ServiceComponentResponse.getDesiredVersion : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentResponse: java.lang.String desiredVersion> >>>>>>>> org.apache.ambari.server.controller.ServiceComponentResponse.getDesiredVersion : return $r1

@@ -1,0 +1,1 @@
+org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosKeytab.getOwnerAccess : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosKeytab: java.lang.String ownerAccess> >>>>>>>> org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosKeytab.getOwnerAccess : return $r1

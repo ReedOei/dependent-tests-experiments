@@ -1,0 +1,2 @@
+org.apache.ambari.server.state.stack.RepoUrlInfoCallable.addStack : $r2 = r0.<org.apache.ambari.server.state.stack.RepoUrlInfoCallable: java.util.Set m_stacks> >>>>>>>> org.apache.ambari.server.state.stack.RepoUrlInfoCallable.addStack : interfaceinvoke $r2.<java.util.Set: boolean add(java.lang.Object)>(r1)
+org.apache.ambari.server.state.stack.RepoUrlInfoCallable.addStack : interfaceinvoke $r2.<java.util.Set: boolean add(java.lang.Object)>(r1) >>>>>>>> org.apache.ambari.server.state.stack.RepoUrlInfoCallable.addStack : return

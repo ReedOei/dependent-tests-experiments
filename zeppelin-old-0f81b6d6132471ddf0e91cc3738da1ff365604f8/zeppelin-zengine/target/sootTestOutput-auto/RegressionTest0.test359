@@ -1,0 +1,2 @@
+org.apache.zeppelin.ticket.TicketContainer.isValid : $r4 = "anonymous"
+org.apache.zeppelin.ticket.TicketContainer.isValid : $r5 = r0.<org.apache.zeppelin.ticket.TicketContainer: java.util.Map sessions>

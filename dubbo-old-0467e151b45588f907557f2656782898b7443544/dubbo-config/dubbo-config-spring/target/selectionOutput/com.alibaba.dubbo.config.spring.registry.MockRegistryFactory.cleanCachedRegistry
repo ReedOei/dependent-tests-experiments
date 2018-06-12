@@ -1,0 +1,2 @@
+com.alibaba.dubbo.config.spring.registry.MockRegistryFactory.cleanCachedRegistry : $r0 = <com.alibaba.dubbo.config.spring.registry.MockRegistryFactory: java.util.Map registries> >>>>>>>> com.alibaba.dubbo.config.spring.registry.MockRegistryFactory.cleanCachedRegistry : interfaceinvoke $r0.<java.util.Map: void clear()>()
+com.alibaba.dubbo.config.spring.registry.MockRegistryFactory.cleanCachedRegistry : interfaceinvoke $r0.<java.util.Map: void clear()>() >>>>>>>> com.alibaba.dubbo.config.spring.registry.MockRegistryFactory.cleanCachedRegistry : return

@@ -1,0 +1,5 @@
+com.alibaba.dubbo.config.spring.util.BeanFactoryUtils.getBeans : r3 = staticinvoke <org.springframework.beans.factory.BeanFactoryUtils: java.lang.String[] beanNamesForTypeIncludingAncestors(org.springframework.beans.factory.ListableBeanFactory,java.lang.Class)>(r0, r2)
+com.alibaba.dubbo.config.spring.util.BeanFactoryUtils.getBeans : $r7 = new java.util.ArrayList
+com.alibaba.dubbo.config.spring.util.BeanFactoryUtils.getBeans : $z0 = staticinvoke <com.alibaba.dubbo.common.utils.StringUtils: boolean isContains(java.lang.String[],java.lang.String)>(r3, r6)
+com.alibaba.dubbo.config.spring.util.BeanFactoryUtils.getBeans : i0 = lengthof r1
+com.alibaba.dubbo.config.spring.util.BeanFactoryUtils.getBeans : r6 = r1[i2]

@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ClusterResponse.getClusterId : $l0 = r0.<org.apache.ambari.server.controller.ClusterResponse: long clusterId> >>>>>>>> org.apache.ambari.server.controller.ClusterResponse.getClusterId : return $l0

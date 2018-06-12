@@ -1,0 +1,7 @@
+de.htw.sdf.photoplatform.Application.multipartConfigElement : $r2 = new org.springframework.boot.context.embedded.MultiPartConfigFactory
+de.htw.sdf.photoplatform.Application.multipartConfigElement : virtualinvoke $r2.<org.springframework.boot.context.embedded.MultiPartConfigFactory: void setMaxFileSize(java.lang.String)>("128MB")
+de.htw.sdf.photoplatform.Application.multipartConfigElement : $r3 = virtualinvoke $r2.<org.springframework.boot.context.embedded.MultiPartConfigFactory: javax.servlet.MultipartConfigElement createMultipartConfig()>()
+de.htw.sdf.photoplatform.Application.multipartConfigElement : virtualinvoke $r2.<org.springframework.boot.context.embedded.MultiPartConfigFactory: void setMaxRequestSize(java.lang.String)>("128MB")
+de.htw.sdf.photoplatform.Application.localeResolver : $r3 = <java.util.Locale: java.util.Locale GERMAN>
+de.htw.sdf.photoplatform.Application.localeResolver : $r2 = new org.springframework.web.servlet.i18n.SessionLocaleResolver
+de.htw.sdf.photoplatform.Application.localeResolver : return $r2

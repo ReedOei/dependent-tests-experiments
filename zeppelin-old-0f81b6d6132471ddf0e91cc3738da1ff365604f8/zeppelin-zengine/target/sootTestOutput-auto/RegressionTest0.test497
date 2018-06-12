@@ -1,0 +1,27 @@
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setProperties : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setProperties : return r0
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.add : $r5 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.add : exitmonitor $r5
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.add : $r6 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.add : $r11 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.add : $r7 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.InterpreterSetting.access$702 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterRunner interpreterRunner> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterDir : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterDir : return r0
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.clear : $r5 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.clear : $r4 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.clear : exitmonitor $r4
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.getInterpreterContextRunnerPool : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess: org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool interpreterContextRunnerPool>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.addAll : $r5 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.addAll : exitmonitor $r5
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.addAll : $r6 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.addAll : $r11 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.addAll : $r7 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterRunner : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterRunner : return r0
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.run : $r8 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.run : $r9 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.run : exitmonitor $r8
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.run : if r4 == null goto $r11 = new java.lang.RuntimeException
+org.apache.zeppelin.interpreter.InterpreterSetting.access$602 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String interpreterDir> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.access$402 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.Object properties> = r1

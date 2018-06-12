@@ -1,0 +1,114 @@
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $z0 = interfaceinvoke r0.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.collections.PredicateUtils.fromMap : goto [?= (branch)]
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $i0 = interfaceinvoke r0.<java.util.Map: int size()>()
+org.apache.ambari.server.collections.PredicateUtils.fromMap : if r0 == null goto return r30
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $r12 = newarray (java.lang.Class)[1]
+org.apache.ambari.server.collections.PredicateUtils.fromMap : if r31 != null goto $r13 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $r11 = interfaceinvoke r1.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.collections.PredicateUtils.fromMap : goto [?= return r30]
+org.apache.ambari.server.collections.PredicateUtils.fromMap : if r3 != null goto $r12 = newarray (java.lang.Class)[1]
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $r8 = interfaceinvoke r0.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.collections.PredicateUtils.fromMap : r3 = staticinvoke <org.apache.ambari.server.collections.functors.PredicateClassFactory: java.lang.Class getPredicateClass(java.lang.String)>(r2)
+org.apache.ambari.server.collections.PredicateUtils.fromMap : r30 = null
+org.apache.ambari.server.collections.PredicateUtils.fromMap : $r13 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.collections.functors.OrPredicate.fromMap : $i0 = interfaceinvoke r2.<java.util.Collection: int size()>()
+org.apache.ambari.server.collections.functors.OrPredicate.fromMap : $z2 = r5 instanceof java.util.Map
+org.apache.ambari.server.collections.functors.OrPredicate.fromMap : $r22 = new org.apache.ambari.server.collections.functors.OrPredicate
+org.apache.ambari.server.collections.functors.OrPredicate.fromMap : if r0 != null goto $r28 = interfaceinvoke r0.<java.util.Map: java.lang.Object get(java.lang.Object)>("or")
+org.apache.ambari.server.collections.functors.OrPredicate.fromMap : $z0 = $r28 instanceof java.util.Collection
+org.apache.ambari.server.collections.functors.OrPredicate.fromMap : r3 = interfaceinvoke r2.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.collections.functors.OrPredicate.fromMap : r4 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.collections.functors.OrPredicate.fromMap : $z1 = r4 instanceof java.util.Map
+org.apache.ambari.server.collections.functors.OrPredicate.fromMap : r5 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.collections.functors.OrPredicate.fromMap : r2 = (java.util.Collection) $r28
+org.apache.ambari.server.collections.functors.OrPredicate.fromMap : if $r28 != null goto $z0 = $r28 instanceof java.util.Collection
+org.apache.ambari.server.collections.functors.OperationPredicate.getContextKey : $r1 = r0.<org.apache.ambari.server.collections.functors.OperationPredicate: org.apache.ambari.server.collections.functors.ContextTransformer transformer>
+org.apache.ambari.server.collections.PredicateUtilsTest.createMap : $r3 = newarray (java.util.Map)[2]
+org.apache.ambari.server.collections.PredicateUtilsTest.createMap : $r5 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>($r4)
+org.apache.ambari.server.collections.PredicateUtilsTest.createMap : $r16 = staticinvoke <java.util.Collections: java.util.Map singletonMap(java.lang.Object,java.lang.Object)>("not", r2)
+org.apache.ambari.server.collections.PredicateUtilsTest.createMap : $r10 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>($r3)
+org.apache.ambari.server.collections.PredicateUtilsTest.createMap : r2 = staticinvoke <java.util.Collections: java.util.Map singletonMap(java.lang.Object,java.lang.Object)>("or", $r15)
+org.apache.ambari.server.collections.PredicateUtilsTest.createMap : $r13 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>($r12)
+org.apache.ambari.server.collections.PredicateUtilsTest.createMap : r1 = staticinvoke <java.util.Collections: java.util.Map singletonMap(java.lang.Object,java.lang.Object)>("and", $r10)
+org.apache.ambari.server.collections.PredicateUtilsTest.createMap : $r15 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>($r11)
+org.apache.ambari.server.collections.PredicateUtilsTest.createMap : $r8 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>($r7)
+org.apache.ambari.server.collections.PredicateUtilsTest.createMap : $r11 = newarray (java.util.Map)[2]
+org.apache.ambari.server.collections.functors.AndPredicate.getPredicates : $r1 = specialinvoke r0.<org.apache.ambari.server.collections.functors.DelegatedMultiplePredicateContainer: org.apache.commons.collections.Predicate[] getPredicates()>()
+org.apache.ambari.server.collections.functors.DelegatedSinglePredicateContainer.getPredicates : $r1 = r0.<org.apache.ambari.server.collections.functors.DelegatedSinglePredicateContainer: org.apache.commons.collections.functors.PredicateDecorator delegate>
+org.apache.ambari.server.collections.functors.EqualsPredicate.getContextKey : $r1 = specialinvoke r0.<org.apache.ambari.server.collections.functors.OperationPredicate: java.lang.String getContextKey()>()
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : $i0 = interfaceinvoke r2.<java.util.Collection: int size()>()
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : r3 = interfaceinvoke r2.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : r4 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : r5 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : $r22 = new org.apache.ambari.server.collections.functors.ContainsPredicate
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : if $r27 != null goto $z0 = $r27 instanceof java.util.Collection
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : r2 = (java.util.Collection) $r27
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : $z1 = r4 instanceof java.lang.String
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : $z2 = r5 instanceof java.lang.String
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : if r0 != null goto $r27 = interfaceinvoke r0.<java.util.Map: java.lang.Object get(java.lang.Object)>("contains")
+org.apache.ambari.server.collections.functors.ContainsPredicate.fromMap : $z0 = $r27 instanceof java.util.Collection
+org.apache.ambari.server.collections.functors.DelegatedMultiplePredicateContainer.getPredicates : $r1 = r0.<org.apache.ambari.server.collections.functors.DelegatedMultiplePredicateContainer: org.apache.commons.collections.functors.PredicateDecorator delegate>
+org.apache.ambari.server.collections.functors.NotPredicate.fromMap : if $r7 != null goto $z0 = $r7 instanceof java.util.Map
+org.apache.ambari.server.collections.functors.NotPredicate.fromMap : if r0 != null goto $r7 = interfaceinvoke r0.<java.util.Map: java.lang.Object get(java.lang.Object)>("not")
+org.apache.ambari.server.collections.functors.NotPredicate.fromMap : $z0 = $r7 instanceof java.util.Map
+org.apache.ambari.server.collections.functors.NotPredicate.fromMap : $r3 = new org.apache.ambari.server.collections.functors.NotPredicate
+org.apache.ambari.server.collections.functors.ContainsPredicate.getValue : $r1 = r0.<org.apache.ambari.server.collections.functors.ContainsPredicate: java.lang.String value>
+org.apache.ambari.server.collections.functors.AndPredicate.fromMap : $r22 = new org.apache.ambari.server.collections.functors.AndPredicate
+org.apache.ambari.server.collections.functors.AndPredicate.fromMap : $i0 = interfaceinvoke r2.<java.util.Collection: int size()>()
+org.apache.ambari.server.collections.functors.AndPredicate.fromMap : $z2 = r5 instanceof java.util.Map
+org.apache.ambari.server.collections.functors.AndPredicate.fromMap : $z0 = $r28 instanceof java.util.Collection
+org.apache.ambari.server.collections.functors.AndPredicate.fromMap : r3 = interfaceinvoke r2.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.collections.functors.AndPredicate.fromMap : r4 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.collections.functors.AndPredicate.fromMap : $z1 = r4 instanceof java.util.Map
+org.apache.ambari.server.collections.functors.AndPredicate.fromMap : r5 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.collections.functors.AndPredicate.fromMap : r2 = (java.util.Collection) $r28
+org.apache.ambari.server.collections.functors.AndPredicate.fromMap : if r0 != null goto $r28 = interfaceinvoke r0.<java.util.Map: java.lang.Object get(java.lang.Object)>("and")
+org.apache.ambari.server.collections.functors.AndPredicate.fromMap : if $r28 != null goto $z0 = $r28 instanceof java.util.Collection
+org.apache.ambari.server.collections.functors.PredicateClassFactory.getPredicateClass : if r0 != null goto $r1 = <org.apache.ambari.server.collections.functors.PredicateClassFactory: java.util.Map NAME_TO_CLASS>
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r31 = r53[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r37 = r53[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r12 = r52[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r34 = r53[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r2 = virtualinvoke r1.<org.apache.ambari.server.collections.Predicate: java.lang.String getName()>()
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r3 = (org.apache.ambari.server.collections.functors.NotPredicate) r1
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r5 = r51[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r41 = r53[1]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $i2 = lengthof r53
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $z0 = r1 instanceof org.apache.ambari.server.collections.functors.NotPredicate
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r22 = r52[1]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : staticinvoke <junit.framework.Assert: void assertNotNull(java.lang.Object)>(r1)
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r9 = r51[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r11 = r52[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r27 = r52[1]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r6 = r51[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r24 = r52[1]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $i1 = lengthof r52
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r29 = r53[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r23 = r52[1]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r45 = r53[1]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r4 = r51[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r42 = r53[1]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r13 = r52[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r30 = r53[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r19 = r52[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r40 = r53[1]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r16 = r52[0]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $r48 = r53[1]
+org.apache.ambari.server.collections.PredicateUtilsTest.verifyPredicate : $i0 = lengthof r51
+org.apache.ambari.server.collections.functors.EqualsPredicate.fromMap : $i0 = interfaceinvoke r2.<java.util.Collection: int size()>()
+org.apache.ambari.server.collections.functors.EqualsPredicate.fromMap : r3 = interfaceinvoke r2.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.collections.functors.EqualsPredicate.fromMap : r4 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.collections.functors.EqualsPredicate.fromMap : r5 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.collections.functors.EqualsPredicate.fromMap : if $r27 != null goto $z0 = $r27 instanceof java.util.Collection
+org.apache.ambari.server.collections.functors.EqualsPredicate.fromMap : r2 = (java.util.Collection) $r27
+org.apache.ambari.server.collections.functors.EqualsPredicate.fromMap : $z1 = r4 instanceof java.lang.String
+org.apache.ambari.server.collections.functors.EqualsPredicate.fromMap : $z2 = r5 instanceof java.lang.String
+org.apache.ambari.server.collections.functors.EqualsPredicate.fromMap : $r22 = new org.apache.ambari.server.collections.functors.EqualsPredicate
+org.apache.ambari.server.collections.functors.EqualsPredicate.fromMap : if r0 != null goto $r27 = interfaceinvoke r0.<java.util.Map: java.lang.Object get(java.lang.Object)>("equals")
+org.apache.ambari.server.collections.functors.EqualsPredicate.fromMap : $z0 = $r27 instanceof java.util.Collection
+org.apache.ambari.server.collections.functors.OrPredicate.getPredicates : $r1 = specialinvoke r0.<org.apache.ambari.server.collections.functors.DelegatedMultiplePredicateContainer: org.apache.commons.collections.Predicate[] getPredicates()>()
+org.apache.ambari.server.collections.functors.ContextTransformer.getKey : $r1 = r0.<org.apache.ambari.server.collections.functors.ContextTransformer: java.lang.String key>
+org.apache.ambari.server.collections.Predicate.getName : $r1 = r0.<org.apache.ambari.server.collections.Predicate: java.lang.String name>
+org.apache.ambari.server.collections.functors.ContainsPredicate.getContextKey : $r1 = specialinvoke r0.<org.apache.ambari.server.collections.functors.OperationPredicate: java.lang.String getContextKey()>()
+org.apache.ambari.server.collections.functors.NotPredicate.getPredicates : $r1 = specialinvoke r0.<org.apache.ambari.server.collections.functors.DelegatedSinglePredicateContainer: org.apache.commons.collections.Predicate[] getPredicates()>()
+org.apache.ambari.server.collections.functors.EqualsPredicate.getValue : $r2 = r0.<org.apache.ambari.server.collections.functors.EqualsPredicate: org.apache.commons.collections.functors.EqualPredicate delegate>

@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getUsedProperties : $r1 = <org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration: java.util.Collection usedProperties> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getUsedProperties : return $r1

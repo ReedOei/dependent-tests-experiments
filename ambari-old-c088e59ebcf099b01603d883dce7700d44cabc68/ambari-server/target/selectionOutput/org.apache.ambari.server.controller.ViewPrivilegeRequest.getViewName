@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewPrivilegeRequest.getViewName : $r1 = r0.<org.apache.ambari.server.controller.ViewPrivilegeRequest: java.lang.String viewName> >>>>>>>> org.apache.ambari.server.controller.ViewPrivilegeRequest.getViewName : return $r1

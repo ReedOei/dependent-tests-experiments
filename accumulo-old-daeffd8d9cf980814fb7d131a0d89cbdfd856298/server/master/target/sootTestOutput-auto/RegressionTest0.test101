@@ -1,0 +1,2 @@
+org.apache.accumulo.master.replication.StatusMaker.run : $r10 = r0.<org.apache.accumulo.master.replication.StatusMaker: org.apache.accumulo.core.client.Connector conn>
+org.apache.accumulo.master.replication.StatusMaker.run : r1 = staticinvoke <org.apache.accumulo.core.trace.Trace: org.apache.accumulo.core.trace.Span start(java.lang.String)>("replicationStatusMaker")

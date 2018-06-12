@@ -1,0 +1,2 @@
+org.apache.ambari.server.orm.helpers.dbms.DerbyHelper.writeColumnModifyString : $r3 = virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" ALTER COLUMN ")
+org.apache.ambari.server.orm.helpers.dbms.DerbyHelper.supportsColumnTypeChange : return 0

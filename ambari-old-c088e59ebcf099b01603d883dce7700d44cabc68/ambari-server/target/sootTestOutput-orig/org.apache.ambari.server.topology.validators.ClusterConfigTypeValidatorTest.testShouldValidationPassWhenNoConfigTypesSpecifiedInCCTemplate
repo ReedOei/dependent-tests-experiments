@@ -1,0 +1,4 @@
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $r23 = <org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $r7 = <org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $r4 = new java.util.HashSet
+org.apache.ambari.server.topology.validators.ClusterConfigTypeValidator.validate : $z0 = interfaceinvoke $r4.<java.util.Set: boolean isEmpty()>()

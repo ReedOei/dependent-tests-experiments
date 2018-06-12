@@ -1,0 +1,7 @@
+org.apache.zeppelin.notebook.Note.getInfo : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map info> >>>>>>>> org.apache.zeppelin.notebook.Note.getInfo : if $r1 != null
+org.apache.zeppelin.notebook.Note.getInfo : if $r1 != null >>>>>>>> org.apache.zeppelin.notebook.Note.getInfo : $r3 = new java.util.HashMap
+org.apache.zeppelin.notebook.Note.getInfo : if $r1 != null >>>>>>>> org.apache.zeppelin.notebook.Note.getInfo : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map info>
+org.apache.zeppelin.notebook.Note.getInfo : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map info> >>>>>>>> org.apache.zeppelin.notebook.Note.getInfo : return $r2
+org.apache.zeppelin.notebook.Note.getInfo : $r3 = new java.util.HashMap >>>>>>>> org.apache.zeppelin.notebook.Note.getInfo : specialinvoke $r3.<java.util.HashMap: void <init>()>()
+org.apache.zeppelin.notebook.Note.getInfo : specialinvoke $r3.<java.util.HashMap: void <init>()>() >>>>>>>> org.apache.zeppelin.notebook.Note.getInfo : r0.<org.apache.zeppelin.notebook.Note: java.util.Map info> = $r3
+org.apache.zeppelin.notebook.Note.getInfo : r0.<org.apache.zeppelin.notebook.Note: java.util.Map info> = $r3 >>>>>>>> org.apache.zeppelin.notebook.Note.getInfo : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map info>

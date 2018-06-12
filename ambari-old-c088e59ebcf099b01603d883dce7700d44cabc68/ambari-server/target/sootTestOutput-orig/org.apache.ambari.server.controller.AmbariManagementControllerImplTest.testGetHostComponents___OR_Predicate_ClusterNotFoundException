@@ -1,0 +1,23 @@
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : virtualinvoke r4.<java.lang.reflect.Field: void set(java.lang.Object,java.lang.Object)>(r2, r1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : r4 = virtualinvoke r3.<java.lang.Class: java.lang.reflect.Field getDeclaredField(java.lang.String)>("ambariMetaInfo")
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : virtualinvoke r4.<java.lang.reflect.Field: void setAccessible(boolean)>(1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : r3 = virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.ambari.server.controller.ServiceComponentHostRequest.getClusterName : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String clusterName>
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.setAuthenticated : r0.<org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken: boolean authenticated> = z0
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : $r2 = staticinvoke <org.springframework.security.core.context.SecurityContextHolder: org.springframework.security.core.context.SecurityContext getContext()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : virtualinvoke $r1.<org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken: void setAuthenticated(boolean)>(1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : $r1 = new org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $i0 = interfaceinvoke r1.<java.util.Set: int size()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r9 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : r3 = interfaceinvoke r1.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r8 = new java.util.HashSet
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r132 = <org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r7 = <org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r17 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.state.Clusters clusters>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r133 = new org.apache.ambari.server.ParentObjectNotFoundException
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : z4 = 1
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r10 = specialinvoke r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: java.util.Set getHostComponents(org.apache.ambari.server.controller.ServiceComponentHostRequest)>(r4)
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r12 = class "Lorg/apache/ambari/server/HostNotFoundException;"
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r13 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getClusterName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r16 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getClusterName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r12 = <org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.slf4j.Logger LOG>

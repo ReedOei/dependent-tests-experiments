@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ServiceRequest.getResolvedRepository : $r1 = r0.<org.apache.ambari.server.controller.ServiceRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity resolvedRepository> >>>>>>>> org.apache.ambari.server.controller.ServiceRequest.getResolvedRepository : return $r1

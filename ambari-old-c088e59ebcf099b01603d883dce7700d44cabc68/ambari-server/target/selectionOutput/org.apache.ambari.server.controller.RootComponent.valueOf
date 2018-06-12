@@ -1,0 +1,2 @@
+org.apache.ambari.server.controller.RootComponent.valueOf : $r1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class "Lorg/apache/ambari/server/controller/RootComponent;", r0) >>>>>>>> org.apache.ambari.server.controller.RootComponent.valueOf : $r2 = (org.apache.ambari.server.controller.RootComponent) $r1
+org.apache.ambari.server.controller.RootComponent.valueOf : $r2 = (org.apache.ambari.server.controller.RootComponent) $r1 >>>>>>>> org.apache.ambari.server.controller.RootComponent.valueOf : return $r2

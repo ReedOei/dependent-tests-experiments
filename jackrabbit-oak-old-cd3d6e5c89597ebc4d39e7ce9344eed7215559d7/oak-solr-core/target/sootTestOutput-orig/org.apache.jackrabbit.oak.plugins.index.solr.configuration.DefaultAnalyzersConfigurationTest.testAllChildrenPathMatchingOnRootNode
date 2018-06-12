@@ -1,0 +1,4 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$6.createComponents : $r4 = new org.apache.lucene.analysis.pattern.PatternCaptureGroupTokenFilter
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$6.createComponents : $r3 = new org.apache.lucene.analysis.path.PathHierarchyTokenizer
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$6.createComponents : $r7 = new org.apache.lucene.analysis.miscellaneous.RemoveDuplicatesTokenFilter
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest$6.createComponents : $r8 = new org.apache.lucene.analysis.Analyzer$TokenStreamComponents

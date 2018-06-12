@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.initTables : $r4 = r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: javax.sql.DataSource dataSource> >>>>>>>> com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.initTables : r1 = interfaceinvoke $r4.<javax.sql.DataSource: java.sql.Connection getConnection()>()

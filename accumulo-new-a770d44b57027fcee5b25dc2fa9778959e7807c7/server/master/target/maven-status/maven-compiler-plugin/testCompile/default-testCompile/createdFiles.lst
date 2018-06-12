@@ -1,0 +1,13 @@
+org/apache/accumulo/master/tableOps/ImportTableTest.class
+org/apache/accumulo/master/replication/DistributedWorkQueueWorkAssignerHelperTest.class
+org/apache/accumulo/master/state/RootTabletStateStoreTest$Node.class
+org/apache/accumulo/master/replication/UnorderedWorkAssignerTest.class
+org/apache/accumulo/master/DefaultMapTest.class
+org/apache/accumulo/master/state/RootTabletStateStoreTest.class
+org/apache/accumulo/master/metrics/Metrics2ReplicationMetricsTest.class
+org/apache/accumulo/master/metrics/Metrics2ReplicationMetricsTest$TestMetrics2ReplicationMetrics.class
+org/apache/accumulo/master/state/RootTabletStateStoreTest$FakeZooStore.class
+org/apache/accumulo/master/tableOps/ShutdownTServerTest.class
+org/apache/accumulo/master/replication/WorkMakerTest.class
+org/apache/accumulo/master/replication/SequentialWorkAssignerTest.class
+org/apache/accumulo/master/replication/MasterReplicationCoordinatorTest.class

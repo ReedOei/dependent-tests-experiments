@@ -1,0 +1,8 @@
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.getFullDn : goto [?= return r6]
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.getFullDn : $r2 = staticinvoke <org.springframework.ldap.support.LdapUtils: javax.naming.ldap.LdapName newLdapName(java.lang.String)>(r0)
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.getFullDn : return r6
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.getFullDn : $r2 = staticinvoke <org.springframework.ldap.support.LdapUtils: javax.naming.ldap.LdapName newLdapName(javax.naming.Name)>(r0)
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.getFullDn : interfaceinvoke r6.<javax.naming.Name: javax.naming.Name addAll(javax.naming.Name)>(r0)
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.getFullDn : $z0 = interfaceinvoke r0.<javax.naming.Name: boolean startsWith(javax.naming.Name)>(r6)
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.getFullDn : return r0
+org.apache.ambari.server.security.authorization.AmbariLdapUtils.getFullDn : r6 = staticinvoke <org.springframework.ldap.support.LdapUtils: javax.naming.ldap.LdapName newLdapName(javax.naming.Name)>(r6)

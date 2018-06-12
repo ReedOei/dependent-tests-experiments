@@ -1,0 +1,197 @@
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.findServiceName : $r3 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Service getServiceByComponentName(java.lang.String)>(r2)
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r18 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_TYPE>
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r4 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_PASSWORD>
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r2 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_PATH>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.filterByMaintenanceState : return 0
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.filterByMaintenanceState : $r4 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getMaintenanceState()>()
+org.apache.ambari.server.orm.entities.RoleAuthorizationEntity.setAuthorizationName : virtualinvoke r0.<org.apache.ambari.server.orm.entities.RoleAuthorizationEntity: void _persistence_set_authorizationName(java.lang.String)>(r1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : virtualinvoke r4.<java.lang.reflect.Field: void set(java.lang.Object,java.lang.Object)>(r2, r1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : r4 = virtualinvoke r3.<java.lang.Class: java.lang.reflect.Field getDeclaredField(java.lang.String)>("ambariMetaInfo")
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : virtualinvoke r4.<java.lang.reflect.Field: void setAccessible(boolean)>(1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : r3 = virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.getKey : $r1 = r0.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.String m_key>
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.getDefaultValue : $r1 = r0.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object m_defaultValue>
+org.apache.ambari.server.controller.ServiceComponentHostRequest.getClusterName : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String clusterName>
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.getAuthority : $z0 = virtualinvoke r4.<java.lang.String: boolean startsWith(java.lang.String)>(r3)
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.getAuthority : r2 = virtualinvoke r1.<org.apache.ambari.server.orm.entities.ResourceEntity: java.lang.Long getId()>()
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.getAuthority : $r12 = new java.lang.StringBuilder
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.getAuthority : $r6 = new java.lang.StringBuilder
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.getAuthority : $r5 = r0.<org.apache.ambari.server.security.authorization.AmbariGrantedAuthority: org.apache.ambari.server.orm.entities.PrivilegeEntity privilegeEntity>
+org.apache.ambari.server.H2DatabaseCleaner.clearDatabaseAndStopPersistenceService : $r1 = interfaceinvoke r0.<com.google.inject.Injector: com.google.inject.Provider getProvider(java.lang.Class)>(class "Ljavax/persistence/EntityManager;")
+org.apache.ambari.server.orm.entities.PermissionEntity.createRoleAuthorizationEntity : $r3 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.RoleAuthorization: java.lang.String getId()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.createRoleAuthorizationEntity : $r2 = new org.apache.ambari.server.orm.entities.RoleAuthorizationEntity
+org.apache.ambari.server.orm.entities.PermissionEntity.createRoleAuthorizationEntity : $r4 = virtualinvoke r0.<org.apache.ambari.server.security.authorization.RoleAuthorization: java.lang.String name()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.createRoleAuthorizationEntity : return $r2
+org.apache.ambari.server.controller.ServiceComponentHostRequest.getMaintenanceState : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String maintenanceState>
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : virtualinvoke $r7.<org.apache.ambari.server.orm.entities.ResourceEntity: void setResourceType(org.apache.ambari.server.orm.entities.ResourceTypeEntity)>($r9)
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : $r9 = new org.apache.ambari.server.orm.entities.ResourceTypeEntity
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : $r4 = new org.apache.ambari.server.orm.entities.PermissionEntity
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : $r6 = staticinvoke <java.util.EnumSet: java.util.EnumSet allOf(java.lang.Class)>(class "Lorg/apache/ambari/server/security/authorization/RoleAuthorization;")
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : $r12 = <org.apache.ambari.server.security.authorization.ResourceType: org.apache.ambari.server.security.authorization.ResourceType AMBARI>
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : $r5 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(1)
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : virtualinvoke $r4.<org.apache.ambari.server.orm.entities.PermissionEntity: void setPermissionName(java.lang.String)>("AMBARI.ADMINISTRATOR")
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : $r7 = new org.apache.ambari.server.orm.entities.ResourceEntity
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: void setResource(org.apache.ambari.server.orm.entities.ResourceEntity)>($r7)
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: void setPermission(org.apache.ambari.server.orm.entities.PermissionEntity)>($r4)
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : $r8 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(1L)
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.createAdminPrivilegeEntity : $r10 = <org.apache.ambari.server.security.authorization.ResourceType: org.apache.ambari.server.security.authorization.ResourceType AMBARI>
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.setAuthenticated : r0.<org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken: boolean authenticated> = z0
+org.apache.ambari.server.orm.entities.RoleAuthorizationEntity.setAuthorizationId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.RoleAuthorizationEntity: void _persistence_set_authorizationId(java.lang.String)>(r1)
+org.apache.ambari.server.orm.entities.ResourceEntity.setResourceType : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: void _persistence_set_resourceType(org.apache.ambari.server.orm.entities.ResourceTypeEntity)>(r1)
+org.apache.ambari.server.orm.entities.PrivilegeEntity.getPermission : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: org.apache.ambari.server.orm.entities.PermissionEntity _persistence_get_permission()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : $r2 = staticinvoke <org.springframework.security.core.context.SecurityContextHolder: org.springframework.security.core.context.SecurityContext getContext()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : virtualinvoke $r1.<org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken: void setAuthenticated(boolean)>(1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : $r1 = new org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken
+org.apache.ambari.server.orm.entities.ResourceTypeEntity.setName : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceTypeEntity: void _persistence_set_name(java.lang.String)>(r1)
+org.apache.ambari.server.ldap.LdapModule.configure : $r3 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/service/LdapFacade;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r24 = virtualinvoke r2.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r16 = virtualinvoke r1.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r11 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/domain/AmbariLdapConfiguration;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r18 = virtualinvoke r1.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r5 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/service/LdapConfigurationService;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r23 = staticinvoke <com.google.inject.name.Names: com.google.inject.name.Named named(java.lang.String)>("GroupAttributesDetectors")
+org.apache.ambari.server.ldap.LdapModule.configure : $r9 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/service/LdapConnectionConfigService;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r15 = staticinvoke <com.google.inject.name.Names: com.google.inject.name.Named named(java.lang.String)>("UserAttributesDetectors")
+org.apache.ambari.server.ldap.LdapModule.configure : $r7 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/service/LdapAttributeDetectionService;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r26 = virtualinvoke r2.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r20 = virtualinvoke r1.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r14 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.Binder binder()>()
+org.apache.ambari.server.ldap.LdapModule.configure : virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/service/ads/detectors/AttributeDetectorFactory;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r28 = virtualinvoke r2.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r22 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.Binder binder()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.setPermissionName : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: void _persistence_set_permissionName(java.lang.String)>(r1)
+org.apache.ambari.server.orm.entities.ResourceEntity.getResourceType : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: org.apache.ambari.server.orm.entities.ResourceTypeEntity _persistence_get_resourceType()>()
+org.apache.ambari.server.controller.ServiceComponentHostRequest.getComponentName : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String componentName>
+org.apache.ambari.server.controller.ServiceComponentHostRequest.getStaleConfig : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String staleConfig>
+org.apache.ambari.server.configuration.Configuration.getApiSSLAuthentication : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty API_USE_SSL>
+org.apache.ambari.server.state.stack.OsFamily.init : $r5 = new java.io.File
+org.apache.ambari.server.state.stack.OsFamily.init : r23 = null
+org.apache.ambari.server.state.stack.OsFamily.init : $r19 = <org.apache.ambari.server.state.stack.OsFamily: org.slf4j.Logger LOG>
+org.apache.ambari.server.state.stack.OsFamily.init : $r14 = new java.lang.Exception
+org.apache.ambari.server.state.stack.OsFamily.init : $z0 = virtualinvoke $r5.<java.io.File: boolean exists()>()
+org.apache.ambari.server.state.stack.OsFamily.init : $r22 = new java.lang.RuntimeException
+org.apache.ambari.server.controller.ServiceComponentHostRequest.getHostname : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String hostname>
+org.apache.ambari.server.controller.HostsMap.setupMap : $r9 = r0.<org.apache.ambari.server.controller.HostsMap: java.lang.String hostsMapFile>
+org.apache.ambari.server.controller.HostsMap.setupMap : $r4 = <org.apache.ambari.server.controller.HostsMap: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.HostsMap.setupMap : r34 = null
+org.apache.ambari.server.controller.HostsMap.setupMap : if r34 == null goto return
+org.apache.ambari.server.orm.entities.PermissionEntity.addAuthorizations : r2 = interfaceinvoke r1.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.addAuthorizations : $r4 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.addAuthorizations : $r5 = staticinvoke <org.apache.ambari.server.orm.entities.PermissionEntity: org.apache.ambari.server.orm.entities.RoleAuthorizationEntity createRoleAuthorizationEntity(org.apache.ambari.server.security.authorization.RoleAuthorization)>(r3)
+org.apache.ambari.server.orm.entities.PermissionEntity.addAuthorizations : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r141 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getServiceName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r146 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getState()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : r3 = interfaceinvoke r1.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r145 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getStaleConfig()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r17 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.state.Clusters clusters>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : if r10 == null goto $r49 = new org.apache.ambari.server.ServiceComponentHostNotFoundException
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r54 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getHostname()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : r10 = interfaceinvoke r9.<org.apache.ambari.server.state.ServiceComponent: java.util.Map getServiceComponentHosts()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r28 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getComponentName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r26 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r9 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r102 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.state.Clusters clusters>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : if z23 == 0 goto $r58 = interfaceinvoke r147.<org.apache.ambari.server.state.ServiceComponentHost: java.lang.String getHostName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r20 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getComponentName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r31 = interfaceinvoke r8.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : r150 = interfaceinvoke r147.<org.apache.ambari.server.state.ServiceComponentHost: org.apache.ambari.server.controller.ServiceComponentHostResponse convertToResponse(java.util.Map)>(r3)
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r55 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getHostname()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r95 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getComponentName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r13 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getClusterName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r61 = virtualinvoke r152.<org.apache.ambari.server.state.MaintenanceState: java.lang.String name()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : if r151 != null goto $r60 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.controller.MaintenanceStateHelper maintenanceStateHelper>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r72 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getComponentName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $z8 = specialinvoke r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: boolean filterByMaintenanceState(org.apache.ambari.server.controller.ServiceComponentHostRequest,org.apache.ambari.server.state.MaintenanceState)>(r1, r152)
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r139 = new java.util.HashSet
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : z23 = 0
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : goto [?= $r19 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getHostname()>()]
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $z19 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r138)
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r8 = new java.util.HashSet
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r19 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getHostname()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $i1 = interfaceinvoke r1.<java.util.Set: int size()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r91 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getServiceName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : goto [?= (branch)]
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : r3 = interfaceinvoke r135.<org.apache.ambari.server.state.Cluster: java.util.Map getDesiredConfigs()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : r8 = interfaceinvoke $r27.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : r5 = interfaceinvoke $r139.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r60 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.controller.MaintenanceStateHelper maintenanceStateHelper>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : r143 = null
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r10 = specialinvoke r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: java.util.Set getHostComponents(org.apache.ambari.server.controller.ServiceComponentHostRequest)>(r4)
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : r144 = null
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r16 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getClusterName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r24 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.state.Clusters clusters>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r12 = <org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r92 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getServiceName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r142 = new java.util.HashSet
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : goto [?= $r20 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getComponentName()>()]
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : z24 = 1
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r18 = <org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r7 = <org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : z21 = 0
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : if null != r147 goto (branch)
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : interfaceinvoke $r142.<java.util.Set: boolean add(java.lang.Object)>(r150)
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: void setServiceName(java.lang.String)>(r138)
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : if null == r150 goto (branch)
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r58 = interfaceinvoke r147.<org.apache.ambari.server.state.ServiceComponentHost: java.lang.String getHostName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r33 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getHostname()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : if z21 == 0 goto (branch)
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r94 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getServiceName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r27 = new java.util.HashSet
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : if z22 == 0 goto $r57 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getAdminState()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r70 = interfaceinvoke r9.<org.apache.ambari.server.state.ServiceComponent: java.lang.String getName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r32 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getComponentName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : z22 = 0
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getHostComponents : $r57 = virtualinvoke r1.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String getAdminState()>()
+org.apache.ambari.server.orm.entities.PrivilegeEntity.setResource : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: void _persistence_set_resource(org.apache.ambari.server.orm.entities.ResourceEntity)>(r1)
+org.apache.ambari.server.controller.ServiceComponentHostRequest.setServiceName : r0.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String serviceName> = r1
+org.apache.ambari.server.controller.ServiceComponentHostRequest.getDesiredState : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String desiredState>
+org.apache.ambari.server.orm.entities.PrivilegeEntity.getResource : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: org.apache.ambari.server.orm.entities.ResourceEntity _persistence_get_resource()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.getPermissionName : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: java.lang.String _persistence_get_permissionName()>()
+org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties.isKerberosAuthenticationEnabled : $z0 = r0.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean kerberosAuthenticationEnabled>
+org.apache.ambari.server.configuration.Configuration.getSharedResourcesDirPath : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SHARED_RESOURCES_DIR>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r49 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r19 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r37 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r7 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r53 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r2 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>("os.name")
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r10 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : r73 = "src/test/resources/version"
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r4 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r13 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r21 = new org.apache.ambari.server.ldap.LdapModule
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : r72 = "src/test/resources/stacks"
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r16 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r57 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r22 = newarray (com.google.inject.Module)[1]
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r41 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : r74 = "src/test/resources/"
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r71 = new java.lang.RuntimeException
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r45 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.controller.ServiceComponentHostRequest.getState : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String state>
+org.apache.ambari.server.orm.entities.ResourceEntity.setId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: void _persistence_set_id(java.lang.Long)>(r1)
+org.apache.ambari.server.orm.entities.ResourceTypeEntity.setId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceTypeEntity: void _persistence_set_id(java.lang.Integer)>(r1)
+org.apache.ambari.server.configuration.Configuration.getHostsMapFile : $r2 = <org.apache.ambari.server.configuration.Configuration: org.slf4j.Logger LOG>
+org.apache.ambari.server.configuration.Configuration.getHostsMapFile : $r8 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SRVR_HOSTS_MAPPING>
+org.apache.ambari.server.orm.entities.RoleAuthorizationEntity.hashCode : $i0 = 31 * $i1
+org.apache.ambari.server.orm.entities.RoleAuthorizationEntity.hashCode : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.RoleAuthorizationEntity: java.lang.String _persistence_get_authorizationId()>()
+org.apache.ambari.server.orm.entities.RoleAuthorizationEntity.hashCode : $r4 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.RoleAuthorizationEntity: java.lang.String _persistence_get_authorizationId()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.setId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: void _persistence_set_id(java.lang.Integer)>(r1)
+org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties.setKerberosAuthenticationEnabled : r0.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean kerberosAuthenticationEnabled> = z0
+org.apache.ambari.server.orm.entities.ResourceEntity.getId : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: java.lang.Long _persistence_get_id()>()
+org.apache.ambari.server.security.authorization.ResourceType.getId : $i0 = r0.<org.apache.ambari.server.security.authorization.ResourceType: int id>
+org.apache.ambari.server.controller.ServiceComponentHostRequest.getServiceName : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String serviceName>
+org.apache.ambari.server.controller.ServiceComponentHostRequest.getAdminState : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentHostRequest: java.lang.String adminState>
+org.apache.ambari.server.security.authorization.RoleAuthorization.getId : $r1 = r0.<org.apache.ambari.server.security.authorization.RoleAuthorization: java.lang.String id>
+org.apache.ambari.server.orm.entities.PrivilegeEntity.setPermission : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: void _persistence_set_permission(org.apache.ambari.server.orm.entities.PermissionEntity)>(r1)
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $r8 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty KERBEROS_AUTH_ENABLED>
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $z1 = virtualinvoke $r7.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean isKerberosAuthenticationEnabled()>()
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : return $r7
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $r7 = new org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties
+org.apache.ambari.server.orm.entities.PermissionEntity.addAuthorization : $r2 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: java.util.Set _persistence_get_authorizations()>()
+org.apache.ambari.server.configuration.Configuration.getProperty : $r3 = r0.<org.apache.ambari.server.configuration.Configuration: java.util.Properties properties>
+org.apache.ambari.server.configuration.Configuration.getProperty : $r6 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object getDefaultValue()>()
+org.apache.ambari.server.configuration.Configuration.getProperty : r7 = null
+org.apache.ambari.server.configuration.Configuration.getProperty : $r2 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object getDefaultValue()>()
+org.apache.ambari.server.orm.entities.ResourceTypeEntity.getName : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceTypeEntity: java.lang.String _persistence_get_name()>()

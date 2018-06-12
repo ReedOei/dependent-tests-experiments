@@ -1,0 +1,18 @@
+org.apache.ambari.server.topology.AsyncCallableService.attemptToCancel : $r3 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.AsyncCallableService.attemptToCancel : $z0 = interfaceinvoke r1.<java.util.concurrent.Future: boolean isDone()>()
+org.apache.ambari.server.topology.AsyncCallableService.attemptToCancel : $z1 = interfaceinvoke r1.<java.util.concurrent.Future: boolean cancel(boolean)>(1)
+org.apache.ambari.server.topology.AsyncCallableService.attemptToCancel : $r7 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.AsyncCallableServiceTest.lambda$testCallableServiceShouldCancelTaskWhenTaskHangsAndTimeoutExceeded$0 : staticinvoke <java.lang.Thread: void sleep(long)>(10000000L)
+org.apache.ambari.server.topology.AsyncCallableService.call : $r4 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.AsyncCallableService.call : $r29 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.AsyncCallableService.call : $r10 = <java.util.concurrent.TimeUnit: java.util.concurrent.TimeUnit MILLISECONDS>
+org.apache.ambari.server.topology.AsyncCallableService.call : goto [?= $l7 = r0.<org.apache.ambari.server.topology.AsyncCallableService: long retryDelay>]
+org.apache.ambari.server.topology.AsyncCallableService.call : $r22 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.AsyncCallableService.call : $r3 = r0.<org.apache.ambari.server.topology.AsyncCallableService: java.util.concurrent.ScheduledExecutorService executorService>
+org.apache.ambari.server.topology.AsyncCallableService.call : specialinvoke r0.<org.apache.ambari.server.topology.AsyncCallableService: void attemptToCancel(java.util.concurrent.Future)>(r30)
+org.apache.ambari.server.topology.AsyncCallableService.call : $l7 = r0.<org.apache.ambari.server.topology.AsyncCallableService: long retryDelay>
+org.apache.ambari.server.topology.AsyncCallableService.call : l6 = 0L
+org.apache.ambari.server.topology.AsyncCallableService.call : l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.ambari.server.topology.AsyncCallableService.call : return null
+org.apache.ambari.server.topology.AsyncCallableService.call : l6 = r0.<org.apache.ambari.server.topology.AsyncCallableService: long timeout>
+org.apache.ambari.server.topology.AsyncCallableService.call : $r7 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>

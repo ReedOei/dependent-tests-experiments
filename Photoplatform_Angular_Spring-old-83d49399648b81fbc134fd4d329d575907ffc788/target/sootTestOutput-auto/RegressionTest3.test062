@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange.getPasswordConfirm : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String passwordConfirm>
+de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange.getPassword : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String password>
+de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange.setNewPassword : r0.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String newPassword> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange.setPasswordConfirm : r0.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String passwordConfirm> = r1

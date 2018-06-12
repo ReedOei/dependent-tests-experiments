@@ -1,0 +1,11 @@
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r3 = r0.<org.apache.ambari.server.topology.Configuration: org.apache.ambari.server.topology.Configuration parentConfiguration>
+org.apache.ambari.server.topology.Configuration.getFullProperties : interfaceinvoke r29.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r1, $r10)
+org.apache.ambari.server.topology.Configuration.getFullProperties : if i0 != 0 goto $r3 = r0.<org.apache.ambari.server.topology.Configuration: org.apache.ambari.server.topology.Configuration parentConfiguration>
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r9 = interfaceinvoke r31.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r1 = virtualinvoke r0.<org.apache.ambari.server.topology.Configuration: java.util.Map getFullProperties(int)>(2147483647)
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r8 = interfaceinvoke r30.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.Configuration.getFullProperties : $z0 = interfaceinvoke r29.<java.util.Map: boolean containsKey(java.lang.Object)>(r1)
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r28 = new java.util.HashMap
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r6 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map properties>
+org.apache.ambari.server.topology.Configuration.getFullProperties : $r10 = new java.util.HashMap
+org.apache.ambari.server.topology.Configuration.getAttributes : $r1 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map attributes>

@@ -1,0 +1,1 @@
+org.apache.ambari.server.stack.StackManager.unlinkStackAndExtension : virtualinvoke r1.<org.apache.ambari.server.state.StackInfo: void removeExtension(org.apache.ambari.server.state.ExtensionInfo)>(r2) >>>>>>>> org.apache.ambari.server.stack.StackManager.unlinkStackAndExtension : return

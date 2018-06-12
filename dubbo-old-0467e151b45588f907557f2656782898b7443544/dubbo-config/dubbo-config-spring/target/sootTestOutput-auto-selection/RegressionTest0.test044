@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.context.annotation.DubboConfigBindingRegistrar.setEnvironment : staticinvoke <org.springframework.util.Assert: void isInstanceOf(java.lang.Class,java.lang.Object)>(class "Lorg/springframework/core/env/ConfigurableEnvironment;", r1)

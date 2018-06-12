@@ -1,0 +1,7 @@
+org.apache.zeppelin.helium.HeliumRegistrySerializer.serialize : $r9 = virtualinvoke r1.<org.apache.zeppelin.helium.HeliumRegistry: java.lang.String name()>()
+org.apache.zeppelin.helium.HeliumRegistrySerializer.serialize : $r6 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.zeppelin.helium.HeliumRegistrySerializer.serialize : $r8 = virtualinvoke r1.<org.apache.zeppelin.helium.HeliumRegistry: java.lang.String uri()>()
+org.apache.zeppelin.helium.HeliumRegistrySerializer.serialize : $r5 = new com.google.gson.JsonObject
+org.apache.zeppelin.helium.HeliumRegistrySerializer.serialize : return $r5
+org.apache.zeppelin.helium.HeliumRegistry.uri : $r1 = r0.<org.apache.zeppelin.helium.HeliumRegistry: java.lang.String uri>
+org.apache.zeppelin.helium.HeliumRegistry.name : $r1 = r0.<org.apache.zeppelin.helium.HeliumRegistry: java.lang.String name>

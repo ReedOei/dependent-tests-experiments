@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.repository.ServiceVersionSummary.getReleaseVersion : $r1 = r0.<org.apache.ambari.server.state.repository.ServiceVersionSummary: java.lang.String m_releaseVersion> >>>>>>>> org.apache.ambari.server.state.repository.ServiceVersionSummary.getReleaseVersion : return $r1

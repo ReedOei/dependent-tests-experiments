@@ -1,0 +1,3 @@
+org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorProvider.getIndexEditor : $r8 = "solr"
+org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorProvider.getIndexEditor : r20 = null
+org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorProvider.getIndexEditor : return r20

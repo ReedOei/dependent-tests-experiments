@@ -1,0 +1,12 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getInterpreterGroup : $r1 = specialinvoke r0.<org.apache.zeppelin.interpreter.Interpreter: org.apache.zeppelin.interpreter.InterpreterGroup getInterpreterGroup()>()
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.interpret : $r6 = <org.apache.zeppelin.interpreter.remote.RemoteInterpreter: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.interpret : r3 = virtualinvoke r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreter: org.apache.zeppelin.interpreter.Interpreter$FormType getFormType()>()
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.open : $z0 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreter: boolean isOpened>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.open : entermonitor r0
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.open : $r8 = virtualinvoke r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreter: java.lang.String getUserName()>()
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.open : $r7 = virtualinvoke r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreter: org.apache.zeppelin.interpreter.ManagedInterpreterGroup getInterpreterGroup()>()
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getFormType : $z0 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreter: boolean isOpened>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getFormType : entermonitor r0
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getFormType : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreter: org.apache.zeppelin.interpreter.Interpreter$FormType formType>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getFormType : virtualinvoke r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreter: void open()>()
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getFormType : exitmonitor r0

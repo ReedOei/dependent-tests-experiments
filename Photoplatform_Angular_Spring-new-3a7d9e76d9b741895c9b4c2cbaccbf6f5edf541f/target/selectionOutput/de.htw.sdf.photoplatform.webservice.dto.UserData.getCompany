@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.dto.UserData.getCompany : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String company> >>>>>>>> de.htw.sdf.photoplatform.webservice.dto.UserData.getCompany : return $r1

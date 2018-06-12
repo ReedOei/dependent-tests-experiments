@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer.getIban : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer: java.lang.String iban> >>>>>>>> de.htw.sdf.photoplatform.webservice.dto.BecomePhotographer.getIban : return $r1

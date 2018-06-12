@@ -1,0 +1,1 @@
+org.apache.ambari.server.api.services.stackadvisor.StackAdvisorRequest.getGplLicenseAccepted : $r1 = r0.<org.apache.ambari.server.api.services.stackadvisor.StackAdvisorRequest: java.lang.Boolean gplLicenseAccepted> >>>>>>>> org.apache.ambari.server.api.services.stackadvisor.StackAdvisorRequest.getGplLicenseAccepted : return $r1

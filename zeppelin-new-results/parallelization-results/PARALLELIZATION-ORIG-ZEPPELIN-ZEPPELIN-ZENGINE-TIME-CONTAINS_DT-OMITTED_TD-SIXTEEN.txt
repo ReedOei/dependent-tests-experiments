@@ -1,0 +1,207 @@
+The following arguments were used to generate this output.
+[-technique, parallelization, -order, time, -timeOrder, /home/roei/Java/dt-impact-winglam/experiments/zeppelin-old-0f81b6d6132471ddf0e91cc3738da1ff365604f8/zeppelin-zengine/target/zeppelin-zeppelin-zengine-orig-time.txt, -origOrder, /home/roei/Java/dt-impact-winglam/experiments/zeppelin-new-6353732095af880944b8c09eacc3ab7eaf64e7e0/zeppelin-zengine/target/zeppelin-zeppelin-zengine-orig-order, -testInputDir, /home/roei/Java/dt-impact-winglam/experiments/zeppelin-old-0f81b6d6132471ddf0e91cc3738da1ff365604f8/zeppelin-zengine/target/sootTestOutput-orig, -filesToDelete, /home/roei/Java/dt-impact-winglam/experiments/zeppelin-new-6353732095af880944b8c09eacc3ab7eaf64e7e0/zeppelin-zengine/target/zeppelin-zeppelin-zengine-env-files, -numOfMachines, 16, -project, zeppelin-zeppelin-zengine, -testType, orig, -timesToRun, 1, -outputDir, /home/roei/Java/dt-impact-winglam/experiments/parallelization-results]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.028
+Number of tests selected out of total in original order: 15 / 127
+Number of DTs not fixed: 1
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 60.868
+
+Test order list:
+[org.apache.zeppelin.notebook.FolderTest.addNoteTest, org.apache.zeppelin.notebook.FolderTest.removeNoteTest, org.apache.zeppelin.notebook.FolderTest.renameToRootTest, org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessageTest.testThatInvalidStringReturnEmptyZeppelinhubMessage, org.apache.zeppelin.notebook.FolderViewTest.renameFolderOrdinaryTest, org.apache.zeppelin.notebook.NoteTest.clearAllParagraphOutputTest, org.apache.zeppelin.notebook.NoteTest.getNameWithoutPathTest, org.apache.zeppelin.search.LuceneSearchTest.canIndexAndQuery, org.apache.zeppelin.search.LuceneSearchTest.indexKeyContract, org.apache.zeppelin.interpreter.InterpreterSettingTest.testPerUserIsolatedPerNoteScopedMode, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testExecuteCorrectPrecode, org.apache.zeppelin.interpreter.launcher.SparkInterpreterLauncherTest.testYarnClusterMode_2, org.apache.zeppelin.helium.HeliumTest.testRefresh, org.apache.zeppelin.conf.ZeppelinConfigurationTest.isWindowsPathTestTrue, org.apache.zeppelin.conf.ZeppelinConfigurationTest.isWindowsPathTestFalse]
+
+Time each test takes to run in the new order:
+[412644634, 3344720, 3190526, 12112506, 9436509, 34054192, 1796443, 270998391, 17528201, 38518119, 60035051140, 8293086, 10839898, 5956151, 4101550]
+
+DTs not fixed are:
+[org.apache.zeppelin.interpreter.launcher.SparkInterpreterLauncherTest.testYarnClusterMode_2]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.018
+Number of tests selected out of total in original order: 15 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 61.563
+
+Test order list:
+[org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.testSyncOnDelete, org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClientTest.runAllParagraphTest, org.apache.zeppelin.notebook.repo.NotebookRepoSyncInitializationTest.invalidInitTwoStorageTest, org.apache.zeppelin.notebook.FolderViewTest.renameFolderSameNameTest, org.apache.zeppelin.notebook.FolderViewTest.renameFolderMergingTest, org.apache.zeppelin.notebook.NoteTest.getNameWithoutNameItself, org.apache.zeppelin.scheduler.RemoteSchedulerTest.test, org.apache.zeppelin.search.LuceneSearchTest.canIndexAndReIndex, org.apache.zeppelin.interpreter.InterpreterSettingTest.testPerUserIsolatedPerNoteIsolatedMode, org.apache.zeppelin.interpreter.install.InstallInterpreterTest.testList, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testRemoteInterpreterSharesTheSameSchedulerInstanceInTheSameGroup, org.apache.zeppelin.interpreter.launcher.SparkInterpreterLauncherTest.testYarnClientMode_2, org.apache.zeppelin.helium.HeliumLocalRegistryTest.testGetAllPackage, org.apache.zeppelin.conf.ZeppelinConfigurationTest.getAllowedOrigins2Test, org.apache.zeppelin.conf.ZeppelinConfigurationTest.getAllowedOriginsNoneTest]
+
+Time each test takes to run in the new order:
+[664322073, 391431156, 2544362, 60299085, 8370642, 3642639, 60082848805, 315028482, 7195328, 5578800, 6964460, 4325849, 3574739, 4158154, 2884514]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 63.020
+Number of tests selected out of total in original order: 15 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 61.921
+
+Test order list:
+[org.apache.zeppelin.notebook.FolderTest.renameTest, org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.testSyncOnReloadedList, org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClientTest.sendToZeppelinTest, org.apache.zeppelin.notebook.repo.NotebookRepoSyncInitializationTest.validInitTwoStorageTest, org.apache.zeppelin.notebook.repo.FileSystemNotebookRepoTest.testComplicatedScenarios, org.apache.zeppelin.notebook.FolderViewTest.putNoteTest, org.apache.zeppelin.notebook.FolderViewTest.renameFolderTargetExistsAndHasChildTest, org.apache.zeppelin.notebook.NoteTest.addParagraphWithEmptyReplNameTest, org.apache.zeppelin.notebook.NoteTest.insertParagraphWithLastReplNameTest, org.apache.zeppelin.search.LuceneSearchTest.canIndexAndQueryByNotebookName, org.apache.zeppelin.search.LuceneSearchTest.canNotSearchBeforeIndexing, org.apache.zeppelin.interpreter.InterpreterSettingTest.testPerUserScopedPerNoteScopedMode, org.apache.zeppelin.interpreter.InterpreterSettingTest.testPerNoteIsolatedMode, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testIsolatedMode, org.apache.zeppelin.conf.ZeppelinConfigurationTest.getNotebookDirTest]
+
+Time each test takes to run in the new order:
+[416818904, 247850449, 378313748, 1816946, 469457047, 7650556, 5152350, 3735285, 5864533, 304589938, 2936150, 13310765, 5433033, 60044845808, 13400930]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.037
+Number of tests selected out of total in original order: 16 / 127
+Number of DTs not fixed: 1
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 60.913
+
+Test order list:
+[org.apache.zeppelin.util.UtilTest.getGitInfoTest, org.apache.zeppelin.notebook.FolderTest.isTrashTest, org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessageTest.testThatCanSerializeZeppelinHubMessage, org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessageTest.testThastCanDeserialiseZeppelinhubMessage, org.apache.zeppelin.notebook.repo.NotebookRepoSyncInitializationTest.validInitOneStorageTest, org.apache.zeppelin.notebook.FolderViewTest.renameEmptyFolderTest, org.apache.zeppelin.notebook.NoteTest.runNormalTest, org.apache.zeppelin.search.LuceneSearchTest.canDeleteNull, org.apache.zeppelin.search.LuceneSearchTest.indexParagraphUpdatedOnNoteSave, org.apache.zeppelin.interpreter.InterpreterSettingTest.testSharedMode, org.apache.zeppelin.interpreter.ManagedInterpreterGroupTest.testInterpreterGroup, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testExecuteIncorrectPrecode, org.apache.zeppelin.interpreter.launcher.SparkInterpreterLauncherTest.testYarnClientMode_1, org.apache.zeppelin.helium.HeliumTest.testSaveLoadConf, org.apache.zeppelin.conf.ZeppelinConfigurationTest.getAllowedOrigins1Test, org.apache.zeppelin.conf.ZeppelinConfigurationTest.isNotebookPublicTest]
+
+Time each test takes to run in the new order:
+[72383532, 328855345, 12783507, 3328338, 70189024, 7291749, 14285031, 92803942, 208782814, 26792113, 7992687, 60038255804, 7694095, 13536723, 4881118, 3164821]
+
+DTs not fixed are:
+[org.apache.zeppelin.interpreter.launcher.SparkInterpreterLauncherTest.testYarnClientMode_1]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.026
+Number of tests selected out of total in original order: 16 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 61.225
+
+Test order list:
+[org.apache.zeppelin.util.UtilTest.getVersionTest, org.apache.zeppelin.notebook.FolderTest.getParentIdTest, org.apache.zeppelin.notebook.FolderTest.getNameTest, org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.testSyncWithAcl, org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClientTest.zeppelinMessageSerializationTest, org.apache.zeppelin.notebook.repo.NotebookRepoSyncInitializationTest.initEmptyStorageTest, org.apache.zeppelin.notebook.FolderViewTest.removeNoteTest, org.apache.zeppelin.notebook.FolderViewTest.renameHighDepthFolderTest, org.apache.zeppelin.notebook.NoteTest.insertParagraphwithUser, org.apache.zeppelin.interpreter.InterpreterSettingTest.testPerUserIsolatedMode, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testSharedMode, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testMultiInterpreterSession, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testEnvStringPattern, org.apache.zeppelin.interpreter.remote.RemoteInterpreterEventPollerTest.shouldClearUnreadEventsOnShutdown, org.apache.zeppelin.interpreter.launcher.SparkInterpreterLauncherTest.testLocalMode, org.apache.zeppelin.interpreter.launcher.SparkInterpreterLauncherTest.testYarnClusterMode_1]
+
+Time each test takes to run in the new order:
+[76514034, 327037318, 2798865, 310409427, 126815589, 182721045, 6638887, 4870350, 3171199, 22124141, 60034721384, 9128858, 3767414, 109181416, 3263532, 1930809]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.023
+Number of tests selected out of total in original order: 16 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 61.443
+
+Test order list:
+[org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.testSyncUpdateMain, org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClientTest.zeppelinClientSingletonTest, org.apache.zeppelin.notebook.repo.NotebookRepoSyncInitializationTest.initOneDummyStorageTest, org.apache.zeppelin.notebook.FolderViewTest.renameRootFolderTest, org.apache.zeppelin.notebook.FolderViewTest.onNameChangedTest, org.apache.zeppelin.notebook.NoteTest.isTrashTest, org.apache.zeppelin.notebook.NoteTest.personalizedModeReturnDifferentParagraphInstancePerUser, org.apache.zeppelin.notebook.NoteTest.addParagraphWithLastReplNameTest, org.apache.zeppelin.search.LuceneSearchTest.canIndexAndQueryByParagraphTitle, org.apache.zeppelin.search.LuceneSearchTest.canDeleteFromIndex, org.apache.zeppelin.interpreter.InterpreterSettingTest.testCreateInterpreters, org.apache.zeppelin.interpreter.InterpreterSettingTest.testPerUserScopedMode, org.apache.zeppelin.interpreter.InterpreterSettingTest.testPerNoteScopedMode, org.apache.zeppelin.interpreter.remote.AppendOutputRunnerTest.testMultipleEventsOfDifferentParagraphs, org.apache.zeppelin.interpreter.remote.AppendOutputRunnerTest.testMultipleEventsOfSameParagraph, org.apache.zeppelin.interpreter.remote.RemoteInterpreterOutputTestStream.testInterpreterResultOutputStreamMixed]
+
+Time each test takes to run in the new order:
+[675127440, 110313816, 194760669, 62284798, 6626116, 3630940, 3045511, 8614367, 261945694, 36285914, 13900789, 9219294, 5501835, 6943556, 880741, 60043828616]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.029
+Number of tests selected out of total in original order: 16 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 61.438
+
+Test order list:
+[org.apache.zeppelin.notebook.FolderTest.folderIdTest, org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.testSyncOnCreate, org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.testOneWaySyncOnReloadedList, org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClientTest.zeppelinhubClientSingletonTest, org.apache.zeppelin.notebook.repo.NotebookRepoSyncInitializationTest.initUnsupportedNumberStoragesTest, org.apache.zeppelin.notebook.FolderViewTest.getTest, org.apache.zeppelin.notebook.FolderViewTest.renameFolderToRootTest, org.apache.zeppelin.notebook.FolderViewTest.renameFolderNotExistsTest, org.apache.zeppelin.notebook.FolderViewTest.renameFolderHasChildrenTest, org.apache.zeppelin.notebook.NoteTest.insertParagraphWithInvalidReplNameTest, org.apache.zeppelin.notebook.NoteTest.getFolderIdTest, org.apache.zeppelin.search.LuceneSearchTest.indexNoteNameUpdatedOnNoteSave, org.apache.zeppelin.interpreter.remote.AppendOutputRunnerTest.testSingleEvent, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testScopedMode, org.apache.zeppelin.interpreter.launcher.ShellScriptLauncherTest.testLauncher, org.apache.zeppelin.helium.HeliumTest.testRestoreRegistryInstances]
+
+Time each test takes to run in the new order:
+[434697827, 379631395, 12836547, 115717259, 5072553, 12583516, 7100962, 5506167, 6655065, 8890832, 1988874, 349940309, 7104670, 60063337932, 13853330, 12905594]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.024
+Number of tests selected out of total in original order: 2 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 60.940
+
+Test order list:
+[org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.testRepoCount, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testParallelScheduler]
+
+Time each test takes to run in the new order:
+[821570147, 60117967168]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.020
+Number of tests selected out of total in original order: 2 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 61.243
+
+Test order list:
+[org.apache.zeppelin.notebook.repo.NotebookRepoSyncTest.testCheckpointOneStorage, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testRemoteInterperterErrorStatus]
+
+Time each test takes to run in the new order:
+[1149416014, 60093360958]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.016
+Number of tests selected out of total in original order: 2 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 60.840
+
+Test order list:
+[org.apache.zeppelin.search.LuceneSearchTest.canIndexNotebook, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testFIFOScheduler]
+
+Time each test takes to run in the new order:
+[729619729, 60110806287]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.020
+Number of tests selected out of total in original order: 2 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 60.767
+
+Test order list:
+[org.apache.zeppelin.interpreter.install.InstallInterpreterTest.install, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testConvertDynamicForms]
+
+Time each test takes to run in the new order:
+[593219986, 60173712247]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.023
+Number of tests selected out of total in original order: 2 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 61.079
+
+Test order list:
+[org.apache.zeppelin.interpreter.install.InstallInterpreterTest.installAll, org.apache.zeppelin.interpreter.remote.RemoteInterpreterOutputTestStream.testInterpreterOutputStreamOnly]
+
+Time each test takes to run in the new order:
+[922644648, 60156207386]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.021
+Number of tests selected out of total in original order: 2 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 61.178
+
+Test order list:
+[org.apache.zeppelin.notebook.repo.FileSystemNotebookRepoTest.testBasics, org.apache.zeppelin.interpreter.remote.RemoteInterpreterOutputTestStream.testInterpreterResultOnly]
+
+Time each test takes to run in the new order:
+[1105766537, 60072196965]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.047
+Number of tests selected out of total in original order: 2 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 61.516
+
+Test order list:
+[org.apache.zeppelin.interpreter.remote.AppendOutputRunnerTest.testClubbedData, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.should_push_local_angular_repo_to_remote]
+
+Time each test takes to run in the new order:
+[1284654242, 60231338276]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 63.024
+Number of tests selected out of total in original order: 2 / 127
+Number of DTs not fixed: 1
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 62.714
+
+Test order list:
+[org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClientTest.zeppelinConnectionTest, org.apache.zeppelin.interpreter.remote.RemoteInterpreterTest.testEnvironmentAndProperty]
+
+Time each test takes to run in the new order:
+[2573294751, 60140838444]
+
+DTs not fixed are:
+[org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClientTest.zeppelinConnectionTest]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 122.037
+Number of tests selected out of total in original order: 2 / 127
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 120.808
+
+Test order list:
+[org.apache.zeppelin.scheduler.RemoteSchedulerTest.testAbortOnPending, org.apache.zeppelin.interpreter.remote.RemoteInterpreterOutputTestStream.testOutputType]
+
+Time each test takes to run in the new order:
+[60286378423, 60521978590]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 1040.584
+New order time: 120.808
+Total number of tests executed in all machines out of total in original order: 127 / 127

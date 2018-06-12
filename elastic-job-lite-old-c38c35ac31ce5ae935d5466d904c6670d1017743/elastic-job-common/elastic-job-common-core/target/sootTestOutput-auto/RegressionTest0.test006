@@ -1,0 +1,3 @@
+com.dangdang.ddframe.job.util.digest.Encryption.md5 : $r1 = virtualinvoke r0.<java.lang.String: byte[] getBytes()>()
+com.dangdang.ddframe.job.util.digest.Encryption.md5 : r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>("MD5")
+com.dangdang.ddframe.job.util.digest.Encryption.md5 : $r2 = new java.math.BigInteger

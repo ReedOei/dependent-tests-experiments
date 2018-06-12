@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter$1.getAclForPath : $r2 = <org.apache.zookeeper.ZooDefs$Ids: java.util.ArrayList CREATOR_ALL_ACL> >>>>>>>> com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter$1.getAclForPath : return $r2

@@ -1,0 +1,3 @@
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : goto [?= return]
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.sleep : staticinvoke <java.lang.Thread: void sleep(long)>(l0)
+com.dangdang.ddframe.job.util.concurrent.BlockUtils.waitingShortTime : staticinvoke <com.dangdang.ddframe.job.util.concurrent.BlockUtils: void sleep(long)>(100L)

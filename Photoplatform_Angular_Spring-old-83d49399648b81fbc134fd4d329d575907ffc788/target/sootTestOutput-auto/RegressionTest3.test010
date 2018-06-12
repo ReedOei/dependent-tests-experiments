@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.persistence.model.Image.setPrice : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.Double price> = r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setCreatedBy : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String createdBy> = r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setChangeDate : $r1 = new java.util.Date
+de.htw.sdf.photoplatform.persistence.model.Image.toString : $r1 = new java.lang.StringBuilder

@@ -1,0 +1,4 @@
+com.alibaba.dubbo.config.spring.ServiceBean.getSpringContext : $r0 = <com.alibaba.dubbo.config.spring.ServiceBean: org.springframework.context.ApplicationContext SPRING_CONTEXT>
+com.alibaba.dubbo.config.spring.status.DataSourceStatusChecker.check : r1 = staticinvoke <com.alibaba.dubbo.config.spring.ServiceBean: org.springframework.context.ApplicationContext getSpringContext()>()
+com.alibaba.dubbo.config.spring.status.DataSourceStatusChecker.check : if r1 != null goto r2 = interfaceinvoke r1.<org.springframework.context.ApplicationContext: java.util.Map getBeansOfType(java.lang.Class,boolean,boolean)>(class "Ljavax/sql/DataSource;", 0, 0)
+com.alibaba.dubbo.config.spring.status.DataSourceStatusChecker.check : $r32 = new com.alibaba.dubbo.common.status.Status

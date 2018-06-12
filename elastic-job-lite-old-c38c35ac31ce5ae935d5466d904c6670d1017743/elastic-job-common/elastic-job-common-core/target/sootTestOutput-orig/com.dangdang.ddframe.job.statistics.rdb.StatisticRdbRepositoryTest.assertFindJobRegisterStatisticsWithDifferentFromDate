@@ -1,0 +1,82 @@
+com.dangdang.ddframe.job.statistics.StatisticInterval.values : $r0 = <com.dangdang.ddframe.job.statistics.StatisticInterval: com.dangdang.ddframe.job.statistics.StatisticInterval[] $VALUES>
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskRunningTableIfNeeded : $r6 = newarray (java.lang.String)[1]
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskRunningTableIfNeeded : $z0 = interfaceinvoke r3.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskRunningTableIfNeeded : r2 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskRunningTableIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: void createTaskRunningTable(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskRunningTableIfNeeded : if r3 == null goto return
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskRunningTableIfNeeded : interfaceinvoke r3.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRunningTable : interfaceinvoke r3.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRunningTable : interfaceinvoke r3.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRunningTable : if r3 == null goto return
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRunningTable : r3 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("CREATE TABLE `JOB_RUNNING_STATISTICS` (`id` BIGINT NOT NULL AUTO_INCREMENT, `running_count` INT(11),`statistics_time` TIMESTAMP NOT NULL,`creation_time` TIMESTAMP NOT NULL,PRIMARY KEY (`id`));")
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRegisterTableIfNeeded : $r6 = newarray (java.lang.String)[1]
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRegisterTableIfNeeded : $z0 = interfaceinvoke r3.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRegisterTableIfNeeded : r2 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRegisterTableIfNeeded : if r3 == null goto return
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRegisterTableIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: void createJobRegisterTable(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRegisterTableIfNeeded : interfaceinvoke r3.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.statistics.type.job.JobRegisterStatistics.getRegisteredCount : $i0 = r0.<com.dangdang.ddframe.job.statistics.type.job.JobRegisterStatistics: int registeredCount>
+com.dangdang.ddframe.job.statistics.type.job.JobRegisterStatistics.getStatisticsTime : $r1 = r0.<com.dangdang.ddframe.job.statistics.type.job.JobRegisterStatistics: java.util.Date statisticsTime>
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.getYesterday : $r1 = new java.util.Date
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRegisterTable : r3 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("CREATE TABLE `JOB_REGISTER_STATISTICS` (`id` BIGINT NOT NULL AUTO_INCREMENT, `registered_count` INT(11),`statistics_time` TIMESTAMP NOT NULL,`creation_time` TIMESTAMP NOT NULL,PRIMARY KEY (`id`));")
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRegisterTable : interfaceinvoke r3.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRegisterTable : interfaceinvoke r3.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRegisterTable : if r3 == null goto return
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskRunningTable : interfaceinvoke r3.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskRunningTable : interfaceinvoke r3.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskRunningTable : r3 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("CREATE TABLE `TASK_RUNNING_STATISTICS` (`id` BIGINT NOT NULL AUTO_INCREMENT, `running_count` INT(11),`statistics_time` TIMESTAMP NOT NULL,`creation_time` TIMESTAMP NOT NULL,PRIMARY KEY (`id`));")
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskRunningTable : if r3 == null goto return
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : r23 = null
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : $r8 = new java.sql.Timestamp
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : $r10 = new java.sql.Timestamp
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : z1 = 1
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : z1 = 0
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : r24 = interfaceinvoke r22.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("INSERT INTO `JOB_REGISTER_STATISTICS` (`registered_count`, `statistics_time`, `creation_time`) VALUES (?, ?, ?);")
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : interfaceinvoke r24.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : interfaceinvoke r24.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : interfaceinvoke r22.<java.sql.Connection: void close()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : $i0 = virtualinvoke r1.<com.dangdang.ddframe.job.statistics.type.job.JobRegisterStatistics: int getRegisteredCount()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : $r7 = r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.add : if r24 == null goto (branch)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : $r14 = virtualinvoke $r12.<java.text.SimpleDateFormat: java.lang.String format(java.util.Date)>(r1)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : $r12 = new java.text.SimpleDateFormat
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : $z0 = interfaceinvoke r39.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : interfaceinvoke $r11.<java.util.List: boolean add(java.lang.Object)>($r16)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : r37 = interfaceinvoke r35.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(r4)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : $r16 = new com.dangdang.ddframe.job.statistics.type.job.JobRegisterStatistics
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r39.<java.sql.ResultSet: boolean next()>()", "com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics")]
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : $r18 = interfaceinvoke r39.<java.sql.ResultSet: java.sql.Timestamp getTimestamp(int)>(3)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : interfaceinvoke r39.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : r39 = interfaceinvoke r37.<java.sql.PreparedStatement: java.sql.ResultSet executeQuery()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : interfaceinvoke r35.<java.sql.Connection: void close()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : if r39 == null goto (branch)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : $r11 = new java.util.LinkedList
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : $r13 = newarray (java.lang.Object)[2]
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : $r15 = r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.findJobRegisterStatistics : r36 = null
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTableIfNeeded : r3 = staticinvoke <com.dangdang.ddframe.job.statistics.StatisticInterval: com.dangdang.ddframe.job.statistics.StatisticInterval[] values()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTableIfNeeded : r2 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTableIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: void createTaskResultTable(java.sql.Connection,com.dangdang.ddframe.job.statistics.StatisticInterval)>(r1, r4)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTableIfNeeded : if r5 == null goto i1 = i1 + 1
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTableIfNeeded : r4 = r3[i1]
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTableIfNeeded : $r8 = new java.lang.StringBuilder
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTableIfNeeded : $z0 = interfaceinvoke r5.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.statistics.type.job.JobRegisterStatistics.getCreationTime : $r1 = r0.<com.dangdang.ddframe.job.statistics.type.job.JobRegisterStatistics: java.util.Date creationTime>
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.initTables : specialinvoke r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: void createTaskRunningTableIfNeeded(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.initTables : specialinvoke r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: void createJobRunningTableIfNeeded(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.initTables : interfaceinvoke r1.<java.sql.Connection: void close()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.initTables : if r1 == null goto return
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.initTables : specialinvoke r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: void createJobRegisterTableIfNeeded(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.initTables : $r4 = r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.initTables : specialinvoke r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: void createTaskResultTableIfNeeded(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTable : interfaceinvoke r4.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTable : if r4 == null goto return
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTable : $r7 = new java.lang.StringBuilder
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTable : r4 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(r3)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createTaskResultTable : interfaceinvoke r4.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRunningTableIfNeeded : $r6 = newarray (java.lang.String)[1]
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRunningTableIfNeeded : $z0 = interfaceinvoke r3.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRunningTableIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository: void createJobRunningTable(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRunningTableIfNeeded : r2 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRunningTableIfNeeded : if r3 == null goto return
+com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepository.createJobRunningTableIfNeeded : interfaceinvoke r3.<java.sql.ResultSet: void close()>()

@@ -1,0 +1,1 @@
+org.apache.ambari.server.checks.HiveNotRollingWarning.perform : $r3 = virtualinvoke r1.<org.apache.ambari.server.state.stack.PrerequisiteCheck: java.util.LinkedHashSet getFailedOn()>()

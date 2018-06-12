@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.dto.ImageData.getPriceAsString : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String priceAsString> >>>>>>>> de.htw.sdf.photoplatform.webservice.dto.ImageData.getPriceAsString : return $r1

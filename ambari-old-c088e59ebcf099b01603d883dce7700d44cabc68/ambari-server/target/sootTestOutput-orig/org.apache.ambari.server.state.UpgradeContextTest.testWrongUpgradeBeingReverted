@@ -1,0 +1,9 @@
+org.apache.ambari.server.state.RepositoryType.isRevertable : return 1
+org.apache.ambari.server.state.RepositoryType.isRevertable : $r1 = <org.apache.ambari.server.state.RepositoryType$1: int[] $SwitchMap$org$apache$ambari$server$state$RepositoryType>
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if r2 == null goto r1.<org.apache.ambari.server.state.StackId: java.lang.String stackName> = ""
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $r8 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(0, i0)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i1 = virtualinvoke r2.<java.lang.String: int length()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : i0 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(45)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if i0 == -1 goto $r3 = new java.lang.RuntimeException
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $z0 = virtualinvoke r2.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i3 = i0 + 1

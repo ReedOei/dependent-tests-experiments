@@ -1,0 +1,6 @@
+org.apache.ambari.server.state.RepositoryType.isRevertable : $r1 = <org.apache.ambari.server.state.RepositoryType$1: int[] $SwitchMap$org$apache$ambari$server$state$RepositoryType> >>>>>>>> org.apache.ambari.server.state.RepositoryType.isRevertable : $i0 = virtualinvoke r0.<org.apache.ambari.server.state.RepositoryType: int ordinal()>()
+org.apache.ambari.server.state.RepositoryType.isRevertable : $i0 = virtualinvoke r0.<org.apache.ambari.server.state.RepositoryType: int ordinal()>() >>>>>>>> org.apache.ambari.server.state.RepositoryType.isRevertable : $i1 = $r1[$i0]
+org.apache.ambari.server.state.RepositoryType.isRevertable : $i1 = $r1[$i0] >>>>>>>> org.apache.ambari.server.state.RepositoryType.isRevertable : tableswitch($i1) {     case 1:
+org.apache.ambari.server.state.RepositoryType.isRevertable : tableswitch($i1) {     case 1: >>>>>>>> org.apache.ambari.server.state.RepositoryType.isRevertable : return 1
+org.apache.ambari.server.state.RepositoryType.isRevertable : tableswitch($i1) {     case 1: >>>>>>>> org.apache.ambari.server.state.RepositoryType.isRevertable : return 0
+org.apache.ambari.server.state.RepositoryType.isRevertable : tableswitch($i1) {     case 1: >>>>>>>> org.apache.ambari.server.state.RepositoryType.isRevertable : return 0

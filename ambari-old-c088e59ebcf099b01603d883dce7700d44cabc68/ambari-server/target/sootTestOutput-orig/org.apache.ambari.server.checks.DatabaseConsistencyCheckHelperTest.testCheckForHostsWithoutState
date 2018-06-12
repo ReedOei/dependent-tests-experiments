@@ -1,0 +1,31 @@
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.closeConnection : $r2 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.closeConnection : $r1 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.closeConnection : goto [?= return]
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setConnection : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection> = r0
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.apache.ambari.server.api.services.AmbariMetaInfo ambariMetaInfo> = null
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection> = null
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: com.google.inject.Injector injector> = r0
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: void closeConnection()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.apache.ambari.server.orm.DBAccessor dbAccessor> = null
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.setInjector : <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.apache.ambari.server.orm.dao.MetainfoDAO metainfoDAO> = null
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.ensureConnection : $r0 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$2.configure : $r7 = virtualinvoke r0.<org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$2: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/Clusters;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$2.configure : $r9 = virtualinvoke r0.<org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$2: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/stack/OsFamily;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$2.configure : $r3 = virtualinvoke r0.<org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$2: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Ljavax/persistence/EntityManager;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$2.configure : $r5 = virtualinvoke r0.<org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$2: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/DBAccessor;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$2.configure : $r1 = virtualinvoke r0.<org.apache.ambari.server.checks.DatabaseConsistencyCheckHelperTest$2: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/stack/StackManagerFactory;")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : $r3 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.slf4j.Logger LOG>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : $z1 = interfaceinvoke $r4.<java.util.Set: boolean isEmpty()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: void ensureConnection()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : $r4 = new java.util.HashSet
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : goto [?= (branch)]
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : $r5 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: java.sql.Connection connection>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : if r28 == null goto (branch)
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : goto [?= return]
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : if r29 == null goto return
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : interfaceinvoke r28.<java.sql.ResultSet: void close()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : r28 = interfaceinvoke r29.<java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>("select host_name from hosts where host_id not in (select host_id from hoststate)")
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : r28 = null
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : r29 = null
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : interfaceinvoke r29.<java.sql.Statement: void close()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkForHostsWithoutState : $z0 = interfaceinvoke r28.<java.sql.ResultSet: boolean next()>()

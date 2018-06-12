@@ -1,0 +1,1 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getSessionId : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreter: java.lang.String sessionId> >>>>>>>> org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getSessionId : return $r1

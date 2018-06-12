@@ -1,0 +1,2 @@
+org.apache.accumulo.master.Master.isActiveService : $r1 = r0.<org.apache.accumulo.master.Master: java.util.concurrent.atomic.AtomicBoolean masterInitialized> >>>>>>>> org.apache.accumulo.master.Master.isActiveService : $z0 = virtualinvoke $r1.<java.util.concurrent.atomic.AtomicBoolean: boolean get()>()
+org.apache.accumulo.master.Master.isActiveService : $z0 = virtualinvoke $r1.<java.util.concurrent.atomic.AtomicBoolean: boolean get()>() >>>>>>>> org.apache.accumulo.master.Master.isActiveService : return $z0

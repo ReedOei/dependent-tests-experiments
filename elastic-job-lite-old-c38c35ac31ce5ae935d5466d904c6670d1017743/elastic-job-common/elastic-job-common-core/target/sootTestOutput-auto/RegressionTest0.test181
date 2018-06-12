@@ -1,0 +1,7 @@
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String id>
+com.dangdang.ddframe.job.statistics.StatisticInterval.getCron : $r1 = r0.<com.dangdang.ddframe.job.statistics.StatisticInterval: java.lang.String cron>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getShardingItems : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String shardingItems>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getCreationTime : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.util.Date creationTime>
+com.dangdang.ddframe.job.context.TaskContext$MetaInfo.getShardingItems : $r1 = r0.<com.dangdang.ddframe.job.context.TaskContext$MetaInfo: java.util.List shardingItems>
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : $z0 = interfaceinvoke r0.<java.util.List: boolean isEmpty()>()
+com.dangdang.ddframe.job.context.TaskContext$MetaInfo.toString : $r1 = staticinvoke <com.google.common.base.Joiner: com.google.common.base.Joiner on(java.lang.String)>("@-@")

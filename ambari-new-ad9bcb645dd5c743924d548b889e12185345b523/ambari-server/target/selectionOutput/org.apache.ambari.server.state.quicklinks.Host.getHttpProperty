@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.quicklinks.Host.getHttpProperty : $r1 = r0.<org.apache.ambari.server.state.quicklinks.Host: java.lang.String httpProperty> >>>>>>>> org.apache.ambari.server.state.quicklinks.Host.getHttpProperty : return $r1

@@ -1,0 +1,2 @@
+com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScanRegistrar.getPackagesToScan : $r9 = class "Lcom/alibaba/dubbo/config/spring/context/annotation/DubboComponentScan;"
+com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScanRegistrar.registerBeanDefinitions : r3 = specialinvoke r0.<com.alibaba.dubbo.config.spring.context.'annotation'.DubboComponentScanRegistrar: java.util.Set getPackagesToScan(org.springframework.core.type.AnnotationMetadata)>(r1)

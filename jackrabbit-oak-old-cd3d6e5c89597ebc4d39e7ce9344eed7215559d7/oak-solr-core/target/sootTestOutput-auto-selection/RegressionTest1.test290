@@ -1,0 +1,4 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getPathField : return "path_exact" >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getRows : return 10
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getRows : return 10 >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.useForPathRestrictions : return 0
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.useForPathRestrictions : return 0 >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getCatchAllField : return "catch_all"
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getCatchAllField : return "catch_all" >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getFieldForPropertyRestriction : return null

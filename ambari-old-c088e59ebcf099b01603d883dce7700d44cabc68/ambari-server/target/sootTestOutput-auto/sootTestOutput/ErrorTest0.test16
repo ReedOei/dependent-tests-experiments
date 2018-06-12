@@ -1,0 +1,6 @@
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.runAllDBChecks : if z0 == 0 goto staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: void checkSchemaName()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.runAllDBChecks : $r5 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.slf4j.Logger LOG>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.runAllDBChecks : throw $r4
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.runAllDBChecks : $r1 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: org.slf4j.Logger LOG>
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.runAllDBChecks : staticinvoke <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: void checkSchemaName()>()
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.checkSchemaName : $r11 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper: com.google.inject.Injector injector>

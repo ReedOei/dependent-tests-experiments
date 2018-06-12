@@ -1,0 +1,19 @@
+de.htw.sdf.photoplatform.persistence.model.Image.getDescription : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String description>
+de.htw.sdf.photoplatform.persistence.model.Image.getThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String thumbPath>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getCreatedBy : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String createdBy>
+de.htw.sdf.photoplatform.persistence.model.Image.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.model.Image.getPrice : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.Double price>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.getId : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id>
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToImageData : $r2 = new de.htw.sdf.photoplatform.webservice.dto.ImageData
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToImageData : return $r2
+de.htw.sdf.photoplatform.persistence.model.Image.getMobileThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mobileThumbPath>
+de.htw.sdf.photoplatform.webservice.dto.UserData.setPaypalID : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String paypalID> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getRoles : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.util.List roles>
+de.htw.sdf.photoplatform.webservice.dto.ImageData.setUserData : r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: de.htw.sdf.photoplatform.webservice.dto.UserData userData> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getLastName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String lastName>
+de.htw.sdf.photoplatform.persistence.model.Image.getSmallThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath>
+de.htw.sdf.photoplatform.webservice.dto.ImageData.setThumbnailPath : r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String thumbnailPath> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.webservice.dto.UserData.setEmail : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String email> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getEmail : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String email>
+de.htw.sdf.photoplatform.persistence.model.Image.getMetaData : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String metaData>

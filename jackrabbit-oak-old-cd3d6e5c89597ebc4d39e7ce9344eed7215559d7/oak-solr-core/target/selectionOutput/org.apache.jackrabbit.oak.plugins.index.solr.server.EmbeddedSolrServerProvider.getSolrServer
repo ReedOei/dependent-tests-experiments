@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProvider.getSolrServer : $r1 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProvider: org.apache.solr.client.solrj.SolrClient createSolrServer()>() >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProvider.getSolrServer : return $r1

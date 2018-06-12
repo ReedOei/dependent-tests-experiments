@@ -1,0 +1,9 @@
+org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : $r2 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String scriptText> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : $z0 = virtualinvoke $r2.<java.lang.String: boolean isEmpty()>()
+org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : $z0 = virtualinvoke $r2.<java.lang.String: boolean isEmpty()>() >>>>>>>> org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : if $z0 == 0
+org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : if $z0 == 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : return 0
+org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : if $z0 == 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : $r3 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String scriptText>
+org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : $r3 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String scriptText> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : i0 = virtualinvoke r1.<java.lang.String: int indexOf(java.lang.String)>($r3)
+org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : i0 = virtualinvoke r1.<java.lang.String: int indexOf(java.lang.String)>($r3) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : if i0 <= 0
+org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : if i0 <= 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : i1 = i1 - i0
+org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : if i0 <= 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : return i1
+org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : i1 = i1 - i0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.calculateCursorPosition : return i1

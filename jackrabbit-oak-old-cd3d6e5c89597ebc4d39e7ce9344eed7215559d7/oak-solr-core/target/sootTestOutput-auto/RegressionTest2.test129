@@ -1,0 +1,4 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrConfDir : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String solrConfDir>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfiguration.getType : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfiguration: java.lang.reflect.Type type>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrHttpUrls : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String[] solrHttpUrls>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrZkHost : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String solrZkHost>

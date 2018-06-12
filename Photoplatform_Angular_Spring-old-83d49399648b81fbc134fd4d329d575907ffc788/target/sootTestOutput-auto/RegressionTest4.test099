@@ -1,0 +1,5 @@
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setPhone : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String phone> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getCollections : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.util.List collections>
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setCompany : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String company> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setPaypalID : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String paypalID> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getPaypalID : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String paypalID>

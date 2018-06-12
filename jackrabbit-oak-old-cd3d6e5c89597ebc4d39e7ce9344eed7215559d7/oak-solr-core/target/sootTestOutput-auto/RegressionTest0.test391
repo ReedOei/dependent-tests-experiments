@@ -1,0 +1,8 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getPathDepthField : return "path_depth"
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getUrl : return "http://127.0.0.1:8983/solr/oak"
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getPathField : return "path_exact"
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.useForPrimaryTypes : return 0
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.collapseJcrContentNodes : return 0
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getIndexingSolrServer : $r3 = new org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrServer
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getIndexingSolrServer : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider: org.apache.solr.client.solrj.SolrClient indexingSolrServer>
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getIndexingSolrServer : $r2 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider: org.apache.solr.client.solrj.SolrClient indexingSolrServer>

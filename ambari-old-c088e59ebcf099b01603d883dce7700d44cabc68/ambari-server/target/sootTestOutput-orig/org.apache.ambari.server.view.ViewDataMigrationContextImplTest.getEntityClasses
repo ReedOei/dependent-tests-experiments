@@ -1,0 +1,23 @@
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getPersistenceClassesOfView : $r11 = virtualinvoke r4.<org.apache.ambari.server.view.configuration.EntityConfig: java.lang.String getClassName()>()
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getPersistenceClassesOfView : $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getPersistenceClassesOfView : $r7 = virtualinvoke r1.<org.apache.ambari.server.view.configuration.PersistenceConfig: java.util.List getEntities()>()
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getPersistenceClassesOfView : if r1 == null goto return $r6
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getPersistenceClassesOfView : $r9 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ViewEntity: java.lang.ClassLoader getClassLoader()>()
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getPersistenceClassesOfView : goto [?= (branch)]
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getPersistenceClassesOfView : $r5 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ViewEntity: org.apache.ambari.server.view.configuration.ViewConfig getConfiguration()>()
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getPersistenceClassesOfView : $r6 = new java.util.HashMap
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getPersistenceClassesOfView : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getViewInstanceEntityMock : $r3 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/entities/ViewInstanceEntity;")
+org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getViewInstanceEntityMock : return r2
+org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getViewInstanceEntityMock : $r12 = virtualinvoke r2.<org.apache.ambari.server.orm.entities.ViewInstanceEntity: java.lang.String getInstanceName()>()
+org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getViewInstanceEntityMock : $r4 = virtualinvoke r2.<org.apache.ambari.server.orm.entities.ViewInstanceEntity: org.apache.ambari.server.orm.entities.ViewEntity getViewEntity()>()
+org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getViewInstanceEntityMock : $r8 = virtualinvoke r2.<org.apache.ambari.server.orm.entities.ViewInstanceEntity: java.lang.String getViewName()>()
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getCurrentEntityClasses : $r3 = staticinvoke <org.apache.ambari.server.view.ViewDataMigrationContextImpl: java.util.Map getPersistenceClassesOfView(org.apache.ambari.server.orm.entities.ViewEntity)>(r1)
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getCurrentEntityClasses : $r2 = r0.<org.apache.ambari.server.view.ViewDataMigrationContextImpl: org.apache.ambari.server.orm.entities.ViewInstanceEntity currentInstanceDefinition>
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getOriginEntityClasses : $r3 = staticinvoke <org.apache.ambari.server.view.ViewDataMigrationContextImpl: java.util.Map getPersistenceClassesOfView(org.apache.ambari.server.orm.entities.ViewEntity)>(r1)
+org.apache.ambari.server.view.ViewDataMigrationContextImpl.getOriginEntityClasses : $r2 = r0.<org.apache.ambari.server.view.ViewDataMigrationContextImpl: org.apache.ambari.server.orm.entities.ViewInstanceEntity originInstanceDefinition>
+org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getViewEntityMock : $r8 = virtualinvoke r2.<org.apache.ambari.server.orm.entities.ViewEntity: java.lang.String getVersion()>()
+org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getViewEntityMock : $r3 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/entities/ViewEntity;")
+org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getViewEntityMock : return r2
+org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getViewEntityMock : $r12 = virtualinvoke r2.<org.apache.ambari.server.orm.entities.ViewEntity: java.lang.ClassLoader getClassLoader()>()
+org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getViewEntityMock : $r4 = virtualinvoke r2.<org.apache.ambari.server.orm.entities.ViewEntity: java.lang.String getViewName()>()

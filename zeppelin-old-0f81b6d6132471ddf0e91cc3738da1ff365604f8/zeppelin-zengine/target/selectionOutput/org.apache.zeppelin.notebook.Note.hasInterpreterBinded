@@ -1,0 +1,9 @@
+org.apache.zeppelin.notebook.Note.hasInterpreterBinded : $r1 = r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager> >>>>>>>> org.apache.zeppelin.notebook.Note.hasInterpreterBinded : $r2 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: java.lang.String getId()>()
+org.apache.zeppelin.notebook.Note.hasInterpreterBinded : $r2 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: java.lang.String getId()>() >>>>>>>> org.apache.zeppelin.notebook.Note.hasInterpreterBinded : $r3 = virtualinvoke $r1.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.List getInterpreterSettings(java.lang.String)>($r2)
+org.apache.zeppelin.notebook.Note.hasInterpreterBinded : $r3 = virtualinvoke $r1.<org.apache.zeppelin.interpreter.InterpreterSettingManager: java.util.List getInterpreterSettings(java.lang.String)>($r2) >>>>>>>> org.apache.zeppelin.notebook.Note.hasInterpreterBinded : $z0 = interfaceinvoke $r3.<java.util.List: boolean isEmpty()>()
+org.apache.zeppelin.notebook.Note.hasInterpreterBinded : $z0 = interfaceinvoke $r3.<java.util.List: boolean isEmpty()>() >>>>>>>> org.apache.zeppelin.notebook.Note.hasInterpreterBinded : if $z0 != 0
+org.apache.zeppelin.notebook.Note.hasInterpreterBinded : if $z0 != 0 >>>>>>>> org.apache.zeppelin.notebook.Note.hasInterpreterBinded : $z1 = 1
+org.apache.zeppelin.notebook.Note.hasInterpreterBinded : if $z0 != 0 >>>>>>>> org.apache.zeppelin.notebook.Note.hasInterpreterBinded : $z1 = 0
+org.apache.zeppelin.notebook.Note.hasInterpreterBinded : $z1 = 0 >>>>>>>> org.apache.zeppelin.notebook.Note.hasInterpreterBinded : return $z1
+org.apache.zeppelin.notebook.Note.hasInterpreterBinded : $z1 = 1 >>>>>>>> org.apache.zeppelin.notebook.Note.hasInterpreterBinded : goto [?= return $z1]
+org.apache.zeppelin.notebook.Note.hasInterpreterBinded : goto [?= return $z1] >>>>>>>> org.apache.zeppelin.notebook.Note.hasInterpreterBinded : return $z1

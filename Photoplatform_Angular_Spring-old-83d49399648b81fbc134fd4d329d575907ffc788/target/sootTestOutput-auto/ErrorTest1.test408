@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.setClazz : r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: java.lang.Class clazz> = r1
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.getEntityManager : $r1 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.createQuery : $r2 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.repository.impl.CategoryDAOImpl.findByName : r3 = virtualinvoke r0.<de.htw.sdf.photoplatform.repository.impl.CategoryDAOImpl: javax.persistence.Query createQuery(java.lang.String)>("SELECT category FROM Category category WHERE category.name = ?1")

@@ -1,0 +1,3 @@
+com.dangdang.ddframe.job.util.env.IpUtils.getHostName : $r1 = staticinvoke <java.net.InetAddress: java.net.InetAddress getLocalHost()>()
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r5 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r8 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>

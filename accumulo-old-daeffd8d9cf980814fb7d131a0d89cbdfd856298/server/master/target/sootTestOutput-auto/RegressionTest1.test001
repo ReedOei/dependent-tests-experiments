@@ -1,0 +1,4 @@
+org.apache.accumulo.master.tableOps.ImportTable.checkVersions : r58 = null
+org.apache.accumulo.master.tableOps.ImportTable.checkVersions : $r7 = new org.apache.hadoop.fs.Path
+org.apache.accumulo.master.tableOps.ImportTable.checkVersions : r59 = null
+org.apache.accumulo.master.tableOps.ImportTable.checkVersions : $r10 = new java.util.zip.ZipInputStream

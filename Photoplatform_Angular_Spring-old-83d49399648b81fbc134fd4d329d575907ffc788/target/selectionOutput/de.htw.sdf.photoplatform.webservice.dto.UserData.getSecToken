@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.dto.UserData.getSecToken : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String secToken> >>>>>>>> de.htw.sdf.photoplatform.webservice.dto.UserData.getSecToken : return $r1

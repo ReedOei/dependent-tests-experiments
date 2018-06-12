@@ -1,0 +1,3 @@
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String id> >>>>>>>> com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getId : return $r1
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getId : return $r1 >>>>>>>> com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getCreationTime : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.util.Date creationTime>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getCreationTime : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.util.Date creationTime> >>>>>>>> com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getCreationTime : return $r1

@@ -1,0 +1,7 @@
+org.apache.ambari.server.utils.CollectionPresentationUtils.isStringPermutationOfCollection : r3 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.utils.CollectionPresentationUtils.isStringPermutationOfCollection : $r9 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.utils.CollectionPresentationUtils.isStringPermutationOfCollection : interfaceinvoke $r5.<java.util.List: boolean remove(java.lang.Object)>(r4)
+org.apache.ambari.server.utils.CollectionPresentationUtils.isStringPermutationOfCollection : $r5 = new java.util.ArrayList
+org.apache.ambari.server.utils.CollectionPresentationUtils.isStringPermutationOfCollection : $i2 = virtualinvoke r10.<java.lang.String: int length()>()
+org.apache.ambari.server.utils.CollectionPresentationUtils.isStringPermutationOfCollection : $z2 = interfaceinvoke $r5.<java.util.List: boolean contains(java.lang.Object)>(r4)
+org.apache.ambari.server.utils.CollectionPresentationUtils.isStringPermutationOfCollection : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]

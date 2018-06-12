@@ -1,0 +1,11 @@
+org.apache.ambari.server.view.ViewClassLoader.getInitContext : virtualinvoke $r3.<org.eclipse.jetty.webapp.WebAppContext: void addSystemClass(java.lang.String)>("org.apache.ambari.server.")
+org.apache.ambari.server.view.ViewClassLoader.getInitContext : virtualinvoke $r3.<org.eclipse.jetty.webapp.WebAppContext: void addSystemClass(java.lang.String)>("com.sun.jersey.")
+org.apache.ambari.server.view.ViewClassLoader.getInitContext : if r2 == null goto return $r3
+org.apache.ambari.server.view.ViewClassLoader.getInitContext : r2 = virtualinvoke r0.<org.apache.ambari.server.view.configuration.ViewConfig: java.lang.String getExtraClasspath()>()
+org.apache.ambari.server.view.ViewClassLoader.getInitContext : virtualinvoke $r3.<org.eclipse.jetty.webapp.WebAppContext: void addSystemClass(java.lang.String)>("org.apache.ambari.view.")
+org.apache.ambari.server.view.ViewClassLoader.getInitContext : $r3 = new org.eclipse.jetty.webapp.WebAppContext
+org.apache.ambari.server.view.ViewClassLoader.getInitContext : virtualinvoke $r3.<org.eclipse.jetty.webapp.WebAppContext: void addSystemClass(java.lang.String)>("com.google.inject.")
+org.apache.ambari.server.view.ViewClassLoader.getInitContext : virtualinvoke $r3.<org.eclipse.jetty.webapp.WebAppContext: void addSystemClass(java.lang.String)>("org.slf4j.")
+org.apache.ambari.server.view.ViewClassLoader.getInitContext : if r0 == null goto return $r3
+org.apache.ambari.server.view.ViewClassLoader.getInitContext : return $r3
+org.apache.ambari.server.view.ViewClassLoader.getInitContext : virtualinvoke $r3.<org.eclipse.jetty.webapp.WebAppContext: void addSystemClass(java.lang.String)>("org.apache.velocity.")

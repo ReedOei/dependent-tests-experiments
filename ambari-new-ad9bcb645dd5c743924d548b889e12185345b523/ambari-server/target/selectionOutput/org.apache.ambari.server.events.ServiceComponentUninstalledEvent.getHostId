@@ -1,0 +1,1 @@
+org.apache.ambari.server.events.ServiceComponentUninstalledEvent.getHostId : $r1 = r0.<org.apache.ambari.server.events.ServiceComponentUninstalledEvent: java.lang.Long m_hostId> >>>>>>>> org.apache.ambari.server.events.ServiceComponentUninstalledEvent.getHostId : return $r1

@@ -1,0 +1,5 @@
+org.apache.zeppelin.notebook.NotebookAuthorization.isOwner : return 1
+org.apache.zeppelin.notebook.NotebookAuthorization.isOwner : $r3 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.notebook.NotebookAuthorization.isOwner : $r4 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.NotebookAuthorization.getInstance : $r1 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>
+org.apache.zeppelin.notebook.NotebookAuthorization.getInstance : $r0 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>

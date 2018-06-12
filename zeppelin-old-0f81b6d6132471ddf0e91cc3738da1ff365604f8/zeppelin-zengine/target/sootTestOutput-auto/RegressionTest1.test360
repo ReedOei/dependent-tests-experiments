@@ -1,0 +1,4 @@
+org.apache.zeppelin.notebook.Folder.getNotes : $r1 = new java.util.LinkedList
+org.apache.zeppelin.notebook.Folder.countNotes : $r1 = r0.<org.apache.zeppelin.notebook.Folder: java.util.Map notes>
+org.apache.zeppelin.notebook.Folder.getNotesRecursively : $r4 = r0.<org.apache.zeppelin.notebook.Folder: java.util.Map children>
+org.apache.zeppelin.notebook.Folder.getNotesRecursively : r1 = virtualinvoke r0.<org.apache.zeppelin.notebook.Folder: java.util.List getNotes()>()

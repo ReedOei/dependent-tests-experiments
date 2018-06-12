@@ -1,0 +1,9 @@
+org.apache.ambari.server.controller.ClusterResponse.toString : $r13 = virtualinvoke $r12.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", desiredStackVersion=")
+org.apache.ambari.server.controller.ClusterResponse.toString : $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", clusterId=")
+org.apache.ambari.server.controller.ClusterResponse.toString : $r19 = r0.<org.apache.ambari.server.controller.ClusterResponse: java.util.Set hostNames>
+org.apache.ambari.server.controller.ClusterResponse.toString : $r20 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("], clusterHealthReport= ")
+org.apache.ambari.server.controller.ClusterResponse.toString : virtualinvoke $r17.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", hosts=[")
+org.apache.ambari.server.controller.ClusterResponse.toString : $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("{ clusterName=")
+org.apache.ambari.server.controller.ClusterResponse.toString : $r16 = virtualinvoke $r15.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", totalHosts=")
+org.apache.ambari.server.controller.ClusterResponse.toString : $r4 = new java.lang.StringBuilder
+org.apache.ambari.server.controller.ClusterResponse.toString : $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", provisioningState=")

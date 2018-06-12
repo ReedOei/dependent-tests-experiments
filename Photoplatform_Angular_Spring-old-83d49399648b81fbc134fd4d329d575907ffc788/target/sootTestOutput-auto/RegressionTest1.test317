@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.webservice.dto.UserData.isEnabled : $z0 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: boolean enabled>
+de.htw.sdf.photoplatform.webservice.dto.UserData.isAdmin : $z0 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: boolean admin>
+de.htw.sdf.photoplatform.webservice.dto.UserData.getLastName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String lastName>

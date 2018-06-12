@@ -1,0 +1,6 @@
+org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : $r1 = <org.apache.ambari.server.state.stack.upgrade.Direction: org.apache.ambari.server.state.stack.upgrade.Direction UPGRADE> >>>>>>>> org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : if r0 != $r1
+org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : if r0 != $r1 >>>>>>>> org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : $r2 = "to"
+org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : if r0 != $r1 >>>>>>>> org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : $r2 = "from"
+org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : $r2 = "from" >>>>>>>> org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : return $r2
+org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : $r2 = "to" >>>>>>>> org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : goto [?= return $r2]
+org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : goto [?= return $r2] >>>>>>>> org.apache.ambari.server.state.stack.upgrade.Direction.getPreposition : return $r2

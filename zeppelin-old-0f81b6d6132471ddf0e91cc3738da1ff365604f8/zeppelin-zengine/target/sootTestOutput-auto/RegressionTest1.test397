@@ -1,0 +1,13 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterDir : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String interpreterDir> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.setErrorReason : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String errorReason> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterInfos : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterInfos : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$302 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List interpreterInfos> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterInfos : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List interpreterInfos> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$1202 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcessListener remoteInterpreterProcessListener> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getLifecycleManager : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager>
+org.apache.zeppelin.interpreter.InterpreterInfo.getClassName : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterInfo: java.lang.String className>
+org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterRunner : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterRunner interpreterRunner> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getDependencyResolver : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.dep.DependencyResolver dependencyResolver>

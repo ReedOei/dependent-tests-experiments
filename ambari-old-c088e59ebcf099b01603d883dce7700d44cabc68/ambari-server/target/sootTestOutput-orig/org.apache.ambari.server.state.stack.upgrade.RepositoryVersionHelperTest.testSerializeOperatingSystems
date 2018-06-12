@@ -1,0 +1,20 @@
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : r3 = staticinvoke <com.google.common.collect.ArrayListMultimap: com.google.common.collect.ArrayListMultimap create()>()
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : $r45 = interfaceinvoke r47.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : goto [?= $z0 = interfaceinvoke r47.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : $r11 = interfaceinvoke r3.<com.google.common.collect.Multimap: java.util.Map asMap()>()
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : $r18 = interfaceinvoke r50.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : $r46 = virtualinvoke r48.<org.apache.ambari.server.state.RepositoryInfo: java.lang.String getOsType()>()
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : $r24 = interfaceinvoke r6.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : $r10 = new com.google.gson.JsonArray
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : $r26 = <org.apache.ambari.server.controller.internal.RepositoryResourceProvider: java.lang.String REPOSITORY_BASE_URL_PROPERTY_ID>
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : $r15 = interfaceinvoke r49.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : $r17 = new com.google.gson.JsonArray
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : $r25 = new com.google.gson.JsonObject
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : $r16 = new com.google.gson.JsonObject
+org.apache.ambari.server.state.stack.upgrade.RepositoryVersionHelper.serializeOperatingSystems : r47 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.state.RepositoryInfo.setUnique : r0.<org.apache.ambari.server.state.RepositoryInfo: boolean unique> = z0
+org.apache.ambari.server.state.RepositoryInfo.setBaseUrl : r0.<org.apache.ambari.server.state.RepositoryInfo: java.lang.String baseUrl> = r1
+org.apache.ambari.server.state.RepositoryInfo.setRepoId : r0.<org.apache.ambari.server.state.RepositoryInfo: java.lang.String repoId> = r1
+org.apache.ambari.server.state.RepositoryInfo.setAmbariManagedRepositories : r0.<org.apache.ambari.server.state.RepositoryInfo: boolean ambariManagedRepositories> = z0
+org.apache.ambari.server.state.RepositoryInfo.getOsType : $r1 = r0.<org.apache.ambari.server.state.RepositoryInfo: java.lang.String osType>
+org.apache.ambari.server.state.RepositoryInfo.setOsType : r0.<org.apache.ambari.server.state.RepositoryInfo: java.lang.String osType> = r1

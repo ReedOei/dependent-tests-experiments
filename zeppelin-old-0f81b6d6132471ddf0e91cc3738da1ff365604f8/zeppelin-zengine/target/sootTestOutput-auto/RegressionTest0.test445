@@ -1,0 +1,13 @@
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setDependencies : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setDependencies : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$102 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String name> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterInfos : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterInfos : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$302 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List interpreterInfos> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$1202 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcessListener remoteInterpreterProcessListener> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setName : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setName : return r0
+org.apache.zeppelin.interpreter.InterpreterInfo.getClassName : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterInfo: java.lang.String className>
+org.apache.zeppelin.interpreter.InterpreterSetting.access$802 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List dependencies> = r1

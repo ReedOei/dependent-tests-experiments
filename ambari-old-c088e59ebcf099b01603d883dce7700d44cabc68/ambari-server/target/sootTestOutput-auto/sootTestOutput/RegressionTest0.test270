@@ -1,0 +1,1 @@
+org.apache.ambari.server.agent.rest.AgentResource.register : $r4 = <org.apache.ambari.server.agent.rest.AgentResource: org.apache.ambari.server.agent.HeartBeatHandler hh>

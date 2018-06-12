@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.persistence.model.Image.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.model.Image.getPrice : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.Double price>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setChangeDate : $r1 = new java.util.Date

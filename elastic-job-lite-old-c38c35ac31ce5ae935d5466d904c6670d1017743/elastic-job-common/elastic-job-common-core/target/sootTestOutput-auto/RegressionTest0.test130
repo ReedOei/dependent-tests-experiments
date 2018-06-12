@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemsString : $z0 = interfaceinvoke r0.<java.util.List: boolean isEmpty()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Result.getRows : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Result: java.util.List rows>

@@ -1,0 +1,1 @@
+org.apache.ambari.server.agent.StatusCommand.getRole : $r1 = r0.<org.apache.ambari.server.agent.StatusCommand: java.lang.String role> >>>>>>>> org.apache.ambari.server.agent.StatusCommand.getRole : return $r1

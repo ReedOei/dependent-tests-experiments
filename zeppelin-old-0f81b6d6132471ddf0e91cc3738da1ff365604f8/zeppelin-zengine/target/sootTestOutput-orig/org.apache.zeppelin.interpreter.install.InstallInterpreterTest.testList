@@ -1,0 +1,76 @@
+org.apache.zeppelin.interpreter.lifecycle.TimeoutLifecycleManager.access$000 : $r1 = r0.<org.apache.zeppelin.interpreter.lifecycle.TimeoutLifecycleManager: java.util.Map interpreterGroups>
+org.apache.zeppelin.interpreter.SparkInterpreterModeTest.setUp : $r1 = <org.apache.zeppelin.interpreter.SparkInterpreterModeTest: org.apache.zeppelin.interpreter.MiniHadoopCluster hadoopCluster>
+org.apache.zeppelin.interpreter.SparkInterpreterModeTest.setUp : $r0 = new org.apache.zeppelin.interpreter.MiniHadoopCluster
+org.apache.zeppelin.interpreter.SparkInterpreterModeTest.setUp : $r3 = <org.apache.zeppelin.interpreter.SparkInterpreterModeTest: org.apache.zeppelin.interpreter.MiniZeppelin zeppelin>
+org.apache.zeppelin.interpreter.SparkInterpreterModeTest.setUp : $r2 = new org.apache.zeppelin.interpreter.MiniZeppelin
+org.apache.zeppelin.interpreter.lifecycle.TimeoutLifecycleManagerTest.setUp : specialinvoke r0.<org.apache.zeppelin.interpreter.AbstractInterpreterTest: void setUp()>()
+org.apache.zeppelin.interpreter.lifecycle.TimeoutLifecycleManagerTest.setUp : $r1 = <org.apache.zeppelin.conf.ZeppelinConfiguration$ConfVars: org.apache.zeppelin.conf.ZeppelinConfiguration$ConfVars ZEPPELIN_INTERPRETER_LIFECYCLE_MANAGER_CLASS>
+org.apache.zeppelin.interpreter.lifecycle.TimeoutLifecycleManagerTest.setUp : $r6 = <org.apache.zeppelin.conf.ZeppelinConfiguration$ConfVars: org.apache.zeppelin.conf.ZeppelinConfiguration$ConfVars ZEPPELIN_INTERPRETER_LIFECYCLE_MANAGER_TIMEOUT_CHECK_INTERVAL>
+org.apache.zeppelin.interpreter.lifecycle.TimeoutLifecycleManagerTest.setUp : $r3 = class "Lorg/apache/zeppelin/interpreter/lifecycle/TimeoutLifecycleManager;"
+org.apache.zeppelin.interpreter.lifecycle.TimeoutLifecycleManagerTest.setUp : $r9 = <org.apache.zeppelin.conf.ZeppelinConfiguration$ConfVars: org.apache.zeppelin.conf.ZeppelinConfiguration$ConfVars ZEPPELIN_INTERPRETER_LIFECYCLE_MANAGER_TIMEOUT_THRESHOLD>
+org.apache.zeppelin.interpreter.install.InstallInterpreter.list : $r7 = <java.lang.System: java.io.PrintStream out>
+org.apache.zeppelin.interpreter.install.InstallInterpreter.list : goto [?= $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()]
+org.apache.zeppelin.interpreter.install.InstallInterpreter.list : $r3 = r0.<org.apache.zeppelin.interpreter.install.InstallInterpreter: java.util.List availableInterpreters>
+org.apache.zeppelin.interpreter.install.InstallInterpreter.list : $r5 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.apache.zeppelin.interpreter.MiniZeppelin.stop : $r1 = r0.<org.apache.zeppelin.interpreter.MiniZeppelin: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager>
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r14 = r0.<org.apache.zeppelin.interpreter.MiniHadoopCluster: org.apache.hadoop.hdfs.MiniDFSCluster dfsCluster>
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r11 = virtualinvoke $r10.<org.apache.hadoop.hdfs.MiniDFSCluster$Builder: org.apache.hadoop.hdfs.MiniDFSCluster$Builder format(boolean)>(1)
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r30 = r0.<org.apache.zeppelin.interpreter.MiniHadoopCluster: org.apache.hadoop.yarn.server.MiniYARNCluster yarnCluster>
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r26 = r0.<org.apache.zeppelin.interpreter.MiniHadoopCluster: org.apache.hadoop.yarn.server.MiniYARNCluster yarnCluster>
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r35 = <org.apache.zeppelin.interpreter.MiniHadoopCluster: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r6 = new java.io.File
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r46 = virtualinvoke r2.<org.apache.hadoop.conf.Configuration: java.lang.String get(java.lang.String)>("yarn.resourcemanager.address")
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r4 = <org.apache.zeppelin.interpreter.MiniHadoopCluster: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r27 = staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>()
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r10 = virtualinvoke $r8.<org.apache.hadoop.hdfs.MiniDFSCluster$Builder: org.apache.hadoop.hdfs.MiniDFSCluster$Builder numDataNodes(int)>(2)
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : goto [?= $r31 = virtualinvoke r2.<org.apache.hadoop.conf.Configuration: java.lang.String get(java.lang.String)>("yarn.resourcemanager.address")]
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : goto [?= $r46 = virtualinvoke r2.<org.apache.hadoop.conf.Configuration: java.lang.String get(java.lang.String)>("yarn.resourcemanager.address")]
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r12 = virtualinvoke $r11.<org.apache.hadoop.hdfs.MiniDFSCluster$Builder: org.apache.hadoop.hdfs.MiniDFSCluster$Builder waitSafeMode(boolean)>(1)
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r5 = new org.apache.hadoop.conf.Configuration
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r8 = new org.apache.hadoop.hdfs.MiniDFSCluster$Builder
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r13 = virtualinvoke $r12.<org.apache.hadoop.hdfs.MiniDFSCluster$Builder: org.apache.hadoop.hdfs.MiniDFSCluster build()>()
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r16 = r0.<org.apache.zeppelin.interpreter.MiniHadoopCluster: org.apache.hadoop.conf.Configuration hadoopConf>
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r23 = new org.apache.hadoop.yarn.server.MiniYARNCluster
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r31 = virtualinvoke r2.<org.apache.hadoop.conf.Configuration: java.lang.String get(java.lang.String)>("yarn.resourcemanager.address")
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r29 = r0.<org.apache.zeppelin.interpreter.MiniHadoopCluster: org.apache.hadoop.yarn.server.MiniYARNCluster yarnCluster>
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r21 = new org.apache.hadoop.yarn.conf.YarnConfiguration
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : $r40 = new java.lang.StringBuilder
+org.apache.zeppelin.interpreter.MiniHadoopCluster.start : staticinvoke <java.lang.Thread: void sleep(long)>(100L)
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : $r10 = r0.<org.apache.zeppelin.interpreter.install.InstallInterpreter: java.io.File interpreterListFile>
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : virtualinvoke r6.<java.util.regex.Matcher: boolean find()>()
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : r2 = virtualinvoke r1.<java.lang.String: java.lang.String[] split(java.lang.String)>("\n")
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : $r11 = r0.<org.apache.zeppelin.interpreter.install.InstallInterpreter: java.io.File interpreterListFile>
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : i3 = i3 + 1
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : r5 = r2[i4]
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : r6 = virtualinvoke r3.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r5)
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : r3 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("(\\S+)\\s+(\\S+)\\s+(.*)")
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : i0 = lengthof r2
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : r9 = virtualinvoke r6.<java.util.regex.Matcher: java.lang.String group(int)>(3)
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : $i2 = virtualinvoke r6.<java.util.regex.Matcher: int groupCount()>()
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : r7 = virtualinvoke r6.<java.util.regex.Matcher: java.lang.String group(int)>(1)
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : r8 = virtualinvoke r6.<java.util.regex.Matcher: java.lang.String group(int)>(2)
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : $r13 = r0.<org.apache.zeppelin.interpreter.install.InstallInterpreter: java.util.List availableInterpreters>
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : if r5 == null goto i4 = i4 + 1
+org.apache.zeppelin.interpreter.install.InstallInterpreter.readAvailableInterpreters : i3 = 0
+org.apache.zeppelin.interpreter.MiniZeppelin.start : $r26 = <org.apache.zeppelin.interpreter.MiniZeppelin: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.MiniZeppelin.start : $r2 = <org.apache.zeppelin.conf.ZeppelinConfiguration$ConfVars: org.apache.zeppelin.conf.ZeppelinConfiguration$ConfVars ZEPPELIN_HOME>
+org.apache.zeppelin.interpreter.MiniZeppelin.start : $r15 = new java.io.File
+org.apache.zeppelin.interpreter.MiniZeppelin.start : $r24 = r0.<org.apache.zeppelin.interpreter.MiniZeppelin: java.io.File notebookDir>
+org.apache.zeppelin.interpreter.MiniZeppelin.start : $r1 = new java.io.File
+org.apache.zeppelin.interpreter.MiniZeppelin.start : $r23 = r0.<org.apache.zeppelin.interpreter.MiniZeppelin: java.io.File confDir>
+org.apache.zeppelin.interpreter.MiniZeppelin.start : $r4 = r0.<org.apache.zeppelin.interpreter.MiniZeppelin: java.io.File zeppelinHome>
+org.apache.zeppelin.interpreter.MiniZeppelin.start : $r32 = new java.io.File
+org.apache.zeppelin.interpreter.MiniZeppelin.start : $r7 = new java.io.File
+org.apache.zeppelin.interpreter.SparkInterpreterModeTest.tearDown : $r0 = <org.apache.zeppelin.interpreter.SparkInterpreterModeTest: org.apache.zeppelin.interpreter.MiniZeppelin zeppelin>
+org.apache.zeppelin.interpreter.SparkInterpreterModeTest.tearDown : $r3 = <org.apache.zeppelin.interpreter.SparkInterpreterModeTest: org.apache.zeppelin.interpreter.MiniZeppelin zeppelin>
+org.apache.zeppelin.interpreter.MiniHadoopCluster.saveConfig : virtualinvoke $r7.<java.io.FileOutputStream: void close()>()
+org.apache.zeppelin.interpreter.MiniHadoopCluster.saveConfig : $r9 = <org.apache.zeppelin.interpreter.MiniHadoopCluster: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.MiniHadoopCluster.saveConfig : $r6 = new org.apache.hadoop.conf.Configuration
+org.apache.zeppelin.interpreter.MiniHadoopCluster.saveConfig : virtualinvoke $r6.<org.apache.hadoop.conf.Configuration: void unset(java.lang.String)>("net.topology.node.switch.mapping.impl")
+org.apache.zeppelin.interpreter.MiniHadoopCluster.saveConfig : goto [?= $r9 = <org.apache.zeppelin.interpreter.MiniHadoopCluster: org.slf4j.Logger LOGGER>]
+org.apache.zeppelin.interpreter.MiniHadoopCluster.saveConfig : virtualinvoke $r6.<org.apache.hadoop.conf.Configuration: void writeXml(java.io.OutputStream)>($r7)
+org.apache.zeppelin.interpreter.MiniHadoopCluster.saveConfig : $r7 = new java.io.FileOutputStream
+org.apache.zeppelin.interpreter.lifecycle.TimeoutLifecycleManager$1.run : l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.zeppelin.interpreter.lifecycle.TimeoutLifecycleManager$1.run : $r5 = r0.<org.apache.zeppelin.interpreter.lifecycle.TimeoutLifecycleManager$1: org.apache.zeppelin.interpreter.lifecycle.TimeoutLifecycleManager this$0>

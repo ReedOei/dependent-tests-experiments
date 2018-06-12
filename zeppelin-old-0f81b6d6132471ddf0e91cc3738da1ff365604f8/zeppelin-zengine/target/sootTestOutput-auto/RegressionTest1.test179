@@ -1,0 +1,6 @@
+org.apache.zeppelin.notebook.NotebookAuthorization.getRunners : return r8
+org.apache.zeppelin.notebook.NotebookAuthorization.getRunners : $r7 = new java.util.HashSet
+org.apache.zeppelin.notebook.NotebookAuthorization.getRunners : $r3 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.getRunners : if r2 != null goto $r5 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("runners")
+org.apache.zeppelin.notebook.NotebookAuthorization.getInstance : $r1 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>
+org.apache.zeppelin.notebook.NotebookAuthorization.getInstance : $r0 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>

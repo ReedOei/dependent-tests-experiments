@@ -1,0 +1,1 @@
+org.apache.accumulo.master.Master$TabletGoalState.howUnload : $r1 = r0.<org.apache.accumulo.master.Master$TabletGoalState: org.apache.accumulo.core.tabletserver.thrift.TUnloadTabletGoal unloadGoal> >>>>>>>> org.apache.accumulo.master.Master$TabletGoalState.howUnload : return $r1

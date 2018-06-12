@@ -1,0 +1,9 @@
+org.apache.ambari.server.agent.AgentEnv.getExistingRepos : $r1 = r0.<org.apache.ambari.server.agent.AgentEnv: java.lang.String[] existingRepos>
+org.apache.ambari.server.orm.helpers.dbms.GenericDbmsHelper.getAddPrimaryKeyConstraintStatement : $r4 = new java.lang.StringBuilder
+org.apache.ambari.server.orm.helpers.dbms.GenericDbmsHelper.getAddPrimaryKeyConstraintStatement : $r5 = virtualinvoke r7.<java.lang.StringBuilder: java.lang.String toString()>()
+org.apache.ambari.server.orm.helpers.dbms.GenericDbmsHelper.getAddPrimaryKeyConstraintStatement : r7 = virtualinvoke r0.<org.apache.ambari.server.orm.helpers.dbms.GenericDbmsHelper: java.lang.StringBuilder writeAddPrimaryKeyString(java.lang.StringBuilder,java.lang.String,java.lang.String[])>(r6, r2, r3)
+org.apache.ambari.server.orm.helpers.dbms.GenericDbmsHelper.writeAlterTableClause : $r3 = virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("ALTER TABLE ")
+org.apache.ambari.server.orm.helpers.dbms.GenericDbmsHelper.writeAlterTableClause : return r1
+org.apache.ambari.server.orm.helpers.dbms.DerbyHelper.supportsColumnTypeChange : return 0
+org.apache.ambari.server.orm.helpers.dbms.GenericDbmsHelper.writeAddPrimaryKeyString : $r4 = virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("ADD CONSTRAINT ")
+org.apache.ambari.server.orm.helpers.dbms.GenericDbmsHelper.writeAddPrimaryKeyString : return r1

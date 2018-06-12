@@ -1,0 +1,17 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.access$1102 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setIntepreterSettingManager : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setIntepreterSettingManager : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.setErrorReason : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String errorReason> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getOption : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterRunner : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterRunner : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setOption : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setOption : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setConf : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setConf : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$902 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.conf.ZeppelinConfiguration conf> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.access$702 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterRunner interpreterRunner> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.access$502 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.access$602 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String interpreterDir> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterDir : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterDir : return r0

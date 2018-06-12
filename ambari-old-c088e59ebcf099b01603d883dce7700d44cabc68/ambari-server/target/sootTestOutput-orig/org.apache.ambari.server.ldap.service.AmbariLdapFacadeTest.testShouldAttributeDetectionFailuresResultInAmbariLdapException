@@ -1,0 +1,5 @@
+org.apache.ambari.server.ldap.service.AmbariLdapFacade.detectAttributes : $r2 = <org.apache.ambari.server.ldap.service.AmbariLdapFacade: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.ldap.service.AmbariLdapFacade.detectAttributes : $r4 = r0.<org.apache.ambari.server.ldap.service.AmbariLdapFacade: org.apache.ambari.server.ldap.service.LdapAttributeDetectionService ldapAttributeDetectionService>
+org.apache.ambari.server.ldap.service.AmbariLdapFacade.detectAttributes : $r3 = <org.apache.ambari.server.ldap.service.AmbariLdapFacade: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.ldap.service.AmbariLdapFacade.detectAttributes : $r9 = <org.apache.ambari.server.ldap.service.AmbariLdapFacade: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.ldap.service.AmbariLdapFacade.detectAttributes : $r10 = new org.apache.ambari.server.ldap.service.AmbariLdapException

@@ -1,0 +1,11 @@
+de.htw.sdf.photoplatform.repository.impl.CollectionDAOImpl.initCollectionImagesQuery : $r5 = virtualinvoke r2.<java.lang.StringBuilder: java.lang.String toString()>()
+de.htw.sdf.photoplatform.repository.impl.CollectionDAOImpl.initCollectionImagesQuery : virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("WHERE collection.id = :collectionId ")
+de.htw.sdf.photoplatform.repository.impl.CollectionDAOImpl.initCollectionImagesQuery : r2 = specialinvoke r0.<de.htw.sdf.photoplatform.repository.impl.CollectionDAOImpl: java.lang.StringBuilder initCollectionAndImagesSelect()>()
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.setClazz : r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: java.lang.Class clazz> = r1
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.createQuery : $r2 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.repository.impl.CollectionDAOImpl.initCollectionAndImagesSelect : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("LEFT JOIN FETCH collection.user owner ")
+de.htw.sdf.photoplatform.repository.impl.CollectionDAOImpl.initCollectionAndImagesSelect : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("LEFT JOIN FETCH collection.collectionImages collectionImages ")
+de.htw.sdf.photoplatform.repository.impl.CollectionDAOImpl.initCollectionAndImagesSelect : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("LEFT JOIN FETCH collectionImages.image image ")
+de.htw.sdf.photoplatform.repository.impl.CollectionDAOImpl.initCollectionAndImagesSelect : $r2 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.repository.impl.CollectionDAOImpl.initCollectionAndImagesSelect : return $r2
+de.htw.sdf.photoplatform.repository.impl.CollectionDAOImpl.findCollectionImagesBy : r2 = specialinvoke r0.<de.htw.sdf.photoplatform.repository.impl.CollectionDAOImpl: javax.persistence.Query initCollectionImagesQuery(java.lang.Long)>(r1)

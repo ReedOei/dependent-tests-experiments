@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.UserGroupInfo.setType : r0.<org.apache.ambari.server.state.UserGroupInfo: java.lang.String type> = r1 >>>>>>>> org.apache.ambari.server.state.UserGroupInfo.setType : return

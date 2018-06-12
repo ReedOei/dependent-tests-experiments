@@ -1,0 +1,2 @@
+org.apache.ambari.server.controller.internal.TaskAttemptResourceProviderTest.createTaskAttemptResponse : $r7 = <org.apache.ambari.server.controller.internal.TaskAttemptResourceProvider: java.lang.String TASK_ATTEMPT_CLUSTER_NAME_PROPERTY_ID>
+org.apache.ambari.server.controller.internal.TaskAttemptResourceProviderTest.createTaskAttemptResponse : $r5 = new org.apache.ambari.server.controller.internal.ResourceImpl

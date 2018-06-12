@@ -1,0 +1,2 @@
+org.apache.accumulo.master.tableOps.Utils.reserveHdfsDirectory : $r4 = new java.lang.StringBuilder
+org.apache.accumulo.master.tableOps.Utils.reserveHdfsDirectory : r1 = staticinvoke <org.apache.accumulo.server.client.HdfsZooInstance: org.apache.accumulo.core.client.Instance getInstance()>()

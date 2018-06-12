@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ServiceComponentResponse.getDesiredStackId : $r1 = r0.<org.apache.ambari.server.controller.ServiceComponentResponse: java.lang.String desiredStackId> >>>>>>>> org.apache.ambari.server.controller.ServiceComponentResponse.getDesiredStackId : return $r1

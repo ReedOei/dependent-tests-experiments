@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.persistence.model.User.getPhotographerData : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: de.htw.sdf.photoplatform.persistence.model.PhotographerData photographerData> >>>>>>>> de.htw.sdf.photoplatform.persistence.model.User.getPhotographerData : return $r1

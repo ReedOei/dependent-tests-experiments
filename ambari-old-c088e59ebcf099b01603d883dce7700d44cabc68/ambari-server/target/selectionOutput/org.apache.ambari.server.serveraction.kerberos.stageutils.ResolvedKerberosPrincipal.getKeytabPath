@@ -1,0 +1,1 @@
+org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal.getKeytabPath : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal: java.lang.String keytabPath> >>>>>>>> org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosPrincipal.getKeytabPath : return $r1

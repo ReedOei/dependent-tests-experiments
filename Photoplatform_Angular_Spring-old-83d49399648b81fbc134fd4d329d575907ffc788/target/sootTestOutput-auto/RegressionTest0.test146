@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.webservice.controller.PhotographerController.updateCollectionShowcase : r3 = virtualinvoke $r9.<com.fasterxml.jackson.databind.ObjectMapper: com.fasterxml.jackson.databind.JsonNode readTree(java.lang.String)>(r1)
+de.htw.sdf.photoplatform.webservice.controller.PhotographerController.updateCollectionShowcase : $r9 = new com.fasterxml.jackson.databind.ObjectMapper

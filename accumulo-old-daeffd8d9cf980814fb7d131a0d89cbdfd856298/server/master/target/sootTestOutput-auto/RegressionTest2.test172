@@ -1,0 +1,4 @@
+org.apache.accumulo.master.state.TableStats.getScanTime : $l6 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.accumulo.master.state.TableStats.getScanTime : $l1 = r0.<org.apache.accumulo.master.state.TableStats: long endScan>
+org.apache.accumulo.master.state.TableStats.begin : $r1 = new java.util.HashMap
+org.apache.accumulo.master.state.TableStats.begin : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()

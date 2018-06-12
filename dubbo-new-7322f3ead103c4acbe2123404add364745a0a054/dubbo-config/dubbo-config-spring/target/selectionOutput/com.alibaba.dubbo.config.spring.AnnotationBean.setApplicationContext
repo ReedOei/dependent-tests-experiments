@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.AnnotationBean.setApplicationContext : r0.<com.alibaba.dubbo.config.spring.AnnotationBean: org.springframework.context.ApplicationContext applicationContext> = r1 >>>>>>>> com.alibaba.dubbo.config.spring.AnnotationBean.setApplicationContext : return

@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ActiveWidgetLayoutResponse.getDisplayName : $r1 = r0.<org.apache.ambari.server.controller.ActiveWidgetLayoutResponse: java.lang.String displayName> >>>>>>>> org.apache.ambari.server.controller.ActiveWidgetLayoutResponse.getDisplayName : return $r1

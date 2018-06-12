@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.isClusterConfigurable : $z0 = r0.<org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo: boolean clusterConfigurable> >>>>>>>> org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.isClusterConfigurable : return $z0

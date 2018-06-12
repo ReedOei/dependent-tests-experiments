@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewInstanceRequest$ViewInstanceRequestInfo.getInstanceName : $r1 = r0.<org.apache.ambari.server.controller.ViewInstanceRequest$ViewInstanceRequestInfo: java.lang.String instanceName> >>>>>>>> org.apache.ambari.server.controller.ViewInstanceRequest$ViewInstanceRequestInfo.getInstanceName : return $r1

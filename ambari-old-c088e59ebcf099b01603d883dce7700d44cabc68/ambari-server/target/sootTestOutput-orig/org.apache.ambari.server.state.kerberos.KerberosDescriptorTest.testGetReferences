@@ -1,0 +1,151 @@
+org.apache.ambari.server.state.kerberos.KerberosDescriptor.getService : if r1 == null goto $r5 = null
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getPath : $r2 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String path>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getPath : $r1 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String path>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getPath : $r3 = specialinvoke r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String getPath()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.putIdentity : r2 = virtualinvoke r1.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String getName()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.putIdentity : $r5 = new java.util.ArrayList
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.putIdentity : $z1 = virtualinvoke r2.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.putIdentity : $r3 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.List identities>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.putIdentity : if r2 == null goto $r6 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.List identities>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.putIdentity : if r1 == null goto return
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.putIdentity : $r6 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.List identities>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.putIdentity : $r4 = virtualinvoke r1.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String getName()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.putIdentity : virtualinvoke r1.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: void setParent(org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor)>(r0)
+org.apache.ambari.server.state.kerberos.KerberosDescriptorTest.collectPaths : $r6 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.state.kerberos.KerberosDescriptorTest.collectPaths : $r5 = new java.util.HashSet
+org.apache.ambari.server.state.kerberos.KerberosDescriptorTest.collectPaths : r3 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.state.kerberos.KerberosDescriptorTest.collectPaths : $r7 = virtualinvoke r4.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String getPath()>()
+org.apache.ambari.server.state.kerberos.KerberosDescriptorTest.collectPaths : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setPrincipalDescriptor : $r2 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor principal>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setPrincipalDescriptor : $r3 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor principal>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setPrincipalDescriptor : r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor principal> = r1
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setReference : r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String reference> = r1
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentity : $r5 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.List identities>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentity : r8 = null
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentity : goto [?= return r8]
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentity : $r7 = virtualinvoke r3.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String getName()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentity : if r1 == null goto return r8
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentity : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentity : $r4 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.List identities>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentity : r8 = r3
+org.apache.ambari.server.state.kerberos.KerberosPrincipalType.valueOf : $r1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class "Lorg/apache/ambari/server/state/kerberos/KerberosPrincipalType;", r0)
+org.apache.ambari.server.state.kerberos.KerberosDescriptor.putService : if r2 != null goto $r4 = r0.<org.apache.ambari.server.state.kerberos.KerberosDescriptor: java.util.Map services>
+org.apache.ambari.server.state.kerberos.KerberosDescriptor.putService : $r9 = new java.util.TreeMap
+org.apache.ambari.server.state.kerberos.KerberosDescriptor.putService : if r3 != null goto virtualinvoke r3.<org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor: void update(org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor)>(r1)
+org.apache.ambari.server.state.kerberos.KerberosDescriptor.putService : $r4 = r0.<org.apache.ambari.server.state.kerberos.KerberosDescriptor: java.util.Map services>
+org.apache.ambari.server.state.kerberos.KerberosDescriptor.putService : r2 = virtualinvoke r1.<org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor: java.lang.String getName()>()
+org.apache.ambari.server.state.kerberos.KerberosDescriptor.putService : virtualinvoke r1.<org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor: void setParent(org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor)>(r0)
+org.apache.ambari.server.state.kerberos.KerberosDescriptor.putService : $r7 = r0.<org.apache.ambari.server.state.kerberos.KerberosDescriptor: java.util.Map services>
+org.apache.ambari.server.state.kerberos.KerberosDescriptor.putService : if r1 == null goto return
+org.apache.ambari.server.state.kerberos.KerberosDescriptor.putService : $r5 = r0.<org.apache.ambari.server.state.kerberos.KerberosDescriptor: java.util.Map services>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findReferences : $r2 = (org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer) r1
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findReferences : $z0 = r1 instanceof org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findReferences : r1 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor getRoot()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.setParent : r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor parent> = r1
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setConfiguration : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: java.lang.String configuration> = r1
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor.putComponent : $r3 = r0.<org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor: java.util.Map components>
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor.putComponent : virtualinvoke r1.<org.apache.ambari.server.state.kerberos.KerberosComponentDescriptor: void setParent(org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor)>(r0)
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor.putComponent : if r1 == null goto return
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor.putComponent : $r6 = new java.util.TreeMap
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor.putComponent : r2 = virtualinvoke r1.<org.apache.ambari.server.state.kerberos.KerberosComponentDescriptor: java.lang.String getName()>()
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor.putComponent : if r2 != null goto $r3 = r0.<org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor: java.util.Map components>
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor.putComponent : $r4 = r0.<org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor: java.util.Map components>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.isReferredServiceInstalled : if r1 == null goto return 1
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getStringValue : if r2 != null goto $r3 = virtualinvoke r2.<java.lang.Object: java.lang.String toString()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getStringValue : r2 = staticinvoke <org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.Object getValue(java.util.Map,java.lang.String)>(r0, r1)
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor.setPreconfigure : r0.<org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor: java.lang.Boolean preconfigure> = r1
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor.getComponent : if r1 == null goto $r5 = null
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getPath : r8 = virtualinvoke r8.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor getParent()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getPath : $r5 = virtualinvoke r8.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String getName()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getPath : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder insert(int,char)>(0, 47)
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getPath : if r8 == null goto $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.String toString()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getPath : $r4 = virtualinvoke r8.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String getName()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getPath : $r2 = new java.lang.StringBuilder
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getPath : r8 = r0
+org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor.setCachable : r0.<org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor: boolean cachable> = z0
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.setLocalUsername : r0.<org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor: java.lang.String localUsername> = r1
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.removeIdentity : $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.removeIdentity : $r5 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.List identities>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.removeIdentity : if r1 == null goto return
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.removeIdentity : $r7 = virtualinvoke r3.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String getName()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.removeIdentity : $r4 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.List identities>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.removeIdentity : $r6 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.removeIdentity : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()", "org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.removeIdentity")]
+org.apache.ambari.server.state.kerberos.KerberosDescriptorFactory.createInstance : $r3 = new org.apache.ambari.server.state.kerberos.KerberosDescriptor
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getRoot : return r2
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getRoot : r2 = r0
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getRoot : r2 = virtualinvoke r2.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor getParent()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getRoot : $r1 = virtualinvoke r2.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor getParent()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getParent : $r1 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor parent>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.setName : r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String name> = r1
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.setConfiguration : r0.<org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor: java.lang.String configuration> = r1
+org.apache.ambari.server.state.kerberos.KerberosDescriptor.getChildContainers : $r1 = r0.<org.apache.ambari.server.state.kerberos.KerberosDescriptor: java.util.Map services>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setKeytabDescriptor : r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor keytab> = r1
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setKeytabDescriptor : $r3 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor keytab>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.setKeytabDescriptor : $r2 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.KerberosKeytabDescriptor keytab>
+org.apache.ambari.server.state.kerberos.KerberosComponentDescriptor.getChildContainers : return null
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : $z7 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>(r11)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : interfaceinvoke $r6.<java.util.List: boolean addAll(java.util.Collection)>(r5)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : r9 = interfaceinvoke r4.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : $z6 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isEmpty(java.lang.String)>(r11)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : r4 = virtualinvoke r1.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.List getIdentities()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : $r8 = interfaceinvoke r9.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : goto [?= $z1 = interfaceinvoke r13.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : r5 = specialinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.util.List findIdentityReferences(org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer,java.lang.String)>(r14, r2)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : $r7 = interfaceinvoke r13.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : r11 = virtualinvoke r10.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String getReferenceAbsolutePath()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : r13 = interfaceinvoke r12.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : $r6 = new java.util.ArrayList
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : $z5 = virtualinvoke r10.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: boolean isReference()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : interfaceinvoke $r6.<java.util.List: boolean add(java.lang.Object)>(r10)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : if r1 != null goto $r6 = new java.util.ArrayList
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : if r4 == null goto r12 = virtualinvoke r1.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.Collection getChildContainers()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : $z2 = staticinvoke <org.apache.commons.collections.CollectionUtils: boolean isEmpty(java.util.Collection)>(r5)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.findIdentityReferences : r12 = virtualinvoke r1.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.Collection getChildContainers()>()
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.getKerberosPrincipalTypeValue : $r3 = virtualinvoke r2.<java.lang.String: java.lang.String toUpperCase()>()
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.getKerberosPrincipalTypeValue : if r2 == null goto return null
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.getKerberosPrincipalTypeValue : $z0 = virtualinvoke r2.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.getKerberosPrincipalTypeValue : r2 = staticinvoke <org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor: java.lang.String getStringValue(java.util.Map,java.lang.String)>(r0, r1)
+org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor.setType : r0.<org.apache.ambari.server.state.kerberos.KerberosPrincipalDescriptor: org.apache.ambari.server.state.kerberos.KerberosPrincipalType type> = r1
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getBooleanValue : $r2 = staticinvoke <org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.Boolean getBooleanValue(java.util.Map,java.lang.String,java.lang.Boolean)>(r0, r1, null)
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getBooleanValue : r3 = staticinvoke <org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String getStringValue(java.util.Map,java.lang.String)>(r0, r1)
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getBooleanValue : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isEmpty(java.lang.String)>(r3)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : if r5 != null goto $z3 = virtualinvoke r4.<java.lang.String: boolean startsWith(java.lang.String)>("..")
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : goto [?= return r4]
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : $r2 = virtualinvoke r9.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String getPath()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : if r7 == null goto (branch)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : r9 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor getParent()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : r5 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String getPath()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : $z2 = virtualinvoke r4.<java.lang.String: boolean startsWith(java.lang.String)>("/")
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : $r3 = virtualinvoke r8.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String getPath()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : r4 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String reference>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : $r1 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String reference>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : r8 = virtualinvoke r7.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor getParent()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : if r8 == null goto (branch)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : $z1 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isEmpty(java.lang.String)>(r4)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : if r9 == null goto return r4
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : r7 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor getParent()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : $z4 = virtualinvoke r4.<java.lang.String: boolean startsWith(java.lang.String)>(".")
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : r4 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String getName()>()
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.getReferenceAbsolutePath : $z3 = virtualinvoke r4.<java.lang.String: boolean startsWith(java.lang.String)>("..")
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getName : $r1 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor: java.lang.String name>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorFactory.parseJSON : $r6 = virtualinvoke $r5.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorFactory$2: java.lang.reflect.Type getType()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorFactory.parseJSON : if r1 == null goto $r3 = staticinvoke <java.util.Collections: java.util.Map emptyMap()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorFactory.parseJSON : $r4 = new com.google.gson.Gson
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorFactory.parseJSON : $z0 = virtualinvoke r1.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor.getChildContainers : $r1 = r0.<org.apache.ambari.server.state.kerberos.KerberosServiceDescriptor: java.util.Map components>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptor.getValue : if r0 == null goto $r2 = null
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentities : r11 = r4
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentities : $r5 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.List identities>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentities : if z0 == 0 goto r11 = r4
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentities : $z2 = staticinvoke <org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: boolean isReferredServiceInstalled(org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor,java.util.Map)>(r4, r1)
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentities : $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentities : interfaceinvoke $r6.<java.util.List: boolean add(java.lang.Object)>(r11)
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentities : $r6 = new java.util.ArrayList
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentities : $r7 = r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.List identities>
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentities : if r11 == null goto (branch)
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentities : if r1 == null goto $z2 = staticinvoke <org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: boolean isReferredServiceInstalled(org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor,java.util.Map)>(r4, r1)
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer.getIdentities : $r2 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorContainer: java.util.List getIdentities(boolean,java.util.Map)>(0, null)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.isReference : $z1 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isEmpty(java.lang.String)>(r1)
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.isReference : $r2 = r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String reference>
+org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor.isReference : r1 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosIdentityDescriptor: java.lang.String getName()>()

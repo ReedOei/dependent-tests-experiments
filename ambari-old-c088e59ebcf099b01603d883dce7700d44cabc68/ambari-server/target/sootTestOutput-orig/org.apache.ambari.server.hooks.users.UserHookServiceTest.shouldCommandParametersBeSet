@@ -1,0 +1,65 @@
+org.apache.ambari.server.events.AmbariEvent.toString : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("}")
+org.apache.ambari.server.events.AmbariEvent.toString : $r9 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.String toString()>()
+org.apache.ambari.server.events.AmbariEvent.toString : $r2 = new java.lang.StringBuilder
+org.apache.ambari.server.events.AmbariEvent.toString : $r5 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("{eventType=")
+org.apache.ambari.server.hooks.users.PostUserCreationHookContext.getUserGroups : $r1 = r0.<org.apache.ambari.server.hooks.users.PostUserCreationHookContext: java.util.Map userGroups>
+org.apache.ambari.server.hooks.users.UserHookParams.param : $r1 = r0.<org.apache.ambari.server.hooks.users.UserHookParams: java.lang.String param>
+org.apache.ambari.server.controller.internal.RequestStageContainer.getId : $r1 = r0.<org.apache.ambari.server.controller.internal.RequestStageContainer: java.lang.Long id>
+org.apache.ambari.server.hooks.users.UserHookService$ClusterData.getClusterName : $r1 = r0.<org.apache.ambari.server.hooks.users.UserHookService$ClusterData: java.lang.String clusterName>
+org.apache.ambari.server.controller.internal.RequestStageContainer.persist : $r3 = r0.<org.apache.ambari.server.controller.internal.RequestStageContainer: org.apache.ambari.server.controller.ExecuteActionRequest actionRequest>
+org.apache.ambari.server.controller.internal.RequestStageContainer.persist : if r1 == null goto return
+org.apache.ambari.server.controller.internal.RequestStageContainer.persist : $r8 = r0.<org.apache.ambari.server.controller.internal.RequestStageContainer: java.lang.String requestContext>
+org.apache.ambari.server.controller.internal.RequestStageContainer.persist : $r2 = r0.<org.apache.ambari.server.controller.internal.RequestStageContainer: java.util.List stages>
+org.apache.ambari.server.controller.internal.RequestStageContainer.persist : $r18 = r0.<org.apache.ambari.server.controller.internal.RequestStageContainer: org.apache.ambari.server.actionmanager.RequestFactory requestFactory>
+org.apache.ambari.server.hooks.users.UserHookService$ClusterData.getHdfsUser : $r1 = r0.<org.apache.ambari.server.hooks.users.UserHookService$ClusterData: java.lang.String hdfsUser>
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : r2 = specialinvoke r0.<org.apache.ambari.server.hooks.users.UserHookService: org.apache.ambari.server.hooks.users.UserHookService$ClusterData getClusterData()>()
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : virtualinvoke $r9.<org.apache.ambari.server.controller.internal.RequestStageContainer: void persist()>()
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : $r33 = <org.apache.ambari.server.Role: org.apache.ambari.server.Role AMBARI_SERVER_ACTION>
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : $r30 = new org.apache.ambari.server.state.svccomphost.ServiceComponentHostServerActionEvent
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : goto [?= return]
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : $r9 = new org.apache.ambari.server.controller.internal.RequestStageContainer
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : $r18 = r0.<org.apache.ambari.server.hooks.users.UserHookService: org.apache.ambari.server.actionmanager.StageFactory stageFactory>
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : r7 = specialinvoke r0.<org.apache.ambari.server.hooks.users.UserHookService: java.util.Map prepareCommandParams(org.apache.ambari.server.hooks.users.PostUserCreationHookContext,org.apache.ambari.server.hooks.users.UserHookService$ClusterData)>(r3, r2)
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : $r31 = class "Lorg/apache/ambari/server/serveraction/users/PostUserCreationHookServerAction;"
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : $r36 = staticinvoke <java.util.Collections: java.util.List singletonList(java.lang.Object)>(r5)
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : virtualinvoke $r9.<org.apache.ambari.server.controller.internal.RequestStageContainer: void setClusterHostInfo(java.lang.String)>("{}")
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : $r8 = <org.apache.ambari.server.hooks.users.UserHookService: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : $r15 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : $r14 = virtualinvoke r1.<org.apache.ambari.server.hooks.users.UserCreatedEvent: org.apache.ambari.server.hooks.HookContext getContext()>()
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : $r29 = virtualinvoke r2.<org.apache.ambari.server.hooks.users.UserHookService$ClusterData: java.lang.Long getClusterId()>()
+org.apache.ambari.server.hooks.users.UserHookService.onUserCreatedEvent : $l5 = virtualinvoke $r9.<org.apache.ambari.server.controller.internal.RequestStageContainer: long getLastStageId()>()
+org.apache.ambari.server.hooks.users.UserHookService.getClusterData : $r9 = interfaceinvoke r1.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.hooks.users.UserHookService.getClusterData : $r21 = <org.apache.ambari.server.hooks.users.UserHookService: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.hooks.users.UserHookService.getClusterData : $r15 = new org.apache.ambari.server.hooks.users.UserHookService$ClusterData
+org.apache.ambari.server.hooks.users.UserHookService.getClusterData : $r10 = <org.apache.ambari.server.hooks.users.UserHookService$1: int[] $SwitchMap$org$apache$ambari$server$state$SecurityType>
+org.apache.ambari.server.hooks.users.UserHookService.getClusterData : $r4 = r0.<org.apache.ambari.server.hooks.users.UserHookService: org.apache.ambari.server.state.Clusters clusters>
+org.apache.ambari.server.hooks.users.UserHookService.getClusterData : r23 = "NA"
+org.apache.ambari.server.hooks.users.UserHookService.getClusterData : r24 = "NA"
+org.apache.ambari.server.hooks.users.UserCreatedEvent.getContext : $r1 = r0.<org.apache.ambari.server.hooks.users.UserCreatedEvent: org.apache.ambari.server.hooks.HookContext context>
+org.apache.ambari.server.hooks.users.UserHookService.getHdfsUser : return r2
+org.apache.ambari.server.hooks.users.UserHookService.getHdfsUser : $r3 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("hadoop-env")
+org.apache.ambari.server.controller.internal.RequestStageContainer.setClusterHostInfo : r0.<org.apache.ambari.server.controller.internal.RequestStageContainer: java.lang.String clusterHostInfo> = r1
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.equals : return 1
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.equals : if r0 != r1 goto (branch)
+org.apache.ambari.server.controller.internal.RequestStageContainer.getLastStageId : $r1 = r0.<org.apache.ambari.server.controller.internal.RequestStageContainer: java.util.List stages>
+org.apache.ambari.server.state.SecurityType.values : $r0 = <org.apache.ambari.server.state.SecurityType: org.apache.ambari.server.state.SecurityType[] $VALUES>
+org.apache.ambari.server.hooks.users.UserHookService$ClusterData.getKeytab : $r1 = r0.<org.apache.ambari.server.hooks.users.UserHookService$ClusterData: java.lang.String keytab>
+org.apache.ambari.server.hooks.users.UserHookService$ClusterData.getSecurityType : $r1 = r0.<org.apache.ambari.server.hooks.users.UserHookService$ClusterData: java.lang.String securityType>
+org.apache.ambari.server.hooks.users.UserHookService.prepareCommandParams : $r24 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CMD_HDFS_KEYTAB>
+org.apache.ambari.server.hooks.users.UserHookService.prepareCommandParams : $r11 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CLUSTER_ID>
+org.apache.ambari.server.hooks.users.UserHookService.prepareCommandParams : $r5 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams SCRIPT>
+org.apache.ambari.server.hooks.users.UserHookService.prepareCommandParams : $r36 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CMD_INPUT_FILE>
+org.apache.ambari.server.hooks.users.UserHookService.prepareCommandParams : $r16 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CLUSTER_NAME>
+org.apache.ambari.server.hooks.users.UserHookService.prepareCommandParams : $r20 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CLUSTER_SECURITY_TYPE>
+org.apache.ambari.server.hooks.users.UserHookService.prepareCommandParams : $r32 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CMD_HDFS_USER>
+org.apache.ambari.server.hooks.users.UserHookService.prepareCommandParams : $r28 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams CMD_HDFS_PRINCIPAL>
+org.apache.ambari.server.hooks.users.UserHookService.prepareCommandParams : $r40 = <org.apache.ambari.server.hooks.users.UserHookParams: org.apache.ambari.server.hooks.users.UserHookParams PAYLOAD>
+org.apache.ambari.server.hooks.users.UserHookService.prepareCommandParams : return $r4
+org.apache.ambari.server.hooks.users.UserHookService.prepareCommandParams : $r4 = new java.util.HashMap
+org.apache.ambari.server.controller.internal.RequestStageContainer.addStages : if r1 == null goto return
+org.apache.ambari.server.controller.internal.RequestStageContainer.addStages : $r2 = r0.<org.apache.ambari.server.controller.internal.RequestStageContainer: java.util.List stages>
+org.apache.ambari.server.hooks.users.UserHookService.generateInputFileName : $r2 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.hooks.users.UserHookService.generateInputFileName : $r6 = new java.lang.StringBuilder
+org.apache.ambari.server.hooks.users.UserHookService.generateInputFileName : $r5 = <org.apache.ambari.server.hooks.users.UserHookService: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.hooks.users.UserHookService$ClusterData.getClusterId : $r1 = r0.<org.apache.ambari.server.hooks.users.UserHookService$ClusterData: java.lang.Long clusterId>
+org.apache.ambari.server.hooks.users.UserHookService$ClusterData.getPrincipal : $r1 = r0.<org.apache.ambari.server.hooks.users.UserHookService$ClusterData: java.lang.String principal>

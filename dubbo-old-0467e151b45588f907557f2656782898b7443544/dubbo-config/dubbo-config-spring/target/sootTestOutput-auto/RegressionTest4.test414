@@ -1,0 +1,39 @@
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : i6 = lengthof r47
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : virtualinvoke r49.<java.lang.reflect.Field: void setAccessible(boolean)>(1)
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : r42 = r3[i5]
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : r49 = r47[i7]
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $i0 = virtualinvoke r43.<java.lang.String: int length()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $r6 = virtualinvoke r49.<java.lang.reflect.Field: java.lang.'annotation'.Annotation getAnnotation(java.lang.Class)>(class "Lcom/alibaba/dubbo/config/annotation/Reference;")
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $z1 = virtualinvoke r49.<java.lang.reflect.Field: boolean isAccessible()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $z0 = specialinvoke r0.<com.alibaba.dubbo.config.spring.AnnotationBean: boolean isMatchPackage(java.lang.Object)>(r1)
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : r43 = virtualinvoke r42.<java.lang.reflect.Method: java.lang.String getName()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : goto [?= i7 = i7 + 1]
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : i4 = lengthof r3
+com.alibaba.dubbo.config.spring.AnnotationBean.setApplicationContext : r0.<com.alibaba.dubbo.config.spring.AnnotationBean: org.springframework.context.ApplicationContext applicationContext> = r1
+com.alibaba.dubbo.config.spring.AnnotationBean.destroy : $r2 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.util.concurrent.ConcurrentMap referenceConfigs>
+com.alibaba.dubbo.config.spring.AnnotationBean.destroy : $r1 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.util.Set serviceConfigs>
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r1 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: com.alibaba.dubbo.config.ProviderConfig getProvider()>()
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r57 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: com.alibaba.dubbo.config.ProviderConfig getProvider()>()
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r73 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: com.alibaba.dubbo.config.ProviderConfig getProvider()>()
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r120 = null
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r24 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: com.alibaba.dubbo.config.ProviderConfig getProvider()>()
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r134 = null
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r109 = null
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r58 = r0.<com.alibaba.dubbo.config.spring.ServiceBean: org.springframework.context.ApplicationContext applicationContext>
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r74 = r0.<com.alibaba.dubbo.config.spring.ServiceBean: org.springframework.context.ApplicationContext applicationContext>
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r2 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: com.alibaba.dubbo.config.ProviderConfig getProvider()>()
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r126 = null
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: void export()>()
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r4 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: com.alibaba.dubbo.config.ProviderConfig getProvider()>()
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r147 = null
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : if $r109 == null goto $r119 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: com.alibaba.dubbo.config.ApplicationConfig getApplication()>()
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r140 = null
+com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet : $r89 = r0.<com.alibaba.dubbo.config.spring.ServiceBean: org.springframework.context.ApplicationContext applicationContext>
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeanFactory : $r8 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage>
+com.alibaba.dubbo.config.spring.AnnotationBean.isMatchPackage : $r5 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String[] annotationPackages>
+com.alibaba.dubbo.config.spring.ServiceBean.isDelay : r2 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: java.lang.Integer getDelay()>()
+com.alibaba.dubbo.config.spring.ServiceBean.isDelay : if r2 != null goto $z0 = r0.<com.alibaba.dubbo.config.spring.ServiceBean: boolean supportedApplicationListener>
+com.alibaba.dubbo.config.spring.ServiceBean.isDelay : r1 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: com.alibaba.dubbo.config.ProviderConfig getProvider()>()
+com.alibaba.dubbo.config.spring.ServiceBean.isDelay : if r1 == null goto $z0 = r0.<com.alibaba.dubbo.config.spring.ServiceBean: boolean supportedApplicationListener>

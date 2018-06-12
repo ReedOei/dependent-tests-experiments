@@ -1,0 +1,2 @@
+org.apache.ambari.server.controller.internal.AppCookieManager.getHadoopAuthCookieValue : if r0 != null goto i0 = lengthof r0
+org.apache.ambari.server.controller.internal.AppCookieManager.getHadoopAuthCookieValue : i0 = lengthof r0

@@ -1,0 +1,17 @@
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : if $r85 == null goto $r90 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ReferenceBean: com.alibaba.dubbo.config.ApplicationConfig getApplication()>()
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : r116 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ReferenceBean: java.lang.Boolean isInit()>()
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r2 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ReferenceBean: com.alibaba.dubbo.config.ConsumerConfig getConsumer()>()
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r105 = null
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : if r116 == null goto return
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r91 = null
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r111 = null
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r97 = null
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r41 = r0.<com.alibaba.dubbo.config.spring.ReferenceBean: org.springframework.context.ApplicationContext applicationContext>
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r40 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ReferenceBean: com.alibaba.dubbo.config.ConsumerConfig getConsumer()>()
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r1 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ReferenceBean: com.alibaba.dubbo.config.ConsumerConfig getConsumer()>()
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r85 = null
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r72 = r0.<com.alibaba.dubbo.config.spring.ReferenceBean: org.springframework.context.ApplicationContext applicationContext>
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r7 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ReferenceBean: com.alibaba.dubbo.config.ConsumerConfig getConsumer()>()
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r5 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ReferenceBean: com.alibaba.dubbo.config.ConsumerConfig getConsumer()>()
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r57 = r0.<com.alibaba.dubbo.config.spring.ReferenceBean: org.springframework.context.ApplicationContext applicationContext>
+com.alibaba.dubbo.config.spring.ReferenceBean.afterPropertiesSet : $r56 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ReferenceBean: com.alibaba.dubbo.config.ConsumerConfig getConsumer()>()

@@ -1,0 +1,117 @@
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>Dashboard</h1>
+        <ol class="breadcrumb">
+            <li class="active"><i class="fa fa-history"></i> 作业历史</li>
+            <li class="active">历史dashboard</li>
+        </ol>
+    </section>
+    <hr class="table-line"> 
+    <div class="box-body">
+        <div class="row" >
+            <div class="col-sm-7">
+                <div class="chart-right">
+                    <div class="box box-danger">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">作业成功/失败图</h3>
+                            <div class="box-tools pull-right">
+                                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body" > 
+                            <div class="chart-size">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div id="total-jobs-lastMinute" class="chart-size-solation"></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div id="total-jobs-lastHour" class="chart-size-solation"></div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div id="total-jobs-weekly" class="chart-size-solation"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="chart-left">
+                    <div class="box box-danger">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">作业分类</h3>
+                            <div class="box-tools pull-right">
+                                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="chart-size">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div id="job-type" class="chart-size-solation"></div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div id="job-execution-type" class="chart-size-solation"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box box-info">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">作业成功/失败数</h3>
+                        <div class="box-tools pull-right">
+                            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                        </div>
+                    </div>
+                    <div class="box-body" >
+                        <div class="row">
+                            <div id="statictis_jobs" class="set-size"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box box-info">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">作业/任务运行数</h3>
+                        <div class="box-tools pull-right">
+                            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div class="row" >
+                            <div id="run-jobs" class="set-size"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box box-success">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">接入平台作业数</h3>
+                        <div class="box-tools pull-right">
+                            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div id="regist-jobs" class="set-size"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/history/job_dashboard.js"></script>

@@ -1,0 +1,25 @@
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.get : $r10 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry: java.util.Map indexingServerRegistry>
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.get : $r4 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry$1: int[] $SwitchMap$org$apache$jackrabbit$oak$plugins$index$solr$server$SolrServerRegistry$Strategy>
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.get : $r11 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry: java.util.Map indexingServerRegistry>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.toString : $r1 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.toString : $r11 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String[] solrHttpUrls>
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getSolrServer : $r2 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider: org.apache.solr.client.solrj.SolrClient solrServer>
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getSolrServer : $r3 = new org.apache.solr.client.solrj.impl.HttpSolrServer
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getSolrServer : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider: org.apache.solr.client.solrj.SolrClient solrServer>
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getUrl : return "http://127.0.0.1:8983/solr/oak"
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrConfDir : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String solrConfDir>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfiguration.getType : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfiguration: java.lang.reflect.Type type>
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.register : $r10 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry: java.util.Map indexingServerRegistry>
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.register : exitmonitor $r10
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.register : $r5 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry$1: int[] $SwitchMap$org$apache$jackrabbit$oak$plugins$index$solr$server$SolrServerRegistry$Strategy>
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.register : $r11 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry: java.util.Map indexingServerRegistry>
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.register : goto [?= return]
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.unregister : $r10 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry: java.util.Map indexingServerRegistry>
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.unregister : $r4 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry$1: int[] $SwitchMap$org$apache$jackrabbit$oak$plugins$index$solr$server$SolrServerRegistry$Strategy>
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.unregister : exitmonitor $r9
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.unregister : virtualinvoke r18.<org.apache.solr.client.solrj.SolrClient: void shutdown()>()
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.unregister : $r9 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry: java.util.Map indexingServerRegistry>
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.unregister : goto [?= return]
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.unregister : goto [?= exitmonitor $r9]
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrZkHost : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String solrZkHost>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.EmbeddedSolrServerConfiguration.toString : $r1 = new java.lang.StringBuilder

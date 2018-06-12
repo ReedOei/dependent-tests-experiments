@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.access$000 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService: java.lang.String[] typeMappings> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.access$000 : return $r1

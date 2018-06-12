@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setUserdata : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.UserData userdata> = r1
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getUserdata : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.UserData userdata>
+de.htw.sdf.photoplatform.webservice.dto.UserData.setRoles : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.util.List roles> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getLastName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String lastName>

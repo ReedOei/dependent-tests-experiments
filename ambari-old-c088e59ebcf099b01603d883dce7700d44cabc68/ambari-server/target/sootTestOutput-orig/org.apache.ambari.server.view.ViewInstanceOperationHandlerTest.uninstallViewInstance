@@ -1,0 +1,43 @@
+org.apache.ambari.server.orm.entities.ViewInstanceEntity.setName : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ViewInstanceEntity: void _persistence_set_name(java.lang.String)>(r1)
+org.apache.ambari.server.security.SecurityHelperImpl.getInstance : $r0 = <org.apache.ambari.server.security.SecurityHelperImpl: org.apache.ambari.server.security.SecurityHelper singleton>
+org.apache.ambari.server.view.ViewInstanceOperationHandlerTest.getViewInstanceOperationHandler : $r8.<org.apache.ambari.server.view.ViewInstanceOperationHandler: org.apache.ambari.server.orm.dao.ViewInstanceDAO instanceDAO> = r2
+org.apache.ambari.server.view.ViewInstanceOperationHandlerTest.getViewInstanceOperationHandler : return $r8
+org.apache.ambari.server.view.ViewInstanceOperationHandlerTest.getViewInstanceOperationHandler : $r7 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/PrivilegeDAO;")
+org.apache.ambari.server.view.ViewInstanceOperationHandlerTest.getViewInstanceOperationHandler : $r8.<org.apache.ambari.server.view.ViewInstanceOperationHandler: org.apache.ambari.server.orm.dao.ViewDAO viewDAO> = r1
+org.apache.ambari.server.view.ViewInstanceOperationHandlerTest.getViewInstanceOperationHandler : $r6 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/ViewInstanceDAO;")
+org.apache.ambari.server.view.ViewInstanceOperationHandlerTest.getViewInstanceOperationHandler : $r8.<org.apache.ambari.server.view.ViewInstanceOperationHandler: org.apache.ambari.server.orm.dao.PrivilegeDAO privilegeDAO> = r3
+org.apache.ambari.server.view.ViewInstanceOperationHandlerTest.getViewInstanceOperationHandler : $r8 = new org.apache.ambari.server.view.ViewInstanceOperationHandler
+org.apache.ambari.server.view.ViewInstanceOperationHandlerTest.getViewInstanceOperationHandler : $r5 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/ViewDAO;")
+org.apache.ambari.server.view.ViewInstanceOperationHandler.removePrivilegeEntity : virtualinvoke r2.<org.apache.ambari.server.orm.entities.PrincipalEntity: void removePrivilege(org.apache.ambari.server.orm.entities.PrivilegeEntity)>(r1)
+org.apache.ambari.server.view.ViewInstanceOperationHandler.removePrivilegeEntity : if r2 == null goto $r3 = r0.<org.apache.ambari.server.view.ViewInstanceOperationHandler: org.apache.ambari.server.orm.dao.PrivilegeDAO privilegeDAO>
+org.apache.ambari.server.view.ViewInstanceOperationHandler.removePrivilegeEntity : r2 = virtualinvoke r1.<org.apache.ambari.server.orm.entities.PrivilegeEntity: org.apache.ambari.server.orm.entities.PrincipalEntity getPrincipal()>()
+org.apache.ambari.server.view.ViewInstanceOperationHandler.removePrivilegeEntity : $r3 = r0.<org.apache.ambari.server.view.ViewInstanceOperationHandler: org.apache.ambari.server.orm.dao.PrivilegeDAO privilegeDAO>
+org.apache.ambari.server.orm.entities.ViewInstanceEntity.setViewName : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ViewInstanceEntity: void _persistence_set_viewName(java.lang.String)>(r1)
+org.apache.ambari.server.orm.entities.ViewInstanceEntity.getResource : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ViewInstanceEntity: org.apache.ambari.server.orm.entities.ResourceEntity _persistence_get_resource()>()
+org.apache.ambari.server.orm.entities.ResourceEntity.setId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: void _persistence_set_id(java.lang.Long)>(r1)
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : $r38 = <org.apache.ambari.server.view.ViewInstanceOperationHandler: org.slf4j.Logger LOG>
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : $r10 = <org.apache.ambari.server.view.ViewInstanceOperationHandler: org.slf4j.Logger LOG>
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : r4 = virtualinvoke r2.<org.apache.ambari.server.orm.entities.ViewEntity: java.lang.String getCommonName()>()
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : if r6 == null goto $r28 = new java.lang.IllegalStateException
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : $r11 = r0.<org.apache.ambari.server.view.ViewInstanceOperationHandler: org.apache.ambari.server.orm.dao.ViewDAO viewDAO>
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : specialinvoke r0.<org.apache.ambari.server.view.ViewInstanceOperationHandler: void removePrivilegeEntity(org.apache.ambari.server.orm.entities.PrivilegeEntity)>(r9)
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : goto [?= (branch)]
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : goto [?= return]
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : $r13 = <org.apache.ambari.server.view.ViewInstanceOperationHandler: org.slf4j.Logger LOG>
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : $r35 = r0.<org.apache.ambari.server.view.ViewInstanceOperationHandler: org.apache.ambari.server.orm.dao.PrivilegeDAO privilegeDAO>
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : r8 = interfaceinvoke r7.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : r3 = virtualinvoke r1.<org.apache.ambari.server.orm.entities.ViewInstanceEntity: java.lang.String getName()>()
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : $r40 = <org.apache.ambari.server.view.ViewInstanceOperationHandler: org.slf4j.Logger LOG>
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : $r24 = r0.<org.apache.ambari.server.view.ViewInstanceOperationHandler: org.apache.ambari.server.orm.dao.ViewInstanceDAO instanceDAO>
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : if r2 == null goto $r14 = new java.lang.IllegalStateException
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : r5 = virtualinvoke r2.<org.apache.ambari.server.orm.entities.ViewEntity: java.lang.String getVersion()>()
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : $r27 = <org.apache.ambari.server.view.ViewInstanceOperationHandler: org.slf4j.Logger LOG>
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : goto [?= $z1 = interfaceinvoke r8.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : $z0 = virtualinvoke r6.<org.apache.ambari.server.orm.entities.ViewInstanceEntity: boolean isXmlDriven()>()
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : $r41 = r0.<org.apache.ambari.server.view.ViewInstanceOperationHandler: org.apache.ambari.server.orm.dao.ViewInstanceDAO instanceDAO>
+org.apache.ambari.server.view.ViewInstanceOperationHandler.uninstallViewInstance : $r42 = interfaceinvoke r8.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.orm.entities.ViewInstanceEntity.getViewName : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ViewInstanceEntity: java.lang.String _persistence_get_viewName()>()
+org.apache.ambari.server.orm.entities.ViewInstanceEntity.setResource : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ViewInstanceEntity: void _persistence_set_resource(org.apache.ambari.server.orm.entities.ResourceEntity)>(r1)
+org.apache.ambari.server.orm.entities.ViewInstanceEntity.toString : $r1 = new java.lang.StringBuilder
+org.apache.ambari.server.orm.entities.ResourceEntity.getId : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: java.lang.Long _persistence_get_id()>()
+org.apache.ambari.server.orm.entities.ViewInstanceEntity.getName : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ViewInstanceEntity: java.lang.String _persistence_get_name()>()

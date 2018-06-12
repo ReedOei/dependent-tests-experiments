@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.impl.DemoServiceImpl.setPrefix : r0.<com.alibaba.dubbo.config.spring.impl.DemoServiceImpl: java.lang.String prefix> = r1 >>>>>>>> com.alibaba.dubbo.config.spring.impl.DemoServiceImpl.setPrefix : return

@@ -1,0 +1,2 @@
+org.apache.accumulo.master.tableOps.LoadFiles.isReady : $r2 = (org.apache.accumulo.master.Master) r1 >>>>>>>> org.apache.accumulo.master.tableOps.LoadFiles.isReady : $l1 = virtualinvoke r0.<org.apache.accumulo.master.tableOps.LoadFiles: long isReady(long,org.apache.accumulo.master.Master)>(l0, $r2)
+org.apache.accumulo.master.tableOps.LoadFiles.isReady : $l1 = virtualinvoke r0.<org.apache.accumulo.master.tableOps.LoadFiles: long isReady(long,org.apache.accumulo.master.Master)>(l0, $r2) >>>>>>>> org.apache.accumulo.master.tableOps.LoadFiles.isReady : return $l1

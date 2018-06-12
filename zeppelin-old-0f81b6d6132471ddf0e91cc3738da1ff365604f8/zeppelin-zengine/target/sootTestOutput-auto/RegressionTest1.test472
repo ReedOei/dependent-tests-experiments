@@ -1,0 +1,9 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.setErrorReason : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String errorReason> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r2, "noteId should be not null")
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : r4 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String getInterpreterClassFromInterpreterSetting(java.lang.String)>(r3)
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r3, "replName should be not null")
+org.apache.zeppelin.interpreter.InterpreterSetting.setLifecycleManager : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getOption : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterSettingManager : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterSettingManager interpreterSettingManager> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterClassFromInterpreterSetting : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r1, "replName should be not null")
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterClassFromInterpreterSetting : $r6 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List interpreterInfos>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html ng-app="photoplatform">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Photoplattform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- link rel="stylesheet/less" type="text/css" href="/less/styles.less"/ -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <title>Photoplattform</title>
+</head>
+<body>
+
+
+<!-- Navigation -->
+<nav id="slide-menu">
+    <ul>
+        <li ng-show="isAdmin()">
+            <a href="/profile/admin" onclick="fadeOutMenu();">
+                <span class="glyphicon glyphicon-wrench"></span>
+                <!--<i class="fa fa-user"></i> -->
+                Admin Einstellungen
+            </a>
+        </li>
+        <li ng-show="isLoggedIn()">
+            <a href="/profile/view" onclick="fadeOutMenu();"
+               ng-click="$root.activeListGroupItem = 'view'" ng-class="{active: activeListGroupItem == 'view'}">
+                <span class="glyphicon glyphicon-pencil"></span>
+                <!--<i ng-show="isPhotographer()" class="fa fa-folder-open-o"></i>-->
+                Profildaten
+            </a>
+        </li>
+        <li ng-show="isLoggedIn()">
+            <a href="/profile/shoppinglist" onclick="fadeOutMenu();"
+               ng-click="$root.activeListGroupItem = 'shoppinglist'" ng-class="{active: activeListGroupItem == 'shoppinglist'}">
+                <span class="glyphicon glyphicon-usd"></span>
+                <!--<i ng-show="isPhotographer()" class="fa fa-folder-open-o"></i>-->
+                Einkäufe
+            </a>
+        </li>
+        <li ng-show="isPhotographer()">
+            <a href="/profile/photograph/showcase" onclick="fadeOutMenu();"
+               ng-click="$root.activeListGroupItem = 'showcase'" ng-class="{active: activeListGroupItem == 'showcase'}">
+                <span class="glyphicon glyphicon-film"></span>
+                <!--<i ng-show="isPhotographer()" class="fa fa-folder-open-o"></i>-->
+                Showcase
+            </a>
+        </li>
+        <li ng-show="isPhotographer()">
+            <a href="/profile/photograph/collection" onclick="fadeOutMenu();"
+               ng-click="$root.activeListGroupItem = 'collection'" ng-class="{active: activeListGroupItem == 'collection'}">
+                <span class="glyphicon glyphicon-book"></span>
+                <!--<i ng-show="isPhotographer()" class="fa fa-bar-chart-o"></i>-->
+                Sammlungen
+            </a>
+        </li>
+        <li ng-show="isPhotographer()">
+            <a href="/profile/photograph/image" onclick="fadeOutMenu();"
+               ng-click="$root.activeListGroupItem = 'image'" ng-class="{active: activeListGroupItem == 'image'}">
+                <span class="glyphicon glyphicon-picture"></span>
+                <!--<i class="fa fa-envelope" ng-show="isPhotographer()"></i>-->
+                Fotos
+            </a>
+        </li>
+        <li ng-show="isCustomer()">
+            <a href="/profile/photograph/register" onclick="fadeOutMenu();"
+               ng-click="$root.activeListGroupItem = 'photoRegister'" ng-class="{active: activeListGroupItem == 'photoRegister'}">
+                <span class="glyphicon glyphicon-camera"></span>
+                <!--<i class="fa fa-envelope"></i>-->
+                Fotograph werden
+            </a>
+        </li>
+        <li ng-show="isLoggedIn()">
+            <a href="/profile" onclick="fadeOutMenu();"
+               ng-click="$root.activeListGroupItem = 'profile'" ng-class="{active: activeListGroupItem == 'profile'}">
+                <span class="glyphicon glyphicon-user"></span>
+                {{user.firstName}}
+            </a>
+        </li>
+        <li class="sep" ng-hide="isLoggedIn()">
+            <a href="/login" onclick="fadeOutMenu();"
+               ng-click="$root.activeListGroupItem = 'login'" ng-class="{active: activeListGroupItem == 'login'}">
+                <span class="glyphicon glyphicon-log-in"></span>
+                Anmelden
+            </a>
+        </li>
+        <li ng-show="isLoggedIn()">
+            <a href="/cart" onclick="fadeOutMenu();"
+               ng-click="$root.activeListGroupItem = 'cart'" ng-class="{active: activeListGroupItem == 'cart'}">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                Warenkorb
+            </a>
+        </li>
+        <li ng-hide="isLoggedIn()">
+            <a class="navbar-right" href="#"
+               data-toggle="modal" data-target="#passwordLost">
+                <span class="glyphicon glyphicon-flash"></span>
+                Passwort vergessen?
+            </a>
+        </li>
+        <li ng-hide="isLoggedIn()">
+            <a class="navbar-right" onclick="fadeOutMenu();"
+               href="/register"
+               ng-click="$root.activeListGroupItem = 'register'" ng-class="{active: activeListGroupItem == 'register'}">
+                <span class="glyphicon glyphicon-pencil"></span>
+                Registrierung
+            </a>
+        </li>
+        <li class="sep" ng-show="isLoggedIn()">
+            <a class="navbar-right" href="/" onclick="fadeOutMenu();"
+               ng-click="logout(); $root.activeListGroupItem = '';" >
+                <span class="glyphicon glyphicon-log-out"></span>
+                Abmelden</a>
+        </li>
+    </ul>
+</nav>
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <div class="menu-trigger"></div>
+            <a class="navbar-brand" href="/">
+                <img style="padding-bottom:12px; padding-left:13px" src="/img/logo_white.png" width="200" height="40" border="0" alt="Home"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li class="active"><a href="#">Home</a></li>-->
+                <li ng-show="isLoggedIn()">
+                    <a class="navbar-link"
+                       ng-click="$root.activeListGroupItem = 'profile'"
+                       href="/profile">
+                        <span class="glyphicon glyphicon-user"></span>
+                        {{user.firstName}}
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-right" href="/cart"
+                       ng-show="isLoggedIn()"
+                       ng-click="$root.activeListGroupItem = 'cart'">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        <span>{{user.totalItems}}</span> Warenkorb
+                    </a>
+                </li>
+                <li ng-hide="isLoggedIn()">
+                    <a class="navbar-right" href="#"
+                       data-toggle="modal" data-target="#passwordLost">
+                        Passwort vergessen?
+                    </a>
+                </li>
+                <li ng-hide="isLoggedIn()">
+                    <a class="navbar-right"
+                       ng-click="$root.activeListGroupItem = 'register'"
+                       href="/register">Registrierung</a>
+                </li>
+                <li ng-show="isLoggedIn()">
+                    <a class="navbar-right" href="/" ng-click="logout(); $root.activeListGroupItem = '';">Abmelden</a>
+                </li>
+            </ul>
+
+
+            <form class="navbar-form navbar-right vcenter" role="form"
+                  ng-controller="AuthCtrl">
+                <div class="form-group" ng-hide="isLoggedIn()">
+                    <div class="input-group input-group">
+                <span class="input-group-addon" aria-hidden="true">
+                    <span class=" glyphicon glyphicon-envelope"></span>
+                </span>
+                        <input type="email" name="email" ng-model="email"
+                               class="form-control" placeholder="E-Mail">
+                    </div>
+                    <div class="input-group input-group">
+                        <span class="input-group-addon" aria-hidden="true">
+                            <span class="glyphicon glyphicon-lock"></span>
+                        </span>
+                        <input type="password" name="password"
+                               ng-model="password" class="form-control"
+                               placeholder="Passwort">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary"
+                            ng-click="login(email, password)">Anmelden
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="container custom-alert">
+    <div class="alert alert-error" ng-show="error !== undefined">
+        {{error}}
+    </div>
+    <div class="alert alert-success" ng-show="success !== undefined">
+        {{success}}
+    </div>
+</div>
+<div id="content" class="container" ng-view>
+</div>
+
+<div class="navbar navbar-default navbar-fixed-bottom">
+    <p style="color:#ffffff;" class="navbar-left">Copyright 2014 Photoplattform</p>
+</div>
+<!-- Lost password dialog -->
+<div class="modal fade" id="passwordLost" tabindex="-1" role="dialog" aria-labelledby="passwordLostLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="passwordLostLabel">Passwort vergessen?</h4>
+            </div>
+            <form class="form-horizontal" ng-controller="AuthCtrl" role="form" name="form" novalidate>
+                <div class="modal-body">
+                    <p>Du hast dein Passwort vergessen? Kein Grund zur Panik. Tippe hier deine E-Mail
+                        Adresse ein und wir schicken dir umgehend ein neues Passwort per E-Mail zu.</p>
+
+
+                    <div class="form-group has-feedback"
+                         ng-class="{'has-error' : (form.email.$invalid || errors.email) && form.email.$dirty}">
+                        <div class="col-sm-11">
+                            <div class="input-group">
+                                <label for="email" class="control-label input-group-addon">Email</label>
+                                <input name="email" id="email" placeholder="deine Email-Addresse"
+                                       type="email" class="form-control" ng-model="email" required>
+                            </div>
+                            <div class="help-block" ng-show="form.email.$dirty">
+                                <span ng-show="form.email.$error.required">Dieses Feld darf nicht leer sein.</span>
+                                <span ng-show="!form.email.$error.required && form.email.$error.email">Bitte gib eine valide E-Mail-Adresse ein.</span>
+                                <span ng-show="errors.email">{{errors.email[0]}}</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" ng-click="passwordLost(email)"
+                            ng-disabled="form.$invalid">Abschicken</button>
+                </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<!-- script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.0.0/less.min.js"></script -->
+
+<script src="/js/jquery/jquery.js"></script>
+<script src="/js/bootstrap/bootstrap.js"></script>
+<script src="/js/angular/angular.js"></script>
+<script src="/js/angular/angular-route.js"></script>
+<script src="/js/angular/angular-resource.js"></script>
+<script src="/js/angular/angular-cookies.js"></script>
+<script src="/js/angular/angular-md5.js"></script>
+<script src="/js/angular/ui-bootstrap-tpls-0.11.0.min.js"></script>
+
+<!-- App & Models -->
+<script src="/js/app/app.js"></script>
+<script src="/js/app/models.js"></script>
+
+<!-- Controller -->
+<script src="/js/app/controllers/admincontrollers.js"></script>
+<script src="/js/app/controllers/authcontroller.js"></script>
+<script src="/js/app/controllers/carouselcontroller.js"></script>
+<script src="/js/app/controllers/collectioncontrollers.js"></script>
+<script src="/js/app/controllers/imagecontrollers.js"></script>
+<script src="/js/app/controllers/photographercontroller.js"></script>
+<script src="/js/app/controllers/usercontroller.js"></script>
+<script src="/js/app/controllers/searchcontrollers.js"></script>
+<script src="/js/app/controllers/shoppinglistcontrollers.js"></script>
+<script src="/js/app/controllers/purchasecontroller.js"></script>
+<script src="/js/app/controllers/imagecomponentcontroller.js"></script>
+
+<!-- Services -->
+<script src="/js/app/services/auth.js"></script>
+<script src="/js/app/services/collection.js"></script>
+<script src="/js/app/services/image.js"></script>
+<script src="/js/app/services/photographer.js"></script>
+<script src="/js/app/services/user.js"></script>
+<script src="/js/app/services/shoppinglist.js"></script>
+
+<!-- Directives -->
+<script src="/js/app/directives/imagedirectives.js"></script>
+<script src="/js/app/directives/customerImage.drt.js"></script>
+
+
+<!-- Misc and Common -->
+<script src="/js/main.js"></script>
+
+</body>
+</html>

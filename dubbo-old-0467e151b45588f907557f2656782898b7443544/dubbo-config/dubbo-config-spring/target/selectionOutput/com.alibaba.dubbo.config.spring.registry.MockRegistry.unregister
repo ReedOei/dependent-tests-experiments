@@ -1,0 +1,2 @@
+com.alibaba.dubbo.config.spring.registry.MockRegistry.unregister : $r2 = r0.<com.alibaba.dubbo.config.spring.registry.MockRegistry: java.util.List registered> >>>>>>>> com.alibaba.dubbo.config.spring.registry.MockRegistry.unregister : interfaceinvoke $r2.<java.util.List: boolean remove(java.lang.Object)>(r1)
+com.alibaba.dubbo.config.spring.registry.MockRegistry.unregister : interfaceinvoke $r2.<java.util.List: boolean remove(java.lang.Object)>(r1) >>>>>>>> com.alibaba.dubbo.config.spring.registry.MockRegistry.unregister : return

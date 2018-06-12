@@ -1,0 +1,2 @@
+org.apache.ambari.server.utils.RetryHelper.clearAffectedClusters : $i0 = <org.apache.ambari.server.utils.RetryHelper: int operationsRetryAttempts>
+org.apache.ambari.server.utils.RetryHelper.clearAffectedClusters : $r0 = <org.apache.ambari.server.utils.RetryHelper: java.lang.ThreadLocal affectedClusters>

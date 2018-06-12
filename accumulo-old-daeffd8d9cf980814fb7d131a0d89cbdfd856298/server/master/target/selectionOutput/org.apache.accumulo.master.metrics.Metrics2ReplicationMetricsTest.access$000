@@ -1,0 +1,1 @@
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.access$000 : $l0 = r0.<org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest: long currentTime> >>>>>>>> org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.access$000 : return $l0

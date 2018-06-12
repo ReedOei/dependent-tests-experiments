@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.UpgradeContext.getPatchRevertUpgradeId : $l0 = r0.<org.apache.ambari.server.state.UpgradeContext: long m_revertUpgradeId> >>>>>>>> org.apache.ambari.server.state.UpgradeContext.getPatchRevertUpgradeId : return $l0

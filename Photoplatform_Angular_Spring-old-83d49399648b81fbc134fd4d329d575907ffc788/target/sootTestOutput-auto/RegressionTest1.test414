@@ -1,0 +1,6 @@
+de.htw.sdf.photoplatform.persistence.model.Image.isEnabled : $z0 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: boolean enabled>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getCreatedAt : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.util.Date createdAt>
+de.htw.sdf.photoplatform.persistence.model.Image.setSmallThumbPath : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath> = r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setCreationDate : $r1 = new java.util.Date
+de.htw.sdf.photoplatform.persistence.model.Image.setThumbPath : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String thumbPath> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.toString : $r1 = new java.lang.StringBuilder

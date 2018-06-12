@@ -1,0 +1,3 @@
+org.apache.ambari.server.orm.dao.SettingDAO.removeByName : r2 = virtualinvoke r0.<org.apache.ambari.server.orm.dao.SettingDAO: org.apache.ambari.server.orm.entities.SettingEntity findByName(java.lang.String)>(r1)
+org.apache.ambari.server.orm.dao.SettingDAO.findByName : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r1)
+org.apache.ambari.server.orm.dao.SettingDAO.findByName : $r3 = r0.<org.apache.ambari.server.orm.dao.SettingDAO: com.google.inject.Provider entityManagerProvider>

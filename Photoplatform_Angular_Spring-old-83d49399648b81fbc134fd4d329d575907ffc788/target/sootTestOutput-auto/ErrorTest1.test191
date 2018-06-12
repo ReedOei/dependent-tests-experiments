@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.manager.impl.UserManagerImpl.registerUser : specialinvoke r0.<de.htw.sdf.photoplatform.manager.impl.UserManagerImpl: void checkUser(java.lang.String,java.lang.String)>(r1, r4)
+de.htw.sdf.photoplatform.manager.impl.UserManagerImpl.checkUser : if r2 != null goto $r5 = r0.<de.htw.sdf.photoplatform.manager.impl.UserManagerImpl: de.htw.sdf.photoplatform.repository.UserDAO userDAO>
+de.htw.sdf.photoplatform.manager.impl.UserManagerImpl.checkUser : if r1 == null goto $r4 = new java.lang.RuntimeException
+de.htw.sdf.photoplatform.manager.impl.UserManagerImpl.checkUser : $r5 = r0.<de.htw.sdf.photoplatform.manager.impl.UserManagerImpl: de.htw.sdf.photoplatform.repository.UserDAO userDAO>

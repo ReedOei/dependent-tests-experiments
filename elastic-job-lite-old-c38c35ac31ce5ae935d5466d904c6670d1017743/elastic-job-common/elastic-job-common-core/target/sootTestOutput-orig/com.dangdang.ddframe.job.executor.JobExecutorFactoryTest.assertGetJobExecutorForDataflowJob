@@ -1,0 +1,37 @@
+com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistry.getExecutorServiceHandler : $r2 = <com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistry: java.util.Map REGISTRY>
+com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistry.getExecutorServiceHandler : $r3 = <com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistry: java.util.Map REGISTRY>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : return r2
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : r1 = staticinvoke <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] values()>()
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : $r3 = virtualinvoke r2.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String getKey()>()
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : r2 = r1[i1]
+com.dangdang.ddframe.job.executor.handler.JobProperties.get : $r2 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties: java.util.EnumMap map>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getKey : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String key>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String jobName>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $z5 = 1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $z4 = 1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $r2 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String cron>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getShardingTotalCount : $i0 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: int shardingTotalCount>
+com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration.getCoreConfig : $r1 = r0.<com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration: com.dangdang.ddframe.job.config.JobCoreConfiguration coreConfig>
+com.dangdang.ddframe.job.executor.JobExecutorFactory.getJobExecutor : if null != r0 goto $z0 = r0 instanceof com.dangdang.ddframe.job.api.simple.SimpleJob
+com.dangdang.ddframe.job.executor.JobExecutorFactory.getJobExecutor : $r6 = new com.dangdang.ddframe.job.executor.type.DataflowJobExecutor
+com.dangdang.ddframe.job.executor.JobExecutorFactory.getJobExecutor : $z0 = r0 instanceof com.dangdang.ddframe.job.api.simple.SimpleJob
+com.dangdang.ddframe.job.executor.JobExecutorFactory.getJobExecutor : $z1 = r0 instanceof com.dangdang.ddframe.job.api.dataflow.DataflowJob
+com.dangdang.ddframe.job.fixture.config.TestDataflowJobConfiguration.getTypeConfig : $r1 = new com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration
+com.dangdang.ddframe.job.fixture.config.TestDataflowJobConfiguration.getTypeConfig : $r3 = <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum JOB_EXCEPTION_HANDLER>
+com.dangdang.ddframe.job.fixture.config.TestDataflowJobConfiguration.getTypeConfig : $r9 = class "Lcom/dangdang/ddframe/job/fixture/job/TestDataflowJob;"
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getClassType : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.Class classType>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.getHandler : $r7 = virtualinvoke r1.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.Class getClassType()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.getHandler : $r3 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.config.JobRootConfiguration jobRootConfig>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.getHandler : r12 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(r2)
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.getHandler : $r9 = virtualinvoke r12.<java.lang.Class: java.lang.Object newInstance()>()
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobName : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String jobName>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobProperties : $r3 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: com.dangdang.ddframe.job.executor.handler.JobProperties jobProperties>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobProperties : return r0
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getDefaultValue : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String defaultValue>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.newBuilder : $r2 = new com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.values : $r0 = <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] $VALUES>
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : r3 = staticinvoke <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum 'from'(java.lang.String)>(r1)
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : $r4 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties: java.util.EnumMap map>
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : if null != r2 goto $r4 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties: java.util.EnumMap map>
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : if null == r3 goto return
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobProperties : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: com.dangdang.ddframe.job.executor.handler.JobProperties jobProperties>

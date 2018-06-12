@@ -1,0 +1,2 @@
+org.apache.accumulo.master.tableOps.MasterRepo.undo : $r2 = (org.apache.accumulo.master.Master) r1 >>>>>>>> org.apache.accumulo.master.tableOps.MasterRepo.undo : virtualinvoke r0.<org.apache.accumulo.master.tableOps.MasterRepo: void undo(long,org.apache.accumulo.master.Master)>(l0, $r2)
+org.apache.accumulo.master.tableOps.MasterRepo.undo : virtualinvoke r0.<org.apache.accumulo.master.tableOps.MasterRepo: void undo(long,org.apache.accumulo.master.Master)>(l0, $r2) >>>>>>>> org.apache.accumulo.master.tableOps.MasterRepo.undo : return

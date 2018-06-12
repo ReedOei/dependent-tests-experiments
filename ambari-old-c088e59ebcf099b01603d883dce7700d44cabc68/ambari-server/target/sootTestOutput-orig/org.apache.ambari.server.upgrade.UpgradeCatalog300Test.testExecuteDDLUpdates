@@ -1,0 +1,41 @@
+org.apache.ambari.server.upgrade.UpgradeCatalog300.getTargetVersion : return "3.0.0"
+org.apache.ambari.server.orm.DBAccessor$DBColumnInfo.getLength : $r1 = r0.<org.apache.ambari.server.orm.DBAccessor$DBColumnInfo: java.lang.Integer length>
+org.apache.ambari.server.orm.DBAccessor$DBColumnInfo.getDefaultValue : $r1 = r0.<org.apache.ambari.server.orm.DBAccessor$DBColumnInfo: java.lang.Object defaultValue>
+org.apache.ambari.server.upgrade.UpgradeCatalog300Test.access$100 : $r1 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300Test: org.apache.ambari.server.state.stack.OsFamily osFamily>
+org.apache.ambari.server.orm.DBAccessor$DBColumnInfo.getType : $r1 = r0.<org.apache.ambari.server.orm.DBAccessor$DBColumnInfo: java.lang.Class type>
+org.apache.ambari.server.orm.DBAccessor$DBColumnInfo.isNullable : $z0 = r0.<org.apache.ambari.server.orm.DBAccessor$DBColumnInfo: boolean isNullable>
+org.apache.ambari.server.upgrade.UpgradeCatalog300Test$1.configure : $r2 = interfaceinvoke r1.<com.google.inject.Binder: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/DBAccessor;")
+org.apache.ambari.server.upgrade.UpgradeCatalog300Test$1.configure : $r5 = interfaceinvoke r1.<com.google.inject.Binder: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/stack/OsFamily;")
+org.apache.ambari.server.upgrade.UpgradeCatalog300Test$1.configure : $r8 = interfaceinvoke r1.<com.google.inject.Binder: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Ljavax/persistence/EntityManager;")
+org.apache.ambari.server.upgrade.UpgradeCatalog300Test$1.configure : $r11 = interfaceinvoke r1.<com.google.inject.Binder: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/configuration/Configuration;")
+org.apache.ambari.server.upgrade.UpgradeTest.data : goto [?= $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.upgrade.UpgradeTest.data : $r4 = <org.apache.ambari.server.upgrade.UpgradeTest: java.util.List VERSIONS>
+org.apache.ambari.server.upgrade.UpgradeTest.data : $r6 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.upgrade.UpgradeTest.data : $r3 = new java.util.ArrayList
+org.apache.ambari.server.upgrade.UpgradeTest.data : $r5 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.addAmbariConfigurationTable : $r7 = new org.apache.ambari.server.orm.DBAccessor$DBColumnInfo
+org.apache.ambari.server.upgrade.UpgradeCatalog300.addAmbariConfigurationTable : $r3 = new org.apache.ambari.server.orm.DBAccessor$DBColumnInfo
+org.apache.ambari.server.upgrade.UpgradeCatalog300.addAmbariConfigurationTable : $r12 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog300.addAmbariConfigurationTable : $r10 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog300.addAmbariConfigurationTable : $r2 = new java.util.ArrayList
+org.apache.ambari.server.upgrade.UpgradeCatalog300.addAmbariConfigurationTable : $r5 = new org.apache.ambari.server.orm.DBAccessor$DBColumnInfo
+org.apache.ambari.server.upgrade.UpgradeCatalog300.removeSecurityState : $r3 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog300.removeSecurityState : $r2 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog300.removeSecurityState : $r1 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateStageTable : $r1 = new org.apache.ambari.server.orm.DBAccessor$DBColumnInfo
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateStageTable : $r2 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateStageTable : $r6 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateStageTable : $r9 = new org.apache.ambari.server.orm.DBAccessor$DBColumnInfo
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateStageTable : $r10 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog300.updateStageTable : $r5 = new org.apache.ambari.server.orm.DBAccessor$DBColumnInfo
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.registerCatalog : $r2 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: java.util.Map upgradeCatalogMap>
+org.apache.ambari.server.upgrade.UpgradeCatalog300Test.access$300 : $r1 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300Test: org.apache.ambari.server.configuration.Configuration configuration>
+org.apache.ambari.server.upgrade.UpgradeCatalog300Test.access$000 : $r1 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300Test: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.upgrade.UpgradeCatalog300Test.access$200 : $r1 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300Test: javax.persistence.EntityManager entityManager>
+org.apache.ambari.server.upgrade.UpgradeCatalog300.executeDDLUpdates : specialinvoke r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: void removeSecurityState()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.executeDDLUpdates : virtualinvoke r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: void addAmbariConfigurationTable()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.executeDDLUpdates : virtualinvoke r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: void updateStageTable()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.executeDDLUpdates : specialinvoke r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: void addOpsDisplayNameColumnToHostRoleCommand()>()
+org.apache.ambari.server.upgrade.UpgradeCatalog300.addOpsDisplayNameColumnToHostRoleCommand : $r1 = new org.apache.ambari.server.orm.DBAccessor$DBColumnInfo
+org.apache.ambari.server.upgrade.UpgradeCatalog300.addOpsDisplayNameColumnToHostRoleCommand : $r2 = r0.<org.apache.ambari.server.upgrade.UpgradeCatalog300: org.apache.ambari.server.orm.DBAccessor dbAccessor>
+org.apache.ambari.server.orm.DBAccessor$DBColumnInfo.getName : $r1 = r0.<org.apache.ambari.server.orm.DBAccessor$DBColumnInfo: java.lang.String name>

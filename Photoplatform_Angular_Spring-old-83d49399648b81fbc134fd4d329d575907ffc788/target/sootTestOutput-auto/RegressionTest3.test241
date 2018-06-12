@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : r3 = interfaceinvoke r0.<java.util.List: java.util.Iterator iterator()>()
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : $r6 = new java.util.ArrayList

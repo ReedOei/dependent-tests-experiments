@@ -1,0 +1,8 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.NodeStateSolrServerProvider.toString : $r1 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.NodeStateSolrServerProvider.toString : $r3 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.NodeStateSolrServerProvider: org.apache.jackrabbit.oak.spi.state.NodeState nodeState>
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getSolrServer : $r2 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider: org.apache.solr.client.solrj.SolrClient solrServer>
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getSolrServer : $r3 = new org.apache.solr.client.solrj.impl.HttpSolrServer
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getSolrServer : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider: org.apache.solr.client.solrj.SolrClient solrServer>
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getUrl : return "http://127.0.0.1:8983/solr/oak"
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfigurationProvider.getConfiguration : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfigurationProvider: org.apache.jackrabbit.oak.plugins.index.solr.configuration.OakSolrConfiguration defaultConfiguration>
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getSearchingSolrServer : $r1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider: org.apache.solr.client.solrj.SolrClient getSolrServer()>()

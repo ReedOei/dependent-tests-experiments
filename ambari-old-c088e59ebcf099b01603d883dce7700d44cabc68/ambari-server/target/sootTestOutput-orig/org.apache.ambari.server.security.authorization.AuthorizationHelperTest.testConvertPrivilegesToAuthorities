@@ -1,0 +1,51 @@
+org.apache.ambari.server.orm.entities.PrivilegeEntity.setPrincipal : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: void _persistence_set_principal(org.apache.ambari.server.orm.entities.PrincipalEntity)>(r1)
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.hashCode : $r1 = r0.<org.apache.ambari.server.security.authorization.AmbariGrantedAuthority: org.apache.ambari.server.orm.entities.PrivilegeEntity privilegeEntity>
+org.apache.ambari.server.orm.entities.PrincipalEntity.hashCode : $i0 = 31 * i1
+org.apache.ambari.server.orm.entities.PrincipalEntity.hashCode : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrincipalEntity: java.lang.Long _persistence_get_id()>()
+org.apache.ambari.server.orm.entities.PrincipalEntity.hashCode : $r3 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrincipalEntity: org.apache.ambari.server.orm.entities.PrincipalTypeEntity _persistence_get_principalType()>()
+org.apache.ambari.server.orm.entities.PrincipalEntity.setId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrincipalEntity: void _persistence_set_id(java.lang.Long)>(r1)
+org.apache.ambari.server.orm.entities.PrivilegeEntity.getPermission : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: org.apache.ambari.server.orm.entities.PermissionEntity _persistence_get_permission()>()
+org.apache.ambari.server.orm.entities.PrivilegeEntity.hashCode : $r1 = newarray (java.lang.Object)[4]
+org.apache.ambari.server.orm.entities.ResourceTypeEntity.setId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceTypeEntity: void _persistence_set_id(java.lang.Integer)>(r1)
+org.apache.ambari.server.orm.entities.ResourceEntity.setId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: void _persistence_set_id(java.lang.Long)>(r1)
+org.apache.ambari.server.orm.entities.ResourceTypeEntity.hashCode : $r4 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceTypeEntity: java.lang.Integer _persistence_get_id()>()
+org.apache.ambari.server.orm.entities.ResourceTypeEntity.hashCode : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceTypeEntity: java.lang.Integer _persistence_get_id()>()
+org.apache.ambari.server.orm.entities.ResourceTypeEntity.hashCode : $i0 = 31 * $i1
+org.apache.ambari.server.security.authorization.AuthorizationHelper.convertPrivilegesToAuthorities : $r6 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.security.authorization.AuthorizationHelper.convertPrivilegesToAuthorities : r3 = interfaceinvoke r1.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.security.authorization.AuthorizationHelper.convertPrivilegesToAuthorities : $r7 = new org.apache.ambari.server.security.authorization.AmbariGrantedAuthority
+org.apache.ambari.server.security.authorization.AuthorizationHelper.convertPrivilegesToAuthorities : $r5 = new java.util.HashSet
+org.apache.ambari.server.security.authorization.AuthorizationHelper.convertPrivilegesToAuthorities : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.orm.entities.ResourceTypeEntity.getName : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceTypeEntity: java.lang.String _persistence_get_name()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.hashCode : $r8 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: java.lang.Integer _persistence_get_sortOrder()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.hashCode : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: java.lang.Integer _persistence_get_id()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.hashCode : $r11 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: java.lang.String _persistence_get_permissionName()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.hashCode : $i0 = 31 * $i5
+org.apache.ambari.server.orm.entities.PermissionEntity.hashCode : $r9 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: org.apache.ambari.server.orm.entities.ResourceTypeEntity _persistence_get_resourceType()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.hashCode : $r12 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: java.lang.Integer _persistence_get_id()>()
+org.apache.ambari.server.orm.entities.PrivilegeEntity.setId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: void _persistence_set_id(java.lang.Integer)>(r1)
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.getAuthority : $z0 = virtualinvoke r4.<java.lang.String: boolean startsWith(java.lang.String)>(r3)
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.getAuthority : r2 = virtualinvoke r1.<org.apache.ambari.server.orm.entities.ResourceEntity: java.lang.Long getId()>()
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.getAuthority : $r12 = new java.lang.StringBuilder
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.getAuthority : $r6 = new java.lang.StringBuilder
+org.apache.ambari.server.security.authorization.AmbariGrantedAuthority.getAuthority : $r5 = r0.<org.apache.ambari.server.security.authorization.AmbariGrantedAuthority: org.apache.ambari.server.orm.entities.PrivilegeEntity privilegeEntity>
+org.apache.ambari.server.orm.entities.ResourceEntity.setResourceType : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: void _persistence_set_resourceType(org.apache.ambari.server.orm.entities.ResourceTypeEntity)>(r1)
+org.apache.ambari.server.orm.entities.ResourceTypeEntity.setName : virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceTypeEntity: void _persistence_set_name(java.lang.String)>(r1)
+org.apache.ambari.server.orm.entities.PrincipalTypeEntity.setName : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrincipalTypeEntity: void _persistence_set_name(java.lang.String)>(r1)
+org.apache.ambari.server.orm.entities.PermissionEntity.setPermissionName : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: void _persistence_set_permissionName(java.lang.String)>(r1)
+org.apache.ambari.server.orm.entities.ResourceEntity.getResourceType : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: org.apache.ambari.server.orm.entities.ResourceTypeEntity _persistence_get_resourceType()>()
+org.apache.ambari.server.orm.entities.PrincipalEntity.setPrincipalType : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrincipalEntity: void _persistence_set_principalType(org.apache.ambari.server.orm.entities.PrincipalTypeEntity)>(r1)
+org.apache.ambari.server.orm.entities.PrivilegeEntity.setResource : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: void _persistence_set_resource(org.apache.ambari.server.orm.entities.ResourceEntity)>(r1)
+org.apache.ambari.server.orm.entities.PrivilegeEntity.getResource : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: org.apache.ambari.server.orm.entities.ResourceEntity _persistence_get_resource()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.getPermissionName : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: java.lang.String _persistence_get_permissionName()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.setResourceType : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: void _persistence_set_resourceType(org.apache.ambari.server.orm.entities.ResourceTypeEntity)>(r1)
+org.apache.ambari.server.orm.entities.PrincipalTypeEntity.setId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrincipalTypeEntity: void _persistence_set_id(java.lang.Integer)>(r1)
+org.apache.ambari.server.orm.entities.PrincipalTypeEntity.hashCode : $i0 = 31 * i1
+org.apache.ambari.server.orm.entities.PrincipalTypeEntity.hashCode : $r3 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrincipalTypeEntity: java.lang.String _persistence_get_name()>()
+org.apache.ambari.server.orm.entities.PrincipalTypeEntity.hashCode : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrincipalTypeEntity: java.lang.Integer _persistence_get_id()>()
+org.apache.ambari.server.orm.entities.ResourceEntity.hashCode : $i0 = 31 * $i1
+org.apache.ambari.server.orm.entities.ResourceEntity.hashCode : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: java.lang.Long _persistence_get_id()>()
+org.apache.ambari.server.orm.entities.ResourceEntity.hashCode : $r4 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: java.lang.Long _persistence_get_id()>()
+org.apache.ambari.server.orm.entities.PermissionEntity.setId : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PermissionEntity: void _persistence_set_id(java.lang.Integer)>(r1)
+org.apache.ambari.server.orm.entities.ResourceEntity.getId : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ResourceEntity: java.lang.Long _persistence_get_id()>()
+org.apache.ambari.server.orm.entities.PrivilegeEntity.setPermission : virtualinvoke r0.<org.apache.ambari.server.orm.entities.PrivilegeEntity: void _persistence_set_permission(org.apache.ambari.server.orm.entities.PermissionEntity)>(r1)

@@ -1,0 +1,6 @@
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $z0 = specialinvoke r0.<com.alibaba.dubbo.config.spring.AnnotationBean: boolean isMatchPackage(java.lang.Object)>(r1)
+com.alibaba.dubbo.config.spring.AnnotationBean.destroy : $r2 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.util.concurrent.ConcurrentMap referenceConfigs>
+com.alibaba.dubbo.config.spring.AnnotationBean.destroy : $r1 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.util.Set serviceConfigs>
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeanFactory : $r8 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage>
+com.alibaba.dubbo.config.spring.AnnotationBean.isMatchPackage : $r5 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String[] annotationPackages>

@@ -1,0 +1,3 @@
+org.apache.zeppelin.interpreter.remote.ClientFactory.create : $r14 = new org.apache.zeppelin.interpreter.InterpreterException
+org.apache.zeppelin.interpreter.remote.ClientFactory.create : $r5 = new org.apache.thrift.transport.TSocket
+org.apache.zeppelin.interpreter.remote.ClientFactory.create : virtualinvoke $r5.<org.apache.thrift.transport.TSocket: void open()>()

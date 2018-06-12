@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.logging.LogSearchDataRetrievalService.getComponentRequestFailureCounts : $r1 = r0.<org.apache.ambari.server.controller.logging.LogSearchDataRetrievalService: java.util.Map componentRequestFailureCounts> >>>>>>>> org.apache.ambari.server.controller.logging.LogSearchDataRetrievalService.getComponentRequestFailureCounts : return $r1

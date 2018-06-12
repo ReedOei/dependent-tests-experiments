@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-md-2" ng-include
+         src="'/views/partials/profile/sidebar.html'"></div>
+    <div class="col-md-9">
+        <div class="page-header">
+            <h2>Willkommen {{user.firstName}} {{user.lastName}}</h2>
+        </div>
+        <div  ng-controller="ImageSearchCtrl" ng-include
+             src="'/views/partials/imageSearchBar.html'"></div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <hr>
+                <h3>Unsere Empfehlung</h3>
+            </div>
+        </div>
+
+        <!--old Logic -->
+        <div class="row" ng-controller="ImageSearchCtrl" ng-init="initRecomendationContent()">
+            <div class="col-md-12">
+                <pagination total-items="recomendationImagesLength"
+                            items-per-page="imagesPerPage"
+                            ng-model="recomendationCurrentPage"
+                            ng-change=""
+                            previous-text="zurück"
+                            next-text="nächste"></pagination>
+                <div class="row">
+                    <div class="col-md-2 box-margin" ng-repeat="image in recomendationFilteredImages">
+                        <div customerimage="image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

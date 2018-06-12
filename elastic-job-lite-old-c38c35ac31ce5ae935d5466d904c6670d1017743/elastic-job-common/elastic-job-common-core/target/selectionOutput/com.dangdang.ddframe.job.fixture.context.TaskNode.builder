@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.fixture.context.TaskNode.builder : $r0 = new com.dangdang.ddframe.job.fixture.context.TaskNode$TaskNodeBuilder >>>>>>>> com.dangdang.ddframe.job.fixture.context.TaskNode.builder : specialinvoke $r0.<com.dangdang.ddframe.job.fixture.context.TaskNode$TaskNodeBuilder: void <init>()>()
+com.dangdang.ddframe.job.fixture.context.TaskNode.builder : specialinvoke $r0.<com.dangdang.ddframe.job.fixture.context.TaskNode$TaskNodeBuilder: void <init>()>() >>>>>>>> com.dangdang.ddframe.job.fixture.context.TaskNode.builder : return $r0

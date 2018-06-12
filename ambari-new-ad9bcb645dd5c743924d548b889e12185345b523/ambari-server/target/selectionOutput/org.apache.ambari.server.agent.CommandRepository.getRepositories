@@ -1,0 +1,1 @@
+org.apache.ambari.server.agent.CommandRepository.getRepositories : $r1 = r0.<org.apache.ambari.server.agent.CommandRepository: java.util.List m_repositories> >>>>>>>> org.apache.ambari.server.agent.CommandRepository.getRepositories : return $r1

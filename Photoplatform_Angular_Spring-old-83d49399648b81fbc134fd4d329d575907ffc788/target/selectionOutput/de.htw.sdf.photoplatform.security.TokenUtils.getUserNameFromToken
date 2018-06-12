@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.security.TokenUtils.getUserNameFromToken : if null != r0 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.getUserNameFromToken : return null
+de.htw.sdf.photoplatform.security.TokenUtils.getUserNameFromToken : if null != r0 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.getUserNameFromToken : r1 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>(":")
+de.htw.sdf.photoplatform.security.TokenUtils.getUserNameFromToken : r1 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>(":") >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.getUserNameFromToken : $r2 = r1[0]
+de.htw.sdf.photoplatform.security.TokenUtils.getUserNameFromToken : $r2 = r1[0] >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.getUserNameFromToken : return $r2

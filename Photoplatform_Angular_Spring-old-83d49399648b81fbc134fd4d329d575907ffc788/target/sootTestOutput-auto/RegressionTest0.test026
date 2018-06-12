@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $r5 = r2[1]
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : r2 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>(":")

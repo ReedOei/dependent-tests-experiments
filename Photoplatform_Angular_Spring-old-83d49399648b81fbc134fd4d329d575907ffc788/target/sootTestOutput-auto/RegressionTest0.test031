@@ -1,0 +1,6 @@
+de.htw.sdf.photoplatform.webservice.Endpoints.securedUserEndpoints : $r3 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/user/becomePhotographer")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedUserEndpoints : $r4 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/users/changepassword")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedUserEndpoints : return $r1
+de.htw.sdf.photoplatform.webservice.Endpoints.securedUserEndpoints : $r2 = staticinvoke <de.htw.sdf.photoplatform.webservice.Endpoints: java.lang.String restBuilder(java.lang.String)>("/users/update")
+de.htw.sdf.photoplatform.webservice.Endpoints.securedUserEndpoints : $r1 = newarray (java.lang.String)[3]
+de.htw.sdf.photoplatform.webservice.Endpoints.restBuilder : $r1 = new java.lang.StringBuilder

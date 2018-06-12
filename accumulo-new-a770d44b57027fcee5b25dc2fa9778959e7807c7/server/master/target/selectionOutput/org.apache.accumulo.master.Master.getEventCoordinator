@@ -1,0 +1,1 @@
+org.apache.accumulo.master.Master.getEventCoordinator : $r1 = r0.<org.apache.accumulo.master.Master: org.apache.accumulo.master.EventCoordinator nextEvent> >>>>>>>> org.apache.accumulo.master.Master.getEventCoordinator : return $r1

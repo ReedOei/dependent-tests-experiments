@@ -1,0 +1,5 @@
+org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileParser.parse : $r2 = r0.<org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileParser: org.codehaus.jackson.map.ObjectMapper mapper>
+org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactory.get : if null != r0 goto $r1 = new org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileParser
+org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactory.get : $r1 = new org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileParser
+org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactory.get : $r8 = <org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactory: org.slf4j.Logger LOG>
+org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactory.get : $r12 = new org.apache.ambari.server.state.quicklinksprofile.ShowAllLinksVisibilityController

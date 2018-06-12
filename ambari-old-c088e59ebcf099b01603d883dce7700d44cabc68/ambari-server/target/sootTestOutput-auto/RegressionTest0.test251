@@ -1,0 +1,11 @@
+org.apache.ambari.server.security.encryption.AbstractCredentialStore.loadKeyStore : $r4 = r0.<org.apache.ambari.server.security.encryption.AbstractCredentialStore: org.apache.ambari.server.security.encryption.MasterKeyService masterKeyService>
+org.apache.ambari.server.security.encryption.AbstractCredentialStore.loadKeyStore : $r7 = new org.apache.ambari.server.AmbariException
+org.apache.ambari.server.security.encryption.FileBasedCredentialStore.getKeyStore : $r6 = <org.apache.ambari.server.security.encryption.FileBasedCredentialStore: org.slf4j.Logger LOG>
+org.apache.ambari.server.security.encryption.FileBasedCredentialStore.getKeyStore : $z0 = virtualinvoke r1.<java.io.File: boolean exists()>()
+org.apache.ambari.server.security.encryption.FileBasedCredentialStore.getKeyStore : r19 = null
+org.apache.ambari.server.security.encryption.FileBasedCredentialStore.getKeyStore : r3 = virtualinvoke r0.<org.apache.ambari.server.security.encryption.FileBasedCredentialStore: java.security.KeyStore loadKeyStore(java.io.InputStream,java.lang.String)>(r19, r2)
+org.apache.ambari.server.security.encryption.AbstractCredentialStore.addCredential : $r6 = r0.<org.apache.ambari.server.security.encryption.AbstractCredentialStore: java.util.concurrent.locks.Lock lock>
+org.apache.ambari.server.security.encryption.AbstractCredentialStore.addCredential : r3 = virtualinvoke r0.<org.apache.ambari.server.security.encryption.AbstractCredentialStore: java.security.KeyStore loadCredentialStore()>()
+org.apache.ambari.server.security.encryption.AbstractCredentialStore.addCredential : if r1 == null goto $r5 = new java.lang.IllegalArgumentException
+org.apache.ambari.server.security.encryption.AbstractCredentialStore.addCredential : $z0 = virtualinvoke r1.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.security.encryption.FileBasedCredentialStore.loadCredentialStore : $r1 = r0.<org.apache.ambari.server.security.encryption.FileBasedCredentialStore: java.io.File keyStoreFile>

@@ -1,0 +1,7 @@
+org.apache.zeppelin.notebook.socket.Message.fromJson : $r1 = <org.apache.zeppelin.notebook.socket.Message: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.initialize : $r4 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.initialize : $r3 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.removeNoteConnection : $r8 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.removeNoteConnection : $z0 = staticinvoke <org.apache.commons.lang3.StringUtils: boolean isBlank(java.lang.CharSequence)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.deserialize : $z0 = staticinvoke <org.apache.commons.lang3.StringUtils: boolean isBlank(java.lang.CharSequence)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.deserialize : $r3 = staticinvoke <org.apache.zeppelin.notebook.socket.Message: org.apache.zeppelin.notebook.socket.Message fromJson(java.lang.String)>(r1)

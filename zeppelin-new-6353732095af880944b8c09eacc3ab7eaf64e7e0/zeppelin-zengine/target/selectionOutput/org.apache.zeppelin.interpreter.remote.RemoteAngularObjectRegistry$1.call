@@ -1,0 +1,1 @@
+org.apache.zeppelin.interpreter.remote.RemoteAngularObjectRegistry$1.call : $r2 = virtualinvoke r0.<org.apache.zeppelin.interpreter.remote.RemoteAngularObjectRegistry$1: java.lang.Void call(org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Client)>(r1) >>>>>>>> org.apache.zeppelin.interpreter.remote.RemoteAngularObjectRegistry$1.call : return $r2

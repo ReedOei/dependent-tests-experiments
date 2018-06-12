@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.webservice.dto.UserCredential.getPassword : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserCredential: java.lang.String password>
+de.htw.sdf.photoplatform.webservice.dto.UserCredential.setEmail : r0.<de.htw.sdf.photoplatform.webservice.dto.UserCredential: java.lang.String email> = r1

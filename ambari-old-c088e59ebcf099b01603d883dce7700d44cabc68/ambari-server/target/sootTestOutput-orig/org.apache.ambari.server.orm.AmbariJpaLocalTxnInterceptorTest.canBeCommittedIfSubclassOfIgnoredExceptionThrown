@@ -1,0 +1,11 @@
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : $z1 = virtualinvoke r4.<java.lang.Class: boolean isInstance(java.lang.Object)>(r1)
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : $z2 = virtualinvoke r6.<java.lang.Class: boolean isInstance(java.lang.Object)>(r1)
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : r5 = interfaceinvoke r0.<com.google.inject.persist.Transactional: java.lang.Class[] ignore()>()
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : $z0 = interfaceinvoke r2.<javax.persistence.EntityTransaction: boolean getRollbackOnly()>()
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : goto [?= (branch)]
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : z3 = 1
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : r4 = r3[i2]
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : z3 = 0
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : if z3 != 0 goto return z3
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : r3 = interfaceinvoke r0.<com.google.inject.persist.Transactional: java.lang.Class[] rollbackOn()>()
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptorTest.asArray : return r0

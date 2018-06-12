@@ -1,0 +1,1 @@
+org.apache.ambari.server.api.services.stackadvisor.commands.StackAdvisorCommandTest.list : $r1 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayList(java.lang.Object[])>(r0) >>>>>>>> org.apache.ambari.server.api.services.stackadvisor.commands.StackAdvisorCommandTest.list : return $r1

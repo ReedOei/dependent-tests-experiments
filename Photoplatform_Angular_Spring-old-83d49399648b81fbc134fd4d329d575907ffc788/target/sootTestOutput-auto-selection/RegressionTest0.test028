@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.webservice.controller.UserController.updateUser : $z0 = interfaceinvoke r2.<org.springframework.validation.BindingResult: boolean hasErrors()>()
+de.htw.sdf.photoplatform.webservice.controller.UserController.updateUser : $z0 = interfaceinvoke r2.<org.springframework.validation.BindingResult: boolean hasErrors()>()

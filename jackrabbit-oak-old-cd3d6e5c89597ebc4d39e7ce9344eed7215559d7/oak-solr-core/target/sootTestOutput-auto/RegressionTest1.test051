@@ -1,0 +1,3 @@
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $r8 = interfaceinvoke r1.<javax.jcr.Session: javax.jcr.Workspace getWorkspace()>()
+org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtils.createPrimaryTypeSynonymsFile : $r7 = new java.io.StringWriter

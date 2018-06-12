@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.KerberosHelperImpl.access$1600 : $r4 = specialinvoke r0.<org.apache.ambari.server.controller.KerberosHelperImpl: java.util.List calculateHosts(org.apache.ambari.server.state.Cluster,java.util.List,java.util.Set,boolean)>(r1, r2, r3, z0) >>>>>>>> org.apache.ambari.server.controller.KerberosHelperImpl.access$1600 : return $r4

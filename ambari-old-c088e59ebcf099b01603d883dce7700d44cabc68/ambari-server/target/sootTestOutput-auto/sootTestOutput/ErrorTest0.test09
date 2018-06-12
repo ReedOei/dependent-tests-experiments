@@ -1,0 +1,2 @@
+org.apache.ambari.server.orm.dao.CrudDAO.remove : r2 = interfaceinvoke r1.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.orm.dao.CrudDAO.remove : $r4 = r0.<org.apache.ambari.server.orm.dao.CrudDAO: com.google.inject.Provider entityManagerProvider>

@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.statistics.type.job.JobTypeStatistics.getSimpleJobCount : $i0 = r0.<com.dangdang.ddframe.job.statistics.type.job.JobTypeStatistics: int simpleJobCount>
+com.dangdang.ddframe.job.statistics.type.job.JobTypeStatistics.getDataflowJobCount : $i0 = r0.<com.dangdang.ddframe.job.statistics.type.job.JobTypeStatistics: int dataflowJobCount>

@@ -1,0 +1,25 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.createInstace : $r0 = new org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.handleMsgFromZeppelin : interfaceinvoke $r8.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("noteId", r2)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.handleMsgFromZeppelin : $r10 = r4.<org.apache.zeppelin.notebook.socket.Message: org.apache.zeppelin.notebook.socket.Message$OP op>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.handleMsgFromZeppelin : if r4 != null goto $r10 = r4.<org.apache.zeppelin.notebook.socket.Message: org.apache.zeppelin.notebook.socket.Message$OP op>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.handleMsgFromZeppelin : $r8 = new java.util.HashMap
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.handleMsgFromZeppelin : r4 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.socket.Message deserialize(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketText : r2 = staticinvoke <org.apache.zeppelin.notebook.socket.WatcherMessage: org.apache.zeppelin.notebook.socket.WatcherMessage fromJson(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.WatcherWebsocket.onWebSocketText : $r3 = r2.<org.apache.zeppelin.notebook.socket.WatcherMessage: java.lang.String noteId>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket.onWebSocketText : $r3 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket.onWebSocketText : r11 = staticinvoke <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient getInstance()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket.onWebSocketText : $r7 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket: java.lang.String noteId>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket.onWebSocketText : if r11 == null goto (branch)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket.onWebSocketText : goto [?= return]
+org.apache.zeppelin.notebook.socket.Message.fromJson : $r1 = <org.apache.zeppelin.notebook.socket.Message: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getInstance : $r0 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.isActionable : return 0
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.isActionable : if r1 != null goto $r2 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: java.util.Set actionable>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.removeNoteConnection : $r9 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.removeNoteConnection : $z0 = staticinvoke <org.apache.commons.lang3.StringUtils: boolean isBlank(java.lang.CharSequence)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.removeNoteConnection : $r3 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: java.util.concurrent.ConcurrentHashMap notesConnection>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.deserialize : $z0 = staticinvoke <org.apache.commons.lang3.StringUtils: boolean isBlank(java.lang.CharSequence)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.deserialize : $r3 = staticinvoke <org.apache.zeppelin.notebook.socket.Message: org.apache.zeppelin.notebook.socket.Message fromJson(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket.onWebSocketClose : $r2 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket.onWebSocketClose : $r4 = staticinvoke <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient getInstance()>()
+org.apache.zeppelin.notebook.socket.WatcherMessage.fromJson : $r1 = <org.apache.zeppelin.notebook.socket.WatcherMessage: com.google.gson.Gson gson>

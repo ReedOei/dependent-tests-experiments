@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.persistence.model.Image.setMobileThumbPath : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mobileThumbPath> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.setName : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getMetaData : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String metaData>

@@ -1,0 +1,4 @@
+org.apache.ambari.server.audit.request.creator.ServiceEventCreatorTest.clusterTest : $r12 = <org.apache.ambari.server.controller.internal.ServiceResourceProvider: java.lang.String SERVICE_SERVICE_STATE_PROPERTY_ID>
+org.apache.ambari.server.audit.request.creator.ServiceEventCreatorTest.clusterTest : $r10 = new org.apache.ambari.server.audit.request.eventcreator.ServiceEventCreator
+org.apache.ambari.server.audit.request.creator.ServiceEventCreatorTest.clusterTest : $r11 = new java.util.HashMap
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestBase.beforeClass : $r0 = new org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestBase$1

@@ -1,0 +1,16 @@
+de.htw.sdf.photoplatform.webservice.dto.ImageData.setMobilePath : r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String mobilePath> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getDescription : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String description>
+de.htw.sdf.photoplatform.persistence.model.Image.getThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String thumbPath>
+de.htw.sdf.photoplatform.webservice.dto.ImageData.setPath : r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String path> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.model.Image.getPrice : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.Double price>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.getId : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id>
+de.htw.sdf.photoplatform.persistence.model.Image.getMobileThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mobileThumbPath>
+de.htw.sdf.photoplatform.webservice.dto.ImageData.setUserData : r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: de.htw.sdf.photoplatform.webservice.dto.UserData userData> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.isAdmin : $z0 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: boolean admin>
+de.htw.sdf.photoplatform.webservice.dto.ImageData.getSmallPath : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String smallPath>
+de.htw.sdf.photoplatform.webservice.dto.ImageData.setName : r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String name> = r1
+de.htw.sdf.photoplatform.webservice.dto.ImageData.getMetadata : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String metadata>
+de.htw.sdf.photoplatform.persistence.model.Image.getSmallThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath>
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.persistence.model.Image.getMetaData : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String metaData>

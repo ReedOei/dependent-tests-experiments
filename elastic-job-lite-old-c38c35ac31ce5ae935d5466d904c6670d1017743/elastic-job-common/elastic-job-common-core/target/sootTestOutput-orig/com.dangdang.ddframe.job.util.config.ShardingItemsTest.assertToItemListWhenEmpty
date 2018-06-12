@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemList : $z0 = staticinvoke <com.google.common.base.Strings: boolean isNullOrEmpty(java.lang.String)>(r0)
+com.dangdang.ddframe.job.util.config.ShardingItems.toItemList : $r8 = staticinvoke <java.util.Collections: java.util.List emptyList()>()

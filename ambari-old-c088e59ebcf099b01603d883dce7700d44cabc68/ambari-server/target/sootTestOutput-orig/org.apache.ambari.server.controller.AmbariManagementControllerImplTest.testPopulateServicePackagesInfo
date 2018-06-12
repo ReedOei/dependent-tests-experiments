@@ -1,0 +1,26 @@
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.setAuthenticated : r0.<org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken: boolean authenticated> = z0
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : $r2 = staticinvoke <org.springframework.security.core.context.SecurityContextHolder: org.springframework.security.core.context.SecurityContext getContext()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : virtualinvoke $r1.<org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken: void setAuthenticated(boolean)>(1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : $r1 = new org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.populateServicePackagesInfo : $r6 = new org.apache.ambari.server.state.ServiceOsSpecific
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.populateServicePackagesInfo : $r7 = virtualinvoke r1.<org.apache.ambari.server.state.ServiceInfo: java.util.Map getOsSpecifics()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.populateServicePackagesInfo : goto [?= $z1 = interfaceinvoke r12.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.populateServicePackagesInfo : if r14 == null goto return $r6
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.populateServicePackagesInfo : $r10 = interfaceinvoke r12.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.populateServicePackagesInfo : r12 = interfaceinvoke r5.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.populateServicePackagesInfo : $r11 = virtualinvoke r13.<org.apache.ambari.server.state.ServiceOsSpecific: java.util.List getPackages()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.populateServicePackagesInfo : r14 = virtualinvoke $r6.<org.apache.ambari.server.state.ServiceOsSpecific: org.apache.ambari.server.state.ServiceOsSpecific$Repo getRepo()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.populateServicePackagesInfo : $z0 = interfaceinvoke r5.<java.util.List: boolean isEmpty()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getOSSpecificsByFamily : i0 = lengthof r6
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getOSSpecificsByFamily : $r12 = interfaceinvoke r5.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getOSSpecificsByFamily : $r14 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.state.stack.OsFamily osFamily>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getOSSpecificsByFamily : $r9 = new java.util.ArrayList
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getOSSpecificsByFamily : $r10 = interfaceinvoke r1.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getOSSpecificsByFamily : $r15 = interfaceinvoke r5.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getOSSpecificsByFamily : goto [?= (branch)]
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getOSSpecificsByFamily : r8 = r6[i1]
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getOSSpecificsByFamily : $r11 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.state.ServiceOsSpecific.getRepo : $r1 = r0.<org.apache.ambari.server.state.ServiceOsSpecific: org.apache.ambari.server.state.ServiceOsSpecific$Repo repo>
+org.apache.ambari.server.state.ServiceOsSpecific$Package.setName : r0.<org.apache.ambari.server.state.ServiceOsSpecific$Package: java.lang.String name> = r1
+org.apache.ambari.server.state.ServiceOsSpecific.addPackages : $r2 = r0.<org.apache.ambari.server.state.ServiceOsSpecific: java.util.List packages>
+org.apache.ambari.server.state.ServiceOsSpecific.getPackages : $r1 = r0.<org.apache.ambari.server.state.ServiceOsSpecific: java.util.List packages>

@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.getCollectionById : $r2 = r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.repository.CollectionDAO collectionDAO>

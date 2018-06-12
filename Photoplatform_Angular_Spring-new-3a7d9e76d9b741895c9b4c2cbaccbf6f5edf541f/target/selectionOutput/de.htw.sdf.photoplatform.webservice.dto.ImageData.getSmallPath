@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.dto.ImageData.getSmallPath : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String smallPath> >>>>>>>> de.htw.sdf.photoplatform.webservice.dto.ImageData.getSmallPath : return $r1

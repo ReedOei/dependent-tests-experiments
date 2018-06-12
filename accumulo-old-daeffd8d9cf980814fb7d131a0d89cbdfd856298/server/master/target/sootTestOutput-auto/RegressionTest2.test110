@@ -1,0 +1,1 @@
+org.apache.accumulo.master.tableOps.RenameNamespace.call : r2 = virtualinvoke r1.<org.apache.accumulo.master.Master: org.apache.accumulo.core.client.Instance getInstance()>()

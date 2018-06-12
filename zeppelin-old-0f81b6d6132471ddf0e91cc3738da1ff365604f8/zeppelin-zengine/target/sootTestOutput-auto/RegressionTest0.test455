@@ -1,0 +1,2 @@
+org.apache.zeppelin.notebook.ParagraphRuntimeInfo.addValue : $r2 = r0.<org.apache.zeppelin.notebook.ParagraphRuntimeInfo: java.util.List values>
+org.apache.zeppelin.notebook.ParagraphRuntimeInfo.getInterpreterSettingId : $r1 = r0.<org.apache.zeppelin.notebook.ParagraphRuntimeInfo: java.lang.String interpreterSettingId>

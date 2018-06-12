@@ -1,0 +1,273 @@
+org.apache.ambari.server.utils.ShellCommandUtil.streamToString : $r7 = virtualinvoke $r5.<java.io.BufferedReader: java.lang.String readLine()>()
+org.apache.ambari.server.utils.ShellCommandUtil.streamToString : $r6 = new java.lang.StringBuilder
+org.apache.ambari.server.utils.ShellCommandUtil.streamToString : $r5 = new java.io.BufferedReader
+org.apache.ambari.server.utils.ShellCommandUtil.streamToString : $r8 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.String toString()>()
+org.apache.ambari.server.utils.ShellCommandUtil.streamToString : $r4 = new java.io.InputStreamReader
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r18 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_TYPE>
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r4 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_PASSWORD>
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r2 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_PATH>
+org.apache.ambari.server.bootstrap.SshHostInfo.hostListAsString : $r9 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r3)
+org.apache.ambari.server.bootstrap.SshHostInfo.hostListAsString : $r8 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.bootstrap.SshHostInfo.hostListAsString : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.bootstrap.SshHostInfo.hostListAsString : $r4 = new java.lang.StringBuilder
+org.apache.ambari.server.bootstrap.SshHostInfo.hostListAsString : $r5 = r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.util.List hosts>
+org.apache.ambari.server.bootstrap.SshHostInfo.hostListAsString : $r6 = r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.util.List hosts>
+org.apache.ambari.server.bootstrap.SshHostInfo.getPassword : $r1 = r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.lang.String password>
+org.apache.ambari.server.configuration.Configuration.getBootStrapScript : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty BOOTSTRAP_SCRIPT>
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.getKey : $r1 = r0.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.String m_key>
+org.apache.ambari.server.configuration.Configuration.getMetadataPath : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty METADATA_DIR_PATH>
+org.apache.ambari.server.bootstrap.SshHostInfo.getSshKey : $r1 = r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.lang.String sshKey>
+org.apache.ambari.server.bootstrap.BSResponse.setRequestId : r0.<org.apache.ambari.server.bootstrap.BSResponse: long requestId> = l0
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.getDefaultValue : $r1 = r0.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object m_defaultValue>
+org.apache.ambari.server.configuration.Configuration.getBootSetupAgentPassword : $r6 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty BOOTSTRAP_SETUP_AGENT_PASSWORD>
+org.apache.ambari.server.configuration.Configuration.getBootSetupAgentPassword : $r3 = r0.<org.apache.ambari.server.configuration.Configuration: java.util.Map configsMap>
+org.apache.ambari.server.configuration.Configuration.getBootSetupAgentPassword : if null == r1 goto $r6 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty BOOTSTRAP_SETUP_AGENT_PASSWORD>
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : $r18 = new org.apache.ambari.server.bootstrap.BSRunner
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : virtualinvoke $r4.<org.apache.ambari.server.bootstrap.BSResponse: void setLog(java.lang.String)>("Running Bootstrap now.")
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : $i0 = r0.<org.apache.ambari.server.bootstrap.BootStrapImpl: int requestId>
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : return $r4
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : $r4 = new org.apache.ambari.server.bootstrap.BSResponse
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : $r6 = <org.apache.ambari.server.bootstrap.BootStrapImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : $r17 = virtualinvoke r1.<org.apache.ambari.server.bootstrap.SshHostInfo: java.util.List getHosts()>()
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : $r28 = <org.apache.ambari.server.bootstrap.BSResponse$BSRunStat: org.apache.ambari.server.bootstrap.BSResponse$BSRunStat OK>
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : $i8 = r0.<org.apache.ambari.server.bootstrap.BootStrapImpl: int requestId>
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : $r21 = r0.<org.apache.ambari.server.bootstrap.BootStrapImpl: java.lang.String bootScript>
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : $r12 = virtualinvoke r1.<org.apache.ambari.server.bootstrap.SshHostInfo: java.util.List getHosts()>()
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : $r11 = r0.<org.apache.ambari.server.bootstrap.BootStrapImpl: org.apache.ambari.server.bootstrap.BSRunner bsRunner>
+org.apache.ambari.server.bootstrap.BootStrapImpl.runBootStrap : $r27 = r0.<org.apache.ambari.server.bootstrap.BootStrapImpl: org.apache.ambari.server.bootstrap.BSRunner bsRunner>
+org.apache.ambari.server.utils.ShellCommandUtil.setUnixFilePermissions : $r6 = newarray (java.lang.String)[3]
+org.apache.ambari.server.utils.ShellCommandUtil.setUnixFilePermissions : goto [?= return]
+org.apache.ambari.server.utils.ShellCommandUtil.setUnixFilePermissions : $z0 = <org.apache.ambari.server.utils.ShellCommandUtil: boolean LINUX>
+org.apache.ambari.server.bootstrap.FifoLinkedHashMap.removeEldestEntry : $i0 = virtualinvoke r0.<org.apache.ambari.server.bootstrap.FifoLinkedHashMap: int size()>()
+org.apache.ambari.server.bootstrap.BootStrapStatus.setHostsStatus : r0.<org.apache.ambari.server.bootstrap.BootStrapStatus: java.util.List hostsStatus> = r1
+org.apache.ambari.server.configuration.Configuration.getResourceDirPath : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty RESOURCES_DIR>
+org.apache.ambari.server.bootstrap.BSResponse.setLog : r0.<org.apache.ambari.server.bootstrap.BSResponse: java.lang.String log> = r1
+org.apache.ambari.server.bootstrap.BSRunner.access$100 : $r1 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.SshHostInfo sshHostInfo>
+org.apache.ambari.server.bootstrap.BSRunner.access$300 : $r1 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.BootStrapImpl bsImpl>
+org.apache.ambari.server.bootstrap.BootStrapStatus.getLog : $r1 = r0.<org.apache.ambari.server.bootstrap.BootStrapStatus: java.lang.String log>
+org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector.run : r2 = virtualinvoke $r4.<org.apache.ambari.server.bootstrap.BSHostStatusCollector: java.util.List getHostStatus()>()
+org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector.run : $r7 = r0.<org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector: org.apache.ambari.server.bootstrap.BSRunner this$0>
+org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector.run : virtualinvoke $r4.<org.apache.ambari.server.bootstrap.BSHostStatusCollector: void run()>()
+org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector.run : $r12 = r0.<org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector: org.apache.ambari.server.bootstrap.BSRunner this$0>
+org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector.run : $r10 = new org.apache.ambari.server.bootstrap.BootStrapStatus
+org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector.run : $r11 = <org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat: org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat RUNNING>
+org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector.run : $r4 = new org.apache.ambari.server.bootstrap.BSHostStatusCollector
+org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector.run : virtualinvoke $r10.<org.apache.ambari.server.bootstrap.BootStrapStatus: void setHostsStatus(java.util.List)>(r2)
+org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector.run : virtualinvoke $r10.<org.apache.ambari.server.bootstrap.BootStrapStatus: void setLog(java.lang.String)>("")
+org.apache.ambari.server.bootstrap.SshHostInfo.setUser : r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.lang.String user> = r1
+org.apache.ambari.server.bootstrap.SshHostInfo.getUser : $r1 = r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.lang.String user>
+org.apache.ambari.server.bootstrap.BootStrapImpl.init : $r1 = r0.<org.apache.ambari.server.bootstrap.BootStrapImpl: java.io.File bootStrapDir>
+org.apache.ambari.server.bootstrap.SshHostInfo.getSshPort : $r1 = r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.lang.String sshPort>
+org.apache.ambari.server.bootstrap.SshHostInfo.setSshKey : r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.lang.String sshKey> = r1
+org.apache.ambari.server.bootstrap.SshHostInfo.getUserRunAs : $r1 = r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.lang.String userRunAs>
+org.apache.ambari.server.configuration.Configuration.getServerOsFamily : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty OS_FAMILY>
+org.apache.ambari.server.bootstrap.BootStrapStatus.getHostsStatus : $r1 = r0.<org.apache.ambari.server.bootstrap.BootStrapStatus: java.util.List hostsStatus>
+org.apache.ambari.server.configuration.Configuration.getApiSSLAuthentication : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty API_USE_SSL>
+org.apache.ambari.server.bootstrap.BSResponse.getRequestId : $l0 = r0.<org.apache.ambari.server.bootstrap.BSResponse: long requestId>
+org.apache.ambari.server.bootstrap.BSRunner.writePasswordFile : $r2 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File passwordFile>
+org.apache.ambari.server.bootstrap.BootStrapStatus.setLog : r0.<org.apache.ambari.server.bootstrap.BootStrapStatus: java.lang.String log> = r1
+org.apache.ambari.server.bootstrap.BSHostStatus.getStatus : $r1 = r0.<org.apache.ambari.server.bootstrap.BSHostStatus: java.lang.String status>
+org.apache.ambari.server.bootstrap.BSRunner.createRunDir : $r2 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File requestIdDir>
+org.apache.ambari.server.bootstrap.BSRunner.createRunDir : $r3 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File requestIdDir>
+org.apache.ambari.server.bootstrap.BSRunner.createRunDir : $r1 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File bootDir>
+org.apache.ambari.server.bootstrap.BootStrapStatus.getStatus : $r1 = r0.<org.apache.ambari.server.bootstrap.BootStrapStatus: org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat status>
+org.apache.ambari.server.bootstrap.BSResponse.setStatus : r0.<org.apache.ambari.server.bootstrap.BSResponse: org.apache.ambari.server.bootstrap.BSResponse$BSRunStat status> = r1
+org.apache.ambari.server.bootstrap.BSRunner.createHostString : $r7 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.bootstrap.BSRunner.createHostString : virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r4)
+org.apache.ambari.server.bootstrap.BSRunner.createHostString : $i0 = i3
+org.apache.ambari.server.bootstrap.BSRunner.createHostString : $r5 = new java.lang.StringBuilder
+org.apache.ambari.server.bootstrap.BSRunner.createHostString : r3 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.bootstrap.BSRunner.createHostString : if r1 != null goto i3 = 0
+org.apache.ambari.server.bootstrap.BSRunner.createHostString : virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(",")
+org.apache.ambari.server.bootstrap.BSRunner.createHostString : i3 = 0
+org.apache.ambari.server.bootstrap.BSRunner.createHostString : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.bootstrap.BootStrapImpl.updateStatus : $r2 = r0.<org.apache.ambari.server.bootstrap.BootStrapImpl: org.apache.ambari.server.bootstrap.FifoLinkedHashMap bsStatus>
+org.apache.ambari.server.bootstrap.BSHostStatus.setLog : r0.<org.apache.ambari.server.bootstrap.BSHostStatus: java.lang.String log> = r1
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.getHostStatus : $r1 = r0.<org.apache.ambari.server.bootstrap.BSHostStatusCollector: java.util.List hostStatus>
+org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties.isKerberosAuthenticationEnabled : $z0 = r0.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean kerberosAuthenticationEnabled>
+org.apache.ambari.server.bootstrap.BSRunner.finished : r0.<org.apache.ambari.server.bootstrap.BSRunner: boolean finished> = 1
+org.apache.ambari.server.bootstrap.SshHostInfo.getHosts : $r1 = r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.util.List hosts>
+org.apache.ambari.server.bootstrap.BSRunner.calculateBSTimeout : $l3 = (long) i0
+org.apache.ambari.server.api.services.AmbariMetaInfo.getServerVersion : $r1 = r0.<org.apache.ambari.server.api.services.AmbariMetaInfo: java.lang.String serverVersion>
+org.apache.ambari.server.bootstrap.SshHostInfo.setHosts : r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.util.List hosts> = r1
+org.apache.ambari.server.bootstrap.BSHostStatus.setHostName : r0.<org.apache.ambari.server.bootstrap.BSHostStatus: java.lang.String hostName> = r1
+org.apache.ambari.server.bootstrap.SshHostInfo.isVerbose : $z0 = r0.<org.apache.ambari.server.bootstrap.SshHostInfo: boolean verbose>
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $r30 = new java.io.File
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $r13 = new java.util.ArrayList
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $r14 = r0.<org.apache.ambari.server.bootstrap.BSHostStatusCollector: java.util.List hosts>
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $r16 = <org.apache.ambari.server.bootstrap.BSHostStatusCollector: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $r22 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $r36 = <org.apache.ambari.server.bootstrap.BSHostStatusCollector: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $r67 = r0.<org.apache.ambari.server.bootstrap.BSHostStatusCollector: java.util.List hostStatus>
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $r21 = r0.<org.apache.ambari.server.bootstrap.BSHostStatusCollector: java.util.List hosts>
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : virtualinvoke $r23.<org.apache.ambari.server.bootstrap.BSHostStatus: void setLog(java.lang.String)>("")
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $r24 = new java.io.File
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $z8 = virtualinvoke $r30.<java.io.File: boolean exists()>()
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : virtualinvoke $r23.<org.apache.ambari.server.bootstrap.BSHostStatus: void setHostName(java.lang.String)>(r4)
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $z2 = virtualinvoke $r24.<java.io.File: boolean exists()>()
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $r23 = new org.apache.ambari.server.bootstrap.BSHostStatus
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : $r8 = <org.apache.ambari.server.bootstrap.BSHostStatusCollector: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : virtualinvoke $r23.<org.apache.ambari.server.bootstrap.BSHostStatus: void setStatus(java.lang.String)>("RUNNING")
+org.apache.ambari.server.bootstrap.BSHostStatusCollector.run : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.configuration.Configuration.getClientApiPort : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty CLIENT_API_PORT>
+org.apache.ambari.server.bootstrap.BSRunner.access$000 : $r1 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File requestIdDir>
+org.apache.ambari.server.bootstrap.BootStrapStatus.setStatus : r0.<org.apache.ambari.server.bootstrap.BootStrapStatus: org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat status> = r1
+org.apache.ambari.server.bootstrap.BSRunner.access$200 : $i0 = r0.<org.apache.ambari.server.bootstrap.BSRunner: int requestId>
+org.apache.ambari.server.bootstrap.BSRunner.waitForProcessTermination : l1 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.ambari.server.bootstrap.BSRunner.waitForProcessTermination : return 1
+org.apache.ambari.server.bootstrap.BSRunner.waitForProcessTermination : staticinvoke <java.lang.Thread: void sleep(long)>(1000L)
+org.apache.ambari.server.bootstrap.BSRunner.waitForProcessTermination : virtualinvoke r1.<java.lang.Process: int exitValue()>()
+org.apache.ambari.server.bootstrap.BSRunner.waitForProcessTermination : $l3 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.ambari.server.configuration.Configuration.getExtensionsPath : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty EXTENSIONS_DIR_PATH>
+org.apache.ambari.server.configuration.Configuration.getCustomActionDefinitionPath : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty CUSTOM_ACTION_DEFINITION>
+org.apache.ambari.server.bootstrap.SshHostInfo.setPassword : r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.lang.String password> = r1
+org.apache.ambari.server.bootstrap.BSRunner.run : $r172 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.SshHostInfo sshHostInfo>
+org.apache.ambari.server.bootstrap.BSRunner.run : goto [?= $z4 = interfaceinvoke r238.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.bootstrap.BSRunner.run : $r188 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File passwordFile>
+org.apache.ambari.server.bootstrap.BSRunner.run : if i18 == 0 goto r164 = <org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat: org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat SUCCESS>
+org.apache.ambari.server.bootstrap.BSRunner.run : i18 = 1
+org.apache.ambari.server.bootstrap.BSRunner.run : r6 = virtualinvoke $r45.<java.lang.ProcessBuilder: java.util.Map environment()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : r163[3] = r160
+org.apache.ambari.server.bootstrap.BSRunner.run : virtualinvoke r7.<java.lang.Process: void destroy()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : r170 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>("line.separator")
+org.apache.ambari.server.bootstrap.BSRunner.run : $r39 = new java.lang.StringBuilder
+org.apache.ambari.server.bootstrap.BSRunner.run : virtualinvoke $r78.<org.apache.ambari.server.bootstrap.BootStrapStatus: void setLog(java.lang.String)>(r165)
+org.apache.ambari.server.bootstrap.BSRunner.run : $r47 = new java.io.File
+org.apache.ambari.server.bootstrap.BSRunner.run : $r15 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.SshHostInfo sshHostInfo>
+org.apache.ambari.server.bootstrap.BSRunner.run : if r9 == null goto z19 = 1
+org.apache.ambari.server.bootstrap.BSRunner.run : if r162 == null goto r162 = "22"
+org.apache.ambari.server.bootstrap.BSRunner.run : virtualinvoke r0.<org.apache.ambari.server.bootstrap.BSRunner: void finished()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : $r76 = <java.util.concurrent.TimeUnit: java.util.concurrent.TimeUnit SECONDS>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r166 = <java.util.concurrent.TimeUnit: java.util.concurrent.TimeUnit SECONDS>
+org.apache.ambari.server.bootstrap.BSRunner.run : $z2 = specialinvoke r0.<org.apache.ambari.server.bootstrap.BSRunner: boolean waitForProcessTermination(java.lang.Process,long)>(r7, l0)
+org.apache.ambari.server.bootstrap.BSRunner.run : interfaceinvoke r2.<java.util.concurrent.ScheduledExecutorService: java.util.List shutdownNow()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : goto [?= $r77 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.BootStrapImpl bsImpl>]
+org.apache.ambari.server.bootstrap.BSRunner.run : $r56 = <org.apache.ambari.server.bootstrap.BSRunner: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r74 = new org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector
+org.apache.ambari.server.bootstrap.BSRunner.run : $r48 = new java.lang.StringBuilder
+org.apache.ambari.server.bootstrap.BSRunner.run : specialinvoke r0.<org.apache.ambari.server.bootstrap.BSRunner: void createRunDir()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : $r17 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.SshHostInfo sshHostInfo>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r179 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.lang.String agentSetupScript>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r88 = virtualinvoke r10.<org.apache.ambari.server.bootstrap.BSHostStatus: java.lang.String getStatus()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : $r81 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File passwordFile>
+org.apache.ambari.server.bootstrap.BSRunner.run : r162 = "22"
+org.apache.ambari.server.bootstrap.BSRunner.run : r231 = ""
+org.apache.ambari.server.bootstrap.BSRunner.run : goto [?= l20 = staticinvoke <java.lang.System: long currentTimeMillis()>()]
+org.apache.ambari.server.bootstrap.BSRunner.run : $r243 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.BootStrapImpl bsImpl>
+org.apache.ambari.server.bootstrap.BSRunner.run : staticinvoke <java.lang.Thread: void sleep(long)>(1000L)
+org.apache.ambari.server.bootstrap.BSRunner.run : $l4 = l19 + 15000L
+org.apache.ambari.server.bootstrap.BSRunner.run : $r98 = new java.lang.StringBuilder
+org.apache.ambari.server.bootstrap.BSRunner.run : $r69 = new org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector
+org.apache.ambari.server.bootstrap.BSRunner.run : $r182 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.lang.String clusterOsFamily>
+org.apache.ambari.server.bootstrap.BSRunner.run : if z19 != 0 goto staticinvoke <java.lang.Thread: void sleep(long)>(1000L)
+org.apache.ambari.server.bootstrap.BSRunner.run : $r46 = new java.io.File
+org.apache.ambari.server.bootstrap.BSRunner.run : $r21 = <org.apache.ambari.server.bootstrap.BSRunner: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BSRunner.run : z17 = 0
+org.apache.ambari.server.bootstrap.BSRunner.run : r238 = interfaceinvoke r237.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : r234 = interfaceinvoke r9.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : $r33 = new java.lang.StringBuilder
+org.apache.ambari.server.bootstrap.BSRunner.run : $z8 = virtualinvoke r169.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : r2 = staticinvoke <java.util.concurrent.Executors: java.util.concurrent.ScheduledExecutorService newScheduledThreadPool(int)>(1)
+org.apache.ambari.server.bootstrap.BSRunner.run : if r160 == null goto r160 = "root"
+org.apache.ambari.server.bootstrap.BSRunner.run : if r167 == null goto $r74 = new org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector
+org.apache.ambari.server.bootstrap.BSRunner.run : $r19 = new org.apache.ambari.server.bootstrap.BSRunner$BSStatusCollector
+org.apache.ambari.server.bootstrap.BSRunner.run : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$r233 = <org.apache.ambari.server.bootstrap.BSRunner: org.slf4j.Logger LOG>", "org.apache.ambari.server.bootstrap.BSRunner.run")]
+org.apache.ambari.server.bootstrap.BSRunner.run : goto [?= virtualinvoke r7.<java.lang.Process: void destroy()>()]
+org.apache.ambari.server.bootstrap.BSRunner.run : $r26 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.SshHostInfo sshHostInfo>
+org.apache.ambari.server.bootstrap.BSRunner.run : z19 = 0
+org.apache.ambari.server.bootstrap.BSRunner.run : $r77 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.BootStrapImpl bsImpl>
+org.apache.ambari.server.bootstrap.BSRunner.run : r164 = <org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat: org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat SUCCESS>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r184 = new java.lang.StringBuilder
+org.apache.ambari.server.bootstrap.BSRunner.run : $r45 = new java.lang.ProcessBuilder
+org.apache.ambari.server.bootstrap.BSRunner.run : i18 = virtualinvoke r7.<java.lang.Process: int exitValue()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : r165 = ""
+org.apache.ambari.server.bootstrap.BSRunner.run : z19 = 1
+org.apache.ambari.server.bootstrap.BSRunner.run : l20 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : interfaceinvoke r167.<java.util.concurrent.ScheduledFuture: boolean cancel(boolean)>(1)
+org.apache.ambari.server.bootstrap.BSRunner.run : if r237 == null goto r164 = <org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat: org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat ERROR>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r177 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File sshKeyFile>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r80 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File passwordFile>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r226 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.lang.String agentSetupPassword>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r181 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.lang.String ambariHostname>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r175 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File requestIdDir>
+org.apache.ambari.server.bootstrap.BSRunner.run : specialinvoke r0.<org.apache.ambari.server.bootstrap.BSRunner: void writePasswordFile(java.lang.String)>(r171)
+org.apache.ambari.server.bootstrap.BSRunner.run : r237 = virtualinvoke r236.<org.apache.ambari.server.bootstrap.BootStrapStatus: java.util.List getHostsStatus()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : virtualinvoke $r78.<org.apache.ambari.server.bootstrap.BootStrapStatus: void setStatus(org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat)>(r164)
+org.apache.ambari.server.bootstrap.BSRunner.run : $r73 = <org.apache.ambari.server.bootstrap.BSRunner: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r59 = new java.io.File
+org.apache.ambari.server.bootstrap.BSRunner.run : r9 = virtualinvoke r8.<org.apache.ambari.server.bootstrap.BootStrapStatus: java.util.List getHostsStatus()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : r7 = virtualinvoke $r45.<java.lang.ProcessBuilder: java.lang.Process start()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : $r58 = new java.io.File
+org.apache.ambari.server.bootstrap.BSRunner.run : $r82 = interfaceinvoke r238.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : $r96 = new java.io.File
+org.apache.ambari.server.bootstrap.BSRunner.run : goto [?= $r60 = new java.lang.StringBuilder]
+org.apache.ambari.server.bootstrap.BSRunner.run : $r233 = <org.apache.ambari.server.bootstrap.BSRunner: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r65 = <org.apache.ambari.server.bootstrap.BSRunner: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BSRunner.run : goto [?= (branch)]
+org.apache.ambari.server.bootstrap.BSRunner.run : $r193 = <org.apache.ambari.server.bootstrap.BSRunner: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r32 = <org.apache.ambari.server.bootstrap.BSRunner: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BSRunner.run : virtualinvoke $r78.<org.apache.ambari.server.bootstrap.BootStrapStatus: void setHostsStatus(java.util.List)>(r237)
+org.apache.ambari.server.bootstrap.BSRunner.run : l19 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : r163[4] = r162
+org.apache.ambari.server.bootstrap.BSRunner.run : r164 = <org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat: org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat RUNNING>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r78 = new org.apache.ambari.server.bootstrap.BootStrapStatus
+org.apache.ambari.server.bootstrap.BSRunner.run : $r60 = new java.lang.StringBuilder
+org.apache.ambari.server.bootstrap.BSRunner.run : $r27 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.SshHostInfo sshHostInfo>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r28 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.SshHostInfo sshHostInfo>
+org.apache.ambari.server.bootstrap.BSRunner.run : if z17 == 0 goto $r65 = <org.apache.ambari.server.bootstrap.BSRunner: org.slf4j.Logger LOG>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r83 = "FAILED"
+org.apache.ambari.server.bootstrap.BSRunner.run : goto [?= $r243 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.BootStrapImpl bsImpl>]
+org.apache.ambari.server.bootstrap.BSRunner.run : r163[1] = r1
+org.apache.ambari.server.bootstrap.BSRunner.run : $r183 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.lang.String projectVersion>
+org.apache.ambari.server.bootstrap.BSRunner.run : interfaceinvoke r6.<java.util.Map: void putAll(java.util.Map)>($r30)
+org.apache.ambari.server.bootstrap.BSRunner.run : $r87 = interfaceinvoke r234.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : goto [?= return]
+org.apache.ambari.server.bootstrap.BSRunner.run : $r30 = new java.util.HashMap
+org.apache.ambari.server.bootstrap.BSRunner.run : r163[11] = r4
+org.apache.ambari.server.bootstrap.BSRunner.run : $r161 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.SshHostInfo sshHostInfo>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r244 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.BootStrapImpl bsImpl>
+org.apache.ambari.server.bootstrap.BSRunner.run : r163 = newarray (java.lang.String)[13]
+org.apache.ambari.server.bootstrap.BSRunner.run : $z10 = virtualinvoke r160.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.bootstrap.BSRunner.run : $r79 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File sshKeyFile>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r95 = r163
+org.apache.ambari.server.bootstrap.BSRunner.run : $r71 = r0.<org.apache.ambari.server.bootstrap.BSRunner: org.apache.ambari.server.bootstrap.BootStrapImpl bsImpl>
+org.apache.ambari.server.bootstrap.BSRunner.run : $r174 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.lang.String bsScript>
+org.apache.ambari.server.bootstrap.BSRunner.run : r230 = ""
+org.apache.ambari.server.bootstrap.BSRunner.run : goto [?= $z6 = interfaceinvoke r234.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties.setKerberosAuthenticationEnabled : r0.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean kerberosAuthenticationEnabled> = z0
+org.apache.ambari.server.configuration.Configuration.getMasterHostname : $r3 = r0.<org.apache.ambari.server.configuration.Configuration: java.util.Properties properties>
+org.apache.ambari.server.bootstrap.BootStrapImpl.getStatus : $r1 = r0.<org.apache.ambari.server.bootstrap.BootStrapImpl: org.apache.ambari.server.bootstrap.FifoLinkedHashMap bsStatus>
+org.apache.ambari.server.bootstrap.BootStrapImpl.getStatus : $r3 = r0.<org.apache.ambari.server.bootstrap.BootStrapImpl: org.apache.ambari.server.bootstrap.FifoLinkedHashMap bsStatus>
+org.apache.ambari.server.bootstrap.SshHostInfo.setUserRunAs : r0.<org.apache.ambari.server.bootstrap.SshHostInfo: java.lang.String userRunAs> = r1
+org.apache.ambari.server.configuration.Configuration.getBootStrapDir : $r3 = new java.io.File
+org.apache.ambari.server.configuration.Configuration.getBootStrapDir : $r2 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty BOOTSTRAP_DIRECTORY>
+org.apache.ambari.server.configuration.Configuration.getServerOsType : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty OS_VERSION>
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $r8 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty KERBEROS_AUTH_ENABLED>
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $z1 = virtualinvoke $r7.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean isKerberosAuthenticationEnabled()>()
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : return $r7
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $r7 = new org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties
+org.apache.ambari.server.configuration.Configuration.getProperty : $r3 = r0.<org.apache.ambari.server.configuration.Configuration: java.util.Properties properties>
+org.apache.ambari.server.configuration.Configuration.getProperty : $r6 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object getDefaultValue()>()
+org.apache.ambari.server.configuration.Configuration.getProperty : r7 = null
+org.apache.ambari.server.configuration.Configuration.getProperty : $r2 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object getDefaultValue()>()
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $r30 = virtualinvoke r22.<java.lang.Process: java.io.InputStream getErrorStream()>()
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : i6 = virtualinvoke r22.<java.lang.Process: int exitValue()>()
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if z0 == 0 goto r19 = r0
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r22 = virtualinvoke $r6.<java.lang.ProcessBuilder: java.lang.Process start()>()
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r29 = staticinvoke <org.apache.ambari.server.utils.ShellCommandUtil: java.lang.String streamToString(java.io.InputStream)>(r24)
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $z1 = <org.apache.ambari.server.utils.ShellCommandUtil: boolean WINDOWS>
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r24 = virtualinvoke r22.<java.lang.Process: java.io.InputStream getInputStream()>()
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if r2 == null goto virtualinvoke r22.<java.lang.Process: int waitFor()>()
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if r1 == null goto $z1 = <org.apache.ambari.server.utils.ShellCommandUtil: boolean WINDOWS>
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $r32 = new org.apache.ambari.server.utils.ShellCommandUtil$Result
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $r6 = new java.lang.ProcessBuilder
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $r1 = staticinvoke <org.apache.ambari.server.utils.ShellCommandUtil: org.apache.ambari.server.utils.ShellCommandUtil$Result runCommand(java.lang.String[],java.util.Map)>(r0, null)
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r19 = r0
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : virtualinvoke r22.<java.lang.Process: int waitFor()>()
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $r2 = staticinvoke <org.apache.ambari.server.utils.ShellCommandUtil: org.apache.ambari.server.utils.ShellCommandUtil$Result runCommand(java.lang.String[],java.util.Map,org.apache.ambari.server.utils.ShellCommandUtil$InteractiveHandler,boolean)>(r0, r1, null, 0)
+org.apache.ambari.server.configuration.Configuration.getCommonServicesPath : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty COMMON_SERVICES_DIR_PATH>
+org.apache.ambari.server.bootstrap.BootStrapImpl.reset : r0.<org.apache.ambari.server.bootstrap.BootStrapImpl: org.apache.ambari.server.bootstrap.BSRunner bsRunner> = null
+org.apache.ambari.server.configuration.Configuration.getBootSetupAgentScript : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty BOOTSTRAP_SETUP_AGENT_SCRIPT>
+org.apache.ambari.server.bootstrap.BSRunner.writeSshKeyFile : $r2 = r0.<org.apache.ambari.server.bootstrap.BSRunner: java.io.File sshKeyFile>
+org.apache.ambari.server.configuration.Configuration.getServerVersionFilePath : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SERVER_VERSION_FILE>
+org.apache.ambari.server.bootstrap.BSHostStatus.setStatus : r0.<org.apache.ambari.server.bootstrap.BSHostStatus: java.lang.String status> = r1

@@ -1,0 +1,10 @@
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : r5 = interfaceinvoke r4.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : r3 = interfaceinvoke r2.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : $r13 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>()
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : z8 = 0
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : $r12 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : $r14 = <org.apache.accumulo.server.fs.VolumeManager$FileType: org.apache.accumulo.server.fs.VolumeManager$FileType WAL>
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : $r16 = r0.<org.apache.accumulo.master.recovery.RecoveryManager: org.apache.accumulo.master.Master master>
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : $i0 = lengthof r7
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : if r6 == null goto r7 = virtualinvoke r70.<java.lang.String: java.lang.String[] split(java.lang.String)>("/")
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : r7 = virtualinvoke r70.<java.lang.String: java.lang.String[] split(java.lang.String)>("/")

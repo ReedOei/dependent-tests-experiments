@@ -1,0 +1,2 @@
+org.apache.accumulo.master.tableOps.CancelCompactions.undo : $r2 = (org.apache.accumulo.master.Master) r1 >>>>>>>> org.apache.accumulo.master.tableOps.CancelCompactions.undo : virtualinvoke r0.<org.apache.accumulo.master.tableOps.CancelCompactions: void undo(long,org.apache.accumulo.master.Master)>(l0, $r2)
+org.apache.accumulo.master.tableOps.CancelCompactions.undo : virtualinvoke r0.<org.apache.accumulo.master.tableOps.CancelCompactions: void undo(long,org.apache.accumulo.master.Master)>(l0, $r2) >>>>>>>> org.apache.accumulo.master.tableOps.CancelCompactions.undo : return

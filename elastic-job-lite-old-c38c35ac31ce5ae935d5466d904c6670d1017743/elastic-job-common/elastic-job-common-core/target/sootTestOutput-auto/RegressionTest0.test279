@@ -1,0 +1,26 @@
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.setCompleteTime : r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.util.Date completeTime> = r1
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String id>
+com.dangdang.ddframe.job.statistics.type.job.JobRunningStatistics.getCreationTime : $r1 = r0.<com.dangdang.ddframe.job.statistics.type.job.JobRunningStatistics: java.util.Date creationTime>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getShardingItems : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String shardingItems>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getCreationTime : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.util.Date creationTime>
+com.dangdang.ddframe.job.event.type.JobExecutionEventThrowable.getThrowable : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEventThrowable: java.lang.Throwable throwable>
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.getFailureCause : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: com.dangdang.ddframe.job.event.type.JobExecutionEventThrowable failureCause>
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionFailure : $r13 = new java.util.Date
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionFailure : $r3 = new com.dangdang.ddframe.job.event.type.JobExecutionEvent
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionFailure : virtualinvoke $r3.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: void setSuccess(boolean)>(0)
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionFailure : return $r3
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : $r2 = new com.dangdang.ddframe.job.event.type.JobExecutionEvent
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : $r12 = new java.util.Date
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : virtualinvoke $r2.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: void setSuccess(boolean)>(1)
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : return $r2
+com.dangdang.ddframe.job.util.env.IpUtils.getHostName : $r1 = staticinvoke <java.net.InetAddress: java.net.InetAddress getLocalHost()>()
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r5 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r8 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : virtualinvoke r0.<java.lang.Throwable: void printStackTrace(java.io.PrintWriter)>($r6)
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : virtualinvoke $r6.<java.io.PrintWriter: void close()>()
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : if $r6 == null goto $r14 = virtualinvoke $r5.<java.io.StringWriter: java.lang.String toString()>()
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : $r6 = new java.io.PrintWriter
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : if null != r0 goto $r5 = new java.io.StringWriter
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : $r5 = new java.io.StringWriter
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.setSuccess : r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: boolean success> = z0
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.isSuccess : $z0 = r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: boolean success>

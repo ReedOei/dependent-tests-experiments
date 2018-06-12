@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.repository.ServiceVersionSummary.isUpgrade : $z0 = r0.<org.apache.ambari.server.state.repository.ServiceVersionSummary: boolean m_upgrade> >>>>>>>> org.apache.ambari.server.state.repository.ServiceVersionSummary.isUpgrade : return $z0

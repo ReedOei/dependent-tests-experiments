@@ -1,0 +1,12 @@
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $z1 = virtualinvoke r1.<java.lang.String: boolean startsWith(java.lang.String)>("https")
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $r45 = virtualinvoke r0.<org.apache.ambari.server.controller.internal.URLStreamProvider: javax.net.ssl.HttpsURLConnection getSSLConnection(java.lang.String)>(r1)
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : if r3 != null goto $r9 = virtualinvoke r3.<java.lang.String: byte[] getBytes()>()
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $z8 = r0.<org.apache.ambari.server.controller.internal.URLStreamProvider: boolean setupTruststoreForHttps>
+org.apache.ambari.server.controller.internal.URLStreamProvider.processURL : $r6 = <org.apache.ambari.server.controller.internal.URLStreamProvider: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.internal.URLStreamProvider.getSSLConnection : $r6 = r0.<org.apache.ambari.server.controller.internal.URLStreamProvider: javax.net.ssl.SSLSocketFactory sslSocketFactory>
+org.apache.ambari.server.controller.internal.URLStreamProvider.getSSLConnection : entermonitor r0
+org.apache.ambari.server.controller.internal.URLStreamProvider.getSSLConnection : $r13 = r0.<org.apache.ambari.server.controller.internal.URLStreamProvider: java.lang.String trustStorePath>
+org.apache.ambari.server.controller.internal.URLStreamProvider.getSSLConnection : r32 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>("Can\'t get secure connection to %s.  Truststore path or password is not set.", $r14)
+org.apache.ambari.server.controller.internal.URLStreamProvider.getSSLConnection : $r15 = <org.apache.ambari.server.controller.internal.URLStreamProvider: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.internal.URLStreamProvider.getSSLConnection : $r14 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.controller.internal.URLStreamProvider.getSSLConnection : $r12 = r0.<org.apache.ambari.server.controller.internal.URLStreamProvider: javax.net.ssl.SSLSocketFactory sslSocketFactory>

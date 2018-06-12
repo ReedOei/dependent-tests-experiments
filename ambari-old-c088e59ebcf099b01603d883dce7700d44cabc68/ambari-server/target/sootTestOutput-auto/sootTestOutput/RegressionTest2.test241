@@ -1,0 +1,15 @@
+org.apache.ambari.server.stack.StackContext.access$100 : $r0 = <org.apache.ambari.server.stack.StackContext: org.slf4j.Logger LOG>
+org.apache.ambari.server.stack.StackContext.executeRepoTasks : $r1 = r0.<org.apache.ambari.server.stack.StackContext: org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor repoUpdateExecutor>
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : $r19 = new java.util.ArrayList
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : $r7 = new java.util.ArrayList
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : goto [?= return]
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : $r12 = staticinvoke <org.apache.ambari.server.stack.StackContext: org.slf4j.Logger access$100()>()
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : r103 = interfaceinvoke $r19.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : $r9 = r0.<org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor: java.util.concurrent.ExecutorService executor>
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : goto [?= $r19 = new java.util.ArrayList]
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : $r23 = staticinvoke <org.apache.ambari.server.stack.StackContext: org.slf4j.Logger access$100()>()
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : l19 = staticinvoke <java.lang.System: long nanoTime()>()
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : r100 = interfaceinvoke r96.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : $r22 = r0.<org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor: java.util.concurrent.ExecutorService executor>
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : l18 = staticinvoke <java.lang.System: long nanoTime()>()
+org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor.execute : $r20 = r0.<org.apache.ambari.server.stack.StackContext$LatestRepoQueryExecutor: java.util.concurrent.ExecutorService executor>

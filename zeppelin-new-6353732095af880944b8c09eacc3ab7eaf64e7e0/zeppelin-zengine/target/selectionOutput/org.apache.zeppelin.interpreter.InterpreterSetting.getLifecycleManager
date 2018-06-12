@@ -1,0 +1,1 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.getLifecycleManager : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager> >>>>>>>> org.apache.zeppelin.interpreter.InterpreterSetting.getLifecycleManager : return $r1

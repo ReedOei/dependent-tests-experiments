@@ -1,0 +1,7 @@
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImagesFromCollection : $r5 = new java.util.ArrayList
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImagesFromCollection : $r8 = r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.repository.CollectionDAO collectionDAO>
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImagesFromCollection : if r2 != null goto (branch)
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImagesFromCollection : $z0 = interfaceinvoke r3.<java.util.List: boolean isEmpty()>()
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImagesFromCollection : interfaceinvoke $r5.<java.util.List: boolean add(java.lang.Object)>(r3)
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImagesFromCollection : if r3 == null goto $r7 = new de.htw.sdf.photoplatform.exception.common.ManagerException
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImagesFromCollection : $r6 = virtualinvoke r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: java.lang.Boolean deleteImagesFromCollection(java.lang.Long,java.lang.Long,java.util.List)>(r1, r2, $r5)

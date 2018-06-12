@@ -1,0 +1,11 @@
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getProperty : $r10 = r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor: com.google.inject.Provider clustersProvider>
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getProperty : r4 = virtualinvoke r1.<org.apache.ambari.server.controller.PrereqCheckRequest: java.lang.String getClusterName()>()
+org.apache.ambari.server.configuration.ComponentSSLConfiguration.getTruststoreType : $r1 = r0.<org.apache.ambari.server.configuration.ComponentSSLConfiguration: java.lang.String truststoreType>
+org.apache.ambari.server.configuration.ComponentSSLConfiguration.getTruststorePassword : $r1 = r0.<org.apache.ambari.server.configuration.ComponentSSLConfiguration: java.lang.String truststorePassword>
+org.apache.ambari.server.checks.RangerPasswordCheck.perform : r59 = specialinvoke r0.<org.apache.ambari.server.checks.RangerPasswordCheck: java.lang.String checkEmpty(java.lang.String,java.lang.String,org.apache.ambari.server.state.stack.PrerequisiteCheck,org.apache.ambari.server.controller.PrereqCheckRequest)>("admin-properties", "policymgr_external_url", r1, r2)
+org.apache.ambari.server.checks.RangerPasswordCheck.perform : $r13 = staticinvoke <org.apache.ambari.server.configuration.ComponentSSLConfiguration: org.apache.ambari.server.configuration.ComponentSSLConfiguration instance()>()
+org.apache.ambari.server.checks.RangerPasswordCheck.perform : $r12 = new org.apache.ambari.server.controller.internal.URLStreamProvider
+org.apache.ambari.server.checks.RangerPasswordCheck.checkEmpty : r5 = virtualinvoke r0.<org.apache.ambari.server.checks.RangerPasswordCheck: java.lang.String getProperty(org.apache.ambari.server.controller.PrereqCheckRequest,java.lang.String,java.lang.String)>(r4, r1, r2)
+org.apache.ambari.server.configuration.ComponentSSLConfiguration.getTruststorePath : $r1 = r0.<org.apache.ambari.server.configuration.ComponentSSLConfiguration: java.lang.String truststorePath>
+org.apache.ambari.server.configuration.ComponentSSLConfiguration.instance : $r0 = <org.apache.ambari.server.configuration.ComponentSSLConfiguration: org.apache.ambari.server.configuration.ComponentSSLConfiguration singleton>
+org.apache.ambari.server.controller.PrereqCheckRequest.getClusterName : $r1 = r0.<org.apache.ambari.server.controller.PrereqCheckRequest: java.lang.String m_clusterName>

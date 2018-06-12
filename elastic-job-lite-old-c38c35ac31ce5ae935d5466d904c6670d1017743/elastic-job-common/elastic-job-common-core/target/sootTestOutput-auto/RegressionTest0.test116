@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.executor.ShardingContexts.getTaskId : $r1 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: java.lang.String taskId>
+com.dangdang.ddframe.job.executor.ShardingContexts.getJobName : $r1 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: java.lang.String jobName>

@@ -1,0 +1,1 @@
+org.apache.ambari.server.orm.helpers.dbms.GenericDbmsHelper.isConstraintSupportedAfterNullability : return 1

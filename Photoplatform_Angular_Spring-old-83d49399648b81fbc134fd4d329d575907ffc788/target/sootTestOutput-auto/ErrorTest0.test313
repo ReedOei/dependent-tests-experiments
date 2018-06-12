@@ -1,0 +1,9 @@
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.addImagesToCollection : if r3 == null goto $r11 = new de.htw.sdf.photoplatform.exception.common.ManagerException
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.addImagesToCollection : r5 = specialinvoke r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.persistence.model.Collection getCollection(java.lang.Long,java.lang.Long)>(r1, r2)
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.addImagesToCollection : $z0 = interfaceinvoke r3.<java.util.List: boolean isEmpty()>()
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.addImagesToCollection : $r10 = new java.util.ArrayList
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.getCollection : if r2 != null goto $r4 = r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.repository.CollectionDAO collectionDAO>
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.getCollection : $r4 = r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.repository.CollectionDAO collectionDAO>
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.addImageToCollection : $r5 = new java.util.ArrayList
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.addImageToCollection : interfaceinvoke $r5.<java.util.List: boolean add(java.lang.Object)>(r3)
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.addImageToCollection : $r6 = virtualinvoke r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: java.util.List addImagesToCollection(java.lang.Long,java.lang.Long,java.util.List)>(r1, r2, $r5)

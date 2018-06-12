@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.extension.SpringExtensionFactory.removeApplicationContext : $r1 = <com.alibaba.dubbo.config.spring.extension.SpringExtensionFactory: java.util.Set contexts>

@@ -1,0 +1,7 @@
+org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : $r2 = virtualinvoke r1.<org.apache.ambari.server.orm.entities.KerberosKeytabEntity: java.lang.String getKeytabPath()>() >>>>>>>> org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : $r3 = virtualinvoke r0.<org.apache.ambari.server.orm.dao.KerberosKeytabDAO: org.apache.ambari.server.orm.entities.KerberosKeytabEntity find(java.lang.String)>($r2)
+org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : $r3 = virtualinvoke r0.<org.apache.ambari.server.orm.dao.KerberosKeytabDAO: org.apache.ambari.server.orm.entities.KerberosKeytabEntity find(java.lang.String)>($r2) >>>>>>>> org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : if $r3 == null
+org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : if $r3 == null >>>>>>>> org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : $z0 = 1
+org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : if $r3 == null >>>>>>>> org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : $z0 = 0
+org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : $z0 = 0 >>>>>>>> org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : return $z0
+org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : $z0 = 1 >>>>>>>> org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : goto [?= return $z0]
+org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : goto [?= return $z0] >>>>>>>> org.apache.ambari.server.orm.dao.KerberosKeytabDAO.exists : return $z0

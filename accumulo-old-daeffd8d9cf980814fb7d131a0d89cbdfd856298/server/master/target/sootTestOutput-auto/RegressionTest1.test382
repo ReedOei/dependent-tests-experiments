@@ -1,0 +1,3 @@
+org.apache.accumulo.master.tableOps.MasterRepo.getReturn : return null
+org.apache.accumulo.master.tableOps.ExportTable.call : $r2 = new org.apache.accumulo.master.tableOps.WriteExportFiles
+org.apache.accumulo.master.tableOps.MasterRepo.getDescription : $r1 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()

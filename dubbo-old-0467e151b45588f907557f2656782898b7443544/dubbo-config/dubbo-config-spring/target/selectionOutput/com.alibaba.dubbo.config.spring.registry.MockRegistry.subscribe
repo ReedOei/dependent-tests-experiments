@@ -1,0 +1,2 @@
+com.alibaba.dubbo.config.spring.registry.MockRegistry.subscribe : $r3 = r0.<com.alibaba.dubbo.config.spring.registry.MockRegistry: java.util.List subscribered> >>>>>>>> com.alibaba.dubbo.config.spring.registry.MockRegistry.subscribe : interfaceinvoke $r3.<java.util.List: boolean add(java.lang.Object)>(r1)
+com.alibaba.dubbo.config.spring.registry.MockRegistry.subscribe : interfaceinvoke $r3.<java.util.List: boolean add(java.lang.Object)>(r1) >>>>>>>> com.alibaba.dubbo.config.spring.registry.MockRegistry.subscribe : return

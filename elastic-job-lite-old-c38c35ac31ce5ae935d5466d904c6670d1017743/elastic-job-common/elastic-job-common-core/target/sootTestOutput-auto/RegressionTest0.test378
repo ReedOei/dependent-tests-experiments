@@ -1,0 +1,5 @@
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String id>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getExecutionType : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: com.dangdang.ddframe.job.context.ExecutionType executionType>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getOriginalTaskId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String originalTaskId>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getShardingItems : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String shardingItems>
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getSlaveId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String slaveId>

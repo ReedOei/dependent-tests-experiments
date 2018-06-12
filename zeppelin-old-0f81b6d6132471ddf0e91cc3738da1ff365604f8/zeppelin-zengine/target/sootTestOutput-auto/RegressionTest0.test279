@@ -1,0 +1,5 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.getInterpreterContextRunnerPool : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess: org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool interpreterContextRunnerPool>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.run : $r8 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.run : $r9 = r0.<org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool: java.util.Map interpreterContextRunners>
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.run : exitmonitor $r8
+org.apache.zeppelin.interpreter.remote.InterpreterContextRunnerPool.run : if r4 == null goto $r11 = new java.lang.RuntimeException

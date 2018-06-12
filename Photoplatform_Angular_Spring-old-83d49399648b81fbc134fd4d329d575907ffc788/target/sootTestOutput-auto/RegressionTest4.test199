@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.persistence.model.Image.getPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String path>
+de.htw.sdf.photoplatform.persistence.model.Image.getSmallThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath>

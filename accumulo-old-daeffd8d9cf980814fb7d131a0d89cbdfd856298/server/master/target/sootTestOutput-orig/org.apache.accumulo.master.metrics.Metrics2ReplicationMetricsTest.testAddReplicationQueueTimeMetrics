@@ -1,0 +1,26 @@
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.access$000 : $l0 = r0.<org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest: long currentTime>
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.createStatus : $r1 = new org.apache.hadoop.fs.FileStatus
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : interfaceinvoke $r4.<java.util.Set: boolean removeAll(java.util.Collection)>(r1)
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $z2 = interfaceinvoke $r4.<java.util.Set: boolean isEmpty()>()
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $r3 = r0.<org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics: org.apache.accumulo.server.replication.ReplicationUtil replicationUtil>
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : l0 = virtualinvoke r0.<org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics: long getCurrentTime()>()
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $l2 = virtualinvoke r2.<java.lang.Long: long longValue()>()
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $r12 = r0.<org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics: org.apache.hadoop.metrics2.lib.MutableStat replicationQueueTimeStat>
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : goto [?= (branch)]
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $r4 = new java.util.HashSet
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $r7 = r0.<org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics: org.apache.hadoop.metrics2.lib.MutableStat replicationQueueTimeStat>
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $r13 = interfaceinvoke r23.<java.util.Iterator: java.lang.Object next()>()
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : r23 = interfaceinvoke r1.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : if r2 == null goto (branch)
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : goto [?= $z3 = interfaceinvoke r27.<java.util.Iterator: boolean hasNext()>()]
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $r11 = r0.<org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics: org.apache.hadoop.metrics2.lib.MutableQuantiles replicationQueueTimeQuantiles>
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $r16 = r0.<org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics: java.util.Map pathModTimes>
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $r9 = r0.<org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics: java.util.Map pathModTimes>
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $r8 = interfaceinvoke r27.<java.util.Iterator: java.lang.Object next()>()
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : $r14 = r0.<org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics: java.util.Map pathModTimes>
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : r27 = interfaceinvoke $r4.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.addReplicationQueueTimeMetrics : goto [?= $z0 = interfaceinvoke r23.<java.util.Iterator: boolean hasNext()>()]
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest$TestMetrics2ReplicationMetrics.getCurrentTime : $r1 = r0.<org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest$TestMetrics2ReplicationMetrics: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest this$0>
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.replaceField : virtualinvoke r4.<java.lang.reflect.Field: void set(java.lang.Object,java.lang.Object)>(r1, r3)
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.replaceField : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.replaceField : virtualinvoke r4.<java.lang.reflect.Field: void setAccessible(boolean)>(1)

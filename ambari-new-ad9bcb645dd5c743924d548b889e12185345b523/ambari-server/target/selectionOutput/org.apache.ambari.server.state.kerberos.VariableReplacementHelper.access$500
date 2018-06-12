@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.kerberos.VariableReplacementHelper.access$500 : $r0 = <org.apache.ambari.server.state.kerberos.VariableReplacementHelper: org.slf4j.Logger LOG> >>>>>>>> org.apache.ambari.server.state.kerberos.VariableReplacementHelper.access$500 : return $r0

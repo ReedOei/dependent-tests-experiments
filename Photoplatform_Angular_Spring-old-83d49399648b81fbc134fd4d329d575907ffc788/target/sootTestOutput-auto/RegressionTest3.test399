@@ -1,0 +1,13 @@
+de.htw.sdf.photoplatform.webservice.dto.UserData.getSecToken : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String secToken>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setDescription : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String description> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getIban : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String iban>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setUserdata : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.UserData userdata> = r1
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getPublic : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.Boolean isPublic>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setName : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String name> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getRoles : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.util.List roles>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getThumbnail : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.ImageData thumbnail>
+de.htw.sdf.photoplatform.webservice.dto.UserData.getLastName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String lastName>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setImageIds : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.util.List imageIds> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.setCompany : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String company> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getSwift : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String swift>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setId : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: long id> = l0

@@ -1,0 +1,1 @@
+org.apache.ambari.server.ldap.service.ads.detectors.UserNameAttrDetector$UserNameAttrs.weight : $r1 = r0.<org.apache.ambari.server.ldap.service.ads.detectors.UserNameAttrDetector$UserNameAttrs: java.lang.Integer weight> >>>>>>>> org.apache.ambari.server.ldap.service.ads.detectors.UserNameAttrDetector$UserNameAttrs.weight : return $r1

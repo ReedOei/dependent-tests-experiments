@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.statistics.type.task.TaskResultStatistics.getSuccessCount : $i0 = r0.<com.dangdang.ddframe.job.statistics.type.task.TaskResultStatistics: int successCount> >>>>>>>> com.dangdang.ddframe.job.statistics.type.task.TaskResultStatistics.getSuccessCount : return $i0

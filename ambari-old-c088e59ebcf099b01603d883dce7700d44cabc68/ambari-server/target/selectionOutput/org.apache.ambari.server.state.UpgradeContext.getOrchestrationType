@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.UpgradeContext.getOrchestrationType : $r1 = r0.<org.apache.ambari.server.state.UpgradeContext: org.apache.ambari.server.state.RepositoryType m_orchestration> >>>>>>>> org.apache.ambari.server.state.UpgradeContext.getOrchestrationType : return $r1

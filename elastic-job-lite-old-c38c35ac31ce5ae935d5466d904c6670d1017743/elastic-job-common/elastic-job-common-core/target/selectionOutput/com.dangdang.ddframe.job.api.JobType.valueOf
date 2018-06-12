@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.api.JobType.valueOf : $r1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class "Lcom/dangdang/ddframe/job/api/JobType;", r0) >>>>>>>> com.dangdang.ddframe.job.api.JobType.valueOf : $r2 = (com.dangdang.ddframe.job.api.JobType) $r1
+com.dangdang.ddframe.job.api.JobType.valueOf : $r2 = (com.dangdang.ddframe.job.api.JobType) $r1 >>>>>>>> com.dangdang.ddframe.job.api.JobType.valueOf : return $r2

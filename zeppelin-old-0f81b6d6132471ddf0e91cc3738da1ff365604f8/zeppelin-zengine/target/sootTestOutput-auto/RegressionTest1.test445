@@ -1,0 +1,111 @@
+org.apache.zeppelin.notebook.Note.generateId : $r1 = staticinvoke <org.apache.zeppelin.notebook.utility.IdHashes: java.lang.String generateId()>()
+org.apache.zeppelin.notebook.utility.IdHashes.generateId : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.zeppelin.notebook.Note.getAngularObjects : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map angularObjects>
+org.apache.zeppelin.helium.Helium.loadConf : $r3 = r0.<org.apache.zeppelin.helium.Helium: java.lang.String registryPaths>
+org.apache.zeppelin.helium.Helium.loadConf : r20 = staticinvoke <org.apache.commons.io.FileUtils: java.lang.String readFileToString(java.io.File)>($r18)
+org.apache.zeppelin.helium.Helium.loadConf : $r13 = r0.<org.apache.zeppelin.helium.Helium: org.slf4j.Logger logger>
+org.apache.zeppelin.helium.Helium.loadConf : $r15 = r0.<org.apache.zeppelin.helium.Helium: java.util.List registry>
+org.apache.zeppelin.helium.Helium.loadConf : $r4 = staticinvoke <org.apache.zeppelin.helium.HeliumConf: org.apache.zeppelin.helium.HeliumConf fromJson(java.lang.String)>(r20)
+org.apache.zeppelin.helium.Helium.loadConf : $r7 = r0.<org.apache.zeppelin.helium.Helium: java.lang.String registryPaths>
+org.apache.zeppelin.helium.Helium.loadConf : i0 = lengthof r16
+org.apache.zeppelin.helium.Helium.loadConf : $r18 = new java.io.File
+org.apache.zeppelin.helium.Helium.loadConf : $z1 = virtualinvoke r2.<java.lang.String: boolean startsWith(java.lang.String)>("http://")
+org.apache.zeppelin.helium.Helium.loadConf : $r8 = r0.<org.apache.zeppelin.helium.Helium: java.lang.String registryPaths>
+org.apache.zeppelin.helium.Helium.loadConf : r2 = r16[i1]
+org.apache.zeppelin.helium.Helium.getVisualizationPackageOrder : $r1 = r0.<org.apache.zeppelin.helium.Helium: org.apache.zeppelin.helium.HeliumConf heliumConf>
+org.apache.zeppelin.notebook.Note.getConfig : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.notebook.Note.getConfig : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.helium.HeliumLocalRegistry.getAll : return $r7
+org.apache.zeppelin.helium.HeliumLocalRegistry.getAll : $r7 = new java.util.LinkedList
+org.apache.zeppelin.helium.HeliumLocalRegistry.getAll : $r8 = new java.io.File
+org.apache.zeppelin.helium.HeliumLocalRegistry.getAll : r3 = virtualinvoke $r8.<java.io.File: java.io.File[] listFiles()>()
+org.apache.zeppelin.helium.HeliumLocalRegistry.getAll : if r3 != null goto i0 = lengthof r3
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : $r4 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption getOption()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : $r3 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : r11 = "shared_process"
+org.apache.zeppelin.interpreter.InterpreterSetting.access$102 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String name> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterInfos : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterInfos : return r0
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.close : $r9 = r0.<org.apache.zeppelin.interpreter.ManagedInterpreterGroup: java.util.Map sessions>
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.close : $r4 = <org.apache.zeppelin.interpreter.ManagedInterpreterGroup: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.helium.Helium.getBundlePackagesToBundle : r19 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.apache.zeppelin.helium.Helium.getBundlePackagesToBundle : $r6 = new java.util.HashSet
+org.apache.zeppelin.helium.Helium.getBundlePackagesToBundle : $r7 = new java.util.LinkedList
+org.apache.zeppelin.helium.Helium.getBundlePackagesToBundle : $r8 = r0.<org.apache.zeppelin.helium.Helium: java.util.Map allPackages>
+org.apache.zeppelin.helium.Helium.getBundlePackagesToBundle : $r5 = r0.<org.apache.zeppelin.helium.Helium: org.apache.zeppelin.helium.HeliumConf heliumConf>
+org.apache.zeppelin.helium.Helium.getBundlePackagesToBundle : $r10 = new java.util.LinkedList
+org.apache.zeppelin.interpreter.InterpreterSetting.access$302 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List interpreterInfos> = r1
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r16 = <java.math.BigInteger: java.math.BigInteger ZERO>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $i4 = interfaceinvoke $r5.<java.util.List: int size()>()
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r5 = new java.util.ArrayList
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r6 = new java.math.BigInteger
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r17 = new java.lang.StringBuffer
+org.apache.zeppelin.notebook.utility.IdHashes.encode : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("r22 = virtualinvoke $r6.<java.math.BigInteger: java.math.BigInteger pow(int)>(i5)", "org.apache.zeppelin.notebook.utility.IdHashes.encode")]
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r22 = virtualinvoke $r6.<java.math.BigInteger: java.math.BigInteger pow(int)>(i5)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r4 = virtualinvoke r23.<java.math.BigInteger: java.math.BigInteger divide(java.math.BigInteger)>(r3)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r23 = virtualinvoke r21.<java.math.BigInteger: java.math.BigInteger mod(java.math.BigInteger)>(r22)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r21 = virtualinvoke r21.<java.math.BigInteger: java.math.BigInteger subtract(java.math.BigInteger)>(r23)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r19 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(i6)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r12 = new java.math.BigInteger
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $i1 = i5 - 1
+org.apache.zeppelin.notebook.utility.IdHashes.encode : i5 = i5 + 1
+org.apache.zeppelin.notebook.utility.IdHashes.encode : goto [?= $r17 = new java.lang.StringBuffer]
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r14 = <org.apache.zeppelin.notebook.utility.IdHashes: char[] DICTIONARY>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r18 = virtualinvoke $r17.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.zeppelin.notebook.utility.IdHashes.encode : i5 = 1
+org.apache.zeppelin.notebook.Note.isNameEmpty : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.notebook.Note.getUserNote : $r9 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: java.util.Map getAngularObjects()>()
+org.apache.zeppelin.notebook.Note.getUserNote : $r7 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: java.lang.String getId()>()
+org.apache.zeppelin.notebook.Note.getUserNote : $r10 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.Note.getUserNote : $r5 = new org.apache.zeppelin.notebook.Note
+org.apache.zeppelin.notebook.Note.getUserNote : $r8 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: java.util.Map getConfig()>()
+org.apache.zeppelin.notebook.Note.getUserNote : $r6 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: java.lang.String getName()>()
+org.apache.zeppelin.helium.HeliumRegistry.uri : $r1 = r0.<org.apache.zeppelin.helium.HeliumRegistry: java.lang.String uri>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setRemoteInterpreterProcessListener : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r1 = <org.apache.zeppelin.interpreter.InterpreterSetting$Status: org.apache.zeppelin.interpreter.InterpreterSetting$Status READY>
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager>
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r3 = new org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager
+org.apache.zeppelin.interpreter.InterpreterSetting.access$1202 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcessListener remoteInterpreterProcessListener> = r1
+org.apache.zeppelin.helium.HeliumConf.getBundleDisplayOrder : $r1 = r0.<org.apache.zeppelin.helium.HeliumConf: java.util.List bundleDisplayOrder>
+org.apache.zeppelin.helium.HeliumConf.getBundleDisplayOrder : $r2 = r0.<org.apache.zeppelin.helium.HeliumConf: java.util.List bundleDisplayOrder>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setName : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setName : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.getLifecycleManager : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager>
+org.apache.zeppelin.interpreter.remote.RemoteAngularObjectRegistry.createNewAngularObject : $r6 = r0.<org.apache.zeppelin.interpreter.remote.RemoteAngularObjectRegistry: org.apache.zeppelin.interpreter.ManagedInterpreterGroup interpreterGroup>
+org.apache.zeppelin.interpreter.remote.RemoteAngularObjectRegistry.createNewAngularObject : $r5 = new org.apache.zeppelin.interpreter.remote.RemoteAngularObject
+org.apache.zeppelin.helium.HeliumApplicationFactory.getNotebook : $r1 = r0.<org.apache.zeppelin.helium.HeliumApplicationFactory: org.apache.zeppelin.notebook.Notebook notebook>
+org.apache.zeppelin.helium.HeliumConf.fromJson : $r1 = <org.apache.zeppelin.helium.HeliumConf: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.Note.setIndex : r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.search.SearchService index> = r1
+org.apache.zeppelin.interpreter.InterpreterInfo.getClassName : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterInfo: java.lang.String className>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOption : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setGroup : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setGroup : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$202 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String group> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r12 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.Map interpreterGroups>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r11 = <org.apache.zeppelin.interpreter.InterpreterSetting: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r5 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock interpreterGroupWriteLock>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r9 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock interpreterGroupWriteLock>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : r3 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String getInterpreterGroupId(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r6 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.Map interpreterGroups>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : r16 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.ManagedInterpreterGroup createInterpreterGroup(java.lang.String)>(r3)
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r7 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.Map interpreterGroups>
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreterGroup : $r5 = new org.apache.zeppelin.interpreter.remote.RemoteAngularObjectRegistry
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreterGroup : virtualinvoke $r4.<org.apache.zeppelin.interpreter.ManagedInterpreterGroup: void setAngularObjectRegistry(org.apache.zeppelin.display.AngularObjectRegistry)>($r5)
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreterGroup : return $r4
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreterGroup : $r4 = new org.apache.zeppelin.interpreter.ManagedInterpreterGroup
+org.apache.zeppelin.notebook.Note.getId : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String id>
+org.apache.zeppelin.helium.Helium.getAllPackageInfo : $r15 = interfaceinvoke r49.<java.util.Iterator: java.lang.Object next()>()
+org.apache.zeppelin.helium.Helium.getAllPackageInfo : if z0 != 0 goto $r7 = r0.<org.apache.zeppelin.helium.Helium: java.util.List registry>
+org.apache.zeppelin.helium.Helium.getAllPackageInfo : $r7 = r0.<org.apache.zeppelin.helium.Helium: java.util.List registry>
+org.apache.zeppelin.helium.Helium.getAllPackageInfo : $r1 = virtualinvoke r0.<org.apache.zeppelin.helium.Helium: java.util.Map getAllPackageInfo(boolean,java.lang.String)>(1, null)
+org.apache.zeppelin.helium.Helium.getAllPackageInfo : goto [?= (branch)]
+org.apache.zeppelin.helium.Helium.getAllPackageInfo : $r5 = r0.<org.apache.zeppelin.helium.Helium: org.apache.zeppelin.helium.HeliumConf heliumConf>
+org.apache.zeppelin.helium.Helium.getAllPackageInfo : $r6 = r0.<org.apache.zeppelin.helium.Helium: java.util.List registry>
+org.apache.zeppelin.helium.Helium.getAllPackageInfo : $r16 = virtualinvoke r50.<org.apache.zeppelin.helium.HeliumRegistry: java.util.List getAll()>()
+org.apache.zeppelin.helium.HeliumConf.getEnabledPackages : $r1 = new java.util.HashMap
+org.apache.zeppelin.notebook.Note.getName : $r2 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: java.lang.String getId()>()
+org.apache.zeppelin.notebook.Note.getName : $z0 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: boolean isNameEmpty()>()
+org.apache.zeppelin.notebook.Note.getName : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.create : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.create : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>

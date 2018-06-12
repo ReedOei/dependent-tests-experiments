@@ -1,0 +1,1 @@
+org.apache.ambari.server.events.listeners.tasks.TaskStatusListener$ActiveStage.getStatus : $r1 = r0.<org.apache.ambari.server.events.listeners.tasks.TaskStatusListener$ActiveStage: org.apache.ambari.server.actionmanager.HostRoleStatus status> >>>>>>>> org.apache.ambari.server.events.listeners.tasks.TaskStatusListener$ActiveStage.getStatus : return $r1

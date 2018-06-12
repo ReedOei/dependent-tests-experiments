@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewInstanceRequest$ViewInstanceRequestInfo.getClusterType : $r1 = r0.<org.apache.ambari.server.controller.ViewInstanceRequest$ViewInstanceRequestInfo: org.apache.ambari.view.ClusterType clusterType> >>>>>>>> org.apache.ambari.server.controller.ViewInstanceRequest$ViewInstanceRequestInfo.getClusterType : return $r1

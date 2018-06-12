@@ -1,0 +1,1 @@
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.getSelectedTimestamp : $l0 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.ClusterConfigEntity: long _persistence_get_selectedTimestamp()>() >>>>>>>> org.apache.ambari.server.orm.entities.ClusterConfigEntity.getSelectedTimestamp : return $l0

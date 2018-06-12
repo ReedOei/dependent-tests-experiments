@@ -1,0 +1,10 @@
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.setClazz : r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: java.lang.Class clazz> = r1
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.initSelectQuery : $r2 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.initSelectQuery : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("LEFT JOIN FETCH user.userRoles userRoles ")
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.initSelectQuery : return $r2
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.findByAccountLocked : virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("WHERE user.accountNonLocked = ?1")
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.findByAccountLocked : r1 = specialinvoke r0.<de.htw.sdf.photoplatform.repository.impl.UserDAOImpl: java.lang.StringBuilder initSelectQuery()>()
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.findByAccountLocked : $r4 = virtualinvoke r1.<java.lang.StringBuilder: java.lang.String toString()>()
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.getEntityManager : $r1 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.createQuery : $r2 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.repository.impl.UserDAOImpl.getEntityManager : $r1 = specialinvoke r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager getEntityManager()>()

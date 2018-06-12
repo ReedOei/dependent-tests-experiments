@@ -1,0 +1,1 @@
+org.apache.ambari.server.orm.entities.UpgradeHistoryEntity._persistence_setPropertyChangeListener : r0.<org.apache.ambari.server.orm.entities.UpgradeHistoryEntity: java.beans.PropertyChangeListener _persistence_listener> = r1 >>>>>>>> org.apache.ambari.server.orm.entities.UpgradeHistoryEntity._persistence_setPropertyChangeListener : return

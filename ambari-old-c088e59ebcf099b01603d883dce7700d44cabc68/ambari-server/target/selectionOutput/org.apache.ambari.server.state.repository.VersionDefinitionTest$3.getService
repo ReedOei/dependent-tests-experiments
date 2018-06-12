@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.repository.VersionDefinitionTest$3.getService : $r2 = staticinvoke <org.apache.ambari.server.state.repository.VersionDefinitionTest: org.apache.ambari.server.state.ServiceInfo access$100(java.lang.String,java.lang.String)>("HIVE", "HIVE_METASTORE") >>>>>>>> org.apache.ambari.server.state.repository.VersionDefinitionTest$3.getService : return $r2

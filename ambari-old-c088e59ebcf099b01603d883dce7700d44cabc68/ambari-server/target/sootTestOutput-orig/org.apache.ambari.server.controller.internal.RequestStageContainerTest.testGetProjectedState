@@ -1,0 +1,19 @@
+org.apache.ambari.server.RoleCommand.values : $r0 = <org.apache.ambari.server.RoleCommand: org.apache.ambari.server.RoleCommand[] $VALUES>
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : $r12 = interfaceinvoke r5.<java.util.Map: java.lang.Object get(java.lang.Object)>(r2)
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : if r15 == null goto return r17
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : $r10 = interfaceinvoke r3.<java.util.ListIterator: java.lang.Object previous()>()
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : r17 = <org.apache.ambari.server.state.State: org.apache.ambari.server.state.State INSTALLED>
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : $z0 = interfaceinvoke r3.<java.util.ListIterator: boolean hasPrevious()>()
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : if r5 == null goto (branch)
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : $r11 = interfaceinvoke r4.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : r4 = virtualinvoke r16.<org.apache.ambari.server.actionmanager.Stage: java.util.Map getHostRoleCommands()>()
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : r15 = virtualinvoke r6.<org.apache.ambari.server.actionmanager.HostRoleCommand: org.apache.ambari.server.RoleCommand getRoleCommand()>()
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : r17 = null
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : if r4 == null goto (branch)
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : $r9 = <org.apache.ambari.server.controller.internal.RequestStageContainer$1: int[] $SwitchMap$org$apache$ambari$server$RoleCommand>
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : if r15 != null goto r17 = null
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : r15 = null
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : $r8 = r0.<org.apache.ambari.server.controller.internal.RequestStageContainer: java.util.List stages>
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : if r6 == null goto (branch)
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : goto [?= return r17]
+org.apache.ambari.server.controller.internal.RequestStageContainer.getProjectedState : $r13 = virtualinvoke r6.<org.apache.ambari.server.actionmanager.HostRoleCommand: org.apache.ambari.server.RoleCommand getRoleCommand()>()

@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.webservice.dto.UserData.getFirstName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String firstName>
+de.htw.sdf.photoplatform.webservice.dto.UserData.setId : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.Long id> = r1

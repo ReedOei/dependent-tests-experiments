@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.ReferenceBean.getObjectType : $r1 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.ReferenceBean: java.lang.Class getInterfaceClass()>()

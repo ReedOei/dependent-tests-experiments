@@ -1,0 +1,1 @@
+org.apache.ambari.server.stack.StackDirectory.getKerberosDescriptorPreconfigureFilePath : $r1 = r0.<org.apache.ambari.server.stack.StackDirectory: java.lang.String kerberosDescriptorPreconfigureFilePath> >>>>>>>> org.apache.ambari.server.stack.StackDirectory.getKerberosDescriptorPreconfigureFilePath : return $r1

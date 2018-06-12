@@ -1,0 +1,16 @@
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.notifyListeners : $r4 = r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.apache.ambari.server.topology.ClusterTopology topology>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.notifyListeners : $r7 = r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.apache.ambari.server.events.publishers.AmbariEventPublisher ambariEventPublisher>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.notifyListeners : $r2 = r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.apache.ambari.server.topology.ClusterTopology topology>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $r2 = <org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $r6 = <org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $r5 = <org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $r3 = <org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $r7 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(1)
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $z0 = specialinvoke r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: boolean areHostGroupsResolved(java.util.Collection)>(r1)
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : specialinvoke r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: void notifyListeners()>()
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $r4 = r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.apache.ambari.server.topology.ClusterConfigurationRequest configRequest>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : r1 = specialinvoke r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: java.util.Collection getTopologyRequiredHostGroups()>()
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.areHostGroupsResolved : r3 = interfaceinvoke r1.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.areHostGroupsResolved : z3 = 1
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.areHostGroupsResolved : $r7 = r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.apache.ambari.server.topology.ClusterTopology topology>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.getTopologyRequiredHostGroups : $r2 = r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.apache.ambari.server.topology.ClusterConfigurationRequest configRequest>

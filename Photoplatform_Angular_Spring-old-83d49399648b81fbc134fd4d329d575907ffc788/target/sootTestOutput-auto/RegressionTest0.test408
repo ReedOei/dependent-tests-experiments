@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.webservice.dto.UserData.getSecToken : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String secToken>
+de.htw.sdf.photoplatform.webservice.dto.UserData.setIban : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String iban> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getLastName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String lastName>
+de.htw.sdf.photoplatform.webservice.dto.UserData.setBanned : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: boolean banned> = z0

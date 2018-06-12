@@ -1,0 +1,7 @@
+org.apache.accumulo.master.state.TableCounts.assignedToDeadServers : $r2 = r0.<org.apache.accumulo.master.state.TableCounts: int[] counts>
+org.apache.accumulo.master.state.TableStats.getLast : $r5 = new org.apache.accumulo.master.state.TableCounts
+org.apache.accumulo.master.state.TableStats.getLast : $r1 = r0.<org.apache.accumulo.master.state.TableStats: java.util.Map last>
+org.apache.accumulo.master.state.TableStats.getLast : if r2 != null goto return r2
+org.apache.accumulo.master.state.TableStats.getLast : $r3 = r0.<org.apache.accumulo.master.state.TableStats: java.util.Map last>
+org.apache.accumulo.master.state.TableCounts.suspended : $r2 = r0.<org.apache.accumulo.master.state.TableCounts: int[] counts>
+org.apache.accumulo.master.state.TableStats.getLastMasterState : $r1 = r0.<org.apache.accumulo.master.state.TableStats: org.apache.accumulo.core.master.thrift.MasterState state>

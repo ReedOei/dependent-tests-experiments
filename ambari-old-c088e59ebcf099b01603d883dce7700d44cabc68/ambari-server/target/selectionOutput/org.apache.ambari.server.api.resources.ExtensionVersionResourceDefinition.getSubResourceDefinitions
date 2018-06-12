@@ -1,0 +1,2 @@
+org.apache.ambari.server.api.resources.ExtensionVersionResourceDefinition.getSubResourceDefinitions : $r2 = new java.util.HashSet >>>>>>>> org.apache.ambari.server.api.resources.ExtensionVersionResourceDefinition.getSubResourceDefinitions : specialinvoke $r2.<java.util.HashSet: void <init>()>()
+org.apache.ambari.server.api.resources.ExtensionVersionResourceDefinition.getSubResourceDefinitions : specialinvoke $r2.<java.util.HashSet: void <init>()>() >>>>>>>> org.apache.ambari.server.api.resources.ExtensionVersionResourceDefinition.getSubResourceDefinitions : return $r2

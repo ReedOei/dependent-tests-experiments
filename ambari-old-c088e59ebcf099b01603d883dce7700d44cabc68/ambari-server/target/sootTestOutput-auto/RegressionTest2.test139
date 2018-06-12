@@ -1,0 +1,6 @@
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.removePrefixFromVersion : $r2 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: org.apache.ambari.server.orm.entities.StackEntity _persistence_get_stack()>()
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.getRepositoryXml : return null
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.getRepositoryXml : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: java.lang.String _persistence_get_versionXsd()>()
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.toString : $r1 = staticinvoke <com.google.common.base.Objects: com.google.common.base.Objects$ToStringHelper toStringHelper(java.lang.Object)>(r0)
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.toString : $r9 = virtualinvoke $r7.<com.google.common.base.Objects$ToStringHelper: com.google.common.base.Objects$ToStringHelper add(java.lang.String,java.lang.Object)>("type", $r8)
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.getVersionUrl : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: java.lang.String _persistence_get_versionUrl()>()

@@ -1,0 +1,1 @@
+org.apache.accumulo.master.tableOps.TraceRepo.getReturn : $r1 = r0.<org.apache.accumulo.master.tableOps.TraceRepo: org.apache.accumulo.fate.Repo repo> >>>>>>>> org.apache.accumulo.master.tableOps.TraceRepo.getReturn : $r2 = interfaceinvoke $r1.<org.apache.accumulo.fate.Repo: java.lang.String getReturn()>()

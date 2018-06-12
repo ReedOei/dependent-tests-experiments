@@ -1,0 +1,32 @@
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.notifyListeners : $r2 = r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.apache.ambari.server.topology.ClusterTopology topology>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $r2 = <org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $r1 = virtualinvoke r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: java.lang.Boolean call()>()
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $r5 = <org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $r3 = <org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $z0 = specialinvoke r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: boolean areHostGroupsResolved(java.util.Collection)>(r1)
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : specialinvoke r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: void notifyListeners()>()
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : $r4 = r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.apache.ambari.server.topology.ClusterConfigurationRequest configRequest>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.call : r1 = specialinvoke r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: java.util.Collection getTopologyRequiredHostGroups()>()
+org.apache.ambari.server.topology.AsyncCallableService.attemptToCancel : $r3 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.AsyncCallableService.attemptToCancel : $z0 = interfaceinvoke r1.<java.util.concurrent.Future: boolean isDone()>()
+org.apache.ambari.server.topology.AsyncCallableService.attemptToCancel : $r5 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.areHostGroupsResolved : r3 = interfaceinvoke r1.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.areHostGroupsResolved : z3 = 1
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.areHostGroupsResolved : $r7 = r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.apache.ambari.server.topology.ClusterTopology topology>
+org.apache.ambari.server.topology.tasks.ConfigureClusterTask.getTopologyRequiredHostGroups : $r2 = r0.<org.apache.ambari.server.topology.tasks.ConfigureClusterTask: org.apache.ambari.server.topology.ClusterConfigurationRequest configRequest>
+org.apache.ambari.server.topology.AsyncCallableService.call : $r4 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.AsyncCallableService.call : $l1 = r0.<org.apache.ambari.server.topology.AsyncCallableService: long timeout>
+org.apache.ambari.server.topology.AsyncCallableService.call : $r10 = <java.util.concurrent.TimeUnit: java.util.concurrent.TimeUnit MILLISECONDS>
+org.apache.ambari.server.topology.AsyncCallableService.call : $r22 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.AsyncCallableService.call : $r3 = r0.<org.apache.ambari.server.topology.AsyncCallableService: java.util.concurrent.ScheduledExecutorService executorService>
+org.apache.ambari.server.topology.AsyncCallableService.call : specialinvoke r0.<org.apache.ambari.server.topology.AsyncCallableService: void attemptToCancel(java.util.concurrent.Future)>(r30)
+org.apache.ambari.server.topology.AsyncCallableService.call : r1 = virtualinvoke $r13.<java.util.concurrent.ExecutionException: java.lang.Throwable getCause()>()
+org.apache.ambari.server.topology.AsyncCallableService.call : $l7 = r0.<org.apache.ambari.server.topology.AsyncCallableService: long retryDelay>
+org.apache.ambari.server.topology.AsyncCallableService.call : l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.ambari.server.topology.AsyncCallableService.call : $r25 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.AsyncCallableService.call : return null
+org.apache.ambari.server.topology.AsyncCallableService.call : l6 = r0.<org.apache.ambari.server.topology.AsyncCallableService: long timeout>
+org.apache.ambari.server.topology.AsyncCallableService.call : $r19 = r0.<org.apache.ambari.server.topology.AsyncCallableService: java.util.concurrent.ScheduledExecutorService executorService>
+org.apache.ambari.server.topology.AsyncCallableService.call : $r7 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>
+org.apache.ambari.server.topology.AsyncCallableService.call : $z0 = r1 instanceof org.apache.ambari.server.topology.AsyncCallableService$RetryTaskSilently
+org.apache.ambari.server.topology.AsyncCallableService.call : $r14 = <org.apache.ambari.server.topology.AsyncCallableService: org.slf4j.Logger LOG>

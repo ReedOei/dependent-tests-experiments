@@ -1,0 +1,13 @@
+org.apache.accumulo.master.Master.shutdownServers : $r3 = r0.<org.apache.accumulo.master.Master: java.util.Set serversToShutdown> >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : entermonitor $r3
+org.apache.accumulo.master.Master.shutdownServers : entermonitor $r3 >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : $r4 = new java.util.HashSet
+org.apache.accumulo.master.Master.shutdownServers : entermonitor $r3 >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : $r6 := @caughtexception
+org.apache.accumulo.master.Master.shutdownServers : exitmonitor $r3 >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : throw $r6
+org.apache.accumulo.master.Master.shutdownServers : exitmonitor $r3 >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : $r6 := @caughtexception
+org.apache.accumulo.master.Master.shutdownServers : $r4 = new java.util.HashSet >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : $r5 = r0.<org.apache.accumulo.master.Master: java.util.Set serversToShutdown>
+org.apache.accumulo.master.Master.shutdownServers : $r4 = new java.util.HashSet >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : $r6 := @caughtexception
+org.apache.accumulo.master.Master.shutdownServers : $r5 = r0.<org.apache.accumulo.master.Master: java.util.Set serversToShutdown> >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : specialinvoke $r4.<java.util.HashSet: void <init>(java.util.Collection)>($r5)
+org.apache.accumulo.master.Master.shutdownServers : $r5 = r0.<org.apache.accumulo.master.Master: java.util.Set serversToShutdown> >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : $r6 := @caughtexception
+org.apache.accumulo.master.Master.shutdownServers : specialinvoke $r4.<java.util.HashSet: void <init>(java.util.Collection)>($r5) >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : exitmonitor $r3
+org.apache.accumulo.master.Master.shutdownServers : specialinvoke $r4.<java.util.HashSet: void <init>(java.util.Collection)>($r5) >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : $r6 := @caughtexception
+org.apache.accumulo.master.Master.shutdownServers : exitmonitor $r3 >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : return $r4
+org.apache.accumulo.master.Master.shutdownServers : exitmonitor $r3 >>>>>>>> org.apache.accumulo.master.Master.shutdownServers : $r6 := @caughtexception

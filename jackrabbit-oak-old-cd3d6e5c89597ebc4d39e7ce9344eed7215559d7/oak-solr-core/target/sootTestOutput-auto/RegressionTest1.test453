@@ -1,0 +1,12 @@
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.get : $r10 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry: java.util.Map indexingServerRegistry>
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.get : $r4 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry$1: int[] $SwitchMap$org$apache$jackrabbit$oak$plugins$index$solr$server$SolrServerRegistry$Strategy>
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.get : $r11 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry: java.util.Map indexingServerRegistry>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.toString : $r1 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.toString : $r11 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String[] solrHttpUrls>
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getSolrServer : $r2 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider: org.apache.solr.client.solrj.SolrClient solrServer>
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getSolrServer : $r3 = new org.apache.solr.client.solrj.impl.HttpSolrServer
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getSolrServer : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider: org.apache.solr.client.solrj.SolrClient solrServer>
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getUrl : return "http://127.0.0.1:8983/solr/oak"
+org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider.getSearchingSolrServer : $r1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.index.solr.server.DefaultSolrServerProvider: org.apache.solr.client.solrj.SolrClient getSolrServer()>()
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrHttpUrls : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String[] solrHttpUrls>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrZkHost : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String solrZkHost>

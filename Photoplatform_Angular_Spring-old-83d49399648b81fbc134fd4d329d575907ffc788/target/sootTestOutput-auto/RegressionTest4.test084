@@ -1,0 +1,5 @@
+de.htw.sdf.photoplatform.persistence.model.CollectionImage.setImage : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionImage: de.htw.sdf.photoplatform.persistence.model.Image image> = r1
+de.htw.sdf.photoplatform.persistence.model.CollectionImage.setCollection : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionImage: de.htw.sdf.photoplatform.persistence.model.Collection collection> = r1
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.hashToByte : r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(r2)
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setCreatedBy : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String createdBy> = r1
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.hash : r3 = specialinvoke r0.<de.htw.sdf.photoplatform.manager.impl.HashManagerImpl: byte[] hashToByte(java.lang.String,java.lang.String)>(r1, r2)

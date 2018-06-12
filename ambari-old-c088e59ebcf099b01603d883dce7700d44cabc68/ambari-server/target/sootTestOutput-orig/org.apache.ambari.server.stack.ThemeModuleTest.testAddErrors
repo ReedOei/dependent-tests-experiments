@@ -1,0 +1,3 @@
+org.apache.ambari.server.stack.ThemeModule.addErrors : $r2 = r0.<org.apache.ambari.server.stack.ThemeModule: java.util.Set errors>
+org.apache.ambari.server.stack.ThemeModule.getErrors : $r1 = r0.<org.apache.ambari.server.stack.ThemeModule: java.util.Set errors>
+org.apache.ambari.server.state.ThemeInfo.isDeleted : $r1 = r0.<org.apache.ambari.server.state.ThemeInfo: java.lang.Boolean deleted>

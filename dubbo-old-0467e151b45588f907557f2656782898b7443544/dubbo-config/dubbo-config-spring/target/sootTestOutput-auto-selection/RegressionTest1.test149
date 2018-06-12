@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.ServiceBean.setBeanName : r0.<com.alibaba.dubbo.config.spring.ServiceBean: java.lang.String beanName> = r1 >>>>>>>> com.alibaba.dubbo.config.spring.ServiceBean.destroy : virtualinvoke r0.<com.alibaba.dubbo.config.spring.ServiceBean: void unexport()>()

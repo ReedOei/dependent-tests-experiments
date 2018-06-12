@@ -1,0 +1,8 @@
+org.apache.zeppelin.helium.HeliumApplicationFactory.access$000 : $r1 = r0.<org.apache.zeppelin.helium.HeliumApplicationFactory: org.slf4j.Logger logger>
+org.apache.zeppelin.helium.HeliumApplicationFactory$UnloadApplication.run : r2 = $r12
+org.apache.zeppelin.helium.HeliumApplicationFactory$UnloadApplication.run : if r1 == null goto return
+org.apache.zeppelin.helium.HeliumApplicationFactory$UnloadApplication.run : $r3 = r0.<org.apache.zeppelin.helium.HeliumApplicationFactory$UnloadApplication: org.apache.zeppelin.notebook.Paragraph paragraph>
+org.apache.zeppelin.helium.HeliumApplicationFactory$UnloadApplication.run : r1 = null
+org.apache.zeppelin.helium.HeliumApplicationFactory$UnloadApplication.run : $r13 = r0.<org.apache.zeppelin.helium.HeliumApplicationFactory$UnloadApplication: org.apache.zeppelin.helium.HeliumApplicationFactory this$0>
+org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication.initialize : $r2 = <org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication: org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication.initialize : $r4 = <org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication: org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication instance>

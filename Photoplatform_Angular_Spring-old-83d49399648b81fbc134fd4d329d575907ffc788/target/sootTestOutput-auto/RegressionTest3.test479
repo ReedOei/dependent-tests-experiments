@@ -1,0 +1,20 @@
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getImageIds : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.util.List imageIds>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setThumbnail : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.ImageData thumbnail> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getDescription : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String description>
+de.htw.sdf.photoplatform.persistence.model.Image.getThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String thumbPath>
+de.htw.sdf.photoplatform.webservice.dto.ImageData.setPath : r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String path> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.model.Image.getPrice : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.Double price>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.getId : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getUserdata : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.UserData userdata>
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToImageData : $r2 = new de.htw.sdf.photoplatform.webservice.dto.ImageData
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToImageData : return $r2
+de.htw.sdf.photoplatform.persistence.model.Image.getMobileThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mobileThumbPath>
+de.htw.sdf.photoplatform.webservice.dto.ImageData.getId : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.Long id>
+de.htw.sdf.photoplatform.persistence.model.Image.getSmallThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath>
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getImages : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.util.List images>
+de.htw.sdf.photoplatform.webservice.dto.ImageData.getName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String name>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String name>
+de.htw.sdf.photoplatform.persistence.model.Image.getMetaData : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String metaData>
+de.htw.sdf.photoplatform.webservice.dto.ImageData.setMime : r0.<de.htw.sdf.photoplatform.webservice.dto.ImageData: java.lang.String mime> = r1

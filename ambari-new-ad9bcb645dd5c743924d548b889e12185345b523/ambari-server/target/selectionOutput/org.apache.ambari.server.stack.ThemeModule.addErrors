@@ -1,0 +1,2 @@
+org.apache.ambari.server.stack.ThemeModule.addErrors : $r2 = r0.<org.apache.ambari.server.stack.ThemeModule: java.util.Set errors> >>>>>>>> org.apache.ambari.server.stack.ThemeModule.addErrors : interfaceinvoke $r2.<java.util.Set: boolean addAll(java.util.Collection)>(r1)
+org.apache.ambari.server.stack.ThemeModule.addErrors : interfaceinvoke $r2.<java.util.Set: boolean addAll(java.util.Collection)>(r1) >>>>>>>> org.apache.ambari.server.stack.ThemeModule.addErrors : return

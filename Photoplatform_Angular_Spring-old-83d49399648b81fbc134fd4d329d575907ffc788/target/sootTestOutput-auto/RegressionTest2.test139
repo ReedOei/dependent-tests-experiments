@@ -1,0 +1,11 @@
+de.htw.sdf.photoplatform.persistence.model.User.isAccountNonLocked : $z0 = r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean accountNonLocked>
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : if r2 != null goto $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : return 0
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : r2 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.model.UserImage.getUser : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.User user>
+de.htw.sdf.photoplatform.persistence.model.User.getSecToken : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String secToken>
+de.htw.sdf.photoplatform.persistence.model.UserImage.setUser : r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.User user> = r1
+de.htw.sdf.photoplatform.persistence.model.UserRole.setUser : r0.<de.htw.sdf.photoplatform.persistence.model.UserRole: de.htw.sdf.photoplatform.persistence.model.User user> = r1
+de.htw.sdf.photoplatform.persistence.model.User.setUsername : r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String email> = r1
+de.htw.sdf.photoplatform.persistence.model.User.isPhotographer : $z0 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean isRoleIncluded(java.lang.String)>("ROLE_PHOTOGRAPHER")
+de.htw.sdf.photoplatform.persistence.model.User.getUserRoles : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List userRoles>

@@ -1,0 +1,3 @@
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : return 0
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : $z0 = interfaceinvoke r2.<javax.persistence.EntityTransaction: boolean getRollbackOnly()>()
+org.apache.ambari.server.orm.AmbariJpaLocalTxnInterceptor.rollbackIfNecessary : interfaceinvoke r2.<javax.persistence.EntityTransaction: void rollback()>()

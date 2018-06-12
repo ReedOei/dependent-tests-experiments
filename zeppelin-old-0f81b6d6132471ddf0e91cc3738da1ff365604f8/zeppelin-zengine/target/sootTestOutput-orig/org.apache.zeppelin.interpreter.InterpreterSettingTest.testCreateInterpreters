@@ -1,0 +1,105 @@
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterSessionId : $r5 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterSessionId : r12 = "shared_session"
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterSessionId : $r6 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterSessionId : $r4 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterSessionId : $r3 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getOrCreateSession : $r6 = r0.<org.apache.zeppelin.interpreter.ManagedInterpreterGroup: java.util.Map sessions>
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getOrCreateSession : $r16 = r0.<org.apache.zeppelin.interpreter.ManagedInterpreterGroup: java.util.Map sessions>
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getOrCreateSession : $r7 = r0.<org.apache.zeppelin.interpreter.ManagedInterpreterGroup: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getOrCreateSession : goto [?= $z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getOrCreateSession : $r13 = r0.<org.apache.zeppelin.interpreter.ManagedInterpreterGroup: java.util.Map sessions>
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getOrCreateSession : $r11 = r0.<org.apache.zeppelin.interpreter.ManagedInterpreterGroup: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getOrCreateSession : $r15 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getOrCreateSession : r4 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getOrCreateSession : virtualinvoke r5.<org.apache.zeppelin.interpreter.Interpreter: void setInterpreterGroup(org.apache.zeppelin.interpreter.InterpreterGroup)>(r0)
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getOrCreateSession : $r10 = <org.apache.zeppelin.interpreter.ManagedInterpreterGroup: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.InterpreterSetting.getDefaultInterpreter : $r3 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List getOrCreateSession(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : $r11 = virtualinvoke r7.<org.apache.zeppelin.interpreter.Interpreter: java.lang.String getClassName()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : $r10 = interfaceinvoke r6.<java.util.Iterator: java.lang.Object next()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r2, "noteId should be not null")
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : r6 = interfaceinvoke r5.<java.util.List: java.util.Iterator iterator()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : r4 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String getInterpreterClassFromInterpreterSetting(java.lang.String)>(r3)
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : return r7
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : return null
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : r5 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List getOrCreateSession(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : if r4 != null goto r5 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List getOrCreateSession(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : goto [?= $z0 = interfaceinvoke r6.<java.util.Iterator: boolean hasNext()>()]
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreter : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r3, "replName should be not null")
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $z1 = virtualinvoke $r4.<java.util.Properties: boolean containsKey(java.lang.Object)>("zeppelin.interpreter.output.limit")
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r22 = new java.lang.StringBuilder
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r24 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r17 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r5 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.Object properties>
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r4 = new java.util.Properties
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r6 = interfaceinvoke r2.<java.util.Map: java.util.Set entrySet()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r7 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : return $r4
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r15 = new java.lang.StringBuilder
+org.apache.zeppelin.interpreter.InterpreterSetting.getJavaProperties : $r8 = new java.lang.StringBuilder
+org.apache.zeppelin.interpreter.InterpreterInfo.getName : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterInfo: java.lang.String name>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : $r4 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption getOption()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : $r3 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterGroupId : r11 = "shared_process"
+org.apache.zeppelin.interpreter.InterpreterSetting.access$102 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String name> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterInfos : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setInterpreterInfos : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setOption : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setOption : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$502 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.access$302 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List interpreterInfos> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : goto [?= $z0 = interfaceinvoke r5.<java.util.Iterator: boolean hasNext()>()]
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : r5 = interfaceinvoke r4.<java.util.List: java.util.Iterator iterator()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : $z1 = virtualinvoke r6.<org.apache.zeppelin.interpreter.InterpreterInfo: boolean isDefaultInterpreter()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : interfaceinvoke $r7.<java.util.List: boolean add(java.lang.Object)>($r9)
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : r4 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List getInterpreterInfos()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : $r8 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : $r7 = new java.util.ArrayList
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : $r9 = new org.apache.zeppelin.interpreter.remote.RemoteInterpreter
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : $r13 = newarray (java.lang.Object)[3]
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : $r14 = <org.apache.zeppelin.interpreter.InterpreterSetting: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : $r11 = virtualinvoke r6.<org.apache.zeppelin.interpreter.InterpreterInfo: java.lang.String getClassName()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreters : interfaceinvoke $r7.<java.util.List: void add(int,java.lang.Object)>(0, $r9)
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateSession : r3 = virtualinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.ManagedInterpreterGroup getOrCreateInterpreterGroup(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateSession : r4 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String getInterpreterSessionId(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateSession : $r7 = virtualinvoke r3.<org.apache.zeppelin.interpreter.ManagedInterpreterGroup: java.util.List getOrCreateSession(java.lang.String,java.lang.String)>(r1, r4)
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateSession : $r5 = newarray (java.lang.Object)[2]
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r1 = <org.apache.zeppelin.interpreter.InterpreterSetting$Status: org.apache.zeppelin.interpreter.InterpreterSetting$Status READY>
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager>
+org.apache.zeppelin.interpreter.InterpreterSetting.postProcessing : $r3 = new org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager
+org.apache.zeppelin.search.LuceneSearch.close : $r2 = r0.<org.apache.zeppelin.search.LuceneSearch: org.apache.lucene.index.IndexWriter writer>
+org.apache.zeppelin.search.LuceneSearch.close : goto [?= return]
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setName : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setName : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterInfos : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List interpreterInfos>
+org.apache.zeppelin.interpreter.InterpreterSetting.getLifecycleManager : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.LifecycleManager lifecycleManager>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getClassName : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreter: java.lang.String className>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setId : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setId : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.getOption : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.InterpreterOption option>
+org.apache.zeppelin.interpreter.InterpreterInfo.getClassName : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterInfo: java.lang.String className>
+org.apache.zeppelin.interpreter.InterpreterInfo.isDefaultInterpreter : $z0 = r0.<org.apache.zeppelin.interpreter.InterpreterInfo: boolean defaultInterpreter>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setGroup : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.setGroup : return r0
+org.apache.zeppelin.interpreter.InterpreterSetting.access$202 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String group> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.access$002 : r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String id> = r1
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r12 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.Map interpreterGroups>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r11 = <org.apache.zeppelin.interpreter.InterpreterSetting: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r5 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock interpreterGroupWriteLock>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r9 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock interpreterGroupWriteLock>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : r3 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.lang.String getInterpreterGroupId(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r6 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.Map interpreterGroups>
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : r16 = specialinvoke r0.<org.apache.zeppelin.interpreter.InterpreterSetting: org.apache.zeppelin.interpreter.ManagedInterpreterGroup createInterpreterGroup(java.lang.String)>(r3)
+org.apache.zeppelin.interpreter.InterpreterSetting.getOrCreateInterpreterGroup : $r7 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.Map interpreterGroups>
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreterGroup : $r5 = new org.apache.zeppelin.interpreter.remote.RemoteAngularObjectRegistry
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreterGroup : virtualinvoke $r4.<org.apache.zeppelin.interpreter.ManagedInterpreterGroup: void setAngularObjectRegistry(org.apache.zeppelin.display.AngularObjectRegistry)>($r5)
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreterGroup : return $r4
+org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreterGroup : $r4 = new org.apache.zeppelin.interpreter.ManagedInterpreterGroup
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterClassFromInterpreterSetting : $z1 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>(r4)
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterClassFromInterpreterSetting : r4 = virtualinvoke r3.<org.apache.zeppelin.interpreter.InterpreterInfo: java.lang.String getName()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterClassFromInterpreterSetting : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r1, "replName should be not null")
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterClassFromInterpreterSetting : $r7 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterClassFromInterpreterSetting : $r8 = virtualinvoke r3.<org.apache.zeppelin.interpreter.InterpreterInfo: java.lang.String getName()>()
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterClassFromInterpreterSetting : $r6 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting: java.util.List interpreterInfos>
+org.apache.zeppelin.interpreter.InterpreterSetting.getInterpreterClassFromInterpreterSetting : $r9 = virtualinvoke r3.<org.apache.zeppelin.interpreter.InterpreterInfo: java.lang.String getClassName()>()
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.create : $r2 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>
+org.apache.zeppelin.interpreter.InterpreterSetting$Builder.create : $r1 = r0.<org.apache.zeppelin.interpreter.InterpreterSetting$Builder: org.apache.zeppelin.interpreter.InterpreterSetting interpreterSetting>

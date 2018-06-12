@@ -1,0 +1,29 @@
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.init : $r33 = <org.apache.ambari.server.metrics.system.impl.JvmMetricsSource: com.codahale.metrics.MetricRegistry registry>
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.init : $r40 = virtualinvoke r1.<org.apache.ambari.server.metrics.system.impl.MetricsConfiguration: java.lang.String getProperty(java.lang.String,java.lang.String)>("interval", "10")
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.init : specialinvoke r0.<org.apache.ambari.server.metrics.system.impl.AbstractMetricsSource: void init(org.apache.ambari.server.metrics.system.impl.MetricsConfiguration,org.apache.ambari.server.metrics.system.MetricsSink)>(r1, r2)
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.init : $r18 = new java.lang.StringBuilder
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.init : $r3 = new java.lang.StringBuilder
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.init : $r10 = new java.lang.StringBuilder
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.init : $r25 = new java.lang.StringBuilder
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.getMetricsConfiguration : if r0 == null goto return null
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.getMetricsConfiguration : r0 = staticinvoke <org.apache.ambari.server.metrics.system.impl.MetricsConfiguration: java.util.Properties readConfigFile()>()
+org.apache.ambari.server.metric.system.impl.MetricsSourceTest$VersionMatcher.matches : $r2 = (java.lang.String) r1
+org.apache.ambari.server.metric.system.impl.MetricsSourceTest$VersionMatcher.parseVersion : $r4 = virtualinvoke r3.<java.util.regex.Matcher: java.lang.String group(int)>(1)
+org.apache.ambari.server.metric.system.impl.MetricsSourceTest$VersionMatcher.parseVersion : r2 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("(\\d+(?:\\.\\d+)).*")
+org.apache.ambari.server.metric.system.impl.MetricsSourceTest$VersionMatcher.parseVersion : r3 = virtualinvoke r2.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1)
+org.apache.ambari.server.metric.system.impl.MetricsSourceTest$VersionMatcher.parseVersion : $z0 = virtualinvoke r3.<java.util.regex.Matcher: boolean matches()>()
+org.apache.ambari.server.metric.system.impl.MetricsSourceTest.testJvmSourceInit : $r4 = new org.apache.ambari.server.metrics.system.impl.JvmMetricsSource
+org.apache.ambari.server.metric.system.impl.MetricsSourceTest.testJvmSourceInit : r2 = staticinvoke <org.apache.ambari.server.metrics.system.impl.MetricsConfiguration: org.apache.ambari.server.metrics.system.impl.MetricsConfiguration getMetricsConfiguration()>()
+org.apache.ambari.server.metric.system.impl.MetricsSourceTest.testJvmSourceInit : $r5 = new org.apache.ambari.server.metric.system.impl.TestAmbariMetricsSinkImpl
+org.apache.ambari.server.metric.system.impl.MetricsSourceTest.testJvmSourceInit : virtualinvoke $r4.<org.apache.ambari.server.metrics.system.impl.JvmMetricsSource: void init(org.apache.ambari.server.metrics.system.impl.MetricsConfiguration,org.apache.ambari.server.metrics.system.MetricsSink)>(r2, $r5)
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.readConfigFile : if r1 != null goto virtualinvoke $r2.<java.util.Properties: void load(java.io.InputStream)>(r1)
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.readConfigFile : $r3 = class "Lorg/apache/ambari/server/metrics/system/impl/MetricsConfiguration;"
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.readConfigFile : $r5 = <org.apache.ambari.server.metrics.system.impl.MetricsConfiguration: org.slf4j.Logger LOG>
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.readConfigFile : $r2 = new java.util.Properties
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.readConfigFile : return null
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.registerAll : $r9 = interfaceinvoke r5.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.registerAll : $r6 = interfaceinvoke r2.<com.codahale.metrics.MetricSet: java.util.Map getMetrics()>()
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.registerAll : goto [?= $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.registerAll : $r8 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.metrics.system.impl.JvmMetricsSource.registerAll : $r10 = new java.lang.StringBuilder
+org.apache.ambari.server.metrics.system.impl.AbstractMetricsSource.init : r0.<org.apache.ambari.server.metrics.system.impl.AbstractMetricsSource: org.apache.ambari.server.metrics.system.MetricsSink sink> = r2

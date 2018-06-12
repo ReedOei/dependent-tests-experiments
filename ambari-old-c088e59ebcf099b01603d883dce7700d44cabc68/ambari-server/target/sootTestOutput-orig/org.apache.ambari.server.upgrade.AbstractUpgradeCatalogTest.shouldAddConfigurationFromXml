@@ -1,0 +1,195 @@
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalogTest$1.getTargetVersion : return null
+org.apache.ambari.server.state.PropertyInfo.setPropertyAmbariUpgradeBehavior : r0.<org.apache.ambari.server.state.PropertyInfo: org.apache.ambari.server.state.PropertyUpgradeBehavior propertyAmbariUpgradeBehavior> = r1
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r18 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_TYPE>
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r4 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_PASSWORD>
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r2 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_PATH>
+org.apache.ambari.server.state.ConfigHelper.fileNameToConfigType : $r1 = virtualinvoke r0.<java.lang.String: java.lang.String substring(int,int)>(0, i0)
+org.apache.ambari.server.state.ConfigHelper.fileNameToConfigType : i0 = virtualinvoke r0.<java.lang.String: int indexOf(java.lang.String)>(".xml")
+org.apache.ambari.server.state.PropertyUpgradeBehavior.isDelete : $z0 = r0.<org.apache.ambari.server.state.PropertyUpgradeBehavior: boolean delete>
+org.apache.ambari.server.state.PropertyUpgradeBehavior.isUpdate : $z0 = r0.<org.apache.ambari.server.state.PropertyUpgradeBehavior: boolean update>
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.getKey : $r1 = r0.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.String m_key>
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.getDefaultValue : $r1 = r0.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object m_defaultValue>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r7 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: java.util.Map getConfigsByType(java.lang.String)>(r2)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r72 = null
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r29 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.StackId getDesiredStackVersion()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if r7 == null goto r8 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>(r2)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if r11 == null goto (branch)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r58 = r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: org.apache.ambari.server.configuration.Configuration configuration>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r26 = newarray (java.lang.Object)[3]
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if null != r72 goto $r29 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.StackId getDesiredStackVersion()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r72 = staticinvoke <java.util.Collections: java.util.Map emptyMap()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r15 = r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: com.google.inject.Injector injector>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r21 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: org.slf4j.Logger LOG>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r68 = interfaceinvoke r8.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r69 = specialinvoke r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: java.util.Map removeProperties(java.util.Map,java.util.Set,com.google.common.collect.Multimap)>(r69, r4, r9)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r8 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>(r2)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r11 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getConfig(java.lang.String,java.lang.String)>(r2, r6)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r27 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: org.slf4j.Logger LOG>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r17 = new java.lang.StringBuilder
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if r3 == null goto return
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r67 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: org.slf4j.Logger LOG>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $r71 = staticinvoke <com.google.common.collect.Maps: com.google.common.collect.MapDifference difference(java.util.Map,java.util.Map)>(r68, r69)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if r8 == null goto (branch)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r9 = staticinvoke <com.google.common.collect.ArrayListMultimap: com.google.common.collect.ArrayListMultimap create()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : $i1 = interfaceinvoke r9.<com.google.common.collect.Multimap: int size()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r69 = specialinvoke r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: java.util.Map mergeProperties(java.util.Map,java.util.Map,boolean,com.google.common.collect.Multimap)>(r68, r3, z0, r9)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : if r8 != null goto r68 = interfaceinvoke r8.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r10 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: java.lang.String getServiceByConfigType(java.lang.String)>(r2)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesForCluster : r72 = interfaceinvoke r8.<org.apache.ambari.server.state.Config: java.util.Map getPropertiesAttributes()>()
+org.apache.ambari.server.state.PropertyInfo.hashCode : $i2 = 31 * i7
+org.apache.ambari.server.state.PropertyInfo.hashCode : $i6 = 0
+org.apache.ambari.server.state.PropertyInfo.hashCode : $i1 = 31 * 1
+org.apache.ambari.server.state.PropertyInfo.hashCode : $r1 = r0.<org.apache.ambari.server.state.PropertyInfo: java.lang.String description>
+org.apache.ambari.server.H2DatabaseCleaner.clearDatabaseAndStopPersistenceService : $r1 = interfaceinvoke r0.<com.google.inject.Injector: com.google.inject.Provider getProvider(java.lang.Class)>(class "Ljavax/persistence/EntityManager;")
+org.apache.ambari.server.state.PropertyUpgradeBehavior.isAdd : $z0 = r0.<org.apache.ambari.server.state.PropertyUpgradeBehavior: boolean add>
+org.apache.ambari.server.ldap.LdapModule.configure : $r3 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/service/LdapFacade;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r24 = virtualinvoke r2.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r16 = virtualinvoke r1.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r11 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/domain/AmbariLdapConfiguration;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r18 = virtualinvoke r1.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r5 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/service/LdapConfigurationService;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r23 = staticinvoke <com.google.inject.name.Names: com.google.inject.name.Named named(java.lang.String)>("GroupAttributesDetectors")
+org.apache.ambari.server.ldap.LdapModule.configure : $r9 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/service/LdapConnectionConfigService;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r15 = staticinvoke <com.google.inject.name.Names: com.google.inject.name.Named named(java.lang.String)>("UserAttributesDetectors")
+org.apache.ambari.server.ldap.LdapModule.configure : $r7 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/service/LdapAttributeDetectionService;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r26 = virtualinvoke r2.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r20 = virtualinvoke r1.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r14 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.Binder binder()>()
+org.apache.ambari.server.ldap.LdapModule.configure : virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/ldap/service/ads/detectors/AttributeDetectorFactory;")
+org.apache.ambari.server.ldap.LdapModule.configure : $r28 = virtualinvoke r2.<com.google.inject.multibindings.Multibinder: com.google.inject.binder.LinkedBindingBuilder addBinding()>()
+org.apache.ambari.server.ldap.LdapModule.configure : $r22 = virtualinvoke r0.<org.apache.ambari.server.ldap.LdapModule: com.google.inject.Binder binder()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalogTest.createProperty : virtualinvoke $r3.<org.apache.ambari.server.state.PropertyInfo: void setName(java.lang.String)>(r1)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalogTest.createProperty : virtualinvoke $r3.<org.apache.ambari.server.state.PropertyInfo: void setFilename(java.lang.String)>(r0)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalogTest.createProperty : $r4 = new org.apache.ambari.server.state.PropertyUpgradeBehavior
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalogTest.createProperty : $r3 = new org.apache.ambari.server.state.PropertyInfo
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalogTest.createProperty : return $r3
+org.apache.ambari.server.upgrade.UpgradeCatalogTest$UpgradeHelperModuleTest.configure : specialinvoke r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: void configure()>()
+org.apache.ambari.server.state.PropertyInfo.setName : r0.<org.apache.ambari.server.state.PropertyInfo: java.lang.String name> = r1
+org.apache.ambari.server.configuration.Configuration.getApiSSLAuthentication : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty API_USE_SSL>
+org.apache.ambari.server.state.PropertyInfo.getFilename : $r1 = r0.<org.apache.ambari.server.state.PropertyInfo: java.lang.String filename>
+org.apache.ambari.server.state.stack.OsFamily.init : $r5 = new java.io.File
+org.apache.ambari.server.state.stack.OsFamily.init : r23 = null
+org.apache.ambari.server.state.stack.OsFamily.init : $r19 = <org.apache.ambari.server.state.stack.OsFamily: org.slf4j.Logger LOG>
+org.apache.ambari.server.state.stack.OsFamily.init : $r14 = new java.lang.Exception
+org.apache.ambari.server.state.stack.OsFamily.init : $z0 = virtualinvoke $r5.<java.io.File: boolean exists()>()
+org.apache.ambari.server.state.stack.OsFamily.init : $r22 = new java.lang.RuntimeException
+org.apache.ambari.server.controller.HostsMap.setupMap : $r9 = r0.<org.apache.ambari.server.controller.HostsMap: java.lang.String hostsMapFile>
+org.apache.ambari.server.controller.HostsMap.setupMap : $r4 = <org.apache.ambari.server.controller.HostsMap: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.HostsMap.setupMap : r34 = null
+org.apache.ambari.server.controller.HostsMap.setupMap : if r34 == null goto return
+org.apache.ambari.server.state.PropertyInfo.isDeleted : $z0 = r0.<org.apache.ambari.server.state.PropertyInfo: boolean deleted>
+org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties.isKerberosAuthenticationEnabled : $z0 = r0.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean kerberosAuthenticationEnabled>
+org.apache.ambari.server.configuration.Configuration.getSharedResourcesDirPath : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SHARED_RESOURCES_DIR>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r49 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r19 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r37 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r7 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r53 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r2 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>("os.name")
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r10 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : r73 = "src/test/resources/version"
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r4 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r13 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r21 = new org.apache.ambari.server.ldap.LdapModule
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : r72 = "src/test/resources/stacks"
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r16 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r57 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r22 = newarray (com.google.inject.Module)[1]
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r41 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : r74 = "src/test/resources/"
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r71 = new java.lang.RuntimeException
+org.apache.ambari.server.orm.InMemoryDefaultTestModule.configure : $r45 = r0.<org.apache.ambari.server.orm.InMemoryDefaultTestModule: java.util.Properties properties>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.registerCatalog : $r2 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: java.util.Map upgradeCatalogMap>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $z7 = virtualinvoke r11.<org.apache.ambari.server.state.PropertyInfo: boolean isDeleted()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : r61 = virtualinvoke r2.<org.apache.ambari.server.state.ConfigHelper: java.util.Set getServiceProperties(org.apache.ambari.server.state.Cluster,java.lang.String)>(r5, r60)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r26 = interfaceinvoke $r21.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r42 = interfaceinvoke r10.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : r3 = interfaceinvoke r1.<org.apache.ambari.server.state.Clusters: java.util.Map getClusters()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r43 = virtualinvoke r11.<org.apache.ambari.server.state.PropertyInfo: java.lang.String getFilename()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $z11 = interfaceinvoke $r20.<java.util.Map: boolean containsKey(java.lang.Object)>(r12)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r37 = interfaceinvoke r62.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r38 = interfaceinvoke r63.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r14 = r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: com.google.inject.Injector injector>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $z9 = virtualinvoke r13.<org.apache.ambari.server.state.PropertyUpgradeBehavior: boolean isUpdate()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r52 = new java.util.HashSet
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r18 = interfaceinvoke r3.<java.util.Map: java.util.Collection values()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r44 = interfaceinvoke $r20.<java.util.Map: java.lang.Object get(java.lang.Object)>(r12)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r25 = interfaceinvoke $r20.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $z8 = virtualinvoke r13.<org.apache.ambari.server.state.PropertyUpgradeBehavior: boolean isDelete()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r20 = new java.util.HashMap
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : r13 = virtualinvoke r11.<org.apache.ambari.server.state.PropertyInfo: org.apache.ambari.server.state.PropertyUpgradeBehavior getPropertyAmbariUpgradeBehavior()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r49 = interfaceinvoke $r21.<java.util.Map: java.lang.Object get(java.lang.Object)>(r12)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r57 = new java.util.HashSet
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r29 = interfaceinvoke r69.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $z15 = interfaceinvoke $r22.<java.util.Map: boolean containsKey(java.lang.Object)>(r12)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $z10 = virtualinvoke r13.<org.apache.ambari.server.state.PropertyUpgradeBehavior: boolean isAdd()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : if r1 != null goto $r16 = r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: com.google.inject.Injector injector>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r16 = r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: com.google.inject.Injector injector>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $z0 = interfaceinvoke r3.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r47 = new java.util.HashSet
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r34 = interfaceinvoke r66.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r21 = new java.util.HashMap
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : if r3 == null goto return
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : goto [?= $z6 = interfaceinvoke r10.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r28 = interfaceinvoke r68.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : r10 = interfaceinvoke r61.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r41 = interfaceinvoke r59.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r39 = interfaceinvoke r63.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r30 = staticinvoke <java.util.Collections: java.util.Set emptySet()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r27 = interfaceinvoke $r22.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r35 = interfaceinvoke r66.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r22 = new java.util.HashMap
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : if r61 != null goto interfaceinvoke r61.<java.util.Set: boolean addAll(java.util.Collection)>(r9)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : r9 = virtualinvoke r2.<org.apache.ambari.server.state.ConfigHelper: java.util.Set getStackProperties(org.apache.ambari.server.state.Cluster)>(r5)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : interfaceinvoke r61.<java.util.Set: boolean addAll(java.util.Collection)>(r9)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r23 = interfaceinvoke r5.<org.apache.ambari.server.state.Cluster: java.util.Map getServices()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $z13 = interfaceinvoke $r21.<java.util.Map: boolean containsKey(java.lang.Object)>(r12)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.addNewConfigurationsFromXml : $r33 = interfaceinvoke r65.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.configuration.Configuration.getHostsMapFile : $r2 = <org.apache.ambari.server.configuration.Configuration: org.slf4j.Logger LOG>
+org.apache.ambari.server.configuration.Configuration.getHostsMapFile : $r8 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SRVR_HOSTS_MAPPING>
+org.apache.ambari.server.state.PropertyInfo.getPropertyAmbariUpgradeBehavior : $r1 = r0.<org.apache.ambari.server.state.PropertyInfo: org.apache.ambari.server.state.PropertyUpgradeBehavior propertyAmbariUpgradeBehavior>
+org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties.setKerberosAuthenticationEnabled : r0.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean kerberosAuthenticationEnabled> = z0
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : $z2 = interfaceinvoke r6.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : $r21 = interfaceinvoke r10.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : $r23 = interfaceinvoke r8.<org.apache.ambari.server.state.Cluster: java.util.Map getServices()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : $r16 = r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: com.google.inject.Injector injector>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : r12 = virtualinvoke r5.<org.apache.ambari.server.state.ConfigHelper: java.lang.String getPropertyValueFromStackDefinitions(org.apache.ambari.server.state.Cluster,java.lang.String,java.lang.String)>(r8, r1, r11)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : if r6 == null goto return
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : virtualinvoke r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: void updateConfigurationPropertiesWithValuesFromXml(java.lang.String,java.util.Set,java.util.Set,boolean,boolean)>(r1, r2, null, z0, z1)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : if r4 != null goto r6 = interfaceinvoke r4.<org.apache.ambari.server.state.Clusters: java.util.Map getClusters()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : if r13 == null goto interfaceinvoke $r20.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r11, r12)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : $r14 = r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: com.google.inject.Injector injector>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : r10 = interfaceinvoke r2.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : r6 = interfaceinvoke r4.<org.apache.ambari.server.state.Clusters: java.util.Map getClusters()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : $r18 = interfaceinvoke r6.<java.util.Map: java.util.Collection values()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : r13 = virtualinvoke r5.<org.apache.ambari.server.state.ConfigHelper: org.apache.ambari.server.state.ServiceInfo getPropertyOwnerService(org.apache.ambari.server.state.Cluster,java.lang.String,java.lang.String)>(r8, r1, r11)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : $r20 = new java.util.HashMap
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : virtualinvoke r0.<org.apache.ambari.server.upgrade.AbstractUpgradeCatalog: void updateConfigurationPropertiesForCluster(org.apache.ambari.server.state.Cluster,java.lang.String,java.util.Map,java.util.Set,boolean,boolean)>(r8, r1, $r20, r3, z0, z1)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : if r12 != null goto r13 = virtualinvoke r5.<org.apache.ambari.server.state.ConfigHelper: org.apache.ambari.server.state.ServiceInfo getPropertyOwnerService(org.apache.ambari.server.state.Cluster,java.lang.String,java.lang.String)>(r8, r1, r11)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.updateConfigurationPropertiesWithValuesFromXml : interfaceinvoke $r20.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r11, r12)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r11 = interfaceinvoke r6.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r18 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog$ConfigUpdateType: org.apache.ambari.server.upgrade.AbstractUpgradeCatalog$ConfigUpdateType ADDED>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r9 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : if z0 == 0 goto (branch)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r15 = interfaceinvoke r6.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r10 = interfaceinvoke r6.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : goto [?= $z1 = interfaceinvoke r5.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r14 = <org.apache.ambari.server.upgrade.AbstractUpgradeCatalog$ConfigUpdateType: org.apache.ambari.server.upgrade.AbstractUpgradeCatalog$ConfigUpdateType UPDATED>
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r7 = new java.util.HashMap
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.mergeProperties : $r8 = interfaceinvoke r2.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : goto [?= $z0 = interfaceinvoke r5.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : r5 = interfaceinvoke r2.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : $r8 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : interfaceinvoke $r7.<java.util.Map: void putAll(java.util.Map)>(r1)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : $z1 = interfaceinvoke r1.<java.util.Map: boolean containsKey(java.lang.Object)>(r6)
+org.apache.ambari.server.upgrade.AbstractUpgradeCatalog.removeProperties : $r7 = new java.util.HashMap
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $r8 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty KERBEROS_AUTH_ENABLED>
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $z1 = virtualinvoke $r7.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean isKerberosAuthenticationEnabled()>()
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : return $r7
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $r7 = new org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties
+org.apache.ambari.server.configuration.Configuration.getProperty : $r3 = r0.<org.apache.ambari.server.configuration.Configuration: java.util.Properties properties>
+org.apache.ambari.server.configuration.Configuration.getProperty : $r6 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object getDefaultValue()>()
+org.apache.ambari.server.configuration.Configuration.getProperty : r7 = null
+org.apache.ambari.server.configuration.Configuration.getProperty : $r2 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object getDefaultValue()>()
+org.apache.ambari.server.state.PropertyInfo.getName : $r1 = r0.<org.apache.ambari.server.state.PropertyInfo: java.lang.String name>
+org.apache.ambari.server.state.PropertyInfo.setFilename : r0.<org.apache.ambari.server.state.PropertyInfo: java.lang.String filename> = r1

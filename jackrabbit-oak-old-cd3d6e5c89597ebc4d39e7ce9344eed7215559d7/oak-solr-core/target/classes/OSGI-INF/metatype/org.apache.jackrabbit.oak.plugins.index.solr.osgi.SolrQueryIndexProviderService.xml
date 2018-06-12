@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService">
+    <OCD id="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService" name="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService.name" description="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService.description">
+        <AD id="query.aggregation" type="Boolean" default="false" name="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService.query.aggregation.name" description="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService.query.aggregation.description"/>
+    </OCD>
+    <Designate pid="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService">
+        <Object ocdref="org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrQueryIndexProviderService"/>
+    </Designate>
+</metatype:MetaData>

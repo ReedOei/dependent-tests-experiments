@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfigurationProvider.getConfiguration : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfigurationProvider: org.apache.jackrabbit.oak.plugins.index.solr.configuration.OakSolrConfiguration defaultConfiguration>

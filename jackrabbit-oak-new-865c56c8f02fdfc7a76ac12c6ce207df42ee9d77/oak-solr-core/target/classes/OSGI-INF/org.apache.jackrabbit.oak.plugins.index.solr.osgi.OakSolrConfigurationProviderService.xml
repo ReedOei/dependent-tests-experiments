@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService" activate="activate" deactivate="deactivate">
+    <property name="path.desc.field" value="path_des"/>
+    <property name="path.child.field" value="path_child"/>
+    <property name="path.parent.field" value="path_anc"/>
+    <property name="path.exact.field" value="path_exact"/>
+    <property name="catch.all.field" value="catch_all"/>
+    <property name="collapsed.path.field" value="path_collapsed"/>
+    <property name="path.depth.field" value="path_depth"/>
+    <property name="commit.policy" value="SOFT"/>
+    <property name="rows" type="Integer" value="10"/>
+    <property name="path.restrictions" type="Boolean" value="false"/>
+    <property name="property.restrictions" type="Boolean" value="false"/>
+    <property name="primarytypes.restrictions" type="Boolean" value="false"/>
+    <property name="ignored.properties">
+        rep:members
+        rep:authorizableId
+        jcr:uuid
+        rep:principalName
+        rep:password
+    </property>
+    <property name="used.properties"/>
+    <property name="type.mappings">
+        
+    </property>
+    <property name="property.mappings">
+        
+    </property>
+    <property name="collapse.jcrcontent.nodes" type="Boolean" value="false"/>
+    <service servicefactory="false">
+        <provide interface="org.apache.jackrabbit.oak.plugins.index.solr.configuration.OakSolrConfigurationProvider"/>
+    </service>
+    <implementation class="org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService"/>
+</scr:component>

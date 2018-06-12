@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.getViewName : $r1 = r0.<org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo: java.lang.String viewName> >>>>>>>> org.apache.ambari.server.controller.ViewVersionResponse$ViewVersionInfo.getViewName : return $r1

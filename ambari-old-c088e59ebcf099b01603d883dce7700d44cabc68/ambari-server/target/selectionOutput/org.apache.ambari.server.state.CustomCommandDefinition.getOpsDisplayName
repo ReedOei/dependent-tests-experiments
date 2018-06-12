@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.CustomCommandDefinition.getOpsDisplayName : $r1 = r0.<org.apache.ambari.server.state.CustomCommandDefinition: java.lang.String opsDisplayName> >>>>>>>> org.apache.ambari.server.state.CustomCommandDefinition.getOpsDisplayName : return $r1

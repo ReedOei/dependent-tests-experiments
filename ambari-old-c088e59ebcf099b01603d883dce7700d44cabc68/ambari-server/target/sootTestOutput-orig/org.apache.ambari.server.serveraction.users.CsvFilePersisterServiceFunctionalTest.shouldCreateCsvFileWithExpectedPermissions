@@ -1,0 +1,13 @@
+org.apache.ambari.server.serveraction.users.CsvFilePersisterService.init : $r13 = new org.apache.commons.csv.CSVPrinter
+org.apache.ambari.server.serveraction.users.CsvFilePersisterService.init : $r11 = new java.io.FileWriter
+org.apache.ambari.server.serveraction.users.CsvFilePersisterService.init : $r7 = r0.<org.apache.ambari.server.serveraction.users.CsvFilePersisterService: java.lang.String csvFile>
+org.apache.ambari.server.serveraction.users.CsvFilePersisterService.init : $r3 = r0.<org.apache.ambari.server.serveraction.users.CsvFilePersisterService: java.lang.String csvFile>
+org.apache.ambari.server.serveraction.users.CsvFilePersisterService.getCsvPermissions : $r4 = <java.nio.file.attribute.PosixFilePermission: java.nio.file.attribute.PosixFilePermission OWNER_WRITE>
+org.apache.ambari.server.serveraction.users.CsvFilePersisterService.getCsvPermissions : $r5 = <java.nio.file.attribute.PosixFilePermission: java.nio.file.attribute.PosixFilePermission GROUP_READ>
+org.apache.ambari.server.serveraction.users.CsvFilePersisterService.getCsvPermissions : $r3 = <java.nio.file.attribute.PosixFilePermission: java.nio.file.attribute.PosixFilePermission OWNER_READ>
+org.apache.ambari.server.serveraction.users.CsvFilePersisterService.getCsvPermissions : $r2 = new java.util.HashSet
+org.apache.ambari.server.serveraction.users.CsvFilePersisterService.getCsvPermissions : $r6 = <java.nio.file.attribute.PosixFilePermission: java.nio.file.attribute.PosixFilePermission OTHERS_READ>
+org.apache.ambari.server.serveraction.users.CsvFilePersisterService.getCsvPermissions : return $r2
+org.apache.ambari.server.serveraction.users.CsvFilePersisterServiceFunctionalTest.beforeClass : $r0 = newarray (com.google.inject.Module)[1]
+org.apache.ambari.server.serveraction.users.CsvFilePersisterServiceFunctionalTest.beforeClass : $r3 = <org.apache.ambari.server.serveraction.users.CsvFilePersisterServiceFunctionalTest: com.google.inject.Injector injector>
+org.apache.ambari.server.serveraction.users.CsvFilePersisterServiceFunctionalTest$TestPersistServiceModule.configure : $r1 = new com.google.inject.assistedinject.FactoryModuleBuilder

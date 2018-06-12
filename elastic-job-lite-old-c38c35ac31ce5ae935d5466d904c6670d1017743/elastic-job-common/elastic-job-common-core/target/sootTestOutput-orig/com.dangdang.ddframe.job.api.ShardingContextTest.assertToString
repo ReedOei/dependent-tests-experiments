@@ -1,0 +1,16 @@
+com.dangdang.ddframe.job.executor.ShardingContexts.getTaskId : $r1 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: java.lang.String taskId>
+com.dangdang.ddframe.job.api.ShardingContext.getShardingItem : $i0 = r0.<com.dangdang.ddframe.job.api.ShardingContext: int shardingItem>
+com.dangdang.ddframe.job.executor.ShardingContexts.getShardingTotalCount : $i0 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: int shardingTotalCount>
+com.dangdang.ddframe.job.api.ShardingContext.getJobName : $r1 = r0.<com.dangdang.ddframe.job.api.ShardingContext: java.lang.String jobName>
+com.dangdang.ddframe.job.api.ShardingContext.toString : $r1 = new java.lang.StringBuilder
+com.dangdang.ddframe.job.api.ShardingContext.getJobParameter : $r1 = r0.<com.dangdang.ddframe.job.api.ShardingContext: java.lang.String jobParameter>
+com.dangdang.ddframe.job.executor.ShardingContexts.getJobParameter : $r1 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: java.lang.String jobParameter>
+com.dangdang.ddframe.job.api.ShardingContext.getTaskId : $r1 = r0.<com.dangdang.ddframe.job.api.ShardingContext: java.lang.String taskId>
+com.dangdang.ddframe.job.executor.ShardingContexts.getJobName : $r1 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: java.lang.String jobName>
+com.dangdang.ddframe.job.executor.ShardingContexts.getShardingItemParameters : $r1 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: java.util.Map shardingItemParameters>
+com.dangdang.ddframe.job.api.ShardingContext.getShardingParameter : $r1 = r0.<com.dangdang.ddframe.job.api.ShardingContext: java.lang.String shardingParameter>
+com.dangdang.ddframe.job.fixture.ShardingContextsBuilder.getMultipleShardingContexts : $r6 = new com.dangdang.ddframe.job.executor.ShardingContexts
+com.dangdang.ddframe.job.fixture.ShardingContextsBuilder.getMultipleShardingContexts : $r4 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(1)
+com.dangdang.ddframe.job.fixture.ShardingContextsBuilder.getMultipleShardingContexts : $r1 = new java.util.HashMap
+com.dangdang.ddframe.job.fixture.ShardingContextsBuilder.getMultipleShardingContexts : $r2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(0)
+com.dangdang.ddframe.job.api.ShardingContext.getShardingTotalCount : $i0 = r0.<com.dangdang.ddframe.job.api.ShardingContext: int shardingTotalCount>

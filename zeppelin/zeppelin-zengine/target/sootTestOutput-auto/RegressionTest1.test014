@@ -1,0 +1,5 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication.run : $z0 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication: boolean authenticate()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication.run : $r1 = <org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication.authenticate : $z0 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication: boolean authEnabled>
+org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication.authenticate : return 0
+org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication.getInstance : $r0 = <org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication: org.apache.zeppelin.notebook.repo.zeppelinhub.security.Authentication instance>

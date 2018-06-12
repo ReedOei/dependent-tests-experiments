@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.fixture.job.TestSimpleJob.execute : $r2 = r0.<com.dangdang.ddframe.job.fixture.job.TestSimpleJob: com.dangdang.ddframe.job.fixture.job.JobCaller jobCaller> >>>>>>>> com.dangdang.ddframe.job.fixture.job.TestSimpleJob.execute : interfaceinvoke $r2.<com.dangdang.ddframe.job.fixture.job.JobCaller: void execute()>()
+com.dangdang.ddframe.job.fixture.job.TestSimpleJob.execute : interfaceinvoke $r2.<com.dangdang.ddframe.job.fixture.job.JobCaller: void execute()>() >>>>>>>> com.dangdang.ddframe.job.fixture.job.TestSimpleJob.execute : return

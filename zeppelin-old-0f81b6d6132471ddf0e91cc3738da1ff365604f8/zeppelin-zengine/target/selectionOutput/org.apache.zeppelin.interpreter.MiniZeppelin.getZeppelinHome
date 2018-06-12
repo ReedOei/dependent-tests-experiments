@@ -1,0 +1,1 @@
+org.apache.zeppelin.interpreter.MiniZeppelin.getZeppelinHome : $r1 = r0.<org.apache.zeppelin.interpreter.MiniZeppelin: java.io.File zeppelinHome> >>>>>>>> org.apache.zeppelin.interpreter.MiniZeppelin.getZeppelinHome : return $r1

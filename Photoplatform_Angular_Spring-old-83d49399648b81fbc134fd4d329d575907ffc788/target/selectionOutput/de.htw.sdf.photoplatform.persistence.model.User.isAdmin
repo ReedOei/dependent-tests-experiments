@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.persistence.model.User.isAdmin : $z0 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean isRoleIncluded(java.lang.String)>("ROLE_ADMIN") >>>>>>>> de.htw.sdf.photoplatform.persistence.model.User.isAdmin : return $z0

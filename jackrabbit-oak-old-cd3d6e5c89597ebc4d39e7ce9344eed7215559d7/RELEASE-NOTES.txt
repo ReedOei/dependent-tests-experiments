@@ -1,0 +1,174 @@
+Release Notes -- Apache Jackrabbit Oak -- Version 1.7.13
+
+Introduction
+------------
+
+Jackrabbit Oak is a scalable, high-performance hierarchical content
+repository designed for use as the foundation of modern world-class
+web sites and other demanding content applications.
+
+Apache Jackrabbit Oak 1.7.13 is an unstable release cut directly from
+Jackrabbit Oak trunk, with a focus on new features and other
+improvements. For production use we recommend the latest stable 1.6.x
+release.
+
+The Oak effort is a part of the Apache Jackrabbit project.
+Apache Jackrabbit is a project of the Apache Software Foundation.
+
+Changes in Oak 1.7.13
+---------------------
+
+Sub-task
+
+    [OAK-7013] - Replace usage in oak-auth-external
+    [OAK-7016] - Replace usage in oak-authorization-cug
+    [OAK-7017] - Replace usage in oak-core
+    [OAK-7022] - Prepare for usage of Root/TreeProvider in security
+    tests
+    [OAK-7028] - MongoDocumentStore.getStats() implementation
+    [OAK-7029] - RDBDocumentStore.getStats() implementation
+    [OAK-7032] - Remove usage of DocumentMK
+    [OAK-7049] - SecurityProviderBuilder : pass Root/TreeProvider to
+    SecurityConfigurations
+
+Technical task
+
+    [OAK-6959] - Remove package export for
+    org.apache.jackrabbit.oak.plugins.index.counter
+    [OAK-6960] - Remove package export for
+    org.apache.jackrabbit.oak.plugins.index.nodetype
+    [OAK-6961] - Remove package export for
+    org.apache.jackrabbit.oak.plugins.index.property.jmx
+    [OAK-7019] - RDBDocumentStore: refactor table upgrade code
+    [OAK-7023] - Replacement for DocumentMK.Builder
+    [OAK-7036] - add JDBC information to metadata map
+    [OAK-7037] - Remove package oaj.oak.commons.hash and move SipHash
+    to oak-core
+    [OAK-7039] - IndexDefinition should provides names of indexed
+    relative node names
+    [OAK-7040] - Fix unbindTreeProvider method on
+    SecurityProviderRegistration
+    [OAK-7059] - RDBDocumentStore.getStats() for MySQL
+    [OAK-7062] - RDB*Store: update mysql driver reference to 5.1.45
+    [OAK-7068] - RDBBlobStore may wrap SQLExceptions into
+    RuntimeExceptions
+    [OAK-7069] - RDBDataSourceWrapper: properly name
+    setTemporaryUpdateException
+    [OAK-7073] - Expose readOnly status for MongoDocumentStore
+
+Bug
+
+    [OAK-5896] - fix typo in Not condition handling
+    [OAK-6884] - TarMK disk space check is not synchronized with
+    FileStore opened state
+    [OAK-6950] - Active deletion can delete blobs from a shared store
+    when a clone setup is created
+    [OAK-6982] - Test failure:
+    TokenCleanupTest.testAllExpiredReachingThreshold
+    [OAK-6984] - High read IO in compaction retry cycles
+    [OAK-7007] - Test failure: FacetTest.testFacetsNA()
+    [OAK-7026] - DataStoreCheckTes#testConsistencyVerbose* test
+    failures
+    [OAK-7030] - DeleteOnCloseFileInputStream logs to the wrong logger
+    [OAK-7044] - Misleading log message by LeaseFailureHandler
+    [OAK-7045] - Incorrect module name in Utils.getModuleVersion()
+    [OAK-7052] - Active deletion purge can OOM if number of blobs
+    listed in a file become too large
+    [OAK-7053] - Commit fails even though change made it to the
+    DocumentStore
+    [OAK-7054] - Build failure: ClassNotFoundException:
+    solr.JsonUpdateRequestHandler
+    [OAK-7070] - rep:excerpt selector broken as regression of OAK-6750
+
+Improvement
+
+    [OAK-4318] - Upgrade oak-solr to Solr 5.x
+    [OAK-6353] - Use Document order traversal for reindexing performed
+    on DocumentNodeStore setups
+    [OAK-6806] - RDBDocumentStore: version GC does not scale when
+    there are many docs with long paths
+    [OAK-6867] - Enable index hints on UUID lookup query
+    [OAK-7010] - Replace usages of RootFactory/TreeFactory by service
+    reference
+    [OAK-7031] - DeleteOnCloseFileInputStream should properly handle
+    errors when deleting the file
+    [OAK-7038] - Make deletion of temp files resilient in some common
+    utility methods
+    [OAK-7042] - Pin async indexer on cluster leader
+    [OAK-7051] - Remove dangling reference to compress-interval system
+    property from oak-run documentation
+    [OAK-7055] - Expose observation queue max length as metric
+    [OAK-7064] - Remove duplicated code from the FileStore logging
+    implementation
+    [OAK-7066] - Active deletion blob list files can grow too large
+    due to inlined blobs
+    [OAK-7072] - Add log message upon compacted call in GCMonitor in
+    Lucene indexer
+    [OAK-7080] - Segment-Tar-Cold fixture should have options for
+    secure communication and one shot runs
+
+New Feature
+
+    [OAK-7021] - Collect DocumentStore stats as part of status zip
+    [OAK-7033] - MongoDocumentStore collection metrics
+
+Task
+
+    [OAK-5455] - Specify versions for maven plugins used in build for
+    ensuring stable builds
+    [OAK-6965] - RDBDocumentStore: allow schema evolution part 5: add
+    rows for performant VGC
+    [OAK-7035] - Retire oak-remote
+    [OAK-7046] - DocumentStore API: clarify key length
+    [OAK-7077] - Documentation for RDBDocumentStore statistics
+
+Test
+
+    [OAK-7047] - Enable DocumentNodeStoreServiceTest.preset()
+    [OAK-7061] - Run tests on travis-ci on MongoDB 3.4
+    [OAK-7063] - SolrOakRepositoryStub.preCreateRepository() throws
+    exception without cause
+
+In addition to the above-mentioned changes, this release contains
+all changes included up to the Apache Jackrabbit Oak 1.7.x release.
+
+For more detailed information about all the changes in this and other
+Oak releases, please see the Oak issue tracker at
+
+  https://issues.apache.org/jira/browse/OAK
+
+Release Contents
+----------------
+
+This release consists of a single source archive packaged as a zip file.
+The archive can be unpacked with the jar tool from your JDK installation.
+See the README.md file for instructions on how to build this release.
+
+The source archive is accompanied by SHA1 and MD5 checksums and a PGP
+signature that you can use to verify the authenticity of your download.
+The public key used for the PGP signature can be found at
+http://www.apache.org/dist/jackrabbit/KEYS.
+
+About Apache Jackrabbit Oak
+---------------------------
+
+Jackrabbit Oak is a scalable, high-performance hierarchical content
+repository designed for use as the foundation of modern world-class
+web sites and other demanding content applications.
+
+The Oak effort is a part of the Apache Jackrabbit project.
+Apache Jackrabbit is a project of the Apache Software Foundation.
+
+For more information, visit http://jackrabbit.apache.org/oak
+
+About The Apache Software Foundation
+------------------------------------
+
+Established in 1999, The Apache Software Foundation provides organizational,
+legal, and financial support for more than 140 freely-available,
+collaboratively-developed Open Source projects. The pragmatic Apache License
+enables individual and commercial users to easily deploy Apache software;
+the Foundation's intellectual property framework limits the legal exposure
+of its 3,800+ contributors.
+
+For more information, visit http://www.apache.org/

@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.executor.JobExecutorFactory.getJobExecutor : if null != r0 goto $z0 = r0 instanceof com.dangdang.ddframe.job.api.simple.SimpleJob
+com.dangdang.ddframe.job.executor.JobExecutorFactory.getJobExecutor : $r10 = new com.dangdang.ddframe.job.executor.type.ScriptJobExecutor

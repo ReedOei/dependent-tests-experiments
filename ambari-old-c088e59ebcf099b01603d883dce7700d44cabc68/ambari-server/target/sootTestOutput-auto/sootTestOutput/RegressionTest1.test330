@@ -1,0 +1,14 @@
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if r1 == null goto $z1 = <org.apache.ambari.server.utils.ShellCommandUtil: boolean WINDOWS>
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $i3 = lengthof r0
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $r6 = new java.lang.ProcessBuilder
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if z0 == 0 goto r19 = r0
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r22 = virtualinvoke $r6.<java.lang.ProcessBuilder: java.lang.Process start()>()
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $i5 = lengthof r0
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r19[0] = "ambari-sudo.sh"
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $z1 = <org.apache.ambari.server.utils.ShellCommandUtil: boolean WINDOWS>
+org.apache.ambari.server.utils.ShellCommandUtil.setFileMode : $s8 = 400
+org.apache.ambari.server.utils.ShellCommandUtil.setFileMode : $r15 = new org.apache.ambari.server.utils.ShellCommandUtil$Result
+org.apache.ambari.server.utils.ShellCommandUtil.setFileMode : $r13 = <org.apache.ambari.server.utils.ShellCommandUtil: org.slf4j.Logger LOG>
+org.apache.ambari.server.utils.ShellCommandUtil.setFileMode : $r7 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.utils.ShellCommandUtil.setFileMode : if z0 == 0 goto $s8 = 0
+org.apache.ambari.server.utils.ShellCommandUtil.setFileMode : $z9 = <org.apache.ambari.server.utils.ShellCommandUtil: boolean LINUX>

@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.getSessionTimeoutMilliseconds : $i0 = r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: int sessionTimeoutMilliseconds>
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.setConnectionTimeoutMilliseconds : r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: int connectionTimeoutMilliseconds> = i0

@@ -1,0 +1,49 @@
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTable : r3 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("CREATE TABLE `JOB_EXECUTION_LOG` (`id` VARCHAR(40) NOT NULL, `job_name` VARCHAR(100) NOT NULL, `task_id` VARCHAR(255) NOT NULL, `hostname` VARCHAR(255) NOT NULL, `ip` VARCHAR(50) NOT NULL, `sharding_item` INT NOT NULL, `execution_source` VARCHAR(20) NOT NULL, `failure_cause` VARCHAR(4000) NULL, `is_success` INT NOT NULL, `start_time` TIMESTAMP NULL, `complete_time` TIMESTAMP NULL, PRIMARY KEY (`id`));")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTable : interfaceinvoke r3.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTable : interfaceinvoke r3.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTable : if r3 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : r5 = interfaceinvoke r4.<java.sql.DatabaseMetaData: java.sql.ResultSet getIndexInfo(java.lang.String,java.lang.String,java.lang.String,boolean,boolean)>(null, null, r2, 0, 0)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : interfaceinvoke r5.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : z1 = 0
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : $r8 = interfaceinvoke r5.<java.sql.ResultSet: java.lang.String getString(java.lang.String)>("INDEX_NAME")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createTaskIdAndStateIndex(java.sql.Connection,java.lang.String)>(r1, r2)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : r4 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : $z2 = interfaceinvoke r5.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : if z1 != 0 goto (branch)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdIndexIfNeeded : if r5 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbConfiguration.createJobEventListener : $r2 = new com.dangdang.ddframe.job.event.rdb.JobEventRdbListener
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdAndStateIndex : interfaceinvoke r4.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdAndStateIndex : if r4 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdAndStateIndex : $r7 = new java.lang.StringBuilder
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdAndStateIndex : r4 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>(r3)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createTaskIdAndStateIndex : interfaceinvoke r4.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.event.rdb.DatabaseType$1.apply : $r2 = (com.dangdang.ddframe.job.event.rdb.DatabaseType) r1
+com.dangdang.ddframe.job.event.rdb.DatabaseType$1.apply : $r2 = staticinvoke <com.dangdang.ddframe.job.event.rdb.DatabaseType: java.lang.String access$000(com.dangdang.ddframe.job.event.rdb.DatabaseType)>(r1)
+com.dangdang.ddframe.job.event.rdb.DatabaseType.values : $r0 = <com.dangdang.ddframe.job.event.rdb.DatabaseType: com.dangdang.ddframe.job.event.rdb.DatabaseType[] $VALUES>
+com.dangdang.ddframe.job.event.rdb.DatabaseType.access$000 : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.DatabaseType: java.lang.String productName>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createJobExecutionTable(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : $r6 = newarray (java.lang.String)[1]
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : $z0 = interfaceinvoke r3.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : r2 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : if r3 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobExecutionTableAndIndexIfNeeded : interfaceinvoke r3.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTable : interfaceinvoke r3.<java.sql.PreparedStatement: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTable : interfaceinvoke r3.<java.sql.PreparedStatement: boolean execute()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTable : if r3 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTable : r3 = interfaceinvoke r1.<java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>("CREATE TABLE `JOB_STATUS_TRACE_LOG` (`id` VARCHAR(40) NOT NULL, `job_name` VARCHAR(100) NOT NULL, `original_task_id` VARCHAR(255) NOT NULL, `task_id` VARCHAR(255) NOT NULL, `slave_id` VARCHAR(50) NOT NULL, `source` VARCHAR(50) NOT NULL, `execution_type` VARCHAR(20) NOT NULL, `sharding_item` VARCHAR(100) NOT NULL, `state` VARCHAR(20) NOT NULL, `message` VARCHAR(4000) NULL, `creation_time` TIMESTAMP NULL, PRIMARY KEY (`id`));")
+com.dangdang.ddframe.job.event.rdb.DatabaseType.valueFrom : $r11 = virtualinvoke r1.<com.google.common.base.Optional: java.lang.Object get()>()
+com.dangdang.ddframe.job.event.rdb.DatabaseType.valueFrom : $z0 = virtualinvoke r1.<com.google.common.base.Optional: boolean isPresent()>()
+com.dangdang.ddframe.job.event.rdb.DatabaseType.valueFrom : $r2 = staticinvoke <com.dangdang.ddframe.job.event.rdb.DatabaseType: com.dangdang.ddframe.job.event.rdb.DatabaseType[] values()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : $r5 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : interfaceinvoke r1.<java.sql.Connection: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : if r1 == null goto return
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createJobStatusTraceTableAndIndexIfNeeded(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : $r4 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.initTablesAndIndexes : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createJobExecutionTableAndIndexIfNeeded(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : $r6 = newarray (java.lang.String)[1]
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : $z0 = interfaceinvoke r3.<java.sql.ResultSet: boolean next()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : r2 = interfaceinvoke r1.<java.sql.Connection: java.sql.DatabaseMetaData getMetaData()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createTaskIdIndexIfNeeded(java.sql.Connection,java.lang.String,java.lang.String)>(r1, "JOB_STATUS_TRACE_LOG", "TASK_ID_STATE_INDEX")
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createJobStatusTraceTable(java.sql.Connection)>(r1)
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : interfaceinvoke r3.<java.sql.ResultSet: void close()>()
+com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage.createJobStatusTraceTableAndIndexIfNeeded : if r3 == null goto specialinvoke r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbStorage: void createTaskIdIndexIfNeeded(java.sql.Connection,java.lang.String,java.lang.String)>(r1, "JOB_STATUS_TRACE_LOG", "TASK_ID_STATE_INDEX")

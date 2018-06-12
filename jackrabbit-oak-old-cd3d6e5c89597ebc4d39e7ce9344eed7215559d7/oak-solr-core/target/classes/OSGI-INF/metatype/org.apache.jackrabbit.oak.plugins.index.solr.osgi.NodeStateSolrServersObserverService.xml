@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/org.apache.jackrabbit.oak.plugins.index.solr.osgi.NodeStateSolrServersObserverService">
+    <OCD id="org.apache.jackrabbit.oak.plugins.index.solr.osgi.NodeStateSolrServersObserverService" name="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.NodeStateSolrServersObserverService.name" description="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.NodeStateSolrServersObserverService.description">
+        <AD id="enabled" type="Boolean" default="false" name="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.NodeStateSolrServersObserverService.enabled.name" description="%org.apache.jackrabbit.oak.plugins.index.solr.osgi.NodeStateSolrServersObserverService.enabled.description"/>
+    </OCD>
+    <Designate pid="org.apache.jackrabbit.oak.plugins.index.solr.osgi.NodeStateSolrServersObserverService">
+        <Object ocdref="org.apache.jackrabbit.oak.plugins.index.solr.osgi.NodeStateSolrServersObserverService"/>
+    </Designate>
+</metatype:MetaData>

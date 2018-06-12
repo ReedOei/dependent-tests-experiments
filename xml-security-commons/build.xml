@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="xml-security-commons">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="xml-security-commons.classpath">
+        <pathelement location="libs/bc-jce-jdk13-114.jar"/>
+        <pathelement location="libs/commons-logging-api.jar"/>
+        <pathelement location="libs/commons-logging.jar"/>
+        <pathelement location="libs/junit3.8.1.jar"/>
+        <pathelement location="libs/log4j-1.2.8.jar"/>
+        <pathelement location="libs/style-apachexml.jar"/>
+        <pathelement location="libs/stylebook-1.0-b3_xalan-2.jar"/>
+        <pathelement location="libs/xalan.jar"/>
+        <pathelement location="libs/xercesImpl.jar"/>
+        <pathelement location="libs/xml-apis.jar"/>
+        <pathelement location="libs/xmlParserAPIs.jar"/>
+    </path>
+    <target name="init"/>
+    <target name="clean"/>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>

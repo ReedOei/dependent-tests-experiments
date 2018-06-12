@@ -1,0 +1,5 @@
+org.apache.ambari.server.api.services.RequestBody.addPropertySet : $r2 = r0.<org.apache.ambari.server.api.services.RequestBody: java.util.Set m_propertySets>
+org.apache.ambari.server.api.services.NamedPropertySet.hashCode : $r1 = r0.<org.apache.ambari.server.api.services.NamedPropertySet: java.lang.String m_name>
+org.apache.ambari.server.api.services.NamedPropertySet.hashCode : $r4 = r0.<org.apache.ambari.server.api.services.NamedPropertySet: java.lang.String m_name>
+org.apache.ambari.server.api.services.NamedPropertySet.hashCode : $i0 = 31 * $i1
+org.apache.ambari.server.api.services.RequestBody.getNamedPropertySets : $r1 = r0.<org.apache.ambari.server.api.services.RequestBody: java.util.Set m_propertySets>

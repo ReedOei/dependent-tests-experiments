@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.util.SolrIndexInitializer.isSolrIndexNode : $r1 = "solr" >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.util.SolrIndexInitializer.isSolrIndexNode : $r2 = interfaceinvoke r0.<org.apache.jackrabbit.oak.spi.state.NodeState: java.lang.String getString(java.lang.String)>("type")

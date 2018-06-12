@@ -1,0 +1,7 @@
+de.htw.sdf.photoplatform.exception.common.AbstractBaseException.getErrors : $r1 = r0.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: org.springframework.validation.Errors errors>
+de.htw.sdf.photoplatform.webservice.BaseAPIController.handleException : $r6 = virtualinvoke r2.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: org.springframework.validation.Errors getErrors()>()
+de.htw.sdf.photoplatform.webservice.BaseAPIController.handleException : $r4 = new de.htw.sdf.photoplatform.exception.common.ResponseError
+de.htw.sdf.photoplatform.webservice.BaseAPIController.handleNotFoundException : $r3 = <org.springframework.http.HttpStatus: org.springframework.http.HttpStatus NOT_FOUND>
+de.htw.sdf.photoplatform.exception.common.AbstractBaseException.getCode : $i0 = r0.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: int code>
+de.htw.sdf.photoplatform.exception.common.ResponseError.getErrors : $r1 = r0.<de.htw.sdf.photoplatform.exception.common.ResponseError: java.util.Map errors>
+de.htw.sdf.photoplatform.exception.common.ResponseError.getCode : $i0 = r0.<de.htw.sdf.photoplatform.exception.common.ResponseError: int code>

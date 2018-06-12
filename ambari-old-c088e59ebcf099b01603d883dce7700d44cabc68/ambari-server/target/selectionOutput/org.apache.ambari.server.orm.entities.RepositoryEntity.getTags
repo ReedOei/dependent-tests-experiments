@@ -1,0 +1,6 @@
+org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : $r1 = r0.<org.apache.ambari.server.orm.entities.RepositoryEntity: java.util.Set tags> >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : if $r1 != null
+org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : if $r1 != null >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : $r2 = staticinvoke <java.util.Collections: java.util.Set emptySet()>()
+org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : if $r1 != null >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : $r2 = r0.<org.apache.ambari.server.orm.entities.RepositoryEntity: java.util.Set tags>
+org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : $r2 = r0.<org.apache.ambari.server.orm.entities.RepositoryEntity: java.util.Set tags> >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : return $r2
+org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : $r2 = staticinvoke <java.util.Collections: java.util.Set emptySet()>() >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : goto [?= return $r2]
+org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : goto [?= return $r2] >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryEntity.getTags : return $r2

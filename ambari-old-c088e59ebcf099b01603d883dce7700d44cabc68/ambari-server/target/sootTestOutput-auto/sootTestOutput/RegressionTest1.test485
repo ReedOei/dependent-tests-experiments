@@ -1,0 +1,3 @@
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.getDefaultValue : $r1 = r0.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object m_defaultValue>
+org.apache.ambari.server.security.AmbariViewsSecurityHeaderFilter.checkPrerequisites : interfaceinvoke r1.<javax.servlet.ServletRequest: void setAttribute(java.lang.String,java.lang.Object)>("deny.header.overrides.flag", "true")
+org.apache.ambari.server.security.AbstractSecurityHeaderFilter.doFilter : $z0 = virtualinvoke r0.<org.apache.ambari.server.security.AbstractSecurityHeaderFilter: boolean checkPrerequisites(javax.servlet.ServletRequest)>(r1)

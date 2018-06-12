@@ -1,0 +1,7 @@
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptorFactory.createInstances : $r6 = new org.apache.ambari.server.AmbariException
+org.apache.ambari.server.state.kerberos.KerberosServiceDescriptorFactory.createInstances : $r3 = virtualinvoke r0.<org.apache.ambari.server.state.kerberos.KerberosServiceDescriptorFactory: java.util.Map parseJSON(java.lang.String)>(r1)
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorFactory.parseJSON : $r6 = virtualinvoke $r5.<org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorFactory$2: java.lang.reflect.Type getType()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorFactory.parseJSON : if r1 == null goto $r3 = staticinvoke <java.util.Collections: java.util.Map emptyMap()>()
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorFactory.parseJSON : $r4 = new com.google.gson.Gson
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorFactory.parseJSON : $r10 = new org.apache.ambari.server.AmbariException
+org.apache.ambari.server.state.kerberos.AbstractKerberosDescriptorFactory.parseJSON : $z0 = virtualinvoke r1.<java.lang.String: boolean isEmpty()>()

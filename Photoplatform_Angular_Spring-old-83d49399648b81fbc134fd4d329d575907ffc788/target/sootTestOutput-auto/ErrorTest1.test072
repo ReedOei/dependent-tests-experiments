@@ -1,0 +1,12 @@
+de.htw.sdf.photoplatform.persistence.model.Image.getName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String name>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getThumbnail : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.ImageData thumbnail>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : if r1 == null goto return 0
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : if r0 != r1 goto (branch)
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setImageIds : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.util.List imageIds> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.toString : $r1 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setId : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: long id> = l0
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImagesFromCollection : $r8 = r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.repository.CollectionDAO collectionDAO>
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImagesFromCollection : if r2 != null goto (branch)
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImagesFromCollection : $z0 = interfaceinvoke r3.<java.util.List: boolean isEmpty()>()
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteImagesFromCollection : if r3 == null goto $r7 = new de.htw.sdf.photoplatform.exception.common.ManagerException

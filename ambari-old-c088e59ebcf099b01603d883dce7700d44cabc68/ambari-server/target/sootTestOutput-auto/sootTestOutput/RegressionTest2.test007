@@ -1,0 +1,3 @@
+org.apache.ambari.server.controller.utilities.PropertyHelper.readPropertyProviderIds : $r45 = new java.lang.IllegalStateException
+org.apache.ambari.server.controller.utilities.PropertyHelper.readPropertyProviderIds : $r14 = new org.codehaus.jackson.map.ObjectMapper
+org.apache.ambari.server.controller.utilities.PropertyHelper.readPropertyProviderIds : $r15 = staticinvoke <java.lang.ClassLoader: java.io.InputStream getSystemResourceAsStream(java.lang.String)>(r0)

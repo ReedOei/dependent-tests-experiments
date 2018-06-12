@@ -1,0 +1,3 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket.onWebSocketClose : $r2 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket.onWebSocketClose : $r4 = staticinvoke <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient getInstance()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getInstance : $r0 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient instance>

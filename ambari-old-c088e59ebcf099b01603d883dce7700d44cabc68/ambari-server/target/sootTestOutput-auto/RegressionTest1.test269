@@ -1,0 +1,7 @@
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.getMetricsConfiguration : if r0 == null goto return null
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.getMetricsConfiguration : r0 = staticinvoke <org.apache.ambari.server.metrics.system.impl.MetricsConfiguration: java.util.Properties readConfigFile()>()
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.readConfigFile : if r1 != null goto virtualinvoke $r2.<java.util.Properties: void load(java.io.InputStream)>(r1)
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.readConfigFile : $r3 = class "Lorg/apache/ambari/server/metrics/system/impl/MetricsConfiguration;"
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.readConfigFile : $r5 = <org.apache.ambari.server.metrics.system.impl.MetricsConfiguration: org.slf4j.Logger LOG>
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.readConfigFile : $r2 = new java.util.Properties
+org.apache.ambari.server.metrics.system.impl.MetricsConfiguration.readConfigFile : return null

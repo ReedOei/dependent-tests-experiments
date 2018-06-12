@@ -1,0 +1,2 @@
+org.apache.ambari.server.update.HostUpdateHelper.setHostChangesFile : r0.<org.apache.ambari.server.update.HostUpdateHelper: java.lang.String hostChangesFile> = r1
+org.apache.ambari.server.update.HostUpdateHelper.getHostChangesFile : $r1 = r0.<org.apache.ambari.server.update.HostUpdateHelper: java.lang.String hostChangesFile>

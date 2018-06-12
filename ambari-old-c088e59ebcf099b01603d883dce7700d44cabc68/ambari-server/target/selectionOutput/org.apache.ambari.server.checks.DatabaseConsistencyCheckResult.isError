@@ -1,0 +1,6 @@
+org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : $r1 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckResult: org.apache.ambari.server.checks.DatabaseConsistencyCheckResult DB_CHECK_ERROR> >>>>>>>> org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : if r0 != $r1
+org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : if r0 != $r1 >>>>>>>> org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : $z0 = 1
+org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : if r0 != $r1 >>>>>>>> org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : $z0 = 0
+org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : $z0 = 0 >>>>>>>> org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : return $z0
+org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : $z0 = 1 >>>>>>>> org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : goto [?= return $z0]
+org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : goto [?= return $z0] >>>>>>>> org.apache.ambari.server.checks.DatabaseConsistencyCheckResult.isError : return $z0

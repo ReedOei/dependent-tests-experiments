@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.addImagesToCollection : if r3 == null goto $r11 = new de.htw.sdf.photoplatform.exception.common.ManagerException
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.addImagesToCollection : $r10 = new java.util.ArrayList

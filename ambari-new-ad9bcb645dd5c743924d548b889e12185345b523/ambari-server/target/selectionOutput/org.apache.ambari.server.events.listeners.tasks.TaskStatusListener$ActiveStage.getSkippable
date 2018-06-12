@@ -1,0 +1,1 @@
+org.apache.ambari.server.events.listeners.tasks.TaskStatusListener$ActiveStage.getSkippable : $r1 = r0.<org.apache.ambari.server.events.listeners.tasks.TaskStatusListener$ActiveStage: java.lang.Boolean skippable> >>>>>>>> org.apache.ambari.server.events.listeners.tasks.TaskStatusListener$ActiveStage.getSkippable : return $r1

@@ -1,0 +1,2 @@
+org.apache.ambari.server.stack.StackManager.validateStackDirectory : $r4 = <org.apache.ambari.server.stack.StackManager: org.slf4j.Logger LOG>
+org.apache.ambari.server.stack.StackManager.validateStackDirectory : r2 = virtualinvoke r1.<java.io.File: java.lang.String getAbsolutePath()>()

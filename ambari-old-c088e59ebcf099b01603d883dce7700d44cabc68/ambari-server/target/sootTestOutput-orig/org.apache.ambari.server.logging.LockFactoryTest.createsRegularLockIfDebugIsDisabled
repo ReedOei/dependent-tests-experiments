@@ -1,0 +1,7 @@
+org.apache.ambari.server.logging.LockFactory.newLock : $r4 = new java.util.concurrent.locks.ReentrantLock
+org.apache.ambari.server.logging.LockFactory.newLock : $r1 = staticinvoke <org.apache.ambari.server.logging.LockFactory: java.lang.String getDefaultPrefix()>()
+org.apache.ambari.server.logging.LockFactory.newLock : $z0 = r0.<org.apache.ambari.server.logging.LockFactory: boolean profiling>
+org.apache.ambari.server.logging.LockFactory.newLock : return $r4
+org.apache.ambari.server.logging.LockFactory.getDefaultPrefix : $r1 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>()
+org.apache.ambari.server.logging.LockFactory.getDefaultPrefix : $r3 = r0[3]
+org.apache.ambari.server.logging.LockFactory.getDefaultPrefix : $i0 = lengthof r0

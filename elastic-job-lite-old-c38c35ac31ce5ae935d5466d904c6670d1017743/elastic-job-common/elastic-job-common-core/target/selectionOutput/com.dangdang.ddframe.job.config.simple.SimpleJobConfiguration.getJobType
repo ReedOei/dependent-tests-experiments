@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.config.simple.SimpleJobConfiguration.getJobType : $r1 = r0.<com.dangdang.ddframe.job.config.simple.SimpleJobConfiguration: com.dangdang.ddframe.job.api.JobType jobType> >>>>>>>> com.dangdang.ddframe.job.config.simple.SimpleJobConfiguration.getJobType : return $r1

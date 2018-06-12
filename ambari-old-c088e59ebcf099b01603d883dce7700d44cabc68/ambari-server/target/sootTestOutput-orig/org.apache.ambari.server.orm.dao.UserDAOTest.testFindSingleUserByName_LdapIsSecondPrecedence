@@ -1,0 +1,41 @@
+org.apache.ambari.server.orm.entities.UserEntity.getUserType : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.UserEntity: org.apache.ambari.server.security.authorization.UserType _persistence_get_userType()>()
+org.apache.ambari.server.orm.dao.UserDAOTest$1.configure : virtualinvoke r0.<org.apache.ambari.server.orm.dao.UserDAOTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/UserDAOTest$EntityManagerProvider;")
+org.apache.ambari.server.orm.dao.UserDAOTest$1.configure : $r2 = virtualinvoke r0.<org.apache.ambari.server.orm.dao.UserDAOTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Ljavax/persistence/EntityManager;")
+org.apache.ambari.server.orm.dao.UserDAOTest$1.configure : $r6 = virtualinvoke r0.<org.apache.ambari.server.orm.dao.UserDAOTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/DaoUtils;")
+org.apache.ambari.server.orm.dao.UserDAOTest$1.configure : $r4 = virtualinvoke r0.<org.apache.ambari.server.orm.dao.UserDAOTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/DBAccessor;")
+org.apache.ambari.server.orm.dao.UserDAOTest.init : $r19 = staticinvoke <org.easymock.EasyMock: java.lang.String anyString()>()
+org.apache.ambari.server.orm.dao.UserDAOTest.init : $r9 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/DBAccessor;")
+org.apache.ambari.server.orm.dao.UserDAOTest.init : $r12 = interfaceinvoke r5.<com.google.inject.Injector: java.lang.Object getInstance(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/UserDAO;")
+org.apache.ambari.server.orm.dao.UserDAOTest.init : $r7 = staticinvoke <org.easymock.EasyMock: java.lang.Object createStrictMock(java.lang.Class)>(class "Ljavax/persistence/EntityManager;")
+org.apache.ambari.server.orm.dao.UserDAOTest.init : $r25 = newarray (java.lang.Object)[4]
+org.apache.ambari.server.orm.dao.UserDAOTest.init : $r14 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Ljavax/persistence/TypedQuery;")
+org.apache.ambari.server.orm.dao.UserDAOTest.init : $r15 = interfaceinvoke r6.<javax.persistence.TypedQuery: java.util.List getResultList()>()
+org.apache.ambari.server.orm.dao.UserDAOTest.init : $r10 = newarray (com.google.inject.Module)[1]
+org.apache.ambari.server.orm.dao.UserDAOTest.init : $r8 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Lorg/apache/ambari/server/orm/dao/DaoUtils;")
+org.apache.ambari.server.security.authorization.UserName.toString : $r1 = r0.<org.apache.ambari.server.security.authorization.UserName: java.lang.String userName>
+org.apache.ambari.server.security.authorization.UserName.rejectIfContainsAnyOf : $r3 = staticinvoke <java.lang.Character: java.lang.String toString(char)>(c1)
+org.apache.ambari.server.security.authorization.UserName.rejectIfContainsAnyOf : i0 = lengthof r1
+org.apache.ambari.server.security.authorization.UserName.rejectIfContainsAnyOf : c1 = r1[i2]
+org.apache.ambari.server.orm.dao.UserDAOTest.user : $r3 = new org.apache.ambari.server.orm.entities.UserEntity
+org.apache.ambari.server.orm.dao.UserDAOTest.user : $r1 = <org.apache.ambari.server.orm.dao.UserDAOTest: java.lang.String SERVICEOP_USER_NAME>
+org.apache.ambari.server.orm.dao.UserDAOTest.user : virtualinvoke $r3.<org.apache.ambari.server.orm.entities.UserEntity: void setUserType(org.apache.ambari.server.security.authorization.UserType)>(r1)
+org.apache.ambari.server.orm.dao.UserDAOTest.user : return $r3
+org.apache.ambari.server.orm.dao.UserDAOTest.user : $r4 = staticinvoke <org.apache.ambari.server.security.authorization.UserName: org.apache.ambari.server.security.authorization.UserName fromString(java.lang.String)>(r0)
+org.apache.ambari.server.security.authorization.UserName.fromString : $r1 = new org.apache.ambari.server.security.authorization.UserName
+org.apache.ambari.server.orm.entities.UserEntity.setUserType : virtualinvoke r0.<org.apache.ambari.server.orm.entities.UserEntity: void _persistence_set_userType(org.apache.ambari.server.security.authorization.UserType)>(r1)
+org.apache.ambari.server.orm.entities.UserEntity.setUserName : $r2 = virtualinvoke r1.<org.apache.ambari.server.security.authorization.UserName: java.lang.String toString()>()
+org.apache.ambari.server.security.authorization.UserName.validated : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r0)
+org.apache.ambari.server.security.authorization.UserName.validated : $r1 = <org.apache.ambari.server.security.authorization.UserName: char[] FORBIDDEN_CHARS>
+org.apache.ambari.server.security.authorization.UserName.validated : return r0
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : goto [?= $z0 = interfaceinvoke r27.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : r3 = interfaceinvoke r2.<javax.persistence.TypedQuery: java.util.List getResultList()>()
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : r27 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : $r14 = <org.apache.ambari.server.security.authorization.UserType: org.apache.ambari.server.security.authorization.UserType LDAP>
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : r4 = staticinvoke <com.google.common.collect.ImmutableMap: com.google.common.collect.ImmutableMap$Builder builder()>()
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : $r12 = <org.apache.ambari.server.security.authorization.UserType: org.apache.ambari.server.security.authorization.UserType LOCAL>
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : $i0 = interfaceinvoke r3.<java.util.List: int size()>()
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : $r25 = virtualinvoke r28.<org.apache.ambari.server.orm.entities.UserEntity: org.apache.ambari.server.security.authorization.UserType getUserType()>()
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : $r24 = interfaceinvoke r27.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : $r8 = virtualinvoke r1.<java.lang.String: java.lang.String toLowerCase()>()
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : $r5 = r0.<org.apache.ambari.server.orm.dao.UserDAO: com.google.inject.Provider entityManagerProvider>
+org.apache.ambari.server.orm.dao.UserDAO.findSingleUserByName : r29 = virtualinvoke r4.<com.google.common.collect.ImmutableMap$Builder: com.google.common.collect.ImmutableMap build()>()

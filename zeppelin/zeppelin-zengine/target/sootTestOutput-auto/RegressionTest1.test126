@@ -1,0 +1,2 @@
+org.apache.zeppelin.notebook.Folder.countNotes : $r1 = r0.<org.apache.zeppelin.notebook.Folder: java.util.Map notes>
+org.apache.zeppelin.notebook.Folder.hasChild : $r1 = r0.<org.apache.zeppelin.notebook.Folder: java.util.Map children>

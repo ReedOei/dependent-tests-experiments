@@ -1,0 +1,69 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessage.newMessage : $r3 = new org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessage
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getZeppelinConnection : $r4 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.eclipse.jetty.websocket.api.Session getNoteSession(java.lang.String,java.lang.String,java.lang.String)>(r1, r2, r3)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getZeppelinConnection : $z0 = staticinvoke <org.apache.commons.lang3.StringUtils: boolean isBlank(java.lang.CharSequence)>(r1)
+org.apache.zeppelin.notebook.Note.generateId : $r1 = staticinvoke <org.apache.zeppelin.notebook.utility.IdHashes: java.lang.String generateId()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.countConnectedNotes : $r1 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: java.util.concurrent.ConcurrentHashMap notesConnection>
+org.apache.zeppelin.notebook.utility.IdHashes.generateId : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.zeppelin.notebook.Note.setIndex : r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.search.SearchService index> = r1
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.openNoteSession : $r9 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.eclipse.jetty.websocket.client.WebSocketClient wsClient>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.openNoteSession : $r10 = interfaceinvoke r19.<java.util.concurrent.Future: java.lang.Object get()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.openNoteSession : $r18 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.openNoteSession : virtualinvoke $r6.<org.eclipse.jetty.websocket.client.ClientUpgradeRequest: void setHeader(java.lang.String,java.lang.String)>("Origin", "*")
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.openNoteSession : return null
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.openNoteSession : $r6 = new org.eclipse.jetty.websocket.client.ClientUpgradeRequest
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.openNoteSession : $r7 = new org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket
+org.apache.zeppelin.notebook.Note.generateSingleParagraphInfo : $r6 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.Note.generateSingleParagraphInfo : $r7 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.removeNoteConnection : $r9 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.removeNoteConnection : $z0 = staticinvoke <org.apache.commons.lang3.StringUtils: boolean isBlank(java.lang.CharSequence)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.removeNoteConnection : $r3 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: java.util.concurrent.ConcurrentHashMap notesConnection>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket.onWebSocketError : $r3 = staticinvoke <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient getInstance()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket.onWebSocketError : $r2 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinWebsocket: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.Note.getConfig : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.notebook.Note.getConfig : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.send : $r9 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.send : $r5 = r1.<org.apache.zeppelin.notebook.socket.Message: java.lang.String principal>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.send : $z0 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: boolean isSessionOpen(org.eclipse.jetty.websocket.api.Session)>(r3)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.initialize : $r4 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.initialize : $r3 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient instance>
+org.apache.zeppelin.notebook.NoteInfo.getConfig : $r1 = r0.<org.apache.zeppelin.notebook.NoteInfo: java.util.Map config>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.isSessionOpen : if r1 == null goto $z1 = 0
+org.apache.zeppelin.notebook.Note.getId : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String id>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getNoteSession : r10 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.eclipse.jetty.websocket.api.Session openNoteSession(java.lang.String,java.lang.String,java.lang.String)>(r1, r2, r3)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getNoteSession : $r7 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getNoteSession : $r5 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: java.util.concurrent.ConcurrentHashMap notesConnection>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getNoteSession : $r4 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getNoteSession : $z0 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: boolean isSessionOpen(org.eclipse.jetty.websocket.api.Session)>(r10)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getNoteSession : return r10
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getNoteSession : $r8 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: java.util.concurrent.ConcurrentHashMap notesConnection>
+org.apache.zeppelin.notebook.Note.setName : r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.notebook.Note.setName : r0.<org.apache.zeppelin.notebook.Note: java.lang.String name> = r3
+org.apache.zeppelin.notebook.Note.setName : $r4 = r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.notebook.NoteNameListener noteNameListener>
+org.apache.zeppelin.notebook.Note.setName : $i0 = virtualinvoke r3.<java.lang.String: int indexOf(int)>(47)
+org.apache.zeppelin.notebook.Note.setName : $i1 = virtualinvoke r3.<java.lang.String: int indexOf(int)>(92)
+org.apache.zeppelin.notebook.NoteInfo.getName : $r1 = r0.<org.apache.zeppelin.notebook.NoteInfo: java.lang.String name>
+org.apache.zeppelin.notebook.Note.setCredentials : r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.user.Credentials credentials> = r1
+org.apache.zeppelin.notebook.Note.getName : $r2 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: java.lang.String getId()>()
+org.apache.zeppelin.notebook.Note.getName : $z0 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: boolean isNameEmpty()>()
+org.apache.zeppelin.notebook.Note.getName : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r16 = <java.math.BigInteger: java.math.BigInteger ZERO>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $i4 = interfaceinvoke $r5.<java.util.List: int size()>()
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r5 = new java.util.ArrayList
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r6 = new java.math.BigInteger
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r17 = new java.lang.StringBuffer
+org.apache.zeppelin.notebook.utility.IdHashes.encode : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("r22 = virtualinvoke $r6.<java.math.BigInteger: java.math.BigInteger pow(int)>(i5)", "org.apache.zeppelin.notebook.utility.IdHashes.encode")]
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r22 = virtualinvoke $r6.<java.math.BigInteger: java.math.BigInteger pow(int)>(i5)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r4 = virtualinvoke r23.<java.math.BigInteger: java.math.BigInteger divide(java.math.BigInteger)>(r3)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r23 = virtualinvoke r21.<java.math.BigInteger: java.math.BigInteger mod(java.math.BigInteger)>(r22)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r21 = virtualinvoke r21.<java.math.BigInteger: java.math.BigInteger subtract(java.math.BigInteger)>(r23)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r19 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(i6)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r12 = new java.math.BigInteger
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $i1 = i5 - 1
+org.apache.zeppelin.notebook.utility.IdHashes.encode : i5 = i5 + 1
+org.apache.zeppelin.notebook.utility.IdHashes.encode : goto [?= $r17 = new java.lang.StringBuffer]
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r14 = <org.apache.zeppelin.notebook.utility.IdHashes: char[] DICTIONARY>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r18 = virtualinvoke $r17.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.zeppelin.notebook.utility.IdHashes.encode : i5 = 1
+org.apache.zeppelin.notebook.Note.isNameEmpty : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient.getInstance : $r0 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinClient instance>
+org.apache.zeppelin.notebook.NoteInfo.getId : $r1 = r0.<org.apache.zeppelin.notebook.NoteInfo: java.lang.String id>

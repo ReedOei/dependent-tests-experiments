@@ -1,0 +1,1 @@
+org.apache.accumulo.master.tableOps.TraceRepo.call : $r5 = new org.apache.accumulo.core.trace.thrift.TInfo

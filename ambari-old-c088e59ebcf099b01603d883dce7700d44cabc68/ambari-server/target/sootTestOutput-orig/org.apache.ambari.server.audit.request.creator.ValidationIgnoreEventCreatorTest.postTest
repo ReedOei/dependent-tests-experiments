@@ -1,0 +1,52 @@
+org.apache.ambari.server.controller.spi.Resource$Type.equals : return 1
+org.apache.ambari.server.controller.spi.Resource$Type.equals : if r0 != r1 goto (branch)
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.isIncompatible : $r6 = interfaceinvoke r1.<org.apache.ambari.server.audit.request.eventcreator.RequestAuditEventCreator: java.util.Set getResultStatuses()>()
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.isIncompatible : $r11 = interfaceinvoke r1.<org.apache.ambari.server.audit.request.eventcreator.RequestAuditEventCreator: java.util.Set getRequestTypes()>()
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.isIncompatible : $r5 = interfaceinvoke r1.<org.apache.ambari.server.audit.request.eventcreator.RequestAuditEventCreator: java.util.Set getRequestTypes()>()
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$2.getStatus : $r1 = r0.<org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$2: org.apache.ambari.server.api.services.ResultStatus val$status>
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$1.getResource : $r1 = new org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$1$1
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.getEvent : interfaceinvoke $r7.<java.util.Set: boolean add(java.lang.Object)>(r0)
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.getEvent : $z1 = interfaceinvoke r4.<org.apache.ambari.server.audit.AuditLogger: boolean isEnabled()>()
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.getEvent : interfaceinvoke $r18.<org.apache.ambari.server.audit.request.RequestAuditLogger: void log(org.apache.ambari.server.api.services.Request,org.apache.ambari.server.api.services.Result)>(r1, r2)
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.getEvent : $r7 = new java.util.HashSet
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.getEvent : r5 = staticinvoke <org.easymock.EasyMock: org.easymock.Capture newCapture()>()
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.getEvent : $r17 = newarray (java.lang.Object)[1]
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.getEvent : $r18 = new org.apache.ambari.server.audit.request.RequestAuditLoggerImpl
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.getEvent : $r14 = staticinvoke <org.easymock.EasyMock: java.lang.Object capture(org.easymock.Capture)>(r5)
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.getEvent : $r8 = staticinvoke <org.easymock.EasyMock: java.lang.Object createNiceMock(java.lang.Class)>(class "Lorg/apache/ambari/server/audit/AuditLogger;")
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.getEvent : staticinvoke <org.easymock.EasyMock: org.easymock.IExpectationSetters expectLastCall()>()
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.getEvent : $r19 = virtualinvoke r5.<org.easymock.Capture: java.lang.Object getValue()>()
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.createRequest : $r5 = new org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$1
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.createRequest : $r4 = staticinvoke <org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper: org.apache.ambari.server.api.services.Request createRequest(org.apache.ambari.server.api.services.Request$Type,org.apache.ambari.server.controller.spi.Resource$Type,java.util.Map,java.util.Map,java.lang.String)>(r0, r1, r2, r3, "")
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$1.getRequestType : $r1 = r0.<org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$1: org.apache.ambari.server.api.services.Request$Type val$requestType>
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.createResult : $r1 = staticinvoke <org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper: org.apache.ambari.server.api.services.Result createResult(org.apache.ambari.server.api.services.ResultStatus,org.apache.ambari.server.api.util.TreeNode)>(r0, null)
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper.createResult : $r2 = new org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$2
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.getPriority : $i0 = virtualinvoke r10.<java.lang.Integer: int intValue()>()
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.getPriority : r10 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(0)
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.getPriority : $z0 = specialinvoke r0.<org.apache.ambari.server.audit.request.RequestAuditLoggerImpl: boolean isIncompatible(org.apache.ambari.server.audit.request.eventcreator.RequestAuditEventCreator,org.apache.ambari.server.controller.spi.Resource$Type,org.apache.ambari.server.api.services.ResultStatus,org.apache.ambari.server.api.services.Request$Type)>(r1, r2, r3, r4)
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.getPriority : $r9 = interfaceinvoke r1.<org.apache.ambari.server.audit.request.eventcreator.RequestAuditEventCreator: java.util.Set getRequestTypes()>()
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.getPriority : $b1 = 1
+org.apache.ambari.server.audit.request.eventcreator.ValidationIgnoreEventCreator.getResultStatuses : return null
+org.apache.ambari.server.audit.request.eventcreator.ValidationIgnoreEventCreator.getResourceTypes : $r1 = r0.<org.apache.ambari.server.audit.request.eventcreator.ValidationIgnoreEventCreator: java.util.Set resourceTypes>
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.log : r4 = interfaceinvoke r1.<org.apache.ambari.server.api.services.Request: org.apache.ambari.server.api.services.Request$Type getRequestType()>()
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.log : $r8 = r0.<org.apache.ambari.server.audit.request.RequestAuditLoggerImpl: org.apache.ambari.server.audit.AuditLogger auditLogger>
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.log : r6 = specialinvoke r0.<org.apache.ambari.server.audit.request.RequestAuditLoggerImpl: org.apache.ambari.server.audit.request.eventcreator.RequestAuditEventCreator selectCreator(org.apache.ambari.server.controller.spi.Resource$Type,org.apache.ambari.server.api.services.ResultStatus,org.apache.ambari.server.api.services.Request$Type)>(r3, r5, r4)
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.log : if r6 == null goto return
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.log : r7 = interfaceinvoke r6.<org.apache.ambari.server.audit.request.eventcreator.RequestAuditEventCreator: org.apache.ambari.server.audit.event.AuditEvent createAuditEvent(org.apache.ambari.server.api.services.Request,org.apache.ambari.server.api.services.Result)>(r1, r2)
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.log : r5 = interfaceinvoke r2.<org.apache.ambari.server.api.services.Result: org.apache.ambari.server.api.services.ResultStatus getStatus()>()
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.log : if r7 == null goto return
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.log : $r9 = interfaceinvoke r1.<org.apache.ambari.server.api.services.Request: org.apache.ambari.server.api.resources.ResourceInstance getResource()>()
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$1$1.getResourceDefinition : $r1 = new org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$1$1$1
+org.apache.ambari.server.audit.request.eventcreator.ValidationIgnoreEventCreator.getRequestTypes : $r1 = r0.<org.apache.ambari.server.audit.request.eventcreator.ValidationIgnoreEventCreator: java.util.Set requestTypes>
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.selectCreator : r6 = specialinvoke r0.<org.apache.ambari.server.audit.request.RequestAuditLoggerImpl: java.lang.Integer getPriority(org.apache.ambari.server.audit.request.eventcreator.RequestAuditEventCreator,org.apache.ambari.server.controller.spi.Resource$Type,org.apache.ambari.server.api.services.ResultStatus,org.apache.ambari.server.api.services.Request$Type)>(r5, r1, r2, r3)
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.selectCreator : r9 = null
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.selectCreator : $i0 = virtualinvoke r10.<java.lang.Integer: int intValue()>()
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.selectCreator : r9 = r5
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.selectCreator : $r7 = r0.<org.apache.ambari.server.audit.request.RequestAuditLoggerImpl: java.util.Set creators>
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.selectCreator : if r6 == null goto (branch)
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.selectCreator : r10 = r6
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.selectCreator : r10 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(-1)
+org.apache.ambari.server.audit.request.RequestAuditLoggerImpl.selectCreator : $r8 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestBase.beforeClass : $r0 = new org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestBase$1
+org.apache.ambari.server.audit.request.eventcreator.ValidationIgnoreEventCreator.createAuditEvent : return null
+org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$1$1$1.getType : $r1 = r0.<org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$1$1$1: org.apache.ambari.server.audit.request.creator.AuditEventCreatorTestHelper$1$1 this$1>

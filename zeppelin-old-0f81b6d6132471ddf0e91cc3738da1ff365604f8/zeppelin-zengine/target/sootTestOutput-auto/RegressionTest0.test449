@@ -1,0 +1,1 @@
+org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher.launch : $r7 = <org.apache.zeppelin.interpreter.launcher.ShellScriptLauncher: org.slf4j.Logger LOGGER>

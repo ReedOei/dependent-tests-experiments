@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.webservice.controller.PhotographerController.deleteCollection : r2 = virtualinvoke r0.<de.htw.sdf.photoplatform.webservice.controller.PhotographerController: de.htw.sdf.photoplatform.persistence.model.User getAuthenticatedUser()>()
+de.htw.sdf.photoplatform.webservice.BaseAPIController.getAuthenticatedUser : $r1 = r0.<de.htw.sdf.photoplatform.webservice.BaseAPIController: de.htw.sdf.photoplatform.webservice.controller.AuthorizationController authorizationController>

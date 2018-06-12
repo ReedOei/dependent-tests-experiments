@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.persistence.model.UserImage.getOwner : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.User owner> >>>>>>>> de.htw.sdf.photoplatform.persistence.model.UserImage.getOwner : return $r1

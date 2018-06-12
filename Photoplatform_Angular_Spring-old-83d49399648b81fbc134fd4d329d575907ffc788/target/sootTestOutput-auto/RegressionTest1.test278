@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.webservice.dto.UserData.setPhone : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String phone> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.setId : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.Long id> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.setEnabled : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: boolean enabled> = z0

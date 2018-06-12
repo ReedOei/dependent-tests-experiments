@@ -1,0 +1,9 @@
+com.alibaba.dubbo.config.spring.SimpleRegistryExporter.export : $r2 = <com.alibaba.dubbo.config.spring.SimpleRegistryExporter: com.alibaba.dubbo.rpc.Protocol protocol>
+com.alibaba.dubbo.config.spring.SimpleRegistryExporter.export : $r14 = virtualinvoke $r13.<com.alibaba.dubbo.common.URL: com.alibaba.dubbo.common.URL addParameter(java.lang.String,java.lang.String)>("callbacks", "1000")
+com.alibaba.dubbo.config.spring.SimpleRegistryExporter.export : $r13 = virtualinvoke $r12.<com.alibaba.dubbo.common.URL: com.alibaba.dubbo.common.URL addParameter(java.lang.String,java.lang.String)>("sticky", "true")
+com.alibaba.dubbo.config.spring.SimpleRegistryExporter.export : $r7 = class "Lcom/alibaba/dubbo/registry/RegistryService;"
+com.alibaba.dubbo.config.spring.SimpleRegistryExporter.export : $r15 = virtualinvoke $r14.<com.alibaba.dubbo.common.URL: com.alibaba.dubbo.common.URL addParameter(java.lang.String,java.lang.String)>("ondisconnect", "disconnect")
+com.alibaba.dubbo.config.spring.SimpleRegistryExporter.export : $r17 = virtualinvoke $r16.<com.alibaba.dubbo.common.URL: com.alibaba.dubbo.common.URL addParameter(java.lang.String,java.lang.String)>("unsubscribe.1.callback", "false")
+com.alibaba.dubbo.config.spring.SimpleRegistryExporter.export : $r1 = new com.alibaba.dubbo.common.URL
+com.alibaba.dubbo.config.spring.SimpleRegistryExporter.export : $r16 = virtualinvoke $r15.<com.alibaba.dubbo.common.URL: com.alibaba.dubbo.common.URL addParameter(java.lang.String,java.lang.String)>("subscribe.1.callback", "true")
+com.alibaba.dubbo.config.spring.SimpleRegistryExporter.export : $r10 = class "Lcom/alibaba/dubbo/registry/RegistryService;"

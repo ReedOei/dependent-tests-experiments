@@ -1,0 +1,2 @@
+org.apache.zeppelin.search.LuceneSearch.close : $r2 = r0.<org.apache.zeppelin.search.LuceneSearch: org.apache.lucene.index.IndexWriter writer>
+org.apache.zeppelin.search.LuceneSearch.close : goto [?= return]

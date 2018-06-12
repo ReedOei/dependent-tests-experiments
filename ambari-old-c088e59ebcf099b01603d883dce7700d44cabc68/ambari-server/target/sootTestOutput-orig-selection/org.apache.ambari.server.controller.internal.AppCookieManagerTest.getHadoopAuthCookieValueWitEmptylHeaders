@@ -1,0 +1,4 @@
+org.apache.ambari.server.controller.internal.AppCookieManager.getHadoopAuthCookieValue : if r0 != null >>>>>>>> org.apache.ambari.server.controller.internal.AppCookieManager.getHadoopAuthCookieValue : i0 = lengthof r0
+org.apache.ambari.server.controller.internal.AppCookieManager.getHadoopAuthCookieValue : i0 = lengthof r0 >>>>>>>> org.apache.ambari.server.controller.internal.AppCookieManager.getHadoopAuthCookieValue : i2 = 0
+org.apache.ambari.server.controller.internal.AppCookieManager.getHadoopAuthCookieValue : i2 = 0 >>>>>>>> org.apache.ambari.server.controller.internal.AppCookieManager.getHadoopAuthCookieValue : if i2 >= i0
+org.apache.ambari.server.controller.internal.AppCookieManager.getHadoopAuthCookieValue : if i2 >= i0 >>>>>>>> org.apache.ambari.server.controller.internal.AppCookieManager.getHadoopAuthCookieValue : return null

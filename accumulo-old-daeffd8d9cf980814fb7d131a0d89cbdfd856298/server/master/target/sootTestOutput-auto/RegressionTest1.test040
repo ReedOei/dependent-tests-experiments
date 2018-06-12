@@ -1,0 +1,2 @@
+org.apache.accumulo.master.state.TableStats.lastScanFinished : $l0 = r0.<org.apache.accumulo.master.state.TableStats: long endScan>
+org.apache.accumulo.master.state.TableStats.getLastMasterState : $r1 = r0.<org.apache.accumulo.master.state.TableStats: org.apache.accumulo.core.master.thrift.MasterState state>

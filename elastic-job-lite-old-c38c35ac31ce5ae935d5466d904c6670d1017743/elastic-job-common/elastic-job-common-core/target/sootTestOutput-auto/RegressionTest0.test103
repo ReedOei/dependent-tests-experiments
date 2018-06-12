@@ -1,0 +1,7 @@
+com.dangdang.ddframe.job.event.rdb.DatabaseType.access$000 : $r1 = r0.<com.dangdang.ddframe.job.event.rdb.DatabaseType: java.lang.String productName>
+com.dangdang.ddframe.job.event.rdb.DatabaseType.valueFrom : $z0 = virtualinvoke r1.<com.google.common.base.Optional: boolean isPresent()>()
+com.dangdang.ddframe.job.event.rdb.DatabaseType.valueFrom : $r6 = new java.lang.RuntimeException
+com.dangdang.ddframe.job.event.rdb.DatabaseType.valueFrom : $r2 = staticinvoke <com.dangdang.ddframe.job.event.rdb.DatabaseType: com.dangdang.ddframe.job.event.rdb.DatabaseType[] values()>()
+com.dangdang.ddframe.job.event.rdb.DatabaseType$1.apply : $r2 = (com.dangdang.ddframe.job.event.rdb.DatabaseType) r1
+com.dangdang.ddframe.job.event.rdb.DatabaseType$1.apply : $r2 = staticinvoke <com.dangdang.ddframe.job.event.rdb.DatabaseType: java.lang.String access$000(com.dangdang.ddframe.job.event.rdb.DatabaseType)>(r1)
+com.dangdang.ddframe.job.event.rdb.DatabaseType.values : $r0 = <com.dangdang.ddframe.job.event.rdb.DatabaseType: com.dangdang.ddframe.job.event.rdb.DatabaseType[] $VALUES>

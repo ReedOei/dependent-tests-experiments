@@ -1,0 +1,2 @@
+org.apache.ambari.server.state.RepositoryType.isPartial : $r1 = <org.apache.ambari.server.state.RepositoryType: java.util.EnumSet PARTIAL> >>>>>>>> org.apache.ambari.server.state.RepositoryType.isPartial : $z0 = virtualinvoke $r1.<java.util.EnumSet: boolean contains(java.lang.Object)>(r0)
+org.apache.ambari.server.state.RepositoryType.isPartial : $z0 = virtualinvoke $r1.<java.util.EnumSet: boolean contains(java.lang.Object)>(r0) >>>>>>>> org.apache.ambari.server.state.RepositoryType.isPartial : return $z0

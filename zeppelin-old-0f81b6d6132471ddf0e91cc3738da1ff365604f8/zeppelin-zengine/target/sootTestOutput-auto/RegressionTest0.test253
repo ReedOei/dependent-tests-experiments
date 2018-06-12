@@ -1,0 +1,6 @@
+org.apache.zeppelin.notebook.Folder.notifyRenamed : $r4 = r0.<org.apache.zeppelin.notebook.Folder: java.util.List listeners>
+org.apache.zeppelin.notebook.Folder.setParent : r0.<org.apache.zeppelin.notebook.Folder: org.apache.zeppelin.notebook.Folder parent> = r1
+org.apache.zeppelin.notebook.Folder.setParent : $r2 = <org.apache.zeppelin.notebook.Folder: org.slf4j.Logger logger>
+org.apache.zeppelin.notebook.Folder.getId : $r1 = r0.<org.apache.zeppelin.notebook.Folder: java.lang.String id>
+org.apache.zeppelin.notebook.Folder.removeChild : $r2 = <org.apache.zeppelin.notebook.Folder: org.slf4j.Logger logger>
+org.apache.zeppelin.notebook.Folder.removeChild : $r4 = r0.<org.apache.zeppelin.notebook.Folder: java.util.Map children>

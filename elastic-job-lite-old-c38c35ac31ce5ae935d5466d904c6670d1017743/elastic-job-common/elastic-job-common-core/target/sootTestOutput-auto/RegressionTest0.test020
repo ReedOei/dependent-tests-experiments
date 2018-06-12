@@ -1,0 +1,3 @@
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getEventCount : i0 = 0
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.getEventCount : $r10 = r0.<com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch: javax.sql.DataSource dataSource>
+com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch.findJobStatusTraceEvents : $r2 = new com.dangdang.ddframe.job.event.rdb.JobEventRdbSearch$Result

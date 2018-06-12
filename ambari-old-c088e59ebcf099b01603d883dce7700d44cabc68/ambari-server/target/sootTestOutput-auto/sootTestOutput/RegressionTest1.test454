@@ -1,0 +1,2 @@
+org.apache.ambari.server.ldap.service.ads.detectors.ChainedAttributeDetector.detect : $r4 = r0.<org.apache.ambari.server.ldap.service.ads.detectors.ChainedAttributeDetector: java.util.Set detectors>
+org.apache.ambari.server.ldap.service.ads.detectors.ChainedAttributeDetector.detect : r1 = staticinvoke <com.google.common.collect.Maps: java.util.HashMap newHashMap()>()

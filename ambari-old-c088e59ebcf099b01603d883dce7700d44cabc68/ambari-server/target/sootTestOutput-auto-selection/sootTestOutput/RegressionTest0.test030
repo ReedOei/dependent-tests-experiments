@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.internal.UpgradeResourceProvider$ConfigurationPackBuilder.build : r1 = virtualinvoke r0.<org.apache.ambari.server.state.UpgradeContext: org.apache.ambari.server.state.stack.UpgradePack getUpgradePack()>()

@@ -1,0 +1,38 @@
+org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule.ignoreHostWhenComponentCountIs : $r0 = new org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule
+org.apache.ambari.server.controller.AuthToLocalBuilder$Principal.toString : $r1 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder$Principal: java.lang.String principal>
+org.apache.ambari.server.controller.AuthToLocalBuilder.appendRule : goto [?= virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2)]
+org.apache.ambari.server.controller.AuthToLocalBuilder.appendRule : virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(r2)
+org.apache.ambari.server.controller.AuthToLocalBuilder.appendRule : $i0 = virtualinvoke r1.<java.lang.StringBuilder: int length()>()
+org.apache.ambari.server.controller.AuthToLocalBuilder.appendRule : $r5 = <org.apache.ambari.server.controller.AuthToLocalBuilder$1: int[] $SwitchMap$org$apache$ambari$server$controller$AuthToLocalBuilder$ConcatenationType>
+org.apache.ambari.server.controller.AuthToLocalBuilder.appendRule : virtualinvoke r1.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(10)
+org.apache.ambari.server.controller.AuthToLocalBuilder$Substitution.toString : $r1 = newarray (java.lang.Object)[4]
+org.apache.ambari.server.controller.AuthToLocalBuilder$Rule.toString : $r1 = newarray (java.lang.Object)[3]
+org.apache.ambari.server.controller.AuthToLocalBuilder$Rule.compareTo : if i5 != 0 goto return i5
+org.apache.ambari.server.controller.AuthToLocalBuilder$Rule.compareTo : $r2 = (org.apache.ambari.server.controller.AuthToLocalBuilder$Rule) r1
+org.apache.ambari.server.controller.AuthToLocalBuilder$Rule.compareTo : $r11 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder$Rule: org.apache.ambari.server.controller.AuthToLocalBuilder$Principal principal>
+org.apache.ambari.server.controller.AuthToLocalBuilder$Rule.compareTo : $r6 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder$Rule: org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule matchingRule>
+org.apache.ambari.server.controller.AuthToLocalBuilder$Rule.compareTo : $r17 = virtualinvoke r0.<org.apache.ambari.server.controller.AuthToLocalBuilder$Rule: java.lang.String toString()>()
+org.apache.ambari.server.controller.AuthToLocalBuilder$Rule.compareTo : return i5
+org.apache.ambari.server.controller.AuthToLocalBuilder$Rule.compareTo : $r8 = r1.<org.apache.ambari.server.controller.AuthToLocalBuilder$Rule: org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule matchingRule>
+org.apache.ambari.server.controller.AuthToLocalBuilder$Principal.equals : return 1
+org.apache.ambari.server.controller.AuthToLocalBuilder$Principal.equals : if r0 != r1 goto (branch)
+org.apache.ambari.server.controller.AuthToLocalBuilder.createDefaultRealmRule : $r3 = staticinvoke <org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule: org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule ignoreHostWhenComponentCountIs(int)>(1)
+org.apache.ambari.server.controller.AuthToLocalBuilder.createDefaultRealmRule : $r2 = new org.apache.ambari.server.controller.AuthToLocalBuilder$Rule
+org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule.toString : $r1 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule: java.lang.String realmPattern>
+org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule.toString : $i1 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule: int expectedComponentCount>
+org.apache.ambari.server.controller.AuthToLocalBuilder.addRules : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isEmpty(java.lang.String)>(r1)
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : goto [?= $z12 = interfaceinvoke r26.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : $z9 = 1
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : if r22 != null goto $r4 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder: java.util.Set setRules>
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : $r19 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder: java.util.Set setRules>
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : $r2 = new java.lang.StringBuilder
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : $r6 = interfaceinvoke r26.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : $r1 = virtualinvoke r0.<org.apache.ambari.server.controller.AuthToLocalBuilder: java.lang.String generate(org.apache.ambari.server.controller.AuthToLocalBuilder$ConcatenationType)>(null)
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : $r16 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder: java.util.Set setRules>
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : specialinvoke r0.<org.apache.ambari.server.controller.AuthToLocalBuilder: void appendRule(java.lang.StringBuilder,java.lang.String,org.apache.ambari.server.controller.AuthToLocalBuilder$ConcatenationType)>($r2, "DEFAULT", r22)
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : $r3 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder: java.lang.String defaultRealm>
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : r22 = <org.apache.ambari.server.controller.AuthToLocalBuilder: org.apache.ambari.server.controller.AuthToLocalBuilder$ConcatenationType DEFAULT_CONCATENATION_TYPE>
+org.apache.ambari.server.controller.AuthToLocalBuilder.generate : $r7 = virtualinvoke r27.<org.apache.ambari.server.controller.AuthToLocalBuilder$Rule: java.lang.String toString()>()
+org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule.matchComponentCount : $r3 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule: java.lang.String matchPattern>
+org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule.matchComponentCount : $r1 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule: java.lang.String matchPattern>
+org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule.access$000 : $i0 = r0.<org.apache.ambari.server.controller.AuthToLocalBuilder$MatchingRule: int expectedComponentCount>

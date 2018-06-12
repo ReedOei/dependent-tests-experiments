@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.UserAuthorizationResponse.getUserName : $r1 = r0.<org.apache.ambari.server.controller.UserAuthorizationResponse: java.lang.String userName> >>>>>>>> org.apache.ambari.server.controller.UserAuthorizationResponse.getUserName : return $r1

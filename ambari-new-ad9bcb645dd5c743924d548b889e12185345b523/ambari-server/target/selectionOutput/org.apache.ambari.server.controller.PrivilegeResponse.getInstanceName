@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.PrivilegeResponse.getInstanceName : $r1 = r0.<org.apache.ambari.server.controller.PrivilegeResponse: java.lang.String instanceName> >>>>>>>> org.apache.ambari.server.controller.PrivilegeResponse.getInstanceName : return $r1

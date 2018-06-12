@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.webservice.controller.AuthenticationController.register : $r4 = virtualinvoke r1.<de.htw.sdf.photoplatform.webservice.dto.UserRegister: java.lang.String getPassword()>()
+de.htw.sdf.photoplatform.webservice.controller.AuthenticationController.register : $r4 = virtualinvoke r1.<de.htw.sdf.photoplatform.webservice.dto.UserRegister: java.lang.String getPassword()>()

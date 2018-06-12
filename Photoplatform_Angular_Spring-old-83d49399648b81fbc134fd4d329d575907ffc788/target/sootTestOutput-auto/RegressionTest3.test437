@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.persistence.model.CollectionImage.setImage : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionImage: de.htw.sdf.photoplatform.persistence.model.Image image> = r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.getId : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getCreatedAt : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.util.Date createdAt>

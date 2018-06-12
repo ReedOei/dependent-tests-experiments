@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.security.TokenUtils.createToken : $r1 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.security.TokenUtils.createToken : $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>()

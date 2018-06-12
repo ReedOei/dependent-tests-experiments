@@ -1,0 +1,13 @@
+de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange.getNewPassword : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String newPassword>
+de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange.getPasswordConfirm : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String passwordConfirm>
+de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange.getPassword : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String password>
+de.htw.sdf.photoplatform.exception.common.AbstractBaseException.getErrors : $r1 = r0.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: org.springframework.validation.Errors errors>
+de.htw.sdf.photoplatform.webservice.BaseAPIController.handleException : $r6 = virtualinvoke r2.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: org.springframework.validation.Errors getErrors()>()
+de.htw.sdf.photoplatform.webservice.BaseAPIController.handleException : $r4 = new de.htw.sdf.photoplatform.exception.common.ResponseError
+de.htw.sdf.photoplatform.webservice.BaseAPIController.handleNotFoundException : $r3 = <org.springframework.http.HttpStatus: org.springframework.http.HttpStatus NOT_FOUND>
+de.htw.sdf.photoplatform.webservice.controller.UserController.changePassword : $r8 = virtualinvoke r1.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String getNewPassword()>()
+de.htw.sdf.photoplatform.webservice.controller.UserController.changePassword : $r26 = r0.<de.htw.sdf.photoplatform.webservice.controller.UserController: de.htw.sdf.photoplatform.common.Messages messages>
+de.htw.sdf.photoplatform.webservice.controller.UserController.changePassword : $r25 = new org.springframework.validation.FieldError
+de.htw.sdf.photoplatform.webservice.controller.UserController.changePassword : $r9 = virtualinvoke r1.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String getPasswordConfirm()>()
+de.htw.sdf.photoplatform.exception.common.AbstractBaseException.getCode : $i0 = r0.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: int code>
+de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange.setNewPassword : r0.<de.htw.sdf.photoplatform.webservice.dto.UserPasswordChange: java.lang.String newPassword> = r1

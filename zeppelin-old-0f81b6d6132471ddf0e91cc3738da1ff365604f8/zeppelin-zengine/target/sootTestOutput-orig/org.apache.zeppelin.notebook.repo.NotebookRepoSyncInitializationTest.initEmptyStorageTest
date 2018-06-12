@@ -1,0 +1,24 @@
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepoCount : $r1 = r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: java.util.List repos>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getPath : $r12 = new java.lang.StringBuilder
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getPath : $r4 = virtualinvoke r1.<java.lang.String: java.lang.String trim()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getPath : $z0 = virtualinvoke r1.<java.lang.String: boolean startsWith(java.lang.String)>("/")
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getPath : if r1 == null goto $r2 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: java.net.URI filesystemRoot>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getRootDir : $r2 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.commons.vfs2.FileSystemManager fsManager>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getRootDir : $z1 = specialinvoke r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: boolean isDirectory(org.apache.commons.vfs2.FileObject)>(r1)
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getRootDir : $z0 = interfaceinvoke r1.<org.apache.commons.vfs2.FileObject: boolean exists()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.getRootDir : return r1
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $z1 = interfaceinvoke r24.<org.apache.commons.vfs2.FileObject: boolean exists()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r2 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r8 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: org.apache.commons.vfs2.FileSystemManager fsManager>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r4 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: java.net.URI filesystemRoot>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r17 = virtualinvoke $r12.<java.io.File: java.net.URI toURI()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : goto [?= $r4 = r0.<org.apache.zeppelin.notebook.repo.VFSNotebookRepo: java.net.URI filesystemRoot>]
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r3 = new java.net.URI
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r6 = staticinvoke <org.apache.commons.vfs2.VFS: org.apache.commons.vfs2.FileSystemManager getManager()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.setNotebookDirectory : $r12 = new java.io.File
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepo : if i0 < 0 goto $r1 = new java.io.IOException
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepo : $i2 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: int getRepoCount()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getRepo : $r8 = r0.<org.apache.zeppelin.notebook.repo.NotebookRepoSync: java.util.List repos>
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.isDirectory : if r1 != null goto $r2 = interfaceinvoke r1.<org.apache.commons.vfs2.FileObject: org.apache.commons.vfs2.FileType getType()>()
+org.apache.zeppelin.notebook.repo.VFSNotebookRepo.isDirectory : $r2 = interfaceinvoke r1.<org.apache.commons.vfs2.FileObject: org.apache.commons.vfs2.FileType getType()>()
+org.apache.zeppelin.notebook.repo.NotebookRepoSync.getMaxRepoNum : return 2

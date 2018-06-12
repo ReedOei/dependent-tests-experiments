@@ -1,0 +1,43 @@
+org.apache.ambari.server.topology.ConfigurationFactoryTest.getOldSyntaxConfigProps : interfaceinvoke $r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("foo-type/prop1", "prop1Value")
+org.apache.ambari.server.topology.ConfigurationFactoryTest.getOldSyntaxConfigProps : interfaceinvoke $r8.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("bar-type/prop3", "prop3Value")
+org.apache.ambari.server.topology.ConfigurationFactoryTest.getOldSyntaxConfigProps : interfaceinvoke $r4.<java.util.Collection: boolean add(java.lang.Object)>($r5)
+org.apache.ambari.server.topology.ConfigurationFactoryTest.getOldSyntaxConfigProps : interfaceinvoke $r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("foo-type/prop2", "prop2Value")
+org.apache.ambari.server.topology.ConfigurationFactoryTest.getOldSyntaxConfigProps : interfaceinvoke $r4.<java.util.Collection: boolean add(java.lang.Object)>($r8)
+org.apache.ambari.server.topology.ConfigurationFactoryTest.getOldSyntaxConfigProps : $r8 = new java.util.HashMap
+org.apache.ambari.server.topology.ConfigurationFactoryTest.getOldSyntaxConfigProps : $r5 = new java.util.HashMap
+org.apache.ambari.server.topology.ConfigurationFactoryTest.getOldSyntaxConfigProps : $r4 = new java.util.ArrayList
+org.apache.ambari.server.topology.ConfigurationFactoryTest.getOldSyntaxConfigProps : return $r4
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : $r13 = new org.apache.ambari.server.topology.Configuration
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : $r17 = interfaceinvoke r9.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : $r19 = interfaceinvoke r9.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : $r12 = new java.util.HashMap
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : if r1 == null goto return $r13
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : $r16 = interfaceinvoke r8.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : $r14 = interfaceinvoke r5.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : r5 = interfaceinvoke r1.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : $r15 = interfaceinvoke r6.<java.util.Map: java.util.Set entrySet()>()
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : goto [?= $z1 = interfaceinvoke r8.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : r7 = specialinvoke r0.<org.apache.ambari.server.topology.ConfigurationFactory: org.apache.ambari.server.topology.ConfigurationFactory$ConfigurationStrategy decidePopulationStrategy(java.util.Map)>(r6)
+org.apache.ambari.server.topology.ConfigurationFactory.getConfiguration : $r11 = new java.util.HashMap
+org.apache.ambari.server.topology.Configuration.setProperty : return r4
+org.apache.ambari.server.topology.Configuration.setProperty : $r5 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map properties>
+org.apache.ambari.server.topology.Configuration.setProperty : interfaceinvoke r11.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r2, r3)
+org.apache.ambari.server.topology.Configuration.setProperty : if r11 != null goto interfaceinvoke r11.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r2, r3)
+org.apache.ambari.server.topology.Configuration.setProperty : $r8 = new java.util.HashMap
+org.apache.ambari.server.topology.Configuration.setProperty : $r9 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map properties>
+org.apache.ambari.server.topology.Configuration.setProperty : r4 = virtualinvoke r0.<org.apache.ambari.server.topology.Configuration: java.lang.String getPropertyValue(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.ambari.server.topology.ConfigurationFactory.decidePopulationStrategy : if i0 != 2 goto (branch)
+org.apache.ambari.server.topology.ConfigurationFactory.decidePopulationStrategy : r3 = virtualinvoke r2.<java.lang.String: java.lang.String[] split(java.lang.String)>("/")
+org.apache.ambari.server.topology.ConfigurationFactory.decidePopulationStrategy : i0 = lengthof r3
+org.apache.ambari.server.topology.ConfigurationFactory.decidePopulationStrategy : r4 = r3[1]
+org.apache.ambari.server.topology.ConfigurationFactory.decidePopulationStrategy : $z0 = interfaceinvoke r1.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.topology.ConfigurationFactory.decidePopulationStrategy : if r1 == null goto $r5 = new org.apache.ambari.server.topology.ConfigurationFactory$ConfigurationStrategyV2
+org.apache.ambari.server.topology.ConfigurationFactory.decidePopulationStrategy : $r13 = new org.apache.ambari.server.topology.ConfigurationFactory$ConfigurationStrategyV1
+org.apache.ambari.server.topology.ConfigurationFactory.decidePopulationStrategy : $r6 = interfaceinvoke r1.<java.util.Map: java.util.Set keySet()>()
+org.apache.ambari.server.topology.ConfigurationFactory$ConfigurationStrategyV1.setConfiguration : $r5 = r2[0]
+org.apache.ambari.server.topology.Configuration.getAttributes : $r1 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map attributes>
+org.apache.ambari.server.topology.Configuration.getProperties : $r1 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map properties>
+org.apache.ambari.server.topology.Configuration.getPropertyValue : $r3 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map properties>
+org.apache.ambari.server.topology.Configuration.getPropertyValue : r13 = null
+org.apache.ambari.server.topology.Configuration.getPropertyValue : $r6 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map properties>
+org.apache.ambari.server.topology.Configuration.getPropertyValue : $r4 = r0.<org.apache.ambari.server.topology.Configuration: org.apache.ambari.server.topology.Configuration parentConfiguration>

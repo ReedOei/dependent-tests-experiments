@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.webservice.dto.UserData.isEnabled : $z0 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: boolean enabled>
+de.htw.sdf.photoplatform.webservice.dto.UserData.setIban : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String iban> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getRoles : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.util.List roles>
+de.htw.sdf.photoplatform.webservice.dto.UserData.getLastName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String lastName>

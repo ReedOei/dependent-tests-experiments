@@ -1,0 +1,2 @@
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.toJson : $r1 = <org.apache.zeppelin.interpreter.InterpreterInfoSaving: com.google.gson.Gson gson> >>>>>>>> org.apache.zeppelin.interpreter.InterpreterInfoSaving.toJson : $r2 = virtualinvoke $r1.<com.google.gson.Gson: java.lang.String toJson(java.lang.Object)>(r0)
+org.apache.zeppelin.interpreter.InterpreterInfoSaving.toJson : $r2 = virtualinvoke $r1.<com.google.gson.Gson: java.lang.String toJson(java.lang.Object)>(r0) >>>>>>>> org.apache.zeppelin.interpreter.InterpreterInfoSaving.toJson : return $r2

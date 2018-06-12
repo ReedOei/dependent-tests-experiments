@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.dto.UserCredential.getEmail : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserCredential: java.lang.String email>

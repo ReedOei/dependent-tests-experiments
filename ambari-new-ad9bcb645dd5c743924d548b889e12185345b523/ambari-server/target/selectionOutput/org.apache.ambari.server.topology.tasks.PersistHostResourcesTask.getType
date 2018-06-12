@@ -1,0 +1,1 @@
+org.apache.ambari.server.topology.tasks.PersistHostResourcesTask.getType : $r1 = <org.apache.ambari.server.topology.tasks.TopologyTask$Type: org.apache.ambari.server.topology.tasks.TopologyTask$Type RESOURCE_CREATION> >>>>>>>> org.apache.ambari.server.topology.tasks.PersistHostResourcesTask.getType : return $r1

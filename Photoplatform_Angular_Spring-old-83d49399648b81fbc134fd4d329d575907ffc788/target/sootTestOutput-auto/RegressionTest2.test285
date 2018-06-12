@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setCreatedBy : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String createdBy> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.persistence.model.Image.setMime : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime> = r1
+de.htw.sdf.photoplatform.persistence.model.Image.setThumbPath : r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String thumbPath> = r1

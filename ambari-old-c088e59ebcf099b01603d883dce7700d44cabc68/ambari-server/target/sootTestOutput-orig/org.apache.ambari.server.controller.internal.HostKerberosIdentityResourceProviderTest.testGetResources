@@ -1,0 +1,2 @@
+org.apache.ambari.server.orm.entities.KerberosKeytabPrincipalEntity.setDistributed : $z0 = virtualinvoke r1.<java.lang.Boolean: boolean booleanValue()>()
+org.apache.ambari.server.orm.entities.KerberosKeytabPrincipalEntity.setDistributed : $b0 = 1

@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ActiveWidgetLayoutResponse.getScope : $r1 = r0.<org.apache.ambari.server.controller.ActiveWidgetLayoutResponse: java.lang.String scope> >>>>>>>> org.apache.ambari.server.controller.ActiveWidgetLayoutResponse.getScope : return $r1

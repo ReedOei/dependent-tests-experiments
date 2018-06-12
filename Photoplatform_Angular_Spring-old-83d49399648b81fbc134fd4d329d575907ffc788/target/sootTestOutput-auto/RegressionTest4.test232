@@ -1,0 +1,48 @@
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : r3 = r2[2]
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $r5 = r2[1]
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : r4 = staticinvoke <de.htw.sdf.photoplatform.security.TokenUtils: java.lang.String computeSignature(org.springframework.security.core.userdetails.UserDetails,long)>(r1, l0)
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : r2 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>(":")
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $z0 = virtualinvoke r3.<java.lang.String: boolean equals(java.lang.Object)>(r4)
+de.htw.sdf.photoplatform.persistence.model.User.getPassword : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String password>
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getIban : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String iban>
+de.htw.sdf.photoplatform.persistence.model.User.setEnabled : r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean enabled> = z0
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.setClazz : r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: java.lang.Class clazz> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setIban : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String iban> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setPhone : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String phone> = r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getUpdatedAt : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.util.Date updatedAt>
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : if r2 != null goto $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : return 0
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : r2 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.getEntityManager : $r1 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.persistence.model.User.getFirstName : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String firstName>
+de.htw.sdf.photoplatform.persistence.model.User.setPhotographerData : r0.<de.htw.sdf.photoplatform.persistence.model.User: de.htw.sdf.photoplatform.persistence.model.PhotographerData photographerData> = r1
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.createQuery : $r2 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.persistence.model.UserImage.setOwner : r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.User owner> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setCollections : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.util.List collections> = r1
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r16 = virtualinvoke $r15.<java.lang.String: byte[] getBytes()>()
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r10 = interfaceinvoke r0.<org.springframework.security.core.userdetails.UserDetails: java.lang.String getPassword()>()
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r8 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l0)
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : goto [?= $r14 = new java.lang.String]
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r4 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r5 = interfaceinvoke r0.<org.springframework.security.core.userdetails.UserDetails: java.lang.String getUsername()>()
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("obfuscate")
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>("MD5")
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r14 = new java.lang.String
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getCollections : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.util.List collections>
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setPaypalID : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String paypalID> = r1
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.getUserImagesBy : $r5 = virtualinvoke r2.<java.lang.StringBuilder: java.lang.String toString()>()
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.getUserImagesBy : r2 = specialinvoke r0.<de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl: java.lang.StringBuilder initSelectQuery()>()
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.getUserImagesBy : virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("WHERE user.id = ?1")
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initSelectQuery : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("LEFT JOIN FETCH userImage.user user ")
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initSelectQuery : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("LEFT JOIN FETCH userImage.image image ")
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initSelectQuery : $r2 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initSelectQuery : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("LEFT JOIN FETCH userImage.owner owner ")
+de.htw.sdf.photoplatform.repository.impl.UserImageDAOImpl.initSelectQuery : return $r2
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getPhone : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String phone>
+de.htw.sdf.photoplatform.persistence.model.User.isPhotographer : $z0 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean isRoleIncluded(java.lang.String)>("ROLE_PHOTOGRAPHER")
+de.htw.sdf.photoplatform.persistence.model.User.getUserRoles : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List userRoles>
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : r3 = interfaceinvoke r0.<java.util.List: java.util.Iterator iterator()>()
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : $r6 = new java.util.ArrayList
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : $r1 = <java.lang.Boolean: java.lang.Boolean FALSE>
+de.htw.sdf.photoplatform.persistence.model.User.getUsername : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String email>

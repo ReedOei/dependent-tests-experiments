@@ -1,0 +1,58 @@
+org.apache.ambari.server.controller.internal.Stack$ConfigProperty.getPropertyTypes : $r1 = r0.<org.apache.ambari.server.controller.internal.Stack$ConfigProperty: java.util.Set propertyTypes>
+org.apache.ambari.server.controller.internal.Stack$ConfigProperty.getType : $r1 = r0.<org.apache.ambari.server.controller.internal.Stack$ConfigProperty: java.lang.String type>
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.addTomissingProperties : if r1 != null goto $r4 = new java.util.TreeMap
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.addTomissingProperties : $r4 = new java.util.TreeMap
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.addTomissingProperties : $z0 = interfaceinvoke r10.<java.util.Map: boolean containsKey(java.lang.Object)>(r2)
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.addTomissingProperties : $r7 = new java.util.TreeSet
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.addTomissingProperties : return r10
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.addTomissingProperties : $r5 = interfaceinvoke r10.<java.util.Map: java.lang.Object get(java.lang.Object)>(r2)
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r27 = <org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r21 = <org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r9 = interfaceinvoke r1.<org.apache.ambari.server.topology.Blueprint: java.util.Collection getServices()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r17 = <org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r8 = new java.util.HashMap
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r10 = <org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r26 = newarray (java.lang.Object)[3]
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r13 = interfaceinvoke r1.<org.apache.ambari.server.topology.Blueprint: org.apache.ambari.server.controller.internal.Stack getStack()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r14 = new java.util.HashMap
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r16 = virtualinvoke r7.<org.apache.ambari.server.controller.internal.Stack$ConfigProperty: java.util.Set getPropertyTypes()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r25 = virtualinvoke r7.<org.apache.ambari.server.controller.internal.Stack$ConfigProperty: java.lang.String getName()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r12 = <org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : interfaceinvoke $r8.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r4, r37)
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r23 = virtualinvoke r7.<org.apache.ambari.server.controller.internal.Stack$ConfigProperty: java.lang.String getType()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : r6 = interfaceinvoke r5.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r15 = interfaceinvoke r6.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : goto [?= $z5 = interfaceinvoke r6.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r11 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r32 = interfaceinvoke $r8.<java.util.Map: java.lang.Object get(java.lang.Object)>(r4)
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $z1 = interfaceinvoke $r8.<java.util.Map: boolean containsKey(java.lang.Object)>(r4)
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r19 = new java.util.HashSet
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.getRequiredPropertiesByService : $r30 = virtualinvoke r7.<org.apache.ambari.server.controller.internal.Stack$ConfigProperty: java.lang.String getType()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : goto [?= $z2 = interfaceinvoke r60.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r46 = interfaceinvoke r5.<org.apache.ambari.server.topology.HostGroup: java.lang.String getName()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r32 = interfaceinvoke r5.<org.apache.ambari.server.topology.HostGroup: java.util.Collection getServices()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $z4 = interfaceinvoke $r28.<java.util.Map: boolean containsKey(java.lang.Object)>(r9)
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r14 = new java.util.HashMap
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r13 = new java.util.TreeMap
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r34 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r63)
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r25 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r38 = interfaceinvoke r7.<java.util.Map: java.lang.Object get(java.lang.Object)>(r9)
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r33 = interfaceinvoke r62.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r28 = new java.util.HashMap
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r50 = interfaceinvoke r61.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : interfaceinvoke $r37.<java.util.Collection: boolean removeAll(java.util.Collection)>(r11)
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : goto [?= $z9 = interfaceinvoke r8.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r12 = interfaceinvoke r1.<org.apache.ambari.server.topology.ClusterTopology: org.apache.ambari.server.topology.Blueprint getBlueprint()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r17 = interfaceinvoke r1.<org.apache.ambari.server.topology.ClusterTopology: org.apache.ambari.server.topology.Blueprint getBlueprint()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $z1 = interfaceinvoke r59.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r40 = interfaceinvoke $r28.<java.util.Map: java.lang.Object get(java.lang.Object)>(r9)
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r26 = <org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r36 = interfaceinvoke r8.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r37 = new java.util.HashSet
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r51 = interfaceinvoke r61.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r29 = interfaceinvoke r5.<org.apache.ambari.server.topology.HostGroup: org.apache.ambari.server.topology.Configuration getConfiguration()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r35 = interfaceinvoke r7.<java.util.Map: java.util.Set keySet()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $z3 = interfaceinvoke r2.<java.util.Map: boolean containsKey(java.lang.Object)>(r63)
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $r49 = interfaceinvoke r60.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.validators.RequiredConfigPropertiesValidator.validate : $z6 = interfaceinvoke $r37.<java.util.Collection: boolean isEmpty()>()
+org.apache.ambari.server.controller.internal.Stack$ConfigProperty.getName : $r1 = r0.<org.apache.ambari.server.controller.internal.Stack$ConfigProperty: java.lang.String name>

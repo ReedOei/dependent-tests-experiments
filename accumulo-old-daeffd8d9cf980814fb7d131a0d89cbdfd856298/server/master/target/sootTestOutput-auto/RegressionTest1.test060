@@ -1,0 +1,1 @@
+org.apache.accumulo.master.tableOps.TraceRepo.getReturn : $r1 = r0.<org.apache.accumulo.master.tableOps.TraceRepo: org.apache.accumulo.fate.Repo repo>

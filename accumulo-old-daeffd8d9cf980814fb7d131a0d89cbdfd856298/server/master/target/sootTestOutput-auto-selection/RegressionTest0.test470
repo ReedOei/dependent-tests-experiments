@@ -1,0 +1,1 @@
+org.apache.accumulo.master.tableOps.TraceRepo.getDescription : $r1 = r0.<org.apache.accumulo.master.tableOps.TraceRepo: org.apache.accumulo.fate.Repo repo> >>>>>>>> org.apache.accumulo.master.tableOps.TraceRepo.getDescription : $r2 = interfaceinvoke $r1.<org.apache.accumulo.fate.Repo: java.lang.String getDescription()>()

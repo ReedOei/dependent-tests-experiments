@@ -1,0 +1,121 @@
+org.apache.zeppelin.notebook.Paragraph.equals : if r0 != r1 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 1
+org.apache.zeppelin.notebook.Paragraph.equals : if r0 != r1 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if r1 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if r1 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.zeppelin.notebook.Paragraph.equals : if r1 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.zeppelin.notebook.Paragraph.equals : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>() >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r3 == $r4
+org.apache.zeppelin.notebook.Paragraph.equals : if $r3 == $r4 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $r3 == $r4 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z0 = specialinvoke r0.<org.apache.zeppelin.scheduler.Job: boolean equals(java.lang.Object)>(r1)
+org.apache.zeppelin.notebook.Paragraph.equals : $z0 = specialinvoke r0.<org.apache.zeppelin.scheduler.Job: boolean equals(java.lang.Object)>(r1) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $z0 != 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $z0 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $z0 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : r2 = (org.apache.zeppelin.notebook.Paragraph) r1
+org.apache.zeppelin.notebook.Paragraph.equals : r2 = (org.apache.zeppelin.notebook.Paragraph) r1 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r5 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String title>
+org.apache.zeppelin.notebook.Paragraph.equals : $r5 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String title> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r5 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r5 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r40 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String title>
+org.apache.zeppelin.notebook.Paragraph.equals : if $r5 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r6 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String title>
+org.apache.zeppelin.notebook.Paragraph.equals : $r6 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String title> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r6 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r6 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $r6 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r7 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String text>
+org.apache.zeppelin.notebook.Paragraph.equals : $r7 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String text> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r7 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r7 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r38 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String text>
+org.apache.zeppelin.notebook.Paragraph.equals : if $r7 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r8 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String text>
+org.apache.zeppelin.notebook.Paragraph.equals : $r8 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String text> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r8 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r8 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $r8 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r9 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String user>
+org.apache.zeppelin.notebook.Paragraph.equals : $r9 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String user> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r9 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r9 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r36 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String user>
+org.apache.zeppelin.notebook.Paragraph.equals : if $r9 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r10 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String user>
+org.apache.zeppelin.notebook.Paragraph.equals : $r10 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String user> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r10 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r10 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $r10 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r11 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Date dateUpdated>
+org.apache.zeppelin.notebook.Paragraph.equals : $r11 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Date dateUpdated> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r11 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r11 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r34 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Date dateUpdated>
+org.apache.zeppelin.notebook.Paragraph.equals : if $r11 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r12 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Date dateUpdated>
+org.apache.zeppelin.notebook.Paragraph.equals : $r12 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Date dateUpdated> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r12 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r12 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $r12 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r13 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map config>
+org.apache.zeppelin.notebook.Paragraph.equals : $r13 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map config> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r13 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r13 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r32 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map config>
+org.apache.zeppelin.notebook.Paragraph.equals : if $r13 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r14 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Map config>
+org.apache.zeppelin.notebook.Paragraph.equals : $r14 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Map config> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r14 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r14 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $r14 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r15 = r0.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.display.GUI settings>
+org.apache.zeppelin.notebook.Paragraph.equals : $r15 = r0.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.display.GUI settings> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r15 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r15 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r30 = r0.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.display.GUI settings>
+org.apache.zeppelin.notebook.Paragraph.equals : if $r15 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r16 = r2.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.display.GUI settings>
+org.apache.zeppelin.notebook.Paragraph.equals : $r16 = r2.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.display.GUI settings> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r16 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r16 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $r16 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r17 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object results>
+org.apache.zeppelin.notebook.Paragraph.equals : $r17 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object results> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r17 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r17 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r28 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object results>
+org.apache.zeppelin.notebook.Paragraph.equals : if $r17 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r18 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object results>
+org.apache.zeppelin.notebook.Paragraph.equals : $r18 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object results> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r18 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r18 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $r18 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r19 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object result>
+org.apache.zeppelin.notebook.Paragraph.equals : $r19 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object result> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r19 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r19 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r26 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object result>
+org.apache.zeppelin.notebook.Paragraph.equals : if $r19 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r20 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object result>
+org.apache.zeppelin.notebook.Paragraph.equals : $r20 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object result> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r20 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r20 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $r20 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r21 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos>
+org.apache.zeppelin.notebook.Paragraph.equals : $r21 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r21 == null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r21 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r24 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos>
+org.apache.zeppelin.notebook.Paragraph.equals : if $r21 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r22 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos>
+org.apache.zeppelin.notebook.Paragraph.equals : $r22 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $r22 != null
+org.apache.zeppelin.notebook.Paragraph.equals : if $r22 != null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z9 = 1
+org.apache.zeppelin.notebook.Paragraph.equals : if $r22 != null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z9 = 0
+org.apache.zeppelin.notebook.Paragraph.equals : $z9 = 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return $z9
+org.apache.zeppelin.notebook.Paragraph.equals : $z9 = 1 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return $z9]
+org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return $z9] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return $z9
+org.apache.zeppelin.notebook.Paragraph.equals : $r24 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r23 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos>
+org.apache.zeppelin.notebook.Paragraph.equals : $r23 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z9 = interfaceinvoke $r24.<java.util.Map: boolean equals(java.lang.Object)>($r23)
+org.apache.zeppelin.notebook.Paragraph.equals : $z9 = interfaceinvoke $r24.<java.util.Map: boolean equals(java.lang.Object)>($r23) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return $z9]
+org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return $z9] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return $z9
+org.apache.zeppelin.notebook.Paragraph.equals : $r26 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object result> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r25 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object result>
+org.apache.zeppelin.notebook.Paragraph.equals : $r25 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object result> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z1 = virtualinvoke $r26.<java.lang.Object: boolean equals(java.lang.Object)>($r25)
+org.apache.zeppelin.notebook.Paragraph.equals : $z1 = virtualinvoke $r26.<java.lang.Object: boolean equals(java.lang.Object)>($r25) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $z1 != 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $z1 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0]
+org.apache.zeppelin.notebook.Paragraph.equals : if $z1 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r21 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos>
+org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : $r28 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object results> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r27 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object results>
+org.apache.zeppelin.notebook.Paragraph.equals : $r27 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object results> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z2 = virtualinvoke $r28.<java.lang.Object: boolean equals(java.lang.Object)>($r27)
+org.apache.zeppelin.notebook.Paragraph.equals : $z2 = virtualinvoke $r28.<java.lang.Object: boolean equals(java.lang.Object)>($r27) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $z2 != 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $z2 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0]
+org.apache.zeppelin.notebook.Paragraph.equals : if $z2 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r19 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object result>
+org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : $r30 = r0.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.display.GUI settings> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r29 = r2.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.display.GUI settings>
+org.apache.zeppelin.notebook.Paragraph.equals : $r29 = r2.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.display.GUI settings> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z3 = virtualinvoke $r30.<org.apache.zeppelin.display.GUI: boolean equals(java.lang.Object)>($r29)
+org.apache.zeppelin.notebook.Paragraph.equals : $z3 = virtualinvoke $r30.<org.apache.zeppelin.display.GUI: boolean equals(java.lang.Object)>($r29) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $z3 != 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $z3 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0]
+org.apache.zeppelin.notebook.Paragraph.equals : if $z3 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r17 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.Object results>
+org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : $r32 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map config> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r31 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Map config>
+org.apache.zeppelin.notebook.Paragraph.equals : $r31 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Map config> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z4 = interfaceinvoke $r32.<java.util.Map: boolean equals(java.lang.Object)>($r31)
+org.apache.zeppelin.notebook.Paragraph.equals : $z4 = interfaceinvoke $r32.<java.util.Map: boolean equals(java.lang.Object)>($r31) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $z4 != 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $z4 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0]
+org.apache.zeppelin.notebook.Paragraph.equals : if $z4 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r15 = r0.<org.apache.zeppelin.notebook.Paragraph: org.apache.zeppelin.display.GUI settings>
+org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : $r34 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Date dateUpdated> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r33 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Date dateUpdated>
+org.apache.zeppelin.notebook.Paragraph.equals : $r33 = r2.<org.apache.zeppelin.notebook.Paragraph: java.util.Date dateUpdated> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z5 = virtualinvoke $r34.<java.util.Date: boolean equals(java.lang.Object)>($r33)
+org.apache.zeppelin.notebook.Paragraph.equals : $z5 = virtualinvoke $r34.<java.util.Date: boolean equals(java.lang.Object)>($r33) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $z5 != 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $z5 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0]
+org.apache.zeppelin.notebook.Paragraph.equals : if $z5 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r13 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map config>
+org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : $r36 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String user> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r35 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String user>
+org.apache.zeppelin.notebook.Paragraph.equals : $r35 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String user> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z6 = virtualinvoke $r36.<java.lang.String: boolean equals(java.lang.Object)>($r35)
+org.apache.zeppelin.notebook.Paragraph.equals : $z6 = virtualinvoke $r36.<java.lang.String: boolean equals(java.lang.Object)>($r35) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $z6 != 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $z6 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0]
+org.apache.zeppelin.notebook.Paragraph.equals : if $z6 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r11 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Date dateUpdated>
+org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : $r38 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String text> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r37 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String text>
+org.apache.zeppelin.notebook.Paragraph.equals : $r37 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String text> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z7 = virtualinvoke $r38.<java.lang.String: boolean equals(java.lang.Object)>($r37)
+org.apache.zeppelin.notebook.Paragraph.equals : $z7 = virtualinvoke $r38.<java.lang.String: boolean equals(java.lang.Object)>($r37) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $z7 != 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $z7 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0]
+org.apache.zeppelin.notebook.Paragraph.equals : if $z7 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r9 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String user>
+org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0
+org.apache.zeppelin.notebook.Paragraph.equals : $r40 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String title> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r39 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String title>
+org.apache.zeppelin.notebook.Paragraph.equals : $r39 = r2.<org.apache.zeppelin.notebook.Paragraph: java.lang.String title> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $z8 = virtualinvoke $r40.<java.lang.String: boolean equals(java.lang.Object)>($r39)
+org.apache.zeppelin.notebook.Paragraph.equals : $z8 = virtualinvoke $r40.<java.lang.String: boolean equals(java.lang.Object)>($r39) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : if $z8 != 0
+org.apache.zeppelin.notebook.Paragraph.equals : if $z8 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0]
+org.apache.zeppelin.notebook.Paragraph.equals : if $z8 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : $r7 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String text>
+org.apache.zeppelin.notebook.Paragraph.equals : goto [?= return 0] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.equals : return 0

@@ -1,0 +1,11 @@
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils.getSubProperties : $z1 = r5 instanceof org.springframework.core.env.EnumerablePropertySource
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils.getSubProperties : $z2 = virtualinvoke r7.<java.lang.String: boolean startsWith(java.lang.String)>(r3)
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils.getSubProperties : $z3 = r9 instanceof java.lang.String
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils.getSubProperties : $r16 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(r9)
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils.getSubProperties : r9 = virtualinvoke r5.<org.springframework.core.env.PropertySource: java.lang.Object getProperty(java.lang.String)>(r7)
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils.getSubProperties : r7 = r6[i2]
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils.getSubProperties : $i1 = virtualinvoke r3.<java.lang.String: int length()>()
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils.getSubProperties : $r10 = new java.util.LinkedHashMap
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils.getSubProperties : r4 = interfaceinvoke r0.<org.springframework.core.env.PropertySources: java.util.Iterator iterator()>()
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils.getSubProperties : $z0 = virtualinvoke r1.<java.lang.String: boolean endsWith(java.lang.String)>(".")
+com.alibaba.dubbo.config.spring.util.PropertySourcesUtils.getSubProperties : $r14 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()

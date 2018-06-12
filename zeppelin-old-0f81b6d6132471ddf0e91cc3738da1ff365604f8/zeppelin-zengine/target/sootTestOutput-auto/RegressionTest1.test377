@@ -1,0 +1,2 @@
+org.apache.zeppelin.helium.HeliumPackageSearchResult.getPkg : $r1 = r0.<org.apache.zeppelin.helium.HeliumPackageSearchResult: org.apache.zeppelin.helium.HeliumPackage pkg>
+org.apache.zeppelin.helium.HeliumPackageSuggestion.addAvailablePackage : $r2 = r0.<org.apache.zeppelin.helium.HeliumPackageSuggestion: java.util.List available>

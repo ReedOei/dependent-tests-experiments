@@ -1,0 +1,3 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.onProcessFailed : $r3 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.util.concurrent.atomic.AtomicBoolean running>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.onProcessFailed : $r2 = <org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: org.slf4j.Logger logger>
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getPort : $i0 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: int port>

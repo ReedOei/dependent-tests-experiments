@@ -1,0 +1,30 @@
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.getDatapoints : $r1 = r0.<org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric: java.lang.Number[][] datapoints>
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setHost_name : r0.<org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric: java.lang.String host_name> = r1
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric.convertToNumber : r4 = r2
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric.convertToNumber : goto [?= return r4]
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric.convertToNumber : return r4
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric.convertToNumber : $z1 = virtualinvoke r2.<java.lang.Double: boolean isNaN()>()
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric.convertToNumber : $z0 = virtualinvoke r1.<java.lang.String: boolean contains(java.lang.CharSequence)>(".")
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric.convertToNumber : $d0 = staticinvoke <java.lang.Double: double parseDouble(java.lang.String)>(r1)
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric.convertToNumber : $z2 = virtualinvoke r2.<java.lang.Double: boolean isInfinite()>()
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : $i0 = interfaceinvoke r1.<java.util.List: int size()>()
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : i4 = 0
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : goto [?= $r6 = newmultiarray (java.lang.Number)[i4][2]]
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : $r11 = r0.<org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric: java.lang.Number[][] datapoints>
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : $r5 = <org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric: java.util.Set PERCENTAGE_METRIC>
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : r3 = virtualinvoke r24.<org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric: java.lang.Number getValue()>()
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : $r22 = r2[i4]
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : $r7 = r0.<org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric: java.lang.Number[][] datapoints>
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : i4 = i4 + 1
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : $d0 = virtualinvoke r3.<java.lang.Number: double doubleValue()>()
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : i7 = 0
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : $r20 = interfaceinvoke r1.<java.util.List: java.lang.Object get(int)>(i7)
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : i11 = 0
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : $i2 = interfaceinvoke r1.<java.util.List: int size()>()
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : $r6 = newmultiarray (java.lang.Number)[i4][2]
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDatapointsFromList : $r21 = r2[i4]
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setCluster_name : r0.<org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric: java.lang.String cluster_name> = r1
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric.getTime : $r1 = r0.<org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric: java.lang.Number m_time>
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setDs_name : r0.<org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric: java.lang.String ds_name> = r1
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric.setMetric_name : r0.<org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric: java.lang.String metric_name> = r1
+org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric.getValue : $r1 = r0.<org.apache.ambari.server.controller.metrics.ganglia.GangliaMetric$TemporalMetric: java.lang.Number m_value>

@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getImageIds : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.util.List imageIds>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getThumbnail : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.ImageData thumbnail>

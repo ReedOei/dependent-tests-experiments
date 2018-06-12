@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.access$100 : specialinvoke r0.<org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex: void filterFacet(org.apache.solr.common.SolrDocument,org.apache.solr.client.solrj.response.FacetField)>(r1, r2) >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.access$100 : return

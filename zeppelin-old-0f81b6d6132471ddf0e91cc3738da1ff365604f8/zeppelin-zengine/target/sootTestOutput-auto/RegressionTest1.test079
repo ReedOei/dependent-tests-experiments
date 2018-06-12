@@ -1,0 +1,2 @@
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getHost : return "localhost"
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess.getInterpreterDir : $r1 = r0.<org.apache.zeppelin.interpreter.remote.RemoteInterpreterManagedProcess: java.lang.String interpreterDir>

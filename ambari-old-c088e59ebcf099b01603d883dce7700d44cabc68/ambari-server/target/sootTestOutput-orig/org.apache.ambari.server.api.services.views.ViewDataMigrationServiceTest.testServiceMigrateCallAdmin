@@ -1,0 +1,12 @@
+org.apache.ambari.server.api.services.views.ViewDataMigrationService.migrateData : $r28 = <javax.ws.rs.core.Response$Status: javax.ws.rs.core.Response$Status OK>
+org.apache.ambari.server.api.services.views.ViewDataMigrationService.migrateData : $r29 = virtualinvoke r8.<javax.ws.rs.core.Response$ResponseBuilder: javax.ws.rs.core.Response build()>()
+org.apache.ambari.server.api.services.views.ViewDataMigrationService.migrateData : $r9 = r0.<org.apache.ambari.server.api.services.views.ViewDataMigrationService: org.apache.ambari.server.view.ViewRegistry viewRegistry>
+org.apache.ambari.server.api.services.views.ViewDataMigrationService.migrateData : $r25 = r0.<org.apache.ambari.server.api.services.views.ViewDataMigrationService: org.apache.ambari.server.view.ViewRegistry viewRegistry>
+org.apache.ambari.server.api.services.views.ViewDataMigrationService.migrateData : $r27 = virtualinvoke r0.<org.apache.ambari.server.api.services.views.ViewDataMigrationService: org.apache.ambari.server.view.ViewDataMigrationUtility getViewDataMigrationUtility()>()
+org.apache.ambari.server.api.services.views.ViewDataMigrationService.migrateData : $r11 = <org.apache.ambari.server.api.services.views.ViewDataMigrationService: org.slf4j.Logger LOG>
+org.apache.ambari.server.api.services.views.ViewDataMigrationService.migrateData : $r26 = r0.<org.apache.ambari.server.api.services.views.ViewDataMigrationService: org.apache.ambari.server.view.ViewRegistry viewRegistry>
+org.apache.ambari.server.api.services.views.ViewDataMigrationService.setViewDataMigrationUtility : r0.<org.apache.ambari.server.api.services.views.ViewDataMigrationService: org.apache.ambari.server.view.ViewDataMigrationUtility viewDataMigrationUtility> = r1
+org.apache.ambari.server.view.ViewRegistry.getInstance : $r0 = <org.apache.ambari.server.view.ViewRegistry: org.apache.ambari.server.view.ViewRegistry singleton>
+org.apache.ambari.server.api.services.views.ViewDataMigrationService.getViewDataMigrationUtility : $r1 = r0.<org.apache.ambari.server.api.services.views.ViewDataMigrationService: org.apache.ambari.server.view.ViewDataMigrationUtility viewDataMigrationUtility>
+org.apache.ambari.server.api.services.views.ViewDataMigrationService.getViewDataMigrationUtility : $r2 = r0.<org.apache.ambari.server.api.services.views.ViewDataMigrationService: org.apache.ambari.server.view.ViewDataMigrationUtility viewDataMigrationUtility>
+org.apache.ambari.server.view.ViewRegistry.initInstance : <org.apache.ambari.server.view.ViewRegistry: org.apache.ambari.server.view.ViewRegistry singleton> = r0

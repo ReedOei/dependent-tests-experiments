@@ -1,0 +1,5 @@
+org.apache.ambari.server.controller.metrics.timeline.cache.TimelineMetricCacheTest$1.answer : $r5 = staticinvoke <org.easymock.EasyMock: java.lang.Object[] getCurrentArguments()>()
+org.apache.ambari.server.controller.metrics.timeline.cache.TimelineMetricCacheTest$1.answer : $r3 = staticinvoke <org.easymock.EasyMock: java.lang.Object[] getCurrentArguments()>()
+org.apache.ambari.server.controller.metrics.timeline.cache.TimelineMetricCacheTest$1.answer : return null
+org.apache.ambari.server.controller.metrics.timeline.cache.TimelineMetricCacheTest$1.answer : virtualinvoke r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("c")
+org.apache.ambari.server.controller.metrics.timeline.cache.TimelineMetricCacheTest$1.answer : $r8 = <java.lang.System: java.io.PrintStream out>

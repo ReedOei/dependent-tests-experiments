@@ -1,0 +1,14 @@
+org.apache.ambari.server.stack.StackServiceDirectoryTest$MockStackServiceDirectory.getAdvisorFile : $r1 = r0.<org.apache.ambari.server.stack.StackServiceDirectoryTest$MockStackServiceDirectory: java.io.File advisor>
+org.apache.ambari.server.stack.StackServiceDirectory.getAdvisorName : $r12 = new java.lang.StringBuilder
+org.apache.ambari.server.stack.StackServiceDirectory.getAdvisorName : $r7 = virtualinvoke r0.<org.apache.ambari.server.stack.StackServiceDirectory: java.io.File getAdvisorFile()>()
+org.apache.ambari.server.stack.StackServiceDirectory.getAdvisorName : r18 = virtualinvoke r17.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>("[^a-zA-Z0-9]+", "")
+org.apache.ambari.server.stack.StackServiceDirectory.getAdvisorName : return r18
+org.apache.ambari.server.stack.StackServiceDirectory.getAdvisorName : if r1 != null goto $r8 = new java.io.File
+org.apache.ambari.server.stack.StackServiceDirectory.getAdvisorName : $r11 = virtualinvoke r3.<java.io.File: java.lang.String getName()>()
+org.apache.ambari.server.stack.StackServiceDirectory.getAdvisorName : r4 = virtualinvoke r3.<java.io.File: java.io.File getParentFile()>()
+org.apache.ambari.server.stack.StackServiceDirectory.getAdvisorName : r5 = virtualinvoke r4.<java.io.File: java.lang.String getName()>()
+org.apache.ambari.server.stack.StackServiceDirectory.getAdvisorName : $r8 = new java.io.File
+org.apache.ambari.server.stack.StackServiceDirectory.getAdvisorName : $r10 = virtualinvoke $r8.<java.io.File: java.io.File getParentFile()>()
+org.apache.ambari.server.stack.StackServiceDirectoryTest.createStackServiceDirectory : $r3 = new org.apache.ambari.server.stack.StackServiceDirectoryTest$MockStackServiceDirectory
+org.apache.ambari.server.stack.StackServiceDirectoryTest.createStackServiceDirectory : return $r3
+org.apache.ambari.server.stack.StackDefinitionDirectory.getAbsolutePath : $r1 = r0.<org.apache.ambari.server.stack.StackDefinitionDirectory: java.io.File directory>

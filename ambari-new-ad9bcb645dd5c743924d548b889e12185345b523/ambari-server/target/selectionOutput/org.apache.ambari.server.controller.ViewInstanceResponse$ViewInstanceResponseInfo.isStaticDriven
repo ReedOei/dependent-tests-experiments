@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewInstanceResponse$ViewInstanceResponseInfo.isStaticDriven : $z0 = r0.<org.apache.ambari.server.controller.ViewInstanceResponse$ViewInstanceResponseInfo: boolean staticDriven> >>>>>>>> org.apache.ambari.server.controller.ViewInstanceResponse$ViewInstanceResponseInfo.isStaticDriven : return $z0

@@ -1,0 +1,17 @@
+com.alibaba.dubbo.config.spring.AnnotationBean.setApplicationContext : r0.<com.alibaba.dubbo.config.spring.AnnotationBean: org.springframework.context.ApplicationContext applicationContext> = r1
+com.alibaba.dubbo.config.spring.AnnotationBean.destroy : $r2 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.util.concurrent.ConcurrentMap referenceConfigs>
+com.alibaba.dubbo.config.spring.AnnotationBean.destroy : $r1 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.util.Set serviceConfigs>
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeanFactory : $r8 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage>
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeanFactory : $z0 = r1 instanceof org.springframework.beans.factory.support.BeanDefinitionRegistry
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeanFactory : $r9 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage>
+com.alibaba.dubbo.config.spring.AnnotationBean.isMatchPackage : $r5 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String[] annotationPackages>
+com.alibaba.dubbo.config.spring.AnnotationBean.isMatchPackage : $r6 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String[] annotationPackages>
+com.alibaba.dubbo.config.spring.AnnotationBean.isMatchPackage : $r7 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.isMatchPackage : $z0 = virtualinvoke r2.<java.lang.String: boolean startsWith(java.lang.String)>(r4)
+com.alibaba.dubbo.config.spring.AnnotationBean.isMatchPackage : r3 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String[] annotationPackages>
+com.alibaba.dubbo.config.spring.AnnotationBean.isMatchPackage : r4 = r3[i2]
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessAfterInitialization : $z0 = specialinvoke r0.<com.alibaba.dubbo.config.spring.AnnotationBean: boolean isMatchPackage(java.lang.Object)>(r1)
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessAfterInitialization : return r1
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : $i0 = virtualinvoke r1.<java.lang.String: int length()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : if r1 == null goto $r4 = null
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage> = r1

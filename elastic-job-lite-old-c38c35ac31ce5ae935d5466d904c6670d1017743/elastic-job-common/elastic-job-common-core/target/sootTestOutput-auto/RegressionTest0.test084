@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.executor.ShardingContexts.getJobEventSamplingCount : $i0 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: int jobEventSamplingCount>
+com.dangdang.ddframe.job.executor.ShardingContexts.getJobName : $r1 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: java.lang.String jobName>

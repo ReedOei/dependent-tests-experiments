@@ -1,0 +1,14 @@
+org.apache.ambari.server.hooks.users.PostUserCreationHookContext.getUserGroups : $r1 = r0.<org.apache.ambari.server.hooks.users.PostUserCreationHookContext: java.util.Map userGroups>
+org.apache.ambari.server.hooks.users.UserHookService.checkUserHookPrerequisites : return 1
+org.apache.ambari.server.hooks.users.UserHookService.checkUserHookPrerequisites : $r2 = r0.<org.apache.ambari.server.hooks.users.UserHookService: org.apache.ambari.server.state.Clusters clusters>
+org.apache.ambari.server.hooks.users.UserHookService.checkUserHookPrerequisites : $r1 = r0.<org.apache.ambari.server.hooks.users.UserHookService: org.apache.ambari.server.configuration.Configuration configuration>
+org.apache.ambari.server.hooks.users.PostUserCreationHookContext.toString : $r1 = new java.lang.StringBuilder
+org.apache.ambari.server.hooks.users.UserHookService.validateHookInput : $r2 = (org.apache.ambari.server.hooks.users.PostUserCreationHookContext) r1
+org.apache.ambari.server.hooks.users.UserHookService.execute : $z0 = specialinvoke r0.<org.apache.ambari.server.hooks.users.UserHookService: boolean checkUserHookPrerequisites()>()
+org.apache.ambari.server.hooks.users.UserHookService.execute : $r9 = r0.<org.apache.ambari.server.hooks.users.UserHookService: org.apache.ambari.server.events.publishers.AmbariEventPublisher ambariEventPublisher>
+org.apache.ambari.server.hooks.users.UserHookService.execute : return 1
+org.apache.ambari.server.hooks.users.UserHookService.execute : r2 = specialinvoke r0.<org.apache.ambari.server.hooks.users.UserHookService: org.apache.ambari.server.hooks.users.PostUserCreationHookContext validateHookInput(org.apache.ambari.server.hooks.HookContext)>(r1)
+org.apache.ambari.server.hooks.users.UserHookService.execute : $r5 = virtualinvoke r2.<org.apache.ambari.server.hooks.users.PostUserCreationHookContext: java.util.Map getUserGroups()>()
+org.apache.ambari.server.hooks.users.UserHookService.execute : $r8 = <org.apache.ambari.server.hooks.users.UserHookService: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.hooks.users.UserHookService.execute : $r6 = r0.<org.apache.ambari.server.hooks.users.UserHookService: org.apache.ambari.server.hooks.AmbariEventFactory eventFactory>
+org.apache.ambari.server.hooks.users.UserHookService.execute : $r4 = <org.apache.ambari.server.hooks.users.UserHookService: org.slf4j.Logger LOGGER>

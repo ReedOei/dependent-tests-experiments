@@ -1,0 +1,10 @@
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.hashToByte : $r4 = virtualinvoke r1.<java.lang.String: byte[] getBytes()>()
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.hashToByte : r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(r2)
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.hash : $r4 = specialinvoke r0.<de.htw.sdf.photoplatform.manager.impl.HashManagerImpl: java.lang.String byteHashToHexString(byte[])>(r3)
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.hash : r3 = specialinvoke r0.<de.htw.sdf.photoplatform.manager.impl.HashManagerImpl: byte[] hashToByte(java.lang.String,java.lang.String)>(r1, r2)
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.hash : $r2 = virtualinvoke r0.<de.htw.sdf.photoplatform.manager.impl.HashManagerImpl: java.lang.String hash(java.lang.String,java.lang.String)>(r1, "SHA-512")
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.byteHashToHexString : i4 = 0
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.byteHashToHexString : $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>()
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.byteHashToHexString : $r4 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.byteHashToHexString : $i3 = $s2 + 256
+de.htw.sdf.photoplatform.manager.impl.HashManagerImpl.byteHashToHexString : $b1 = r1[i4]

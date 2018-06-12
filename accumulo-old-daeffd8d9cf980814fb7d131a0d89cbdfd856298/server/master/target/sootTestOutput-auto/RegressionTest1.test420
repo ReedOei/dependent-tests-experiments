@@ -1,0 +1,9 @@
+org.apache.accumulo.master.state.TableStats.end : $r2 = r0.<org.apache.accumulo.master.state.TableStats: java.util.Map next>
+org.apache.accumulo.master.state.TableStats.end : r0.<org.apache.accumulo.master.state.TableStats: org.apache.accumulo.core.master.thrift.MasterState state> = r1
+org.apache.accumulo.master.state.TableStats.end : r0.<org.apache.accumulo.master.state.TableStats: java.util.Map next> = null
+org.apache.accumulo.master.state.TableStats.end : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.accumulo.master.state.TableStats.getLast : $r1 = r0.<org.apache.accumulo.master.state.TableStats: java.util.Map last>
+org.apache.accumulo.master.state.TableStats.getLast : $r3 = r0.<org.apache.accumulo.master.state.TableStats: java.util.Map last>
+org.apache.accumulo.master.state.TableStats.begin : $r1 = new java.util.HashMap
+org.apache.accumulo.master.state.TableStats.begin : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.accumulo.master.state.TableStats.getLastMasterState : $r1 = r0.<org.apache.accumulo.master.state.TableStats: org.apache.accumulo.core.master.thrift.MasterState state>

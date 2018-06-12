@@ -1,0 +1,30 @@
+org.apache.ambari.server.utils.RequestUtils.hasValidRequest : $r0 = staticinvoke <org.springframework.web.context.request.RequestContextHolder: org.springframework.web.context.request.RequestAttributes getRequestAttributes()>()
+org.apache.ambari.server.utils.RequestUtils.getRemoteAddress : $z0 = staticinvoke <org.apache.ambari.server.utils.RequestUtils: boolean hasValidRequest()>()
+org.apache.ambari.server.utils.RequestUtils.getRemoteAddress : return null
+org.apache.ambari.server.api.services.DeleteRequestTest.getTestRequest : $r8 = new org.apache.ambari.server.api.services.DeleteRequestTest$1
+org.apache.ambari.server.api.services.BaseRequest.getFields : $r18 = r5[2]
+org.apache.ambari.server.api.services.BaseRequest.getFields : l12 = -1L
+org.apache.ambari.server.api.services.BaseRequest.getFields : i10 = 0
+org.apache.ambari.server.api.services.BaseRequest.getFields : $r25 = new org.apache.ambari.server.controller.internal.TemporalInfoImpl
+org.apache.ambari.server.api.services.BaseRequest.getFields : $r9 = new java.util.HashSet
+org.apache.ambari.server.api.services.BaseRequest.getFields : r3 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("[^,\\[]*?\\[[^\\]]*?\\]|[^,]+")
+org.apache.ambari.server.api.services.BaseRequest.getFields : $r11 = interfaceinvoke r22.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.api.services.BaseRequest.getFields : $r20 = virtualinvoke r4.<java.util.regex.Matcher: java.lang.String group(int)>(i10)
+org.apache.ambari.server.api.services.BaseRequest.getFields : r24 = null
+org.apache.ambari.server.api.services.BaseRequest.getFields : $r14 = r5[0]
+org.apache.ambari.server.api.services.BaseRequest.getFields : $i7 = lengthof r5
+org.apache.ambari.server.api.services.BaseRequest.getFields : $i5 = virtualinvoke r23.<java.lang.String: int indexOf(int)>(91)
+org.apache.ambari.server.api.services.BaseRequest.getFields : $r10 = new java.util.HashMap
+org.apache.ambari.server.api.services.BaseRequest.getFields : if r1 != null goto $r9 = new java.util.HashSet
+org.apache.ambari.server.api.services.BaseRequest.getFields : $z0 = virtualinvoke r4.<java.util.regex.Matcher: boolean find()>()
+org.apache.ambari.server.api.services.BaseRequest.getFields : $z2 = virtualinvoke r23.<java.lang.String: boolean contains(java.lang.CharSequence)>("[")
+org.apache.ambari.server.api.services.BaseRequest.getFields : r4 = virtualinvoke r3.<java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>(r1)
+org.apache.ambari.server.api.services.BaseRequest.getFields : $i6 = lengthof r5
+org.apache.ambari.server.api.services.BaseRequest.getFields : r22 = interfaceinvoke $r9.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.api.services.BaseRequest.getFields : $i3 = $i2 + 1
+org.apache.ambari.server.api.services.BaseRequest.getFields : interfaceinvoke $r10.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r23, r24)
+org.apache.ambari.server.api.services.BaseRequest.getFields : goto [?= $z1 = interfaceinvoke r22.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.api.services.BaseRequest.getFields : $r16 = r5[1]
+org.apache.ambari.server.api.services.BaseRequest.getFields : $i2 = virtualinvoke r23.<java.lang.String: int indexOf(int)>(91)
+org.apache.ambari.server.api.services.BaseRequest.getFields : $r6 = r0.<org.apache.ambari.server.api.services.BaseRequest: javax.ws.rs.core.UriInfo m_uriInfo>
+org.apache.ambari.server.api.services.BaseRequest.getFields : l11 = -1L

@@ -1,0 +1,61 @@
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r18 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_TYPE>
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r4 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_PASSWORD>
+org.apache.ambari.server.configuration.Configuration.loadSSLParams : $r2 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty SSL_TRUSTSTORE_PATH>
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : virtualinvoke r4.<java.lang.reflect.Field: void set(java.lang.Object,java.lang.Object)>(r2, r1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : r4 = virtualinvoke r3.<java.lang.Class: java.lang.reflect.Field getDeclaredField(java.lang.String)>("ambariMetaInfo")
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : virtualinvoke r4.<java.lang.reflect.Field: void setAccessible(boolean)>(1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setAmbariMetaInfo : r3 = virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.getKey : $r1 = r0.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.String m_key>
+org.apache.ambari.server.configuration.Configuration$ConfigurationProperty.getDefaultValue : $r1 = r0.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object m_defaultValue>
+org.apache.ambari.server.controller.ClusterRequest.getClusterName : $r1 = r0.<org.apache.ambari.server.controller.ClusterRequest: java.lang.String clusterName>
+org.apache.ambari.server.controller.ClusterRequest.getStackVersion : $r1 = r0.<org.apache.ambari.server.controller.ClusterRequest: java.lang.String stackVersion>
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if r2 == null goto r1.<org.apache.ambari.server.state.StackId: java.lang.String stackName> = ""
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $r8 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(0, i0)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i1 = virtualinvoke r2.<java.lang.String: int length()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : i0 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(45)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if i0 == -1 goto $r3 = new java.lang.RuntimeException
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $z0 = virtualinvoke r2.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i3 = i0 + 1
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.setAuthenticated : r0.<org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken: boolean authenticated> = z0
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : $r2 = staticinvoke <org.springframework.security.core.context.SecurityContextHolder: org.springframework.security.core.context.SecurityContext getContext()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : virtualinvoke $r1.<org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken: void setAuthenticated(boolean)>(1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : $r1 = new org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken
+org.apache.ambari.server.controller.ClusterRequest.getHostNames : $r1 = r0.<org.apache.ambari.server.controller.ClusterRequest: java.util.Set hostNames>
+org.apache.ambari.server.state.StackId.getStackName : $r1 = r0.<org.apache.ambari.server.state.StackId: java.lang.String stackName>
+org.apache.ambari.server.configuration.Configuration.getApiSSLAuthentication : $r1 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty API_USE_SSL>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.initializeWidgetsAndLayouts : if r24 == null goto $r9 = <org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.initializeWidgetsAndLayouts : $r7 = new java.util.HashSet
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.initializeWidgetsAndLayouts : $r9 = <org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.initializeWidgetsAndLayouts : if null == r2 goto $r8 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.api.services.AmbariMetaInfo ambariMetaInfo>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.initializeWidgetsAndLayouts : $r6 = new org.apache.ambari.server.controller.AmbariManagementControllerImpl$5
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.initializeWidgetsAndLayouts : $r8 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.api.services.AmbariMetaInfo ambariMetaInfo>
+org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties.isKerberosAuthenticationEnabled : $z0 = r0.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean kerberosAuthenticationEnabled>
+org.apache.ambari.server.controller.ClusterRequest.getSecurityType : $r1 = r0.<org.apache.ambari.server.controller.ClusterRequest: org.apache.ambari.server.state.SecurityType securityType>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r16 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.api.services.AmbariMetaInfo ambariMetaInfo>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r26 = virtualinvoke r1.<org.apache.ambari.server.controller.ClusterRequest: java.util.Set getHostNames()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r11 = virtualinvoke r1.<org.apache.ambari.server.controller.ClusterRequest: java.lang.String getStackVersion()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r7 = virtualinvoke r1.<org.apache.ambari.server.controller.ClusterRequest: java.lang.String getClusterName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r20 = virtualinvoke r1.<org.apache.ambari.server.controller.ClusterRequest: java.util.Set getHostNames()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r9 = virtualinvoke r1.<org.apache.ambari.server.controller.ClusterRequest: java.lang.Long getClusterId()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : if r3 != null goto z4 = 0
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r21 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.state.Clusters clusters>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r13 = virtualinvoke r1.<org.apache.ambari.server.controller.ClusterRequest: java.lang.String getStackVersion()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r10 = <org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.slf4j.Logger LOG>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r24 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: org.apache.ambari.server.state.Clusters clusters>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : virtualinvoke r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: void initializeWidgetsAndLayouts(org.apache.ambari.server.state.Cluster,org.apache.ambari.server.state.Service)>(r52, null)
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r19 = new java.lang.StringBuilder
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r8 = virtualinvoke r1.<org.apache.ambari.server.controller.ClusterRequest: java.lang.String getClusterName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r18 = virtualinvoke $r14.<org.apache.ambari.server.state.StackId: java.lang.String getStackVersion()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : z4 = 0
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.createCluster : $r14 = new org.apache.ambari.server.state.StackId
+org.apache.ambari.server.state.StackId.getStackVersion : $r1 = r0.<org.apache.ambari.server.state.StackId: java.lang.String stackVersion>
+org.apache.ambari.server.controller.ClusterRequest.getClusterId : $r1 = r0.<org.apache.ambari.server.controller.ClusterRequest: java.lang.Long clusterId>
+org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties.setKerberosAuthenticationEnabled : r0.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean kerberosAuthenticationEnabled> = z0
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $r8 = <org.apache.ambari.server.configuration.Configuration: org.apache.ambari.server.configuration.Configuration$ConfigurationProperty KERBEROS_AUTH_ENABLED>
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $z1 = virtualinvoke $r7.<org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties: boolean isKerberosAuthenticationEnabled()>()
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : return $r7
+org.apache.ambari.server.configuration.Configuration.createKerberosAuthenticationProperties : $r7 = new org.apache.ambari.server.security.authentication.kerberos.AmbariKerberosAuthenticationProperties
+org.apache.ambari.server.configuration.Configuration.getProperty : $r3 = r0.<org.apache.ambari.server.configuration.Configuration: java.util.Properties properties>
+org.apache.ambari.server.configuration.Configuration.getProperty : $r6 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object getDefaultValue()>()
+org.apache.ambari.server.configuration.Configuration.getProperty : r7 = null
+org.apache.ambari.server.configuration.Configuration.getProperty : $r2 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration$ConfigurationProperty: java.lang.Object getDefaultValue()>()

@@ -1,0 +1,3 @@
+org.apache.ambari.server.state.quicklinks.Port.getHttpsRegex : $r1 = r0.<org.apache.ambari.server.state.quicklinks.Port: java.lang.String httpsRegex> >>>>>>>> org.apache.ambari.server.state.quicklinks.Port.getHttpsRegex : return $r1
+org.apache.ambari.server.state.quicklinks.Port.getHttpsRegex : return $r1 >>>>>>>> org.apache.ambari.server.state.quicklinks.Port.getHttpsProperty : $r1 = r0.<org.apache.ambari.server.state.quicklinks.Port: java.lang.String httpsProperty>
+org.apache.ambari.server.state.quicklinks.Port.getHttpsProperty : $r1 = r0.<org.apache.ambari.server.state.quicklinks.Port: java.lang.String httpsProperty> >>>>>>>> org.apache.ambari.server.state.quicklinks.Port.getHttpsProperty : return $r1

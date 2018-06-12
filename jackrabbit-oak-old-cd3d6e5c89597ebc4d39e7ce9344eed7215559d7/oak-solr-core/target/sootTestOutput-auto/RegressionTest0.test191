@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.query : r19 = interfaceinvoke r1.<org.apache.jackrabbit.oak.spi.query.QueryIndex$IndexPlan: org.apache.jackrabbit.oak.spi.query.Filter getFilter()>()
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex.query : $r18 = new java.lang.RuntimeException

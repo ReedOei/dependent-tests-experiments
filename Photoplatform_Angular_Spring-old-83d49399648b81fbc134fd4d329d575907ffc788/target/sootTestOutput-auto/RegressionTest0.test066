@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r4 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r5 = interfaceinvoke r0.<org.springframework.security.core.userdetails.UserDetails: java.lang.String getUsername()>()

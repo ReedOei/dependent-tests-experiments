@@ -1,0 +1,7 @@
+org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : $r2 = r0.<org.apache.ambari.server.state.cluster.ClusterImpl: java.util.concurrent.ConcurrentSkipListMap services> >>>>>>>> org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : $r3 = virtualinvoke $r2.<java.util.concurrent.ConcurrentSkipListMap: java.lang.Object get(java.lang.Object)>(r1)
+org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : $r3 = virtualinvoke $r2.<java.util.concurrent.ConcurrentSkipListMap: java.lang.Object get(java.lang.Object)>(r1) >>>>>>>> org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : if $r3 == null
+org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : if $r3 == null >>>>>>>> org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : $z0 = 1
+org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : if $r3 == null >>>>>>>> org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : $z0 = 0
+org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : $z0 = 0 >>>>>>>> org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : return $z0
+org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : $z0 = 1 >>>>>>>> org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : goto [?= return $z0]
+org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : goto [?= return $z0] >>>>>>>> org.apache.ambari.server.state.cluster.ClusterImpl.isServiceInstalled : return $z0

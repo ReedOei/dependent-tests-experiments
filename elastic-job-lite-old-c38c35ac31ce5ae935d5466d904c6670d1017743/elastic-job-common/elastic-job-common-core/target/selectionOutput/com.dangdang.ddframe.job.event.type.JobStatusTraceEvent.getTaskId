@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getTaskId : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: java.lang.String taskId> >>>>>>>> com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getTaskId : return $r1

@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.access$900 : $z0 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService: boolean useForPropertyRestrictions> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.access$900 : return $z0

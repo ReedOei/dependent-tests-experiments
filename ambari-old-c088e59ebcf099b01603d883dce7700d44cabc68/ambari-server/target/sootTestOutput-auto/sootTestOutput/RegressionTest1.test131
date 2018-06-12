@@ -1,0 +1,4 @@
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setSelected : if z0 == 0 goto $b1 = 0
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setSelected : if z0 == 0 goto return
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setSelected : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.ambari.server.orm.entities.ClusterConfigEntity.setSelected : $b1 = 1

@@ -1,0 +1,5 @@
+de.htw.sdf.photoplatform.persistence.model.CollectionCategory.setCollection : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionCategory: de.htw.sdf.photoplatform.persistence.model.Collection collection> = r1
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.setClazz : r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: java.lang.Class clazz> = r1
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.getEntityManager : $r1 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.repository.common.GenericDAOImpl.delete : $r3 = r0.<de.htw.sdf.photoplatform.repository.common.GenericDAOImpl: javax.persistence.EntityManager entityManager>
+de.htw.sdf.photoplatform.persistence.model.CollectionCategory.setCategory : r0.<de.htw.sdf.photoplatform.persistence.model.CollectionCategory: de.htw.sdf.photoplatform.persistence.model.Category category> = r1

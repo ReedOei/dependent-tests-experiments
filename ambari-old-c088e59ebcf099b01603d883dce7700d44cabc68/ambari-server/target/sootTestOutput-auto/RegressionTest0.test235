@@ -1,0 +1,5 @@
+org.apache.ambari.server.topology.AmbariContext.getClusterController : $r0 = <org.apache.ambari.server.topology.AmbariContext: org.apache.ambari.server.controller.spi.ClusterController clusterController>
+org.apache.ambari.server.topology.AmbariContext.getClusterController : $r2 = staticinvoke <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController getClusterController()>()
+org.apache.ambari.server.topology.AmbariContext.getClusterController : $r1 = <org.apache.ambari.server.topology.AmbariContext: org.apache.ambari.server.controller.spi.ClusterController clusterController>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r2 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController controller>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r1 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController controller>

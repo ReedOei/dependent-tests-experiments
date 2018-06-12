@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ClusterResponse.getSecurityType : $r1 = r0.<org.apache.ambari.server.controller.ClusterResponse: org.apache.ambari.server.state.SecurityType securityType> >>>>>>>> org.apache.ambari.server.controller.ClusterResponse.getSecurityType : return $r1

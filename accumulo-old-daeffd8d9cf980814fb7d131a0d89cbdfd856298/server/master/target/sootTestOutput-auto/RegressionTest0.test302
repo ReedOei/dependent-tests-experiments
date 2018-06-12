@@ -1,0 +1,4 @@
+org.apache.accumulo.master.tableOps.Utils.getLock : $r8 = new org.apache.accumulo.server.zookeeper.ZooQueueLock
+org.apache.accumulo.master.tableOps.Utils.getLock : $r4 = newarray (java.lang.Object)[1]
+org.apache.accumulo.master.tableOps.RenameTable.undo : $r2 = r0.<org.apache.accumulo.master.tableOps.RenameTable: org.apache.accumulo.core.client.impl.Table$ID tableId>
+org.apache.accumulo.master.tableOps.Utils.unreserveTable : $r1 = staticinvoke <org.apache.accumulo.master.tableOps.Utils: java.util.concurrent.locks.Lock getLock(org.apache.accumulo.core.client.impl.AbstractId,long,boolean)>(r0, l0, z0)

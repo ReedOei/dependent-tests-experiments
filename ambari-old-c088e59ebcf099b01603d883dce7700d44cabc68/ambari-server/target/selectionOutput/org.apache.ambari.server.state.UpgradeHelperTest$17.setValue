@@ -1,0 +1,2 @@
+org.apache.ambari.server.state.UpgradeHelperTest$17.setValue : $r2 = (java.util.Map) r1 >>>>>>>> org.apache.ambari.server.state.UpgradeHelperTest$17.setValue : virtualinvoke r0.<org.apache.ambari.server.state.UpgradeHelperTest$17: void setValue(java.util.Map)>($r2)
+org.apache.ambari.server.state.UpgradeHelperTest$17.setValue : virtualinvoke r0.<org.apache.ambari.server.state.UpgradeHelperTest$17: void setValue(java.util.Map)>($r2) >>>>>>>> org.apache.ambari.server.state.UpgradeHelperTest$17.setValue : return

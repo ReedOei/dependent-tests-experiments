@@ -1,0 +1,4 @@
+org.apache.zeppelin.helium.HeliumConf.getEnabledPackages : $r1 = new java.util.HashMap >>>>>>>> org.apache.zeppelin.helium.HeliumConf.getEnabledPackages : $r2 = r0.<org.apache.zeppelin.helium.HeliumConf: java.util.Map enabled>
+org.apache.zeppelin.helium.HeliumConf.getEnabledPackages : $r2 = r0.<org.apache.zeppelin.helium.HeliumConf: java.util.Map enabled> >>>>>>>> org.apache.zeppelin.helium.HeliumConf.getEnabledPackages : specialinvoke $r1.<java.util.HashMap: void <init>(java.util.Map)>($r2)
+org.apache.zeppelin.helium.HeliumConf.getEnabledPackages : specialinvoke $r1.<java.util.HashMap: void <init>(java.util.Map)>($r2) >>>>>>>> org.apache.zeppelin.helium.HeliumConf.getEnabledPackages : return $r1
+org.apache.zeppelin.helium.HeliumConf.getEnabledPackages : return $r1 >>>>>>>> org.apache.zeppelin.helium.HeliumConf.disablePackage : $r2 = virtualinvoke r1.<org.apache.zeppelin.helium.HeliumPackage: java.lang.String getName()>()

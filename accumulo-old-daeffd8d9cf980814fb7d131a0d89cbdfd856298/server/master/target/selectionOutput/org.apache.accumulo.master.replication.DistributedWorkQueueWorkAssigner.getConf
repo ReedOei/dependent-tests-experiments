@@ -1,0 +1,1 @@
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.getConf : $r1 = r0.<org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner: org.apache.accumulo.core.conf.AccumuloConfiguration conf> >>>>>>>> org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner.getConf : return $r1

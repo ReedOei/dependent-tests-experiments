@@ -1,0 +1,2 @@
+org.apache.accumulo.master.replication.UnorderedWorkAssigner.getQueueSize : $r1 = r0.<org.apache.accumulo.master.replication.UnorderedWorkAssigner: java.util.Set queuedWork> >>>>>>>> org.apache.accumulo.master.replication.UnorderedWorkAssigner.getQueueSize : $i0 = interfaceinvoke $r1.<java.util.Set: int size()>()
+org.apache.accumulo.master.replication.UnorderedWorkAssigner.getQueueSize : $i0 = interfaceinvoke $r1.<java.util.Set: int size()>() >>>>>>>> org.apache.accumulo.master.replication.UnorderedWorkAssigner.getQueueSize : return $i0

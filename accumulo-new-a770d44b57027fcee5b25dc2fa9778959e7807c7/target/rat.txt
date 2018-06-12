@@ -1,0 +1,51 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2018-04-21T18:41:50-07:00
+Notes: 2
+Binaries: 1
+Archives: 0
+Standards: 11
+
+Apache Licensed: 11
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  N     LICENSE
+  N     NOTICE
+  AL    TESTING.md
+  AL    contrib/Eclipse-Accumulo-Template.xml
+  AL    contrib/README.findbugs
+  B     contrib/accumulo-logo.png
+  AL    contrib/scripts/check-tservers.py
+  AL    contrib/Eclipse-Accumulo-Codestyle.xml
+  AL    src/site/site.xml
+  AL    .travis.yml
+  AL    CONTRIBUTING.md
+  AL    INSTALL.md
+  AL    README.md
+  AL    pom.xml
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

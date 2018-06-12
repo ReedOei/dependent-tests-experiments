@@ -1,0 +1,3 @@
+com.alibaba.dubbo.config.spring.ConfigTest.unexportService : if r0 == null >>>>>>>> com.alibaba.dubbo.config.spring.ConfigTest.unexportService : virtualinvoke r0.<com.alibaba.dubbo.config.ServiceConfig: void unexport()>()
+com.alibaba.dubbo.config.spring.ConfigTest.unexportService : if r0 == null >>>>>>>> com.alibaba.dubbo.config.spring.ConfigTest.unexportService : return
+com.alibaba.dubbo.config.spring.ConfigTest.unexportService : virtualinvoke r0.<com.alibaba.dubbo.config.ServiceConfig: void unexport()>() >>>>>>>> com.alibaba.dubbo.config.spring.ConfigTest.unexportService : return

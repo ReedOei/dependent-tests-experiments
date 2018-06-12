@@ -1,0 +1,1 @@
+org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getInterpreterProcess : $r1 = r0.<org.apache.zeppelin.interpreter.ManagedInterpreterGroup: org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess remoteInterpreterProcess> >>>>>>>> org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getInterpreterProcess : return $r1

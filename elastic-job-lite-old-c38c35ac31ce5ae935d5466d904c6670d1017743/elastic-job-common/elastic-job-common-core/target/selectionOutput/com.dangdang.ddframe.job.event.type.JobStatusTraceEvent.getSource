@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getSource : $r1 = r0.<com.dangdang.ddframe.job.event.type.JobStatusTraceEvent: com.dangdang.ddframe.job.event.type.JobStatusTraceEvent$Source source> >>>>>>>> com.dangdang.ddframe.job.event.type.JobStatusTraceEvent.getSource : return $r1

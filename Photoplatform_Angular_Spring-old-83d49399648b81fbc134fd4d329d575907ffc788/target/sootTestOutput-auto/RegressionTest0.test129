@@ -1,0 +1,5 @@
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToImageData : $r5 = new java.util.ArrayList
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToImageData : r2 = interfaceinvoke r0.<java.util.List: java.util.Iterator iterator()>()
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToImageData : $r6 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToImageData : $r7 = new de.htw.sdf.photoplatform.webservice.dto.ImageData
+de.htw.sdf.photoplatform.persistence.model.UserImage.getImage : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.Image image>

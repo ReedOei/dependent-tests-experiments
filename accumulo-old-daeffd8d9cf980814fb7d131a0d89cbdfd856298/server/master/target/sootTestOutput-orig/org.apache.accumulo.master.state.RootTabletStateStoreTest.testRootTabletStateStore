@@ -1,0 +1,36 @@
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurseCreate : if r8 != null goto $i2 = i0 + 1
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurseCreate : $i1 = lengthof r2
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurseCreate : $r7 = r1.<org.apache.accumulo.master.state.RootTabletStateStoreTest$Node: java.util.List children>
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurseCreate : $i2 = i0 + 1
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurseCreate : $r5 = new org.apache.accumulo.master.state.RootTabletStateStoreTest$Node
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurseCreate : $r3 = r2[i0]
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurseCreate : return r1
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.getChildren : $r11 = staticinvoke <java.util.Collections: java.util.List emptyList()>()
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.getChildren : if r2 != null goto $r6 = new java.util.ArrayList
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.getChildren : r2 = specialinvoke r0.<org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore: org.apache.accumulo.master.state.RootTabletStateStoreTest$Node navigate(java.lang.String)>(r1)
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.remove : if r4 != null goto $i2 = lengthof r2
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.remove : $r9 = r4.<org.apache.accumulo.master.state.RootTabletStateStoreTest$Node: java.util.List children>
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.remove : r2 = virtualinvoke r1.<java.lang.String: java.lang.String[] split(java.lang.String)>("/")
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.remove : $i0 = lengthof r2
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.remove : $r7 = r0.<org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore: org.apache.accumulo.master.state.RootTabletStateStoreTest$Node root>
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.remove : $i2 = lengthof r2
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.remove : if r5 == null goto return
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.put : $r3 = specialinvoke r0.<org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore: org.apache.accumulo.master.state.RootTabletStateStoreTest$Node create(java.lang.String)>(r1)
+org.apache.accumulo.master.state.RootTabletStateStoreTest$Node.find : return r3
+org.apache.accumulo.master.state.RootTabletStateStoreTest$Node.find : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.accumulo.master.state.RootTabletStateStoreTest$Node.find : $r6 = r3.<org.apache.accumulo.master.state.RootTabletStateStoreTest$Node: java.lang.String name>
+org.apache.accumulo.master.state.RootTabletStateStoreTest$Node.find : $r4 = r0.<org.apache.accumulo.master.state.RootTabletStateStoreTest$Node: java.util.List children>
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurse : if r3 != null goto $i2 = i0 + 1
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurse : $i1 = lengthof r2
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurse : $r4 = r2[i0]
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurse : $i2 = i0 + 1
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurse : return null
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.recurse : return r1
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.get : if r2 == null goto return null
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.get : $r3 = r2.<org.apache.accumulo.master.state.RootTabletStateStoreTest$Node: byte[] value>
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.get : return null
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.get : r2 = specialinvoke r0.<org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore: org.apache.accumulo.master.state.RootTabletStateStoreTest$Node navigate(java.lang.String)>(r1)
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.create : $r3 = r0.<org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore: org.apache.accumulo.master.state.RootTabletStateStoreTest$Node root>
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.create : r2 = virtualinvoke r1.<java.lang.String: java.lang.String[] split(java.lang.String)>("/")
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.navigate : $r1 = r0.<org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore: org.apache.accumulo.master.state.RootTabletStateStoreTest$Node root>
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore.navigate : r5 = virtualinvoke r4.<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>("/$", "")

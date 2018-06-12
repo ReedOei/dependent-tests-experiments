@@ -1,0 +1,4 @@
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.setDigest : r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: java.lang.String digest> = r1
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.getBaseSleepTimeMilliseconds : $i0 = r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: int baseSleepTimeMilliseconds>
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.getNamespace : $r1 = r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: java.lang.String namespace>
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.getConnectionTimeoutMilliseconds : $i0 = r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: int connectionTimeoutMilliseconds>

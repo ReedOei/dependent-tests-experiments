@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.context.TaskContext.getSlaveId : $r1 = r0.<com.dangdang.ddframe.job.context.TaskContext: java.lang.String slaveId>
+com.dangdang.ddframe.job.context.TaskContext$MetaInfo.toString : $r1 = staticinvoke <com.google.common.base.Joiner: com.google.common.base.Joiner on(java.lang.String)>("@-@")

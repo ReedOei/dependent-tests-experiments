@@ -1,0 +1,2 @@
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.setDigest : r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: java.lang.String digest> = r1
+com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration.getDigest : $r1 = r0.<com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration: java.lang.String digest>

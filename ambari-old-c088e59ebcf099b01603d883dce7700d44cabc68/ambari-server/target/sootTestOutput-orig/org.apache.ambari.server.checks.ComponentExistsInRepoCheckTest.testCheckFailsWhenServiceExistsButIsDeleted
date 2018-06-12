@@ -1,0 +1,80 @@
+org.apache.ambari.server.state.StackId.getStackId : $r1 = r0.<org.apache.ambari.server.state.StackId: java.lang.String stackName>
+org.apache.ambari.server.state.StackId.getStackId : $r2 = new java.lang.StringBuilder
+org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest$2.get : $r1 = r0.<org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest$2: org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest this$0>
+org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest$2.get : $r1 = virtualinvoke r0.<org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest$2: org.apache.ambari.server.api.services.AmbariMetaInfo get()>()
+org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest.access$000 : $r1 = r0.<org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest: org.apache.ambari.server.state.Clusters m_clusters>
+org.apache.ambari.server.state.stack.PrerequisiteCheck.getFailedOn : $r1 = r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: java.util.LinkedHashSet m_failedOn>
+org.apache.ambari.server.controller.PrereqCheckRequest.getSourceStackId : $r1 = r0.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.state.StackId m_sourceStackId>
+org.apache.ambari.server.controller.PrereqCheckRequest.setSourceStackId : r0.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.state.StackId m_sourceStackId> = r1
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if r2 == null goto r1.<org.apache.ambari.server.state.StackId: java.lang.String stackName> = ""
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $r8 = virtualinvoke r2.<java.lang.String: java.lang.String substring(int,int)>(0, i0)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i1 = virtualinvoke r2.<java.lang.String: int length()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : i0 = virtualinvoke r2.<java.lang.String: int indexOf(int)>(45)
+org.apache.ambari.server.state.StackId.parseStackIdHelper : if i0 == -1 goto $r3 = new java.lang.RuntimeException
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $z0 = virtualinvoke r2.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.state.StackId.parseStackIdHelper : $i3 = i0 + 1
+org.apache.ambari.server.state.StackId.toString : $r1 = virtualinvoke r0.<org.apache.ambari.server.state.StackId: java.lang.String getStackId()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : r3 = interfaceinvoke r2.<java.util.List: java.util.Iterator iterator()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : $r5 = newarray (org.apache.ambari.server.checks.AbstractCheckDescriptor$CheckQualification)[2]
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : $r9 = virtualinvoke r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor: java.util.List getQualifications()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : $r8 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : $r10 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : $z2 = interfaceinvoke r4.<org.apache.ambari.server.checks.AbstractCheckDescriptor$CheckQualification: boolean isApplicable(org.apache.ambari.server.controller.PrereqCheckRequest)>(r1)
+org.apache.ambari.server.checks.AbstractCheckDescriptor.isApplicable : goto [?= $z1 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getServicesInUpgrade : r11 = virtualinvoke r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor: org.apache.ambari.server.state.repository.VersionDefinitionXml getVersionDefinitionXml(org.apache.ambari.server.controller.PrereqCheckRequest)>(r1)
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getServicesInUpgrade : r3 = virtualinvoke r11.<org.apache.ambari.server.state.repository.VersionDefinitionXml: org.apache.ambari.server.state.repository.ClusterVersionSummary getClusterSummary(org.apache.ambari.server.state.Cluster)>(r2)
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getServicesInUpgrade : $r4 = r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor: com.google.inject.Provider clustersProvider>
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getServicesInUpgrade : $r8 = virtualinvoke r3.<org.apache.ambari.server.state.repository.ClusterVersionSummary: java.util.Set getAvailableServiceNames()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : $r6 = r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification: java.lang.Class m_checkClass>
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : $z1 = staticinvoke <org.apache.commons.lang.ArrayUtils: boolean contains(java.lang.Object[],java.lang.Object)>(r5, r3)
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : r3 = virtualinvoke r2.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: org.apache.ambari.server.state.RepositoryType getType()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : $z0 = staticinvoke <org.apache.commons.lang.ArrayUtils: boolean isEmpty(java.lang.Object[])>(r5)
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : return 1
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : if null != r4 goto r5 = interfaceinvoke r4.<org.apache.ambari.server.checks.UpgradeCheck: org.apache.ambari.server.state.RepositoryType[] orchestration()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : r5 = interfaceinvoke r4.<org.apache.ambari.server.checks.UpgradeCheck: org.apache.ambari.server.state.RepositoryType[] orchestration()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor$OrchestrationQualification.isApplicable : r2 = virtualinvoke r1.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity getTargetRepositoryVersion()>()
+org.apache.ambari.server.state.stack.PrerequisiteCheck.setFailReason : r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: java.lang.String m_failReason> = r1
+org.apache.ambari.server.state.StackId.getStackName : $r1 = r0.<org.apache.ambari.server.state.StackId: java.lang.String stackName>
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : r3 = virtualinvoke r2.<org.apache.ambari.server.controller.PrereqCheckRequest: java.lang.String getClusterName()>()
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $r18 = new java.util.TreeSet
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : r10 = virtualinvoke r0.<org.apache.ambari.server.checks.ComponentsExistInRepoCheck: java.util.Set getServicesInUpgrade(org.apache.ambari.server.controller.PrereqCheckRequest)>(r2)
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : virtualinvoke r1.<org.apache.ambari.server.state.stack.PrerequisiteCheck: void setFailReason(java.lang.String)>(r54)
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $r34 = virtualinvoke r7.<org.apache.ambari.server.state.StackId: java.lang.String getStackVersion()>()
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : r52 = ""
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $r19 = new java.util.TreeSet
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $z3 = interfaceinvoke $r18.<java.util.Set: boolean isEmpty()>()
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $r30 = r0.<org.apache.ambari.server.checks.ComponentsExistInRepoCheck: com.google.inject.Provider ambariMetaInfo>
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $z7 = virtualinvoke r46.<org.apache.ambari.server.state.ServiceInfo: boolean isDeleted()>()
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $r53 = newarray (java.lang.Object)[3]
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : interfaceinvoke $r18.<java.util.Set: boolean add(java.lang.Object)>(r45)
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : virtualinvoke $r20.<java.util.LinkedHashSet: boolean addAll(java.util.Collection)>($r18)
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : r5 = virtualinvoke r2.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity getTargetRepositoryVersion()>()
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $r21 = <org.apache.ambari.server.state.stack.PrereqCheckStatus: org.apache.ambari.server.state.stack.PrereqCheckStatus FAIL>
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : virtualinvoke r1.<org.apache.ambari.server.state.stack.PrerequisiteCheck: void setFailedOn(java.util.LinkedHashSet)>($r20)
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : r44 = interfaceinvoke r10.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : r6 = virtualinvoke r2.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.state.StackId getSourceStackId()>()
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $z0 = interfaceinvoke $r18.<java.util.Set: boolean isEmpty()>()
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : r7 = virtualinvoke r5.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: org.apache.ambari.server.state.StackId getStackId()>()
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $r29 = interfaceinvoke r44.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : r52 = "services"
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $r20 = new java.util.LinkedHashSet
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : $r15 = r0.<org.apache.ambari.server.checks.ComponentsExistInRepoCheck: com.google.inject.Provider clustersProvider>
+org.apache.ambari.server.checks.ComponentsExistInRepoCheck.perform : virtualinvoke $r20.<java.util.LinkedHashSet: boolean addAll(java.util.Collection)>($r19)
+org.apache.ambari.server.state.stack.PrerequisiteCheck.getStatus : $r1 = r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: org.apache.ambari.server.state.stack.PrereqCheckStatus m_status>
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getQualifications : $r1 = staticinvoke <java.util.Collections: java.util.List emptyList()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getApplicableServices : $r1 = staticinvoke <java.util.Collections: java.util.Set emptySet()>()
+org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest.access$100 : $r1 = r0.<org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest: org.apache.ambari.server.api.services.AmbariMetaInfo m_ambariMetaInfo>
+org.apache.ambari.server.state.StackId.getStackVersion : $r1 = r0.<org.apache.ambari.server.state.StackId: java.lang.String stackVersion>
+org.apache.ambari.server.controller.PrereqCheckRequest.getTargetRepositoryVersion : $r1 = r0.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity m_targetRepositoryVersion>
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getVersionDefinitionXml : return r5
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getVersionDefinitionXml : r2 = virtualinvoke r1.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity getTargetRepositoryVersion()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getVersionDefinitionXml : r5 = virtualinvoke r2.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: org.apache.ambari.server.state.repository.VersionDefinitionXml getRepositoryXml()>()
+org.apache.ambari.server.state.stack.PrerequisiteCheck.setFailedOn : r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: java.util.LinkedHashSet m_failedOn> = r1
+org.apache.ambari.server.controller.PrereqCheckRequest.setTargetRepositoryVersion : r0.<org.apache.ambari.server.controller.PrereqCheckRequest: org.apache.ambari.server.orm.entities.RepositoryVersionEntity m_targetRepositoryVersion> = r1
+org.apache.ambari.server.state.stack.PrerequisiteCheck.setStatus : r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: org.apache.ambari.server.state.stack.PrereqCheckStatus m_status> = r1
+org.apache.ambari.server.checks.AbstractCheckDescriptor$ServiceQualification.isApplicable : $z0 = interfaceinvoke r2.<java.util.Set: boolean isEmpty()>()
+org.apache.ambari.server.checks.AbstractCheckDescriptor$ServiceQualification.isApplicable : return 1
+org.apache.ambari.server.checks.AbstractCheckDescriptor$ServiceQualification.isApplicable : $r6 = r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor$ServiceQualification: org.apache.ambari.server.checks.AbstractCheckDescriptor this$0>
+org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest$1.get : $r1 = r0.<org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest$1: org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest this$0>
+org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest$1.get : $r1 = virtualinvoke r0.<org.apache.ambari.server.checks.ComponentExistsInRepoCheckTest$1: org.apache.ambari.server.state.Clusters get()>()
+org.apache.ambari.server.controller.PrereqCheckRequest.getClusterName : $r1 = r0.<org.apache.ambari.server.controller.PrereqCheckRequest: java.lang.String m_clusterName>

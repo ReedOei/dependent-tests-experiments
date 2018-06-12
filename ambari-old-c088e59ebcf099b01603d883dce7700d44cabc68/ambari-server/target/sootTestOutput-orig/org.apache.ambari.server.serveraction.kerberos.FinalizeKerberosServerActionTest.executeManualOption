@@ -1,0 +1,102 @@
+org.apache.ambari.server.utils.StageUtils.getActionId : $r0 = new java.lang.StringBuilder
+org.apache.ambari.server.agent.CommandReport.setClusterName : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String clusterName> = r1
+org.apache.ambari.server.serveraction.AbstractServerAction.getCommandParameterValue : r2 = virtualinvoke r0.<org.apache.ambari.server.serveraction.AbstractServerAction: java.util.Map getCommandParameters()>()
+org.apache.ambari.server.serveraction.AbstractServerAction.getCommandParameterValue : if r2 != null goto $r3 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>(r1)
+org.apache.ambari.server.agent.CommandReport.setRoleCommand : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String roleCommand> = r1
+org.apache.ambari.server.serveraction.ActionLog.getStdErr : $r1 = r0.<org.apache.ambari.server.serveraction.ActionLog: java.lang.StringBuffer stdErr>
+org.apache.ambari.server.agent.CommandReport.getExitCode : $i0 = r0.<org.apache.ambari.server.agent.CommandReport: int exitCode>
+org.apache.ambari.server.agent.CommandReport.setStructuredOut : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String structuredOut> = r1
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockHostRoleCommand : $r2 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest: java.lang.Object createMock(java.lang.Class)>(class "Lorg/apache/ambari/server/actionmanager/HostRoleCommand;")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockHostRoleCommand : $l1 = virtualinvoke r1.<org.apache.ambari.server.actionmanager.HostRoleCommand: long getStageId()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockHostRoleCommand : $l2 = virtualinvoke r1.<org.apache.ambari.server.actionmanager.HostRoleCommand: long getTaskId()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockHostRoleCommand : return r1
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockHostRoleCommand : $l0 = virtualinvoke r1.<org.apache.ambari.server.actionmanager.HostRoleCommand: long getRequestId()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerAction.execute : $r3 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerAction: java.util.Map getCommandParameters()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerAction.execute : r2 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerAction: java.lang.String getCommandParameterValue(java.lang.String)>("data_directory")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerAction.execute : $r7 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus COMPLETED>
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerAction.execute : virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerAction: void deleteDataDirectory(java.lang.String)>(r2)
+org.apache.ambari.server.serveraction.AbstractServerAction.getCommandParameters : $r1 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.getCommandParameters : $r2 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.ActionLog.getStdOut : $r1 = r0.<org.apache.ambari.server.serveraction.ActionLog: java.lang.StringBuffer stdOut>
+org.apache.ambari.server.agent.CommandReport.setStdErr : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String stderr> = r1
+org.apache.ambari.server.serveraction.AbstractServerAction.setExecutionCommand : r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand> = r1
+org.apache.ambari.server.Role.name : $r1 = r0.<org.apache.ambari.server.Role: java.lang.String name>
+org.apache.ambari.server.actionmanager.HostRoleStatus.values : $r0 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus[] $VALUES>
+org.apache.ambari.server.agent.CommandReport.setTaskId : r0.<org.apache.ambari.server.agent.CommandReport: long taskId> = l0
+org.apache.ambari.server.agent.CommandReport.setStdOut : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String stdout> = r1
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest$1.configure : $r1 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/controller/KerberosHelper;")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest$1.configure : $r4 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/Clusters;")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest$1.configure : $r9 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Ljavax/persistence/EntityManager;")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest$1.configure : $r6 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/audit/AuditLogger;")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockExecutionCommand : $r9 = virtualinvoke r3.<org.apache.ambari.server.agent.ExecutionCommand: java.util.Map getCommandParams()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockExecutionCommand : return r3
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockExecutionCommand : $r18 = virtualinvoke r3.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String getRole()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockExecutionCommand : $r29 = virtualinvoke r3.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String getServiceName()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockExecutionCommand : $r5 = virtualinvoke r3.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String getClusterName()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockExecutionCommand : $r13 = virtualinvoke r3.<org.apache.ambari.server.agent.ExecutionCommand: org.apache.ambari.server.RoleCommand getRoleCommand()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockExecutionCommand : $r4 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest: java.lang.Object createMock(java.lang.Class)>(class "Lorg/apache/ambari/server/agent/ExecutionCommand;")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockExecutionCommand : $l0 = virtualinvoke r3.<org.apache.ambari.server.agent.ExecutionCommand: long getTaskId()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createMockExecutionCommand : $r24 = virtualinvoke r3.<org.apache.ambari.server.agent.ExecutionCommand: java.util.Map getConfigurationTags()>()
+org.apache.ambari.server.agent.CommandReport.getStatus : $r1 = r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String status>
+org.apache.ambari.server.agent.CommandReport.setActionId : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String actionId> = r1
+org.apache.ambari.server.serveraction.AbstractServerAction.setHostRoleCommand : r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand> = r1
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createDataDirectory : $r4 = new java.io.File
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createDataDirectory : $r3 = r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest: org.junit.rules.TemporaryFolder folder>
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createDataDirectory : return $r4
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.createDataDirectory : $z0 = virtualinvoke $r4.<java.io.File: boolean mkdir()>()
+org.apache.ambari.server.state.UpgradeState.values : $r0 = <org.apache.ambari.server.state.UpgradeState: org.apache.ambari.server.state.UpgradeState[] $VALUES>
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.assertSuccess : $r2 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus COMPLETED>
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.assertSuccess : $i0 = virtualinvoke r1.<org.apache.ambari.server.agent.CommandReport: int getExitCode()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.assertSuccess : $r5 = virtualinvoke r1.<org.apache.ambari.server.agent.CommandReport: java.lang.String getStructuredOut()>()
+org.apache.ambari.server.Role.valueOf : $r3 = new org.apache.ambari.server.Role
+org.apache.ambari.server.Role.valueOf : $r4 = <org.apache.ambari.server.Role: java.util.Map roles>
+org.apache.ambari.server.Role.valueOf : $r2 = <org.apache.ambari.server.Role: java.util.Map roles>
+org.apache.ambari.server.Role.valueOf : return $r3
+org.apache.ambari.server.serveraction.kerberos.KerberosServerAction.deleteDataDirectory : r3 = virtualinvoke $r6.<java.io.File: java.io.File getParentFile()>()
+org.apache.ambari.server.serveraction.kerberos.KerberosServerAction.deleteDataDirectory : staticinvoke <org.apache.commons.io.FileUtils: void deleteDirectory(java.io.File)>($r6)
+org.apache.ambari.server.serveraction.kerberos.KerberosServerAction.deleteDataDirectory : $r6 = new java.io.File
+org.apache.ambari.server.serveraction.kerberos.KerberosServerAction.deleteDataDirectory : $z2 = virtualinvoke r3.<java.io.File: boolean isDirectory()>()
+org.apache.ambari.server.serveraction.kerberos.KerberosServerAction.deleteDataDirectory : if r1 == null goto return
+org.apache.ambari.server.serveraction.kerberos.KerberosServerAction.deleteDataDirectory : if r3 == null goto return
+org.apache.ambari.server.serveraction.kerberos.KerberosServerAction.deleteDataDirectory : goto [?= return]
+org.apache.ambari.server.serveraction.kerberos.KerberosServerAction.deleteDataDirectory : $z0 = virtualinvoke r1.<java.lang.String: boolean contains(java.lang.CharSequence)>("/.ambari_")
+org.apache.ambari.server.agent.CommandReport.setServiceName : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String serviceName> = r1
+org.apache.ambari.server.serveraction.kerberos.KerberosServerAction.getKDCType : r1 = staticinvoke <org.apache.ambari.server.serveraction.kerberos.KerberosServerAction: java.lang.String getCommandParameterValue(java.util.Map,java.lang.String)>(r0, "kdc_type")
+org.apache.ambari.server.serveraction.kerberos.KerberosServerAction.getKDCType : if r1 == null goto $r2 = <org.apache.ambari.server.serveraction.kerberos.KDCType: org.apache.ambari.server.serveraction.kerberos.KDCType NONE>
+org.apache.ambari.server.agent.CommandReport.setExitCode : r0.<org.apache.ambari.server.agent.CommandReport: int exitCode> = i0
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r5 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r14 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r8 = new org.apache.ambari.server.agent.CommandReport
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r12 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : if r30 != null goto $r31 = virtualinvoke r30.<org.apache.ambari.server.RoleCommand: java.lang.String toString()>()
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r20 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r6 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r9 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r29 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r18 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : if r4 != null goto $r32 = r4
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r16 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : r27 = null
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r7 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : virtualinvoke $r8.<org.apache.ambari.server.agent.CommandReport: void setExitCode(int)>(i0)
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : virtualinvoke $r8.<org.apache.ambari.server.agent.CommandReport: void setStructuredOut(java.lang.String)>(r2)
+org.apache.ambari.server.agent.CommandReport.getStructuredOut : $r1 = r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String structuredOut>
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r29 = interfaceinvoke r5.<org.apache.ambari.server.state.Cluster: java.util.List getServiceComponentHosts(java.lang.String)>("host1")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r8 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest: java.lang.Object createMock(java.lang.Class)>(class "Lorg/apache/ambari/server/state/Host;")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r19 = interfaceinvoke r3.<org.apache.ambari.server.state.ServiceComponentHost: java.lang.String getHostName()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r11 = interfaceinvoke r3.<org.apache.ambari.server.state.ServiceComponentHost: java.lang.String getServiceName()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r42 = newarray (com.google.inject.Module)[1]
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r24 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest: java.lang.Object createMock(java.lang.Class)>(class "Lorg/apache/ambari/server/state/Cluster;")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r10 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest: java.lang.Object createMock(java.lang.Class)>(class "Lorg/apache/ambari/server/state/ServiceComponentHost;")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r23 = new java.util.ArrayList
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r25 = interfaceinvoke r5.<org.apache.ambari.server.state.Cluster: java.lang.String getClusterName()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r38 = interfaceinvoke r6.<org.apache.ambari.server.state.Clusters: org.apache.ambari.server.state.Cluster getCluster(java.lang.String)>(r1)
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r33 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest: java.lang.Object createMock(java.lang.Class)>(class "Lorg/apache/ambari/server/state/Clusters;")
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r15 = interfaceinvoke r3.<org.apache.ambari.server.state.ServiceComponentHost: java.lang.String getServiceComponentName()>()
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r7 = new java.util.HashMap
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : interfaceinvoke $r23.<java.util.List: boolean add(java.lang.Object)>(r3)
+org.apache.ambari.server.serveraction.kerberos.FinalizeKerberosServerActionTest.setup : $r34 = interfaceinvoke r6.<org.apache.ambari.server.state.Clusters: java.util.Map getHostsForCluster(java.lang.String)>(r1)
+org.apache.ambari.server.serveraction.kerberos.KerberosServerAction.getCommandParameterValue : if r0 == null goto $r3 = null
+org.apache.ambari.server.agent.CommandReport.setStatus : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String status> = r1
+org.apache.ambari.server.agent.CommandReport.setConfigurationTags : r0.<org.apache.ambari.server.agent.CommandReport: java.util.Map configurationTags> = r1
+org.apache.ambari.server.agent.CommandReport.setRole : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String role> = r1

@@ -1,0 +1,2 @@
+org.apache.zeppelin.notebook.Note.getParagraphCount : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs> >>>>>>>> org.apache.zeppelin.notebook.Note.getParagraphCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>()
+org.apache.zeppelin.notebook.Note.getParagraphCount : $i0 = interfaceinvoke $r1.<java.util.List: int size()>() >>>>>>>> org.apache.zeppelin.notebook.Note.getParagraphCount : return $i0

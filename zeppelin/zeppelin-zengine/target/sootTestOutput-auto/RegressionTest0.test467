@@ -1,0 +1,8 @@
+org.apache.zeppelin.notebook.NotebookAuthorization.getWriters : if r6 != null goto return r6
+org.apache.zeppelin.notebook.NotebookAuthorization.getWriters : return r6
+org.apache.zeppelin.notebook.NotebookAuthorization.getWriters : $r2 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.getWriters : if r3 != null goto $r7 = interfaceinvoke r3.<java.util.Map: java.lang.Object get(java.lang.Object)>("writers")
+org.apache.zeppelin.notebook.NotebookAuthorization.getWriters : n0 = null
+org.apache.zeppelin.notebook.NotebookAuthorization.getWriters : $r7 = interfaceinvoke r3.<java.util.Map: java.lang.Object get(java.lang.Object)>("writers")
+org.apache.zeppelin.notebook.NotebookAuthorization.init : $r1 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>
+org.apache.zeppelin.notebook.NotebookAuthorization.init : $r12 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>

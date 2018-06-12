@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.internal.AppCookieManager.getCachedAppCookie : $r2 = r0.<org.apache.ambari.server.controller.internal.AppCookieManager: java.util.Map endpointCookieMap>

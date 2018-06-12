@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewPermissionResponse.getViewPermissionInfo : $r1 = r0.<org.apache.ambari.server.controller.ViewPermissionResponse: org.apache.ambari.server.controller.ViewPermissionResponse$ViewPermissionInfo viewPermissionInfo> >>>>>>>> org.apache.ambari.server.controller.ViewPermissionResponse.getViewPermissionInfo : return $r1

@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewInstanceResponse$ViewInstanceResponseInfo.getShortUrl : $r1 = r0.<org.apache.ambari.server.controller.ViewInstanceResponse$ViewInstanceResponseInfo: java.lang.String shortUrl> >>>>>>>> org.apache.ambari.server.controller.ViewInstanceResponse$ViewInstanceResponseInfo.getShortUrl : return $r1

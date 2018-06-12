@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ActiveWidgetLayoutResponse.getSectionName : $r1 = r0.<org.apache.ambari.server.controller.ActiveWidgetLayoutResponse: java.lang.String sectionName> >>>>>>>> org.apache.ambari.server.controller.ActiveWidgetLayoutResponse.getSectionName : return $r1

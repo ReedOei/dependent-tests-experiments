@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex$SolrRowCursor.access$400 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex$SolrRowCursor: org.apache.jackrabbit.oak.spi.query.QueryIndex$IndexPlan plan> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndex$SolrRowCursor.access$400 : return $r1

@@ -1,0 +1,2 @@
+org.apache.ambari.server.controller.internal.HttpPropertyProvider.getSupportedProperties : $r6 = new java.util.HashSet
+org.apache.ambari.server.controller.internal.HttpPropertyProvider.getSupportedProperties : $r7 = interfaceinvoke r0.<java.util.Map: java.util.Collection values()>()

@@ -1,0 +1,9 @@
+org.apache.ambari.server.stack.StackDirectory$1.accept : $z0 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>(".svn") >>>>>>>> org.apache.ambari.server.stack.StackDirectory$1.accept : if $z0 != 0
+org.apache.ambari.server.stack.StackDirectory$1.accept : if $z0 != 0 >>>>>>>> org.apache.ambari.server.stack.StackDirectory$1.accept : $z1 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>(".git")
+org.apache.ambari.server.stack.StackDirectory$1.accept : if $z0 != 0 >>>>>>>> org.apache.ambari.server.stack.StackDirectory$1.accept : $z2 = 0
+org.apache.ambari.server.stack.StackDirectory$1.accept : $z2 = 0 >>>>>>>> org.apache.ambari.server.stack.StackDirectory$1.accept : return $z2
+org.apache.ambari.server.stack.StackDirectory$1.accept : $z1 = virtualinvoke r2.<java.lang.String: boolean equals(java.lang.Object)>(".git") >>>>>>>> org.apache.ambari.server.stack.StackDirectory$1.accept : if $z1 != 0
+org.apache.ambari.server.stack.StackDirectory$1.accept : if $z1 != 0 >>>>>>>> org.apache.ambari.server.stack.StackDirectory$1.accept : $z2 = 1
+org.apache.ambari.server.stack.StackDirectory$1.accept : if $z1 != 0 >>>>>>>> org.apache.ambari.server.stack.StackDirectory$1.accept : $z2 = 0
+org.apache.ambari.server.stack.StackDirectory$1.accept : $z2 = 1 >>>>>>>> org.apache.ambari.server.stack.StackDirectory$1.accept : goto [?= return $z2]
+org.apache.ambari.server.stack.StackDirectory$1.accept : goto [?= return $z2] >>>>>>>> org.apache.ambari.server.stack.StackDirectory$1.accept : return $z2

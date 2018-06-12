@@ -1,0 +1,4 @@
+org.apache.accumulo.master.state.TableCounts.hosted : $r2 = r0.<org.apache.accumulo.master.state.TableCounts: int[] counts>
+org.apache.accumulo.master.state.TableCounts.unassigned : $r2 = r0.<org.apache.accumulo.master.state.TableCounts: int[] counts>
+org.apache.accumulo.master.state.TableCounts.assignedToDeadServers : $r2 = r0.<org.apache.accumulo.master.state.TableCounts: int[] counts>
+org.apache.accumulo.master.state.TableCounts.assigned : $r2 = r0.<org.apache.accumulo.master.state.TableCounts: int[] counts>

@@ -1,0 +1,23 @@
+<div class="thumbnail" id="image-{{image.id}}" ng-init="status = {editing : false }">
+    <img class="img-responsive img-rounded" ng-src="{{image.smallPath}}" class="img-responsive img-rounded"
+         onerror="this.src='http://placehold.it/300x300'"
+         ng-click="openModal(image)">
+
+    <div class="caption" align="center">
+        <h3 ng-click="openModal(image)">{{image.name}}</h3>
+        <div ng-show="searchResultView">
+        von
+        <a href="" ng-click="goToPhotograph(image.userData.id)">{{image.userData.firstName}} {{image.userData.lastName}}</a>
+        <br>
+        zur
+        <a href="" ng-click="goToCollection(image.collectionId)">Sammlung</a>
+        </div>
+        <p>Preis: {{image.priceAsString}}</p>
+
+        <div align="center">
+            <button type="button" class="btn btn-primary"
+                    ng-click="addToCart(image.id)">Kaufen
+            </button>
+        </div>
+    </div>
+</div>

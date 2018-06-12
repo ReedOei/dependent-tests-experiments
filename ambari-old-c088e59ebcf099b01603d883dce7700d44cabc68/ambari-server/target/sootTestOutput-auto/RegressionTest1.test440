@@ -1,0 +1,3 @@
+org.apache.ambari.server.state.ClientConfigFileDefinition.setDictionaryName : r0.<org.apache.ambari.server.state.ClientConfigFileDefinition: java.lang.String dictionaryName> = r1
+org.apache.ambari.server.state.ClientConfigFileDefinition.setOptional : r0.<org.apache.ambari.server.state.ClientConfigFileDefinition: boolean optional> = z0
+org.apache.ambari.server.state.ClientConfigFileDefinition.setType : r0.<org.apache.ambari.server.state.ClientConfigFileDefinition: java.lang.String type> = r1

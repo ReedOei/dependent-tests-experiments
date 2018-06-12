@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.dto.PurchaseData.getTotalItems : $i0 = r0.<de.htw.sdf.photoplatform.webservice.dto.PurchaseData: int totalItems> >>>>>>>> de.htw.sdf.photoplatform.webservice.dto.PurchaseData.getTotalItems : return $i0

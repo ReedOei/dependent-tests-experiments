@@ -1,0 +1,1 @@
+org.apache.accumulo.master.Master.getMasterState : $r1 = r0.<org.apache.accumulo.master.Master: org.apache.accumulo.core.master.thrift.MasterState state> >>>>>>>> org.apache.accumulo.master.Master.getMasterState : return $r1

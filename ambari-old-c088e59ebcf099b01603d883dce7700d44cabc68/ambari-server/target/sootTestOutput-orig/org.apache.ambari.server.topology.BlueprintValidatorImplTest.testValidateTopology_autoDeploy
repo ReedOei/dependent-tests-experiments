@@ -1,0 +1,55 @@
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateHostGroup : $r13 = <org.apache.ambari.server.topology.BlueprintValidatorImpl: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateHostGroup : $r19 = <org.apache.ambari.server.topology.BlueprintValidatorImpl: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateHostGroup : $r15 = new java.util.HashMap
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateHostGroup : $r20 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.controller.internal.Stack stack>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateHostGroup : $r16 = new java.util.HashSet
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateHostGroup : $r18 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.Cardinality.supportsAutoDeploy : $z0 = virtualinvoke r0.<org.apache.ambari.server.topology.Cardinality: boolean isValidCount(int)>(1)
+org.apache.ambari.server.state.AutoDeployInfo.setCoLocate : r0.<org.apache.ambari.server.state.AutoDeployInfo: java.lang.String m_coLocate> = r1
+org.apache.ambari.server.topology.ClusterTopologyImpl.isNameNodeHAEnabled : $z0 = interfaceinvoke r0.<java.util.Map: boolean containsKey(java.lang.Object)>("hdfs-site")
+org.apache.ambari.server.state.AutoDeployInfo.isEnabled : $z0 = r0.<org.apache.ambari.server.state.AutoDeployInfo: boolean m_enabled>
+org.apache.ambari.server.state.AutoDeployInfo.setEnabled : r0.<org.apache.ambari.server.state.AutoDeployInfo: boolean m_enabled> = z0
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : r5 = virtualinvoke r2.<org.apache.ambari.server.state.AutoDeployInfo: java.lang.String getCoLocate()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : $r28 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.topology.Blueprint blueprint>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : if r5 == null goto (branch)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : $r21 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.topology.Blueprint blueprint>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : interfaceinvoke r7.<org.apache.ambari.server.topology.HostGroup: boolean addComponent(java.lang.String)>(r1)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : $z9 = virtualinvoke r27.<org.apache.ambari.server.topology.Cardinality: boolean isValidCount(int)>(i0)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : if $z10 != 0 goto (branch)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : if r2 == null goto (branch)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : $z6 = interfaceinvoke r6.<java.util.Collection: boolean isEmpty()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : $r24 = interfaceinvoke r6.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : $r11 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.controller.internal.Stack stack>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : $r8 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.topology.Blueprint blueprint>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : $r10 = new java.util.HashSet
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : $z0 = staticinvoke <org.apache.ambari.server.topology.ClusterTopologyImpl: boolean isNameNodeHAEnabled(java.util.Map)>(r3)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.verifyComponentCardinalityCount : z11 = 1
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r9 = <org.apache.ambari.server.topology.BlueprintValidatorImpl: org.slf4j.Logger LOGGER>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : goto [?= $z0 = interfaceinvoke r27.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r13 = new java.util.HashMap
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r17 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.controller.internal.Stack stack>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r11 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.topology.Blueprint blueprint>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : r29 = specialinvoke r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: java.util.Map validateHostGroup(org.apache.ambari.server.topology.HostGroup)>(r28)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r14 = new java.util.HashSet
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : r32 = interfaceinvoke r31.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r24 = interfaceinvoke r27.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r21 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.controller.internal.Stack stack>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $z5 = virtualinvoke r6.<org.apache.ambari.server.topology.Cardinality: boolean isAll()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $z2 = interfaceinvoke $r13.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r19 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r16 = interfaceinvoke r32.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r22 = virtualinvoke r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: java.util.Collection verifyComponentCardinalityCount(java.lang.String,org.apache.ambari.server.topology.Cardinality,org.apache.ambari.server.state.AutoDeployInfo)>(r5, r6, r7)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : r27 = interfaceinvoke r1.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $z8 = interfaceinvoke r29.<java.util.Map: boolean isEmpty()>()
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r20 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.controller.internal.Stack stack>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.validateTopology : $r15 = r0.<org.apache.ambari.server.topology.BlueprintValidatorImpl: org.apache.ambari.server.topology.Blueprint blueprint>
+org.apache.ambari.server.state.AutoDeployInfo.getCoLocate : $r1 = r0.<org.apache.ambari.server.state.AutoDeployInfo: java.lang.String m_coLocate>
+org.apache.ambari.server.topology.Cardinality.isValidCount : $z0 = r0.<org.apache.ambari.server.topology.Cardinality: boolean isAll>
+org.apache.ambari.server.topology.Cardinality.isValidCount : $i4 = r0.<org.apache.ambari.server.topology.Cardinality: int exact>
+org.apache.ambari.server.topology.Cardinality.isValidCount : $i2 = r0.<org.apache.ambari.server.topology.Cardinality: int min>
+org.apache.ambari.server.topology.Cardinality.isValidCount : $i1 = r0.<org.apache.ambari.server.topology.Cardinality: int exact>
+org.apache.ambari.server.topology.Cardinality.isAll : $z0 = r0.<org.apache.ambari.server.topology.Cardinality: boolean isAll>
+org.apache.ambari.server.topology.Configuration.getProperties : $r1 = r0.<org.apache.ambari.server.topology.Configuration: java.util.Map properties>
+org.apache.ambari.server.topology.BlueprintValidatorImpl.isDependencyManaged : r4 = virtualinvoke r1.<org.apache.ambari.server.controller.internal.Stack: java.lang.String getExternalComponentConfig(java.lang.String)>(r2)
+org.apache.ambari.server.topology.BlueprintValidatorImpl.isDependencyManaged : if r4 == null goto return z2
+org.apache.ambari.server.topology.BlueprintValidatorImpl.isDependencyManaged : z2 = 1

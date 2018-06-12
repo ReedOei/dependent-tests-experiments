@@ -1,0 +1,5 @@
+org.apache.zeppelin.notebook.Paragraph.clearRuntimeInfos : $r1 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.clearRuntimeInfos : if $r1 == null
+org.apache.zeppelin.notebook.Paragraph.clearRuntimeInfos : if $r1 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.clearRuntimeInfos : $r2 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos>
+org.apache.zeppelin.notebook.Paragraph.clearRuntimeInfos : if $r1 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.clearRuntimeInfos : return
+org.apache.zeppelin.notebook.Paragraph.clearRuntimeInfos : $r2 = r0.<org.apache.zeppelin.notebook.Paragraph: java.util.Map runtimeInfos> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.clearRuntimeInfos : interfaceinvoke $r2.<java.util.Map: void clear()>()
+org.apache.zeppelin.notebook.Paragraph.clearRuntimeInfos : interfaceinvoke $r2.<java.util.Map: void clear()>() >>>>>>>> org.apache.zeppelin.notebook.Paragraph.clearRuntimeInfos : return

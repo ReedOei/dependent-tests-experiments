@@ -1,0 +1,1 @@
+org.apache.ambari.server.ldap.service.ads.detectors.UserGroupMemberAttrDetector$UserGroupMemberAttr.attrName : $r1 = r0.<org.apache.ambari.server.ldap.service.ads.detectors.UserGroupMemberAttrDetector$UserGroupMemberAttr: java.lang.String attrName> >>>>>>>> org.apache.ambari.server.ldap.service.ads.detectors.UserGroupMemberAttrDetector$UserGroupMemberAttr.attrName : return $r1

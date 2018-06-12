@@ -1,0 +1,26 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserSessionContainer.getSession : $r3 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserSessionContainer: java.util.Map sessions>
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserSessionContainer.getSession : return ""
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserSessionContainer.getSession : if r2 != null goto $r5 = r2.<org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserSessionContainer$Entity: java.lang.String userSession>
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserInstances : $r4 = staticinvoke <java.util.Collections: java.util.List emptyList()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserInstances : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserToken : r18 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: java.lang.String getDefaultZeppelinInstanceToken(java.lang.String)>(r2)
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserToken : return r18
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserToken : $r12 = <org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserSessionContainer: org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserSessionContainer instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserToken : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserToken : $z3 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r18)
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserToken : $z4 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r18)
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserToken : goto [?= return r18]
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserToken : $r9 = "anonymous"
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserToken : $r15 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: java.lang.String defaultToken>
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getUserToken : $r10 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: java.util.concurrent.ConcurrentMap userTokens>
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getDefaultZeppelinInstanceToken : return ""
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getDefaultZeppelinInstanceToken : $z0 = interfaceinvoke r2.<java.util.List: boolean isEmpty()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getDefaultZeppelinInstanceToken : r2 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: java.util.List getUserInstances(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getAllTokens : $r1 = new java.util.ArrayList
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.init : $r3 = <org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.init : $r2 = <org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer instance>
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getExistingUserToken : return ""
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getExistingUserToken : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getExistingUserToken : $r3 = "anonymous"
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getExistingUserToken : $r4 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer: java.util.concurrent.ConcurrentMap userTokens>
+org.apache.zeppelin.notebook.repo.zeppelinhub.model.UserTokenContainer.getExistingUserToken : if r2 != null goto return r2

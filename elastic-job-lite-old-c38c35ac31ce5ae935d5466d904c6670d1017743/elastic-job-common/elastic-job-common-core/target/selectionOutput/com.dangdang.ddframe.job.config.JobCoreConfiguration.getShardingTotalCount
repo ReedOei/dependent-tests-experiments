@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getShardingTotalCount : $i0 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: int shardingTotalCount> >>>>>>>> com.dangdang.ddframe.job.config.JobCoreConfiguration.getShardingTotalCount : return $i0

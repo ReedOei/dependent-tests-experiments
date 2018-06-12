@@ -1,0 +1,41 @@
+org.apache.ambari.server.state.PropertyInfo.hashCode : $i8 = 0
+org.apache.ambari.server.state.PropertyInfo.hashCode : $i2 = 31 * i7
+org.apache.ambari.server.state.PropertyInfo.hashCode : $i6 = 0
+org.apache.ambari.server.state.PropertyInfo.hashCode : $i1 = 31 * 1
+org.apache.ambari.server.state.PropertyInfo.hashCode : $r1 = r0.<org.apache.ambari.server.state.PropertyInfo: java.lang.String description>
+org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken.setAuthenticated : r0.<org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken: boolean authenticated> = z0
+org.apache.ambari.server.utils.StageUtils.useStackJdkIfExists : $i0 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration: int getJavaVersion()>()
+org.apache.ambari.server.utils.StageUtils.useStackJdkIfExists : $r2 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration: java.lang.String getJavaHome()>()
+org.apache.ambari.server.utils.StageUtils.useStackJdkIfExists : $r4 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration: java.lang.String getJDKName()>()
+org.apache.ambari.server.utils.StageUtils.useStackJdkIfExists : $r10 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration: java.lang.String getStackJavaHome()>()
+org.apache.ambari.server.utils.StageUtils.useStackJdkIfExists : $r6 = virtualinvoke r1.<org.apache.ambari.server.configuration.Configuration: java.lang.String getJCEName()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : $r2 = staticinvoke <org.springframework.security.core.context.SecurityContextHolder: org.springframework.security.core.context.SecurityContext getContext()>()
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : virtualinvoke $r1.<org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken: void setAuthenticated(boolean)>(1)
+org.apache.ambari.server.controller.AmbariManagementControllerImplTest.setupAuthentication : $r1 = new org.apache.ambari.server.security.authorization.internal.InternalAuthenticationToken
+org.apache.ambari.server.state.PropertyInfo.setName : r0.<org.apache.ambari.server.state.PropertyInfo: java.lang.String name> = r1
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getOjdbcUrl : $r1 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: java.lang.String ojdbcUrl>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getMysqljdbcUrl : $r1 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: java.lang.String mysqljdbcUrl>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r9 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.controller.AmbariManagementController managementController>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r25 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.configuration.Configuration configs>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r36 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.configuration.Configuration configs>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r14 = virtualinvoke r62.<org.apache.ambari.server.state.StackId: java.lang.String getStackVersion()>()
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r45 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.state.ConfigHelper configHelper>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r19 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.controller.AmbariManagementController managementController>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r22 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.controller.AmbariManagementController managementController>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r16 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.controller.AmbariManagementController managementController>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r28 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.controller.AmbariManagementController managementController>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r51 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.configuration.Configuration configs>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r7 = new java.util.TreeMap
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : virtualinvoke $r7.<java.util.TreeMap: java.lang.Object put(java.lang.Object,java.lang.Object)>("not_managed_hdfs_path_list", r6)
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r8 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.configuration.Configuration configs>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r30 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.configuration.Configuration configs>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r48 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.configuration.Configuration configs>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r33 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.configuration.Configuration configs>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r44 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.state.ConfigHelper configHelper>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r39 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: org.apache.ambari.server.configuration.Configuration configs>
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : r3 = interfaceinvoke r1.<org.apache.ambari.server.state.Cluster: java.util.Map getDesiredConfigs()>()
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : if null != r62 goto $r7 = new java.util.TreeMap
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r12 = virtualinvoke r62.<org.apache.ambari.server.state.StackId: java.lang.String getStackName()>()
+org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper.createDefaultHostParams : $r46 = r0.<org.apache.ambari.server.controller.AmbariCustomCommandExecutionHelper: com.google.gson.Gson gson>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getServerDB : $r1 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: java.lang.String serverDB>
+org.apache.ambari.server.controller.AmbariManagementControllerImpl.getJdkResourceUrl : $r1 = r0.<org.apache.ambari.server.controller.AmbariManagementControllerImpl: java.lang.String jdkResourceUrl>

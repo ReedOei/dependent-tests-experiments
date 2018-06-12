@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.api.ShardingContext.getShardingItem : $i0 = r0.<com.dangdang.ddframe.job.api.ShardingContext: int shardingItem> >>>>>>>> com.dangdang.ddframe.job.api.ShardingContext.getShardingItem : return $i0

@@ -1,0 +1,1 @@
+org.apache.accumulo.master.MasterExecutable.execute : staticinvoke <org.apache.accumulo.master.Master: void main(java.lang.String[])>(r1) >>>>>>>> org.apache.accumulo.master.MasterExecutable.execute : return

@@ -1,0 +1,6 @@
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : $s0 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: short _persistence_get_isLegacy()>() >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : if $s0 != 1
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : if $s0 != 1 >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : $z0 = 1
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : if $s0 != 1 >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : $z0 = 0
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : $z0 = 0 >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : return $z0
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : $z0 = 1 >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : goto [?= return $z0]
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : goto [?= return $z0] >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.isLegacy : return $z0

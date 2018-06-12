@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewInstanceRequest$ViewInstanceRequestInfo.getClusterHandle : $r1 = r0.<org.apache.ambari.server.controller.ViewInstanceRequest$ViewInstanceRequestInfo: java.lang.Integer clusterHandle> >>>>>>>> org.apache.ambari.server.controller.ViewInstanceRequest$ViewInstanceRequestInfo.getClusterHandle : return $r1

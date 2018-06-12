@@ -1,0 +1,1 @@
+org.apache.accumulo.master.tableOps.BulkImport$1.call : $r1 = virtualinvoke r0.<org.apache.accumulo.master.tableOps.BulkImport$1: java.lang.Exception call()>() >>>>>>>> org.apache.accumulo.master.tableOps.BulkImport$1.call : return $r1

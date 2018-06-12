@@ -1,0 +1,1 @@
+org.apache.ambari.server.checks.DatabaseConsistencyCheckHelper.resetCheckResult : $r0 = <org.apache.ambari.server.checks.DatabaseConsistencyCheckResult: org.apache.ambari.server.checks.DatabaseConsistencyCheckResult DB_CHECK_SUCCESS>

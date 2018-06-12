@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewPermissionResponse$ViewPermissionInfo.getResourceName : $r1 = r0.<org.apache.ambari.server.controller.ViewPermissionResponse$ViewPermissionInfo: java.lang.String resourceName> >>>>>>>> org.apache.ambari.server.controller.ViewPermissionResponse$ViewPermissionInfo.getResourceName : return $r1

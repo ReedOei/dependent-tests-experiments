@@ -1,0 +1,146 @@
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutor.process : $z0 = virtualinvoke r2.<com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration: boolean isStreamingProcess()>()
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutor.process : $r3 = virtualinvoke r0.<com.dangdang.ddframe.job.executor.type.DataflowJobExecutor: com.dangdang.ddframe.job.config.JobRootConfiguration getJobRootConfig()>()
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutor.process : specialinvoke r0.<com.dangdang.ddframe.job.executor.type.DataflowJobExecutor: void oneOffExecute(com.dangdang.ddframe.job.api.ShardingContext)>(r1)
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.prepareForIsNotMisfire : $r2 = interfaceinvoke r0.<com.dangdang.ddframe.job.executor.JobFacade: com.dangdang.ddframe.job.executor.ShardingContexts getShardingContexts()>()
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.prepareForIsNotMisfire : $r11 = virtualinvoke r1.<com.dangdang.ddframe.job.executor.ShardingContexts: java.util.Map getShardingItemParameters()>()
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.prepareForIsNotMisfire : $r5 = virtualinvoke r1.<com.dangdang.ddframe.job.executor.ShardingContexts: java.util.Map getShardingItemParameters()>()
+com.dangdang.ddframe.job.fixture.job.TestDataflowJob.processData : r3 = interfaceinvoke r2.<java.util.List: java.util.Iterator iterator()>()
+com.dangdang.ddframe.job.fixture.job.TestDataflowJob.processData : r4 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+com.dangdang.ddframe.job.fixture.job.TestDataflowJob.processData : $r5 = r0.<com.dangdang.ddframe.job.fixture.job.TestDataflowJob: com.dangdang.ddframe.job.fixture.job.JobCaller jobCaller>
+com.dangdang.ddframe.job.fixture.job.TestDataflowJob.processData : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+com.dangdang.ddframe.job.executor.ShardingContexts.getTaskId : $r1 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: java.lang.String taskId>
+com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistry.getExecutorServiceHandler : $r2 = <com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistry: java.util.Map REGISTRY>
+com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistry.getExecutorServiceHandler : $r3 = <com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistry: java.util.Map REGISTRY>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.access$000 : specialinvoke r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: void process(com.dangdang.ddframe.job.executor.ShardingContexts,int,com.dangdang.ddframe.job.event.type.JobExecutionEvent)>(r1, i0, r2)
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : return r2
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : r1 = staticinvoke <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] values()>()
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : $r3 = virtualinvoke r2.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String getKey()>()
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : r2 = r1[i1]
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r9 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : specialinvoke r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: void process(com.dangdang.ddframe.job.executor.ShardingContexts,com.dangdang.ddframe.job.event.type.JobExecutionEvent$ExecutionSource)>(r1, r2)
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r3 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : goto [?= $r7 = <com.dangdang.ddframe.job.event.type.JobExecutionEvent$ExecutionSource: com.dangdang.ddframe.job.event.type.JobExecutionEvent$ExecutionSource NORMAL_TRIGGER>]
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r40 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r8 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $z0 = virtualinvoke r38.<com.dangdang.ddframe.job.executor.ShardingContexts: boolean isAllowSendJobEvent()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : r3 = virtualinvoke r1.<com.dangdang.ddframe.job.executor.ShardingContexts: java.lang.String getTaskId()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r7 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : goto [?= return]
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r2 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r10 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r22 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r7 = <com.dangdang.ddframe.job.event.type.JobExecutionEvent$ExecutionSource: com.dangdang.ddframe.job.event.type.JobExecutionEvent$ExecutionSource NORMAL_TRIGGER>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r6 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $z3 = virtualinvoke r1.<com.dangdang.ddframe.job.executor.ShardingContexts: boolean isAllowSendJobEvent()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r1 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r8 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: java.util.Map itemErrorMessages>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : goto [?= $r2 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>]
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $z1 = virtualinvoke r1.<com.dangdang.ddframe.job.executor.ShardingContexts: boolean isAllowSendJobEvent()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r5 = virtualinvoke r1.<com.dangdang.ddframe.job.executor.ShardingContexts: java.util.Map getShardingItemParameters()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute : $r16 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.handler.JobProperties.get : $r2 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties: java.util.EnumMap map>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getKey : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String key>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String jobName>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $z5 = 1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $z4 = 1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.build : $r2 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String cron>
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getShardingTotalCount : $i0 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: int shardingTotalCount>
+com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration.getCoreConfig : $r1 = r0.<com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration: com.dangdang.ddframe.job.config.JobCoreConfiguration coreConfig>
+com.dangdang.ddframe.job.api.ShardingContext.getShardingItem : $i0 = r0.<com.dangdang.ddframe.job.api.ShardingContext: int shardingItem>
+com.dangdang.ddframe.job.fixture.config.TestDataflowJobConfiguration.getTypeConfig : $r1 = new com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration
+com.dangdang.ddframe.job.fixture.config.TestDataflowJobConfiguration.getTypeConfig : $r3 = <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum JOB_EXCEPTION_HANDLER>
+com.dangdang.ddframe.job.fixture.config.TestDataflowJobConfiguration.getTypeConfig : $r9 = class "Lcom/dangdang/ddframe/job/fixture/job/TestDataflowJob;"
+com.dangdang.ddframe.job.executor.ShardingContexts.getShardingTotalCount : $i0 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: int shardingTotalCount>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getClassType : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.Class classType>
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.setUp : $r11 = new com.dangdang.ddframe.job.executor.type.DataflowJobExecutor
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.setUp : $r2 = r0.<com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.setUp : $r15 = r0.<com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.setUp : r0.<com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest: com.dangdang.ddframe.job.executor.ShardingContexts shardingContexts> = r1
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.setUp : $r7 = r0.<com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r4 = <com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: org.slf4j.Logger log>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r6 = new java.util.concurrent.CountDownLatch
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : goto [?= return]
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $i1 = interfaceinvoke r3.<java.util.Collection: int size()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r14 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r9 = new com.dangdang.ddframe.job.event.type.JobExecutionEvent
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r12 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: java.util.concurrent.ExecutorService executorService>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r15 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: java.util.Map itemErrorMessages>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r20 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.handler.JobExceptionHandler jobExceptionHandler>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r7 = new com.dangdang.ddframe.job.api.ShardingContext
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : goto [?= $z0 = interfaceinvoke r28.<java.util.Iterator: boolean hasNext()>()]
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r11 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : r28 = interfaceinvoke r3.<java.util.Collection: java.util.Iterator iterator()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : virtualinvoke $r6.<java.util.concurrent.CountDownLatch: void await()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $z0 = virtualinvoke r1.<com.dangdang.ddframe.job.executor.ShardingContexts: boolean isAllowSendJobEvent()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : r22 = virtualinvoke r2.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: com.dangdang.ddframe.job.event.type.JobExecutionEvent executionFailure(java.lang.Throwable)>($r13)
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r12 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.executor.JobFacade jobFacade>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r14 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: java.util.concurrent.ExecutorService executorService>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r7 = interfaceinvoke r28.<java.util.Iterator: java.lang.Object next()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $z1 = virtualinvoke r1.<com.dangdang.ddframe.job.executor.ShardingContexts: boolean isAllowSendJobEvent()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : r21 = virtualinvoke r2.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: com.dangdang.ddframe.job.event.type.JobExecutionEvent executionSuccess()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r8 = <com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: org.slf4j.Logger log>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process : $r5 = virtualinvoke r1.<com.dangdang.ddframe.job.executor.ShardingContexts: java.util.Map getShardingItemParameters()>()
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : $r2 = new com.dangdang.ddframe.job.event.type.JobExecutionEvent
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : $r12 = new java.util.Date
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : virtualinvoke $r2.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: void setSuccess(boolean)>(1)
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionSuccess : return $r2
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionFailure : $r13 = new java.util.Date
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionFailure : $r3 = new com.dangdang.ddframe.job.event.type.JobExecutionEvent
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionFailure : virtualinvoke $r3.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: void setSuccess(boolean)>(0)
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.executionFailure : return $r3
+com.dangdang.ddframe.job.executor.ShardingContexts.getJobParameter : $r1 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: java.lang.String jobParameter>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.getHandler : $r7 = virtualinvoke r1.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.Class getClassType()>()
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.getHandler : $r3 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.config.JobRootConfiguration jobRootConfig>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.getHandler : r12 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(r2)
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.getHandler : $r9 = virtualinvoke r12.<java.lang.Class: java.lang.Object newInstance()>()
+com.dangdang.ddframe.job.fixture.job.TestDataflowJob.fetchData : $r2 = r0.<com.dangdang.ddframe.job.fixture.job.TestDataflowJob: com.dangdang.ddframe.job.fixture.job.JobCaller jobCaller>
+com.dangdang.ddframe.job.executor.ShardingContexts.isAllowSendJobEvent : $z0 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: boolean allowSendJobEvent>
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutor.processData : $r3 = r0.<com.dangdang.ddframe.job.executor.type.DataflowJobExecutor: com.dangdang.ddframe.job.api.dataflow.DataflowJob dataflowJob>
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.setCompleteTime : r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: java.util.Date completeTime> = r1
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobName : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: java.lang.String jobName>
+com.dangdang.ddframe.job.executor.ShardingContexts.getJobName : $r1 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: java.lang.String jobName>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobProperties : $r3 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: com.dangdang.ddframe.job.executor.handler.JobProperties jobProperties>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobProperties : return r0
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getDefaultValue : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String defaultValue>
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.verifyForIsNotMisfire : $r5 = staticinvoke <org.mockito.Mockito: java.lang.Object verify(java.lang.Object)>(r0)
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.verifyForIsNotMisfire : $r8 = staticinvoke <org.mockito.Mockito: java.lang.Object verify(java.lang.Object)>(r0)
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.verifyForIsNotMisfire : $r18 = staticinvoke <org.mockito.Mockito: java.lang.Object verify(java.lang.Object)>(r0)
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.verifyForIsNotMisfire : $r3 = staticinvoke <org.mockito.Mockito: java.lang.Object verify(java.lang.Object)>(r0)
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.verifyForIsNotMisfire : $r12 = staticinvoke <org.mockito.Mockito: java.lang.Object verify(java.lang.Object)>(r0)
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.verifyForIsNotMisfire : $r22 = staticinvoke <org.mockito.Mockito: java.lang.Object verify(java.lang.Object)>(r0)
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.verifyForIsNotMisfire : goto [?= $r5 = staticinvoke <org.mockito.Mockito: java.lang.Object verify(java.lang.Object)>(r0)]
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.verifyForIsNotMisfire : $r20 = staticinvoke <org.mockito.Mockito: java.lang.Object verify(java.lang.Object)>(r0)
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.verifyForIsNotMisfire : $r16 = staticinvoke <org.mockito.Mockito: java.lang.Object verify(java.lang.Object)>(r0)
+com.dangdang.ddframe.job.executor.type.ElasticJobVerify.verifyForIsNotMisfire : $r26 = staticinvoke <org.mockito.Mockito: java.lang.Object verify(java.lang.Object)>(r0)
+com.dangdang.ddframe.job.config.JobCoreConfiguration.newBuilder : $r2 = new com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.values : $r0 = <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] $VALUES>
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r5 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r8 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : virtualinvoke r0.<java.lang.Throwable: void printStackTrace(java.io.PrintWriter)>($r6)
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : virtualinvoke $r6.<java.io.PrintWriter: void close()>()
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : if $r6 == null goto $r14 = virtualinvoke $r5.<java.io.StringWriter: java.lang.String toString()>()
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : $r6 = new java.io.PrintWriter
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : if null != r0 goto $r5 = new java.io.StringWriter
+com.dangdang.ddframe.job.exception.ExceptionUtil.transform : $r5 = new java.io.StringWriter
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutor.fetchData : $r2 = r0.<com.dangdang.ddframe.job.executor.type.DataflowJobExecutor: com.dangdang.ddframe.job.api.dataflow.DataflowJob dataflowJob>
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : r3 = staticinvoke <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum 'from'(java.lang.String)>(r1)
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : $r4 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties: java.util.EnumMap map>
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : if null != r2 goto $r4 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties: java.util.EnumMap map>
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : if null == r3 goto return
+com.dangdang.ddframe.job.config.JobCoreConfiguration.getJobProperties : $r1 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration: com.dangdang.ddframe.job.executor.handler.JobProperties jobProperties>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor$1.run : $r5 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor$1: java.util.concurrent.CountDownLatch val$latch>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor$1.run : $r4 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor$1: com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor this$0>
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor$1.run : goto [?= return]
+com.dangdang.ddframe.job.executor.ShardingContexts.getShardingItemParameters : $r1 = r0.<com.dangdang.ddframe.job.executor.ShardingContexts: java.util.Map shardingItemParameters>
+com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration.isStreamingProcess : $z0 = r0.<com.dangdang.ddframe.job.config.dataflow.DataflowJobConfiguration: boolean streamingProcess>
+com.dangdang.ddframe.job.util.env.IpUtils.getHostName : $r1 = staticinvoke <java.net.InetAddress: java.net.InetAddress getLocalHost()>()
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutor.oneOffExecute : specialinvoke r0.<com.dangdang.ddframe.job.executor.type.DataflowJobExecutor: void processData(com.dangdang.ddframe.job.api.ShardingContext,java.util.List)>(r1, r2)
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutor.oneOffExecute : if null == r2 goto return
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutor.oneOffExecute : $z0 = interfaceinvoke r2.<java.util.List: boolean isEmpty()>()
+com.dangdang.ddframe.job.executor.type.DataflowJobExecutor.oneOffExecute : r2 = specialinvoke r0.<com.dangdang.ddframe.job.executor.type.DataflowJobExecutor: java.util.List fetchData(com.dangdang.ddframe.job.api.ShardingContext)>(r1)
+com.dangdang.ddframe.job.fixture.ShardingContextsBuilder.getMultipleShardingContexts : $r6 = new com.dangdang.ddframe.job.executor.ShardingContexts
+com.dangdang.ddframe.job.fixture.ShardingContextsBuilder.getMultipleShardingContexts : $r4 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(1)
+com.dangdang.ddframe.job.fixture.ShardingContextsBuilder.getMultipleShardingContexts : $r1 = new java.util.HashMap
+com.dangdang.ddframe.job.fixture.ShardingContextsBuilder.getMultipleShardingContexts : $r2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(0)
+com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.getJobRootConfig : $r1 = r0.<com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor: com.dangdang.ddframe.job.config.JobRootConfiguration jobRootConfig>
+com.dangdang.ddframe.job.event.type.JobExecutionEvent.setSuccess : r0.<com.dangdang.ddframe.job.event.type.JobExecutionEvent: boolean success> = z0

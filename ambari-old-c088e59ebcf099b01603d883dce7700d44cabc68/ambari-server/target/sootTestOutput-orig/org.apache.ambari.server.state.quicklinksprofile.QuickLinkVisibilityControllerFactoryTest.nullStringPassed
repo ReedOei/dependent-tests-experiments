@@ -1,0 +1,3 @@
+org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactory.get : $r5 = new org.apache.ambari.server.state.quicklinksprofile.ShowAllLinksVisibilityController
+org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactory.get : if null != r0 goto $r1 = new org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileParser
+org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactory.get : $r4 = <org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactory: org.slf4j.Logger LOG>

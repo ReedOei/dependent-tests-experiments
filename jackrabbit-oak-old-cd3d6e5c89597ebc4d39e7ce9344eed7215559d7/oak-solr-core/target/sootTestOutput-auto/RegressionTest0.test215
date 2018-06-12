@@ -1,0 +1,7 @@
+org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.getSolrServer : $r4 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService: org.apache.solr.client.solrj.SolrClient cachedSolrServer>
+org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.getSolrServer : $r5 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService: org.apache.solr.client.solrj.SolrClient cachedSolrServer>
+org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.getSolrServer : $r6 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService: org.apache.solr.client.solrj.SolrClient getServer()>()
+org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.getSolrServer : $r3 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService: java.util.Map solrServerConfigurationProviders>
+org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.getServer : r14 = null
+org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.getServer : $r3 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService: java.lang.String serverType>
+org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService.getIndexingSolrServer : $r1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.index.solr.osgi.SolrServerProviderService: org.apache.solr.client.solrj.SolrClient getSolrServer()>()

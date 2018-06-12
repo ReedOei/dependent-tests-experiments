@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.util.BeanFactoryUtilsTest$TestBean.setName : r0.<com.alibaba.dubbo.config.spring.util.BeanFactoryUtilsTest$TestBean: java.lang.String name> = r1 >>>>>>>> com.alibaba.dubbo.config.spring.util.BeanFactoryUtilsTest$TestBean.setName : return

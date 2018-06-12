@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.persistence.model.PurchaseItem.isPurchased : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PurchaseItem: java.lang.Boolean purchased> >>>>>>>> de.htw.sdf.photoplatform.persistence.model.PurchaseItem.isPurchased : return $r1

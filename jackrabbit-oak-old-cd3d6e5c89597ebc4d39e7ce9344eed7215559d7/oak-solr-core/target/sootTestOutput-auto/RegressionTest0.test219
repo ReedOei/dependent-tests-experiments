@@ -1,0 +1,3 @@
+org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry.get : $r4 = <org.apache.jackrabbit.oak.plugins.index.solr.server.SolrServerRegistry$1: int[] $SwitchMap$org$apache$jackrabbit$oak$plugins$index$solr$server$SolrServerRegistry$Strategy>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrShardsNo : $i0 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: int solrShardsNo>
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration.getSolrHttpUrls : $r1 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.configuration.RemoteSolrServerConfiguration: java.lang.String[] solrHttpUrls>

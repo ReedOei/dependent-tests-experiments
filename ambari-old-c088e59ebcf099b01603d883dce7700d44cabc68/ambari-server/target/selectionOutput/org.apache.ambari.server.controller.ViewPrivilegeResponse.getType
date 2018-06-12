@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ViewPrivilegeResponse.getType : $r1 = r0.<org.apache.ambari.server.controller.ViewPrivilegeResponse: org.apache.ambari.server.security.authorization.ResourceType type> >>>>>>>> org.apache.ambari.server.controller.ViewPrivilegeResponse.getType : return $r1

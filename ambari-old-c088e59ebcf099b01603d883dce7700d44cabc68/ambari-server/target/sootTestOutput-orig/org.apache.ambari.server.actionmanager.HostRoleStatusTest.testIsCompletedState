@@ -1,0 +1,1 @@
+org.apache.ambari.server.actionmanager.HostRoleStatus.isCompletedState : $r1 = <org.apache.ambari.server.actionmanager.HostRoleStatus: java.util.List COMPLETED_STATES>

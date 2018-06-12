@@ -1,0 +1,4 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinhubWebsocket.onWebSocketText : r2 = staticinvoke <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClient getInstance()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinhubWebsocket.onWebSocketText : if r2 == null goto return
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinhubWebsocket.newInstance : $r1 = new org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.listener.ZeppelinhubWebsocket
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClient.getInstance : $r0 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClient: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.ZeppelinhubClient instance>

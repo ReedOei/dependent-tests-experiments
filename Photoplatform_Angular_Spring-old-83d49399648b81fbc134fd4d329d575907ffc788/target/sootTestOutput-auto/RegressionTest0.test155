@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.controller.AuthenticationController.login : $z0 = interfaceinvoke r2.<org.springframework.validation.BindingResult: boolean hasErrors()>()

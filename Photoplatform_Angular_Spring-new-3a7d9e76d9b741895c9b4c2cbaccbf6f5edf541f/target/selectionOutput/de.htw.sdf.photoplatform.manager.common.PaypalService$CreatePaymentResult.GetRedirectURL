@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.manager.common.PaypalService$CreatePaymentResult.GetRedirectURL : $r1 = r0.<de.htw.sdf.photoplatform.manager.common.PaypalService$CreatePaymentResult: java.lang.String RedirectURL> >>>>>>>> de.htw.sdf.photoplatform.manager.common.PaypalService$CreatePaymentResult.GetRedirectURL : return $r1

@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.ServiceBean.getService : $r1 = r0.<com.alibaba.dubbo.config.spring.ServiceBean: com.alibaba.dubbo.config.'annotation'.Service service> >>>>>>>> com.alibaba.dubbo.config.spring.ServiceBean.getService : return $r1

@@ -1,0 +1,33 @@
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.generateDummyBSStatus : $r2 = new org.apache.ambari.server.bootstrap.BootStrapStatus
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.generateDummyBSStatus : virtualinvoke $r2.<org.apache.ambari.server.bootstrap.BootStrapStatus: void setLog(java.lang.String)>("Logging ")
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.generateDummyBSStatus : $r4 = new java.util.ArrayList
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.generateDummyBSStatus : $r3 = <org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat: org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat ERROR>
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.generateDummyBSStatus : return $r2
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.getPort : i1 = virtualinvoke $r4.<java.net.ServerSocket: int getLocalPort()>()
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.getPort : $r4 = new java.net.ServerSocket
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.getPort : if $r4 == null goto return i1
+org.apache.ambari.server.bootstrap.BSResponse.setRequestId : r0.<org.apache.ambari.server.bootstrap.BSResponse: long requestId> = l0
+org.apache.ambari.server.bootstrap.BootStrapStatus.setHostsStatus : r0.<org.apache.ambari.server.bootstrap.BootStrapStatus: java.util.List hostsStatus> = r1
+org.apache.ambari.server.bootstrap.BSResponse.setLog : r0.<org.apache.ambari.server.bootstrap.BSResponse: java.lang.String log> = r1
+org.apache.ambari.server.bootstrap.BootStrapStatus.getLog : $r1 = r0.<org.apache.ambari.server.bootstrap.BootStrapStatus: java.lang.String log>
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.generateBSResponse : virtualinvoke $r2.<org.apache.ambari.server.bootstrap.BSResponse: void setLog(java.lang.String)>("Logging")
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.generateBSResponse : virtualinvoke $r2.<org.apache.ambari.server.bootstrap.BSResponse: void setRequestId(long)>(1L)
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.generateBSResponse : $r2 = new org.apache.ambari.server.bootstrap.BSResponse
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.generateBSResponse : $r3 = <org.apache.ambari.server.bootstrap.BSResponse$BSRunStat: org.apache.ambari.server.bootstrap.BSResponse$BSRunStat OK>
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.generateBSResponse : return $r2
+org.apache.ambari.server.bootstrap.BootStrapResourceTest$MockModule.configure : $r8 = staticinvoke <org.mockito.Matchers: java.lang.Object any(java.lang.Class)>(class "Lorg/apache/ambari/server/bootstrap/SshHostInfo;")
+org.apache.ambari.server.bootstrap.BootStrapResourceTest$MockModule.configure : $r15 = virtualinvoke r0.<org.apache.ambari.server.bootstrap.BootStrapResourceTest$MockModule: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/bootstrap/BootStrapImpl;")
+org.apache.ambari.server.bootstrap.BootStrapResourceTest$MockModule.configure : $r16 = newarray (java.lang.Class)[1]
+org.apache.ambari.server.bootstrap.BootStrapResourceTest$MockModule.configure : $r2 = staticinvoke <org.mockito.Mockito: java.lang.Object mock(java.lang.Class)>(class "Lorg/apache/ambari/server/bootstrap/BootStrapImpl;")
+org.apache.ambari.server.bootstrap.BootStrapResourceTest$MockModule.configure : $r3 = virtualinvoke r1.<org.apache.ambari.server.bootstrap.BootStrapImpl: org.apache.ambari.server.bootstrap.BootStrapStatus getStatus(long)>(0L)
+org.apache.ambari.server.bootstrap.BootStrapStatus.setLog : r0.<org.apache.ambari.server.bootstrap.BootStrapStatus: java.lang.String log> = r1
+org.apache.ambari.server.bootstrap.BootStrapStatus.getStatus : $r1 = r0.<org.apache.ambari.server.bootstrap.BootStrapStatus: org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat status>
+org.apache.ambari.server.bootstrap.BSResponse.setStatus : r0.<org.apache.ambari.server.bootstrap.BSResponse: org.apache.ambari.server.bootstrap.BSResponse$BSRunStat status> = r1
+org.apache.ambari.server.api.rest.BootStrapResource.getBootStrapStatus : $r3 = <org.apache.ambari.server.api.rest.BootStrapResource: org.apache.ambari.server.bootstrap.BootStrapImpl bsImpl>
+org.apache.ambari.server.api.rest.BootStrapResource.getBootStrapStatus : return r2
+org.apache.ambari.server.api.rest.BootStrapResource.getBootStrapStatus : if r2 != null goto return r2
+org.apache.ambari.server.api.rest.BootStrapResource.init : <org.apache.ambari.server.api.rest.BootStrapResource: org.apache.ambari.server.bootstrap.BootStrapImpl bsImpl> = r0
+org.apache.ambari.server.bootstrap.BootStrapStatus.setStatus : r0.<org.apache.ambari.server.bootstrap.BootStrapStatus: org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat status> = r1
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.setUp : $r1 = newarray (com.google.inject.Module)[1]
+org.apache.ambari.server.bootstrap.BootStrapResourceTest.setUp : specialinvoke r0.<com.sun.jersey.test.framework.JerseyTest: void setUp()>()
+org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat.values : $r0 = <org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat: org.apache.ambari.server.bootstrap.BootStrapStatus$BSStat[] $VALUES>

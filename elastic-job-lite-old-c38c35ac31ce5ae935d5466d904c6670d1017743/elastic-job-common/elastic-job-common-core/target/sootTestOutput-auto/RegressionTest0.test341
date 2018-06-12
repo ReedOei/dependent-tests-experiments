@@ -1,0 +1,17 @@
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : r3 = staticinvoke <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum 'from'(java.lang.String)>(r1)
+com.dangdang.ddframe.job.executor.handler.JobProperties.put : if null == r3 goto return
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : r1 = staticinvoke <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] values()>()
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : $r3 = virtualinvoke r2.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String getKey()>()
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.from : r2 = r1[i1]
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.misfire : r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: boolean misfire> = z0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.misfire : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobProperties : $r3 = r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: com.dangdang.ddframe.job.executor.handler.JobProperties jobProperties>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobProperties : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration.newBuilder : $r2 = new com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getKey : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String key>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.values : $r0 = <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] $VALUES>
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobParameter : if null == r1 goto return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobParameter : r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String jobParameter> = r1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobParameter : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.failover : r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: boolean failover> = z0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.failover : return r0

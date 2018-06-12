@@ -1,0 +1,8 @@
+de.htw.sdf.photoplatform.webservice.controller.AuthenticationController.login : $z0 = interfaceinvoke r2.<org.springframework.validation.BindingResult: boolean hasErrors()>()
+de.htw.sdf.photoplatform.exception.common.AbstractBaseException.getErrors : $r1 = r0.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: org.springframework.validation.Errors errors>
+de.htw.sdf.photoplatform.webservice.BaseAPIController.handleException : $r6 = virtualinvoke r2.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: org.springframework.validation.Errors getErrors()>()
+de.htw.sdf.photoplatform.webservice.BaseAPIController.handleException : $r4 = new de.htw.sdf.photoplatform.exception.common.ResponseError
+de.htw.sdf.photoplatform.exception.common.AbstractBaseException.getCode : $i0 = r0.<de.htw.sdf.photoplatform.exception.common.AbstractBaseException: int code>
+de.htw.sdf.photoplatform.webservice.dto.UserCredential.setPassword : r0.<de.htw.sdf.photoplatform.webservice.dto.UserCredential: java.lang.String password> = r1
+de.htw.sdf.photoplatform.webservice.BaseAPIController.handleBadRequestException : $r3 = <org.springframework.http.HttpStatus: org.springframework.http.HttpStatus BAD_REQUEST>
+de.htw.sdf.photoplatform.webservice.dto.UserRegister.setPasswordConfirm : r0.<de.htw.sdf.photoplatform.webservice.dto.UserRegister: java.lang.String passwordConfirm> = r1

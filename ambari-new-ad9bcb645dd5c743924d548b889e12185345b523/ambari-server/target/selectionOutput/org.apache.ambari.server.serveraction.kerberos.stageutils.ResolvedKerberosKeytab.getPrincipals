@@ -1,0 +1,1 @@
+org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosKeytab.getPrincipals : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosKeytab: java.util.Set principals> >>>>>>>> org.apache.ambari.server.serveraction.kerberos.stageutils.ResolvedKerberosKeytab.getPrincipals : return $r1

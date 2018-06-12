@@ -1,0 +1,1 @@
+org.apache.accumulo.master.replication.WorkDriver.getConnector : $r1 = r0.<org.apache.accumulo.master.replication.WorkDriver: org.apache.accumulo.core.client.Connector conn> >>>>>>>> org.apache.accumulo.master.replication.WorkDriver.getConnector : return $r1

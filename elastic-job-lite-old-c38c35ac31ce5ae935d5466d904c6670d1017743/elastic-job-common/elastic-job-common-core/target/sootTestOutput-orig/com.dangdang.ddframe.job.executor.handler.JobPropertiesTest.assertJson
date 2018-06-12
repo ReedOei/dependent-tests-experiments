@@ -1,0 +1,10 @@
+com.dangdang.ddframe.job.util.json.GsonFactory.getGson : $r0 = <com.dangdang.ddframe.job.util.json.GsonFactory: com.google.gson.Gson gson>
+com.dangdang.ddframe.job.fixture.APIJsonConstants.getJobPropertiesJson : $r2 = <com.dangdang.ddframe.job.fixture.APIJsonConstants: java.lang.String JOB_PROPS_JSON>
+com.dangdang.ddframe.job.executor.handler.JobProperties.get : $r2 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties: java.util.EnumMap map>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getKey : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String key>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.getDefaultValue : $r1 = r0.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String defaultValue>
+com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum.values : $r0 = <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] $VALUES>
+com.dangdang.ddframe.job.executor.handler.JobProperties.json : $r4 = new java.util.LinkedHashMap
+com.dangdang.ddframe.job.executor.handler.JobProperties.json : r3 = r2[i2]
+com.dangdang.ddframe.job.executor.handler.JobProperties.json : r2 = staticinvoke <com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum[] values()>()
+com.dangdang.ddframe.job.executor.handler.JobProperties.json : $r8 = virtualinvoke r3.<com.dangdang.ddframe.job.executor.handler.JobProperties$JobPropertiesEnum: java.lang.String getKey()>()

@@ -1,0 +1,26 @@
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $r4 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $r8 = virtualinvoke r42.<java.lang.reflect.Method: java.lang.Class[] getParameterTypes()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $i2 = virtualinvoke r42.<java.lang.reflect.Method: int getModifiers()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $r9 = virtualinvoke r42.<java.lang.reflect.Method: java.lang.'annotation'.Annotation getAnnotation(java.lang.Class)>(class "Lcom/alibaba/dubbo/config/annotation/Reference;")
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : goto [?= i5 = i5 + 1]
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : i6 = lengthof r47
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : virtualinvoke r49.<java.lang.reflect.Field: void setAccessible(boolean)>(1)
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : r42 = r3[i5]
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : r49 = r47[i7]
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $i0 = virtualinvoke r43.<java.lang.String: int length()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $r6 = virtualinvoke r49.<java.lang.reflect.Field: java.lang.'annotation'.Annotation getAnnotation(java.lang.Class)>(class "Lcom/alibaba/dubbo/config/annotation/Reference;")
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $z1 = virtualinvoke r49.<java.lang.reflect.Field: boolean isAccessible()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $z0 = specialinvoke r0.<com.alibaba.dubbo.config.spring.AnnotationBean: boolean isMatchPackage(java.lang.Object)>(r1)
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : r43 = virtualinvoke r42.<java.lang.reflect.Method: java.lang.String getName()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : goto [?= i7 = i7 + 1]
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : i4 = lengthof r3
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : $i3 = virtualinvoke r42.<java.lang.reflect.Method: int getModifiers()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeforeInitialization : if r44 == null goto (branch)
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessBeanFactory : $r8 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage>
+com.alibaba.dubbo.config.spring.AnnotationBean.isMatchPackage : $r5 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String[] annotationPackages>
+com.alibaba.dubbo.config.spring.AnnotationBean.getPackage : $r1 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage>
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : $i0 = virtualinvoke r1.<java.lang.String: int length()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : $r4 = null
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : if r1 == null goto $r4 = null
+com.alibaba.dubbo.config.spring.AnnotationBean.setPackage : r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage> = r1

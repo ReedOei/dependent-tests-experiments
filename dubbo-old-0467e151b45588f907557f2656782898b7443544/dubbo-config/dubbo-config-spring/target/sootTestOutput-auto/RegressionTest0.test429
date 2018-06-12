@@ -1,0 +1,3 @@
+com.alibaba.dubbo.config.spring.AnnotationBean.destroy : $r2 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.util.concurrent.ConcurrentMap referenceConfigs>
+com.alibaba.dubbo.config.spring.AnnotationBean.destroy : $r1 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.util.Set serviceConfigs>
+com.alibaba.dubbo.config.spring.AnnotationBean.getPackage : $r1 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String annotationPackage>

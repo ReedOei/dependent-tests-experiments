@@ -1,0 +1,8 @@
+org.apache.ambari.server.alerts.Threshold.directionUp : $d1 = r0.<org.apache.ambari.server.alerts.Threshold: double critValue> >>>>>>>> org.apache.ambari.server.alerts.Threshold.directionUp : $d0 = r0.<org.apache.ambari.server.alerts.Threshold: double warnValue>
+org.apache.ambari.server.alerts.Threshold.directionUp : $d0 = r0.<org.apache.ambari.server.alerts.Threshold: double warnValue> >>>>>>>> org.apache.ambari.server.alerts.Threshold.directionUp : $b0 = $d1 cmpl $d0
+org.apache.ambari.server.alerts.Threshold.directionUp : $b0 = $d1 cmpl $d0 >>>>>>>> org.apache.ambari.server.alerts.Threshold.directionUp : if $b0 < 0
+org.apache.ambari.server.alerts.Threshold.directionUp : if $b0 < 0 >>>>>>>> org.apache.ambari.server.alerts.Threshold.directionUp : $z0 = 1
+org.apache.ambari.server.alerts.Threshold.directionUp : if $b0 < 0 >>>>>>>> org.apache.ambari.server.alerts.Threshold.directionUp : $z0 = 0
+org.apache.ambari.server.alerts.Threshold.directionUp : $z0 = 0 >>>>>>>> org.apache.ambari.server.alerts.Threshold.directionUp : return $z0
+org.apache.ambari.server.alerts.Threshold.directionUp : $z0 = 1 >>>>>>>> org.apache.ambari.server.alerts.Threshold.directionUp : goto [?= return $z0]
+org.apache.ambari.server.alerts.Threshold.directionUp : goto [?= return $z0] >>>>>>>> org.apache.ambari.server.alerts.Threshold.directionUp : return $z0

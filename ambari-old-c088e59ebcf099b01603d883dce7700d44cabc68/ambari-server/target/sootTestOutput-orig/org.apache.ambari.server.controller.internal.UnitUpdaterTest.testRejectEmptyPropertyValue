@@ -1,0 +1,19 @@
+org.apache.ambari.server.controller.internal.UnitUpdaterTest.updateUnit : $r25 = staticinvoke <java.util.Collections: java.util.Map emptyMap()>()
+org.apache.ambari.server.controller.internal.UnitUpdaterTest.updateUnit : $r6 = new org.apache.ambari.server.controller.internal.UnitUpdater
+org.apache.ambari.server.controller.internal.UnitUpdaterTest.updateUnit : $r7 = r0.<org.apache.ambari.server.controller.internal.UnitUpdaterTest: org.apache.ambari.server.topology.ClusterTopology clusterTopology>
+org.apache.ambari.server.controller.internal.UnitUpdaterTest.updateUnit : $r19 = r0.<org.apache.ambari.server.controller.internal.UnitUpdaterTest: org.apache.ambari.server.controller.internal.Stack stack>
+org.apache.ambari.server.controller.internal.UnitUpdaterTest.updateUnit : virtualinvoke r0.<org.apache.ambari.server.controller.internal.UnitUpdaterTest: void replayAll()>()
+org.apache.ambari.server.controller.internal.UnitUpdaterTest.updateUnit : $r13 = r0.<org.apache.ambari.server.controller.internal.UnitUpdaterTest: org.apache.ambari.server.topology.Blueprint blueprint>
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyValue.of : $r2 = new org.apache.ambari.server.controller.internal.UnitUpdater$PropertyValue
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyValue.normalized : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r1)
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyValue.normalized : $r4 = new java.lang.IllegalArgumentException
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.stackUnit : $r5 = virtualinvoke r0.<org.apache.ambari.server.controller.internal.Stack: java.util.Map getConfigurationPropertiesWithMetadata(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.stackUnit : $r6 = interfaceinvoke $r5.<java.util.Map: java.lang.Object get(java.lang.Object)>(r3)
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.stackUnit : $r7 = (org.apache.ambari.server.controller.internal.Stack$ConfigProperty) $r6
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.stackUnit : $r12 = staticinvoke <java.util.Optional: java.util.Optional empty()>()
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.of : $r4 = new org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.of : $r7 = virtualinvoke $r5.<java.util.Optional: java.util.Optional map(java.util.function.Function)>($r6)
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.of : $r8 = virtualinvoke $r7.<java.util.Optional: java.lang.Object orElse(java.lang.Object)>("m")
+org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit.of : $r5 = staticinvoke <org.apache.ambari.server.controller.internal.UnitUpdater$PropertyUnit: java.util.Optional stackUnit(org.apache.ambari.server.controller.internal.Stack,java.lang.String,java.lang.String,java.lang.String)>(r0, r1, r2, r3)
+org.apache.ambari.server.controller.internal.UnitUpdater.updateForClusterCreate : r6 = staticinvoke <org.apache.ambari.server.controller.internal.UnitUpdater$PropertyValue: org.apache.ambari.server.controller.internal.UnitUpdater$PropertyValue of(java.lang.String,java.lang.String)>(r1, r2)
+org.apache.ambari.server.controller.internal.UnitUpdater.updateForClusterCreate : $r7 = interfaceinvoke r4.<org.apache.ambari.server.topology.ClusterTopology: org.apache.ambari.server.topology.Blueprint getBlueprint()>()

@@ -1,0 +1,2 @@
+de.htw.sdf.photoplatform.persistence.model.User.isEnabled : $z0 = r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean enabled>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.setCreatedBy : r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String createdBy> = r1

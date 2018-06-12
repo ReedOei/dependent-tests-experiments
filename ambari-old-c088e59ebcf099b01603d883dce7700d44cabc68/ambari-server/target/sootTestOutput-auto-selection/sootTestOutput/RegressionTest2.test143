@@ -1,0 +1,3 @@
+org.apache.ambari.server.state.kerberos.KerberosPrincipalType.translate : if r0 != null >>>>>>>> org.apache.ambari.server.state.kerberos.KerberosPrincipalType.translate : $r2 = null
+org.apache.ambari.server.state.kerberos.KerberosPrincipalType.translate : $r2 = null >>>>>>>> org.apache.ambari.server.state.kerberos.KerberosPrincipalType.translate : goto [?= return $r2]
+org.apache.ambari.server.state.kerberos.KerberosPrincipalType.translate : goto [?= return $r2] >>>>>>>> org.apache.ambari.server.state.kerberos.KerberosPrincipalType.translate : return $r2

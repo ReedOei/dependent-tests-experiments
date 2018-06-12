@@ -1,0 +1,1 @@
+org.apache.ambari.server.view.ViewRegistryTest.testReadViewArchives_viewAutoInstanceCreation : specialinvoke r0.<org.apache.ambari.server.view.ViewRegistryTest: void testReadViewArchives(boolean,boolean,boolean)>(0, 0, 1) >>>>>>>> org.apache.ambari.server.view.ViewRegistryTest.testReadViewArchives_viewAutoInstanceCreation : return

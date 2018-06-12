@@ -1,0 +1,22 @@
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateProgressPercent : $b0 = d0 cmpl 0.0
+org.apache.ambari.server.controller.internal.CalculatedStatus.statusFromStageEntities : $r7 = staticinvoke <org.apache.ambari.server.controller.internal.CalculatedStatus: java.util.Map calculateStatusCounts(java.util.Collection)>($r5)
+org.apache.ambari.server.controller.internal.CalculatedStatus.statusFromStageEntities : $r6 = new java.util.HashSet
+org.apache.ambari.server.controller.internal.CalculatedStatus.statusFromStageEntities : $r5 = new java.util.HashSet
+org.apache.ambari.server.controller.internal.CalculatedStatus.statusFromStageEntities : $r8 = staticinvoke <org.apache.ambari.server.controller.internal.CalculatedStatus: java.util.Map calculateTaskEntityStatusCounts(java.util.Collection)>($r6)
+org.apache.ambari.server.controller.internal.CalculatedStatus.statusFromStageEntities : r12 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateTaskEntityStatusCounts : $r4 = new java.util.LinkedList
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateTaskEntityStatusCounts : r2 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateSummaryStatus : $r43 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus COMPLETED>
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateSummaryStatus : if i0 != 0 goto $r1 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus PENDING>
+org.apache.ambari.server.actionmanager.HostRoleStatus.values : $r0 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus[] $VALUES>
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStatusCounts : $r5 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus COMPLETED>
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStatusCounts : interfaceinvoke $r3.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>($r4, $r14)
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStatusCounts : r2 = r27[i10]
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStatusCounts : $r4 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus IN_PROGRESS>
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStatusCounts : r28 = interfaceinvoke r0.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStatusCounts : r27 = staticinvoke <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus[] values()>()
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStatusCounts : $i2 = $i0 - $i1
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStatusCounts : $r25 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(0)
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStatusCounts : $i4 = $i2 - $i3
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStatusCounts : $r3 = new java.util.HashMap
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateSummaryStatusOfUpgrade : $r1 = staticinvoke <org.apache.ambari.server.controller.internal.CalculatedStatus: org.apache.ambari.server.actionmanager.HostRoleStatus calculateSummaryStatus(java.util.Map,int,boolean)>(r0, i0, 0)

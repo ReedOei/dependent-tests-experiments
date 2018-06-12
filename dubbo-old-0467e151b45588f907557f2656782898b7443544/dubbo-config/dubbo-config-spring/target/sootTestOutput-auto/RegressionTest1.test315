@@ -1,0 +1,5 @@
+com.alibaba.dubbo.config.spring.AnnotationBean.setApplicationContext : r0.<com.alibaba.dubbo.config.spring.AnnotationBean: org.springframework.context.ApplicationContext applicationContext> = r1
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessAfterInitialization : $r5 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessAfterInitialization : $z0 = specialinvoke r0.<com.alibaba.dubbo.config.spring.AnnotationBean: boolean isMatchPackage(java.lang.Object)>(r1)
+com.alibaba.dubbo.config.spring.AnnotationBean.postProcessAfterInitialization : if r3 == null goto return r1
+com.alibaba.dubbo.config.spring.AnnotationBean.isMatchPackage : $r5 = r0.<com.alibaba.dubbo.config.spring.AnnotationBean: java.lang.String[] annotationPackages>

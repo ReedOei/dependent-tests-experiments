@@ -1,0 +1,5 @@
+com.dangdang.ddframe.job.event.JobEventBus.post : $z0 = r0.<com.dangdang.ddframe.job.event.JobEventBus: boolean isRegistered>
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r5 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>
+com.dangdang.ddframe.job.util.env.IpUtils.getIp : $r8 = <com.dangdang.ddframe.job.util.env.IpUtils: java.lang.String cachedIpAddress>
+com.dangdang.ddframe.job.event.JobEventBusTest.assertIsRegistered : $r2 = r0.<com.dangdang.ddframe.job.event.JobEventBusTest: com.dangdang.ddframe.job.event.JobEventBus jobEventBus>
+com.dangdang.ddframe.job.util.env.IpUtils.getHostName : $r1 = staticinvoke <java.net.InetAddress: java.net.InetAddress getLocalHost()>()

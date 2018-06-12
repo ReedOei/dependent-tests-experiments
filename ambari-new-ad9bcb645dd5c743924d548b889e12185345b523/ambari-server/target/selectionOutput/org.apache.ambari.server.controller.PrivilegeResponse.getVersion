@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.PrivilegeResponse.getVersion : $r1 = r0.<org.apache.ambari.server.controller.PrivilegeResponse: java.lang.String version> >>>>>>>> org.apache.ambari.server.controller.PrivilegeResponse.getVersion : return $r1

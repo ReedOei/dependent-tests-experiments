@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="org.apache.jackrabbit.oak.plugins.index.solr.osgi.EmbeddedSolrServerConfigurationProvider" activate="activate" deactivate="deactivate">
+    <property name="name" value="embedded"/>
+    <property name="solr.home.path" value="solr"/>
+    <property name="solr.core.name" value="oak"/>
+    <service servicefactory="false">
+        <provide interface="org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfigurationProvider"/>
+    </service>
+    <implementation class="org.apache.jackrabbit.oak.plugins.index.solr.osgi.EmbeddedSolrServerConfigurationProvider"/>
+</scr:component>

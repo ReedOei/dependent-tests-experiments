@@ -1,0 +1,15 @@
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : r2 = virtualinvoke r0.<java.lang.String: java.lang.String[] split(java.lang.String)>(":") >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $r5 = r2[1]
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $r5 = r2[1] >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : l0 = staticinvoke <java.lang.Long: long parseLong(java.lang.String)>($r5)
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : l0 = staticinvoke <java.lang.Long: long parseLong(java.lang.String)>($r5) >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : r3 = r2[2]
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : r3 = r2[2] >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : r4 = staticinvoke <de.htw.sdf.photoplatform.security.TokenUtils: java.lang.String computeSignature(org.springframework.security.core.userdetails.UserDetails,long)>(r1, l0)
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : r4 = staticinvoke <de.htw.sdf.photoplatform.security.TokenUtils: java.lang.String computeSignature(org.springframework.security.core.userdetails.UserDetails,long)>(r1, l0) >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $l1 = staticinvoke <java.lang.System: long currentTimeMillis()>() >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $b2 = l0 cmp $l1
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $b2 = l0 cmp $l1 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : if $b2 < 0
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : if $b2 < 0 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $z0 = virtualinvoke r3.<java.lang.String: boolean equals(java.lang.Object)>(r4)
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : if $b2 < 0 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $z1 = 0
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $z1 = 0 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : return $z1
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $z0 = virtualinvoke r3.<java.lang.String: boolean equals(java.lang.Object)>(r4) >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : if $z0 == 0
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : if $z0 == 0 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $z1 = 1
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : if $z0 == 0 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $z1 = 0
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : $z1 = 1 >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : goto [?= return $z1]
+de.htw.sdf.photoplatform.security.TokenUtils.validateToken : goto [?= return $z1] >>>>>>>> de.htw.sdf.photoplatform.security.TokenUtils.validateToken : return $z1

@@ -1,0 +1,11 @@
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.description : if null == r1 goto return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.description : r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String description> = r1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.description : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.misfire : r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: boolean misfire> = z0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.misfire : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration.newBuilder : $r2 = new com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobParameter : if null == r1 goto return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobParameter : r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: java.lang.String jobParameter> = r1
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.jobParameter : return r0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.failover : r0.<com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder: boolean failover> = z0
+com.dangdang.ddframe.job.config.JobCoreConfiguration$Builder.failover : return r0

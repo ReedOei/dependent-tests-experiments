@@ -1,0 +1,2 @@
+org.apache.zeppelin.notebook.Paragraph.isBlankParagraph : $r1 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String scriptText> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.isBlankParagraph : $z0 = staticinvoke <com.google.common.base.Strings: boolean isNullOrEmpty(java.lang.String)>($r1)
+org.apache.zeppelin.notebook.Paragraph.isBlankParagraph : $z0 = staticinvoke <com.google.common.base.Strings: boolean isNullOrEmpty(java.lang.String)>($r1) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.isBlankParagraph : return $z0

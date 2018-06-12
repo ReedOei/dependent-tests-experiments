@@ -1,0 +1,15 @@
+org.apache.zeppelin.notebook.Paragraph.hasPermission : $i0 = interfaceinvoke r2.<java.util.List: int size()>() >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : if 1 <= $i0
+org.apache.zeppelin.notebook.Paragraph.hasPermission : if 1 <= $i0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : return 1
+org.apache.zeppelin.notebook.Paragraph.hasPermission : if 1 <= $i0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : $r4 = new java.util.HashSet
+org.apache.zeppelin.notebook.Paragraph.hasPermission : $r4 = new java.util.HashSet >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : specialinvoke $r4.<java.util.HashSet: void <init>(java.util.Collection)>(r2)
+org.apache.zeppelin.notebook.Paragraph.hasPermission : specialinvoke $r4.<java.util.HashSet: void <init>(java.util.Collection)>(r2) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : interfaceinvoke $r4.<java.util.Set: boolean retainAll(java.util.Collection)>(r1)
+org.apache.zeppelin.notebook.Paragraph.hasPermission : interfaceinvoke $r4.<java.util.Set: boolean retainAll(java.util.Collection)>(r1) >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : $z1 = interfaceinvoke r2.<java.util.List: boolean isEmpty()>()
+org.apache.zeppelin.notebook.Paragraph.hasPermission : $z1 = interfaceinvoke r2.<java.util.List: boolean isEmpty()>() >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : if $z1 != 0
+org.apache.zeppelin.notebook.Paragraph.hasPermission : if $z1 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : $i1 = interfaceinvoke $r4.<java.util.Set: int size()>()
+org.apache.zeppelin.notebook.Paragraph.hasPermission : if $z1 != 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : $z2 = 1
+org.apache.zeppelin.notebook.Paragraph.hasPermission : $z2 = 1 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : goto [?= return $z2]
+org.apache.zeppelin.notebook.Paragraph.hasPermission : goto [?= return $z2] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : return $z2
+org.apache.zeppelin.notebook.Paragraph.hasPermission : $i1 = interfaceinvoke $r4.<java.util.Set: int size()>() >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : if $i1 <= 0
+org.apache.zeppelin.notebook.Paragraph.hasPermission : if $i1 <= 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : $z2 = 1
+org.apache.zeppelin.notebook.Paragraph.hasPermission : if $i1 <= 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : $z2 = 0
+org.apache.zeppelin.notebook.Paragraph.hasPermission : $z2 = 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasPermission : return $z2

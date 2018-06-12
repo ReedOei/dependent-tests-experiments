@@ -1,0 +1,1 @@
+com.dangdang.ddframe.job.context.TaskContext.getType : $r1 = r0.<com.dangdang.ddframe.job.context.TaskContext: com.dangdang.ddframe.job.context.ExecutionType type> >>>>>>>> com.dangdang.ddframe.job.context.TaskContext.getType : return $r1

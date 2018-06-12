@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.SimpleRegistryService.getRegistries : $r1 = r0.<com.alibaba.dubbo.config.spring.SimpleRegistryService: java.util.List registries> >>>>>>>> com.alibaba.dubbo.config.spring.SimpleRegistryService.getRegistries : return $r1

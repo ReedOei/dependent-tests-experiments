@@ -1,0 +1,6 @@
+org.apache.ambari.server.security.authorization.ResourceType.valueOf : $r1 = staticinvoke <java.lang.Enum: java.lang.Enum valueOf(java.lang.Class,java.lang.String)>(class "Lorg/apache/ambari/server/security/authorization/ResourceType;", r0)
+org.apache.ambari.server.security.authorization.ResourceType.translate : if r5 != null goto r6 = virtualinvoke r5.<java.lang.String: java.lang.String trim()>()
+org.apache.ambari.server.security.authorization.ResourceType.translate : $r4 = <org.apache.ambari.server.security.authorization.ResourceType: org.apache.ambari.server.security.authorization.ResourceType VIEW>
+org.apache.ambari.server.security.authorization.ResourceType.translate : $z0 = virtualinvoke r6.<java.lang.String: boolean isEmpty()>()
+org.apache.ambari.server.security.authorization.ResourceType.translate : $r1 = virtualinvoke r6.<java.lang.String: java.lang.String toUpperCase()>()
+org.apache.ambari.server.security.authorization.ResourceType.translate : r6 = virtualinvoke r5.<java.lang.String: java.lang.String trim()>()

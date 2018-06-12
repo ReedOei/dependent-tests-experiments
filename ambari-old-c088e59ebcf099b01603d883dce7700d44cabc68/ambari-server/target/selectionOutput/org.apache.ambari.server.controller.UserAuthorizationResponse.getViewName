@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.UserAuthorizationResponse.getViewName : $r1 = r0.<org.apache.ambari.server.controller.UserAuthorizationResponse: java.lang.String viewName> >>>>>>>> org.apache.ambari.server.controller.UserAuthorizationResponse.getViewName : return $r1

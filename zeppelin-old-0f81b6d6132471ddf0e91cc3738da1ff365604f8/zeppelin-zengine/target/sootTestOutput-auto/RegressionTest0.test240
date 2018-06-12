@@ -1,0 +1,8 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessage.toJson : $r1 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessage: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessage.newMessage : $r3 = new org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessage
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.utils.ZeppelinhubUtils.deadMessage : $r6 = staticinvoke <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessage: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessage newMessage(java.lang.Object,java.lang.Object,java.util.Map)>($r5, $r2, $r4)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.utils.ZeppelinhubUtils.deadMessage : $r2 = new java.util.HashMap
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.utils.ZeppelinhubUtils.deadMessage : $z0 = staticinvoke <org.apache.commons.lang.StringUtils: boolean isBlank(java.lang.String)>(r0)
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.utils.ZeppelinhubUtils.deadMessage : $r7 = virtualinvoke $r6.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinhubMessage: java.lang.String toJson()>()
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.utils.ZeppelinhubUtils.deadMessage : $r5 = <org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinHubOp: org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.protocol.ZeppelinHubOp DEAD>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.utils.ZeppelinhubUtils.deadMessage : virtualinvoke $r2.<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>("token", r0)

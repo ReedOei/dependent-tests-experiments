@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.util.SolrIndexInitializer.initialize : $z0 = interfaceinvoke r1.<org.apache.jackrabbit.oak.spi.state.NodeBuilder: boolean hasChildNode(java.lang.String)>("oak:index")

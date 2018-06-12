@@ -1,0 +1,12 @@
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : $r4 = r0.<org.apache.ambari.server.topology.HostGroupInfo: java.util.Collection hostNames> >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : entermonitor $r4
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : entermonitor $r4 >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : $r5 = r0.<org.apache.ambari.server.topology.HostGroupInfo: java.util.Collection hostNames>
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : entermonitor $r4 >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : $r6 := @caughtexception
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : exitmonitor $r4 >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : throw $r6
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : exitmonitor $r4 >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : $r6 := @caughtexception
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : $r5 = r0.<org.apache.ambari.server.topology.HostGroupInfo: java.util.Collection hostNames> >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : interfaceinvoke $r5.<java.util.Collection: boolean remove(java.lang.Object)>(r1)
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : $r5 = r0.<org.apache.ambari.server.topology.HostGroupInfo: java.util.Collection hostNames> >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : $r6 := @caughtexception
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : interfaceinvoke $r5.<java.util.Collection: boolean remove(java.lang.Object)>(r1) >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : exitmonitor $r4
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : interfaceinvoke $r5.<java.util.Collection: boolean remove(java.lang.Object)>(r1) >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : $r6 := @caughtexception
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : exitmonitor $r4 >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : goto [?= return]
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : exitmonitor $r4 >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : $r6 := @caughtexception
+org.apache.ambari.server.topology.HostGroupInfo.removeHost : goto [?= return] >>>>>>>> org.apache.ambari.server.topology.HostGroupInfo.removeHost : return

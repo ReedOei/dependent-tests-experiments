@@ -1,0 +1,1 @@
+org.apache.ambari.server.state.UpgradeContext.getRepositoryVersion : $r1 = r0.<org.apache.ambari.server.state.UpgradeContext: org.apache.ambari.server.orm.entities.RepositoryVersionEntity m_repositoryVersion> >>>>>>>> org.apache.ambari.server.state.UpgradeContext.getRepositoryVersion : return $r1

@@ -1,0 +1,34 @@
+org.apache.ambari.server.controller.spi.Resource$Type.hashCode : return i3
+org.apache.ambari.server.controller.spi.Resource$Type.hashCode : $i1 = 31 * i2
+org.apache.ambari.server.controller.spi.Resource$Type.hashCode : $r1 = r0.<org.apache.ambari.server.controller.spi.Resource$Type: java.lang.String name>
+org.apache.ambari.server.api.query.QueryImpl.setKeyValueMap : $r2 = r0.<org.apache.ambari.server.api.query.QueryImpl: java.util.Map keyValueMap>
+org.apache.ambari.server.controller.AmbariServer.getController : $r0 = <org.apache.ambari.server.controller.AmbariServer: org.apache.ambari.server.controller.AmbariManagementController clusterController>
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : $r4 = new java.util.HashSet
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : $r9 = r0.<org.apache.ambari.server.api.resources.BaseResourceDefinition: java.util.Map directives>
+org.apache.ambari.server.api.resources.BaseResourceDefinition.initializeDirectives : if r2 == null goto $r9 = r0.<org.apache.ambari.server.api.resources.BaseResourceDefinition: java.util.Map directives>
+org.apache.ambari.server.state.Service$Type.values : $r0 = <org.apache.ambari.server.state.Service$Type: org.apache.ambari.server.state.Service$Type[] $VALUES>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r2 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController controller>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r4 = virtualinvoke r14.<java.lang.Class: java.lang.Object newInstance()>()
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r6 = new org.apache.ambari.server.controller.internal.ClusterControllerImpl
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r3 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: java.lang.String PROVIDER_MODULE_CLASS>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r1 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController controller>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : goto [?= $r2 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController controller>]
+org.apache.ambari.server.controller.spi.Resource$Type.isInternalType : $i0 = r0.<org.apache.ambari.server.controller.spi.Resource$Type: int ordinal>
+org.apache.ambari.server.controller.spi.Resource$InternalType.values : $r0 = <org.apache.ambari.server.controller.spi.Resource$InternalType: org.apache.ambari.server.controller.spi.Resource$InternalType[] $VALUES>
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.getResourceDefinition : $r145 = <org.apache.ambari.server.controller.spi.Resource$Type: org.apache.ambari.server.controller.spi.Resource$Type Cluster>
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.getResourceDefinition : goto [?= return r155]
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.getResourceDefinition : $r5 = <org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl: java.util.Map resourceDefinitions>
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.getResourceDefinition : $r6 = <org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl$1: int[] $SwitchMap$org$apache$ambari$server$controller$spi$Resource$InternalType>
+org.apache.ambari.server.controller.spi.Resource$Type.getInternalType : $z0 = virtualinvoke r0.<org.apache.ambari.server.controller.spi.Resource$Type: boolean isInternalType()>()
+org.apache.ambari.server.controller.spi.Resource$Type.getInternalType : $r7 = staticinvoke <org.apache.ambari.server.controller.spi.Resource$InternalType: org.apache.ambari.server.controller.spi.Resource$InternalType[] values()>()
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.createResource : $r3 = <org.apache.ambari.server.controller.spi.Resource$Type: org.apache.ambari.server.controller.spi.Resource$Type Host>
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.createResource : goto [?= r19 = staticinvoke <org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl: org.apache.ambari.server.api.resources.ResourceDefinition getResourceDefinition(org.apache.ambari.server.controller.spi.Resource$Type,java.util.Map)>(r1, r2)]
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.createResource : r19 = staticinvoke <org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl: org.apache.ambari.server.api.resources.ResourceDefinition getResourceDefinition(org.apache.ambari.server.controller.spi.Resource$Type,java.util.Map)>(r1, r2)
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.createResource : if r17 == null goto (branch)
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.createResource : $r8 = <org.apache.ambari.server.controller.spi.Resource$Type: org.apache.ambari.server.controller.spi.Resource$Type Host>
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.createResource : $r6 = <org.apache.ambari.server.controller.spi.Resource$Type: org.apache.ambari.server.controller.spi.Resource$Type Host>
+org.apache.ambari.server.api.resources.ResourceInstanceFactoryImpl.createResource : $r4 = new org.apache.ambari.server.api.query.QueryImpl
+org.apache.ambari.server.utils.AmbariPath.getPath : $r8 = <org.apache.ambari.server.utils.AmbariPath: org.slf4j.Logger LOG>
+org.apache.ambari.server.utils.AmbariPath.getPath : $r2 = <org.apache.ambari.server.utils.AmbariPath: java.lang.String rootDirectory>
+org.apache.ambari.server.utils.AmbariPath.getPath : return r0
+org.apache.ambari.server.view.ViewProviderModule.getViewProviderModule : $r1 = new org.apache.ambari.server.view.ViewProviderModule

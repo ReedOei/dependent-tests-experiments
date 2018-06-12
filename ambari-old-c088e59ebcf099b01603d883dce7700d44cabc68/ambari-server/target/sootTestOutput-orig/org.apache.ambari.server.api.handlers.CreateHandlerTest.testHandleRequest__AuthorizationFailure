@@ -1,0 +1,15 @@
+org.apache.ambari.server.api.services.ResultImpl.getStatus : $r1 = r0.<org.apache.ambari.server.api.services.ResultImpl: org.apache.ambari.server.api.services.ResultStatus m_status>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r2 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController controller>
+org.apache.ambari.server.controller.utilities.ClusterControllerHelper.getClusterController : $r1 = <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController controller>
+org.apache.ambari.server.api.handlers.CreateHandlerTest$TestCreateHandler.getPersistenceManager : $r1 = r0.<org.apache.ambari.server.api.handlers.CreateHandlerTest$TestCreateHandler: org.apache.ambari.server.api.services.persistence.PersistenceManager m_testPm>
+org.apache.ambari.server.api.services.ResultStatus.getStatus : $r1 = r0.<org.apache.ambari.server.api.services.ResultStatus: org.apache.ambari.server.api.services.ResultStatus$STATUS m_status>
+org.apache.ambari.server.api.handlers.BaseManagementHandler.handleRequest : if r3 == null goto $r6 = interfaceinvoke r1.<org.apache.ambari.server.api.services.Request: org.apache.ambari.server.api.resources.ResourceInstance getResource()>()
+org.apache.ambari.server.api.handlers.BaseManagementHandler.handleRequest : r3 = interfaceinvoke r1.<org.apache.ambari.server.api.services.Request: org.apache.ambari.server.controller.spi.Predicate getQueryPredicate()>()
+org.apache.ambari.server.api.handlers.BaseManagementHandler.handleRequest : $r5 = interfaceinvoke r1.<org.apache.ambari.server.api.services.Request: org.apache.ambari.server.api.query.render.Renderer getRenderer()>()
+org.apache.ambari.server.api.handlers.BaseManagementHandler.handleRequest : $r6 = interfaceinvoke r1.<org.apache.ambari.server.api.services.Request: org.apache.ambari.server.api.resources.ResourceInstance getResource()>()
+org.apache.ambari.server.api.handlers.BaseManagementHandler.handleRequest : $r4 = interfaceinvoke r1.<org.apache.ambari.server.api.services.Request: org.apache.ambari.server.api.resources.ResourceInstance getResource()>()
+org.apache.ambari.server.api.handlers.CreateHandler.persist : return r61
+org.apache.ambari.server.api.handlers.CreateHandler.persist : $r56 = new org.apache.ambari.server.api.services.ResultImpl
+org.apache.ambari.server.api.handlers.CreateHandler.persist : $r3 = virtualinvoke r0.<org.apache.ambari.server.api.handlers.CreateHandler: org.apache.ambari.server.api.services.persistence.PersistenceManager getPersistenceManager()>()
+org.apache.ambari.server.view.ViewRegistry.initInstance : <org.apache.ambari.server.view.ViewRegistry: org.apache.ambari.server.view.ViewRegistry singleton> = r0
+org.apache.ambari.server.api.handlers.BaseManagementHandler.getClusterController : $r1 = staticinvoke <org.apache.ambari.server.controller.utilities.ClusterControllerHelper: org.apache.ambari.server.controller.spi.ClusterController getClusterController()>()

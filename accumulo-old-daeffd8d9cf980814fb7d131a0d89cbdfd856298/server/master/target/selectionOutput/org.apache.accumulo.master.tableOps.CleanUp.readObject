@@ -1,0 +1,8 @@
+org.apache.accumulo.master.tableOps.CleanUp.readObject : virtualinvoke r1.<java.io.ObjectInputStream: void defaultReadObject()>() >>>>>>>> org.apache.accumulo.master.tableOps.CleanUp.readObject : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.accumulo.master.tableOps.CleanUp.readObject : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>() >>>>>>>> org.apache.accumulo.master.tableOps.CleanUp.readObject : $l1 = r0.<org.apache.accumulo.master.tableOps.CleanUp: long creationTime>
+org.apache.accumulo.master.tableOps.CleanUp.readObject : $l1 = r0.<org.apache.accumulo.master.tableOps.CleanUp: long creationTime> >>>>>>>> org.apache.accumulo.master.tableOps.CleanUp.readObject : $b2 = $l0 cmp $l1
+org.apache.accumulo.master.tableOps.CleanUp.readObject : $b2 = $l0 cmp $l1 >>>>>>>> org.apache.accumulo.master.tableOps.CleanUp.readObject : if $b2 >= 0
+org.apache.accumulo.master.tableOps.CleanUp.readObject : if $b2 >= 0 >>>>>>>> org.apache.accumulo.master.tableOps.CleanUp.readObject : $l3 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.accumulo.master.tableOps.CleanUp.readObject : if $b2 >= 0 >>>>>>>> org.apache.accumulo.master.tableOps.CleanUp.readObject : return
+org.apache.accumulo.master.tableOps.CleanUp.readObject : $l3 = staticinvoke <java.lang.System: long currentTimeMillis()>() >>>>>>>> org.apache.accumulo.master.tableOps.CleanUp.readObject : r0.<org.apache.accumulo.master.tableOps.CleanUp: long creationTime> = $l3
+org.apache.accumulo.master.tableOps.CleanUp.readObject : r0.<org.apache.accumulo.master.tableOps.CleanUp: long creationTime> = $l3 >>>>>>>> org.apache.accumulo.master.tableOps.CleanUp.readObject : return

@@ -1,0 +1,8 @@
+org.apache.ambari.server.orm.entities.RequestEntity.getInputs : $r1 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.RequestEntity: byte[] _persistence_get_inputs()>() >>>>>>>> org.apache.ambari.server.orm.entities.RequestEntity.getInputs : if $r1 == null
+org.apache.ambari.server.orm.entities.RequestEntity.getInputs : if $r1 == null >>>>>>>> org.apache.ambari.server.orm.entities.RequestEntity.getInputs : $r3 = new java.lang.String
+org.apache.ambari.server.orm.entities.RequestEntity.getInputs : if $r1 == null >>>>>>>> org.apache.ambari.server.orm.entities.RequestEntity.getInputs : $r3 = null
+org.apache.ambari.server.orm.entities.RequestEntity.getInputs : $r3 = null >>>>>>>> org.apache.ambari.server.orm.entities.RequestEntity.getInputs : return $r3
+org.apache.ambari.server.orm.entities.RequestEntity.getInputs : $r3 = new java.lang.String >>>>>>>> org.apache.ambari.server.orm.entities.RequestEntity.getInputs : $r2 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.RequestEntity: byte[] _persistence_get_inputs()>()
+org.apache.ambari.server.orm.entities.RequestEntity.getInputs : $r2 = virtualinvoke r0.<org.apache.ambari.server.orm.entities.RequestEntity: byte[] _persistence_get_inputs()>() >>>>>>>> org.apache.ambari.server.orm.entities.RequestEntity.getInputs : specialinvoke $r3.<java.lang.String: void <init>(byte[])>($r2)
+org.apache.ambari.server.orm.entities.RequestEntity.getInputs : specialinvoke $r3.<java.lang.String: void <init>(byte[])>($r2) >>>>>>>> org.apache.ambari.server.orm.entities.RequestEntity.getInputs : goto [?= return $r3]
+org.apache.ambari.server.orm.entities.RequestEntity.getInputs : goto [?= return $r3] >>>>>>>> org.apache.ambari.server.orm.entities.RequestEntity.getInputs : return $r3

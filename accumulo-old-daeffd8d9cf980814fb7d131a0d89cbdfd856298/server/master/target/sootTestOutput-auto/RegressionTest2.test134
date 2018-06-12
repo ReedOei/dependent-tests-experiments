@@ -1,0 +1,2 @@
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : r3 = interfaceinvoke r2.<java.util.Collection: java.util.Iterator iterator()>()
+org.apache.accumulo.master.recovery.RecoveryManager.recoverLogs : z8 = 0

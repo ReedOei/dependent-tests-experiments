@@ -1,0 +1,4 @@
+org.apache.ambari.server.actionmanager.HostRoleStatus.isHoldingState : $r1 = <org.apache.ambari.server.actionmanager.HostRoleStatus: java.util.List HOLDING_STATES>
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStageStatus : if i0 != 0 goto $r4 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus PENDING>
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStageStatus : i0 = interfaceinvoke r0.<java.util.List: int size()>()
+org.apache.ambari.server.controller.internal.CalculatedStatus.calculateStageStatus : $r31 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus COMPLETED>

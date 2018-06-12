@@ -1,0 +1,5 @@
+org.apache.zeppelin.notebook.socket.Message.toString : $r6 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(", op=")
+org.apache.zeppelin.notebook.socket.Message.toString : virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(125)
+org.apache.zeppelin.notebook.socket.Message.toString : $r10 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.String toString()>()
+org.apache.zeppelin.notebook.socket.Message.toString : $r2 = new java.lang.StringBuilder
+org.apache.zeppelin.notebook.socket.Message.toString : $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("data=")

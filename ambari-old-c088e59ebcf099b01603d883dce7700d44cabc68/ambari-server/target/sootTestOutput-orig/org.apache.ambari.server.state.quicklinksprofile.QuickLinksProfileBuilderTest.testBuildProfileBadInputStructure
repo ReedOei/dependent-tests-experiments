@@ -1,0 +1,5 @@
+org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileBuilder.buildQuickLinksProfile : $r10 = new org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileEvaluationException
+org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileBuilder.buildQuickLinksProfile : r11 = virtualinvoke r0.<org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileBuilder: java.util.List buildQuickLinkFilters(java.lang.Object)>(r1)
+org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileBuilder.buildQuickLinkFilters : $r9 = (java.util.Collection) r1
+org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileBuilder.buildQuickLinkFilters : $r8 = new java.util.ArrayList
+org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileBuilder.buildQuickLinkFilters : if null != r1 goto $r8 = new java.util.ArrayList

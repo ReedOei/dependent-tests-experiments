@@ -1,0 +1,2 @@
+org.apache.accumulo.master.MasterTime.shutdown : $r1 = r0.<org.apache.accumulo.master.MasterTime: java.util.Timer timer> >>>>>>>> org.apache.accumulo.master.MasterTime.shutdown : virtualinvoke $r1.<java.util.Timer: void cancel()>()
+org.apache.accumulo.master.MasterTime.shutdown : virtualinvoke $r1.<java.util.Timer: void cancel()>() >>>>>>>> org.apache.accumulo.master.MasterTime.shutdown : return

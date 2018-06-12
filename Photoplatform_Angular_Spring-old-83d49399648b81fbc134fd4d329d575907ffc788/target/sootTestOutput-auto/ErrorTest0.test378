@@ -1,0 +1,1 @@
+de.htw.sdf.photoplatform.webservice.BaseAPIController.getAuthenticatedUser : $r1 = r0.<de.htw.sdf.photoplatform.webservice.BaseAPIController: de.htw.sdf.photoplatform.webservice.controller.AuthorizationController authorizationController>

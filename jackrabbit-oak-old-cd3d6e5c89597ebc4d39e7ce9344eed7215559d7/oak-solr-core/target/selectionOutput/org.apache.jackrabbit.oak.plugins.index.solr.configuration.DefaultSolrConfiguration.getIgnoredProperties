@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getIgnoredProperties : $r1 = <org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration: java.util.Collection ignoredProperties> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultSolrConfiguration.getIgnoredProperties : return $r1

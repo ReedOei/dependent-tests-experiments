@@ -1,0 +1,2 @@
+org.apache.accumulo.master.FateServiceHandler$1.invalidMessage : $r2 = (java.lang.String) r1 >>>>>>>> org.apache.accumulo.master.FateServiceHandler$1.invalidMessage : $r3 = virtualinvoke r0.<org.apache.accumulo.master.FateServiceHandler$1: java.lang.String invalidMessage(java.lang.String)>($r2)
+org.apache.accumulo.master.FateServiceHandler$1.invalidMessage : $r3 = virtualinvoke r0.<org.apache.accumulo.master.FateServiceHandler$1: java.lang.String invalidMessage(java.lang.String)>($r2) >>>>>>>> org.apache.accumulo.master.FateServiceHandler$1.invalidMessage : return $r3

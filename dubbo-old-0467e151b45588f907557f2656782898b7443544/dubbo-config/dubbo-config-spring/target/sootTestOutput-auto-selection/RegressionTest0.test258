@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.setApplicationContext : r0.<com.alibaba.dubbo.config.spring.beans.factory.'annotation'.ReferenceAnnotationBeanPostProcessor: org.springframework.context.ApplicationContext applicationContext> = r1

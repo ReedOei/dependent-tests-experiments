@@ -1,0 +1,19 @@
+org.apache.zeppelin.notebook.Note.getInfo : $r3 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map info>
+org.apache.zeppelin.notebook.Note.getInfo : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map info>
+org.apache.zeppelin.notebook.Note.moveParagraph : virtualinvoke r0.<org.apache.zeppelin.notebook.Note: void moveParagraph(java.lang.String,int,boolean)>(r1, i0, 0)
+org.apache.zeppelin.notebook.Note.moveParagraph : r3 = null
+org.apache.zeppelin.notebook.Note.moveParagraph : if z0 == 0 goto exitmonitor r2
+org.apache.zeppelin.notebook.Note.moveParagraph : exitmonitor r2
+org.apache.zeppelin.notebook.Note.moveParagraph : $r6 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.Note.moveParagraph : if i0 < 0 goto (branch)
+org.apache.zeppelin.notebook.Note.onProgressUpdate : $r3 = r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.notebook.JobListenerFactory jobListenerFactory>
+org.apache.zeppelin.notebook.Note.addParagraph : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.conf.ZeppelinConfiguration.create : $r4 = <org.apache.zeppelin.conf.ZeppelinConfiguration: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.conf.ZeppelinConfiguration.create : $r0 = <org.apache.zeppelin.conf.ZeppelinConfiguration: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.notebook.Note.insertParagraph : $r5 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.Note.insertParagraph : exitmonitor r2
+org.apache.zeppelin.notebook.Note.insertParagraph : $r7 = r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.notebook.NoteEventListener noteEventListener>
+org.apache.zeppelin.notebook.Note.insertParagraph : $r4 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.FolderView.countFolders : $r1 = r0.<org.apache.zeppelin.notebook.FolderView: java.util.Map folders>
+org.apache.zeppelin.notebook.Note.setConfig : r0.<org.apache.zeppelin.notebook.Note: java.util.Map config> = r1
+org.apache.zeppelin.notebook.FolderView.getFolderOf : $r2 = r0.<org.apache.zeppelin.notebook.FolderView: java.util.Map index>

@@ -1,0 +1,1 @@
+org.apache.ambari.server.hooks.users.UserHookService$ClusterData.getHdfsUser : $r1 = r0.<org.apache.ambari.server.hooks.users.UserHookService$ClusterData: java.lang.String hdfsUser> >>>>>>>> org.apache.ambari.server.hooks.users.UserHookService$ClusterData.getHdfsUser : return $r1

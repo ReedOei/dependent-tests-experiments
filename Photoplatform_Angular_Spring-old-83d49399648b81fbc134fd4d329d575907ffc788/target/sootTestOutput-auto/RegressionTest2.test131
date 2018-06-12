@@ -1,0 +1,9 @@
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setPhone : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String phone> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getHomepage : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String homepage>
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setCollections : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.util.List collections> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getCollections : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.util.List collections>
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.setCompany : r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String company> = r1
+de.htw.sdf.photoplatform.persistence.model.PhotographerData.getPhone : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.PhotographerData: java.lang.String phone>
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : r3 = interfaceinvoke r0.<java.util.List: java.util.Iterator iterator()>()
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : $r6 = new java.util.ArrayList
+de.htw.sdf.photoplatform.webservice.util.ResourceUtility.convertToCollectionData : $r1 = <java.lang.Boolean: java.lang.Boolean FALSE>

@@ -1,0 +1,54 @@
+org.apache.zeppelin.notebook.NotebookAuthorization.isRunner : $r3 = virtualinvoke r0.<org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Set getRunners(java.lang.String)>(r1)
+org.apache.zeppelin.notebook.NotebookAuthorization.hasRunAuthorization : return 1
+org.apache.zeppelin.notebook.NotebookAuthorization.hasRunAuthorization : $r3 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.notebook.NotebookAuthorization.hasRunAuthorization : $r4 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.NotebookAuthorization.getOwners : if r2 != null goto $r5 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("owners")
+org.apache.zeppelin.notebook.NotebookAuthorization.getOwners : return r8
+org.apache.zeppelin.notebook.NotebookAuthorization.getOwners : $r7 = new java.util.HashSet
+org.apache.zeppelin.notebook.NotebookAuthorization.getOwners : $r3 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.setRunners : $r2 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.setRunners : r19 = specialinvoke r0.<org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Set validateUser(java.util.Set)>(r17)
+org.apache.zeppelin.notebook.NotebookAuthorization.setRunners : $r6 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.setRunners : specialinvoke r0.<org.apache.zeppelin.notebook.NotebookAuthorization: void saveToFile()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.setRunners : $r4 = new java.util.LinkedHashSet
+org.apache.zeppelin.notebook.NotebookAuthorization.setRunners : if r18 != null goto $r4 = new java.util.LinkedHashSet
+org.apache.zeppelin.notebook.NotebookAuthorization.getRunners : return r8
+org.apache.zeppelin.notebook.NotebookAuthorization.getRunners : $r7 = new java.util.HashSet
+org.apache.zeppelin.notebook.NotebookAuthorization.getRunners : $r3 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.getRunners : if r2 != null goto $r5 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("runners")
+org.apache.zeppelin.notebook.NotebookAuthorization.getRoles : $r3 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map userRoles>
+org.apache.zeppelin.notebook.NotebookAuthorization.getRoles : return r2
+org.apache.zeppelin.notebook.NotebookAuthorization.getRoles : r2 = staticinvoke <com.google.common.collect.Sets: java.util.HashSet newHashSet()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.setReaders : $r2 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.setReaders : r19 = specialinvoke r0.<org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Set validateUser(java.util.Set)>(r17)
+org.apache.zeppelin.notebook.NotebookAuthorization.setReaders : $r6 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.setReaders : specialinvoke r0.<org.apache.zeppelin.notebook.NotebookAuthorization: void saveToFile()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.setReaders : $r4 = new java.util.LinkedHashSet
+org.apache.zeppelin.notebook.NotebookAuthorization.setReaders : if r18 != null goto $r4 = new java.util.LinkedHashSet
+org.apache.zeppelin.notebook.NotebookAuthorization.hasReadAuthorization : return 1
+org.apache.zeppelin.notebook.NotebookAuthorization.hasReadAuthorization : $r3 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.conf.ZeppelinConfiguration conf>
+org.apache.zeppelin.notebook.NotebookAuthorization.hasReadAuthorization : $r4 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r2 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : exitmonitor $r2
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r5 = <org.apache.zeppelin.notebook.NotebookAuthorization: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r3 = new org.apache.zeppelin.notebook.NotebookAuthorizationInfoSaving
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $z0 = virtualinvoke $r6.<java.io.File: boolean exists()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r6 = new java.io.File
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r4 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : virtualinvoke $r6.<java.io.File: boolean createNewFile()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.saveToFile : $r13 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.slf4j.Logger LOG>
+org.apache.zeppelin.notebook.NotebookAuthorization.isMember : interfaceinvoke $r4.<java.util.Set: boolean retainAll(java.util.Collection)>(r1)
+org.apache.zeppelin.notebook.NotebookAuthorization.isMember : $r4 = new java.util.HashSet
+org.apache.zeppelin.notebook.NotebookAuthorization.isMember : $z1 = interfaceinvoke r2.<java.util.Set: boolean isEmpty()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.getInstance : $r1 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>
+org.apache.zeppelin.notebook.NotebookAuthorization.getInstance : $r0 = <org.apache.zeppelin.notebook.NotebookAuthorization: org.apache.zeppelin.notebook.NotebookAuthorization instance>
+org.apache.zeppelin.notebook.NotebookAuthorization.validateUser : $r7 = virtualinvoke r4.<java.lang.String: java.lang.String trim()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.validateUser : $r8 = virtualinvoke r4.<java.lang.String: java.lang.String trim()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.validateUser : $r6 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.validateUser : r3 = interfaceinvoke r1.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.zeppelin.notebook.NotebookAuthorization.validateUser : $r5 = new java.util.HashSet
+org.apache.zeppelin.notebook.NotebookAuthorization.validateUser : goto [?= $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()]
+org.apache.zeppelin.notebook.NotebookAuthorization.getReaders : if r2 != null goto $r5 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("readers")
+org.apache.zeppelin.notebook.NotebookAuthorization.getReaders : return r8
+org.apache.zeppelin.notebook.NotebookAuthorization.getReaders : $r7 = new java.util.HashSet
+org.apache.zeppelin.notebook.NotebookAuthorization.getReaders : $r3 = <org.apache.zeppelin.notebook.NotebookAuthorization: java.util.Map authInfo>

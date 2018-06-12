@@ -1,0 +1,78 @@
+org.apache.zeppelin.notebook.Note.generateId : $r1 = staticinvoke <org.apache.zeppelin.notebook.utility.IdHashes: java.lang.String generateId()>()
+org.apache.zeppelin.notebook.utility.IdHashes.generateId : $l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo.callHdfsOperation : $r3 = interfaceinvoke r1.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$HdfsOperation: java.lang.Object call()>()
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo.callHdfsOperation : $z0 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo: boolean isSecurityEnabled>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3.call : $r35 = new java.io.ByteArrayInputStream
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3.call : $r4 = new org.apache.hadoop.fs.Path
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3.call : $r38 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3: org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo this$0>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3.call : $r50 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3: org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo this$0>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3.call : $r48 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3: org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo this$0>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3.call : $r16 = new org.apache.hadoop.fs.Path
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3.call : return null
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3.call : $r1 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3: java.lang.Void call()>()
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3.call : $r28 = staticinvoke <org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo: org.slf4j.Logger access$200()>()
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3.call : $r43 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3: org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo this$0>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3.call : $r33 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3: org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo this$0>
+org.apache.zeppelin.notebook.Note.getConfig : $r2 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.notebook.Note.getConfig : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.util.Map config>
+org.apache.zeppelin.notebook.Note.convertOldInput : $r3 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo.save : $r3 = new org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$3
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo.access$200 : $r0 = <org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo: org.slf4j.Logger LOGGER>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo.access$000 : $r1 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo: org.apache.hadoop.fs.Path notebookDir>
+org.apache.zeppelin.notebook.Note.resetRuntimeInfos : $r3 = r0.<org.apache.zeppelin.notebook.Note: java.util.List paragraphs>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo.remove : $r3 = new org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$4
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r16 = <java.math.BigInteger: java.math.BigInteger ZERO>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $i4 = interfaceinvoke $r5.<java.util.List: int size()>()
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r5 = new java.util.ArrayList
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r6 = new java.math.BigInteger
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r17 = new java.lang.StringBuffer
+org.apache.zeppelin.notebook.utility.IdHashes.encode : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("r22 = virtualinvoke $r6.<java.math.BigInteger: java.math.BigInteger pow(int)>(i5)", "org.apache.zeppelin.notebook.utility.IdHashes.encode")]
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r22 = virtualinvoke $r6.<java.math.BigInteger: java.math.BigInteger pow(int)>(i5)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r4 = virtualinvoke r23.<java.math.BigInteger: java.math.BigInteger divide(java.math.BigInteger)>(r3)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r23 = virtualinvoke r21.<java.math.BigInteger: java.math.BigInteger mod(java.math.BigInteger)>(r22)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : r21 = virtualinvoke r21.<java.math.BigInteger: java.math.BigInteger subtract(java.math.BigInteger)>(r23)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r19 = interfaceinvoke $r5.<java.util.List: java.lang.Object get(int)>(i6)
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r12 = new java.math.BigInteger
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $i1 = i5 - 1
+org.apache.zeppelin.notebook.utility.IdHashes.encode : i5 = i5 + 1
+org.apache.zeppelin.notebook.utility.IdHashes.encode : goto [?= $r17 = new java.lang.StringBuffer]
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r14 = <org.apache.zeppelin.notebook.utility.IdHashes: char[] DICTIONARY>
+org.apache.zeppelin.notebook.utility.IdHashes.encode : $r18 = virtualinvoke $r17.<java.lang.StringBuffer: java.lang.String toString()>()
+org.apache.zeppelin.notebook.utility.IdHashes.encode : i5 = 1
+org.apache.zeppelin.notebook.Note.isNameEmpty : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$1.call : $r5 = new java.util.ArrayList
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$1.call : $r6 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$1: org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo this$0>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$1.call : $r1 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$1: java.util.List call()>()
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$1.call : interfaceinvoke $r5.<java.util.List: boolean add(java.lang.Object)>($r11)
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$1.call : r3 = r2[i1]
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$1.call : $r11 = new org.apache.zeppelin.notebook.NoteInfo
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$4.call : $r12 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$4: org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo this$0>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$4.call : $r2 = new org.apache.hadoop.fs.Path
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$4.call : return null
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$4.call : $r1 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$4: java.lang.Void call()>()
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo.list : $r2 = new org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$1
+org.apache.zeppelin.notebook.Note.setConfig : r0.<org.apache.zeppelin.notebook.Note: java.util.Map config> = r1
+org.apache.zeppelin.notebook.Note.fromJson : staticinvoke <org.apache.zeppelin.notebook.Note: void convertOldInput(org.apache.zeppelin.notebook.Note)>(r1)
+org.apache.zeppelin.notebook.Note.fromJson : virtualinvoke r1.<org.apache.zeppelin.notebook.Note: void resetRuntimeInfos()>()
+org.apache.zeppelin.notebook.Note.fromJson : return r1
+org.apache.zeppelin.notebook.Note.fromJson : $r2 = <org.apache.zeppelin.notebook.Note: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo.access$400 : $r1 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo: org.apache.zeppelin.conf.ZeppelinConfiguration zConf>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo.get : $r3 = new org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$2
+org.apache.zeppelin.notebook.Note.getId : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String id>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$2.call : $r14 = staticinvoke <org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo: org.slf4j.Logger access$200()>()
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$2.call : $r1 = virtualinvoke r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$2: org.apache.zeppelin.notebook.Note call()>()
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$2.call : $r26 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$2: org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo this$0>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$2.call : $r20 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$2: org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo this$0>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$2.call : $r19 = new java.io.ByteArrayOutputStream
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$2.call : $r3 = new org.apache.hadoop.fs.Path
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo$2.call : $r25 = new java.lang.String
+org.apache.zeppelin.notebook.Note.setName : r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>
+org.apache.zeppelin.notebook.Note.setName : r0.<org.apache.zeppelin.notebook.Note: java.lang.String name> = r3
+org.apache.zeppelin.notebook.Note.setName : $r4 = r0.<org.apache.zeppelin.notebook.Note: org.apache.zeppelin.notebook.NoteNameListener noteNameListener>
+org.apache.zeppelin.notebook.Note.setName : $i0 = virtualinvoke r3.<java.lang.String: int indexOf(int)>(47)
+org.apache.zeppelin.notebook.Note.setName : $i1 = virtualinvoke r3.<java.lang.String: int indexOf(int)>(92)
+org.apache.zeppelin.notebook.Note.toJson : $r1 = <org.apache.zeppelin.notebook.Note: com.google.gson.Gson gson>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo.access$300 : $r1 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo: org.apache.hadoop.conf.Configuration hadoopConf>
+org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo.access$100 : $r1 = r0.<org.apache.zeppelin.notebook.repo.FileSystemNotebookRepo: org.apache.hadoop.fs.FileSystem fs>
+org.apache.zeppelin.notebook.Note.getName : $z0 = virtualinvoke r0.<org.apache.zeppelin.notebook.Note: boolean isNameEmpty()>()
+org.apache.zeppelin.notebook.Note.getName : $r1 = r0.<org.apache.zeppelin.notebook.Note: java.lang.String name>

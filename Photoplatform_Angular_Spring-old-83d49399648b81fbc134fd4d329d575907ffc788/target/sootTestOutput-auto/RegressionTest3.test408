@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.webservice.dto.UserData.getHomepage : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String homepage>
+de.htw.sdf.photoplatform.webservice.dto.UserData.getLastName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String lastName>
+de.htw.sdf.photoplatform.webservice.dto.UserData.setFirstName : r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String firstName> = r1
+de.htw.sdf.photoplatform.webservice.dto.UserData.getEmail : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.UserData: java.lang.String email>

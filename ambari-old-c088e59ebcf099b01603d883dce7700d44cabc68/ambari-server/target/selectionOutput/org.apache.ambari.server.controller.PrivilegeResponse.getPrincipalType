@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.PrivilegeResponse.getPrincipalType : $r1 = r0.<org.apache.ambari.server.controller.PrivilegeResponse: org.apache.ambari.server.orm.entities.PrincipalTypeEntity$PrincipalType principalType> >>>>>>>> org.apache.ambari.server.controller.PrivilegeResponse.getPrincipalType : return $r1

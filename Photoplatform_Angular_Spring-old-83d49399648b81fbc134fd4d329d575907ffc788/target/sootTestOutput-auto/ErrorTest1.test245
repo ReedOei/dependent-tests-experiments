@@ -1,0 +1,3 @@
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.deleteCollection : r3 = specialinvoke r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.persistence.model.Collection getCollection(java.lang.Long,java.lang.Long)>(r1, r2)
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.getCollection : if r2 != null goto $r4 = r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.repository.CollectionDAO collectionDAO>
+de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl.getCollection : $r4 = r0.<de.htw.sdf.photoplatform.manager.impl.PhotographerManagerImpl: de.htw.sdf.photoplatform.repository.CollectionDAO collectionDAO>

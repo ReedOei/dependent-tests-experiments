@@ -1,0 +1,6 @@
+org.apache.ambari.server.utils.Parallel.initExecutor : virtualinvoke $r3.<java.util.concurrent.ThreadPoolExecutor: void allowCoreThreadTimeOut(boolean)>(1)
+org.apache.ambari.server.utils.Parallel.initExecutor : $r3 = new java.util.concurrent.ThreadPoolExecutor
+org.apache.ambari.server.utils.Parallel.initExecutor : $r7 = newarray (java.lang.Object)[4]
+org.apache.ambari.server.utils.Parallel.initExecutor : return $r3
+org.apache.ambari.server.utils.Parallel.initExecutor : $r2 = new java.util.concurrent.SynchronousQueue
+org.apache.ambari.server.utils.Parallel.initExecutor : $r8 = <org.apache.ambari.server.utils.Parallel: org.slf4j.Logger LOG>

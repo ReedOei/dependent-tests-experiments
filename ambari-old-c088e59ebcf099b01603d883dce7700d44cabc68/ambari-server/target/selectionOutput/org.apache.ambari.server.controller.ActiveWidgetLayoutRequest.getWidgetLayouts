@@ -1,0 +1,1 @@
+org.apache.ambari.server.controller.ActiveWidgetLayoutRequest.getWidgetLayouts : $r1 = r0.<org.apache.ambari.server.controller.ActiveWidgetLayoutRequest: java.util.List widgetLayouts> >>>>>>>> org.apache.ambari.server.controller.ActiveWidgetLayoutRequest.getWidgetLayouts : return $r1

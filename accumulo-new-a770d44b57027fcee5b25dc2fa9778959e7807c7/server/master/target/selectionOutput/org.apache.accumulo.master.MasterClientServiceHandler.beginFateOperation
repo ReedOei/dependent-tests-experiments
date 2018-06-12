@@ -1,0 +1,1 @@
+org.apache.accumulo.master.MasterClientServiceHandler.beginFateOperation : $l0 = specialinvoke r0.<org.apache.accumulo.master.FateServiceHandler: long beginFateOperation(org.apache.accumulo.core.trace.thrift.TInfo,org.apache.accumulo.core.security.thrift.TCredentials)>(r1, r2) >>>>>>>> org.apache.accumulo.master.MasterClientServiceHandler.beginFateOperation : return $l0

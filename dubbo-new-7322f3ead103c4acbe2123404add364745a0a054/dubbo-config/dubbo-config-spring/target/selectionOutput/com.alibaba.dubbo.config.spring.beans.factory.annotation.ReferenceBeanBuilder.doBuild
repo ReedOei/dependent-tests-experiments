@@ -1,0 +1,1 @@
+com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceBeanBuilder.doBuild : $r1 = virtualinvoke r0.<com.alibaba.dubbo.config.spring.beans.factory.'annotation'.ReferenceBeanBuilder: com.alibaba.dubbo.config.spring.ReferenceBean doBuild()>() >>>>>>>> com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceBeanBuilder.doBuild : return $r1

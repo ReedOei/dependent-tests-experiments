@@ -1,0 +1,74 @@
+org.apache.ambari.server.utils.StageUtils.getActionId : $r0 = new java.lang.StringBuilder
+org.apache.ambari.server.agent.CommandReport.setClusterName : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String clusterName> = r1
+org.apache.ambari.server.agent.CommandReport.setRoleCommand : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String roleCommand> = r1
+org.apache.ambari.server.agent.CommandReport.setStructuredOut : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String structuredOut> = r1
+org.apache.ambari.server.serveraction.upgrades.AbstractUpgradeServerAction.getClusters : $r1 = r0.<org.apache.ambari.server.serveraction.upgrades.AbstractUpgradeServerAction: org.apache.ambari.server.state.Clusters m_clusters>
+org.apache.ambari.server.agent.ExecutionCommand.getServiceName : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String serviceName>
+org.apache.ambari.server.agent.CommandReport.setStdErr : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String stderr> = r1
+org.apache.ambari.server.serveraction.AbstractServerAction.setExecutionCommand : r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand> = r1
+org.apache.ambari.server.agent.ExecutionCommand.getConfigurationTags : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: java.util.Map configurationTags>
+org.apache.ambari.server.agent.ExecutionCommand.setCommandParams : r0.<org.apache.ambari.server.agent.ExecutionCommand: java.util.Map commandParams> = r1
+org.apache.ambari.server.agent.CommandReport.setTaskId : r0.<org.apache.ambari.server.agent.CommandReport: long taskId> = l0
+org.apache.ambari.server.agent.CommandReport.setStdOut : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String stdout> = r1
+org.apache.ambari.server.agent.ExecutionCommand.getRole : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String role>
+org.apache.ambari.server.agent.CommandReport.setActionId : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String actionId> = r1
+org.apache.ambari.server.serveraction.AbstractServerAction.setHostRoleCommand : r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand> = r1
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r45 = interfaceinvoke r52.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : r4 = interfaceinvoke r3.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.Config getDesiredConfigByType(java.lang.String)>("capacity-scheduler")
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : if z7 != 0 goto interfaceinvoke r4.<org.apache.ambari.server.state.Config: void setProperties(java.util.Map)>(r5)
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r12 = new java.util.HashSet
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : if null != r9 goto $z3 = virtualinvoke r9.<java.lang.String: boolean equals(java.lang.Object)>("utilization")
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : interfaceinvoke r4.<org.apache.ambari.server.state.Config: void save()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r11 = virtualinvoke r0.<org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy: org.apache.ambari.server.state.Clusters getClusters()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : r5 = interfaceinvoke r4.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : r56 = interfaceinvoke $r12.<java.util.Set: java.util.Iterator iterator()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r35 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Ordering policy not found for ")
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : if null != r4 goto r5 = interfaceinvoke r4.<org.apache.ambari.server.state.Config: java.util.Map getProperties()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r15 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus COMPLETED>
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r38 = virtualinvoke $r37.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" value will not be set.")
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r22 = interfaceinvoke r56.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r23 = newarray (java.lang.Object)[3]
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : interfaceinvoke r4.<org.apache.ambari.server.state.Config: void setProperties(java.util.Map)>(r5)
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r47 = virtualinvoke r54.<java.util.regex.Matcher: java.lang.String group(int)>(1)
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r26 = virtualinvoke $r14.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Changed ordering policy on ")
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r32 = virtualinvoke $r31.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(39)
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $z5 = virtualinvoke r54.<java.util.regex.Matcher: boolean matches()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r28 = virtualinvoke $r27.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" from \'")
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $z3 = virtualinvoke r9.<java.lang.String: boolean equals(java.lang.Object)>("utilization")
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r46 = <org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy: java.util.regex.Pattern ROOT_QUEUE_REGEX>
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $i0 = virtualinvoke r54.<java.util.regex.Matcher: int groupCount()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r24 = interfaceinvoke r5.<java.util.Map: java.lang.Object get(java.lang.Object)>(r8)
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : z7 = 1
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r13 = interfaceinvoke r5.<java.util.Map: java.util.Set keySet()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : z7 = 0
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r14 = new java.lang.StringBuilder
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $r10 = virtualinvoke r0.<org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy: org.apache.ambari.server.agent.ExecutionCommand getExecutionCommand()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : $z1 = interfaceinvoke $r12.<java.util.Set: boolean isEmpty()>()
+org.apache.ambari.server.serveraction.upgrades.FixCapacitySchedulerOrderingPolicy.execute : interfaceinvoke r5.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r8, "utilization")
+org.apache.ambari.server.agent.ExecutionCommand.getTaskId : $l0 = r0.<org.apache.ambari.server.agent.ExecutionCommand: long taskId>
+org.apache.ambari.server.agent.ExecutionCommand.getRoleCommand : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: org.apache.ambari.server.RoleCommand roleCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.getExecutionCommand : $r1 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.agent.ExecutionCommand.setClusterName : r0.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String clusterName> = r1
+org.apache.ambari.server.agent.CommandReport.setServiceName : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String serviceName> = r1
+org.apache.ambari.server.agent.CommandReport.setExitCode : r0.<org.apache.ambari.server.agent.CommandReport: int exitCode> = i0
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r5 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r14 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r8 = new org.apache.ambari.server.agent.CommandReport
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r12 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : if r30 != null goto $r31 = virtualinvoke r30.<org.apache.ambari.server.RoleCommand: java.lang.String toString()>()
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r20 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r6 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r9 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r29 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r31 = null
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r18 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : if r4 != null goto $r32 = r4
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r16 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : r27 = null
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r7 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : virtualinvoke $r8.<org.apache.ambari.server.agent.CommandReport: void setExitCode(int)>(i0)
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : virtualinvoke $r8.<org.apache.ambari.server.agent.CommandReport: void setStructuredOut(java.lang.String)>(r2)
+org.apache.ambari.server.agent.ExecutionCommand.getClusterName : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String clusterName>
+org.apache.ambari.server.agent.CommandReport.setStatus : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String status> = r1
+org.apache.ambari.server.agent.CommandReport.setConfigurationTags : r0.<org.apache.ambari.server.agent.CommandReport: java.util.Map configurationTags> = r1
+org.apache.ambari.server.agent.CommandReport.setRole : r0.<org.apache.ambari.server.agent.CommandReport: java.lang.String role> = r1

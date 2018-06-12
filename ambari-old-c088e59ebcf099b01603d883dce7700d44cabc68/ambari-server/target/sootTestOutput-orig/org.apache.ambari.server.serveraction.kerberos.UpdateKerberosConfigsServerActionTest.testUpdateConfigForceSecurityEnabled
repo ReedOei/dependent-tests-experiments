@@ -1,0 +1,112 @@
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader$1.next : $r1 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader$1: java.util.Map next()>()
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader$1.next : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader$1: java.util.Iterator iterator>
+org.apache.ambari.server.serveraction.ActionLog.getStdErr : $r1 = r0.<org.apache.ambari.server.serveraction.ActionLog: java.lang.StringBuffer stdErr>
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.getCommandParameterValue : if r0 == null goto $r3 = null
+org.apache.ambari.server.serveraction.ActionLog.write : $r5 = r0.<org.apache.ambari.server.serveraction.ActionLog: org.apache.commons.lang.time.FastDateFormat dateFormat>
+org.apache.ambari.server.serveraction.ActionLog.write : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(" - ")
+org.apache.ambari.server.serveraction.ActionLog.write : $r4 = new java.util.Date
+org.apache.ambari.server.serveraction.ActionLog.write : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>("\n")
+org.apache.ambari.server.serveraction.ActionLog.write : virtualinvoke r1.<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>(r2)
+org.apache.ambari.server.serveraction.ActionLog.write : if r2 == null goto return
+org.apache.ambari.server.serveraction.AbstractServerAction.getCommandParameters : $r1 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.getCommandParameters : $r2 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.ActionLog.getStdOut : $r1 = r0.<org.apache.ambari.server.serveraction.ActionLog: java.lang.StringBuffer stdOut>
+org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileWriter.getHeaderRecord : $r1 = newarray (java.lang.String)[4]
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.close : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter: org.apache.commons.csv.CSVPrinter csvPrinter>
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.close : $r2 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter: org.apache.commons.csv.CSVPrinter csvPrinter>
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.close : r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter: org.apache.commons.csv.CSVPrinter csvPrinter> = null
+org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileWriterFactory.createKerberosConfigDataFileWriter : $r2 = new org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileWriter
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.appendRecord : $r3 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter: org.apache.commons.csv.CSVPrinter csvPrinter>
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.appendRecord : $r2 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter: org.apache.commons.csv.CSVPrinter csvPrinter>
+org.apache.ambari.server.serveraction.AbstractServerAction.setExecutionCommand : r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand> = r1
+org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileWriter.addRecord : $r5 = newarray (java.lang.String)[4]
+org.apache.ambari.server.agent.ExecutionCommand.setCommandParams : r0.<org.apache.ambari.server.agent.ExecutionCommand: java.util.Map commandParams> = r1
+org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileReaderFactory.createKerberosConfigDataFileReader : $r2 = new org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileReader
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.open : $r8 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter: org.apache.commons.csv.CSVPrinter csvPrinter>
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.open : $r3 = new org.apache.commons.csv.CSVPrinter
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.open : r1 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter: java.lang.Iterable getHeaderRecord()>()
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.open : $r7 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter: java.io.File file>
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.open : $r2 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter: java.io.File file>
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.open : $z0 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter: boolean isClosed()>()
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader.access$000 : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader: org.apache.commons.csv.CSVParser csvParser>
+org.apache.ambari.server.serveraction.AbstractServerAction.getExecutionCommand : $r1 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.agent.ExecutionCommand executionCommand>
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader.open : $z0 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader: boolean isClosed()>()
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader.open : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader: java.io.File file>
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest$1.configure : $r6 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/audit/AuditLogger;")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest$1.configure : $r1 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/controller/AmbariManagementController;")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest$1.configure : $r9 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/stack/OsFamily;")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest$1.configure : $r3 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest$1: com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)>(class "Lorg/apache/ambari/server/state/ConfigHelper;")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.addConfigTypePropVal : interfaceinvoke r13.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r3, r4)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.addConfigTypePropVal : $r5 = virtualinvoke r1.<java.util.HashMap: java.lang.Object get(java.lang.Object)>(r2)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.addConfigTypePropVal : virtualinvoke r1.<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>(r2, $r11)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.addConfigTypePropVal : $r8 = r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: org.apache.ambari.server.serveraction.ActionLog actionLog>
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.addConfigTypePropVal : if r13 != null goto interfaceinvoke r13.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>(r3, r4)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.addConfigTypePropVal : $r11 = new java.util.HashMap
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader.iterator : $r1 = new org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader$1
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter.isClosed : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileWriter: org.apache.commons.csv.CSVPrinter csvPrinter>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : $r5 = r0.<org.apache.ambari.server.serveraction.AbstractServerAction: org.apache.ambari.server.actionmanager.HostRoleCommand hostRoleCommand>
+org.apache.ambari.server.serveraction.AbstractServerAction.createCommandReport : r27 = null
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.removeConfigTypeProp : if r10 != null goto interfaceinvoke r10.<java.util.Collection: boolean add(java.lang.Object)>(r3)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.removeConfigTypeProp : $r6 = r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: org.apache.ambari.server.serveraction.ActionLog actionLog>
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.removeConfigTypeProp : $r8 = new java.util.HashSet
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.removeConfigTypeProp : interfaceinvoke r10.<java.util.Collection: boolean add(java.lang.Object)>(r3)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.removeConfigTypeProp : virtualinvoke r1.<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>(r2, $r8)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.removeConfigTypeProp : $r4 = virtualinvoke r1.<java.util.HashMap: java.lang.Object get(java.lang.Object)>(r2)
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader.close : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader: org.apache.commons.csv.CSVParser csvParser>
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader.close : r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader: org.apache.commons.csv.CSVParser csvParser> = null
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader.close : $r2 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader: org.apache.commons.csv.CSVParser csvParser>
+org.apache.ambari.server.agent.ExecutionCommand.getClusterName : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: java.lang.String clusterName>
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest.setupConfigDat : $r4 = new java.io.File
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest.setupConfigDat : r3 = virtualinvoke r2.<org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileWriterFactory: org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileWriter createKerberosConfigDataFileWriter(java.io.File)>($r4)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest.setupConfigDat : virtualinvoke r3.<org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileWriter: void close()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest.setupConfigDat : $r6 = r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest: com.google.inject.Injector injector>
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest.setupConfigDat : virtualinvoke r3.<org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileWriter: void addRecord(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>("hdfs-site", "remove.me", null, "REMOVE")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerActionTest.setupConfigDat : virtualinvoke r3.<org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileWriter: void addRecord(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>("hdfs-site", "hadoop.security.authentication", "kerberos", "SET")
+org.apache.ambari.server.serveraction.ActionLog.writeStdOut : $r2 = r0.<org.apache.ambari.server.serveraction.ActionLog: java.lang.StringBuffer stdOut>
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader$1.hasNext : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader$1: java.util.Iterator iterator>
+org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader.isClosed : $r1 = r0.<org.apache.ambari.server.serveraction.kerberos.AbstractKerberosDataFileReader: org.apache.commons.csv.CSVParser csvParser>
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r36 = r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: org.apache.ambari.server.state.ConfigHelper configHelper>
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r26 = new java.util.HashSet
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $z1 = virtualinvoke $r27.<java.io.File: boolean exists()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r45 = r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileReaderFactory kerberosConfigDataFileReaderFactory>
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r51 = interfaceinvoke r68.<java.util.Map: java.lang.Object get(java.lang.Object)>("value")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $z4 = virtualinvoke r65.<org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileReader: boolean isClosed()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : goto [?= (branch)]
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r32 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: java.util.Map getCommandParameters()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : r64 = null
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : r65 = null
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : specialinvoke r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: void addConfigTypePropVal(java.util.HashMap,java.lang.String,java.lang.String,java.lang.String)>($r18, r69, r70, r11)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : virtualinvoke r65.<org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileReader: void close()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $z2 = interfaceinvoke $r26.<java.util.Set: boolean contains(java.lang.Object)>("cluster-env")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : goto [?= $z7 = interfaceinvoke r67.<java.util.Iterator: boolean hasNext()>()]
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r15 = r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: org.apache.ambari.server.controller.AmbariManagementController controller>
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r30 = virtualinvoke $r18.<java.util.HashMap: java.lang.Object get(java.lang.Object)>("cluster-env")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : r4 = interfaceinvoke r3.<org.apache.ambari.server.state.Clusters: org.apache.ambari.server.state.Cluster getCluster(java.lang.String)>(r2)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : if r75 == null goto $r33 = interfaceinvoke r4.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.SecurityType getSecurityType()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : interfaceinvoke $r26.<java.util.Set: boolean add(java.lang.Object)>(r69)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r19 = new java.util.HashMap
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r38 = r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: org.apache.ambari.server.controller.AmbariManagementController controller>
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r43 = new java.util.HashMap
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r49 = interfaceinvoke r68.<java.util.Map: java.lang.Object get(java.lang.Object)>("operation")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r46 = interfaceinvoke r67.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : virtualinvoke $r18.<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>("cluster-env", $r43)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : interfaceinvoke r74.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("security_enabled", r73)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r17 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: java.util.Map getCommandParameters()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r14 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: org.apache.ambari.server.agent.ExecutionCommand getExecutionCommand()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r18 = new java.util.HashMap
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $z3 = interfaceinvoke $r26.<java.util.Set: boolean isEmpty()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r25 = new java.io.File
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r27 = new java.io.File
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r50 = "REMOVE"
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r16 = virtualinvoke r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: java.util.Map getCommandParameters()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : specialinvoke r0.<org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction: void removeConfigTypeProp(java.util.HashMap,java.lang.String,java.lang.String)>($r19, r69, r70)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $z0 = virtualinvoke $r25.<java.io.File: boolean exists()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r48 = interfaceinvoke r68.<java.util.Map: java.lang.Object get(java.lang.Object)>("key")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : interfaceinvoke $r26.<java.util.Set: boolean add(java.lang.Object)>("cluster-env")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r35 = interfaceinvoke r77.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : r67 = virtualinvoke r65.<org.apache.ambari.server.serveraction.kerberos.KerberosConfigDataFileReader: java.util.Iterator iterator()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r47 = interfaceinvoke r68.<java.util.Map: java.lang.Object get(java.lang.Object)>("config")
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : if r6 == null goto (branch)
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r33 = interfaceinvoke r4.<org.apache.ambari.server.state.Cluster: org.apache.ambari.server.state.SecurityType getSecurityType()>()
+org.apache.ambari.server.serveraction.kerberos.UpdateKerberosConfigsServerAction.execute : $r21 = <org.apache.ambari.server.actionmanager.HostRoleStatus: org.apache.ambari.server.actionmanager.HostRoleStatus COMPLETED>
+org.apache.ambari.server.agent.ExecutionCommand.getCommandParams : $r1 = r0.<org.apache.ambari.server.agent.ExecutionCommand: java.util.Map commandParams>

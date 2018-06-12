@@ -1,0 +1,5 @@
+com.dangdang.ddframe.job.event.fixture.TestJobEventFailureConfiguration.createJobEventListener : $r1 = new com.dangdang.ddframe.job.event.JobEventListenerConfigurationException
+com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject.createExecutorService : $r1 = r0.<com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObject: java.util.concurrent.ThreadPoolExecutor threadPoolExecutor>
+com.dangdang.ddframe.job.event.JobEventBus.register : $r6 = <com.dangdang.ddframe.job.event.JobEventBus: org.slf4j.Logger log>
+com.dangdang.ddframe.job.event.JobEventBus.register : $r3 = r0.<com.dangdang.ddframe.job.event.JobEventBus: com.google.common.eventbus.EventBus eventBus>
+com.dangdang.ddframe.job.event.JobEventBusTest.assertIsRegistered : $r2 = r0.<com.dangdang.ddframe.job.event.JobEventBusTest: com.dangdang.ddframe.job.event.JobEventBus jobEventBus>

@@ -1,0 +1,2 @@
+org.apache.ambari.server.orm.entities.BlueprintEntity.setStack : virtualinvoke r0.<org.apache.ambari.server.orm.entities.BlueprintEntity: void _persistence_set_stack(org.apache.ambari.server.orm.entities.StackEntity)>(r1)
+org.apache.ambari.server.orm.entities.HostGroupConfigEntity.setConfigAttributes : virtualinvoke r0.<org.apache.ambari.server.orm.entities.HostGroupConfigEntity: void _persistence_set_configAttributes(java.lang.String)>(r1)

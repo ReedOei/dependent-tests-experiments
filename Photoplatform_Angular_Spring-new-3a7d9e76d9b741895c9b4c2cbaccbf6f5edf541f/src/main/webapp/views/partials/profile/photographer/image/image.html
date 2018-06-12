@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-md-2" ng-include
+         src="'/views/partials/profile/sidebar.html'"></div>
+    <div class="col-md-9" ng-init="getAllImages()">
+        <div class="page-header">
+            <h2>Fotoverwaltung</h2>
+            <p>Hier kannst du neue Bilder hochladen und vorhandene bearbeiten und löschen. Achtung, löschst du Bilder hier, werden sie auch aus allen Sammlungen entfernt!</p>
+        </div>
+        <div class="row" style="border:1px solid #dddddd; padding: 10px;">
+            <div class="col-md-12">
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="fileUpload btn btn-primary" id="uploadsearch">
+                                <span class="glyphicon glyphicon-folder-open"></span>
+                                Durchsuchen
+                                <input class="upload" file-input="files"
+                                       type="file"
+                                       accept="image/*;capture=camera"
+                                       multiple>
+                            </div>
+                            <button class="btn btn-primary upload" id="upload" disabled
+                                    ng-click="uploadImage()">
+                                <span class="glyphicon glyphicon-open"></span>
+                                Hochladen
+                            </button>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div id="preview" class="col-md-12">
+                    	<span ng-repeat="file in files">
+                    		<img id="{{file.hash}}" src="#" alt="{{file.name}}" class="preview-img" />
+							<span ng-click="removePreviewImage(file.hash)" class="glyphicon glyphicon-trash"> <span/>
+                    	</span>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="darg-and-drop-area" class="col-md-6">
+                                <p>
+                                    Drag&Drop ein Bild hier her, um es hochzuladen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="row" ng-include src="'/views/partials/profile/photographer/imageComponent.html'"></div>
+    </div>
+</div>

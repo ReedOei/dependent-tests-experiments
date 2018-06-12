@@ -1,0 +1,15 @@
+org.apache.ambari.server.agent.AgentEnv.getExistingRepos : $r1 = r0.<org.apache.ambari.server.agent.AgentEnv: java.lang.String[] existingRepos> >>>>>>>> org.apache.ambari.server.agent.AgentEnv.getExistingRepos : return $r1
+org.apache.ambari.server.agent.AgentEnv.getExistingRepos : return $r1 >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if z0 == 0
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if z0 == 0 >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $i3 = lengthof r0
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $i3 = lengthof r0 >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $i4 = $i3 + 1
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $i4 = $i3 + 1 >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r19 = newarray (java.lang.String)[$i4]
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r19 = newarray (java.lang.String)[$i4] >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r19[0] = "ambari-sudo.sh"
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r19[0] = "ambari-sudo.sh" >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $i5 = lengthof r0
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $i5 = lengthof r0 >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r0, 0, r19, 1, $i5)
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>(r0, 0, r19, 1, $i5) >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : goto [?= $r6 = new java.lang.ProcessBuilder]
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : goto [?= $r6 = new java.lang.ProcessBuilder] >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $r6 = new java.lang.ProcessBuilder
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $r6 = new java.lang.ProcessBuilder >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : specialinvoke $r6.<java.lang.ProcessBuilder: void <init>(java.lang.String[])>(r19)
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : specialinvoke $r6.<java.lang.ProcessBuilder: void <init>(java.lang.String[])>(r19) >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if r1 == null
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if r1 == null >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $z1 = <org.apache.ambari.server.utils.ShellCommandUtil: boolean WINDOWS>
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : $z1 = <org.apache.ambari.server.utils.ShellCommandUtil: boolean WINDOWS> >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if $z1 == 0
+org.apache.ambari.server.utils.ShellCommandUtil.runCommand : if $z1 == 0 >>>>>>>> org.apache.ambari.server.utils.ShellCommandUtil.runCommand : r22 = virtualinvoke $r6.<java.lang.ProcessBuilder: java.lang.Process start()>()

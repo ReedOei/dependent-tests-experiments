@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.access$1000 : $z0 = r0.<org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService: boolean useForPrimaryTypes> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.osgi.OakSolrConfigurationProviderService.access$1000 : return $z0

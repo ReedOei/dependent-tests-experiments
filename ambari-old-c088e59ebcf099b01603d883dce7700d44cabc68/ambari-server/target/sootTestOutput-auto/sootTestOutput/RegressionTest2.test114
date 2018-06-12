@@ -1,0 +1,4 @@
+org.apache.ambari.server.checks.CheckDescription.getType : $r1 = r0.<org.apache.ambari.server.checks.CheckDescription: org.apache.ambari.server.state.stack.PrereqCheckType m_type>
+org.apache.ambari.server.checks.HiveNotRollingWarning.getApplicableServices : $r1 = newarray (java.lang.String)[1]
+org.apache.ambari.server.checks.AbstractCheckDescriptor.getDescription : $r1 = r0.<org.apache.ambari.server.checks.AbstractCheckDescriptor: org.apache.ambari.server.checks.CheckDescription m_description>
+org.apache.ambari.server.state.stack.PrerequisiteCheck.getType : $r1 = r0.<org.apache.ambari.server.state.stack.PrerequisiteCheck: org.apache.ambari.server.checks.CheckDescription m_description>

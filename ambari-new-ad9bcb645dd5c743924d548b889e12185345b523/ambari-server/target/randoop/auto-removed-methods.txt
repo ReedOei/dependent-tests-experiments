@@ -1,0 +1,12 @@
+# This file contains the list of tests that were automatically removed to make the file compile with the new version of the subject.
+RegressionTest0.test100()
+RegressionTest0.test220()
+RegressionTest0.test271()
+RegressionTest0.test430()
+RegressionTest0.test441()
+RegressionTest1.test025()
+RegressionTest1.test220()
+RegressionTest1.test264()
+RegressionTest1.test300()
+RegressionTest1.test402()
+RegressionTest2.test244()

@@ -1,0 +1,2 @@
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.session.ZeppelinhubSession.isSessionOpen : $r1 = r0.<org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.session.ZeppelinhubSession: org.eclipse.jetty.websocket.api.Session session>
+org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.session.ZeppelinhubSession.createInstance : $r2 = new org.apache.zeppelin.notebook.repo.zeppelinhub.websocket.session.ZeppelinhubSession

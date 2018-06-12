@@ -1,0 +1,33 @@
+de.htw.sdf.photoplatform.persistence.model.User.getPassword : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String password>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getUpdatedAt : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.util.Date updatedAt>
+de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity.getUpdatedBy : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseAuditEntity: java.lang.String updatedBy>
+de.htw.sdf.photoplatform.persistence.model.UserImage.setImage : r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.Image image> = r1
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : if r2 != null goto $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : return 0
+de.htw.sdf.photoplatform.persistence.model.User.isRoleIncluded : r2 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List getUserRoles()>()
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.getId : $r1 = r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long id>
+de.htw.sdf.photoplatform.persistence.model.User.setPhotographerData : r0.<de.htw.sdf.photoplatform.persistence.model.User: de.htw.sdf.photoplatform.persistence.model.PhotographerData photographerData> = r1
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r16 = virtualinvoke $r15.<java.lang.String: byte[] getBytes()>()
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r10 = interfaceinvoke r0.<org.springframework.security.core.userdetails.UserDetails: java.lang.String getPassword()>()
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r8 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(long)>(l0)
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : goto [?= $r14 = new java.lang.String]
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r4 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r5 = interfaceinvoke r0.<org.springframework.security.core.userdetails.UserDetails: java.lang.String getUsername()>()
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("obfuscate")
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>("MD5")
+de.htw.sdf.photoplatform.security.TokenUtils.computeSignature : $r14 = new java.lang.String
+de.htw.sdf.photoplatform.persistence.model.UserImage.setUser : r0.<de.htw.sdf.photoplatform.persistence.model.UserImage: de.htw.sdf.photoplatform.persistence.model.User user> = r1
+de.htw.sdf.photoplatform.persistence.model.User.getSecToken : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String secToken>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : if r1 == null goto return 0
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : if r0 != r1 goto (branch)
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : r2 = (de.htw.sdf.photoplatform.persistence.AbstractBaseEntity) r1
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.equals : $r5 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.AbstractBaseEntity: java.lang.Long getId()>()
+de.htw.sdf.photoplatform.persistence.model.Image.getSmallThumbPath : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String smallThumbPath>
+de.htw.sdf.photoplatform.persistence.AbstractBaseEntity.toString : $r1 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.persistence.model.Image.getMime : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.Image: java.lang.String mime>
+de.htw.sdf.photoplatform.persistence.model.User.isPhotographer : $z0 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean isRoleIncluded(java.lang.String)>("ROLE_PHOTOGRAPHER")
+de.htw.sdf.photoplatform.persistence.model.User.getUserRoles : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.util.List userRoles>
+de.htw.sdf.photoplatform.persistence.model.User.isAdmin : $z0 = virtualinvoke r0.<de.htw.sdf.photoplatform.persistence.model.User: boolean isRoleIncluded(java.lang.String)>("ROLE_ADMIN")
+de.htw.sdf.photoplatform.persistence.model.Image.toString : $r1 = new java.lang.StringBuilder
+de.htw.sdf.photoplatform.persistence.model.User.getUsername : $r1 = r0.<de.htw.sdf.photoplatform.persistence.model.User: java.lang.String email>

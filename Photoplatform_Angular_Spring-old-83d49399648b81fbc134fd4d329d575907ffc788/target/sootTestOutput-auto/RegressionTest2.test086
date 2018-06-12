@@ -1,0 +1,4 @@
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getImageIds : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.util.List imageIds>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.setDescription : r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String description> = r1
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getUserdata : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: de.htw.sdf.photoplatform.webservice.dto.UserData userdata>
+de.htw.sdf.photoplatform.webservice.dto.CollectionData.getName : $r1 = r0.<de.htw.sdf.photoplatform.webservice.dto.CollectionData: java.lang.String name>

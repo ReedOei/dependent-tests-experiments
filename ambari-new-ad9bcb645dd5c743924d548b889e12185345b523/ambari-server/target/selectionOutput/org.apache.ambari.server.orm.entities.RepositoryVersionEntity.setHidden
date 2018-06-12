@@ -1,0 +1,7 @@
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : if z0 == 0 >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : $z1 = 1
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : if z0 == 0 >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : $z1 = 0
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : $z1 = 0 >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : $s0 = (short) $z1
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : $s0 = (short) $z1 >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : virtualinvoke r0.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: void _persistence_set_isHidden(short)>($s0)
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : virtualinvoke r0.<org.apache.ambari.server.orm.entities.RepositoryVersionEntity: void _persistence_set_isHidden(short)>($s0) >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : return
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : $z1 = 1 >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : goto [?= $s0 = (short) $z1]
+org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : goto [?= $s0 = (short) $z1] >>>>>>>> org.apache.ambari.server.orm.entities.RepositoryVersionEntity.setHidden : $s0 = (short) $z1

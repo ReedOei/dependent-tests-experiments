@@ -1,0 +1,51 @@
+org.apache.ambari.server.logging.LockProfileDelegate.logRequestCompleted : if z0 != 0 goto return
+org.apache.ambari.server.logging.LockProfileDelegate.logRequestCompleted : goto [?= return]
+org.apache.ambari.server.logging.LockProfileDelegate.logRequestCompleted : $r11 = r0.<org.apache.ambari.server.logging.LockProfileDelegate: java.util.concurrent.ConcurrentMap lockCount>
+org.apache.ambari.server.logging.LockProfileDelegate.logRequestCompleted : $r9 = <org.apache.ambari.server.logging.LockProfileDelegate: org.slf4j.Logger LOG>
+org.apache.ambari.server.logging.LockProfileDelegate.logRequestCompleted : $r5 = r0.<org.apache.ambari.server.logging.LockProfileDelegate: java.lang.ThreadLocal lockRequestTime>
+org.apache.ambari.server.logging.LockProfileDelegate.logRequestCompleted : if z1 == 0 goto $r3 = <org.apache.ambari.server.logging.LockProfileDelegate: org.slf4j.Logger LOG>
+org.apache.ambari.server.logging.LockProfileDelegate.logRequestCompleted : $r13 = r0.<org.apache.ambari.server.logging.LockProfileDelegate: java.lang.ThreadLocal lockAcquireTime>
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock.writeLock : $r1 = r0.<org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock: org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock$ProfiledWriteLock writeLock>
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock$ProfiledWriteLock.lock : $r2 = r0.<org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock$ProfiledWriteLock: org.apache.ambari.server.logging.LockProfileDelegate helper>
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock$ProfiledWriteLock.lock : $r1 = r0.<org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock$ProfiledWriteLock: org.apache.ambari.server.logging.LockProfileDelegate helper>
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock$ProfiledWriteLock.lock : specialinvoke r0.<java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock: void lock()>()
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock$ProfiledWriteLock.unlock : specialinvoke r0.<java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock: void unlock()>()
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock$ProfiledWriteLock.unlock : $r1 = r0.<org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock$ProfiledWriteLock: org.apache.ambari.server.logging.LockProfileDelegate helper>
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock$ProfiledWriteLock.getTimeSpentLocked : $r1 = r0.<org.apache.ambari.server.logging.ProfiledReentrantReadWriteLock$ProfiledWriteLock: org.apache.ambari.server.logging.LockProfileDelegate helper>
+org.apache.ambari.server.logging.LockProfileDelegate.getTimeSpentLocked : $r1 = new java.util.TreeMap
+org.apache.ambari.server.logging.LockProfileDelegate.logUnlock : $r3 = r0.<org.apache.ambari.server.logging.LockProfileDelegate: java.lang.ThreadLocal lockAcquireTime>
+org.apache.ambari.server.logging.LockProfileDelegate.logUnlock : $z3 = 1
+org.apache.ambari.server.logging.LockProfileDelegate.logUnlock : $r1 = r0.<org.apache.ambari.server.logging.LockProfileDelegate: org.apache.ambari.server.logging.ProfiledLock lock>
+org.apache.ambari.server.logging.LockProfileDelegate.logUnlock : if $z3 == 0 goto return
+org.apache.ambari.server.logging.LockProfileDelegate.logUnlock : $r4 = <org.apache.ambari.server.logging.LockProfileDelegate: org.slf4j.Logger LOG>
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLockTest.timeSpentLockedIsRecorded : $l6 = virtualinvoke r1.<com.google.common.base.Ticker: long read()>()
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLockTest.timeSpentLockedIsRecorded : $l2 = virtualinvoke r1.<com.google.common.base.Ticker: long read()>()
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLockTest.timeSpentLockedIsRecorded : interfaceinvoke r2.<org.apache.ambari.server.logging.ProfiledLock: void lock()>()
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLockTest.timeSpentLockedIsRecorded : $l4 = virtualinvoke r1.<com.google.common.base.Ticker: long read()>()
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLockTest.timeSpentLockedIsRecorded : $r23 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>()
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLockTest.timeSpentLockedIsRecorded : $l0 = virtualinvoke r1.<com.google.common.base.Ticker: long read()>()
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLockTest.timeSpentLockedIsRecorded : virtualinvoke r0.<org.apache.ambari.server.logging.ProfiledReentrantReadWriteLockTest: void verifyAll()>()
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLockTest.timeSpentLockedIsRecorded : virtualinvoke r0.<org.apache.ambari.server.logging.ProfiledReentrantReadWriteLockTest: void replayAll()>()
+org.apache.ambari.server.logging.ProfiledReentrantReadWriteLockTest.timeSpentLockedIsRecorded : interfaceinvoke r2.<org.apache.ambari.server.logging.ProfiledLock: void unlock()>()
+org.apache.ambari.server.logging.LockProfileDelegate.storeElapsedTime : $b5 = l8 cmp 0L
+org.apache.ambari.server.logging.LockProfileDelegate.storeElapsedTime : $l1 = virtualinvoke r3.<java.lang.Long: long longValue()>()
+org.apache.ambari.server.logging.LockProfileDelegate.storeElapsedTime : $r6 = virtualinvoke r1.<java.lang.ThreadLocal: java.lang.Object get()>()
+org.apache.ambari.server.logging.LockProfileDelegate.storeElapsedTime : virtualinvoke r1.<java.lang.ThreadLocal: void remove()>()
+org.apache.ambari.server.logging.LockProfileDelegate.storeElapsedTime : l8 = -9223372036854775808L
+org.apache.ambari.server.logging.LockProfileDelegate.storeElapsedTime : $r8 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>()
+org.apache.ambari.server.logging.LockProfileDelegate.storeElapsedTime : $r11 = interfaceinvoke r2.<java.util.concurrent.ConcurrentMap: java.lang.Object get(java.lang.Object)>(r4)
+org.apache.ambari.server.logging.LockProfileDelegate.storeElapsedTime : if r3 == null goto virtualinvoke r1.<java.lang.ThreadLocal: void remove()>()
+org.apache.ambari.server.logging.LockProfileDelegate.storeElapsedTime : $r5 = r0.<org.apache.ambari.server.logging.LockProfileDelegate: com.google.common.base.Ticker ticker>
+org.apache.ambari.server.logging.LockProfileDelegate.storeElapsedTime : $r7 = <java.util.concurrent.TimeUnit: java.util.concurrent.TimeUnit NANOSECONDS>
+org.apache.ambari.server.logging.LockProfileDelegate.storeElapsedTime : $r9 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(0L)
+org.apache.ambari.server.logging.LockProfileDelegate.logRequest : if z0 != 0 goto return z0
+org.apache.ambari.server.logging.LockProfileDelegate.logRequest : return z0
+org.apache.ambari.server.logging.LockProfileDelegate.logRequest : $r4 = r0.<org.apache.ambari.server.logging.LockProfileDelegate: java.lang.ThreadLocal lockRequestTime>
+org.apache.ambari.server.logging.LockProfileDelegate.logRequest : $r1 = r0.<org.apache.ambari.server.logging.LockProfileDelegate: org.apache.ambari.server.logging.ProfiledLock lock>
+org.apache.ambari.server.logging.LockProfileDelegate.logRequest : $r2 = <org.apache.ambari.server.logging.LockProfileDelegate: org.slf4j.Logger LOG>
+org.apache.ambari.server.logging.LockProfileDelegate.addSpacePostfixIfNeeded : $i0 = virtualinvoke r4.<java.lang.String: int length()>()
+org.apache.ambari.server.logging.LockProfileDelegate.addSpacePostfixIfNeeded : if r3 != null goto r4 = virtualinvoke r3.<java.lang.String: java.lang.String trim()>()
+org.apache.ambari.server.logging.LockProfileDelegate.addSpacePostfixIfNeeded : r4 = virtualinvoke r3.<java.lang.String: java.lang.String trim()>()
+org.apache.ambari.server.logging.LockProfileDelegate.increment : $r3 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(0)
+org.apache.ambari.server.logging.LockProfileDelegate.increment : $r5 = interfaceinvoke r0.<java.util.concurrent.ConcurrentMap: java.lang.Object get(java.lang.Object)>(r1)
+org.apache.ambari.server.logging.LockProfileDelegate.increment : $r2 = staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>()

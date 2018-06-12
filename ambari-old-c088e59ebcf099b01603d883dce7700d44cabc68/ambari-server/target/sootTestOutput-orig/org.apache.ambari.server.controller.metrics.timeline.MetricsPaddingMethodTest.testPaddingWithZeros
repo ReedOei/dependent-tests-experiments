@@ -1,0 +1,35 @@
+org.apache.ambari.server.controller.metrics.timeline.MetricsPaddingMethodTest.getTemporalInfo : $r4 = new org.apache.ambari.server.controller.metrics.timeline.MetricsPaddingMethodTest$1
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.getTimelineMetricInterval : if r1 == null goto l6 = -1L
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.getTimelineMetricInterval : $r8 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.getTimelineMetricInterval : $i4 = virtualinvoke r1.<java.util.TreeMap: int size()>()
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.getTimelineMetricInterval : $r7 = virtualinvoke r1.<java.util.TreeMap: java.util.NavigableSet descendingKeySet()>()
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.getTimelineMetricInterval : r2 = staticinvoke <org.apache.hadoop.metrics2.sink.timeline.Precision: org.apache.hadoop.metrics2.sink.timeline.Precision getPrecision(long,long)>(l0, l1)
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.getTimelineMetricInterval : $r10 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.getTimelineMetricInterval : goto [?= return l6]
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.getTimelineMetricInterval : $r5 = <org.apache.hadoop.metrics2.sink.timeline.Precision: org.apache.hadoop.metrics2.sink.timeline.Precision HOURS>
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.getTimelineMetricInterval : $l5 = l2 - l3
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.getTimelineMetricInterval : $r4 = <org.apache.hadoop.metrics2.sink.timeline.Precision: org.apache.hadoop.metrics2.sink.timeline.Precision DAYS>
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.getTimelineMetricInterval : $r6 = <org.apache.hadoop.metrics2.sink.timeline.Precision: org.apache.hadoop.metrics2.sink.timeline.Precision MINUTES>
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : if r2 != null goto r3 = virtualinvoke r1.<org.apache.hadoop.metrics2.sink.timeline.TimelineMetric: java.util.TreeMap getMetricValues()>()
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : $r5 = r0.<org.apache.ambari.server.controller.metrics.MetricsPaddingMethod: org.apache.ambari.server.controller.metrics.MetricsPaddingMethod$PADDING_STRATEGY strategy>
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : $r7 = interfaceinvoke r2.<org.apache.ambari.server.controller.spi.TemporalInfo: java.lang.Long getEndTime()>()
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : $r14 = r0.<org.apache.ambari.server.controller.metrics.MetricsPaddingMethod: org.apache.ambari.server.controller.metrics.MetricsPaddingMethod$PADDING_STRATEGY strategy>
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : r20 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(0.0)
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : $r6 = interfaceinvoke r2.<org.apache.ambari.server.controller.spi.TemporalInfo: java.lang.Long getStartTime()>()
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : if r3 == null goto return
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : virtualinvoke r1.<org.apache.hadoop.metrics2.sink.timeline.TimelineMetric: void setMetricValues(java.util.TreeMap)>(r3)
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : $r10 = virtualinvoke r3.<java.util.TreeMap: java.lang.Object lastKey()>()
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : $r15 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(l16)
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : r3 = virtualinvoke r1.<org.apache.hadoop.metrics2.sink.timeline.TimelineMetric: java.util.TreeMap getMetricValues()>()
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : l14 = l0
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : l11 = specialinvoke r0.<org.apache.ambari.server.controller.metrics.MetricsPaddingMethod: long getTimelineMetricInterval(java.util.TreeMap,long,long)>(r3, l0, l1)
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : $b10 = l11 cmp 999L
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : l16 = l3 + l11
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : $b8 = l11 cmp -1L
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : $r8 = virtualinvoke r3.<java.util.TreeMap: java.lang.Object firstKey()>()
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : $r17 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(l14)
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.applyPaddingStrategy : $z1 = virtualinvoke r3.<java.util.TreeMap: boolean isEmpty()>()
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.longToMillis : $b1 = l0 cmp 9999999999L
+org.apache.ambari.server.controller.metrics.MetricsPaddingMethod.longToMillis : return l0
+org.apache.ambari.server.controller.metrics.timeline.MetricsPaddingMethodTest$1.getEndTime : $r1 = r0.<org.apache.ambari.server.controller.metrics.timeline.MetricsPaddingMethodTest$1: java.lang.Long val$endTime>
+org.apache.ambari.server.controller.metrics.timeline.MetricsPaddingMethodTest$1.getStartTime : $r1 = r0.<org.apache.ambari.server.controller.metrics.timeline.MetricsPaddingMethodTest$1: java.lang.Long val$startTime>

@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.index.solr.TestUtils$1.getCommitPolicy : $r1 = <org.apache.jackrabbit.oak.plugins.index.solr.configuration.OakSolrConfiguration$CommitPolicy: org.apache.jackrabbit.oak.plugins.index.solr.configuration.OakSolrConfiguration$CommitPolicy HARD> >>>>>>>> org.apache.jackrabbit.oak.plugins.index.solr.TestUtils$1.getCommitPolicy : return $r1

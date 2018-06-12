@@ -1,0 +1,18 @@
+org.apache.zeppelin.scheduler.RemoteScheduler.stop : exitmonitor $r3
+org.apache.zeppelin.scheduler.RemoteScheduler.stop : $r3 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.stop : $r4 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.stop : r0.<org.apache.zeppelin.scheduler.RemoteScheduler: boolean terminate> = 1
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsRunning : $r8 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List running>
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsRunning : $r7 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsRunning : exitmonitor $r7
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsRunning : $r6 = new java.util.LinkedList
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : $r7 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : exitmonitor $r6
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : return null
+org.apache.zeppelin.scheduler.RemoteScheduler.removeFromWaitingQueue : $r6 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsWaiting : $r7 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsWaiting : exitmonitor $r7
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsWaiting : $r8 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: java.util.List queue>
+org.apache.zeppelin.scheduler.RemoteScheduler.getJobsWaiting : $r6 = new java.util.LinkedList
+org.apache.zeppelin.scheduler.RemoteScheduler.run : $z2 = r0.<org.apache.zeppelin.scheduler.RemoteScheduler: boolean terminate>

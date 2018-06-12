@@ -1,0 +1,6 @@
+org.apache.zeppelin.notebook.Paragraph.hasUser : $r1 = r0.<org.apache.zeppelin.notebook.Paragraph: java.lang.String user> >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasUser : if $r1 == null
+org.apache.zeppelin.notebook.Paragraph.hasUser : if $r1 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasUser : $z0 = 1
+org.apache.zeppelin.notebook.Paragraph.hasUser : if $r1 == null >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasUser : $z0 = 0
+org.apache.zeppelin.notebook.Paragraph.hasUser : $z0 = 0 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasUser : return $z0
+org.apache.zeppelin.notebook.Paragraph.hasUser : $z0 = 1 >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasUser : goto [?= return $z0]
+org.apache.zeppelin.notebook.Paragraph.hasUser : goto [?= return $z0] >>>>>>>> org.apache.zeppelin.notebook.Paragraph.hasUser : return $z0

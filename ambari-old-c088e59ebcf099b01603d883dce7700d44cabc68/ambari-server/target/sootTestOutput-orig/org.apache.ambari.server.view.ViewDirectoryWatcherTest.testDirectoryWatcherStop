@@ -1,0 +1,23 @@
+org.apache.ambari.server.view.ViewDirectoryWatcher.buildWatchService : $r3 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: org.apache.ambari.server.configuration.Configuration configuration>
+org.apache.ambari.server.view.ViewDirectoryWatcher.buildWatchService : return r2
+org.apache.ambari.server.view.ViewDirectoryWatcher.buildWatchService : $r4 = virtualinvoke r1.<java.io.File: java.lang.String getAbsolutePath()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.buildWatchService : $r10 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.nio.file.WatchService watchService>
+org.apache.ambari.server.view.ViewDirectoryWatcher.buildWatchService : $r6 = interfaceinvoke r2.<java.nio.file.Path: java.nio.file.FileSystem getFileSystem()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher.startWatching : $r2 = new org.apache.ambari.server.view.ViewDirectoryWatcher$2
+org.apache.ambari.server.view.ViewDirectoryWatcher.access$100 : $r1 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.nio.file.WatchService watchService>
+org.apache.ambari.server.view.ViewDirectoryWatcher.loggingHook : $r1 = new org.apache.ambari.server.view.ViewDirectoryWatcher$1
+org.apache.ambari.server.view.ViewDirectoryWatcher.start : r1 = specialinvoke r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.lang.Runnable startWatching(java.nio.file.Path)>(r6)
+org.apache.ambari.server.view.ViewDirectoryWatcher.start : goto [?= return]
+org.apache.ambari.server.view.ViewDirectoryWatcher.start : $r2 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.util.concurrent.ExecutorService executorService>
+org.apache.ambari.server.view.ViewDirectoryWatcher.start : r6 = specialinvoke r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.nio.file.Path buildWatchService()>()
+org.apache.ambari.server.view.ViewDirectoryWatcherTest$2.apply : $r3 = staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>(1)
+org.apache.ambari.server.view.ViewDirectoryWatcher.stop : $r1 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.util.concurrent.Future watchTask>
+org.apache.ambari.server.view.ViewDirectoryWatcher.isRunning : $r1 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.util.concurrent.Future watchTask>
+org.apache.ambari.server.view.ViewDirectoryWatcher.isRunning : $r2 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher: java.util.concurrent.Future watchTask>
+org.apache.ambari.server.view.ViewDirectoryWatcher.access$000 : $r0 = <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger LOG>
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r6 = r0.<org.apache.ambari.server.view.ViewDirectoryWatcher$2: org.apache.ambari.server.view.ViewDirectoryWatcher this$0>
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $r10 = staticinvoke <org.apache.ambari.server.view.ViewDirectoryWatcher: org.slf4j.Logger access$000()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : goto [?= (branch)]
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : goto [?= return]
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : $z0 = interfaceinvoke r39.<java.nio.file.WatchKey: boolean reset()>()
+org.apache.ambari.server.view.ViewDirectoryWatcher$2.run : goto [?= $z3 = interfaceinvoke r40.<java.util.Iterator: boolean hasNext()>()]
