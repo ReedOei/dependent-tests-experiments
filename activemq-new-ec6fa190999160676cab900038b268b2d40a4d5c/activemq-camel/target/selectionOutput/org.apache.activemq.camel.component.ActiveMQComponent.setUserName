@@ -1,0 +1,1 @@
+org.apache.activemq.camel.component.ActiveMQComponent.setUserName : virtualinvoke r0.<org.apache.activemq.camel.component.ActiveMQComponent: void setUsername(java.lang.String)>(r1) >>>>>>>> org.apache.activemq.camel.component.ActiveMQComponent.setUserName : return

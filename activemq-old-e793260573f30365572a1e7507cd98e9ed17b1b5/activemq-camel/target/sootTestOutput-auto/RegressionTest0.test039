@@ -1,0 +1,11 @@
+org.apache.activemq.camel.component.ActiveMQComponent.createConfiguration : $r2 = new org.apache.activemq.camel.component.ActiveMQConfiguration
+org.apache.activemq.camel.component.ActiveMQComponent.createConfiguration : virtualinvoke $r2.<org.apache.activemq.camel.component.ActiveMQConfiguration: void setActiveMQComponent(org.apache.activemq.camel.component.ActiveMQComponent)>(r0)
+org.apache.activemq.camel.component.ActiveMQComponent.createConfiguration : return $r2
+org.apache.activemq.camel.component.ActiveMQComponent.doStop : $r4 = r0.<org.apache.activemq.camel.component.ActiveMQComponent: java.util.concurrent.CopyOnWriteArrayList pooledConnectionFactoryServiceList>
+org.apache.activemq.camel.component.ActiveMQComponent.doStop : $r5 = r0.<org.apache.activemq.camel.component.ActiveMQComponent: java.util.concurrent.CopyOnWriteArrayList singleConnectionFactoryList>
+org.apache.activemq.camel.component.ActiveMQComponent.doStop : $r6 = r0.<org.apache.activemq.camel.component.ActiveMQComponent: java.util.concurrent.CopyOnWriteArrayList singleConnectionFactoryList>
+org.apache.activemq.camel.component.ActiveMQComponent.doStop : specialinvoke r0.<org.apache.camel.component.jms.JmsComponent: void doStop()>()
+org.apache.activemq.camel.component.ActiveMQComponent.doStop : $r1 = r0.<org.apache.activemq.camel.component.ActiveMQComponent: org.apache.activemq.advisory.DestinationSource source>
+org.apache.activemq.camel.component.ActiveMQComponent.doStop : $r2 = r0.<org.apache.activemq.camel.component.ActiveMQComponent: org.apache.activemq.EnhancedConnection connection>
+org.apache.activemq.camel.component.ActiveMQComponent.doStop : $r3 = r0.<org.apache.activemq.camel.component.ActiveMQComponent: java.util.concurrent.CopyOnWriteArrayList pooledConnectionFactoryServiceList>
+org.apache.activemq.camel.component.ActiveMQConfiguration.setActiveMQComponent : r0.<org.apache.activemq.camel.component.ActiveMQConfiguration: org.apache.activemq.camel.component.ActiveMQComponent activeMQComponent> = r1

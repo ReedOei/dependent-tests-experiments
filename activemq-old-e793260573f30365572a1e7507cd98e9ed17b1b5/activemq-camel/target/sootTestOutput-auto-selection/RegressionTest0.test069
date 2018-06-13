@@ -1,0 +1,1 @@
+org.apache.activemq.camel.component.OriginalDestinationPropagateStrategy.onMessageCreated : $r9 = interfaceinvoke r3.<org.apache.camel.Exchange: org.apache.camel.Message getIn()>()

@@ -1,0 +1,72 @@
+Executing fixed runner now.
+Test being executed: org.apache.activemq.camel.CamelJmsRequestReplyNobTest.testRoundTrip
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/roei/Java/dt-impact-winglam/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/roei/Java/dt-impact-winglam/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/roei/Java/dt-impact-winglam/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO org.apache.activemq.camel.CamelJmsRequestReplyNobTest - ********************************************************************************
+[main] INFO org.apache.activemq.camel.CamelJmsRequestReplyNobTest - Testing: testRoundTrip(org.apache.activemq.camel.CamelJmsRequestReplyNobTest)
+[main] INFO org.apache.activemq.camel.CamelJmsRequestReplyNobTest - ********************************************************************************
+[main] INFO org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+[main] INFO org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.16.0-SNAPSHOT (CON, ID:roei-main-43549-1522670377784-0:1) is starting
+[main] INFO org.apache.activemq.transport.TransportServerThreadSupport - Listening for connections at: tcp://roei-main:46151
+[main] INFO org.apache.activemq.broker.TransportConnector - Connector tcp://roei-main:46151 started
+[main] INFO org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.16.0-SNAPSHOT (CON, ID:roei-main-43549-1522670377784-0:1) started
+[main] INFO org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+[main] INFO org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+[main] INFO org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.16.0-SNAPSHOT (PRO, ID:roei-main-43549-1522670377784-0:2) is starting
+[main] INFO org.apache.activemq.transport.TransportServerThreadSupport - Listening for connections at: tcp://roei-main:46263
+[main] INFO org.apache.activemq.broker.TransportConnector - Connector tcp://roei-main:46263 started
+[main] INFO org.apache.activemq.network.DiscoveryNetworkConnector - Establishing network connection from vm://PRO to tcp://roei-main:46151
+[main] INFO org.apache.activemq.broker.TransportConnector - Connector vm://PRO started
+[main] INFO org.apache.activemq.network.NetworkConnector - Network Connector DiscoveryNetworkConnector:NC:BrokerService[PRO] started
+[main] INFO org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.16.0-SNAPSHOT (PRO, ID:roei-main-43549-1522670377784-0:2) started
+[main] INFO org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+[triggerStartAsyncNetworkBridgeCreation: remoteBroker=tcp://roei-main/127.0.1.1:46151@36144, localBroker= vm://PRO#0] INFO org.apache.activemq.network.DemandForwardingBridgeSupport - Network connection between vm://PRO#0 and tcp://roei-main/127.0.1.1:46151@36144 (CON) has been established.
+[ActiveMQ Transport: tcp:///127.0.0.1:36144@46151] INFO org.apache.activemq.broker.TransportConnector - Connector vm://CON started
+[ActiveMQ Transport: tcp:///127.0.0.1:36144@46151] INFO org.apache.activemq.broker.TransportConnection - Started responder end of duplex bridge NC@ID:roei-main-43549-1522670377784-0:2
+[triggerStartAsyncNetworkBridgeCreation: remoteBroker=tcp:///127.0.0.1:36144@46151, localBroker= vm://CON#4] INFO org.apache.activemq.network.DemandForwardingBridgeSupport - Network connection between vm://CON#4 and tcp:///127.0.0.1:36144@46151 (PRO) has been established.
+18/04/02 06:59:38 INFO support.ClassPathXmlApplicationContext: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@45b9a632: startup date [Mon Apr 02 06:59:38 CDT 2018]; root of context hierarchy
+18/04/02 06:59:38 INFO xml.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [org/apache/activemq/camel/requestReply.xml]
+[main] INFO org.apache.camel.spring.SpringCamelContext - Apache Camel 2.19.3 (CamelContext: camel) is starting
+[main] INFO org.apache.camel.management.ManagedManagementStrategy - JMX is enabled
+[main] INFO org.apache.camel.impl.converter.DefaultTypeConverter - Loaded 196 type converters
+[main] INFO org.apache.camel.impl.DefaultRuntimeEndpointRegistry - Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+[main] INFO org.apache.camel.spring.SpringCamelContext - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+[main] INFO org.apache.camel.component.seda.SedaEndpoint - Endpoint seda://consumer is using shared queue: seda://consumer with size: 2147483647
+[main] INFO org.apache.camel.spring.SpringCamelContext - Route: initial-consume-reply1 started and consuming from: amqPRO://queue:incoming1
+[main] INFO org.apache.camel.spring.SpringCamelContext - Route: consume-process-reply1 started and consuming from: amqCON://queue:service1
+[main] INFO org.apache.camel.spring.SpringCamelContext - Total 2 routes, of which 2 are started.
+[main] INFO org.apache.camel.spring.SpringCamelContext - Apache Camel 2.19.3 (CamelContext: camel) started in 0.355 seconds
+[main] INFO org.apache.activemq.camel.CamelJmsRequestReplyNobTest - Consuming from: seda:consumer
+[Camel (camel) thread #1 - JmsConsumer[service1]] INFO consume-process-reply1 - If you don't ask me my name, I'm not going to tell you!
+[Camel (camel) thread #3 - TemporaryQueueReplyManager[service1]] INFO initial-consume-reply1 - After inOut via temp: body If you don't ask me my name, I'm not going to tell you!
+[main] INFO org.apache.activemq.camel.CamelJmsRequestReplyNobTest - ********************************************************************************
+[main] INFO org.apache.activemq.camel.CamelJmsRequestReplyNobTest - Testing done: testRoundTrip(org.apache.activemq.camel.CamelJmsRequestReplyNobTest)
+[main] INFO org.apache.activemq.camel.CamelJmsRequestReplyNobTest - Took: 0.095 seconds (95 millis)
+[main] INFO org.apache.activemq.camel.CamelJmsRequestReplyNobTest - ********************************************************************************
+[main] INFO org.apache.camel.spring.SpringCamelContext - Apache Camel 2.19.3 (CamelContext: camel) is shutting down
+[main] INFO org.apache.camel.impl.DefaultShutdownStrategy - Starting to graceful shutdown 2 routes (timeout 10 seconds)
+[Camel (camel) thread #4 - ShutdownTask] INFO org.apache.camel.impl.DefaultShutdownStrategy - Route: consume-process-reply1 shutdown complete, was consuming from: amqCON://queue:service1
+[Camel (camel) thread #4 - ShutdownTask] INFO org.apache.camel.impl.DefaultShutdownStrategy - Route: initial-consume-reply1 shutdown complete, was consuming from: amqPRO://queue:incoming1
+[main] INFO org.apache.camel.impl.DefaultShutdownStrategy - Graceful shutdown of 2 routes completed in 2 seconds
+[main] INFO org.apache.camel.spring.SpringCamelContext - Apache Camel 2.19.3 (CamelContext: camel) uptime 2.485 seconds
+[main] INFO org.apache.camel.spring.SpringCamelContext - Apache Camel 2.19.3 (CamelContext: camel) is shutdown in 2.032 seconds
+18/04/02 06:59:42 INFO support.ClassPathXmlApplicationContext: Closing org.springframework.context.support.ClassPathXmlApplicationContext@45b9a632: startup date [Mon Apr 02 06:59:38 CDT 2018]; root of context hierarchy
+Test being executed: org.apache.activemq.camel.component.AdvisoryConsumerExample.testWorks
+[main] INFO org.apache.activemq.camel.component.AdvisoryConsumerExample - ********************************************************************************
+[main] INFO org.apache.activemq.camel.component.AdvisoryConsumerExample - Testing: testWorks(org.apache.activemq.camel.component.AdvisoryConsumerExample)
+[main] INFO org.apache.activemq.camel.component.AdvisoryConsumerExample - ********************************************************************************
+[main] INFO org.apache.camel.impl.DefaultCamelContext - Apache Camel 2.19.3 (CamelContext: camel-2) is starting
+[main] INFO org.apache.camel.management.DefaultManagementStrategy - JMX is disabled
+[main] INFO org.apache.camel.impl.converter.DefaultTypeConverter - Loaded 196 type converters
+[main] INFO org.apache.camel.impl.DefaultCamelContext - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+[ActiveMQ Task-1] WARN org.apache.activemq.transport.failover.FailoverTransport - Failed to connect to [tcp://localhost:61616] after: 10 attempt(s) continuing to retry.
+[ActiveMQ Task-1] WARN org.apache.activemq.transport.failover.FailoverTransport - Failed to connect to [tcp://localhost:61616] after: 20 attempt(s) continuing to retry.
+[ActiveMQ Task-1] WARN org.apache.activemq.transport.failover.FailoverTransport - Failed to connect to [tcp://localhost:61616] after: 30 attempt(s) continuing to retry.
+[ActiveMQ Task-1] WARN org.apache.activemq.transport.failover.FailoverTransport - Failed to connect to [tcp://localhost:61616] after: 40 attempt(s) continuing to retry.
+[ActiveMQ Task-1] WARN org.apache.activemq.transport.failover.FailoverTransport - Failed to connect to [tcp://localhost:61616] after: 50 attempt(s) continuing to retry.
+[ActiveMQ Task-1] WARN org.apache.activemq.transport.failover.FailoverTransport - Failed to connect to [tcp://localhost:61616] after: 60 attempt(s) continuing to retry.

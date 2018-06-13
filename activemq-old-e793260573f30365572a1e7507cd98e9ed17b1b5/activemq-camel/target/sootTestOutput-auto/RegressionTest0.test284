@@ -1,0 +1,3 @@
+org.apache.activemq.camel.CamelDestination.setCamelContext : r0.<org.apache.activemq.camel.CamelDestination: org.apache.camel.CamelContext camelContext> = r1
+org.apache.activemq.camel.CamelDestination.getUri : $r1 = r0.<org.apache.activemq.camel.CamelDestination: java.lang.String uri>
+org.apache.activemq.camel.CamelTopic.getTopicName : $r1 = virtualinvoke r0.<org.apache.activemq.camel.CamelTopic: java.lang.String getUri()>()

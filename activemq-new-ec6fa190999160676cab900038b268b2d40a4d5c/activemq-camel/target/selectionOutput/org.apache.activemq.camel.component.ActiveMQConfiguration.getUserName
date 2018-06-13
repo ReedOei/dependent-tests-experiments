@@ -1,0 +1,1 @@
+org.apache.activemq.camel.component.ActiveMQConfiguration.getUserName : $r1 = virtualinvoke r0.<org.apache.activemq.camel.component.ActiveMQConfiguration: java.lang.String getUsername()>() >>>>>>>> org.apache.activemq.camel.component.ActiveMQConfiguration.getUserName : return $r1

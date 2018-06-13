@@ -1,0 +1,2 @@
+org.apache.activemq.camel.camelplugin.CamelRoutesBrokerPlugin.setCheckPeriod : r0.<org.apache.activemq.camel.camelplugin.CamelRoutesBrokerPlugin: int checkPeriod> = i0
+org.apache.activemq.camel.camelplugin.CamelRoutesBrokerPlugin.getRoutesFile : $r1 = r0.<org.apache.activemq.camel.camelplugin.CamelRoutesBrokerPlugin: java.lang.String routesFile>

@@ -1,0 +1,2 @@
+org.apache.activemq.camel.CamelMessageConsumer.getSession : $r1 = r0.<org.apache.activemq.camel.CamelMessageConsumer: org.apache.activemq.ActiveMQSession session>
+org.apache.activemq.camel.CamelMessageConsumer.getMessageSelector : $r1 = r0.<org.apache.activemq.camel.CamelMessageConsumer: java.lang.String messageSelector>

@@ -1,0 +1,2 @@
+org.apache.activemq.camel.component.ActiveMQComponent.activeMQComponent : $r0 = new org.apache.activemq.camel.component.ActiveMQComponent >>>>>>>> org.apache.activemq.camel.component.ActiveMQComponent.activeMQComponent : specialinvoke $r0.<org.apache.activemq.camel.component.ActiveMQComponent: void <init>()>()
+org.apache.activemq.camel.component.ActiveMQComponent.activeMQComponent : specialinvoke $r0.<org.apache.activemq.camel.component.ActiveMQComponent: void <init>()>() >>>>>>>> org.apache.activemq.camel.component.ActiveMQComponent.activeMQComponent : return $r0

@@ -1,0 +1,14 @@
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createApplicationContext : $r1 = virtualinvoke r0.<org.apache.activemq.camel.JmsJdbcXARollbackTest: org.springframework.context.support.AbstractXmlApplicationContext createApplicationContext()>()
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createApplicationContext : $r3 = r0.<org.apache.activemq.camel.JmsJdbcXARollbackTest: org.apache.activemq.broker.BrokerService broker>
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createApplicationContext : $r2 = specialinvoke r0.<org.apache.activemq.camel.JmsJdbcXARollbackTest: org.apache.activemq.broker.BrokerService createBroker(boolean)>(1)
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createApplicationContext : $r4 = new org.springframework.context.support.ClassPathXmlApplicationContext
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createApplicationContext : staticinvoke <org.apache.activemq.camel.JmsJdbcXARollbackTest: boolean deleteDirectory(java.lang.String)>("target/data/howl")
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createApplicationContext : goto [?= $r4 = new org.springframework.context.support.ClassPathXmlApplicationContext]
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createBroker : virtualinvoke $r2.<org.apache.activemq.broker.BrokerService: void setAdvisorySupport(boolean)>(0)
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createBroker : virtualinvoke $r2.<org.apache.activemq.broker.BrokerService: void setDataDirectory(java.lang.String)>("target/data")
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createBroker : virtualinvoke $r2.<org.apache.activemq.broker.BrokerService: void setUseJmx(boolean)>(0)
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createBroker : virtualinvoke $r2.<org.apache.activemq.broker.BrokerService: org.apache.activemq.broker.TransportConnector addConnector(java.lang.String)>("tcp://0.0.0.0:61616")
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createBroker : virtualinvoke $r2.<org.apache.activemq.broker.BrokerService: void setDeleteAllMessagesOnStartup(boolean)>(z0)
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createBroker : $r2 = new org.apache.activemq.broker.BrokerService
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createBroker : virtualinvoke $r2.<org.apache.activemq.broker.BrokerService: void setBrokerName(java.lang.String)>("testXA")
+org.apache.activemq.camel.JmsJdbcXARollbackTest.createBroker : return $r2

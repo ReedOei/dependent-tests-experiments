@@ -1,0 +1,2 @@
+org.apache.activemq.camel.CamelDestination.getEndpoint : $r1 = r0.<org.apache.activemq.camel.CamelDestination: org.apache.camel.Endpoint endpoint>
+org.apache.activemq.camel.CamelDestination.getBinding : $r1 = r0.<org.apache.activemq.camel.CamelDestination: org.apache.camel.component.jms.JmsBinding binding>

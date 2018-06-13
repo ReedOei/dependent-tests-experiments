@@ -1,0 +1,9 @@
+org.apache.activemq.camel.CamelDestination.getEndpoint : $r1 = r0.<org.apache.activemq.camel.CamelDestination: org.apache.camel.Endpoint endpoint>
+org.apache.activemq.camel.CamelTopic.createPublisher : $r2 = new org.apache.activemq.camel.CamelTopicPublisher
+org.apache.activemq.camel.CamelDestination.getCamelContext : $r1 = r0.<org.apache.activemq.camel.CamelDestination: org.apache.camel.CamelContext camelContext>
+org.apache.activemq.camel.CamelDestination.resolveEndpoint : if r10 != null goto return r10
+org.apache.activemq.camel.CamelDestination.resolveEndpoint : $r2 = virtualinvoke r0.<org.apache.activemq.camel.CamelDestination: org.apache.camel.CamelContext resolveCamelContext(org.apache.activemq.ActiveMQSession)>(r1)
+org.apache.activemq.camel.CamelDestination.resolveEndpoint : r10 = virtualinvoke r0.<org.apache.activemq.camel.CamelDestination: org.apache.camel.Endpoint getEndpoint()>()
+org.apache.activemq.camel.CamelDestination.resolveCamelContext : r5 = virtualinvoke r0.<org.apache.activemq.camel.CamelDestination: org.apache.camel.CamelContext getCamelContext()>()
+org.apache.activemq.camel.CamelDestination.resolveCamelContext : r2 = virtualinvoke r1.<org.apache.activemq.ActiveMQSession: org.apache.activemq.ActiveMQConnection getConnection()>()
+org.apache.activemq.camel.CamelDestination.resolveCamelContext : if r5 != null goto (branch)

@@ -1,0 +1,1 @@
+org.apache.activemq.camel.component.ActiveMQComponent.activeMQComponent : $r0 = new org.apache.activemq.camel.component.ActiveMQComponent

@@ -1,0 +1,5 @@
+org.apache.activemq.camel.CamelMessageConsumer.getPollingConsumer : $r1 = r0.<org.apache.activemq.camel.CamelMessageConsumer: org.apache.camel.PollingConsumer pollingConsumer>
+org.apache.activemq.camel.CamelMessageConsumer.getPollingConsumer : $r7 = staticinvoke <org.apache.activemq.util.JMSExceptionSupport: javax.jms.JMSException create(java.lang.Exception)>($r6)
+org.apache.activemq.camel.CamelMessageConsumer.getPollingConsumer : $r3 = r0.<org.apache.activemq.camel.CamelMessageConsumer: org.apache.camel.Endpoint endpoint>
+org.apache.activemq.camel.CamelMessageConsumer.receiveNoWait : $r2 = virtualinvoke r0.<org.apache.activemq.camel.CamelMessageConsumer: org.apache.camel.PollingConsumer getPollingConsumer()>()
+org.apache.activemq.camel.CamelMessageConsumer.getMessageSelector : $r1 = r0.<org.apache.activemq.camel.CamelMessageConsumer: java.lang.String messageSelector>

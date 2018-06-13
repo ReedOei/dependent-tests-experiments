@@ -1,0 +1,1 @@
+org.apache.activemq.camel.BrokerPreShutdownHookTest$TestProcessor.process : r0.<org.apache.activemq.camel.BrokerPreShutdownHookTest$TestProcessor: boolean messageReceived> = 1 >>>>>>>> org.apache.activemq.camel.BrokerPreShutdownHookTest$TestProcessor.process : return
