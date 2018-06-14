@@ -1,0 +1,1 @@
+org.apache.camel.processor.cache.CacheBasedTokenReplacerTest.createRouteBuilder : $r1 = virtualinvoke r0.<org.apache.camel.processor.cache.CacheBasedTokenReplacerTest: org.apache.camel.builder.RouteBuilder createRouteBuilder()>() >>>>>>>> org.apache.camel.processor.cache.CacheBasedTokenReplacerTest.createRouteBuilder : return $r1

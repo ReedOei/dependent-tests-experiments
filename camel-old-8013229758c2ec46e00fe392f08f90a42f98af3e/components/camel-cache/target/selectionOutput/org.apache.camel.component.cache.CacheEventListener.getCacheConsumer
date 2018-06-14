@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheEventListener.getCacheConsumer : $r1 = r0.<org.apache.camel.component.cache.CacheEventListener: org.apache.camel.component.cache.CacheConsumer cacheConsumer> >>>>>>>> org.apache.camel.component.cache.CacheEventListener.getCacheConsumer : return $r1

@@ -1,0 +1,1 @@
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.getCacheName : $r1 = r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: java.lang.String cacheName> >>>>>>>> org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.getCacheName : return $r1

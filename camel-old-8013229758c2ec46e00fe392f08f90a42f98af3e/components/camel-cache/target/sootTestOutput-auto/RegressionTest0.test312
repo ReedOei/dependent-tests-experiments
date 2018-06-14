@@ -1,0 +1,3 @@
+org.apache.camel.component.cache.CacheConfiguration.setEternal : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean eternal> = z0
+org.apache.camel.component.cache.CacheConfiguration.setCacheName : r0.<org.apache.camel.component.cache.CacheConfiguration: java.lang.String cacheName> = r1
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

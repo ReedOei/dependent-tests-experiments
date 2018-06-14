@@ -1,0 +1,12 @@
+org.apache.camel.component.cache.CacheEndpoint.isSingleton : return 1
+org.apache.camel.component.cache.CacheEndpoint.createConsumer : return $r7
+org.apache.camel.component.cache.CacheEndpoint.createConsumer : $r5 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheEndpoint.createConsumer : $r3 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheConfiguration config>
+org.apache.camel.component.cache.CacheEndpoint.createConsumer : virtualinvoke r0.<org.apache.camel.component.cache.CacheEndpoint: void configureConsumer(org.apache.camel.Consumer)>($r7)
+org.apache.camel.component.cache.CacheEndpoint.createConsumer : $r7 = new org.apache.camel.component.cache.CacheConsumer
+org.apache.camel.component.cache.CacheEndpoint.createProducer : $r5 = new org.apache.camel.component.cache.CacheProducer
+org.apache.camel.component.cache.CacheEndpoint.createProducer : $r3 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheEndpoint.createProducer : $r1 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheConfiguration config>
+org.apache.camel.component.cache.CacheConfiguration.getTimeToIdleSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToIdleSeconds>
+org.apache.camel.component.cache.CacheComponent.getCacheManagerFactory : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

@@ -1,0 +1,22 @@
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r23 = (org.apache.camel.model.RouteDefinition) $r22
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r1 = virtualinvoke r0.<org.apache.camel.component.cache.CacheProducerTest$21: org.apache.camel.model.OnExceptionDefinition onException(java.lang.Class)>(class "Lnet/sf/ehcache/CacheException;")
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r20 = (org.apache.camel.model.RouteDefinition) $r19
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r17 = (org.apache.camel.model.RouteDefinition) $r16
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r4 = (org.apache.camel.model.OnExceptionDefinition) $r3
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r14 = (org.apache.camel.model.RouteDefinition) $r13
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r2 = virtualinvoke $r1.<org.apache.camel.model.OnExceptionDefinition: org.apache.camel.model.OnExceptionDefinition handled(boolean)>(1)
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r3 = virtualinvoke $r2.<org.apache.camel.model.OnExceptionDefinition: org.apache.camel.model.ProcessorDefinition 'to'(java.lang.String)>("log:LOGGER")
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r12 = (org.apache.camel.model.RouteDefinition) $r11
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r30 = virtualinvoke $r29.<org.apache.camel.model.ChoiceDefinition: org.apache.camel.model.ProcessorDefinition 'to'(java.lang.String)>("mock:CacheProducerTest.result")
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r7 = virtualinvoke r0.<org.apache.camel.component.cache.CacheProducerTest$21: org.apache.camel.builder.ValueBuilder constant(java.lang.Object)>("CamelCacheAdd")
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r25 = (org.apache.camel.model.RouteDefinition) $r24
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r9 = (org.apache.camel.model.RouteDefinition) $r8
+org.apache.camel.component.cache.CacheProducerTest$21.configure : $r6 = virtualinvoke r0.<org.apache.camel.component.cache.CacheProducerTest$21: org.apache.camel.model.RouteDefinition 'from'(java.lang.String)>("direct:a")
+org.apache.camel.component.cache.CacheComponent.setCacheManagerFactory : r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory> = r1
+org.apache.camel.component.cache.CacheProducerTest.getFileAsByteArray : $r4 = new java.io.FileInputStream
+org.apache.camel.component.BaseCacheTest.createRegistry : r1 = specialinvoke r0.<org.apache.camel.test.junit4.CamelTestSupport: org.apache.camel.impl.JndiRegistry createRegistry()>()
+org.apache.camel.component.BaseCacheTest.createRegistry : $r4 = r0.<org.apache.camel.component.BaseCacheTest: org.apache.camel.component.cache.CacheComponent cache>
+org.apache.camel.component.BaseCacheTest.createRegistry : $r2 = new org.apache.camel.component.cache.CacheComponent
+org.apache.camel.component.BaseCacheTest.createRegistry : return r1
+org.apache.camel.component.BaseCacheTest.createRegistry : $r5 = r0.<org.apache.camel.component.BaseCacheTest: org.apache.camel.component.cache.CacheComponent cache>
+org.apache.camel.component.cache.CacheProducerTest.isUseRouteBuilder : return 0

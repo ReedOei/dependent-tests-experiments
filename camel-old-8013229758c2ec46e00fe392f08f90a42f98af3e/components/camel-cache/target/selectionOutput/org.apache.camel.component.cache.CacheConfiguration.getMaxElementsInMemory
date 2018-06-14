@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheConfiguration.getMaxElementsInMemory : $i0 = r0.<org.apache.camel.component.cache.CacheConfiguration: int maxElementsInMemory> >>>>>>>> org.apache.camel.component.cache.CacheConfiguration.getMaxElementsInMemory : return $i0

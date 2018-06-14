@@ -1,0 +1,8 @@
+org.apache.camel.component.cache.CacheEndpoint.createCacheExchange : r4 = specialinvoke r0.<org.apache.camel.impl.DefaultEndpoint: org.apache.camel.Exchange createExchange()>()
+org.apache.camel.component.cache.CacheEndpoint.createCacheExchange : r5 = interfaceinvoke r4.<org.apache.camel.Exchange: org.apache.camel.Message getIn()>()
+org.apache.camel.component.cache.CacheEndpoint.createCacheExchange : interfaceinvoke r5.<org.apache.camel.Message: void setHeader(java.lang.String,java.lang.Object)>("CamelCacheOperation", r1)
+org.apache.camel.component.cache.CacheConfiguration.setCacheLoaderRegistry : r0.<org.apache.camel.component.cache.CacheConfiguration: org.apache.camel.component.cache.CacheLoaderRegistry cacheLoaderRegistry> = r1
+org.apache.camel.component.cache.CacheConfiguration.getTimeToIdleSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToIdleSeconds>
+org.apache.camel.component.cache.CacheComponent.getCacheManagerFactory : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheEndpoint.setCacheManagerFactory : r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory> = r1
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

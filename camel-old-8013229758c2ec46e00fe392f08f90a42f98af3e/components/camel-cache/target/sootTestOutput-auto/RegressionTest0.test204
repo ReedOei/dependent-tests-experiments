@@ -1,0 +1,2 @@
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.setCacheName : r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: java.lang.String cacheName> = r1
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.setKey : r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: org.apache.camel.Expression key> = r1

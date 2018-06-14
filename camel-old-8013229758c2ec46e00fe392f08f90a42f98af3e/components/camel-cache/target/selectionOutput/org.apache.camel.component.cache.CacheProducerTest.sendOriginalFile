@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheProducerTest.sendOriginalFile : specialinvoke r0.<org.apache.camel.component.cache.CacheProducerTest: void sendFile(java.lang.String)>("src/test/resources/test.txt") >>>>>>>> org.apache.camel.component.cache.CacheProducerTest.sendOriginalFile : return

@@ -1,0 +1,4 @@
+org.apache.camel.component.cache.CacheComponent.doStop : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheComponent.doStop : specialinvoke r0.<org.apache.camel.impl.UriEndpointComponent: void doStop()>()
+org.apache.camel.component.cache.CacheComponent.doStart : specialinvoke r0.<org.apache.camel.impl.UriEndpointComponent: void doStart()>()
+org.apache.camel.component.cache.CacheComponent.getCacheManagerFactory : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>

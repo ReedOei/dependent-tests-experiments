@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.PoetryNotSerializable.getPoet : $r1 = r0.<org.apache.camel.component.cache.PoetryNotSerializable: java.lang.String poet> >>>>>>>> org.apache.camel.component.cache.PoetryNotSerializable.getPoet : return $r1

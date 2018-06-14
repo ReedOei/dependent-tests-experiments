@@ -1,0 +1,2 @@
+org.apache.camel.component.cache.CacheConfiguration.getDiskExpiryThreadIntervalSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long diskExpiryThreadIntervalSeconds>
+org.apache.camel.component.cache.CacheConfiguration.getDiskStorePath : $r1 = r0.<org.apache.camel.component.cache.CacheConfiguration: java.lang.String diskStorePath>

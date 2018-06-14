@@ -1,0 +1,8 @@
+org.apache.camel.component.cache.CacheEventListener.notifyElementPut : $r3 = <org.apache.camel.component.cache.CacheEventListener: org.slf4j.Logger LOG>
+org.apache.camel.component.cache.CacheEventListenerRegistry.addCacheEventListener : $r2 = virtualinvoke r0.<org.apache.camel.component.cache.CacheEventListenerRegistry: java.util.List getEventListeners()>()
+org.apache.camel.component.cache.CacheEventListenerRegistry.getEventListeners : $r2 = r0.<org.apache.camel.component.cache.CacheEventListenerRegistry: java.util.List eventListeners>
+org.apache.camel.component.cache.CacheEventListenerRegistry.getEventListeners : $r1 = r0.<org.apache.camel.component.cache.CacheEventListenerRegistry: java.util.List eventListeners>
+org.apache.camel.component.cache.CacheEventListenerRegistry.getEventListeners : $r3 = new java.util.ArrayList
+org.apache.camel.component.cache.CacheEventListener.setCacheConsumer : r0.<org.apache.camel.component.cache.CacheEventListener: org.apache.camel.component.cache.CacheConsumer cacheConsumer> = r1
+org.apache.camel.component.cache.CacheEventListener.clone : $r1 = specialinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.apache.camel.component.cache.CacheEventListener.getCacheConsumer : $r1 = r0.<org.apache.camel.component.cache.CacheEventListener: org.apache.camel.component.cache.CacheConsumer cacheConsumer>

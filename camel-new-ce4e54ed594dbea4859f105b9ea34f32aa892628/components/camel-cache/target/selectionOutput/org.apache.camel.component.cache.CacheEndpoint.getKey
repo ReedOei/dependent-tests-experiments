@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheEndpoint.getKey : $r1 = r0.<org.apache.camel.component.cache.CacheEndpoint: java.lang.String key> >>>>>>>> org.apache.camel.component.cache.CacheEndpoint.getKey : return $r1

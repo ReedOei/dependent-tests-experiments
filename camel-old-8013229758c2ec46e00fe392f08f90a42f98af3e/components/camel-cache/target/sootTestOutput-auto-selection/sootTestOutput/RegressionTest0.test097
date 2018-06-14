@@ -1,0 +1,2 @@
+org.apache.camel.component.cache.CacheConfiguration.getTimeToIdleSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToIdleSeconds> >>>>>>>> org.apache.camel.component.cache.CacheConfiguration.getTimeToIdleSeconds : return $l0
+org.apache.camel.component.cache.CacheConfiguration.getTimeToIdleSeconds : return $l0 >>>>>>>> org.apache.camel.component.cache.CacheConfiguration.setDiskExpiryThreadIntervalSeconds : r0.<org.apache.camel.component.cache.CacheConfiguration: long diskExpiryThreadIntervalSeconds> = l0

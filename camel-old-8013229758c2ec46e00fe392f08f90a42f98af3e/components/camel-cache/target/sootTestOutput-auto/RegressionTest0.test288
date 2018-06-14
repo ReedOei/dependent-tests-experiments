@@ -1,0 +1,10 @@
+org.apache.camel.component.cache.CacheConfiguration.getMaxElementsInMemory : $i0 = r0.<org.apache.camel.component.cache.CacheConfiguration: int maxElementsInMemory>
+org.apache.camel.component.cache.CacheConfiguration.setEventListenerRegistry : r0.<org.apache.camel.component.cache.CacheConfiguration: org.apache.camel.component.cache.CacheEventListenerRegistry eventListenerRegistry> = r1
+org.apache.camel.component.cache.CacheComponent.setCacheManagerFactory : r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory> = r1
+org.apache.camel.component.cache.CacheLoaderRegistry.size : $r1 = r0.<org.apache.camel.component.cache.CacheLoaderRegistry: java.util.List registeredCacheLoaders>
+org.apache.camel.component.cache.CacheConfiguration.setCacheLoaderRegistry : r0.<org.apache.camel.component.cache.CacheConfiguration: org.apache.camel.component.cache.CacheLoaderRegistry cacheLoaderRegistry> = r1
+org.apache.camel.component.cache.CacheConfiguration.getDiskExpiryThreadIntervalSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long diskExpiryThreadIntervalSeconds>
+org.apache.camel.component.cache.CacheConfiguration.getTimeToLiveSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToLiveSeconds>
+org.apache.camel.component.cache.CacheComponent.setConfigurationFile : r0.<org.apache.camel.component.cache.CacheComponent: java.lang.String configurationFile> = r1
+org.apache.camel.component.cache.CacheConfiguration.setMemoryStoreEvictionPolicy : r0.<org.apache.camel.component.cache.CacheConfiguration: net.sf.ehcache.store.MemoryStoreEvictionPolicy memoryStoreEvictionPolicy> = r1
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

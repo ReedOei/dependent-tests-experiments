@@ -1,0 +1,4 @@
+org.apache.camel.component.cache.CacheConfiguration.getDiskStorePath : $r1 = r0.<org.apache.camel.component.cache.CacheConfiguration: java.lang.String diskStorePath>
+org.apache.camel.component.cache.CacheConfiguration.getTimeToIdleSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToIdleSeconds>
+org.apache.camel.component.cache.CacheConfiguration.setMaxElementsInMemory : r0.<org.apache.camel.component.cache.CacheConfiguration: int maxElementsInMemory> = i0
+org.apache.camel.component.cache.CacheConfiguration.getEventListenerRegistry : $r1 = r0.<org.apache.camel.component.cache.CacheConfiguration: org.apache.camel.component.cache.CacheEventListenerRegistry eventListenerRegistry>

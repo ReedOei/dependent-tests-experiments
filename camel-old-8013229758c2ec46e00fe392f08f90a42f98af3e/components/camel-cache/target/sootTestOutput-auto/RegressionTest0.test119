@@ -1,0 +1,4 @@
+org.apache.camel.component.cache.CacheProducer.process : $r6 = <org.apache.camel.component.cache.CacheProducer: org.slf4j.Logger LOG>
+org.apache.camel.component.cache.CacheConfiguration.getTimeToIdleSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToIdleSeconds>
+org.apache.camel.component.cache.CacheComponent.getCacheManagerFactory : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

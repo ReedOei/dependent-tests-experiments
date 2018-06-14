@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheRoutesManagementTest$TestingCacheManagerFactory.getCacheManager : $r1 = r0.<org.apache.camel.component.cache.CacheRoutesManagementTest$TestingCacheManagerFactory: net.sf.ehcache.CacheManager cacheManager> >>>>>>>> org.apache.camel.component.cache.CacheRoutesManagementTest$TestingCacheManagerFactory.getCacheManager : return $r1

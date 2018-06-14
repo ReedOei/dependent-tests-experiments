@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheConfiguration.isEternal : $z0 = r0.<org.apache.camel.component.cache.CacheConfiguration: boolean eternal> >>>>>>>> org.apache.camel.component.cache.CacheConfiguration.isEternal : return $z0

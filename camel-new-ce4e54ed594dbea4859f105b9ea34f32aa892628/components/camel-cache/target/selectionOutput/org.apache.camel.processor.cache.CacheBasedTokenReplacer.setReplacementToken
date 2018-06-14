@@ -1,0 +1,1 @@
+org.apache.camel.processor.cache.CacheBasedTokenReplacer.setReplacementToken : r0.<org.apache.camel.processor.cache.CacheBasedTokenReplacer: java.lang.String replacementToken> = r1 >>>>>>>> org.apache.camel.processor.cache.CacheBasedTokenReplacer.setReplacementToken : return

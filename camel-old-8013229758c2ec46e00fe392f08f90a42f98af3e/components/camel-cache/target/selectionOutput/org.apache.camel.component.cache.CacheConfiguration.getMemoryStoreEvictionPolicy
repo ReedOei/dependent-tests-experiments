@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheConfiguration.getMemoryStoreEvictionPolicy : $r1 = r0.<org.apache.camel.component.cache.CacheConfiguration: net.sf.ehcache.store.MemoryStoreEvictionPolicy memoryStoreEvictionPolicy> >>>>>>>> org.apache.camel.component.cache.CacheConfiguration.getMemoryStoreEvictionPolicy : return $r1

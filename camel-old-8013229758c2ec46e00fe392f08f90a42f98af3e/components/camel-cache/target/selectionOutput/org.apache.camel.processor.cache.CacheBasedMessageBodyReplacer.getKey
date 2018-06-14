@@ -1,0 +1,1 @@
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.getKey : $r1 = r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: org.apache.camel.Expression key> >>>>>>>> org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.getKey : return $r1

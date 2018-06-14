@@ -1,0 +1,2 @@
+org.apache.camel.component.cache.ObjectCacheProducerTest$3.process : $r2 = interfaceinvoke r1.<org.apache.camel.Exchange: org.apache.camel.Message getIn()>() >>>>>>>> org.apache.camel.component.cache.ObjectCacheProducerTest$3.process : interfaceinvoke $r2.<org.apache.camel.Message: void setBody(java.lang.Object)>(null)
+org.apache.camel.component.cache.ObjectCacheProducerTest$3.process : interfaceinvoke $r2.<org.apache.camel.Message: void setBody(java.lang.Object)>(null) >>>>>>>> org.apache.camel.component.cache.ObjectCacheProducerTest$3.process : return

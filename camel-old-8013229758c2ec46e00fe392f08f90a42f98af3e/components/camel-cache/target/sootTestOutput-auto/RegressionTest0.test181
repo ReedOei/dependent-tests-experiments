@@ -1,0 +1,3 @@
+org.apache.camel.component.cache.CacheEndpoint.isSingleton : return 1
+org.apache.camel.component.cache.CacheConfiguration.setCacheLoaderRegistry : r0.<org.apache.camel.component.cache.CacheConfiguration: org.apache.camel.component.cache.CacheLoaderRegistry cacheLoaderRegistry> = r1
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

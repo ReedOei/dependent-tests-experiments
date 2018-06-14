@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheConsumer.getEndpoint : $r1 = virtualinvoke r0.<org.apache.camel.component.cache.CacheConsumer: org.apache.camel.component.cache.CacheEndpoint getEndpoint()>() >>>>>>>> org.apache.camel.component.cache.CacheConsumer.getEndpoint : return $r1

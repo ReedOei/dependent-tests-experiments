@@ -1,0 +1,5 @@
+org.apache.camel.component.cache.CacheConfiguration.getTimeToIdleSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToIdleSeconds>
+org.apache.camel.component.cache.CacheConfiguration.isDiskPersistent : $z0 = r0.<org.apache.camel.component.cache.CacheConfiguration: boolean diskPersistent>
+org.apache.camel.component.cache.CacheComponent.getCacheManagerFactory : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheConfiguration.getEventListenerRegistry : $r1 = r0.<org.apache.camel.component.cache.CacheConfiguration: org.apache.camel.component.cache.CacheEventListenerRegistry eventListenerRegistry>
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

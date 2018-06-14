@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheConfiguration.isObjectCache : $z0 = r0.<org.apache.camel.component.cache.CacheConfiguration: boolean objectCache> >>>>>>>> org.apache.camel.component.cache.CacheConfiguration.isObjectCache : return $z0

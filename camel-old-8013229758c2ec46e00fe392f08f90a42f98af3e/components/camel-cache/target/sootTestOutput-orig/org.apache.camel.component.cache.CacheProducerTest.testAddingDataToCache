@@ -1,0 +1,44 @@
+org.apache.camel.component.cache.CacheComponent.doStop : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheComponent.doStop : specialinvoke r0.<org.apache.camel.impl.UriEndpointComponent: void doStop()>()
+org.apache.camel.component.cache.CacheComponent.setCacheManagerFactory : r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory> = r1
+org.apache.camel.component.cache.CacheEndpoint.getCacheManagerFactory : $r1 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheComponent.createEndpoint : return $r9
+org.apache.camel.component.cache.CacheComponent.createEndpoint : $r8 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheConfiguration configuration>
+org.apache.camel.component.cache.CacheComponent.createEndpoint : virtualinvoke r4.<org.apache.camel.component.cache.CacheConfiguration: void setCacheName(java.lang.String)>(r2)
+org.apache.camel.component.cache.CacheComponent.createEndpoint : virtualinvoke r0.<org.apache.camel.component.cache.CacheComponent: void setProperties(java.lang.Object,java.util.Map)>($r9, r3)
+org.apache.camel.component.cache.CacheComponent.createEndpoint : virtualinvoke r0.<org.apache.camel.component.cache.CacheComponent: void setProperties(java.lang.Object,java.util.Map)>(r4, r3)
+org.apache.camel.component.cache.CacheComponent.createEndpoint : $r9 = new org.apache.camel.component.cache.CacheEndpoint
+org.apache.camel.component.cache.CacheComponent.createEndpoint : $r6 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheConfiguration configuration>
+org.apache.camel.component.cache.CacheConfiguration.copy : return r4
+org.apache.camel.component.cache.CacheConfiguration.copy : $r1 = virtualinvoke r0.<java.lang.Object: java.lang.Object clone()>()
+org.apache.camel.component.cache.CacheProducerTest$4.configure : $r2 = virtualinvoke r0.<org.apache.camel.component.cache.CacheProducerTest$4: org.apache.camel.builder.ValueBuilder constant(java.lang.Object)>("CamelCacheAdd")
+org.apache.camel.component.cache.CacheProducerTest$4.configure : $r1 = virtualinvoke r0.<org.apache.camel.component.cache.CacheProducerTest$4: org.apache.camel.model.RouteDefinition 'from'(java.lang.String)>("direct:a")
+org.apache.camel.component.cache.CacheProducerTest$4.configure : $r4 = (org.apache.camel.model.RouteDefinition) $r3
+org.apache.camel.component.cache.CacheProducerTest$4.configure : $r7 = (org.apache.camel.model.RouteDefinition) $r6
+org.apache.camel.component.cache.CacheComponent.getConfiguration : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheConfiguration configuration>
+org.apache.camel.component.cache.CacheEndpoint.createProducer : $r5 = new org.apache.camel.component.cache.CacheProducer
+org.apache.camel.component.cache.CacheEndpoint.createProducer : $r3 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheEndpoint.createProducer : $r1 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheConfiguration config>
+org.apache.camel.component.BaseCacheTest.createRegistry : r1 = specialinvoke r0.<org.apache.camel.test.junit4.CamelTestSupport: org.apache.camel.impl.JndiRegistry createRegistry()>()
+org.apache.camel.component.BaseCacheTest.createRegistry : $r4 = r0.<org.apache.camel.component.BaseCacheTest: org.apache.camel.component.cache.CacheComponent cache>
+org.apache.camel.component.BaseCacheTest.createRegistry : $r2 = new org.apache.camel.component.cache.CacheComponent
+org.apache.camel.component.BaseCacheTest.createRegistry : return r1
+org.apache.camel.component.BaseCacheTest.createRegistry : $r5 = r0.<org.apache.camel.component.BaseCacheTest: org.apache.camel.component.cache.CacheComponent cache>
+org.apache.camel.component.cache.CacheEndpoint.stop : $r2 = virtualinvoke r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheManagerFactory getCacheManagerFactory()>()
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : $r3 = r0.<org.apache.camel.component.cache.CacheManagerFactory: net.sf.ehcache.CacheManager cacheManager>
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : $r4 = virtualinvoke r0.<org.apache.camel.component.cache.CacheManagerFactory: net.sf.ehcache.CacheManager createCacheManagerInstance()>()
+org.apache.camel.component.cache.CacheProducer.doStart : specialinvoke r0.<org.apache.camel.impl.DefaultProducer: void doStart()>()
+org.apache.camel.component.cache.CacheProducer.doStart : $r1 = virtualinvoke r0.<org.apache.camel.component.cache.CacheProducer: org.apache.camel.component.cache.CacheEndpoint getEndpoint()>()
+org.apache.camel.component.cache.CacheManagerFactory.doStop : $r1 = r0.<org.apache.camel.component.cache.CacheManagerFactory: net.sf.ehcache.CacheManager cacheManager>
+org.apache.camel.component.cache.CacheConfiguration.setCacheName : r0.<org.apache.camel.component.cache.CacheConfiguration: java.lang.String cacheName> = r1
+org.apache.camel.component.cache.CacheComponent.getCacheManagerFactory : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheEndpoint.isSingleton : return 1
+org.apache.camel.component.cache.FileCacheManagerFactory.createCacheManagerInstance : $r2 = new java.io.FileInputStream
+org.apache.camel.component.cache.FileCacheManagerFactory.createCacheManagerInstance : $r6 = new org.apache.camel.RuntimeCamelException
+org.apache.camel.component.cache.CacheComponent.getConfigurationFile : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: java.lang.String configurationFile>
+org.apache.camel.component.cache.CacheComponent.doStart : $r2 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheComponent.doStart : $r9 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheComponent.doStart : specialinvoke r0.<org.apache.camel.impl.UriEndpointComponent: void doStart()>()
+org.apache.camel.component.cache.CacheEndpoint.initializeCache : $r2 = virtualinvoke r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheManagerFactory getCacheManagerFactory()>()
+org.apache.camel.component.cache.CacheProducerTest.isUseRouteBuilder : return 0
+org.apache.camel.component.cache.CacheProducer.getEndpoint : $r1 = specialinvoke r0.<org.apache.camel.impl.DefaultProducer: org.apache.camel.Endpoint getEndpoint()>()

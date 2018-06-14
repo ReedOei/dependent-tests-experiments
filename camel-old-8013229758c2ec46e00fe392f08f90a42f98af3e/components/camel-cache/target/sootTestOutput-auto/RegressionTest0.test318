@@ -1,0 +1,23 @@
+org.apache.camel.component.cache.CacheEventListenerRegistry.addCacheEventListener : $r2 = virtualinvoke r0.<org.apache.camel.component.cache.CacheEventListenerRegistry: java.util.List getEventListeners()>()
+org.apache.camel.processor.cache.CacheBasedTokenReplacer.setCacheName : r0.<org.apache.camel.processor.cache.CacheBasedTokenReplacer: java.lang.String cacheName> = r1
+org.apache.camel.component.cache.CacheEndpoint.createProducer : $r5 = new org.apache.camel.component.cache.CacheProducer
+org.apache.camel.component.cache.CacheEndpoint.createProducer : $r3 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheEndpoint.createProducer : $r1 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheConfiguration config>
+org.apache.camel.component.cache.CacheEndpoint.getConfig : $r1 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheConfiguration config>
+org.apache.camel.component.cache.CacheEndpoint.createConsumer : return $r7
+org.apache.camel.component.cache.CacheEndpoint.createConsumer : $r5 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheEndpoint.createConsumer : $r3 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheConfiguration config>
+org.apache.camel.component.cache.CacheEndpoint.createConsumer : virtualinvoke r0.<org.apache.camel.component.cache.CacheEndpoint: void configureConsumer(org.apache.camel.Consumer)>($r7)
+org.apache.camel.component.cache.CacheEndpoint.createConsumer : $r7 = new org.apache.camel.component.cache.CacheConsumer
+org.apache.camel.component.cache.CacheEventListenerRegistry.getEventListeners : $r2 = r0.<org.apache.camel.component.cache.CacheEventListenerRegistry: java.util.List eventListeners>
+org.apache.camel.component.cache.CacheEventListenerRegistry.getEventListeners : $r1 = r0.<org.apache.camel.component.cache.CacheEventListenerRegistry: java.util.List eventListeners>
+org.apache.camel.component.cache.CacheEventListenerRegistry.getEventListeners : $r3 = new java.util.ArrayList
+org.apache.camel.processor.cache.CacheBasedTokenReplacer.setReplacementToken : r0.<org.apache.camel.processor.cache.CacheBasedTokenReplacer: java.lang.String replacementToken> = r1
+org.apache.camel.processor.cache.CacheBasedXPathReplacer.setCacheName : r0.<org.apache.camel.processor.cache.CacheBasedXPathReplacer: java.lang.String cacheName> = r1
+org.apache.camel.processor.cache.CacheBasedTokenReplacer.setKey : r0.<org.apache.camel.processor.cache.CacheBasedTokenReplacer: org.apache.camel.Expression key> = r1
+org.apache.camel.component.cache.CacheConfiguration.getTimeToIdleSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToIdleSeconds>
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.setCacheName : r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: java.lang.String cacheName> = r1
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.getKey : $r1 = r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: org.apache.camel.Expression key>
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.setKey : r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: org.apache.camel.Expression key> = r1
+org.apache.camel.component.cache.CacheComponent.getCacheManagerFactory : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

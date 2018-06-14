@@ -1,0 +1,5 @@
+org.apache.camel.component.cache.CacheConfiguration.setEternal : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean eternal> = z0
+org.apache.camel.component.cache.CacheConfiguration.isOverflowToDisk : $z0 = r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk>
+org.apache.camel.component.cache.CacheConfiguration.getTimeToLiveSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToLiveSeconds>
+org.apache.camel.component.cache.CacheConfiguration.setDiskStorePath : r0.<org.apache.camel.component.cache.CacheConfiguration: java.lang.String diskStorePath> = r1
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

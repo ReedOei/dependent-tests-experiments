@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheEndpoint.setOperation : r0.<org.apache.camel.component.cache.CacheEndpoint: java.lang.String operation> = r1 >>>>>>>> org.apache.camel.component.cache.CacheEndpoint.setOperation : return

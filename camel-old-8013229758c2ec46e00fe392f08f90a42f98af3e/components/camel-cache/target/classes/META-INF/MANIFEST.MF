@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1524550839733
+Build-Jdk: 1.8.0_161
+Built-By: winglam
+Bundle-Description: Camel Cache support based on ehCache
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: camel-cache
+Bundle-SymbolicName: org.apache.camel.camel-cache
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.21.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.camel.component.cache;version="2.21.0.SNAPSHO
+ T";uses:="net.sf.ehcache,net.sf.ehcache.event,net.sf.ehcache.loader,net
+ .sf.ehcache.store,org.apache.camel,org.apache.camel.impl,org.apache.cam
+ el.spi,org.apache.camel.support",org.apache.camel.processor.cache;versi
+ on="2.21.0.SNAPSHOT";uses:="net.sf.ehcache,org.apache.camel"
+Export-Service: org.apache.camel.spi.ComponentResolver;component=cache
+Implementation-Title: Camel :: Cache (deprecated)
+Implementation-URL: http://camel.apache.org/camel-parent/components/came
+ l-cache
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.camel
+Implementation-Version: 2.21.0-SNAPSHOT
+Import-Package: org.slf4j;version="[1.7,2)",javax.xml.transform,javax.xm
+ l.transform.dom,javax.xml.transform.stream,net.sf.ehcache;version="[2.1
+ 0,3)",net.sf.ehcache.config;version="[2.10,3)",net.sf.ehcache.event;ver
+ sion="[2.10,3)",net.sf.ehcache.loader;version="[2.10,3)",net.sf.ehcache
+ .store;version="[2.10,3)",org.apache.camel;version="[2.21,3)",org.apach
+ e.camel.builder;version="[2.21,3)",org.apache.camel.converter;version="
+ [2.21,3)",org.apache.camel.converter.jaxp;version="[2.21,3)",org.apache
+ .camel.impl;version="[2.21,3)",org.apache.camel.spi;version="[2.21,3)",
+ org.apache.camel.support;version="[2.21,3)",org.apache.camel.util;versi
+ on="[2.21,3)",org.w3c.dom,org.osgi.framework;version="[1.5,2)",org.osgi
+ .framework.wiring;version="[1.0,2)"
+Karaf-Info: Camel;camel-cache=2.21.0-SNAPSHOT
+Originally-Created-By: Apache Maven Bundle Plugin
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Camel :: Cache (deprecated)
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.21.0-SNAPSHOT
+Tool: Bnd-3.3.0.201609221906

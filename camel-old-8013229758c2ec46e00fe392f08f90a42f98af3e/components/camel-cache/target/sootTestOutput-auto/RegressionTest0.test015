@@ -1,0 +1,4 @@
+org.apache.camel.component.cache.CacheConfiguration.setCacheLoaderRegistry : r0.<org.apache.camel.component.cache.CacheConfiguration: org.apache.camel.component.cache.CacheLoaderRegistry cacheLoaderRegistry> = r1
+org.apache.camel.component.cache.CacheConfiguration.setCacheName : r0.<org.apache.camel.component.cache.CacheConfiguration: java.lang.String cacheName> = r1
+org.apache.camel.component.cache.CacheConfiguration.setMemoryStoreEvictionPolicy : r0.<org.apache.camel.component.cache.CacheConfiguration: net.sf.ehcache.store.MemoryStoreEvictionPolicy memoryStoreEvictionPolicy> = r1
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

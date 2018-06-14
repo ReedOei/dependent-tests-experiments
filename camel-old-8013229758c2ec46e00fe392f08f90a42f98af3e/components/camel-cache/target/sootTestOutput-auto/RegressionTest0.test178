@@ -1,0 +1,34 @@
+org.apache.camel.component.cache.CacheConfiguration.setEternal : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean eternal> = z0
+org.apache.camel.component.cache.CacheComponent.doStop : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory>
+org.apache.camel.component.cache.CacheComponent.doStop : specialinvoke r0.<org.apache.camel.impl.UriEndpointComponent: void doStop()>()
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : $r5 = <org.apache.camel.component.cache.CacheManagerFactory: org.slf4j.Logger LOG>
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : $r6 = r0.<org.apache.camel.component.cache.CacheManagerFactory: net.sf.ehcache.CacheManager cacheManager>
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : $r8 = virtualinvoke r1.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : $r11 = <org.apache.camel.component.cache.CacheManagerFactory: org.slf4j.Logger LOG>
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : staticinvoke <java.lang.System: java.lang.String setProperty(java.lang.String,java.lang.String)>("net.sf.ehcache.skipUpdateCheck", "true")
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : $r3 = r0.<org.apache.camel.component.cache.CacheManagerFactory: net.sf.ehcache.CacheManager cacheManager>
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : $r15 = r0.<org.apache.camel.component.cache.CacheManagerFactory: net.sf.ehcache.CacheManager cacheManager>
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : $r4 = virtualinvoke r0.<org.apache.camel.component.cache.CacheManagerFactory: net.sf.ehcache.CacheManager createCacheManagerInstance()>()
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : goto [?= $r15 = r0.<org.apache.camel.component.cache.CacheManagerFactory: net.sf.ehcache.CacheManager cacheManager>]
+org.apache.camel.component.cache.EHCacheUtil.createCacheManager : $z0 = <org.apache.camel.component.cache.EHCacheUtil: boolean useCreateNewMethod>
+org.apache.camel.component.cache.EHCacheUtil.createCacheManager : $r1 = staticinvoke <net.sf.ehcache.CacheManager: net.sf.ehcache.CacheManager newInstance()>()
+org.apache.camel.processor.cache.CacheBasedTokenReplacer.setCacheName : r0.<org.apache.camel.processor.cache.CacheBasedTokenReplacer: java.lang.String cacheName> = r1
+org.apache.camel.processor.cache.CacheBasedXPathReplacer.setXpath : r0.<org.apache.camel.processor.cache.CacheBasedXPathReplacer: java.lang.String xpath> = r1
+org.apache.camel.processor.cache.CacheBasedTokenReplacer.setReplacementToken : r0.<org.apache.camel.processor.cache.CacheBasedTokenReplacer: java.lang.String replacementToken> = r1
+org.apache.camel.component.cache.CacheConfiguration.getMaxElementsInMemory : $i0 = r0.<org.apache.camel.component.cache.CacheConfiguration: int maxElementsInMemory>
+org.apache.camel.processor.cache.CacheBasedXPathReplacer.setCacheName : r0.<org.apache.camel.processor.cache.CacheBasedXPathReplacer: java.lang.String cacheName> = r1
+org.apache.camel.processor.cache.CacheBasedTokenReplacer.setKey : r0.<org.apache.camel.processor.cache.CacheBasedTokenReplacer: org.apache.camel.Expression key> = r1
+org.apache.camel.component.cache.CacheConfiguration.setCacheLoaderRegistry : r0.<org.apache.camel.component.cache.CacheConfiguration: org.apache.camel.component.cache.CacheLoaderRegistry cacheLoaderRegistry> = r1
+org.apache.camel.component.cache.CacheConfiguration.getCacheName : $r1 = r0.<org.apache.camel.component.cache.CacheConfiguration: java.lang.String cacheName>
+org.apache.camel.processor.cache.CacheBasedXPathReplacer.getKey : $r1 = r0.<org.apache.camel.processor.cache.CacheBasedXPathReplacer: org.apache.camel.Expression key>
+org.apache.camel.component.cache.DefaultCacheManagerFactory.createCacheManagerInstance : $r6 = <org.apache.camel.component.cache.DefaultCacheManagerFactory: org.slf4j.Logger LOG>
+org.apache.camel.component.cache.DefaultCacheManagerFactory.createCacheManagerInstance : $r7 = staticinvoke <org.apache.camel.component.cache.EHCacheUtil: net.sf.ehcache.CacheManager createCacheManager()>()
+org.apache.camel.component.cache.DefaultCacheManagerFactory.createCacheManagerInstance : $r1 = r0.<org.apache.camel.component.cache.DefaultCacheManagerFactory: java.io.InputStream is>
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.setCacheName : r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: java.lang.String cacheName> = r1
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.getKey : $r1 = r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: org.apache.camel.Expression key>
+org.apache.camel.component.cache.CacheConfiguration.setDiskStorePath : r0.<org.apache.camel.component.cache.CacheConfiguration: java.lang.String diskStorePath> = r1
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.setKey : r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: org.apache.camel.Expression key> = r1
+org.apache.camel.component.cache.CacheConfiguration.setTimeToLiveSeconds : r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToLiveSeconds> = l0
+org.apache.camel.processor.cache.CacheBasedXPathReplacer.setKey : $r2 = staticinvoke <org.apache.camel.builder.ExpressionBuilder: org.apache.camel.Expression constantExpression(java.lang.Object)>(r1)
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0
+org.apache.camel.component.cache.CacheConfiguration.setDiskPersistent : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean diskPersistent> = z0

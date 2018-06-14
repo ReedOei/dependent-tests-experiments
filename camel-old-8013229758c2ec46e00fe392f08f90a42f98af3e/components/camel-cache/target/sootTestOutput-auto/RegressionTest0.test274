@@ -1,0 +1,4 @@
+org.apache.camel.component.cache.CacheConfiguration.isOverflowToDisk : $z0 = r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk>
+org.apache.camel.component.cache.CacheConfiguration.setTimeToIdleSeconds : r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToIdleSeconds> = l0
+org.apache.camel.component.cache.CacheConfiguration.setTimeToLiveSeconds : r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToLiveSeconds> = l0
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

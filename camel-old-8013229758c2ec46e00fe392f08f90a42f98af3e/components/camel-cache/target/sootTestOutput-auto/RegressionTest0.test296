@@ -1,0 +1,8 @@
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : $r3 = r0.<org.apache.camel.component.cache.CacheManagerFactory: net.sf.ehcache.CacheManager cacheManager>
+org.apache.camel.component.cache.CacheManagerFactory.getInstance : $r4 = virtualinvoke r0.<org.apache.camel.component.cache.CacheManagerFactory: net.sf.ehcache.CacheManager createCacheManagerInstance()>()
+org.apache.camel.component.cache.FileCacheManagerFactory.createCacheManagerInstance : $r2 = new java.io.FileInputStream
+org.apache.camel.component.cache.FileCacheManagerFactory.createCacheManagerInstance : $r6 = new org.apache.camel.RuntimeCamelException
+org.apache.camel.component.cache.CacheConfiguration.setCacheLoaderRegistry : r0.<org.apache.camel.component.cache.CacheConfiguration: org.apache.camel.component.cache.CacheLoaderRegistry cacheLoaderRegistry> = r1
+org.apache.camel.component.cache.FileCacheManagerFactory.setFileName : r0.<org.apache.camel.component.cache.FileCacheManagerFactory: java.lang.String fileName> = r1
+org.apache.camel.component.cache.CacheEndpoint.setCacheManagerFactory : r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory> = r1
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

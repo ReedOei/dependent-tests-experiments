@@ -1,0 +1,2 @@
+org.apache.camel.component.cache.CacheLoaderRegistry.size : $r1 = r0.<org.apache.camel.component.cache.CacheLoaderRegistry: java.util.List registeredCacheLoaders> >>>>>>>> org.apache.camel.component.cache.CacheLoaderRegistry.size : $i0 = interfaceinvoke $r1.<java.util.List: int size()>()
+org.apache.camel.component.cache.CacheLoaderRegistry.size : $i0 = interfaceinvoke $r1.<java.util.List: int size()>() >>>>>>>> org.apache.camel.component.cache.CacheLoaderRegistry.size : return $i0

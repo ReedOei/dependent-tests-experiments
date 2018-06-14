@@ -12,3 +12,4 @@ dubbo-dubbo-config-spring|3
 accumulo-accumulo-master|1
 jackrabbit-oak-oak-solr-core|0
 elastic-job-lite-elastic-job-common-core|0
+camel-camel-cache|0

@@ -1,0 +1,7 @@
+org.apache.camel.component.cache.CacheConfiguration.setEternal : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean eternal> = z0
+org.apache.camel.component.cache.CacheLoaderRegistry.getCacheLoaders : $r1 = r0.<org.apache.camel.component.cache.CacheLoaderRegistry: java.util.List registeredCacheLoaders>
+org.apache.camel.component.cache.CacheLoaderRegistry.getCacheLoaders : $r2 = r0.<org.apache.camel.component.cache.CacheLoaderRegistry: java.util.List registeredCacheLoaders>
+org.apache.camel.component.cache.CacheLoaderRegistry.addCacheLoader : $r2 = virtualinvoke r0.<org.apache.camel.component.cache.CacheLoaderRegistry: java.util.List getCacheLoaders()>()
+org.apache.camel.component.cache.CacheConfiguration.setCacheLoaderRegistry : r0.<org.apache.camel.component.cache.CacheConfiguration: org.apache.camel.component.cache.CacheLoaderRegistry cacheLoaderRegistry> = r1
+org.apache.camel.component.cache.CacheConfiguration.getTimeToIdleSeconds : $l0 = r0.<org.apache.camel.component.cache.CacheConfiguration: long timeToIdleSeconds>
+org.apache.camel.component.cache.CacheConfiguration.setOverflowToDisk : r0.<org.apache.camel.component.cache.CacheConfiguration: boolean overflowToDisk> = z0

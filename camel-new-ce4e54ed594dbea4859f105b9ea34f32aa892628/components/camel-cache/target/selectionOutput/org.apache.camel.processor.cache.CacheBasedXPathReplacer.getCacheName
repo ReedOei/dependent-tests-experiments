@@ -1,0 +1,1 @@
+org.apache.camel.processor.cache.CacheBasedXPathReplacer.getCacheName : $r1 = r0.<org.apache.camel.processor.cache.CacheBasedXPathReplacer: java.lang.String cacheName> >>>>>>>> org.apache.camel.processor.cache.CacheBasedXPathReplacer.getCacheName : return $r1

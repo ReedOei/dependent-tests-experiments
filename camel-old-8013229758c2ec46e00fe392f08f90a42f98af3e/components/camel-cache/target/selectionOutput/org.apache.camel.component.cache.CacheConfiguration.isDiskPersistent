@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheConfiguration.isDiskPersistent : $z0 = r0.<org.apache.camel.component.cache.CacheConfiguration: boolean diskPersistent> >>>>>>>> org.apache.camel.component.cache.CacheConfiguration.isDiskPersistent : return $z0

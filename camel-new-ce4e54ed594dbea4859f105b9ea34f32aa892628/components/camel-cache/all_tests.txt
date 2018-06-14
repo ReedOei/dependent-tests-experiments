@@ -1,0 +1,2 @@
+org.apache.camel.component.cache.CacheConfigurationFileTest.testConfigurationFile
+org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testEHCacheCompatiblity

@@ -1,0 +1,2 @@
+org.apache.camel.component.cache.CacheLoaderRegistry.addCacheLoader : $r2 = virtualinvoke r0.<org.apache.camel.component.cache.CacheLoaderRegistry: java.util.List getCacheLoaders()>() >>>>>>>> org.apache.camel.component.cache.CacheLoaderRegistry.addCacheLoader : interfaceinvoke $r2.<java.util.List: boolean add(java.lang.Object)>(r1)
+org.apache.camel.component.cache.CacheLoaderRegistry.addCacheLoader : interfaceinvoke $r2.<java.util.List: boolean add(java.lang.Object)>(r1) >>>>>>>> org.apache.camel.component.cache.CacheLoaderRegistry.addCacheLoader : return

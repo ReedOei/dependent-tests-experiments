@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheEndpoint.getCacheManagerFactory : $r1 = r0.<org.apache.camel.component.cache.CacheEndpoint: org.apache.camel.component.cache.CacheManagerFactory cacheManagerFactory> >>>>>>>> org.apache.camel.component.cache.CacheEndpoint.getCacheManagerFactory : return $r1

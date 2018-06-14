@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheComponent.getConfiguration : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: org.apache.camel.component.cache.CacheConfiguration configuration> >>>>>>>> org.apache.camel.component.cache.CacheComponent.getConfiguration : return $r1

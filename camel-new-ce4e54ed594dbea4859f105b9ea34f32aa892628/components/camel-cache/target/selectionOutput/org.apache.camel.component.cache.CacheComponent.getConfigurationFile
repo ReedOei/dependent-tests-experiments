@@ -1,0 +1,1 @@
+org.apache.camel.component.cache.CacheComponent.getConfigurationFile : $r1 = r0.<org.apache.camel.component.cache.CacheComponent: java.lang.String configurationFile> >>>>>>>> org.apache.camel.component.cache.CacheComponent.getConfigurationFile : return $r1

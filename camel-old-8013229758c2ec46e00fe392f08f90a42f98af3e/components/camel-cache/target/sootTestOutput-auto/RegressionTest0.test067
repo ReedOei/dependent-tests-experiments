@@ -1,0 +1,4 @@
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.setCacheName : r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: java.lang.String cacheName> = r1
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.getKey : $r1 = r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: org.apache.camel.Expression key>
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.setKey : $r2 = staticinvoke <org.apache.camel.builder.ExpressionBuilder: org.apache.camel.Expression constantExpression(java.lang.Object)>(r1)
+org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer.setKey : r0.<org.apache.camel.processor.cache.CacheBasedMessageBodyReplacer: org.apache.camel.Expression key> = r1

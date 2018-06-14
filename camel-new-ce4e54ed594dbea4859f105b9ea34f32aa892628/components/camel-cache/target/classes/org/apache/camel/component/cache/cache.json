@@ -1,0 +1,50 @@
+{
+ "component": {
+    "kind": "component",
+    "scheme": "cache",
+    "syntax": "cache:cacheName",
+    "title": "EHCache",
+    "description": "The cache component enables you to perform caching operations using EHCache as the Cache Implementation.",
+    "label": "cache",
+    "deprecated": true,
+    "deprecationNote": "",
+    "async": false,
+    "consumerOnly": false,
+    "producerOnly": false,
+    "lenientProperties": false,
+    "javaType": "org.apache.camel.component.cache.CacheComponent",
+    "firstVersion": "2.1.0",
+    "groupId": "org.apache.camel",
+    "artifactId": "camel-cache",
+    "version": "2.21.0-SNAPSHOT"
+  },
+  "componentProperties": {
+    "cacheManagerFactory": { "kind": "property", "displayName": "Cache Manager Factory", "group": "advanced", "label": "advanced", "required": false, "type": "object", "javaType": "org.apache.camel.component.cache.CacheManagerFactory", "deprecated": false, "secret": false, "description": "To use the given CacheManagerFactory for creating the CacheManager. By default the DefaultCacheManagerFactory is used." },
+    "configuration": { "kind": "property", "displayName": "Configuration", "group": "common", "type": "object", "javaType": "org.apache.camel.component.cache.CacheConfiguration", "deprecated": false, "secret": false, "description": "Sets the Cache configuration" },
+    "configurationFile": { "kind": "property", "displayName": "Configuration File", "group": "common", "required": false, "type": "string", "javaType": "java.lang.String", "deprecated": false, "secret": false, "defaultValue": "classpath:ehcache.xml", "description": "Sets the location of the ehcache.xml file to load from classpath or file system. By default the file is loaded from classpath:ehcache.xml" },
+    "resolvePropertyPlaceholders": { "kind": "property", "displayName": "Resolve Property Placeholders", "group": "advanced", "label": "advanced", "required": false, "type": "boolean", "javaType": "boolean", "deprecated": false, "secret": false, "defaultValue": true, "description": "Whether the component should resolve property placeholders on itself when starting. Only properties which are of String type can use property placeholders." }
+  },
+  "properties": {
+    "cacheName": { "kind": "path", "displayName": "Cache Name", "group": "common", "required": true, "type": "string", "javaType": "java.lang.String", "deprecated": false, "secret": false, "description": "Name of the cache" },
+    "diskExpiryThreadIntervalSeconds": { "kind": "parameter", "displayName": "Disk Expiry Thread Interval Seconds", "group": "common", "type": "integer", "javaType": "long", "deprecated": false, "secret": false, "description": "The number of seconds between runs of the disk expiry thread." },
+    "diskPersistent": { "kind": "parameter", "displayName": "Disk Persistent", "group": "common", "type": "boolean", "javaType": "boolean", "deprecated": false, "secret": false, "defaultValue": false, "description": "Whether the disk store persists between restarts of the application." },
+    "diskStorePath": { "kind": "parameter", "displayName": "Disk Store Path", "group": "common", "type": "string", "javaType": "java.lang.String", "deprecated": true, "secret": false, "description": "This parameter is ignored. CacheManager sets it using setter injection." },
+    "eternal": { "kind": "parameter", "displayName": "Eternal", "group": "common", "type": "boolean", "javaType": "boolean", "deprecated": false, "secret": false, "defaultValue": false, "description": "Sets whether elements are eternal. If eternal timeouts are ignored and the element never expires." },
+    "key": { "kind": "parameter", "displayName": "Key", "group": "common", "type": "string", "javaType": "java.lang.String", "deprecated": false, "secret": false, "description": "The default key to use. If a key is provided in the message header then the key from the header takes precedence." },
+    "maxElementsInMemory": { "kind": "parameter", "displayName": "Max Elements In Memory", "group": "common", "type": "integer", "javaType": "int", "deprecated": false, "secret": false, "defaultValue": 1000, "description": "The number of elements that may be stored in the defined cache in memory." },
+    "memoryStoreEvictionPolicy": { "kind": "parameter", "displayName": "Memory Store Eviction Policy", "group": "common", "type": "object", "javaType": "net.sf.ehcache.store.MemoryStoreEvictionPolicy", "enum": [ "LRU", "LFU", "FIFO" ], "deprecated": false, "secret": false, "defaultValue": "LFU", "description": "Which eviction strategy to use when maximum number of elements in memory is reached. The strategy defines which elements to be removed. LRU - Lest Recently Used LFU - Lest Frequently Used FIFO - First In First Out" },
+    "objectCache": { "kind": "parameter", "displayName": "Object Cache", "group": "common", "type": "boolean", "javaType": "boolean", "deprecated": false, "secret": false, "defaultValue": false, "description": "Whether to turn on allowing to store non serializable objects in the cache. If this option is enabled then overflow to disk cannot be enabled as well." },
+    "operation": { "kind": "parameter", "displayName": "Operation", "group": "common", "type": "string", "javaType": "java.lang.String", "deprecated": false, "secret": false, "description": "The default cache operation to use. If an operation in the message header then the operation from the header takes precedence." },
+    "overflowToDisk": { "kind": "parameter", "displayName": "Overflow To Disk", "group": "common", "type": "boolean", "javaType": "boolean", "deprecated": false, "secret": false, "defaultValue": true, "description": "Specifies whether cache may overflow to disk" },
+    "timeToIdleSeconds": { "kind": "parameter", "displayName": "Time To Idle Seconds", "group": "common", "type": "integer", "javaType": "long", "deprecated": false, "secret": false, "defaultValue": 300, "description": "The maximum amount of time between accesses before an element expires" },
+    "timeToLiveSeconds": { "kind": "parameter", "displayName": "Time To Live Seconds", "group": "common", "type": "integer", "javaType": "long", "deprecated": false, "secret": false, "defaultValue": 300, "description": "The maximum time between creation time and when an element expires. Is used only if the element is not eternal" },
+    "bridgeErrorHandler": { "kind": "parameter", "displayName": "Bridge Error Handler", "group": "consumer", "label": "consumer", "type": "boolean", "javaType": "boolean", "optionalPrefix": "consumer.", "deprecated": false, "secret": false, "defaultValue": false, "description": "Allows for bridging the consumer to the Camel routing Error Handler which mean any exceptions occurred while the consumer is trying to pickup incoming messages or the likes will now be processed as a message and handled by the routing Error Handler. By default the consumer will use the org.apache.camel.spi.ExceptionHandler to deal with exceptions that will be logged at WARN or ERROR level and ignored." },
+    "exceptionHandler": { "kind": "parameter", "displayName": "Exception Handler", "group": "consumer (advanced)", "label": "consumer,advanced", "type": "object", "javaType": "org.apache.camel.spi.ExceptionHandler", "optionalPrefix": "consumer.", "deprecated": false, "secret": false, "description": "To let the consumer use a custom ExceptionHandler. Notice if the option bridgeErrorHandler is enabled then this options is not in use. By default the consumer will deal with exceptions that will be logged at WARN or ERROR level and ignored." },
+    "exchangePattern": { "kind": "parameter", "displayName": "Exchange Pattern", "group": "consumer (advanced)", "label": "consumer,advanced", "type": "object", "javaType": "org.apache.camel.ExchangePattern", "enum": [ "InOnly", "RobustInOnly", "InOut", "InOptionalOut", "OutOnly", "RobustOutOnly", "OutIn", "OutOptionalIn" ], "deprecated": false, "secret": false, "description": "Sets the exchange pattern when the consumer creates an exchange." },
+    "cacheLoaderRegistry": { "kind": "parameter", "displayName": "Cache Loader Registry", "group": "advanced", "label": "advanced", "type": "object", "javaType": "org.apache.camel.component.cache.CacheLoaderRegistry", "deprecated": false, "secret": false, "description": "To configure cache loader using the CacheLoaderRegistry" },
+    "cacheManagerFactory": { "kind": "parameter", "displayName": "Cache Manager Factory", "group": "advanced", "label": "advanced", "type": "object", "javaType": "org.apache.camel.component.cache.CacheManagerFactory", "deprecated": false, "secret": false, "description": "To use a custom CacheManagerFactory for creating the CacheManager to be used by this endpoint. By default the CacheManagerFactory configured on the component is used." },
+    "eventListenerRegistry": { "kind": "parameter", "displayName": "Event Listener Registry", "group": "advanced", "label": "advanced", "type": "object", "javaType": "org.apache.camel.component.cache.CacheEventListenerRegistry", "deprecated": false, "secret": false, "description": "To configure event listeners using the CacheEventListenerRegistry" },
+    "synchronous": { "kind": "parameter", "displayName": "Synchronous", "group": "advanced", "label": "advanced", "type": "boolean", "javaType": "boolean", "deprecated": false, "secret": false, "defaultValue": false, "description": "Sets whether synchronous processing should be strictly used or Camel is allowed to use asynchronous processing (if supported)." }
+  }
+}
+
