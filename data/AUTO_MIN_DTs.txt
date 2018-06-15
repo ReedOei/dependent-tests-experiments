@@ -10,6 +10,6 @@ Zeppelin-Server|14
 Zeppelin-Zengine|117
 dubbo-dubbo-config-spring|6
 accumulo-accumulo-master|2
-jackrabbit-oak-oak-solr-core|0
+jackrabbit-oak-oak-solr-core|61
 elastic-job-lite-elastic-job-common-core|0
-camel-camel-cache|0
+camel-camel-cache|2
