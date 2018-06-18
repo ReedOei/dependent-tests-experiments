@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getName : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: java.lang.String cacheName> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getName : return $r1

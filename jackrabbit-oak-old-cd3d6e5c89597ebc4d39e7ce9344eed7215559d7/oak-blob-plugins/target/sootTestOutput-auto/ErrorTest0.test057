@@ -1,0 +1,15 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.createBackend : $r2 = new org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.createBackend : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: java.util.Properties properties>
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.createBackend : return $r2
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $i1 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingSplitPercentage>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r4 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $i0 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingSplitPercentage>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: java.lang.String path>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r14 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r16 = <org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r20 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: org.apache.jackrabbit.oak.spi.blob.AbstractSharedBackend backend>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r19 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: org.apache.jackrabbit.oak.spi.blob.AbstractSharedBackend createBackend()>()
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r8 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r12 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.init : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.util.Properties properties>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.getType : $r1 = <org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type: org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type SHARED>

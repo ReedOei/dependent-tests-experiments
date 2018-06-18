@@ -1,0 +1,16 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllMetadataRecords : $r9 = staticinvoke <org.apache.commons.io.filefilter.FileFilterUtils: org.apache.commons.io.filefilter.IOFileFilter prefixFileFilter(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllMetadataRecords : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllMetadataRecords : $r11 = staticinvoke <org.apache.commons.io.filefilter.FileFilterUtils: java.util.List filterList(org.apache.commons.io.filefilter.IOFileFilter,java.io.File[])>($r9, $r10)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllMetadataRecords : $r8 = new java.util.ArrayList
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllMetadataRecords : $r10 = virtualinvoke $r6.<java.io.File: java.io.File[] listFiles()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$NoOpMap.entrySet : $r1 = staticinvoke <java.util.Collections: java.util.Set emptySet()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.deleteAllMetadataRecords : $r5 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.deleteAllMetadataRecords : $r8 = virtualinvoke $r5.<java.io.File: java.io.File[] listFiles()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.deleteAllMetadataRecords : $r9 = staticinvoke <org.apache.commons.io.filefilter.FileFilterUtils: java.util.List filterList(org.apache.commons.io.filefilter.IOFileFilter,java.io.File[])>($r7, $r8)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.deleteAllMetadataRecords : $r7 = staticinvoke <org.apache.commons.io.filefilter.FileFilterUtils: org.apache.commons.io.filefilter.IOFileFilter prefixFileFilter(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.deleteMetadataRecord : $r5 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.deleteMetadataRecord : $r8 = virtualinvoke $r5.<java.io.File: java.io.File[] listFiles()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.deleteMetadataRecord : $r7 = staticinvoke <org.apache.commons.io.filefilter.FileFilterUtils: org.apache.commons.io.filefilter.IOFileFilter nameFileFilter(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.deleteMetadataRecord : $r9 = staticinvoke <org.apache.commons.io.filefilter.FileFilterUtils: java.util.List filterList(org.apache.commons.io.filefilter.IOFileFilter,java.io.File[])>($r7, $r8)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getType : $r1 = <org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type: org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type SHARED>
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.setReferenceKey : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore: byte[] referenceKey> = r1

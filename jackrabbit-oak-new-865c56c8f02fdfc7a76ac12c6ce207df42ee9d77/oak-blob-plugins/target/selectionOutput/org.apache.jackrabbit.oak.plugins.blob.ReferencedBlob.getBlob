@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.getBlob : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob: org.apache.jackrabbit.oak.api.Blob blob> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.getBlob : return $r1

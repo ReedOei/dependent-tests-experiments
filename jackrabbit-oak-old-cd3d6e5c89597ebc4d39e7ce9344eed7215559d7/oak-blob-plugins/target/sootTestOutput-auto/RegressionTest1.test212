@@ -1,0 +1,6 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.getFile : r2 = virtualinvoke r0.<org.apache.jackrabbit.core.data.DataIdentifier: java.lang.String toString()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.getOrCreateReferenceKey : $r4 = staticinvoke <org.apache.commons.io.FileUtils: byte[] readFileToByteArray(java.io.File)>($r2)
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.getOrCreateReferenceKey : $z0 = virtualinvoke $r2.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.getOrCreateReferenceKey : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.setProperties : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.util.Properties properties> = r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.exists : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.io.File fsPathDir>

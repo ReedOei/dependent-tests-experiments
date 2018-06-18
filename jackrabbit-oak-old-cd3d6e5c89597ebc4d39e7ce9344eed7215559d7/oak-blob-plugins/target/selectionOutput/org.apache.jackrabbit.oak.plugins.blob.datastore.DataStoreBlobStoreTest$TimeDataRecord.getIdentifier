@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest$TimeDataRecord.getIdentifier : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest$TimeDataRecord: org.apache.jackrabbit.core.data.DataIdentifier id> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest$TimeDataRecord.getIdentifier : return $r1

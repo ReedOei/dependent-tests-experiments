@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer$ErrorBlob.getNewStream : $r1 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer$ErrorBlob: java.lang.RuntimeException createError()>() >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer$ErrorBlob.getNewStream : throw $r1

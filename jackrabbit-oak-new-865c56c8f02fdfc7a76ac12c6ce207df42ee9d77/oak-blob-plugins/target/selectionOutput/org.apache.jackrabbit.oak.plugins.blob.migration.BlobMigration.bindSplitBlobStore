@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.bindSplitBlobStore : r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration: org.apache.jackrabbit.oak.spi.blob.BlobStore splitBlobStore> = r1 >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.bindSplitBlobStore : return

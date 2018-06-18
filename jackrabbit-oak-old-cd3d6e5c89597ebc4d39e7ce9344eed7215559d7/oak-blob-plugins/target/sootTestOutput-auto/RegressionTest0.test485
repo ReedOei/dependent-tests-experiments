@@ -1,0 +1,9 @@
+org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.toString : $r1 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.equals : if r1 == null goto return 0
+org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.equals : if r0 != r1 goto (branch)
+org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.equals : $r3 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.setId : r0.<org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob: java.lang.String id> = r1
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.setLocal : r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: boolean local> = z0
+org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.getBlob : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob: org.apache.jackrabbit.oak.api.Blob blob>
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.getStartTime : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: long startTime>
+org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.setBlob : r0.<org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob: org.apache.jackrabbit.oak.api.Blob blob> = r1

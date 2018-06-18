@@ -1,0 +1,41 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("if i3 >= i0 goto (branch)", "org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream")]
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : i3 = i3 + i5
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : i4 = i4 - i5
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : if i3 >= i0 goto $r5 = new java.io.SequenceInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : if i5 >= 0 goto i3 = i3 + i5
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : $r5 = new java.io.SequenceInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : r8 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataRecord addRecord(java.io.InputStream,org.apache.jackrabbit.oak.spi.blob.BlobOptions)>($r5, r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : return r8
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : i5 = virtualinvoke r7.<java.io.InputStream: int read(byte[],int,int)>(r2, i3, i4)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : r2 = newarray (byte)[i0]
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : i3 = 0
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : if i3 >= i0 goto (branch)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : interfaceinvoke r2.<org.apache.jackrabbit.core.data.DataStore: void init(java.lang.String)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r8 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils: java.util.Map getConfig()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r3 = class "Lorg/apache/jackrabbit/oak/plugins/blob/datastore/OakFileDataStore;"
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r9 = new org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r1 = virtualinvoke r0.<java.io.File: java.lang.String getAbsolutePath()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r5 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.randomStream : $r2 = new java.util.Random
+org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.randomStream : virtualinvoke $r2.<java.util.Random: void nextBytes(byte[])>(r1)
+org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.randomStream : r1 = newarray (byte)[i1]
+org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.randomStream : $r3 = new java.io.ByteArrayInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addRecord : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addRecord : $r3 = new org.apache.jackrabbit.oak.spi.blob.BlobOptions
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getAllRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getAllRecords : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.getBlobStore : $r2 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore getBlobStore(java.io.File)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$5.apply : $r2 = (org.apache.jackrabbit.core.data.DataIdentifier) r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$5.apply : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$5: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore this$0>
+org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest$1.apply : $r2 = (org.apache.jackrabbit.core.data.DataRecord) r1
+org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest$1.apply : $r2 = interfaceinvoke r1.<org.apache.jackrabbit.core.data.DataRecord: org.apache.jackrabbit.core.data.DataIdentifier getIdentifier()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : r11 = virtualinvoke r10.<java.lang.String: java.lang.String substring(int)>(3)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $r3 = staticinvoke <java.lang.System: java.util.Properties getProperties()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $r7 = interfaceinvoke r2.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $z1 = virtualinvoke r10.<java.lang.String: boolean startsWith(java.lang.String)>("ds.")
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $z2 = virtualinvoke r10.<java.lang.String: boolean startsWith(java.lang.String)>("bs.")
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : r0 = staticinvoke <com.google.common.collect.Maps: java.util.HashMap newHashMap()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $r8 = interfaceinvoke r2.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $r6 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()

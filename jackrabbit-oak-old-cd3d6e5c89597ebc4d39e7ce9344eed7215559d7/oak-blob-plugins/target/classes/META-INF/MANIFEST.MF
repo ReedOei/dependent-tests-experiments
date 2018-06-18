@@ -1,0 +1,76 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1528409378428
+Build-Jdk: 1.8.0_171
+Built-By: reedoei2
+Bundle-Category: oak
+Bundle-Description: The goal of the Oak effort within the Apache Jackrab
+ bit project is    to implement a scalable and performant hierarchical c
+ ontent repository    for use as the foundation of modern world-class we
+ b sites and other    demanding content applications.
+Bundle-DocURL: http://jackrabbit.apache.org/oak/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Oak Blob Plugins
+Bundle-SymbolicName: org.apache.jackrabbit.oak-blob-plugins
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.7.13
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.jackrabbit.oak.plugins.blob;uses:="com.google
+ .common.base,com.google.common.cache,com.google.common.util.concurrent,
+ javax.annotation,javax.management.openmbean,org.apache.jackrabbit.core.
+ data,org.apache.jackrabbit.oak.api,org.apache.jackrabbit.oak.api.jmx,or
+ g.apache.jackrabbit.oak.cache,org.apache.jackrabbit.oak.commons.jmx,org
+ .apache.jackrabbit.oak.plugins.blob.datastore,org.apache.jackrabbit.oak
+ .spi.blob,org.apache.jackrabbit.oak.spi.blob.stats,org.apache.jackrabbi
+ t.oak.spi.state,org.apache.jackrabbit.oak.spi.whiteboard,org.apache.jac
+ krabbit.oak.stats,org.slf4j",org.apache.jackrabbit.oak.plugins.blob.dat
+ astore;uses:="com.google.common.cache,javax.annotation,javax.jcr,org.ap
+ ache.jackrabbit.core.data,org.apache.jackrabbit.core.util.db,org.apache
+ .jackrabbit.oak.cache,org.apache.jackrabbit.oak.plugins.blob,org.apache
+ .jackrabbit.oak.spi.blob,org.apache.jackrabbit.oak.spi.blob.stats,org.a
+ pache.jackrabbit.oak.stats,org.osgi.service.component,org.slf4j"
+Implementation-Title: Oak Blob Plugins
+Implementation-URL: http://jackrabbit.apache.org/oak-blob-plugins/
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.jackrabbit
+Implementation-Version: 1.7.13
+Import-Package: com.google.common.base;version="[15.0,16)",com.google.co
+ mmon.cache;version="[15.0,16)",com.google.common.collect;version="[15.0
+ ,16)",com.google.common.io;version="[15.0,16)",com.google.common.util.c
+ oncurrent;version="[15.0,16)",javax.annotation,javax.jcr;version="[2.0,
+ 3)",javax.management.openmbean,org.apache.commons.codec.digest;version=
+ "[1.5,2)",org.apache.commons.io;version="[1.4,2)",org.apache.commons.io
+ .filefilter;version="[1.4,2)",org.apache.jackrabbit.api.stats;version="
+ [1.2,2)",org.apache.jackrabbit.core.data;version="[2.14,3)",org.apache.
+ jackrabbit.core.data.db;version="[2.13,3)",org.apache.jackrabbit.core.d
+ ata.util;version="[2.13,3)",org.apache.jackrabbit.core.util.db;version=
+ "[2.13,3)",org.apache.jackrabbit.oak.api;version="[3.1,4)",org.apache.j
+ ackrabbit.oak.api.jmx;version="[4.7,4.8)",org.apache.jackrabbit.oak.cac
+ he;version="[1.0,2)",org.apache.jackrabbit.oak.commons;version="[1.0,2)
+ ",org.apache.jackrabbit.oak.commons.concurrent;version="[1.0,2)",org.ap
+ ache.jackrabbit.oak.commons.jmx;version="[1.0,2)",org.apache.jackrabbit
+ .oak.json,org.apache.jackrabbit.oak.osgi;version="[1.0,2)",org.apache.j
+ ackrabbit.oak.plugins.blob,org.apache.jackrabbit.oak.plugins.blob.datas
+ tore,org.apache.jackrabbit.oak.plugins.memory,org.apache.jackrabbit.oak
+ .spi.blob,org.apache.jackrabbit.oak.spi.blob.split,org.apache.jackrabbi
+ t.oak.spi.blob.stats,org.apache.jackrabbit.oak.spi.commit,org.apache.ja
+ ckrabbit.oak.spi.state,org.apache.jackrabbit.oak.spi.whiteboard;version
+ ="[1.0,2)",org.apache.jackrabbit.oak.stats;version="[1.0,2)",org.apache
+ .jackrabbit.stats;version="[2.7,3)",org.apache.jackrabbit.util;version=
+ "[2.4,3)",org.jclouds;version="[1.7,2)";resolution:=optional,org.jcloud
+ s.blobstore;version="[1.7,2)";resolution:=optional,org.jclouds.blobstor
+ e.domain;version="[1.7,2)";resolution:=optional,org.jclouds.blobstore.o
+ ptions;version="[1.7,2)";resolution:=optional,org.jclouds.domain;versio
+ n="[1.7,2)";resolution:=optional,org.jclouds.io;version="[1.7,2)";resol
+ ution:=optional,org.osgi.framework;version="[1.5,2)",org.osgi.service.c
+ omponent;version="[1.1,2)",org.slf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/org.apache.jackrabbit.oak.plugins.blob.Conso
+ lidatedDataStoreCacheStats.xml,OSGI-INF/org.apache.jackrabbit.oak.plugi
+ ns.blob.datastore.FileDataStoreService.xml,OSGI-INF/org.apache.jackrabb
+ it.oak.plugins.blob.datastore.DbDataStoreService.xml,OSGI-INF/org.apach
+ e.jackrabbit.oak.plugins.blob.migration.BlobMigration.xml
+Specification-Title: Oak Blob Plugins
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.7.13
+Tool: Bnd-3.3.0.201609221906

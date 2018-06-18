@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.getLength : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: long length> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.getLength : return $l0

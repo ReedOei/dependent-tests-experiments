@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService.bindStatisticsProvider : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService: org.apache.jackrabbit.oak.stats.StatisticsProvider statisticsProvider> = r1 >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreService.bindStatisticsProvider : return

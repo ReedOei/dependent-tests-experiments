@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCache.getDownloadCache : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCache: org.apache.jackrabbit.oak.plugins.blob.FileCache downloadCache> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCache.getDownloadCache : return $r1

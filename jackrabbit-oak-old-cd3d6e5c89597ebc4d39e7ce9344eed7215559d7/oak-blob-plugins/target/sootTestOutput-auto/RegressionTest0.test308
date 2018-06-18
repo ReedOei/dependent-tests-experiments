@@ -1,0 +1,9 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataRecord : $z0 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: boolean isInstance(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.of : $r1 = new org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobLength : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: boolean encodeLengthInId>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobLength : r7 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId of(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobLength : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r1, "BlobId must be specified")
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob.length : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob: org.apache.jackrabbit.oak.spi.blob.BlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.setMaxCachedBinarySize : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: int maxCachedBinarySize> = i0
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.isInstance : $z0 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("0x")

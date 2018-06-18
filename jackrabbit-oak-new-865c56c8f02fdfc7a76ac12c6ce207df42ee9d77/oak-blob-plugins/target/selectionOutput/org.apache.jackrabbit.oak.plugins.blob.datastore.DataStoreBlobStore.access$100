@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.access$100 : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: boolean encodeLengthInId> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.access$100 : return $z0

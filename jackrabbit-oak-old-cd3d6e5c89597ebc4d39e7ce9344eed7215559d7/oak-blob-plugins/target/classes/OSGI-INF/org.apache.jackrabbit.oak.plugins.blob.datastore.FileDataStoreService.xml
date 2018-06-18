@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore" configuration-policy="require">
+    <reference name="statisticsProvider" interface="org.apache.jackrabbit.oak.stats.StatisticsProvider" cardinality="1..1" policy="static" bind="bindStatisticsProvider" unbind="unbindStatisticsProvider"/>
+    <implementation class="org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService"/>
+</scr:component>

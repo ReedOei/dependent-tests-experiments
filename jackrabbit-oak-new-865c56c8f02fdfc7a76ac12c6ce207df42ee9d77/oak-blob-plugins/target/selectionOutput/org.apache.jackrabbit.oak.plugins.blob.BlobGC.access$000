@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.BlobGC.access$000 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGC: org.apache.jackrabbit.oak.plugins.blob.BlobGarbageCollector blobGarbageCollector> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.BlobGC.access$000 : return $r1

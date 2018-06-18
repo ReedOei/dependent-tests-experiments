@@ -1,0 +1,25 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : virtualinvoke $r13.<org.apache.jackrabbit.core.data.FileDataStore: void setPath(java.lang.String)>(r2)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : $r14 = new org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest$1
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : $r11 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : virtualinvoke $r13.<org.apache.jackrabbit.core.data.FileDataStore: void init(java.lang.String)>(null)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : $r16 = newarray (java.lang.String)[3]
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : staticinvoke <org.junit.Assert: void assertEquals(java.lang.Object,java.lang.Object)>(r7, r6)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : $r12 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : $r10 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : $r13 = new org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : staticinvoke <org.apache.commons.io.FileUtils: void cleanDirectory(java.io.File)>($r8)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : $r8 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : $r9 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers : r5 = virtualinvoke $r13.<org.apache.jackrabbit.core.data.FileDataStore: java.util.Iterator getAllIdentifiers()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest$1.apply : $r2 = (org.apache.jackrabbit.core.data.DataIdentifier) r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest$1.apply : $r2 = virtualinvoke r1.<org.apache.jackrabbit.core.data.DataIdentifier: java.lang.String toString()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$1.apply : $r2 = (java.io.File) r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$1.apply : $r2 = new org.apache.jackrabbit.core.data.DataIdentifier
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllIdentifiers : $r9 = virtualinvoke $r7.<com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable filter(com.google.common.base.Predicate)>($r8)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllIdentifiers : $r12 = virtualinvoke $r11.<com.google.common.collect.FluentIterable: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllIdentifiers : $r11 = virtualinvoke $r9.<com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable transform(com.google.common.base.Function)>($r10)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllIdentifiers : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllIdentifiers : $r5 = staticinvoke <com.google.common.io.Files: com.google.common.collect.TreeTraverser fileTreeTraverser()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$2.apply : $r2 = (java.io.File) r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$2.apply : $r2 = virtualinvoke r1.<java.io.File: java.lang.String getParent()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$2.apply : $z0 = virtualinvoke r1.<java.io.File: boolean isFile()>()

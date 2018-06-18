@@ -1,0 +1,15 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.getSnapshotMarkerFile : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.getSnapshotMarkerFile : return $r2
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.getAllRecords : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: org.apache.jackrabbit.oak.spi.blob.AbstractSharedBackend backend>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$SnapshotJob.run : $r3 = <java.util.concurrent.TimeUnit: java.util.concurrent.TimeUnit MILLISECONDS>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$SnapshotJob.run : $z0 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$SnapshotJob: boolean skip()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$SnapshotJob.run : $r2 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.access$000 : $r0 = <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.access$400 : $r1 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: java.io.File getSnapshotMarkerFile()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.setProperties : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: java.util.Properties properties> = r1
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setStatisticsProvider : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: org.apache.jackrabbit.oak.stats.StatisticsProvider statisticsProvider> = r1
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setPath : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: java.lang.String path> = r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$SnapshotJob.skip : return 1
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$SnapshotJob.skip : $l0 = virtualinvoke r1.<java.io.File: long lastModified()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$SnapshotJob.skip : $z0 = virtualinvoke r1.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$SnapshotJob.skip : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$SnapshotJob: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker this$0>

@@ -1,0 +1,657 @@
+[INFO] JAR file /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/jackrabbit-oak-old-cd3d6e5c89597ebc4d39e7ce9344eed7215559d7/oak-blob-plugins/target/dependency/junit-4.12.jar contains JUnit. Skipping.
+Executing fixed runner now.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/jackrabbit-oak-old-cd3d6e5c89597ebc4d39e7ce9344eed7215559d7/oak-blob-plugins/target/dependency/logback-classic-1.1.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/impact-tools/plume.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoDownloads
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoDownloadsDelPendingFileFalse
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeMoveDownloadsFalse
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoUploads
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoUploadMap
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgrade
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeDelPendingFileFalse
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.noGc
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gcCheckDeletedSize
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gc
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.getAllIdentifiers
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.zeroStagingCacheAddGetDelete
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.reference
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.zeroCacheAddGetDelete
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.syncAddGetDelete
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.syncAddGetLoadCache
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.getRecordNotAvailable
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.lazyLoadStream
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.addDelete
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.addStagingAndDelete
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.referenceNoCache
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.exists
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.emptyString
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.differentPaths
+java.lang.IllegalArgumentException: Invalid name: 
+	at org.apache.jackrabbit.oak.spi.state.AbstractNodeState.checkValidName(AbstractNodeState.java:63)
+	at org.apache.jackrabbit.oak.plugins.memory.MemoryNodeState.getChildNode(MemoryNodeState.java:96)
+	at org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats.findLeafNode(ConsolidatedDataStoreCacheStats.java:196)
+	at org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats.isFileSynced(ConsolidatedDataStoreCacheStats.java:144)
+	at org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.differentPaths(ConsolidatedDataStoreStatsTest.java:292)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.noPath
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.nullString
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.multiplePropertiesAndBinarySynced
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.multipleBinaryPropsAllSynced
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.multipleBinaryPropsNotAllSynced
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binaryPropSingle
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binariesPropertyMultiple
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binariesPropertyNotAllSynced
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binarySyncedAndBinariesNotSynced
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binaryNotSyncedAndBinariesSynced
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binaryAndBinariesSynced
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testInlineBinary
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testGetAllChunks
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testExternalBinary
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testReference
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testEncodedBlobId
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testAddOnTrackError
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testCombinedIdentifier
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testEmptyIdentifier
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testGarbageCollection
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testWriteFile
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testCloseStream
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testExceptionWhileReading
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testIllegalIdentifier
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testIllegalIdentifier2
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testIllegalIdentifier3
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testSmall
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testMedium
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testLarge
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.deleteCount
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.uploadCallback
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.downloadCallback
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.list
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.delete
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.testPropertySetup
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshot
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotRetrieve
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotAdd
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotAddSnapshot
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotRemove
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addRestart
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addCloseRestart
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addConcurrentSnapshot
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotConcurrentRetrieve
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.snapshotConcurrentRemove
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addBulkAdd
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.bulkAddConcurrentCompact
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecordTest.testGetInstance
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.assertReferenceKey
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testUpdateLastModifiedOnAccess
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testDeleteAllOlderThan
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testReference
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testAddRecord
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testGetRecord
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testGetAllIdentifiers
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testDeleteRecord
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testSingleThread
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testMultiThreaded
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testReference
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testUpdateLastModifiedOnAccess
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testDeleteAllOlderThan
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testAddRecord
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testGetRecord
+java.lang.InstantiationException
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testGetAllIdentifiers
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testDeleteRecord
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testSingleThread
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testMultiThreaded
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testNoOpMap
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiersRelative2
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiersRelative1
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveCluster
+java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:192)
+	at com.google.common.collect.Iterables.transform(Iterables.java:705)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.globalMerge(BlobIdTracker.java:229)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.get(BlobIdTracker.java:197)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.retrieve(BlobIdTrackerClusterSharedTest.java:226)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.access$300(BlobIdTrackerClusterSharedTest.java:61)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest$Cluster.doRetrieve(BlobIdTrackerClusterSharedTest.java:194)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveCluster(BlobIdTrackerClusterSharedTest.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveShared
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:192)
+	at com.google.common.collect.Iterables.transform(Iterables.java:705)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.globalMerge(BlobIdTracker.java:229)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.get(BlobIdTracker.java:197)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.retrieve(BlobIdTrackerClusterSharedTest.java:226)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.access$300(BlobIdTrackerClusterSharedTest.java:61)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest$Cluster.doRetrieve(BlobIdTrackerClusterSharedTest.java:194)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveShared(BlobIdTrackerClusterSharedTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.mbeanRegs
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.configCachingFileDataStore
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.configFileDataStore
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.registerAndCheckReferenceKey
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.track
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.addCloseRestart
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.filterWithNoActiveDeletion
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.noFilter
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.filterWithExtraElements
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcileAll
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcileNone
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcile
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcileExtraElements
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.filter
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshot
+java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:192)
+	at com.google.common.collect.Iterables.transform(Iterables.java:705)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.globalMerge(BlobIdTracker.java:229)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.get(BlobIdTracker.java:197)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.retrieve(BlobIdTrackerTest.java:265)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshot(BlobIdTrackerTest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshotRemove
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:192)
+	at com.google.common.collect.Iterables.transform(Iterables.java:705)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.globalMerge(BlobIdTracker.java:229)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.get(BlobIdTracker.java:197)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.retrieve(BlobIdTrackerTest.java:265)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotRemove(BlobIdTrackerTest.java:170)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshotRemove(BlobIdTrackerTest.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotIgnoreAfterRemove
+java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:192)
+	at com.google.common.collect.Iterables.transform(Iterables.java:705)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.globalMerge(BlobIdTracker.java:229)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.get(BlobIdTracker.java:197)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.retrieve(BlobIdTrackerTest.java:265)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotRemove(BlobIdTrackerTest.java:170)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotIgnoreAfterRemove(BlobIdTrackerTest.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotExecuteAfterRemove
+java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:192)
+	at com.google.common.collect.Iterables.transform(Iterables.java:705)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.globalMerge(BlobIdTracker.java:229)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.get(BlobIdTracker.java:197)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.retrieve(BlobIdTrackerTest.java:265)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotRemove(BlobIdTrackerTest.java:170)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotExecuteAfterRemove(BlobIdTrackerTest.java:152)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotRetrieveIgnored
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.externalAddOffline
+java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:192)
+	at com.google.common.collect.Iterables.transform(Iterables.java:705)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.globalMerge(BlobIdTracker.java:229)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.get(BlobIdTracker.java:197)
+	at org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.externalAddOffline(BlobIdTrackerTest.java:238)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.AbstractBlobTrackerRegistrationTest.registerBlobTrackingStore
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.AbstractBlobTrackerRegistrationTest.reRegisterBlobTrackingStore
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializerTest.blobs
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializerTest.errorBlob
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializerTest.blobStoreBlob
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializerTest.inMemoryBlob
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.invalidate
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.zeroCache
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getIfPresentNoCache
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getNoCache
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getIfPresentObjectNoCache
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.addCacheFull
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.invalidateStaging
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getIfPresentStaged
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getStaged
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getLoad
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.concurrentAddGet
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.add
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetAllIdentifiers
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testZeroCache
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testDefaultStatsProvider
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testAdd
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testAddUploadException
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetNoAdd
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetAllIdentifiersNoAdd
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testInvalidateNoAdd
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testPutMoveFileError
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetAddDifferent
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testCacheFullAdd
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testInvalidate
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentSameAdd
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentDifferentAdd
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentGetDelete
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentPutDeleteSame
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentPutDeleteDifferent
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testBuild
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testBuildMoreThanCacheSize
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testUpgrade
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testAddMetadata
+java.lang.NullPointerException
+	at org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testAddMetadata(SharedDataStoreUtilsTest.java:166)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testGetAllChunkIds
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testStreamFromGetAllRecords
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testGetRecordForId
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testGetAllRecords
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.test
+java.lang.NullPointerException
+	at org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.test(SharedDataStoreUtilsTest.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.migration.AbstractMigratorTest.blobsExistsOnTheNewBlobStore
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.migration.AbstractMigratorTest.blobsCanBeReadAfterSwitchingBlobStore
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.BlobStoreStatsTest.upload
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.BlobStoreStatsTest.download
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.AbstractBlobGCRegistrationTest.testBlobGcRegistered
+java.lang.InstantiationException
+	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.washington.cs.dt.util.JUnitTestRunner$3.runReflectiveCall(JUnitTestRunner.java:215)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at edu.washington.cs.dt.util.JUnitTestRunner.methodBlock(JUnitTestRunner.java:218)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.upgrade
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:252)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.zeroCache
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.getIfPresentObjectNoCache
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.getDifferentConcurrent
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.retrievePutConcurrent
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.evictReplace
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.getInvalidateConcurrent
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.rebuild
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.evictExplicit
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.retrieveSameConcurrent
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.evictImplicit
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.add
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.put
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gcCheckpointHeldMaxAgeChange
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gcCheckpointHeld
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gcCheckpointHeldNoAddition
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.noGc
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gcCheckDeletedSize
+Test being executed: org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gc
+Total execution time: 56609581938
+
+Pass: 161, Fail: 0, Error: 24, Skipped: 0, Ignored: 0
+{org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binaryNotSyncedAndBinariesSynced=20745182, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testCloseStream=3612601, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.nullString=10090351, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.zeroCache=7019687, org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializerTest.errorBlob=4622323, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotExecuteAfterRemove=12382846, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.getDifferentConcurrent=10098727, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testInvalidate=9706308, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testSmall=27608407, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.noPath=10147847, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.addCacheFull=16874620, org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testSingleThread=160312114, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetAllIdentifiersNoAdd=3069164, org.apache.jackrabbit.oak.plugins.blob.BlobStoreStatsTest.download=718091, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testStreamFromGetAllRecords=24653768, org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializerTest.blobStoreBlob=1041731, org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecordTest.testGetInstance=477538, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.put=5883152, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testUpdateLastModifiedOnAccess=169169, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.delete=35540830, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getNoCache=9257712, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.downloadCallback=19317722, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getStaged=14461683, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeDelPendingFileFalse=22348900, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.add=6885291, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.addDelete=49733979, org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializerTest.blobs=7482768, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotRetrieve=748270020, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testEmptyIdentifier=3370185, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshotRemove=8820692, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.configCachingFileDataStore=4184024, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.retrieveSameConcurrent=31392676, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveShared=26812638, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testGarbageCollection=3261508, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetAllIdentifiers=11122903, org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers=4527522, org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gcCheckpointHeldMaxAgeChange=30628162, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoDownloads=142883637, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testGetAllRecords=16584976, org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gcCheckDeletedSize=21244781, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testReference=423395, org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testMultiThreaded=199864560, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.test=2933399, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testGetRecordForId=25598009, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoUploadMap=10454881, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotAdd=724795518, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testIllegalIdentifier3=4193189, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testMultiThreaded=367223, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcileExtraElements=4605973, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.addCloseRestart=3990840, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testBuildMoreThanCacheSize=49209062, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addCloseRestart=766135210, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.addStagingAndDelete=1049207529, org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gc=9674344, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.emptyString=119517090, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.registerAndCheckReferenceKey=5270903, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcile=5271926, org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiersRelative1=4747301, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testAddUploadException=11853590, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.getRecordNotAvailable=30712095, org.apache.jackrabbit.oak.plugins.blob.BlobStoreStatsTest.upload=1118387, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.multiplePropertiesAndBinarySynced=24301191, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testInlineBinary=27977824, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.list=35495547, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testAddMetadata=6241738, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcileNone=5281608, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.reference=60571612, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.evictImplicit=19137978, org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gc=13999888, org.apache.jackrabbit.oak.plugins.blob.AbstractBlobTrackerRegistrationTest.reRegisterBlobTrackingStore=180714, org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.noGc=123161872, org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testGetAllIdentifiers=17407187, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getLoad=7074923, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcileAll=4693246, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.getIfPresentObjectNoCache=3814055, org.apache.jackrabbit.oak.plugins.blob.AbstractBlobTrackerRegistrationTest.registerBlobTrackingStore=170337, org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gcCheckpointHeld=13572232, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveCluster=19448117, org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testDeleteAllOlderThan=4837821, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.evictReplace=17201688, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testSingleThread=232676, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testLarge=11737357, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshot=1143566818, org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.noGc=8750484, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binarySyncedAndBinariesNotSynced=19550767, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.zeroStagingCacheAddGetDelete=34420060, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testEncodedBlobId=3086944, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testGetAllChunks=39501173, org.apache.jackrabbit.oak.plugins.blob.migration.AbstractMigratorTest.blobsCanBeReadAfterSwitchingBlobStore=112051, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getIfPresentNoCache=5455140, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.upgrade=11697848, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testUpgrade=5113107810, org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializerTest.inMemoryBlob=2186406, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentSameAdd=10011958, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.add=10293421, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testDeleteRecord=308048, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.exists=10262447, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotRemove=905859067, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testGetRecord=263131, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.configFileDataStore=2029098, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.getAllIdentifiers=105028993, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentPutDeleteSame=10659760, org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gcCheckpointHeldNoAddition=10286901, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.lazyLoadStream=62061363, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.deleteCount=34901056, org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testDeleteRecord=31603113, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgrade=17854474, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotRetrieveIgnored=26909774, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.invalidateStaging=17814256, org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testGetRecord=88789484, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.zeroCacheAddGetDelete=43911782, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testDefaultStatsProvider=5006353022, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.rebuild=30290935, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testAddRecord=175476, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetNoAdd=3205956, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.bulkAddConcurrentCompact=76151879, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoDownloadsDelPendingFileFalse=12896361, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.syncAddGetDelete=33127746, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testAdd=9621350, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.invalidate=14621022, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.filterWithNoActiveDeletion=2949877, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.referenceNoCache=51879119, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binaryPropSingle=22387124, org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.assertReferenceKey=187662710, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getIfPresentStaged=15175136, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binariesPropertyMultiple=77021494, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentDifferentAdd=32487337, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.filter=3838775, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testIllegalIdentifier=3374890, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.concurrentAddGet=13083555, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.zeroCache=4786872, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testCacheFullAdd=11697011, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addBulkAdd=13742753, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.multipleBinaryPropsAllSynced=26987617, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeMoveDownloadsFalse=15899656, org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testNoOpMap=267844, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentGetDelete=9765485, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.testPropertySetup=4868739, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testGetAllChunkIds=35502480, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.externalAddOffline=14571592, org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiersRelative2=7273282, org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testAddRecord=89632173, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotAddSnapshot=1028676075, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.mbeanRegs=201953867, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotIgnoreAfterRemove=10818961, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshot=9961075, org.apache.jackrabbit.oak.plugins.blob.migration.AbstractMigratorTest.blobsExistsOnTheNewBlobStore=133322, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testMedium=16613251, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.syncAddGetLoadCache=33255599, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.uploadCallback=21752254, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoUploads=21584026, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testZeroCache=4526191, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.differentPaths=133747704, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.noFilter=6204857, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testExternalBinary=8373734, org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testReference=19612150, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binariesPropertyNotAllSynced=19107682, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testBuild=5122139183, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.track=5720237, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testExceptionWhileReading=3142769, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testWriteFile=240507385, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testInvalidateNoAdd=3147877, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.filterWithExtraElements=4620975, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testReference=4632830, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getIfPresentObjectNoCache=6488117, org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.testUpdateLastModifiedOnAccess=5476488, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testAddOnTrackError=15972735, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentPutDeleteDifferent=8835591, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testGetAllIdentifiers=279600, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testDeleteAllOlderThan=264479, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addRestart=7747827878, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetAddDifferent=8508713, org.apache.jackrabbit.oak.plugins.blob.AbstractBlobGCRegistrationTest.testBlobGcRegistered=195924, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.snapshotConcurrentRemove=7905981634, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testPutMoveFileError=5222423, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addConcurrentSnapshot=6572065366, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testCombinedIdentifier=3231977, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotConcurrentRetrieve=7535102579, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.multipleBinaryPropsNotAllSynced=23337358, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testIllegalIdentifier2=4179695, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.retrievePutConcurrent=41086916, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binaryAndBinariesSynced=42100059, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.getInvalidateConcurrent=52396647, org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gcCheckDeletedSize=9149672, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.evictExplicit=18081731}
+

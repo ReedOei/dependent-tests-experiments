@@ -1,0 +1,10 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobId : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobId : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getRecordFromReference : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.deleteAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.setBlobStatsCollector : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.oak.spi.blob.stats.BlobStatsCollector stats> = r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.countDeleteChunks : $r8 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.countDeleteChunks : i6 = 0
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getAllMetadataRecords : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getAllMetadataRecords : return null

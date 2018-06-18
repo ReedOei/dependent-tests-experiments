@@ -1,0 +1,8 @@
+org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializer.serialize : if r2 == null goto $r3 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializer: java.lang.String encode(org.apache.jackrabbit.oak.api.Blob)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializer.serialize : return r2
+org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializer.serialize : r2 = interfaceinvoke r1.<org.apache.jackrabbit.oak.api.Blob: java.lang.String getContentIdentity()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob.length : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob: org.apache.jackrabbit.oak.spi.blob.BlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob.getContentIdentity : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob: java.lang.String blobId>
+org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializer.deserialize : $r2 = new org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob
+org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializer.deserialize : $z0 = virtualinvoke r1.<java.lang.String: boolean startsWith(java.lang.String)>("0y")
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob.getNewStream : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob: org.apache.jackrabbit.oak.spi.blob.BlobStore blobStore>

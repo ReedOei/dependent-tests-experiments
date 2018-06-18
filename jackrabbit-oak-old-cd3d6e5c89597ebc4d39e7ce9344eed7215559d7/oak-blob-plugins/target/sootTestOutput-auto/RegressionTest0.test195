@@ -1,0 +1,6 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.setMaxCachedBinarySize : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: int maxCachedBinarySize> = i0
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : l0 = staticinvoke <java.lang.System: long nanoTime()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r2 = new org.apache.jackrabbit.oak.spi.blob.BlobOptions
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : z1 = 1
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : throw $r14

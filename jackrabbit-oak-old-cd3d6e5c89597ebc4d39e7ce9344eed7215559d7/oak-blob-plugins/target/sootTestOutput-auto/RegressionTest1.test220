@@ -1,0 +1,4 @@
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : $r3 = new org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : z3 = 1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.collectGarbage : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: void markAndSweep(boolean,boolean)>(z0, 0)
+org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore.getCloudProvider : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore: java.lang.String cloudProvider>

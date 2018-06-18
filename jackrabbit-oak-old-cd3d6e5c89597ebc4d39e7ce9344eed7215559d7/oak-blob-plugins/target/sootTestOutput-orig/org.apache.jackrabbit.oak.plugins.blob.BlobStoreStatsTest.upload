@@ -1,0 +1,12 @@
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.getTimeSeries : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats: org.apache.jackrabbit.oak.stats.StatisticsProvider statisticsProvider>
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.uploadCompleted : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats: org.slf4j.Logger opsLogger>
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.uploadCompleted : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats: org.apache.jackrabbit.oak.stats.MeterStats uploadCount>
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.getUploadTotalSize : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats: org.apache.jackrabbit.oak.stats.MeterStats uploadSizeSeries>
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.uploaded : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats: org.apache.jackrabbit.oak.stats.MeterStats uploadSizeSeries>
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.uploaded : $r6 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats: org.slf4j.Logger opsLogger>
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.uploaded : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats: org.apache.jackrabbit.oak.stats.MeterStats uploadTimeSeries>
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.uploaded : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats: org.apache.jackrabbit.oak.stats.HistogramStats uploadHisto>
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.getUploadTotalSeconds : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats: java.util.concurrent.TimeUnit recordedTimeUnit>
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.getUploadCount : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats: org.apache.jackrabbit.oak.stats.MeterStats uploadCount>
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.getAvgTimeSeries : $r6 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats: org.apache.jackrabbit.api.stats.TimeSeries getTimeSeries(java.lang.String)>(r2)
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreStats.getAvgTimeSeries : $r3 = new org.apache.jackrabbit.stats.TimeSeriesAverage

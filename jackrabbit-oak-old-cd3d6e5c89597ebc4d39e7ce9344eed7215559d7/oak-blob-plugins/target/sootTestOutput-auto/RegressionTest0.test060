@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.isInstance : $z0 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("0x")

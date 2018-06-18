@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addRecord : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>

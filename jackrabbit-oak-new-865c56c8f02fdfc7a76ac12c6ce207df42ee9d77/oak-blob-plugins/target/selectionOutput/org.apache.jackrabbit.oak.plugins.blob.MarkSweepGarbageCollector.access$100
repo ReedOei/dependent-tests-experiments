@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.access$100 : $i0 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: int getBatchCount()>() >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.access$100 : return $i0

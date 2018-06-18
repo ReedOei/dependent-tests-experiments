@@ -1,0 +1,3 @@
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.getBlobMigrationStatus : $r10 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration: org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigrator migrator>
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.getBlobMigrationStatus : $r2 = new java.util.HashMap
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.getBlobMigrationStatus : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration: org.apache.jackrabbit.oak.commons.jmx.ManagementOperation migrationOp>

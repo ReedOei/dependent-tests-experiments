@@ -1,0 +1,17 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.isEncoded : $z0 = virtualinvoke r0.<java.lang.String: boolean contains(java.lang.CharSequence)>("#")
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : interfaceinvoke r2.<org.apache.jackrabbit.core.data.DataStore: void init(java.lang.String)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r8 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils: java.util.Map getConfig()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r0 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils: java.lang.String getHomeDir()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r3 = class "Lorg/apache/jackrabbit/oak/plugins/blob/datastore/OakFileDataStore;"
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r9 = new org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r5 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.hasLengthInfo : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: long length>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getHomeDir : $r0 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $r3 = staticinvoke <java.lang.System: java.util.Properties getProperties()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $r7 = interfaceinvoke r2.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $z1 = virtualinvoke r10.<java.lang.String: boolean startsWith(java.lang.String)>("ds.")
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $z2 = virtualinvoke r10.<java.lang.String: boolean startsWith(java.lang.String)>("bs.")
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : r0 = staticinvoke <com.google.common.collect.Maps: java.util.HashMap newHashMap()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $r6 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.encodedValue : $z0 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: boolean hasLengthInfo()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.encodedValue : $r2 = new java.lang.StringBuilder

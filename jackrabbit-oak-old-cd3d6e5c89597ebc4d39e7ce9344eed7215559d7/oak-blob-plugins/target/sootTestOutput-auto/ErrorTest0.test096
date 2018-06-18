@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.getStats : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCache cache>

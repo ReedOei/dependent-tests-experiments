@@ -1,0 +1,4 @@
+org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore.init : $r19 = <org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore.init : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore: java.lang.String cloudProvider>
+org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore.init : throw $r18
+org.apache.jackrabbit.oak.plugins.blob.CachingBlobStore.getCacheStats : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.CachingBlobStore: org.apache.jackrabbit.oak.cache.CacheStats cacheStats>

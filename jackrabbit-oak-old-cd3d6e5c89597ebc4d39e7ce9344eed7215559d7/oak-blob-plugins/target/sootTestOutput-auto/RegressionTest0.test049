@@ -1,0 +1,3 @@
+org.apache.jackrabbit.oak.plugins.blob.migration.DepthFirstNodeIterator.reset : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.DepthFirstNodeIterator: java.util.Deque nameQueue>
+org.apache.jackrabbit.oak.plugins.blob.migration.DepthFirstNodeIterator.reset : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.DepthFirstNodeIterator: java.util.Deque itQueue>
+org.apache.jackrabbit.oak.plugins.blob.migration.DepthFirstNodeIterator.reset : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.DepthFirstNodeIterator: java.util.Deque itQueue>

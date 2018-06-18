@@ -1,0 +1,8 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.updateModifiedDateOnAccess : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : virtualinvoke $r6.<java.io.File: boolean mkdirs()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r4 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r8 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addMetadataRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addMetadataRecord : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>

@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest$1.createBackend : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest$1: org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestMemoryBackend val$testBackend> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest$1.createBackend : return $r1

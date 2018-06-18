@@ -1,0 +1,12 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getAllMetadataRecords : return null
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.close : $r1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getGarbage()>()
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.close : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File home>
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.getGarbage : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File garbage>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.checkConsistency : $b3 = l4 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.checkConsistency : $r7 = new org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobIdRetriever
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.checkConsistency : $r4 = new org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.checkConsistency : z2 = 1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.checkConsistency : l4 = 0L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.checkConsistency : $r8 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: java.util.concurrent.Executor executor>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.checkConsistency : $r6 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>

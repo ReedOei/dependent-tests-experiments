@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.BlobGC$1.call : $r1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGC$1: java.lang.String call()>() >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.BlobGC$1.call : return $r1

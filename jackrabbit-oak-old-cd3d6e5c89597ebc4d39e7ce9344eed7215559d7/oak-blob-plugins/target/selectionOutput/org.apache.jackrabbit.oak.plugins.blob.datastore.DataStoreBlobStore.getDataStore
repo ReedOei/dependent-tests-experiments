@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataStore : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataStore : return $r1

@@ -1,0 +1,11 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : r20 = newarray (byte)[i14]
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $r1 = "0x"
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $r1 = new org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : i13 = virtualinvoke r18.<java.lang.String: int length()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $i0 = lengthof r0
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : goto [?= $r2 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord getInstance(byte[])>(r20)]
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $z0 = <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: boolean $assertionsDisabled>
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $i2 = 2 * i15
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : i14 = i13 / 2
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $r2 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord getInstance(byte[])>(r20)
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : i15 = 0

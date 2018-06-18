@@ -1,0 +1,226 @@
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.stage : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: com.google.common.util.concurrent.ListeningExecutorService executor>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.stage : $r7 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.stage : return r3
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.stage : $r6 = new org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.stage : r3 = staticinvoke <com.google.common.util.concurrent.SettableFuture: com.google.common.util.concurrent.SettableFuture create()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.stage : goto [?= return r3]
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.assertFile : $z0 = virtualinvoke r1.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.assertFile : $r4 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest: java.io.InputStream randomStream(int,int)>(i0, 4096)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.assertFile : $z1 = staticinvoke <org.apache.commons.io.FileUtils: boolean contentEquals(java.io.File,java.io.File)>(r3, r1)
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.submit : return r2
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.submit : r2 = specialinvoke r0.<com.google.common.util.concurrent.AbstractListeningExecutorService: com.google.common.util.concurrent.ListenableFuture submit(java.util.concurrent.Callable)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.submit : $r4 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.submit : $r6 = new org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor$TestFutureCallback
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.submit : $r3 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.submit : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor: java.util.List futures>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.submit : $r8 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.startUpLoaderTimer : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.TimerStats uploadTimer>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor$TestFutureCallback.onSuccess : $r3 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor$TestFutureCallback.onSuccess : $r6 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor$TestFutureCallback.onSuccess : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor$TestFutureCallback.onSuccess : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor$TestFutureCallback: java.util.concurrent.CountDownLatch latch>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getLoadSuccessCount : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.MeterStats loadSuccessMeter>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.afterExecute : $r4 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.afterExecute : $r7 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.afterExecute : specialinvoke r0.<java.util.concurrent.ThreadPoolExecutor: void afterExecute(java.lang.Runnable,java.lang.Throwable)>(r1, r2)
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.afterExecute : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor: java.util.concurrent.CountDownLatch afterLatch>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.afterExecute : $r6 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.afterExecute : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.waitFinish : r2 = staticinvoke <com.google.common.util.concurrent.Futures: com.google.common.util.concurrent.ListenableFuture successfulAsList(java.lang.Iterable)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.waitFinish : interfaceinvoke r11.<java.util.concurrent.ScheduledFuture: java.lang.Object get()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.waitFinish : interfaceinvoke r2.<com.google.common.util.concurrent.ListenableFuture: java.lang.Object get()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.waitFinish : $r8 = <java.util.concurrent.TimeUnit: java.util.concurrent.TimeUnit MILLISECONDS>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.waitFinish : $r6 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest: java.util.concurrent.ScheduledExecutorService removeExecutor>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.waitFinish : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : if r0 == null goto return
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r9 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.deleteInternal : $r3 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.deleteInternal : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.io.File uploadCacheSpace>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.deleteInternal : $r5 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.deleteInternal : $r6 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.util.concurrent.atomic.AtomicLong currentSize>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.deleteInternal : $r10 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.deleteInternal : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.deleteInternal : $r9 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.deleteInternal : l0 = virtualinvoke r2.<java.io.File: long length()>()
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader.write : $r5 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader.write : staticinvoke <com.google.common.io.Files: void copy(java.io.File,java.io.File)>(r2, r8)
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader.write : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader: java.io.File root>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader.write : $r7 = new org.apache.jackrabbit.core.data.DataStoreException
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader.write : $r4 = virtualinvoke r8.<java.io.File: java.io.File getParentFile()>()
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader.write : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.markHit : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.MeterStats hitMeter>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.assertFuture : specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest: void waitFinish(java.util.List)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.assertFuture : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest: org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader uploader>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.assertFuture : i3 = 0
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.assertFuture : $i2 = r2[i3]
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.access$400 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.util.concurrent.ConcurrentMap attic>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.close : $r10 = new org.apache.jackrabbit.oak.commons.concurrent.ExecutorCloser
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.close : $r14 = new org.apache.jackrabbit.oak.commons.concurrent.ExecutorCloser
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.close : $r5 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.close : $r2 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.close : $r8 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.close : $r12 = new org.apache.jackrabbit.oak.commons.concurrent.ExecutorCloser
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.access$800 : specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: void remove()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getStatName : $r2 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.decrementCount : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.CounterStats countMeter>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $z1 = virtualinvoke r6.<java.io.File: boolean equals(java.lang.Object)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $r1 = virtualinvoke r6.<java.io.File: java.lang.String[] list()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $r2 = virtualinvoke r6.<java.io.File: java.lang.String[] list()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $r5 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : if r6 == null goto return
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $r3 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : r6 = virtualinvoke r6.<java.io.File: java.io.File getParentFile()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $z0 = virtualinvoke r6.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : staticinvoke <org.apache.commons.io.FileUtils: void forceDelete(java.io.File)>(r6)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$4.call : $r11 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger access$300()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$4.call : $r1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$4: java.lang.Integer call()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$4.call : interfaceinvoke r12.<org.apache.jackrabbit.oak.stats.TimerStats$Context: long stop()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$4.call : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$4: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache this$0>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$4.call : $r9 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(1)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$4.call : throw $r10
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$4.call : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$4: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache this$0>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$4.call : $r7 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger access$300()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : $r16 = staticinvoke <java.util.concurrent.Executors: java.util.concurrent.ScheduledExecutorService newSingleThreadScheduledExecutor()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : $r28 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest: com.google.common.io.Closer closer>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : $r25 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest: java.io.File root>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : $r6 = new java.util.concurrent.CountDownLatch
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : $r5 = new java.util.concurrent.CountDownLatch
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : r3 = staticinvoke <java.util.concurrent.Executors: java.util.concurrent.ScheduledExecutorService newSingleThreadScheduledExecutor()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : $r4 = new java.util.concurrent.CountDownLatch
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : $r20 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest: com.google.common.io.Closer closer>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : $r13 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest: com.google.common.io.Closer closer>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest: org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader uploader> = r1
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : $r15 = new org.apache.jackrabbit.oak.stats.DefaultStatisticsProvider
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : $r7 = new org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.init : $r1 = new org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : virtualinvoke $r6.<java.io.File: boolean mkdirs()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r4 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r8 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.getFile : $r4 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.getFile : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.getFile : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor$TestFutureCallback.onFailure : $r3 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor$TestFutureCallback.onFailure : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor$TestFutureCallback: java.util.concurrent.CountDownLatch latch>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getHitCount : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.MeterStats hitMeter>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.incrementCount : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.CounterStats countMeter>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.copyToFile : staticinvoke <org.apache.commons.io.FileUtils: void copyInputStreamToFile(java.io.InputStream,java.io.File)>(r0, r1)
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.copyToFile : return r1
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$1.weigh : $i0 = staticinvoke <org.apache.jackrabbit.oak.commons.StringUtils: int estimateMemoryUsage(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$1.weigh : $r4 = (java.lang.String) r1
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$1.weigh : $r3 = virtualinvoke r2.<java.io.File: java.lang.String getAbsolutePath()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$3.apply : $r2 = (java.io.File) r1
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$3.apply : $z0 = virtualinvoke r1.<java.io.File: boolean isFile()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getMissCount : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.MeterStats requestMeter>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.isShutdown : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor: java.util.concurrent.ExecutorService delegate>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.beforeExecute : $r4 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.beforeExecute : $r7 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.beforeExecute : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor: java.util.concurrent.CountDownLatch beforeLatch>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.beforeExecute : $r9 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.beforeExecute : $r6 = <org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.beforeExecute : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestPoolExecutor.beforeExecute : specialinvoke r0.<java.util.concurrent.ThreadPoolExecutor: void beforeExecute(java.lang.Thread,java.lang.Runnable)>(r1, r2)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.access$300 : $r0 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : $r6 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : i0 = 0
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : $b4 = l1 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : staticinvoke <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: void movePendingUploadsToStaging(java.io.File,java.io.File,boolean)>(r1, r2, 1)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : $r8 = new org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : $r7 = staticinvoke <com.google.common.io.Files: com.google.common.collect.TreeTraverser fileTreeTraverser()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : r3 = virtualinvoke $r11.<com.google.common.collect.FluentIterable: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : $r11 = virtualinvoke $r9.<com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable filter(com.google.common.base.Predicate)>($r10)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : $r12 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getElementCount : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.CounterStats countMeter>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.shutdown : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor: java.util.concurrent.ExecutorService delegate>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$RemoveJob.run : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$RemoveJob: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache this$0>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getRequestCount : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.MeterStats requestMeter>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.awaitTermination : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor: java.util.concurrent.ExecutorService delegate>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.shutdownNow : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor: java.util.concurrent.ExecutorService delegate>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.randomStream : $r2 = new java.util.Random
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.randomStream : virtualinvoke $r2.<java.util.Random: void nextBytes(byte[])>(r1)
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.randomStream : r1 = newarray (byte)[i1]
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.randomStream : $r3 = new java.io.ByteArrayInputStream
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.estimateCurrentWeight : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.CounterStats currentSizeMeter>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.incrementMemSize : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.CounterStats currentMemSizeMeter>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.getStats : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5.onSuccess : $r11 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache this$0>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5.onSuccess : $r17 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5: com.google.common.util.concurrent.SettableFuture val$result>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5.onSuccess : $r6 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache this$0>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5.onSuccess : goto [?= $r17 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5: com.google.common.util.concurrent.SettableFuture val$result>]
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5.onSuccess : $r2 = (java.lang.Integer) r1
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5.onSuccess : $r3 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger access$300()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5.onSuccess : $r13 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache this$0>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.decrementMemSize : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.CounterStats currentMemSizeMeter>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.access$200 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.StagingUploader uploader>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.access$600 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.util.concurrent.ConcurrentMap map>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.assertCacheStats : $r2 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheStatsMBean getStats()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.assertCacheStats : $r4 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheStatsMBean getStats()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.assertCacheStats : $r3 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheStatsMBean getStats()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.assertCacheStats : $r1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheStatsMBean getStats()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getMaxTotalWeight : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long maxWeight>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : interfaceinvoke r1.<java.util.Iterator: void remove()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : goto [?= (branch)]
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.util.concurrent.ConcurrentMap attic>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : $r13 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : $r8 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : i0 = i0 + 1
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : $r3 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : i0 = 0
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : $r6 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : $r9 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.util.concurrent.ConcurrentMap map>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: void deleteInternal(java.lang.String,java.io.File)>(r2, r16)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : $r11 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.util.concurrent.ConcurrentMap attic>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : $r10 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()", "org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.remove")]
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getMissRate : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.MeterStats requestMeter>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getMissRate : l0 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long getMissCount()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getMissRate : $b2 = l1 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.markRequest : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.MeterStats requestMeter>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.put : $r5 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest: java.io.InputStream randomStream(int,int)>(0, 4096)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.put : return r4
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.put : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest: org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache stagingCache>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.put : r4 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayList()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.put : $r8 = virtualinvoke r3.<com.google.common.base.Optional: java.lang.Object get()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.put : $z0 = virtualinvoke r3.<com.google.common.base.Optional: boolean isPresent()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.estimateCurrentMemoryWeight : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.CounterStats currentMemSizeMeter>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : $r15 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : $z4 = virtualinvoke r3.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : $r12 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.util.concurrent.ConcurrentMap map>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : $r6 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.util.concurrent.atomic.AtomicLong currentSize>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : $r21 = <org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.io.File uploadCacheSpace>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : $r16 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : l0 = virtualinvoke r2.<java.io.File: long length()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : $r18 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : if z0 == 0 goto $r6 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.util.concurrent.atomic.AtomicLong currentSize>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : $r11 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: java.util.concurrent.ConcurrentMap attic>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : $r14 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.putOptionalDisregardingSize : staticinvoke <org.apache.commons.io.FileUtils: void moveFile(java.io.File,java.io.File)>(r2, r3)
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader.read : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestStagingUploader: java.io.File root>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getLoadCount : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.MeterStats loadMeter>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.incrementSize : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.CounterStats currentSizeMeter>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.put : $r3 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: com.google.common.base.Optional putOptionalDisregardingSize(java.lang.String,java.io.File,boolean)>(r1, r2, 0)
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getHitRate : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.MeterStats hitMeter>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getHitRate : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.MeterStats requestMeter>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getHitRate : $b2 = l1 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.decrementSize : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.CounterStats currentSizeMeter>
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $d0 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: double getHitRate()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $l0 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long getRequestCount()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $l5 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long getElementCount()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $l7 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long estimateCurrentWeight()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $l8 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long getMaxTotalWeight()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $l6 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long estimateCurrentMemoryWeight()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $l4 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long getLoadSuccessCount()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $d1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: double getMissRate()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $l1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long getHitCount()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $l3 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long getLoadCount()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $r1 = staticinvoke <com.google.common.base.Objects: com.google.common.base.Objects$ToStringHelper toStringHelper(java.lang.String)>("StagingCacheStats")
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $l2 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long getMissCount()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.cacheInfoAsString : $r21 = virtualinvoke $r20.<com.google.common.base.Objects$ToStringHelper: java.lang.String toString()>()
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.access$100 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.access$500 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.FileCache downloadCache>
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor.execute : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest$TestExecutor: java.util.concurrent.ExecutorService delegate>

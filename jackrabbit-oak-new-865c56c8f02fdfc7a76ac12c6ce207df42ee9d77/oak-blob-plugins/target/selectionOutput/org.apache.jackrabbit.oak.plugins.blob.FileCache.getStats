@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.FileCache.getStats : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.FileCache: org.apache.jackrabbit.oak.plugins.blob.FileCacheStats cacheStats> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.FileCache.getStats : return $r1

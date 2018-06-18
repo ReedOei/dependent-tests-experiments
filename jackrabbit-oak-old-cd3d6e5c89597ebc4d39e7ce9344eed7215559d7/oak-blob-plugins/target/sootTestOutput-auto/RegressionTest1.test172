@@ -1,0 +1,3 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getRecordFromReference : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.deleteMetadataRecord : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.setMaxCachedBinarySize : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: int maxCachedBinarySize> = i0

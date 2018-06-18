@@ -1,0 +1,91 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("if i3 >= i0 goto (branch)", "org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream")]
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : i3 = i3 + i5
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : i4 = i4 - i5
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : if i3 >= i0 goto $r5 = new java.io.SequenceInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : if i5 >= 0 goto i3 = i3 + i5
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : $r5 = new java.io.SequenceInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : r8 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataRecord addRecord(java.io.InputStream,org.apache.jackrabbit.oak.spi.blob.BlobOptions)>($r5, r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : return r8
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : i5 = virtualinvoke r7.<java.io.InputStream: int read(byte[],int,int)>(r2, i3, i4)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : r2 = newarray (byte)[i0]
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : i3 = 0
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : if i3 >= i0 goto (branch)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getStream : $z0 = r8 instanceof java.io.BufferedInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getStream : $r2 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataRecord getDataRecord(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getStream : $r5 = new java.io.BufferedInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getStream : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.oak.spi.blob.stats.BlobStatsCollector stats>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.of : $r1 = new org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.access$000 : $r0 = <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobLength : $z1 = virtualinvoke r7.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: boolean hasLengthInfo()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobLength : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: boolean encodeLengthInId>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobLength : r7 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId of(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobLength : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r1, "BlobId must be specified")
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobLength : $l1 = r7.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: long length>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.hasLengthInfo : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: long length>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addRecord : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$NoOpMap.put : return null
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob.length : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob: org.apache.jackrabbit.oak.spi.blob.BlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$1.weigh : $i0 = staticinvoke <org.apache.jackrabbit.oak.commons.StringUtils: int estimateMemoryUsage(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$1.weigh : $r4 = (java.lang.String) r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$1.weigh : $i5 = (int) l6
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$1.weigh : $b4 = l6 cmp 2147483647L
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.isInstance : $z0 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("0x")
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.serialize : r16 = interfaceinvoke r1.<org.apache.jackrabbit.oak.api.Blob: java.io.InputStream getNewStream()>()
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.serialize : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore dataStore>
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.serialize : if r16 == null goto return r18
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataRecord : return r6
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataRecord : $r4 = newarray (java.lang.Object)[1]
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataRecord : $z0 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: boolean isInstance(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$2.call : z0 = 0
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$2.call : $r1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$2: byte[] call()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$2.call : staticinvoke <com.google.common.io.Closeables: void close(java.io.Closeable,boolean)>(r1, 0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$2.call : return r2
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$2.call : z0 = 1
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$2.call : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$2: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore this$0>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$2.call : r2 = staticinvoke <org.apache.commons.io.IOUtils: byte[] toByteArray(java.io.InputStream)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.close : $r2 = new org.apache.jackrabbit.oak.commons.concurrent.ExecutorCloser
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.close : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore store>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : r3 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataRecord writeStream(java.io.InputStream,org.apache.jackrabbit.oak.spi.blob.BlobOptions)>(r1, r2)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : l0 = staticinvoke <java.lang.System: long nanoTime()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : staticinvoke <com.google.common.io.Closeables: void close(java.io.Closeable,boolean)>(r1, 0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r2 = new org.apache.jackrabbit.oak.spi.blob.BlobOptions
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : z1 = 1
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : z1 = 0
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : r4 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: java.lang.String getBlobId(org.apache.jackrabbit.core.data.DataRecord)>(r3)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobTracker tracker>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r18 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.oak.spi.blob.stats.BlobStatsCollector stats>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r16 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.oak.spi.blob.stats.BlobStatsCollector stats>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobId : $r4 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId of(org.apache.jackrabbit.core.data.DataRecord)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlobId : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: boolean encodeLengthInId>
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.errorBlob : $z0 = virtualinvoke r1.<java.lang.String: boolean startsWith(java.lang.String)>("*ERROR*-")
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$NoOpMap.entrySet : $r1 = staticinvoke <java.util.Collections: java.util.Set emptySet()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob.getContentIdentity : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob: java.lang.String blobId>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getInputStream : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: boolean encodeLengthInId>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getInputStream : $l2 = r2.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: long length>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getInputStream : $r7 = new java.io.ByteArrayInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getInputStream : r2 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId of(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getInputStream : $z1 = virtualinvoke r2.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: boolean hasLengthInfo()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getInputStream : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: com.google.common.cache.LoadingCache cache>
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.deserialize : $r2 = new org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.deserialize : $z0 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer: boolean errorBlob(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.createDataStore : $r5 = new org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.createDataStore : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer: java.io.File dir>
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.createDataStore : virtualinvoke $r2.<org.apache.jackrabbit.core.data.FileDataStore: void init(java.lang.String)>(null)
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.createDataStore : $i0 = r0.<org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer: int maxInlineSize>
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.createDataStore : $r2 = new org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r10 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.File processFile>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r21 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : if z0 == 0 goto $r13 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r20 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.util.List generations>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.File processFile>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r11 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.BufferedWriter writer>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r4 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob.getNewStream : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob: org.apache.jackrabbit.oak.spi.blob.BlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.encodedValue : $z0 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: boolean hasLengthInfo()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.encodedValue : $r2 = new java.lang.StringBuilder

@@ -1,0 +1,3 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.getMinRecordLength : $i0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: int minRecordLength>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setUploadThreads : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int uploadThreads> = i0
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setStagingSplitPercentage : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingSplitPercentage> = i0

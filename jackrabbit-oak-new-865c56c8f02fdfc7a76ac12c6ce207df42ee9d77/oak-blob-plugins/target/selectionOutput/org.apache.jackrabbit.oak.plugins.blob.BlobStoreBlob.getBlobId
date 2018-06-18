@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob.getBlobId : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob: java.lang.String blobId> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob.getBlobId : return $r1

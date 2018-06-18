@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.isLocal : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: boolean local> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.isLocal : return $z0

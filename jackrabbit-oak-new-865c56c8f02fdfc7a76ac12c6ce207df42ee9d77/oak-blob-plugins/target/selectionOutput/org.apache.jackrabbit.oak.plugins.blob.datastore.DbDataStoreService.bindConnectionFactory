@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DbDataStoreService.bindConnectionFactory : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DbDataStoreService: org.apache.jackrabbit.core.util.db.ConnectionFactory connectionFactory> = r1 >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.datastore.DbDataStoreService.bindConnectionFactory : return

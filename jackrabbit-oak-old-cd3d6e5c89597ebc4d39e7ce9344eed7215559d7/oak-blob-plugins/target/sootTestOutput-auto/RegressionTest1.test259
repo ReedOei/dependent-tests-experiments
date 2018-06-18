@@ -1,0 +1,14 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getStream : $r2 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataRecord getDataRecord(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataRecord : $z0 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: boolean isInstance(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataStore : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.of : $r1 = new org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.deleteAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.setBlobStatsCollector : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.oak.spi.blob.stats.BlobStatsCollector stats> = r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getBlockSizeMin : return 0L
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.countDeleteChunks : $r8 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.countDeleteChunks : i6 = 0
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getInputStream : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: boolean encodeLengthInId>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getInputStream : r2 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId of(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.isInstance : $z0 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("0x")
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addMetadataRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>

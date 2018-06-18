@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type.filter : $r1 = staticinvoke <com.google.common.base.Predicates: com.google.common.base.Predicate alwaysTrue()>() >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type.filter : return $r1

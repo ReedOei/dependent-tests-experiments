@@ -1,0 +1,12 @@
+org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore.setCloudProvider : r0.<org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore: java.lang.String cloudProvider> = r1
+org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore.isMarkEnabled : return 0
+org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore.getAccessKey : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore: java.lang.String accessKey>
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.getOrCreateReferenceKey : $r4 = staticinvoke <org.apache.commons.io.FileUtils: byte[] readFileToByteArray(java.io.File)>($r2)
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.getOrCreateReferenceKey : $z0 = virtualinvoke $r2.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.getOrCreateReferenceKey : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.addMetadataRecord : $r5 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.addMetadataRecord : staticinvoke <org.apache.commons.io.IOUtils: long copyLarge(java.io.InputStream,java.io.OutputStream)>(r1, $r7)
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.addMetadataRecord : $r10 = <org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.addMetadataRecord : $r11 = new org.apache.jackrabbit.core.data.DataStoreException
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.addMetadataRecord : $r7 = new java.io.FileOutputStream
+org.apache.jackrabbit.oak.plugins.blob.CachingBlobStore.clearCache : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.CachingBlobStore: org.apache.jackrabbit.oak.cache.CacheLIRS cache>

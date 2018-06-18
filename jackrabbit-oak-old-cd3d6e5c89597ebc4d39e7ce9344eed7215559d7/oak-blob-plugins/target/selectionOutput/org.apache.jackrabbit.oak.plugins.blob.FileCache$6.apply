@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.FileCache$6.apply : $r2 = (java.io.File) r1 >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.FileCache$6.apply : $z0 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.FileCache$6: boolean apply(java.io.File)>($r2)
+org.apache.jackrabbit.oak.plugins.blob.FileCache$6.apply : $z0 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.FileCache$6: boolean apply(java.io.File)>($r2) >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.FileCache$6.apply : return $z0

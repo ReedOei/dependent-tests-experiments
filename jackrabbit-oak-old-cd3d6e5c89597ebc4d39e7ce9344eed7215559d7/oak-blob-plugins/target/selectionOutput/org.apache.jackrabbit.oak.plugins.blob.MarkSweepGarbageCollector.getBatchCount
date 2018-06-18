@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getBatchCount : $i0 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: int batchCount> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getBatchCount : return $i0

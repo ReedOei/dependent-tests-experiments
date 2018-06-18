@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$2.put : $r3 = staticinvoke <com.google.common.base.Optional: com.google.common.base.Optional absent()>() >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$2.put : return $r3

@@ -1,0 +1,247 @@
+<baseline version="1.0.0" vendor="The Apache Software Foundation" vendorURL="http://www.apache.org/" generator="Apache Felix Maven Bundle Plugin" generatorURL="http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html" analyzer="Bnd" analyzerURL="http://www.aqute.biz/Bnd/Bnd" generatedOn="2018-06-07T15:10Z" bundleName="oak-blob-plugins" currentVersion="1.10-SNAPSHOT" previousVersion="1.6.2">
+  <package name="org.apache.jackrabbit.oak.api" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>3.1.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.api.jmx" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>4.4.2</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.cache" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.management" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.namepath" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.osgi" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.plugins.atomic" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.plugins.document.spi" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.plugins.index.counter" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.plugins.index.nodetype" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.plugins.index.property.jmx" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.plugins.itemsave" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.plugins.tree" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>2.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.query.facet" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>1.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.gc" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.mount" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>2.2.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.query" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>2.1.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.authentication" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>1.1.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.authentication.callback" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>1.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.authentication.credentials" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>2.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.authentication.token" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>1.4.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.authorization" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>1.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.authorization.accesscontrol" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>1.4.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.authorization.permission" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>4.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.authorization.restriction" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>1.1.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.principal" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>1.4.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.privilege" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>1.1.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.user" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>2.2.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.user.action" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>1.1.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.security.user.util" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>1.2.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.whiteboard" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.spi.xml" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.stats" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+  <package name="org.apache.jackrabbit.oak.util" delta="removed">
+    <mismatch>false</mismatch>
+    <newerVersion>0.0.0</newerVersion>
+    <olderVersion>0.0.0</olderVersion>
+    <info>Package removed</info>
+    <attributes/>
+  </package>
+</baseline>

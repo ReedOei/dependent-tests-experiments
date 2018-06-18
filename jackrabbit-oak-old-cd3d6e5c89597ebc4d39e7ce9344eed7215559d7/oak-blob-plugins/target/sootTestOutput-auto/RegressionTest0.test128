@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore.getAccessKey : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore: java.lang.String accessKey>
+org.apache.jackrabbit.oak.plugins.blob.CachingBlobStore.clearCache : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.CachingBlobStore: org.apache.jackrabbit.oak.cache.CacheLIRS cache>

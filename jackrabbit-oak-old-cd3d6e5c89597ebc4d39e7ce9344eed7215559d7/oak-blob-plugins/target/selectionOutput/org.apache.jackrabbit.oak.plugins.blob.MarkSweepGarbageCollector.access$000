@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.access$000 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.access$000 : return $r1

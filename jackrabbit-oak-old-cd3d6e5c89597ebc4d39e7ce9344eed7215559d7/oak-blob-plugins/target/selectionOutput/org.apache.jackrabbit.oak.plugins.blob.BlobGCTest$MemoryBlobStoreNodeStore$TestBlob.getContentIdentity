@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore$TestBlob.getContentIdentity : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore$TestBlob: java.lang.String id> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore$TestBlob.getContentIdentity : return $r1

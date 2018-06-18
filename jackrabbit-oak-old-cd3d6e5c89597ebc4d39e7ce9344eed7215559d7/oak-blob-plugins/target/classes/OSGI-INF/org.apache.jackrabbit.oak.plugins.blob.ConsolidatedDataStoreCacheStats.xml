@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats" activate="activate" deactivate="deactivate">
+    <reference name="cachingDataStore" interface="org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore" cardinality="1..1" policy="static" bind="bindCachingDataStore" unbind="unbindCachingDataStore"/>
+    <reference name="nodeStore" interface="org.apache.jackrabbit.oak.spi.state.NodeStore" cardinality="1..1" policy="static" bind="bindNodeStore" unbind="unbindNodeStore"/>
+    <implementation class="org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats"/>
+</scr:component>

@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer$ErrorBlob.getContentIdentity : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer$ErrorBlob: java.lang.String id> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer$ErrorBlob.getContentIdentity : return $r1

@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.getGarbage : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File garbage> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.getGarbage : return $r1

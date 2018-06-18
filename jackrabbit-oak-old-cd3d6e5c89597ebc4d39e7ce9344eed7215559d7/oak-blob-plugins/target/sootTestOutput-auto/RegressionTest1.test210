@@ -1,0 +1,6 @@
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setCacheSize : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: long cacheSize> = l0
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setStagingRetryInterval : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingRetryInterval> = i0
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.getMinRecordLength : $i0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: int minRecordLength>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setUploadThreads : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int uploadThreads> = i0
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setStagingSplitPercentage : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingSplitPercentage> = i0
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.getRecordForId : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: org.apache.jackrabbit.oak.spi.blob.AbstractSharedBackend backend>

@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.FileCache.access$600 : $i0 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.FileCache: int build()>() >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.FileCache.access$600 : return $i0

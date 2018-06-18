@@ -1,0 +1,9 @@
+org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore.getCloudProvider : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore: java.lang.String cloudProvider>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.deleteAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.countDeleteChunks : $r8 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.countDeleteChunks : i6 = 0
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getAllMetadataRecords : return null
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addRecord : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addMetadataRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>

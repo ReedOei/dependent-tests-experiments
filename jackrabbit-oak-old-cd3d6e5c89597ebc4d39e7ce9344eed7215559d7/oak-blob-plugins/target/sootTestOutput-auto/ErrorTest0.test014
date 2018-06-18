@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.deleteAllMetadataRecords : $r5 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$NoOpMap.entrySet : $r1 = staticinvoke <java.util.Collections: java.util.Set emptySet()>()

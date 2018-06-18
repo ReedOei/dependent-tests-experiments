@@ -1,0 +1,5 @@
+org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore.getSecretKey : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.cloud.CloudBlobStore: java.lang.String secretKey>
+org.apache.jackrabbit.oak.plugins.blob.CachingBlobStore.getCacheStats : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.CachingBlobStore: org.apache.jackrabbit.oak.cache.CacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.FileCache$CacheBuildJob.call : $r7 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getCacheStats : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.oak.cache.CacheStats cacheStats>
+org.apache.jackrabbit.oak.plugins.blob.CachingBlobStore.clearCache : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.CachingBlobStore: org.apache.jackrabbit.oak.cache.CacheLIRS cache>

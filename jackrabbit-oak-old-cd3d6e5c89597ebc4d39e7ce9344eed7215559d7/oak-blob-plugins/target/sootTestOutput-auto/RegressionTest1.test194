@@ -1,0 +1,4 @@
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.setEndTime : r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: long endTime> = l0
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.getEndTime : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: long endTime>
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.setRepositoryId : r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: java.lang.String repositoryId> = r1
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.setLength : r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: long length> = l0

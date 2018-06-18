@@ -1,0 +1,7 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.sweep : return 0
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getType : $r2 = <org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type: org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type DEFAULT>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getType : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.deleteAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.resolveChunks : $r3 = staticinvoke <com.google.common.collect.Iterators: com.google.common.collect.UnmodifiableIterator singletonIterator(java.lang.Object)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.resolveChunks : $z0 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: boolean isInstance(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.isInstance : $z0 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("0x")

@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getType : $r1 = <org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type: org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type SHARED>
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getMetadataRecord : $r5 = new java.io.File

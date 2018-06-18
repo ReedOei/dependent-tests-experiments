@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.FileCache.getIfPresent : $r2 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.FileCache: java.io.File getIfPresent(java.lang.Object)>(r1) >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.FileCache.getIfPresent : return $r2

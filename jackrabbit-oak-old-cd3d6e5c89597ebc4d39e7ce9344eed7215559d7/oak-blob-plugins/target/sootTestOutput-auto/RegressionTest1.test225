@@ -1,0 +1,9 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r5 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : r8 = null
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : throw $r7
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r6 = new java.io.FileInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.getMinRecordLength : $i0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: int minRecordLength>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setUploadThreads : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int uploadThreads> = i0
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setStagingSplitPercentage : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingSplitPercentage> = i0
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setPath : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: java.lang.String path> = r1
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.getType : $r1 = <org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type: org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type SHARED>

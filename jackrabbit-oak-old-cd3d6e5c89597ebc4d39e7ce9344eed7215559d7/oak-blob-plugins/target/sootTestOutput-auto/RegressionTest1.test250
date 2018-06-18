@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.checkConsistency : $r4 = new org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.checkConsistency : z2 = 1

@@ -1,0 +1,18 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getMetadataRecord : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getMetadataRecord : return null
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : r3 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataRecord writeStream(java.io.InputStream,org.apache.jackrabbit.oak.spi.blob.BlobOptions)>(r1, r2)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r5 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : l0 = staticinvoke <java.lang.System: long nanoTime()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : r8 = null
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r2 = new org.apache.jackrabbit.oak.spi.blob.BlobOptions
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : z1 = 1
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : throw $r7
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r6 = new java.io.FileInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : throw $r14
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : r3 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: java.lang.String writeBlob(java.io.InputStream)>($r6)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.deleteChunks : $i1 = interfaceinvoke r1.<java.util.List: int size()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.deleteAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.countDeleteChunks : $r8 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.countDeleteChunks : i6 = 0

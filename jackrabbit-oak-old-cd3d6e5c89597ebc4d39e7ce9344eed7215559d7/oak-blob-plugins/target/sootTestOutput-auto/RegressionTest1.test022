@@ -1,0 +1,5 @@
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.getType : $r1 = <org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type: org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type SHARED>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setCacheSize : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: long cacheSize> = l0
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setStagingRetryInterval : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingRetryInterval> = i0
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.getMinRecordLength : $i0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: int minRecordLength>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setStagingSplitPercentage : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingSplitPercentage> = i0

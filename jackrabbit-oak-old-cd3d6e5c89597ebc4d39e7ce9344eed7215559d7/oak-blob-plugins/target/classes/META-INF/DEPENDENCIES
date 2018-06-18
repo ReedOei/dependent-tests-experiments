@@ -1,0 +1,83 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Oak Blob Plugins
+
+
+From: '99 Software Foundation' (http://www.99soft.org/)
+  - 99soft :: Rocoto (http://99soft.github.com/rocoto/) org.99soft.guice:rocoto:bundle:6.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'an unknown organization'
+  - AOP alliance (http://aopalliance.sourceforge.net) aopalliance:aopalliance:jar:1.0
+    License: Public Domain 
+  - Guava: Google Core Libraries for Java (http://code.google.com/p/guava-libraries/guava) com.google.guava:guava:bundle:15.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - java-xmlbuilder (http://code.google.com/p/java-xmlbuilder/) com.jamesmurty.utils:java-xmlbuilder:jar:0.4
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - JSR-250 Common Annotations for the JavaTM Platform (http://jcp.org/aboutJava/communityprocess/final/jsr250/index.html) javax.annotation:jsr250-api:jar:1.0
+    License: COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0  (https://glassfish.dev.java.net/public/CDDLv1.0.html)
+  - javax.inject (http://code.google.com/p/atinject/) javax.inject:javax.inject:jar:1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Day Software' (http://www.day.com)
+  - Content Repository for JavaTM Technology API (http://www.jcp.org/en/jsr/detail?id=283) javax.jcr:jcr:jar:2.0
+    License: Day Specification License  (http://www.day.com/dam/day/downloads/jsr283/day-spec-license.htm)    License: Day Specification License addendum  (http://www.day.com/content/dam/day/downloads/jsr283/LICENSE.txt)
+
+From: 'Google, Inc.' (http://www.google.com)
+  - Gson (http://code.google.com/p/google-gson/) com.google.code.gson:gson:jar:2.2.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Google Guice - Core Library (http://code.google.com/p/google-guice/guice/) com.google.inject:guice:jar:3.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Google Guice - Extensions - AssistedInject (http://code.google.com/p/google-guice/extensions-parent/guice-assistedinject/) com.google.inject.extensions:guice-assistedinject:jar:3.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - JCL 1.1.1 implemented over SLF4J (http://www.slf4j.org) org.slf4j:jcl-over-slf4j:jar:1.7.6
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.6
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'Sun Microsystems, Inc' (http://www.sun.com/)
+  - jsr311-api (https://jsr311.dev.java.net) javax.ws.rs:jsr311-api:jar:1.1.1
+    License: CDDL License  (http://www.opensource.org/licenses/cddl1.php)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons Codec (http://commons.apache.org/codec/) commons-codec:commons-codec:jar:1.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons IO (http://commons.apache.org/proper/commons-io/) commons-io:commons-io:jar:2.5
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - jclouds blobstore core (http://jclouds.apache.org/jclouds-blobstore/) org.apache.jclouds:jclouds-blobstore:bundle:1.7.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - jclouds Components Core (http://jclouds.apache.org/jclouds-core/) org.apache.jclouds:jclouds-core:bundle:1.7.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - jclouds s3 api (http://jclouds.apache.org/s3/) org.apache.jclouds.api:s3:bundle:1.7.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - jclouds sts api (http://jclouds.apache.org/sts/) org.apache.jclouds.api:sts:bundle:1.7.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - jclouds Amazon Simple Storage Service (S3) provider (http://jclouds.apache.org/aws-s3/) org.apache.jclouds.provider:aws-s3:bundle:1.7.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Jackrabbit API (http://jackrabbit.apache.org/jackrabbit-api/) org.apache.jackrabbit:jackrabbit-api:bundle:2.16.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackrabbit Data (http://jackrabbit.apache.org/jackrabbit-data/) org.apache.jackrabbit:jackrabbit-data:bundle:2.16.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackrabbit JCR Commons (http://jackrabbit.apache.org/jackrabbit-jcr-commons/) org.apache.jackrabbit:jackrabbit-jcr-commons:bundle:2.16.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Oak API (http://jackrabbit.apache.org/oak-api/) org.apache.jackrabbit:oak-api:bundle:1.7.13
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Oak Blob Store (http://jackrabbit.apache.org/oak-blob/) org.apache.jackrabbit:oak-blob:bundle:1.7.13
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Oak Commons (http://jackrabbit.apache.org/oak-commons/) org.apache.jackrabbit:oak-commons:bundle:1.7.13
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Oak Core SPI (http://jackrabbit.apache.org/oak-core-spi/) org.apache.jackrabbit:oak-core-spi:bundle:1.7.13
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Oak NodeStore and Commit SPI (http://jackrabbit.apache.org/oak-store-spi/) org.apache.jackrabbit:oak-store-spi:bundle:1.7.13
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

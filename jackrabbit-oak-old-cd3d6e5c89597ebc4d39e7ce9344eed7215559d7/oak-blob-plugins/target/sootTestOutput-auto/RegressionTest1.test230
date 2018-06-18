@@ -1,0 +1,12 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getAllMetadataRecords : return null
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getDataStore : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getType : $r2 = <org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type: org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type DEFAULT>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getType : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r5 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : r8 = null
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeBlob : $r6 = new java.io.FileInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.deleteChunks : $i1 = interfaceinvoke r1.<java.util.List: int size()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.deleteAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.countDeleteChunks : $r8 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.countDeleteChunks : i6 = 0

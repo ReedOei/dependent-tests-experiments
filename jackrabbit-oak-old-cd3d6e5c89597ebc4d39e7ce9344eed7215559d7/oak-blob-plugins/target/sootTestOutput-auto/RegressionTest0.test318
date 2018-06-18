@@ -1,0 +1,7 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$NoOpMap.entrySet : $r1 = staticinvoke <java.util.Collections: java.util.Set emptySet()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllIdentifiers : $r9 = virtualinvoke $r7.<com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable filter(com.google.common.base.Predicate)>($r8)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllIdentifiers : $r12 = virtualinvoke $r11.<com.google.common.collect.FluentIterable: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllIdentifiers : $r11 = virtualinvoke $r9.<com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable transform(com.google.common.base.Function)>($r10)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllIdentifiers : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getAllIdentifiers : $r5 = staticinvoke <com.google.common.io.Files: com.google.common.collect.TreeTraverser fileTreeTraverser()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.setReferenceKey : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore: byte[] referenceKey> = r1

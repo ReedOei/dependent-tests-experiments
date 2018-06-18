@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType.getNameFromId : $r2 = staticinvoke <com.google.common.base.Joiner: com.google.common.base.Joiner on(java.lang.String)>("-")
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType.getType : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType: java.lang.String type>

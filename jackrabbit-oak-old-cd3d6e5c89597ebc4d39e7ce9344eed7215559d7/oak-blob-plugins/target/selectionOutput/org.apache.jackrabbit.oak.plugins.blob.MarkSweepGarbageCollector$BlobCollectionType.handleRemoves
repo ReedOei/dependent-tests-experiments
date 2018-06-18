@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.handleRemoves : staticinvoke <org.apache.commons.io.FileUtils: void forceDelete(java.io.File)>(r2) >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.handleRemoves : return

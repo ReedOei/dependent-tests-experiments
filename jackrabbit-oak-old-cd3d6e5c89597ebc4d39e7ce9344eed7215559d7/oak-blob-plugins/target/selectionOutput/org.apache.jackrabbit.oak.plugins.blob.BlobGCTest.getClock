@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.getClock : $r1 = new org.apache.jackrabbit.oak.stats.Clock$Virtual >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.getClock : specialinvoke $r1.<org.apache.jackrabbit.oak.stats.Clock$Virtual: void <init>()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.getClock : specialinvoke $r1.<org.apache.jackrabbit.oak.stats.Clock$Virtual: void <init>()>() >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.getClock : return $r1

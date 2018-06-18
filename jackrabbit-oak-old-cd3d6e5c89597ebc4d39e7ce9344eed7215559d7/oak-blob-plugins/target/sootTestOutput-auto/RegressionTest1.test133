@@ -1,0 +1,7 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.setMinRecordLength : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: int minRecordLength> = i0
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.getMinRecordLength : $i0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: int minRecordLength>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setStagingSplitPercentage : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingSplitPercentage> = i0
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setPath : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: java.lang.String path> = r1
+org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats.isFileSynced : return 0
+org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats.isFileSynced : $z0 = staticinvoke <com.google.common.base.Strings: boolean isNullOrEmpty(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats.isFileSynced : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats: org.apache.jackrabbit.oak.spi.state.NodeStore nodeStore>

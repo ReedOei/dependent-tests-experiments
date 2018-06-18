@@ -1,0 +1,4 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.getRecordForId : $r2 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore: org.apache.jackrabbit.core.data.DataRecord getRecord(org.apache.jackrabbit.core.data.DataIdentifier)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$NoOpMap.put : return null
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$NoOpMap.entrySet : $r1 = staticinvoke <java.util.Collections: java.util.Set emptySet()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore.setReferenceKeyPlainText : $r2 = <com.google.common.base.Charsets: java.nio.charset.Charset UTF_8>

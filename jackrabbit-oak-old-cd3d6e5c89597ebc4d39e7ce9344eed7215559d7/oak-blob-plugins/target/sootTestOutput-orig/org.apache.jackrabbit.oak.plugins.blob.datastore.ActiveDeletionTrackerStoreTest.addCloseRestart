@@ -1,0 +1,35 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : interfaceinvoke r2.<org.apache.jackrabbit.core.data.DataStore: void init(java.lang.String)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r8 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils: java.util.Map getConfig()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r3 = class "Lorg/apache/jackrabbit/oak/plugins/blob/datastore/OakFileDataStore;"
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r9 = new org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r1 = virtualinvoke r0.<java.io.File: java.lang.String getAbsolutePath()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getBlobStore : $r5 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.initTracker : $r1 = new org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.range : r0 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayList()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.range : $r1 = staticinvoke <java.lang.String: java.lang.String valueOf(int)>(i2)
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.range : return r0
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.range : i2 = i0
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.add : r3 = virtualinvoke r2.<org.junit.rules.TemporaryFolder: java.io.File newFile()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.add : $r5 = staticinvoke <com.google.common.collect.Sets: java.util.HashSet newHashSet(java.lang.Iterable)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.add : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker: void track(java.io.File)>(r3)
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.add : $r4 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker.retrieve : $r4 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker.retrieve : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker: java.io.File delFile>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker.retrieve : return $r4
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.retrieve : return r3
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.retrieve : $r4 = new java.io.FileInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.retrieve : r2 = virtualinvoke r1.<org.junit.rules.TemporaryFolder: java.io.File newFile()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.retrieve : $r5 = virtualinvoke r2.<java.io.File: java.lang.String getAbsolutePath()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker.track : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker: java.util.concurrent.locks.ReentrantLock lock>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker.track : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker.track : $r4 = newarray (java.io.File)[1]
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker.track : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker: java.io.File delFile>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker.track : $r8 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$ActiveDeletionTracker: java.util.concurrent.locks.ReentrantLock lock>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : r11 = virtualinvoke r10.<java.lang.String: java.lang.String substring(int)>(3)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $r3 = staticinvoke <java.lang.System: java.util.Properties getProperties()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $r7 = interfaceinvoke r2.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $z1 = virtualinvoke r10.<java.lang.String: boolean startsWith(java.lang.String)>("ds.")
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $z2 = virtualinvoke r10.<java.lang.String: boolean startsWith(java.lang.String)>("bs.")
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : r0 = staticinvoke <com.google.common.collect.Maps: java.util.HashMap newHashMap()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $r8 = interfaceinvoke r2.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.getConfig : $r6 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()

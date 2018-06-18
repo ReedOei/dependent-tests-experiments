@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getMaxTotalWeight : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: long maxWeight> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.getMaxTotalWeight : return $l0

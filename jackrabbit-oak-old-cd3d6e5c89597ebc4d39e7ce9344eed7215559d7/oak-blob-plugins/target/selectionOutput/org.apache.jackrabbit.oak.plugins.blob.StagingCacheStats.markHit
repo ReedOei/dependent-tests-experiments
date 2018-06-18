@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.markHit : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats: org.apache.jackrabbit.oak.stats.MeterStats hitMeter> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.markHit : interfaceinvoke $r1.<org.apache.jackrabbit.oak.stats.MeterStats: void mark()>()
+org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.markHit : interfaceinvoke $r1.<org.apache.jackrabbit.oak.stats.MeterStats: void mark()>() >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.StagingCacheStats.markHit : return

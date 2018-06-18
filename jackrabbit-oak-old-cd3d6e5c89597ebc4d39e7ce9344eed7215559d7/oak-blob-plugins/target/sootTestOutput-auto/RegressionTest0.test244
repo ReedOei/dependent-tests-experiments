@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.clearInUse : $r1 = new java.lang.UnsupportedOperationException

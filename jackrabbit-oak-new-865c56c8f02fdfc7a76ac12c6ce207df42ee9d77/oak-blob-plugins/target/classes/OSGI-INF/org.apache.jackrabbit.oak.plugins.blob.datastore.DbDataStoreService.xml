@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="org.apache.jackrabbit.oak.plugins.blob.datastore.DbDataStore" configuration-policy="require">
+    <reference name="connectionFactory" interface="org.apache.jackrabbit.core.util.db.ConnectionFactory" cardinality="1..1" policy="static" bind="bindConnectionFactory" unbind="unbindConnectionFactory"/>
+    <reference name="statisticsProvider" interface="org.apache.jackrabbit.oak.stats.StatisticsProvider" cardinality="1..1" policy="static" bind="bindStatisticsProvider" unbind="unbindStatisticsProvider"/>
+    <implementation class="org.apache.jackrabbit.oak.plugins.blob.datastore.DbDataStoreService"/>
+</scr:component>

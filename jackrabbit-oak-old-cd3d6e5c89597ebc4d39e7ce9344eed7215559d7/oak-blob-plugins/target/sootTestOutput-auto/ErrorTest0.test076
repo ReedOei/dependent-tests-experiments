@@ -1,0 +1,13 @@
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.getBlobMigrationStatus : $r10 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration: org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigrator migrator>
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.getBlobMigrationStatus : $r2 = new java.util.HashMap
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.getBlobMigrationStatus : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration: org.apache.jackrabbit.oak.commons.jmx.ManagementOperation migrationOp>
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.getBlobMigrationStatus : $z0 = 1
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration$1.call : $r1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration$1: java.lang.String call()>()
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration$1.call : l0 = staticinvoke <java.lang.System: long nanoTime()>()
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration$1.call : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration$1: org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration this$0>
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration$1.call : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration$1: boolean val$resume>
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.startBlobMigration : $r2 = new org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration$1
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.startBlobMigration : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration: java.util.concurrent.Executor executor>
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.startBlobMigration : return "Migration started"
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.startBlobMigration : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration: org.apache.jackrabbit.oak.commons.jmx.ManagementOperation migrationOp>
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration.access$000 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigration: org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigrator migrator>

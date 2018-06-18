@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.getFile : r2 = virtualinvoke r0.<org.apache.jackrabbit.core.data.DataIdentifier: java.lang.String toString()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.deleteRecord : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.io.File fsPathDir>

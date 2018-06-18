@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.FileCache.access$500 : $r0 = <org.apache.jackrabbit.oak.plugins.blob.FileCache: com.google.common.cache.Weigher memWeigher> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.FileCache.access$500 : return $r0

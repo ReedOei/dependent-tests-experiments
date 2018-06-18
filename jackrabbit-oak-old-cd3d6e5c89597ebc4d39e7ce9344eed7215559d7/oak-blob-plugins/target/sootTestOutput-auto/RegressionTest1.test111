@@ -1,0 +1,5 @@
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setStagingPurgeInterval : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingPurgeInterval> = i0
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setStatisticsProvider : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: org.apache.jackrabbit.oak.stats.StatisticsProvider statisticsProvider> = r1
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.exists : if r1 == null goto (branch)
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.exists : goto [?= return 0]
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.exists : return 0

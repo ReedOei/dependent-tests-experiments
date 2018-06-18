@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore.setReferencedBlobs : r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore: java.util.Set referencedBlobs> = r1 >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore.setReferencedBlobs : return

@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.isEncoded : $z0 = virtualinvoke r0.<java.lang.String: boolean contains(java.lang.CharSequence)>("#") >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.isEncoded : return $z0

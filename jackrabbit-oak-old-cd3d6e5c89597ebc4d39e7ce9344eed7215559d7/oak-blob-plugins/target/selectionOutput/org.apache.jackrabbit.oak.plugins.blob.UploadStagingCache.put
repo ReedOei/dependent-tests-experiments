@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.put : $r3 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: com.google.common.base.Optional putOptionalDisregardingSize(java.lang.String,java.io.File,boolean)>(r1, r2, 0) >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.put : return $r3

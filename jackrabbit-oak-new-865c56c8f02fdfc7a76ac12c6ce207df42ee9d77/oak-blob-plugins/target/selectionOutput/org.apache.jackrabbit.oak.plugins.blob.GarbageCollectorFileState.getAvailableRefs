@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.getAvailableRefs : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File availableRefs> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.getAvailableRefs : return $r1

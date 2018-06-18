@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.FileCache$3.load : $r2 = (java.lang.String) r1 >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.FileCache$3.load : $r3 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.FileCache$3: java.io.File load(java.lang.String)>($r2)
+org.apache.jackrabbit.oak.plugins.blob.FileCache$3.load : $r3 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.FileCache$3: java.io.File load(java.lang.String)>($r2) >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.FileCache$3.load : return $r3

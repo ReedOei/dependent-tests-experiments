@@ -1,0 +1,88 @@
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deleteSerializedUploadMap : staticinvoke <org.apache.commons.io.FileUtils: boolean deleteQuietly(java.io.File)>($r2)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deleteSerializedUploadMap : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deleteSerializedUploadMap : $r3 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : r13 = staticinvoke <com.google.common.collect.Maps: java.util.HashMap newHashMap()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : $r8 = interfaceinvoke $r7.<java.io.ObjectInput: java.lang.Object readObject()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : $r5 = new java.io.BufferedInputStream
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : r2 = virtualinvoke $r4.<java.io.File: java.lang.String getAbsolutePath()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : $r7 = new java.io.ObjectInputStream
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : goto [?= $r9 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: org.slf4j.Logger LOG>]
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : $z0 = virtualinvoke $r4.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : staticinvoke <org.apache.commons.io.IOUtils: void closeQuietly(java.io.InputStream)>($r5)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : $r9 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : $r4 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : r14 = null
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : return r13
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.randomStream : $r2 = new java.util.Random
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.randomStream : virtualinvoke $r2.<java.util.Random: void nextBytes(byte[])>(r1)
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.randomStream : r1 = newarray (byte)[i1]
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.randomStream : $r3 = new java.io.ByteArrayInputStream
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.setupDownloads : r3 = r1[i2]
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.setupDownloads : i0 = lengthof r1
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.setupDownloads : $i1 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r3)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.getFileName : $r1 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFilesNoMove : $z0 = virtualinvoke r12.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFilesNoMove : $r10 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFilesNoMove : $z2 = virtualinvoke r13.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFilesNoMove : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest: java.io.File path>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFilesNoMove : r4 = r2[i2]
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFilesNoMove : $z1 = staticinvoke <com.google.common.io.Files: boolean equal(java.io.File,java.io.File)>(r12, $r9)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFilesNoMove : i0 = lengthof r2
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFilesNoMove : $i1 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r4)
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.copyToFile : staticinvoke <org.apache.commons.io.FileUtils: void copyInputStreamToFile(java.io.InputStream,java.io.File)>(r0, r1)
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.copyToFile : return r1
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $z1 = virtualinvoke r6.<java.io.File: boolean equals(java.lang.Object)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $r1 = virtualinvoke r6.<java.io.File: java.lang.String[] list()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $r2 = virtualinvoke r6.<java.io.File: java.lang.String[] list()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : if r6 == null goto return
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $r3 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : r6 = virtualinvoke r6.<java.io.File: java.io.File getParentFile()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $z0 = virtualinvoke r6.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.setupUploads : r2 = staticinvoke <com.google.common.collect.Maps: java.util.HashMap newHashMap()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.setupUploads : $r6 = r0.<org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest: java.io.File pendingUploads>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.setupUploads : $r10 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest: java.lang.String getFileName(java.lang.String)>(r4)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.setupUploads : i0 = lengthof r1
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.setupUploads : r4 = r1[i3]
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.setupUploads : $i1 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r4)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFiles : $z0 = virtualinvoke r12.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFiles : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFiles : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest: java.io.File path>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFiles : $z1 = virtualinvoke r13.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFiles : r4 = r2[i2]
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFiles : i0 = lengthof r2
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFiles : $z2 = staticinvoke <com.google.common.io.Files: boolean equal(java.io.File,java.io.File)>(r13, $r11)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.assertFiles : $i1 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>(r4)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.upgrade : staticinvoke <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: void movePendingUploadsToStaging(java.io.File,java.io.File,boolean)>(r0, r1, z1)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.upgrade : if z0 == 0 goto return
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r29 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : staticinvoke <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils: void recursiveDelete(java.io.File,java.io.File)>($r12, r1)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : goto [?= (branch)]
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : staticinvoke <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: void deleteSerializedUploadMap(java.io.File)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r19 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : if z0 == 0 goto return
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : r3 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: java.util.Map deSerializeUploadMap(java.io.File)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r33 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r11 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r12 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z2 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()", "org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging")]
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : if r0 == null goto return
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r21 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $z4 = virtualinvoke $r12.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r10 = interfaceinvoke r3.<java.util.Map: java.util.Set keySet()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $z1 = virtualinvoke r0.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $z2 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r14 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r9 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : staticinvoke <org.apache.commons.io.FileUtils: void moveFile(java.io.File,java.io.File)>($r12, $r19)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r26 = virtualinvoke $r19.<java.io.File: java.io.File getParentFile()>()
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.getFile : $r4 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.getFile : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.getFile : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.serializeMap : $r7 = new java.io.BufferedOutputStream
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.serializeMap : interfaceinvoke $r8.<java.io.ObjectOutput: void close()>()
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.serializeMap : staticinvoke <org.apache.commons.io.IOUtils: void closeQuietly(java.io.OutputStream)>($r7)
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.serializeMap : $r8 = new java.io.ObjectOutputStream
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.serializeMap : interfaceinvoke $r8.<java.io.ObjectOutput: void flush()>()
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.serializeMap : $r6 = new java.io.FileOutputStream
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.serializeMap : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.AbstractDataStoreCacheTest.serializeMap : interfaceinvoke $r8.<java.io.ObjectOutput: void writeObject(java.lang.Object)>(r0)

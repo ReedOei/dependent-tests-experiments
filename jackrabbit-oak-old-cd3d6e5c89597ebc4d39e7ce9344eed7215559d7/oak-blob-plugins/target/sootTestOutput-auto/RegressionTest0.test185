@@ -1,0 +1,3 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.writeStream : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getMinRecordLength : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addRecord : $r3 = new org.apache.jackrabbit.oak.spi.blob.BlobOptions

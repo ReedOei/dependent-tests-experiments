@@ -1,0 +1,125 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : staticinvoke <org.apache.commons.io.FileUtils: void forceDelete(java.io.File)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : $r14 = <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : $r17 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: java.io.File getSnapshotMarkerFile()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : goto [?= (branch)]
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : r28 = staticinvoke <com.google.common.base.Stopwatch: com.google.common.base.Stopwatch createStarted()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : if z0 != 0 goto r29 = staticinvoke <com.google.common.base.Stopwatch: com.google.common.base.Stopwatch createStarted()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.apache.jackrabbit.oak.plugins.blob.SharedDataStore datastore>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : r29 = staticinvoke <com.google.common.base.Stopwatch: com.google.common.base.Stopwatch createStarted()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : $z1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: boolean SKIP_TRACKER>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : $r18 = <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : $r16 = <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.snapshot : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore store>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$1$1.apply : $r2 = (java.io.File) r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$1$1.apply : $r2 = virtualinvoke r1.<java.io.File: java.lang.String getName()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.getSnapshotMarkerFile : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.getSnapshotMarkerFile : return $r2
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$3.getFileNameSuffix : return ".refs"
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.getBlobRecordsFile : $z0 = virtualinvoke $r2.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.getBlobRecordsFile : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.getBlobRecordsFile : return $r2
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : if r0 == null goto return
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r10 = interfaceinvoke r3.<java.util.Map: java.util.Set keySet()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $z1 = virtualinvoke r0.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : if z0 == 0 goto return
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $z2 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : r3 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: java.util.Map deSerializeUploadMap(java.io.File)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r9 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.nextGeneration : $r1 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.nextGeneration : $r11 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.File processFile>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.nextGeneration : $r13 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.nextGeneration : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: void close()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils$1.apply : $r2 = (java.io.File) r1
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils$1.apply : $z0 = virtualinvoke r1.<java.io.File: boolean isFile()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : $r4 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : return r13
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : r13 = staticinvoke <com.google.common.collect.Maps: java.util.HashMap newHashMap()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.deSerializeUploadMap : $z0 = virtualinvoke $r4.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.access$000 : $r0 = <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.access$200 : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: long snapshotInterval>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.deleteAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.remove : specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: void snapshot(boolean)>(1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.remove : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore store>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $z1 = virtualinvoke r6.<java.io.File: boolean equals(java.lang.Object)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $r1 = virtualinvoke r6.<java.io.File: java.lang.String[] list()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $r2 = virtualinvoke r6.<java.io.File: java.lang.String[] list()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $r5 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : if r6 == null goto return
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $r3 = <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : r6 = virtualinvoke r6.<java.io.File: java.io.File getParentFile()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : $z0 = virtualinvoke r6.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.recursiveDelete : staticinvoke <org.apache.commons.io.FileUtils: void forceDelete(java.io.File)>(r6)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : virtualinvoke $r6.<java.io.File: boolean mkdirs()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r4 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r8 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.merge : if r1 == null goto (branch)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.merge : $z1 = interfaceinvoke r1.<java.util.List: boolean isEmpty()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.merge : if z0 == 0 goto $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.util.concurrent.locks.ReentrantLock refLock>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.merge : interfaceinvoke r1.<java.util.List: void clear()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.merge : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.util.concurrent.locks.ReentrantLock refLock>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.merge : staticinvoke <org.apache.jackrabbit.oak.commons.FileIOUtils: void append(java.util.List,java.io.File,boolean)>(r1, $r7, 1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.merge : $r7 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.merge : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.util.concurrent.locks.ReentrantLock refLock>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.merge : $r16 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$2$1.apply : $r2 = (java.io.File) r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$2$1.apply : $r2 = virtualinvoke r1.<java.io.File: java.lang.String getName()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$2$1.apply : $r3 = virtualinvoke r1.<java.io.File: java.lang.String getName()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$2$1.apply : $r4 = virtualinvoke r1.<java.io.File: java.lang.String getName()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$1.getFileNameSuffix : $r1 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$2.filter : $r1 = new org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$2$1
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getMetadataRecord : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.getMetadataRecord : return null
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$1.filter : $r1 = new org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore$Type$1$1
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.upgrade : staticinvoke <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: void movePendingUploadsToStaging(java.io.File,java.io.File,boolean)>(r0, r1, z1)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.upgrade : if z0 == 0 goto return
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : $r9 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : $r6 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : staticinvoke <org.apache.commons.io.FileUtils: void forceDelete(java.io.File)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : staticinvoke <com.google.common.io.Files: void move(java.io.File,java.io.File)>(r18, r21)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : $r3 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.util.concurrent.locks.ReentrantLock refLock>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : staticinvoke <org.apache.jackrabbit.oak.commons.FileIOUtils: int writeStrings(java.util.Iterator,java.io.File,boolean)>(r1, r2, 0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : r2 = staticinvoke <java.io.File: java.io.File createTempFile(java.lang.String,java.lang.String)>("deleted", null)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: void snapshot()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : $r5 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.File getBlobRecordsFile()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : staticinvoke <org.apache.jackrabbit.oak.commons.FileIOUtils: int writeStrings(java.util.Iterator,java.io.File,boolean)>($r7, r18, 0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : if $r7 == null goto r21 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.File getBlobRecordsFile()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : $r7 = new org.apache.jackrabbit.oak.commons.FileIOUtils$FileLineDifferenceIterator
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : $r10 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.util.concurrent.locks.ReentrantLock refLock>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : r18 = staticinvoke <java.io.File: java.io.File createTempFile(java.lang.String,java.lang.String)>("sorted", null)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : r19 = null
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : staticinvoke <org.apache.jackrabbit.oak.commons.FileIOUtils: void sort(java.io.File)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : virtualinvoke $r7.<org.apache.jackrabbit.oak.commons.FileIOUtils$FileLineDifferenceIterator: void close()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : r21 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.File getBlobRecordsFile()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.removeRecords : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: void removeRecords(java.io.File)>(r2)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r10 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.File processFile>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r21 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : if z0 == 0 goto $r13 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r20 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.util.List generations>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.File processFile>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r11 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.BufferedWriter writer>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r4 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : r1 = staticinvoke <com.google.common.collect.ImmutableList: com.google.common.collect.ImmutableList of(java.lang.Object,java.lang.Object,java.lang.Object)>("tmp", "upload", "download")
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $r7 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : r3 = virtualinvoke $r11.<com.google.common.collect.FluentIterable: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $r8 = staticinvoke <com.google.common.io.Files: com.google.common.collect.TreeTraverser fileTreeTraverser()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $r11 = virtualinvoke $r9.<com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable filter(com.google.common.base.Predicate)>($r10)
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.addRecords : $r2 = newarray (java.io.File)[1]
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.resolveChunks : $r3 = staticinvoke <com.google.common.collect.Iterators: com.google.common.collect.UnmodifiableIterator singletonIterator(java.lang.Object)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.resolveChunks : $z0 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: boolean isInstance(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.isInstance : $z0 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("0x")
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.add : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: boolean SKIP_TRACKER>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.add : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore store>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.snapshot : specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: void nextGeneration()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.snapshot : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.util.List generations>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.snapshot : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.snapshot : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.util.concurrent.locks.ReentrantLock snapshotLock>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.snapshot : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.util.concurrent.locks.ReentrantLock snapshotLock>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addMetadataRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>

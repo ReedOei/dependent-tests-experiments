@@ -1,0 +1,103 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.init : $r14 = ""
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.init : $r19 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.io.File fsPathDir>
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.init : $r20 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.io.File fsPathDir>
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.init : $r15 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.lang.String fsPath>
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.init : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.util.Properties properties>
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.init : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.lang.String fsPath>
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.init : if z0 != 0 goto return
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.init : $r17 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.init : $r21 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.io.File fsPathDir>
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.createBackend : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: java.util.Properties properties>
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.createBackend : $r2 = new org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.createBackend : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: java.util.Properties properties>
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.createBackend : return $r2
+org.apache.jackrabbit.oak.plugins.blob.FileCache.build : $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.FileCache.build : $r9 = virtualinvoke $r7.<com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable filter(com.google.common.base.Predicate)>($r8)
+org.apache.jackrabbit.oak.plugins.blob.FileCache.build : i0 = 0
+org.apache.jackrabbit.oak.plugins.blob.FileCache.build : $r4 = new org.apache.jackrabbit.oak.plugins.blob.FileCache
+org.apache.jackrabbit.oak.plugins.blob.FileCache.build : return i0
+org.apache.jackrabbit.oak.plugins.blob.FileCache.build : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.FileCache: java.io.File parent>
+org.apache.jackrabbit.oak.plugins.blob.FileCache.build : $r10 = <org.apache.jackrabbit.oak.plugins.blob.FileCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.FileCache.build : r1 = virtualinvoke $r9.<com.google.common.collect.FluentIterable: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.FileCache.build : $r5 = staticinvoke <com.google.common.io.Files: com.google.common.collect.TreeTraverser fileTreeTraverser()>()
+org.apache.jackrabbit.oak.plugins.blob.FileCache.build : $b1 = l0 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setCacheSize : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: long cacheSize> = l0
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getField : virtualinvoke r1.<java.lang.reflect.Field: void setAccessible(boolean)>(1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getField : $r2 = virtualinvoke r0.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getField : $r3 = virtualinvoke r1.<java.lang.reflect.Field: java.lang.Object get(java.lang.Object)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : $b4 = l1 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.build : $r7 = new org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$2
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.setProperties : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.util.Properties properties> = r1
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : r1 = staticinvoke <com.google.common.collect.ImmutableList: com.google.common.collect.ImmutableList of(java.lang.Object,java.lang.Object,java.lang.Object)>("tmp", "upload", "download")
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $r7 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : r3 = virtualinvoke $r11.<com.google.common.collect.FluentIterable: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $r8 = staticinvoke <com.google.common.io.Files: com.google.common.collect.TreeTraverser fileTreeTraverser()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $r11 = virtualinvoke $r9.<com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable filter(com.google.common.base.Predicate)>($r10)
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setStagingSplitPercentage : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingSplitPercentage> = i0
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.setPath : r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: java.lang.String path> = r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getDescription : $r1 = newarray (java.lang.String)[1]
+org.apache.jackrabbit.oak.plugins.blob.FileCache.access$600 : $i0 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.FileCache: int build()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getAssertCachingFileDataStore : return r5
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getAssertCachingFileDataStore : interfaceinvoke $r6.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("path", r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getAssertCachingFileDataStore : $r16 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest: org.apache.sling.testing.mock.osgi.junit.OsgiContext context>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getAssertCachingFileDataStore : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest: org.junit.rules.TemporaryFolder folder>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getAssertCachingFileDataStore : $r18 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest: org.junit.rules.TemporaryFolder folder>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getAssertCachingFileDataStore : $z0 = r5 instanceof org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getAssertCachingFileDataStore : $r11 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(100L)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getAssertCachingFileDataStore : staticinvoke <org.apache.jackrabbit.oak.commons.PropertiesUtil: void populate(java.lang.Object,java.util.Map,boolean)>(r5, $r6, 0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getAssertCachingFileDataStore : $r6 = new java.util.HashMap
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getAssertCachingFileDataStore : interfaceinvoke $r6.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("cachePath", r2)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.getAssertCachingFileDataStore : $r15 = new org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getCachingDataStore : $r5 = new org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getCachingDataStore : $r8 = virtualinvoke $r5.<java.lang.Object: java.lang.Class getClass()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getCachingDataStore : $r7 = new java.util.Hashtable
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getCachingDataStore : $r15 = class "Lorg/apache/jackrabbit/oak/plugins/blob/AbstractSharedCachingDataStore;"
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getCachingDataStore : virtualinvoke $r5.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: void setStagingSplitPercentage(int)>($i0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getCachingDataStore : $r11 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService: java.lang.String[] getDescription()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getCachingDataStore : virtualinvoke $r5.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: void setProperties(java.util.Properties)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getCachingDataStore : $r13 = interfaceinvoke r2.<org.osgi.service.component.ComponentContext: org.osgi.framework.BundleContext getBundleContext()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getCachingDataStore : $r17 = class "Lorg/apache/jackrabbit/oak/plugins/blob/AbstractSharedCachingDataStore;"
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getCachingDataStore : return $r5
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.getCachingDataStore : $r6 = virtualinvoke r1.<java.util.Properties: java.lang.Object get(java.lang.Object)>("stagingSplitPercentage")
+org.apache.jackrabbit.oak.plugins.blob.FileCache$CacheBuildJob.call : r1 = staticinvoke <com.google.common.base.Stopwatch: com.google.common.base.Stopwatch createStarted()>()
+org.apache.jackrabbit.oak.plugins.blob.FileCache$CacheBuildJob.call : $r3 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.FileCache: org.slf4j.Logger access$100()>()
+org.apache.jackrabbit.oak.plugins.blob.FileCache$CacheBuildJob.call : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.FileCache$CacheBuildJob: org.apache.jackrabbit.oak.plugins.blob.FileCache this$0>
+org.apache.jackrabbit.oak.plugins.blob.FileCache$CacheBuildJob.call : $r1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.FileCache$CacheBuildJob: java.lang.Integer call()>()
+org.apache.jackrabbit.oak.plugins.blob.FileCache$CacheBuildJob.call : $r4 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i0)
+org.apache.jackrabbit.oak.plugins.blob.FileCache$CacheBuildJob.call : $r7 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i0)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils$1.apply : $r2 = (java.io.File) r1
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils$1.apply : $z0 = virtualinvoke r1.<java.io.File: boolean isFile()>()
+org.apache.jackrabbit.oak.plugins.blob.FileCache$6.apply : $r2 = (java.io.File) r1
+org.apache.jackrabbit.oak.plugins.blob.FileCache$6.apply : $z0 = virtualinvoke r1.<java.io.File: boolean isFile()>()
+org.apache.jackrabbit.oak.plugins.blob.FileCache.access$100 : $r0 = <org.apache.jackrabbit.oak.plugins.blob.FileCache: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $i1 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingSplitPercentage>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r4 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $i0 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: int stagingSplitPercentage>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r21 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: java.lang.String path>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r14 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r16 = <org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r20 = r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: org.apache.jackrabbit.oak.spi.blob.AbstractSharedBackend backend>
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r19 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore: org.apache.jackrabbit.oak.spi.blob.AbstractSharedBackend createBackend()>()
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r12 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.AbstractSharedCachingDataStore.init : $r23 = new org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCache
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.getBackend : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: org.apache.jackrabbit.oak.spi.blob.AbstractSharedBackend backend>
+org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore.setProperties : r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStore: java.util.Properties properties> = r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : virtualinvoke $r17.<java.util.Properties: void putAll(java.util.Map)>(r2)
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : interfaceinvoke r2.<java.util.Map: java.lang.Object remove(java.lang.Object)>("cacheSize")
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : interfaceinvoke r2.<java.util.Map: java.lang.Object remove(java.lang.Object)>("cachePath")
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : staticinvoke <com.google.common.base.Preconditions: java.lang.Object checkNotNull(java.lang.Object,java.lang.Object)>(r3, "Cannot create FileDataStoreService with caching. [{path}] property not configured.")
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $r23 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService: org.apache.jackrabbit.core.data.DataStore getCachingDataStore(java.util.Properties,org.osgi.service.component.ComponentContext)>($r17, r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : interfaceinvoke r2.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("fsBackendPath", r3)
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : if r4 == null goto $r17 = new java.util.Properties
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : interfaceinvoke r2.<java.util.Map: java.lang.Object put(java.lang.Object,java.lang.Object)>("path", r4)
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $r6 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("cacheSize")
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $r9 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("path")
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $r19 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService: org.slf4j.Logger log>
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $r14 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(l0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $b1 = l0 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $r16 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("cachePath")
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $r17 = new java.util.Properties
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : interfaceinvoke r2.<java.util.Map: java.lang.Object remove(java.lang.Object)>("path")
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache.setDownloadCache : r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache: org.apache.jackrabbit.oak.plugins.blob.FileCache downloadCache> = r1

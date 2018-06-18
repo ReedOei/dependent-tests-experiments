@@ -1,0 +1,5 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $r1 = "0x"
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : i13 = virtualinvoke r18.<java.lang.String: int length()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $r8 = <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: org.slf4j.Logger log>
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $z0 = <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: boolean $assertionsDisabled>
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $r3 = new java.lang.StringBuilder

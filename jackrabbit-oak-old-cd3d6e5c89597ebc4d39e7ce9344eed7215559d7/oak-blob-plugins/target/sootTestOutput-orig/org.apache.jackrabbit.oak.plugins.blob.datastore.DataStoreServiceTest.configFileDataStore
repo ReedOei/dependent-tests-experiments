@@ -1,0 +1,4 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $r8 = new org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $b1 = l0 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService: org.slf4j.Logger log>
+org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStoreService.createDataStore : $r6 = interfaceinvoke r2.<java.util.Map: java.lang.Object get(java.lang.Object)>("cacheSize")

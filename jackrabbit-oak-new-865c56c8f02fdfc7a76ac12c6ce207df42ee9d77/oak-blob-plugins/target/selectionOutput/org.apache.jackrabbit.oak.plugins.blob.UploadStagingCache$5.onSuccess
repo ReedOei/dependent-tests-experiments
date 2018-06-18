@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5.onSuccess : $r2 = (java.lang.Integer) r1 >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5.onSuccess : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5: void onSuccess(java.lang.Integer)>($r2)
+org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5.onSuccess : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5: void onSuccess(java.lang.Integer)>($r2) >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.UploadStagingCache$5.onSuccess : return

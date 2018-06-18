@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.getId : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob: java.lang.String id> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.getId : return $r1

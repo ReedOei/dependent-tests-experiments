@@ -1,0 +1,4 @@
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigrator.getLastProcessedPath : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigrator: java.lang.String lastPath>
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigrator.migrate : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigrator: org.apache.jackrabbit.oak.plugins.blob.migration.DepthFirstNodeIterator nodeIterator>
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigrator.migrate : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigrator: org.apache.jackrabbit.oak.spi.state.NodeStore nodeStore>
+org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigrator.stop : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.migration.BlobMigrator: java.util.concurrent.atomic.AtomicBoolean stopMigration>

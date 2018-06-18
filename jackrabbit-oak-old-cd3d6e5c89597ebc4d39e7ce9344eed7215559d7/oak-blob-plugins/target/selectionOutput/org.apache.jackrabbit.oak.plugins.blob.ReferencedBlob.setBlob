@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.setBlob : r0.<org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob: org.apache.jackrabbit.oak.api.Blob blob> = r1 >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.ReferencedBlob.setBlob : return

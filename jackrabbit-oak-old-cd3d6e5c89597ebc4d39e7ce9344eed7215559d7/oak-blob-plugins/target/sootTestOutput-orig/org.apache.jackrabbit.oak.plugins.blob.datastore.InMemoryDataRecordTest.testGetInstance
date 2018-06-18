@@ -1,0 +1,40 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.access$000 : $r0 = <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getLength : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: byte[] data>
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.isInstance : $z0 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("0x")
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getIdentifier : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: org.apache.jackrabbit.core.data.DataIdentifier identifier>
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getIdentifier : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: org.apache.jackrabbit.core.data.DataIdentifier identifier>
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getIdentifier : $r3 = new org.apache.jackrabbit.core.data.DataIdentifier
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.close : $r2 = new org.apache.jackrabbit.oak.commons.concurrent.ExecutorCloser
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker.close : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore store>
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getStream : $r1 = new java.io.ByteArrayInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.equals : if r0 != r1 goto $z0 = r1 instanceof org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.equals : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: byte[] data>
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.equals : $z0 = r1 instanceof org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.equals : r2 = (org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord) r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.toString : $s8 = s2 & 15
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.toString : r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: byte[] data>
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.toString : s2 = b1 & 255
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.toString : $s7 = s2 >> 4
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.toString : b1 = r2[i9]
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.toString : virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("0x")
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.toString : $r3 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : r20 = newarray (byte)[i14]
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $r1 = "0x"
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $r1 = new org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : i13 = virtualinvoke r18.<java.lang.String: int length()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $i0 = lengthof r0
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : goto [?= $r2 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord getInstance(byte[])>(r20)]
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $z0 = <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: boolean $assertionsDisabled>
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $i2 = 2 * i15
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : i14 = i13 / 2
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : $r2 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord getInstance(byte[])>(r20)
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.getInstance : i15 = 0
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r10 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.File processFile>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r21 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : if z0 == 0 goto $r13 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r20 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.util.List generations>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.File processFile>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r11 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore: java.io.BufferedWriter writer>
+org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker$BlobIdStore.close : $r4 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTracker: org.slf4j.Logger access$000()>()

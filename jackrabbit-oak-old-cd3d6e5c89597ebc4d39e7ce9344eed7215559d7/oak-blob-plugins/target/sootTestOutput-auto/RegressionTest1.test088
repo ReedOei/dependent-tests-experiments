@@ -1,0 +1,5 @@
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.getLength : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: long length>
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.isLocal : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: boolean local>
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.getEndTime : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: long endTime>
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.setLength : r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: long length> = l0
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.setLocal : r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: boolean local> = z0

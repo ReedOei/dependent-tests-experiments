@@ -1,0 +1,4 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.init : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend: java.util.Properties properties>
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.getOrCreateReferenceKey : $r4 = staticinvoke <org.apache.commons.io.FileUtils: byte[] readFileToByteArray(java.io.File)>($r2)
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.getOrCreateReferenceKey : $z0 = virtualinvoke $r2.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.FSBackend.getOrCreateReferenceKey : $r2 = new java.io.File

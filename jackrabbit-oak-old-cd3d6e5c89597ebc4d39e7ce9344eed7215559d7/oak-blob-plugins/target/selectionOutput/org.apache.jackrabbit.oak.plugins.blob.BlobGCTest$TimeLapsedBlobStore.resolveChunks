@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.resolveChunks : $r2 = staticinvoke <com.google.common.collect.Iterators: com.google.common.collect.UnmodifiableIterator singletonIterator(java.lang.Object)>(r1) >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.resolveChunks : return $r2

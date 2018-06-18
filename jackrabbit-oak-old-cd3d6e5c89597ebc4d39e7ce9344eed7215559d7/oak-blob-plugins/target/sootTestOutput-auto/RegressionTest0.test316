@@ -1,0 +1,4 @@
+org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats.getCacheStats : goto [?= return $r9]
+org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats.getCacheStats : $r9 = new javax.management.openmbean.TabularDataSupport
+org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats.getCacheStats : $r4 = new javax.management.openmbean.TabularType
+org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats.getCacheStats : $r10 = r0.<org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreCacheStats: java.util.List cacheStats>

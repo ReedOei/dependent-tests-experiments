@@ -1,0 +1,31 @@
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : if r0 == null goto return
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $z1 = virtualinvoke r0.<java.io.File: boolean exists()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.movePendingUploadsToStaging : $r9 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils$1.apply : $r2 = (java.io.File) r1
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils$1.apply : $z0 = virtualinvoke r1.<java.io.File: boolean isFile()>()
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.errorBlob : $z0 = virtualinvoke r1.<java.lang.String: boolean startsWith(java.lang.String)>("*ERROR*-")
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.deleteAllMetadataRecords : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : virtualinvoke $r6.<java.io.File: boolean mkdirs()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r4 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r6 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r2 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUtils.getFile : $r8 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.upgrade : staticinvoke <org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils: void movePendingUploadsToStaging(java.io.File,java.io.File,boolean)>(r0, r1, z1)
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.upgrade : if z0 == 0 goto return
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.deserialize : $r2 = new org.apache.jackrabbit.oak.plugins.blob.BlobStoreBlob
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.deserialize : $z0 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer: boolean errorBlob(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.createDataStore : $r5 = new org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.createDataStore : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer: java.io.File dir>
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.createDataStore : virtualinvoke $r2.<org.apache.jackrabbit.core.data.FileDataStore: void init(java.lang.String)>(null)
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.createDataStore : $i0 = r0.<org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer: int maxInlineSize>
+org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializer.createDataStore : $r2 = new org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : r1 = staticinvoke <com.google.common.collect.ImmutableList: com.google.common.collect.ImmutableList of(java.lang.Object,java.lang.Object,java.lang.Object)>("tmp", "upload", "download")
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $r7 = new java.io.File
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : r3 = virtualinvoke $r11.<com.google.common.collect.FluentIterable: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $r8 = staticinvoke <com.google.common.io.Files: com.google.common.collect.TreeTraverser fileTreeTraverser()>()
+org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtils.moveDownloadCache : $r11 = virtualinvoke $r9.<com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable filter(com.google.common.base.Predicate)>($r10)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.resolveChunks : $r3 = staticinvoke <com.google.common.collect.Iterators: com.google.common.collect.UnmodifiableIterator singletonIterator(java.lang.Object)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.resolveChunks : $z0 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord: boolean isInstance(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecord.isInstance : $z0 = virtualinvoke r0.<java.lang.String: boolean startsWith(java.lang.String)>("0x")
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore.addMetadataRecord : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore: org.apache.jackrabbit.core.data.DataStore delegate>

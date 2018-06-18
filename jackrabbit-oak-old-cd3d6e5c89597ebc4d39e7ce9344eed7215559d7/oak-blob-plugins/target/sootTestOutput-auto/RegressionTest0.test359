@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils.getEarliestRecord : $r1 = staticinvoke <com.google.common.collect.Ordering: com.google.common.collect.Ordering natural()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils.getEarliestRecord : $r4 = virtualinvoke $r3.<com.google.common.collect.Ordering: java.lang.Object min(java.lang.Iterable)>(r0)

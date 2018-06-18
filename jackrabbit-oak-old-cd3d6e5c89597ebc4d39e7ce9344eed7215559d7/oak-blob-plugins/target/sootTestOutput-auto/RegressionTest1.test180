@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.isLocal : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: boolean local>
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats.getRepositoryId : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectionRepoStats: java.lang.String repositoryId>

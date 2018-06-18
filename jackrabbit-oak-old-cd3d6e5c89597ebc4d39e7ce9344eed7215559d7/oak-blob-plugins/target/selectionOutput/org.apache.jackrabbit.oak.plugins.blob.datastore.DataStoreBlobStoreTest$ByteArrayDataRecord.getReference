@@ -1,0 +1,1 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest$ByteArrayDataRecord.getReference : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest$ByteArrayDataRecord: java.lang.String reference> >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest$ByteArrayDataRecord.getReference : return $r1

@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$NoOpMap.entrySet : $r1 = staticinvoke <java.util.Collections: java.util.Set emptySet()>() >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$NoOpMap.entrySet : return $r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$NoOpMap.entrySet : return $r1 >>>>>>>> org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore$NoOpMap.put : return null

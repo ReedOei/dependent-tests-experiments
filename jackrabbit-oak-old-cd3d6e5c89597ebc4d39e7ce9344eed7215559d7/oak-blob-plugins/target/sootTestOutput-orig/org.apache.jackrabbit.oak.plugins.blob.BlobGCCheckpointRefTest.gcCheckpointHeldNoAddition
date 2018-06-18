@@ -1,0 +1,337 @@
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.writeBlob : $r12 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore: java.util.Map store>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.writeBlob : $r5 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.writeBlob : $r2 = new org.apache.jackrabbit.oak.spi.blob.BlobOptions
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.writeBlob : $r4 = new java.io.ByteArrayInputStream
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.writeBlob : $r14 = <org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.slf4j.Logger log>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.writeBlob : $r9 = new org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore$TestRecord
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.writeBlob : r19 = staticinvoke <org.apache.commons.io.IOUtils: byte[] toByteArray(java.io.InputStream)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.writeBlob : return r21
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : $r5 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : $r3 = new org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : if z0 != 0 goto $r20 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : r19 = staticinvoke <com.google.common.base.Stopwatch: com.google.common.base.Stopwatch createStarted()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : $l3 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: long getMaxModifiedTime(long)>(l0)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : z3 = 1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : z3 = 0
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : $r8 = newarray (java.lang.Object)[4]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : virtualinvoke r19.<com.google.common.base.Stopwatch: com.google.common.base.Stopwatch stop()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : l0 = staticinvoke <java.lang.System: long currentTimeMillis()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: void mark(org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState)>($r3)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : l1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: long sweep(org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState,long,boolean)>($r3, l0, z1)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : $r9 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : staticinvoke <com.google.common.io.Closeables: void close(java.io.Closeable,boolean)>($r3, z3)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.markAndSweep : $l6 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: long getMaxModifiedTime(long)>(l0)
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.getMarkedRefs : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File markedRefs>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore.createBlob : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore: org.apache.jackrabbit.oak.spi.blob.BlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore.createBlob : $r3 = new org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore$TestBlob
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore.createBlob : $r2 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore: org.apache.jackrabbit.oak.plugins.memory.ArrayBasedBlob createBlob(java.io.InputStream)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.of : $r1 = new org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$1.register : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$1: java.util.concurrent.atomic.AtomicReference val$props>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$1.register : $r5 = specialinvoke r0.<org.apache.jackrabbit.oak.spi.whiteboard.DefaultWhiteboard: org.apache.jackrabbit.oak.spi.whiteboard.Registration register(java.lang.Class,java.lang.Object,java.util.Map)>(r1, r2, r3)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.addMarkedStartMarker : $r6 = (org.apache.jackrabbit.oak.plugins.blob.SharedDataStore) r1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.addMarkedStartMarker : $r7 = <org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType: org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType MARKED_START_MARKER>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.addMarkedStartMarker : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.createCheckpoint : return r2
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.createCheckpoint : $r6 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean: org.apache.jackrabbit.oak.spi.state.NodeStore nodeStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.createCheckpoint : r1 = staticinvoke <com.google.common.collect.Maps: java.util.HashMap newHashMap()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.createCheckpoint : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean: org.apache.jackrabbit.oak.stats.Clock clock>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore$TestRecord.getStream : $r1 = new java.io.ByteArrayInputStream
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gcInternal : $l1 = virtualinvoke r1.<java.util.concurrent.ThreadPoolExecutor: long getTaskCount()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gcInternal : return r3
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gcInternal : $r4 = staticinvoke <java.util.concurrent.Executors: java.util.concurrent.ExecutorService newFixedThreadPool(int)>(10)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gcInternal : $r5 = <org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.slf4j.Logger log>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gcInternal : r3 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: java.util.Set iterate()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gcInternal : virtualinvoke r2.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: void collectGarbage(boolean)>(0)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gcInternal : r2 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector initGC(long,java.util.concurrent.ThreadPoolExecutor)>(l0, r1)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.mark : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.mark : $r11 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.mark : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.mark : $r2 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.mark : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: void iterateNodeTree(org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState,boolean)>(r1, 0)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.removeAllMarkedReferences : $r3 = (org.apache.jackrabbit.oak.plugins.blob.SharedDataStore) r1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.removeAllMarkedReferences : $r6 = (org.apache.jackrabbit.oak.plugins.blob.SharedDataStore) r1
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getAllMetadataRecords : $r7 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getAllMetadataRecords : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()", "org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getAllMetadataRecords")]
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getAllMetadataRecords : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getAllMetadataRecords : $r8 = interfaceinvoke r4.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getAllMetadataRecords : return r2
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getAllMetadataRecords : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore: java.util.Map metadata>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getAllMetadataRecords : r2 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayList()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getAllMetadataRecords : $r10 = interfaceinvoke r4.<java.util.Map$Entry: java.lang.Object getValue()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.sweepInternal : $b1 = l3 cmp 1L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.sweepInternal : goto [?= $z0 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.sweepInternal : l2 = l2 + 1L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.sweepInternal : $r8 = newarray (java.lang.String)[1]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.sweepInternal : $r7 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.sweepInternal : goto [?= (branch)]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.sweepInternal : l2 = 0L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.sweepInternal : $r6 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.sweepInternal : virtualinvoke r3.<java.util.ArrayDeque: boolean add(java.lang.Object)>(r5)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.sweepInternal : r4 = interfaceinvoke r2.<java.util.List: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.resolveChunks : $r2 = staticinvoke <com.google.common.collect.Iterators: com.google.common.collect.UnmodifiableIterator singletonIterator(java.lang.Object)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : $r15 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : $r19 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4: java.io.BufferedWriter val$writer>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : $r9 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4: org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector this$0>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : $r10 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4: java.util.concurrent.atomic.AtomicInteger val$count>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : $r8 = staticinvoke <com.google.common.base.Joiner: com.google.common.base.Joiner on(java.lang.String)>(",")
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : $z1 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4: boolean debugMode>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4: boolean debugMode>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : $r18 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4: java.util.concurrent.atomic.AtomicInteger val$count>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : $r6 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4: org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector this$0>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : $z2 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z2 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()", "org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4.addReference")]
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils.isShared : $r1 = (org.apache.jackrabbit.oak.plugins.blob.SharedDataStore) r0
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils.isShared : $z0 = r0 instanceof org.apache.jackrabbit.oak.plugins.blob.SharedDataStore
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4$1.apply : $r2 = (java.lang.String) r1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4$1.apply : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4$1: org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4 this$1>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$4$1.apply : return r1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.difference : $r4 = new org.apache.jackrabbit.oak.commons.FileIOUtils$FileLineDifferenceIterator
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.difference : $r14 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.difference : $r10 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.difference : $r5 = virtualinvoke r1.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getMarkedRefs()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.difference : $r6 = virtualinvoke r1.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getAvailableRefs()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.difference : $r8 = virtualinvoke r1.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getGcCandidates()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.difference : $r3 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$2.apply : $r2 = (org.apache.jackrabbit.core.data.DataRecord) r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$2.apply : $r2 = <org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType: org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType REPOSITORY>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore$TestBlob.getContentIdentity : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore$TestBlob: java.lang.String id>
+org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId.getLength : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: long length>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.addMarked : $r4 = (org.apache.jackrabbit.oak.plugins.blob.SharedDataStore) r1
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore.getBlobReferenceRetriever : $r1 = dynamicinvoke "collectReferences" <org.apache.jackrabbit.oak.plugins.blob.BlobReferenceRetriever (org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore)>(r0) <java.lang.invoke.LambdaMetafactory: java.lang.invoke.CallSite metafactory(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.invoke.MethodType,java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)>(class "(Lorg/apache/jackrabbit/oak/plugins/blob/ReferenceCollector;)V", handle: <org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore: void lambda$getBlobReferenceRetriever$0(org.apache.jackrabbit.oak.plugins.blob.ReferenceCollector)>, class "(Lorg/apache/jackrabbit/oak/plugins/blob/ReferenceCollector;)V")
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords : $z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords : $r7 = interfaceinvoke r15.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore: java.util.Map metadata>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords : r2 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayList()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords : $r10 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords : $r8 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore: java.util.Map metadata>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z0 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()", "org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords")]
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords : goto [?= $z1 = interfaceinvoke r15.<java.util.Iterator: boolean hasNext()>()]
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords : $r11 = interfaceinvoke r14.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords : $r13 = interfaceinvoke r14.<java.util.Map$Entry: java.lang.Object getKey()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.deleteAllMetadataRecords : r15 = interfaceinvoke r2.<java.util.List: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.getGcCandidates : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File gcCandidates>
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.getAvailableRefs : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File availableRefs>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getBatchCount : $i0 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: int batchCount>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r37 = interfaceinvoke r4.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : i9 = 0
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()", "org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp")]
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r40 = $r9.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$BlobStoreState: java.util.Set blobsPresent>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : r45 = interfaceinvoke r2.<java.util.List: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r6 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.apache.jackrabbit.oak.spi.state.NodeStore nodeStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r8 = new java.util.Random
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r38 = $r9.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$BlobStoreState: java.util.Set blobsAdded>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r9 = new org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$BlobStoreState
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : r2 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayList()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r12 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.apache.jackrabbit.oak.spi.state.NodeStore nodeStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: void postSetup(org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$BlobStoreState)>($r9)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : i7 = 0
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r41 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i8)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r15 = <org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.slf4j.Logger log>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : goto [?= $z0 = interfaceinvoke r45.<java.util.Iterator: boolean hasNext()>()]
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r19 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.apache.jackrabbit.oak.stats.Clock clock>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r20 = interfaceinvoke r45.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r31 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r22 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $z1 = interfaceinvoke r4.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r42 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i8)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r29 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r17 = <org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.slf4j.Logger log>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : i8 = virtualinvoke $r8.<java.util.Random: int nextInt(int)>(i0)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r39 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i9)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: void preSetup()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.setUp : $r27 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.apache.jackrabbit.oak.spi.state.NodeStore nodeStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore$TestRecord.getIdentifier : $r1 = new org.apache.jackrabbit.core.data.DataIdentifier
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType.get : $r2 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType: org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType SHARED>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType.get : $z0 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils: boolean isShared(org.apache.jackrabbit.oak.spi.blob.BlobStore)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$3.apply : $r2 = (org.apache.jackrabbit.core.data.DataRecord) r1
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$3.apply : $r2 = <org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType: org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType REFERENCES>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore.lambda$getBlobReferenceRetriever$0 : interfaceinvoke r1.<org.apache.jackrabbit.oak.plugins.blob.ReferenceCollector: void addReference(java.lang.String,java.lang.String)>(r3, null)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore.lambda$getBlobReferenceRetriever$0 : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore: java.util.Set referencedBlobs>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore.lambda$getBlobReferenceRetriever$0 : $r5 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore.lambda$getBlobReferenceRetriever$0 : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.initGC : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.junit.rules.TemporaryFolder folder>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.initGC : r16 = null
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.initGC : $r9 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.apache.jackrabbit.oak.spi.state.NodeStore nodeStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.initGC : $r10 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.initGC : $r4 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.initGC : $r14 = <org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType: org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType REPOSITORY>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.initGC : $r5 = new org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.initGC : return $r5
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getType : $r1 = <org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type: org.apache.jackrabbit.oak.plugins.blob.SharedDataStore$Type SHARED>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.access$000 : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore: long startTime>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r16 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $b6 = l16 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r49 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStore$BlobId of(java.lang.String)>(r6)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $b10 = l2 cmp -1L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : r53 = null
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : r54 = null
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r15 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : l15 = 0L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r46 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r29 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r44 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : i17 = i17 + 1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : goto [?= staticinvoke <edu.washington.cs.dt.impact.util.Tracer: void trace(java.lang.String,java.lang.String)>("$z1 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()", "org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep")]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $b3 = l11 cmp l0
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r13 = new org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobIdRetriever
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r11 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : goto [?= $r13 = new org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobIdRetriever]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : l16 = 0L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r24 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: void difference(org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : virtualinvoke $r20.<java.util.ArrayDeque: void clear()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : i17 = 0
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r8 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r43 = interfaceinvoke r3.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : staticinvoke <org.apache.commons.io.LineIterator: void closeQuietly(org.apache.commons.io.LineIterator)>(r54)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r36 = staticinvoke <org.apache.jackrabbit.oak.commons.IOUtils: java.lang.String humanReadableByteCount(long)>(l16)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r33 = newarray (java.lang.Object)[3]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r21 = virtualinvoke r1.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getGcCandidates()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r18 = virtualinvoke r1.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getGarbage()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : r5 = virtualinvoke $r20.<java.util.ArrayDeque: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : l16 = l16 + l2
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r32 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $z1 = interfaceinvoke r3.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : goto [?= $r24 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $l12 = l11
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $i7 = interfaceinvoke r4.<java.util.List: int size()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r47 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayList(java.lang.Iterable)>($r20)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $i4 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: int getBatchCount()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : l1 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: long getMaxModifiedTime(long)>($l12)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : l14 = 0L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r34 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : return l15
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : interfaceinvoke $r16.<org.slf4j.Logger: void debug(java.lang.String,java.lang.Object)>("Sweeping blobs with modified time > than the configured max deleted time ({}). ", $r17)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : staticinvoke <org.apache.jackrabbit.oak.commons.IOUtils: void closeQuietly(java.io.Closeable)>(r53)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $b5 = l14 cmp l15
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.sweep : $r20 = new java.util.ArrayDeque
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : $r21 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : goto [?= $z1 = interfaceinvoke r28.<java.util.Iterator: boolean hasNext()>()]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : $r26 = interfaceinvoke r28.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : $r18 = (org.apache.jackrabbit.oak.plugins.blob.SharedDataStore) r1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : r30 = interfaceinvoke $r18.<org.apache.jackrabbit.oak.plugins.blob.SharedDataStore: java.util.List getAllMetadataRecords(java.lang.String)>($r19)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : $r9 = (org.apache.jackrabbit.oak.plugins.blob.SharedDataStore) r1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : $r23 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils: org.apache.jackrabbit.core.data.DataRecord getEarliestRecord(java.util.List)>(r3)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : $r24 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : $r20 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils: org.apache.jackrabbit.core.data.DataRecord getEarliestRecord(java.util.List)>(r30)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : $z0 = interfaceinvoke r5.<java.util.Set: boolean isEmpty()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : $r27 = interfaceinvoke r29.<org.apache.jackrabbit.core.data.DataRecord: java.io.InputStream getStream()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : $r16 = virtualinvoke r2.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getMarkedRefs()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : r28 = interfaceinvoke r3.<java.util.List: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : $r12 = (org.apache.jackrabbit.oak.plugins.blob.SharedDataStore) r1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : interfaceinvoke r6.<java.util.List: boolean add(java.lang.Object)>(r7)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : r5 = staticinvoke <org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils: java.util.Set refsNotAvailableFromRepos(java.util.List,java.util.List)>(r4, r3)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$GarbageCollectionType$1.mergeAllMarkedReferences : r6 = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayList()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils.getEarliestRecord : $r1 = staticinvoke <com.google.common.collect.Ordering: com.google.common.collect.Ordering natural()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils.getEarliestRecord : $r4 = virtualinvoke $r3.<com.google.common.collect.Ordering: java.lang.Object min(java.lang.Iterable)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.iterateNodeTree : interfaceinvoke $r10.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>("Number of valid blob references marked under mark phase of Blob garbage collection [{}]", $r11)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.iterateNodeTree : $r10 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.iterateNodeTree : $r12 = virtualinvoke r1.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getMarkedRefs()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.iterateNodeTree : $r7 = new java.util.concurrent.atomic.AtomicInteger
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.iterateNodeTree : $r5 = virtualinvoke r1.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getMarkedRefs()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.iterateNodeTree : $r9 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.plugins.blob.BlobReferenceRetriever marker>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.iterateNodeTree : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.iterateNodeTree : staticinvoke <org.apache.jackrabbit.oak.commons.IOUtils: void closeQuietly(java.io.Closeable)>(r2)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.addMetadataRecord : $r5 = new java.io.FileInputStream
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.addMetadataRecord : $r9 = <org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.slf4j.Logger log>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.addMetadataRecord : r8 = null
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.addMetadataRecord : r13 = staticinvoke <org.apache.commons.io.IOUtils: byte[] toByteArray(java.io.InputStream)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.addMetadataRecord : $r4 = new org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore$TestRecord
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.addMetadataRecord : goto [?= return]
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.addMetadataRecord : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore: java.util.Map metadata>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.addMetadataRecord : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore: void addMetadataRecord(java.io.InputStream,java.lang.String)>($r5, r2)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.addMetadataRecord : staticinvoke <org.apache.commons.io.IOUtils: void closeQuietly(java.io.InputStream)>($r5)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$1.apply : $r2 = (java.lang.String) r1
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$1.apply : $r2 = virtualinvoke r1.<java.lang.String: java.lang.String[] split(java.lang.String)>(",")
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$1.apply : if r1 == null goto return ""
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.access$100 : $i0 = specialinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: int getBatchCount()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.postSetup : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.apache.jackrabbit.oak.spi.state.NodeStore nodeStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore.setReferencedBlobs : r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$MemoryBlobStoreNodeStore: java.util.Set referencedBlobs> = r1
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.getGarbage : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File garbage>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.handleRemoves : staticinvoke <org.apache.commons.io.FileUtils: void forceDelete(java.io.File)>(r2)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.collectGarbage : virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: void markAndSweep(boolean,boolean)>(z0, 0)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getIdForInputStream : staticinvoke <org.apache.commons.io.IOUtils: void closeQuietly(java.io.InputStream)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getIdForInputStream : staticinvoke <org.apache.commons.io.IOUtils: void closeQuietly(java.io.OutputStream)>($r5)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getIdForInputStream : staticinvoke <org.apache.commons.io.IOUtils: long copyLarge(java.io.InputStream,java.io.OutputStream)>(r1, $r5)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getIdForInputStream : r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>("SHA-256")
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getIdForInputStream : $r5 = new java.security.DigestOutputStream
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getIdForInputStream : $r7 = virtualinvoke r2.<java.security.MessageDigest: byte[] digest()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getIdForInputStream : goto [?= $r7 = virtualinvoke r2.<java.security.MessageDigest: byte[] digest()>()]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.timestampToString : $r0 = new java.lang.StringBuilder
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.getAllChunkIds : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore: java.util.Map store>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.getClock : $r1 = new org.apache.jackrabbit.oak.stats.Clock$Virtual
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobIdRetriever.call : $r27 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobIdRetriever.call : $z0 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobIdRetriever: boolean forceRetrieve>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobIdRetriever.call : $r19 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobIdRetriever: org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector this$0>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobIdRetriever.call : $r3 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(0)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobIdRetriever.call : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobIdRetriever: org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState fs>
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType.getType : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType: java.lang.String type>
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.close : $r1 = virtualinvoke r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getGarbage()>()
+org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState.close : $r2 = r0.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File home>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.retrieve : r19 = interfaceinvoke r1.<org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore: java.util.Iterator getAllChunkIds(long)>(0L)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.retrieve : $r7 = virtualinvoke r2.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getAvailableRefs()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.retrieve : $r9 = virtualinvoke r2.<org.apache.jackrabbit.oak.plugins.blob.GarbageCollectorFileState: java.io.File getAvailableRefs()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.retrieve : $r10 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.retrieve : $z0 = r19 instanceof java.io.Closeable
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.retrieve : r19 = null
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.retrieve : $r6 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.countDeleteChunks : $r12 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore: java.util.Map store>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.countDeleteChunks : $r8 = <org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.slf4j.Logger log>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.countDeleteChunks : i6 = i6 + 1
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.countDeleteChunks : $r4 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.countDeleteChunks : $r5 = <org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.slf4j.Logger log>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.countDeleteChunks : $b3 = l0 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.countDeleteChunks : i6 = 0
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.countDeleteChunks : r2 = interfaceinvoke r1.<java.util.List: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore.countDeleteChunks : $r14 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore: java.util.Map store>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.access$000 : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.getOldestCheckpointCreationDate : $r1 = new java.util.Date
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.getOldestCheckpointCreationTimestamp : $r7 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean: org.apache.jackrabbit.oak.spi.state.NodeStore nodeStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.getOldestCheckpointCreationTimestamp : $z1 = interfaceinvoke r4.<java.util.Map: boolean containsKey(java.lang.Object)>("creationDate")
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.getOldestCheckpointCreationTimestamp : r2 = interfaceinvoke r1.<java.lang.Iterable: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.getOldestCheckpointCreationTimestamp : $r8 = interfaceinvoke r4.<java.util.Map: java.lang.Object get(java.lang.Object)>("creationDate")
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.getOldestCheckpointCreationTimestamp : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.getOldestCheckpointCreationTimestamp : $r6 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.getOldestCheckpointCreationTimestamp : l3 = 9223372036854775807L
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.getOldestCheckpointCreationTimestamp : $r11 = interfaceinvoke r4.<java.util.Map: java.lang.Object get(java.lang.Object)>("creationDate")
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.getOldestCheckpointCreationTimestamp : $b0 = l3 cmp 9223372036854775807L
+org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean.getOldestCheckpointCreationTimestamp : $r5 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest$MemoryStoreCheckpointMBean: org.apache.jackrabbit.oak.spi.state.NodeStore nodeStore>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.saveBatchToFile : r2 = interfaceinvoke r0.<java.util.List: java.util.Iterator iterator()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.saveBatchToFile : $r4 = interfaceinvoke r2.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.saveBatchToFile : virtualinvoke r1.<java.io.BufferedWriter: void flush()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.saveBatchToFile : goto [?= $z0 = interfaceinvoke r2.<java.util.Iterator: boolean hasNext()>()]
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.saveBatchToFile : staticinvoke <org.apache.jackrabbit.oak.commons.FileIOUtils: void writeAsLine(java.io.BufferedWriter,java.lang.String,boolean)>(r1, r3, 1)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.randomStream : $r2 = new java.util.Random
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.randomStream : virtualinvoke $r2.<java.util.Random: void nextBytes(byte[])>(r1)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.randomStream : r1 = newarray (byte)[i1]
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.randomStream : $r3 = new java.io.ByteArrayInputStream
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType.getIdFromName : $r2 = staticinvoke <com.google.common.base.Splitter: com.google.common.base.Splitter on(java.lang.String)>("-")
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.delete : $r4 = interfaceinvoke r2.<org.apache.jackrabbit.oak.spi.state.NodeStore: org.apache.jackrabbit.oak.spi.state.NodeState getRoot()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.delete : $r5 = interfaceinvoke r3.<org.apache.jackrabbit.oak.spi.state.NodeBuilder: org.apache.jackrabbit.oak.spi.state.NodeBuilder child(java.lang.String)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.delete : $r7 = <org.apache.jackrabbit.oak.spi.commit.EmptyHook: org.apache.jackrabbit.oak.spi.commit.CommitHook INSTANCE>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore$TestRecord.getLastModified : $l0 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest$TimeLapsedBlobStore$TestRecord: long lastModified>
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils.refsNotAvailableFromRepos : $r2 = staticinvoke <com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable 'from'(java.lang.Iterable)>(r0)
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils.refsNotAvailableFromRepos : $r6 = staticinvoke <com.google.common.collect.FluentIterable: com.google.common.collect.FluentIterable 'from'(java.lang.Iterable)>(r1)
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils.refsNotAvailableFromRepos : $r5 = virtualinvoke $r4.<com.google.common.collect.ImmutableMap: com.google.common.collect.ImmutableSet keySet()>()
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils.refsNotAvailableFromRepos : $r9 = virtualinvoke $r8.<com.google.common.collect.ImmutableMap: com.google.common.collect.ImmutableSet keySet()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getMaxModifiedTime : l8 = -1L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getMaxModifiedTime : $r1 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.api.jmx.CheckpointMBean checkpointMbean>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getMaxModifiedTime : $b4 = l8 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getMaxModifiedTime : $l1 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: long maxLastModifiedInterval>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getMaxModifiedTime : $l11 = staticinvoke <java.lang.Math: long min(long,long)>($l9, l8)
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getMaxModifiedTime : $r4 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getMaxModifiedTime : $r6 = r0.<org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.apache.jackrabbit.oak.api.jmx.CheckpointMBean checkpointMbean>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getMaxModifiedTime : $r2 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getMaxModifiedTime : $b3 = l7 cmp 0L
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector.getMaxModifiedTime : $r8 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector: org.slf4j.Logger LOG>
+org.apache.jackrabbit.oak.plugins.blob.datastore.SharedDataStoreUtils$SharedStoreRecordType.getNameFromId : $r2 = staticinvoke <com.google.common.base.Joiner: com.google.common.base.Joiner on(java.lang.String)>("-")
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.get : $r2 = <org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType: org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType DEFAULT>
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$BlobCollectionType.get : $z0 = r0 instanceof org.apache.jackrabbit.oak.plugins.blob.BlobTrackingStore
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.iterate : $z0 = interfaceinvoke r1.<java.util.Iterator: boolean hasNext()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.iterate : return r2
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.iterate : $r3 = r0.<org.apache.jackrabbit.oak.plugins.blob.BlobGCTest: org.apache.jackrabbit.oak.spi.blob.GarbageCollectableBlobStore blobStore>
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.iterate : r2 = staticinvoke <com.google.common.collect.Sets: java.util.HashSet newHashSet()>()
+org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.iterate : $r4 = interfaceinvoke r1.<java.util.Iterator: java.lang.Object next()>()
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$5.compare : $r3 = virtualinvoke r1.<java.lang.String: java.lang.String[] split(java.lang.String)>(",")
+org.apache.jackrabbit.oak.plugins.blob.MarkSweepGarbageCollector$5.compare : $r4 = (java.lang.String) r1
