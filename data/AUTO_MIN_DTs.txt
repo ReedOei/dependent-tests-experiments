@@ -11,6 +11,6 @@ Zeppelin-Zengine|117
 dubbo-dubbo-config-spring|6
 accumulo-accumulo-master|2
 jackrabbit-oak-oak-solr-core|61
-jackrabbit-oak-oak-blob-plugins|3
+jackrabbit-oak-oak-blob-plugins|0
 elastic-job-lite-elastic-job-common-core|0
 camel-camel-cache|2
