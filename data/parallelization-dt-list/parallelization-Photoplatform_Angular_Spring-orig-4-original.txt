@@ -1,3 +1,9 @@
+Test: de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testGetPhotographersImages
+Intended behavior: FAILURE
+when executed after: [de.htw.sdf.photoplatform.repository.RoleDAOTest.findTest]
+The revealed different behavior: PASS
+when executed after: []
+
 Test: de.htw.sdf.photoplatform.repository.RoleDAOTest.findTest
 Intended behavior: FAILURE
 when executed after: [de.htw.sdf.photoplatform.repository.UserImageDAOTest.testGetUserImagesBy]
@@ -6,7 +12,7 @@ when executed after: []
 
 Test: de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testCreateCollection
 Intended behavior: FAILURE
-when executed after: [de.htw.sdf.photoplatform.repository.RoleDAOTest.findTest]
+when executed after: [de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testGetPhotographersImages]
 The revealed different behavior: PASS
 when executed after: []
 
