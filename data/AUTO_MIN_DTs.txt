@@ -5,7 +5,7 @@ JFreechart|6
 Joda-Time|610
 Photoplatform_Angular_Spring|0
 Synoptic|5
-XML Security|113
+XML Security|458
 Zeppelin-Server|14
 Zeppelin-Zengine|117
 dubbo-dubbo-config-spring|6
