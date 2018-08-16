@@ -1,12 +1,6 @@
-Test: org.joda.time.TestSerialization.testSerializedDateTimeProperty
+Test: org.joda.time.tz.TestCompiler.testCompile
 Intended behavior: FAILURE
-when executed after: [org.joda.time.TestDateTimeZone.testProvider]
-The revealed different behavior: PASS
-when executed after: []
-
-Test: org.joda.time.TestDateTimeZone.testProvider
-Intended behavior: FAILURE
-when executed after: [org.joda.time.TestDateMidnight_Basics.testWithZoneRetainFields_DateTimeZone]
+when executed after: [org.joda.time.convert.TestReadableDurationConverter.testSetInto_Object]
 The revealed different behavior: PASS
 when executed after: []
 

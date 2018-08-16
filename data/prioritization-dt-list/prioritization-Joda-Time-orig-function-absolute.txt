@@ -1,0 +1,6 @@
+Test: org.joda.time.tz.TestCompiler.testCompile
+Intended behavior: FAILURE
+when executed after: [org.joda.time.convert.TestReadableDurationConverter.testSetInto_Object]
+The revealed different behavior: PASS
+when executed after: []
+
