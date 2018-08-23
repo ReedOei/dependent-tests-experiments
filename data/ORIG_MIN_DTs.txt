@@ -7,7 +7,7 @@ Photoplatform_Angular_Spring|11
 Synoptic|1
 XML Security|5
 Zeppelin-Server|1
-Zeppelin-Zengine|97
+Zeppelin-Zengine|45
 dubbo-dubbo-config-spring|34
 accumulo-accumulo-master|2
 jackrabbit-oak-oak-solr-core|2
