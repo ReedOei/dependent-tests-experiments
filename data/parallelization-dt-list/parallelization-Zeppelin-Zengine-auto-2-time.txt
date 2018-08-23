@@ -31,6 +31,77 @@ when executed after: []
 Test: RegressionTest0.test405
 Intended behavior: FAILURE
 when executed after: [RegressionTest0.test171]
+=======
+Test: RegressionTest1.test203
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test120]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test357
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test221]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test405
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test320]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test247
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test214]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test209
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test171]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test171
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test158]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test302
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test247]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test214
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test209]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test320
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test314]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test208
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test037]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test314
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test302]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test158
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test137]
+>>>>>>> 178d130d02c57dd4a3e7aea80b1810c26edb2f76
 The revealed different behavior: PASS
 when executed after: []
 

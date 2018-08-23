@@ -19,6 +19,29 @@ when executed after: []
 Test: RegressionTest1.test095
 Intended behavior: FAILURE
 when executed after: [RegressionTest0.test090]
+=======
+Test: RegressionTest1.test147
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test137]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test314
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test095]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test095
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test090]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test062
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test266]
+>>>>>>> 178d130d02c57dd4a3e7aea80b1810c26edb2f76
 The revealed different behavior: PASS
 when executed after: []
 
